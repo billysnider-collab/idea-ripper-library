@@ -1,91 +1,56 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Library · Idea Ripper</title><style>
-:root{--bg:#0b1220;--panel:#121a2b;--fg:#f3f0e8;--muted:#8b97ad;--amber:#e8a54b;--border:#243049;--keep:#3d9a6a;--kill:#b44a4a;--rewrite:#c4a035}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Ten Cool Keepers - Idea Ripper</title>
+<style>
+:root{--bg:#0b1220;--panel:#121a2b;--fg:#f3f0e8;--muted:#8b97ad;--amber:#e8a54b;--border:#243049}
 *{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--fg);line-height:1.45}
 a{color:var(--amber);text-decoration:none}a:hover{text-decoration:underline}
 header{padding:1.25rem 1.5rem;border-bottom:1px solid var(--border);display:flex;gap:1rem;align-items:baseline;flex-wrap:wrap}
 header h1{margin:0;font-size:1.25rem;font-weight:600}header .sub{color:var(--muted);font-size:.95rem}
-main{max-width:960px;margin:0 auto;padding:1.25rem 1.25rem 3rem}
-.meta{color:var(--muted);font-size:.9rem;margin:.75rem 0}
-.controls{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0;align-items:center}
-.controls input[type=search]{flex:1 1 220px;background:var(--panel);border:1px solid var(--border);color:var(--fg);border-radius:8px;padding:.5rem .75rem;font:inherit}
-.controls select{background:var(--panel);border:1px solid var(--border);color:var(--fg);border-radius:8px;padding:.5rem .6rem;font:inherit;max-width:100%}
-.controls button{background:transparent;color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:.4rem .9rem;cursor:pointer;font:inherit}
-.controls button:hover{color:var(--bg);background:var(--amber);border-color:var(--amber)}
-.table-wrap{overflow-x:auto}
-table{width:100%;border-collapse:collapse;min-width:560px}th,td{text-align:left;padding:.65rem .5rem;border-bottom:1px solid var(--border)}
-th{color:var(--muted);font-weight:500;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em}
-tbody tr:hover td{background:var(--panel)}
-.pill{display:inline-block;padding:.1rem .45rem;border-radius:999px;border:1px solid var(--border);font-size:.75rem;color:var(--muted);white-space:nowrap}
-.pill.keep{color:var(--keep);border-color:var(--keep)}.pill.kill{color:var(--kill);border-color:var(--kill)}.pill.rewrite{color:var(--rewrite);border-color:var(--rewrite)}
-.pill.genre{color:var(--amber);border-color:var(--border)}
-tr.empty td{color:var(--muted);text-align:center;padding:2rem}
+main{max-width:920px;margin:0 auto;padding:1.25rem 1.25rem 3rem}
+.purpose{color:var(--fg);font-size:1.05rem;margin:.1rem 0 1rem;max-width:60rem}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:1rem}
+.pill{display:inline-block;padding:.1rem .45rem;border-radius:999px;border:1px solid var(--border);font-size:.75rem;color:var(--muted)}
+.pill.mechanism{color:var(--amber);border-color:var(--amber)}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:1rem 1.1rem;margin:.75rem 0}
+.card h3{margin:0 0 .35rem;font-size:1.05rem}
+.card h3 .num{color:var(--amber);margin-right:.5rem}
+.card .src{color:var(--muted);font-size:.85rem;margin:.1rem 0 .4rem}
+.card .steal{margin:.4rem 0;font-style:italic}
+.card .uw{color:var(--muted);font-size:.9rem;margin:.4rem 0 0}
 footer{color:var(--muted);font-size:.8rem;padding:2rem 1.5rem;border-top:1px solid var(--border)}
-.purpose{color:var(--fg);font-size:1.05rem;margin:.1rem 0 1rem;max-width:60rem}.purpose{color:var(--fg);font-size:1.05rem;margin:.1rem 0 1rem;max-width:60rem}.purpose{color:var(--fg);font-size:1.05rem;margin:.1rem 0 1rem;max-width:60rem}.purpose{color:var(--fg);font-size:1.05rem;margin:.1rem 0 1rem;max-width:60rem}.purpose{color:var(--fg);font-size:1.05rem;margin:.1rem 0 1rem;max-width:60rem}</style></head><body><header><h1><a href="index.html">Idea Ripper</a></h1><div class="sub">Book → Deck → Decisions</div></header><main>
-<p class="purpose">Stealable ideas from books I actually graded. Every card below survived a human keep-or-rewrite verdict.</p>
-<div class="controls">
-<input id="q" type="search" placeholder="Search title or author…" aria-label="Search title or author"/>
-<select id="genre" aria-label="Filter by genre"><option value="">All genres</option>
-    <option value="History &amp; Politics">History &amp; Politics</option>
-    <option value="Memoir &amp; Biography">Memoir &amp; Biography</option>
-    <option value="Poetry &amp; Essays">Poetry &amp; Essays</option>
-    <option value="Sci-Fi &amp; Fantasy">Sci-Fi &amp; Fantasy</option></select>
-<select id="sort" aria-label="Sort"><option value="title-asc">Title A–Z</option><option value="title-desc">Title Z–A</option><option value="cards-desc">Most cards first</option><option value="cards-asc">Fewest cards first</option><option value="date-desc">Newest ripped first</option><option value="date-asc">Oldest ripped first</option></select>
-<button id="reset" type="button">Reset</button>
-</div>
-<p class="meta"><span id="count"></span> &middot; 16 decks &middot; 204 stealable ideas &middot; graded library</p>
-<div class="table-wrap"><table><thead><tr><th>Book</th><th>Genre</th><th>Ripped</th><th>Cards</th><th>Grades</th></tr></thead>
-<tbody id="rows">
-<tr data-title="A Marriage at Sea" data-author="Sophie Elmhirst" data-genre="Memoir &amp; Biography" data-cards="5" data-date="2026-09-22"><td><a href="books/a-marriage-at-sea-sophie-elmhirst.html">A Marriage at Sea &mdash; Sophie Elmhirst</a></td><td><span class="pill genre">Memoir &amp; Biography</span></td><td>2026-09-22</td><td>5</td><td><span class="pill keep">5 keep</span></td></tr>
-<tr data-title="Cancel Me If You Can" data-author="Dave Portnoy" data-genre="Memoir &amp; Biography" data-cards="1" data-date="2026-09-22"><td><a href="books/cancel-me-if-you-can-dave-portnoy.html">Cancel Me If You Can &mdash; Dave Portnoy</a></td><td><span class="pill genre">Memoir &amp; Biography</span></td><td>2026-09-22</td><td>1</td><td><span class="pill keep">1 keep</span></td></tr>
-<tr data-title="Cool Machine" data-author="Colson Whitehead" data-genre="Sci-Fi &amp; Fantasy" data-cards="23" data-date="2026-09-22"><td><a href="books/cool-machine-colson-whitehead.html">Cool Machine &mdash; Colson Whitehead</a></td><td><span class="pill genre">Sci-Fi &amp; Fantasy</span></td><td>2026-09-22</td><td>23</td><td><span class="pill keep">19 keep</span> <span class="pill rewrite">4 rewrite</span></td></tr>
-<tr data-title="Dogs, Boys, and Other Things I&#x27;ve Cried About" data-author="Isabel Klee" data-genre="Memoir &amp; Biography" data-cards="1" data-date="2026-09-22"><td><a href="books/dogs-boys-and-other-things-ive-cried-about-isabel-klee.html">Dogs, Boys, and Other Things I&#x27;ve Cried About &mdash; Isabel Klee</a></td><td><span class="pill genre">Memoir &amp; Biography</span></td><td>2026-09-22</td><td>1</td><td><span class="pill keep">1 keep</span></td></tr>
-<tr data-title="Dungeon Crawler Carl" data-author="Matt Dinniman" data-genre="Sci-Fi &amp; Fantasy" data-cards="24" data-date="2026-09-22"><td><a href="books/dungeon-crawler-carl-matt-dinniman.html">Dungeon Crawler Carl &mdash; Matt Dinniman</a></td><td><span class="pill genre">Sci-Fi &amp; Fantasy</span></td><td>2026-09-22</td><td>24</td><td><span class="pill keep">20 keep</span> <span class="pill rewrite">4 rewrite</span></td></tr>
-<tr data-title="The King in Yellow" data-author="Robert W. Chambers" data-genre="Sci-Fi &amp; Fantasy" data-cards="22" data-date="2026-09-22"><td><a href="books/the-king-in-yellow-robert-w-chambers.html">The King in Yellow &mdash; Robert W. Chambers</a></td><td><span class="pill genre">Sci-Fi &amp; Fantasy</span></td><td>2026-09-22</td><td>22</td><td><span class="pill keep">11 keep</span> <span class="pill rewrite">11 rewrite</span></td></tr>
-<tr data-title="Gilgamesh (Lombardo translation)" data-author="Stanley Lombardo" data-genre="Poetry &amp; Essays" data-cards="3" data-date="2026-09-22"><td><a href="books/gilgamesh-lombardo.html">Gilgamesh (Lombardo translation) &mdash; Stanley Lombardo</a></td><td><span class="pill genre">Poetry &amp; Essays</span></td><td>2026-09-22</td><td>3</td><td><span class="pill keep">3 keep</span></td></tr>
-<tr data-title="Gilgamesh (Mitchell translation)" data-author="Stephen Mitchell" data-genre="Poetry &amp; Essays" data-cards="5" data-date="2026-09-22"><td><a href="books/gilgamesh-mitchell-2005.html">Gilgamesh (Mitchell translation) &mdash; Stephen Mitchell</a></td><td><span class="pill genre">Poetry &amp; Essays</span></td><td>2026-09-22</td><td>5</td><td><span class="pill keep">5 keep</span></td></tr>
-<tr data-title="Project Hail Mary" data-author="Andy Weir" data-genre="Sci-Fi &amp; Fantasy" data-cards="22" data-date="2026-09-22"><td><a href="books/project-hail-mary-andy-weir.html">Project Hail Mary &mdash; Andy Weir</a></td><td><span class="pill genre">Sci-Fi &amp; Fantasy</span></td><td>2026-09-22</td><td>22</td><td><span class="pill keep">22 keep</span></td></tr>
-<tr data-title="Regime Change" data-author="Maggie Haberman and Jonathan Swan" data-genre="History &amp; Politics" data-cards="5" data-date="2026-09-22"><td><a href="books/regime-change-maggie-haberman-and-jonathan-swan.html">Regime Change &mdash; Maggie Haberman and Jonathan Swan</a></td><td><span class="pill genre">History &amp; Politics</span></td><td>2026-09-22</td><td>5</td><td><span class="pill keep">5 keep</span></td></tr>
-<tr data-title="Simultaneous" data-author="Eric Heisserer" data-genre="Sci-Fi &amp; Fantasy" data-cards="18" data-date="2026-09-22"><td><a href="books/simultaneous-eric-heisserer.html">Simultaneous &mdash; Eric Heisserer</a></td><td><span class="pill genre">Sci-Fi &amp; Fantasy</span></td><td>2026-09-22</td><td>18</td><td><span class="pill keep">16 keep</span> <span class="pill rewrite">2 rewrite</span></td></tr>
-<tr data-title="Strangers" data-author="Belle Burden" data-genre="Memoir &amp; Biography" data-cards="1" data-date="2026-09-22"><td><a href="books/strangers-belle-burden.html">Strangers &mdash; Belle Burden</a></td><td><span class="pill genre">Memoir &amp; Biography</span></td><td>2026-09-22</td><td>1</td><td><span class="pill keep">1 keep</span></td></tr>
-<tr data-title="The Collected Stories of Arthur C. Clarke" data-author="Arthur C. Clarke" data-genre="Sci-Fi &amp; Fantasy" data-cards="24" data-date="2026-09-22"><td><a href="books/the-collected-stories-of-arthur-c-clarke.html">The Collected Stories of Arthur C. Clarke &mdash; Arthur C. Clarke</a></td><td><span class="pill genre">Sci-Fi &amp; Fantasy</span></td><td>2026-09-22</td><td>24</td><td><span class="pill keep">19 keep</span> <span class="pill rewrite">5 rewrite</span></td></tr>
-<tr data-title="The Day After" data-author="Brian Tyler Cohen" data-genre="History &amp; Politics" data-cards="4" data-date="2026-09-22"><td><a href="books/the-day-after-brian-tyler-cohen.html">The Day After &mdash; Brian Tyler Cohen</a></td><td><span class="pill genre">History &amp; Politics</span></td><td>2026-09-22</td><td>4</td><td><span class="pill keep">4 keep</span></td></tr>
-<tr data-title="Tilt" data-author="Emma Pattee" data-genre="Sci-Fi &amp; Fantasy" data-cards="22" data-date="2026-09-22"><td><a href="books/tilt-emma-pattee.html">Tilt &mdash; Emma Pattee</a></td><td><span class="pill genre">Sci-Fi &amp; Fantasy</span></td><td>2026-09-22</td><td>22</td><td><span class="pill keep">14 keep</span> <span class="pill rewrite">8 rewrite</span></td></tr>
-<tr data-title="Where the Axe Is Buried" data-author="Ray Nayler" data-genre="Sci-Fi &amp; Fantasy" data-cards="24" data-date="2026-09-22"><td><a href="books/where-the-axe-is-buried-ray-nayler.html">Where the Axe Is Buried &mdash; Ray Nayler</a></td><td><span class="pill genre">Sci-Fi &amp; Fantasy</span></td><td>2026-09-22</td><td>24</td><td><span class="pill keep">20 keep</span> <span class="pill rewrite">4 rewrite</span></td></tr>
-</tbody></table></div>
-<script>
-(function(){
-var q=document.getElementById('q'),g=document.getElementById('genre'),s=document.getElementById('sort'),
-    rows=Array.prototype.slice.call(document.getElementById('rows').querySelectorAll('tr')),
-    count=document.getElementById('count');
-function visible(r){
-  var needle=q.value.trim().toLowerCase();
-  if(needle){var hay=(r.dataset.title+' '+r.dataset.author).toLowerCase();if(hay.indexOf(needle)===-1)return false;}
-  if(g.value&&r.dataset.genre!==g.value)return false;
-  return true;
-}
-function cmp(a,b){
-  switch(s.value){
-    case 'title-desc':return b.dataset.title.localeCompare(a.dataset.title);
-    case 'cards-desc':return (+b.dataset.cards)-(+a.dataset.cards);
-    case 'cards-asc':return (+a.dataset.cards)-(+b.dataset.cards);
-    case 'date-desc':return b.dataset.date.localeCompare(a.dataset.date);
-    case 'date-asc':return a.dataset.date.localeCompare(b.dataset.date);
-    default:return a.dataset.title.localeCompare(b.dataset.title);
-  }
-}
-function apply(){
-  var shown=0;
-  rows.forEach(function(r){var v=visible(r);r.style.display=v?'':'none';if(v)shown++;});
-  rows.sort(cmp).forEach(function(r){r.parentNode.appendChild(r);});
-  count.textContent='Showing '+shown+' of '+rows.length+' decks';
-  var empty=document.getElementById('emptyrow');
-  if(shown===0&&!empty){var tr=document.createElement('tr');tr.id='emptyrow';tr.className='empty';
-    tr.innerHTML='<td colspan="5">No books match. Try clearing the search or filters.</td>';
-    document.getElementById('rows').appendChild(tr);}
-  else if(shown>0&&empty){empty.remove();}
-}
-q.addEventListener('input',apply);g.addEventListener('change',apply);s.addEventListener('change',apply);
-document.getElementById('reset').addEventListener('click',function(){q.value='';g.value='';s.value='title-asc';apply();});
-apply();
-})();
-</script></body></html>
+</style>
+</head>
+<body>
+<header><h1>Idea Ripper</h1><div class="sub">Ten Cool Keepers</div></header>
+<main>
+<p class="purpose">Stealable mechanisms from sci-fi only. No self-help, no love stories. The list grows as the ripping gets better.</p>
+<p class="meta">10 keepers · curated 2026-09-22</p>
+
+<article class="card"><h3><span class="num">1</span>Two circulatory systems: ambient and hot</h3><div class="src">Project Hail Mary — Andy Weir · <span class="pill mechanism">mechanism</span></div><p class="steal">&ldquo;They have two separate circulatory systems: the &ldquo;ambient&rdquo; system and the &ldquo;hot&rdquo; system.&rdquo;</p><p class="uw">Use when: you need alien biology that forces engineering constraints (not just weird anatomy).</p></article>
+
+<article class="card"><h3><span class="num">2</span>Hot system must cool before workers can service it</h3><div class="src">Project Hail Mary — Andy Weir · <span class="pill mechanism">mechanism</span></div><p class="steal">&ldquo;But in order for his worker cells to service any part of the hot-blood system, the system has to be cooled to ambient levels.&rdquo;</p><p class="uw">Use when: explaining maintenance windows on a live high-energy system.</p></article>
+
+<article class="card"><h3><span class="num">3</span>Taumoeba needs its own life-support diet</h3><div class="src">Project Hail Mary — Andy Weir · <span class="pill mechanism">mechanism</span></div><p class="steal">&ldquo;That reminds me: I need a life-support system for Taumoeba&mdash;something that feeds them just enough Astrophage to stay alive.&rdquo;</p><p class="uw">Use when: a solution organism becomes a second payload you have to keep alive.</p></article>
+
+<article class="card"><h3><span class="num">4</span>Edge-case short can fake the IR reading</h3><div class="src">Project Hail Mary — Andy Weir · <span class="pill mechanism">mechanism</span></div><p class="steal">&ldquo;But there is a possible edge case, extremely unlikely, that a short in this system could make the IR sensors lie.&rdquo;</p><p class="uw">Use when: a monitoring stack can fail into false confidence.</p></article>
+
+<article class="card"><h3><span class="num">5</span>Walker brain under a vestigial armored head</h3><div class="src">Where the Axe Is Buried — Ray Nayler · <span class="pill mechanism">mechanism</span></div><p class="steal">&ldquo;Under the armored turret of its vestigial head, the walker had a mid-generation machine-learning brain.&rdquo;</p><p class="uw">Use when: obsolete bodies still ship with current ML &mdash; upgrade mismatch as plot engine.</p></article>
+
+<article class="card"><h3><span class="num">6</span>Scrim vs full pattern</h3><div class="src">Where the Axe Is Buried — Ray Nayler · <span class="pill mechanism">mechanism</span></div><p class="steal">&ldquo;But underneath the scrim is the real pattern, the full pattern, which can only be seen when the dioramaama is complete.&rdquo;</p><p class="uw">Use when: a system shows a clean UI while the real control graph stays hidden.</p></article>
+
+<article class="card"><h3><span class="num">7</span>Machine-governed life ends in confusion</h3><div class="src">Where the Axe Is Buried — Ray Nayler · <span class="pill mechanism">mechanism</span></div><p class="steal">&ldquo;While the world writhes in confusion, while their automated, mechanized, machine-governed, artificial way of life ends.&rdquo;</p><p class="uw">Use when: automation collapse is social weather, not a single server outage.</p></article>
+
+<article class="card"><h3><span class="num">8</span>Life-support cylinder replaces the body</h3><div class="src">The Collected Stories of Arthur C. Clarke — Arthur C. Clarke · <span class="pill mechanism">mechanism</span></div><p class="steal">&ldquo;The life-support system inside the metal cylinder that had replaced his fragile body functioned equally well in any gravity field&mdash;or none.&rdquo;</p><p class="uw">Use when: embodiment is optional and the person becomes a portable habitat.</p></article>
+
+<article class="card"><h3><span class="num">9</span>Power elements hidden at the cold end</h3><div class="src">The Collected Stories of Arthur C. Clarke — Arthur C. Clarke · <span class="pill mechanism">mechanism</span></div><p class="steal">&ldquo;Though I fixed the power elements at the cold end of the system, I never really saw them; they were completely hidden in anticorrosive paint.&rdquo;</p><p class="uw">Use when: critical infrastructure is designed to be invisible even to its operator.</p></article>
+
+<article class="card"><h3><span class="num">10</span>Translation system as elegant cage</h3><div class="src">Dungeon Crawler Carl — Matt Dinniman · <span class="pill mechanism">mechanism</span></div><p class="steal">&ldquo;This whole translation system is quite elegant, I must admit.&rdquo;</p><p class="uw">Use when: a polished interface is the trap &mdash; elegance as soft control.</p></article>
+
+</main>
+<footer>Idea Ripper · ten cool keepers</footer>
+</body>
+</html>
