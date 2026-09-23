@@ -2363,6 +2363,152 @@
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
+  },
+  {
+   "title": "The pipeline, not the point solution",
+   "type": "argument",
+   "steal": "Large Language Models in finance are best understood as part of a pipeline rather than as a point solution. Raw documents, time series, and market feeds are curated, normalized, and embedded; retrieval layers keep knowledge current; generation is constrained by financial identities, accounting rules, and risk limits; policies are aligned and evaluated; and decisions are executed within a framework of governance and oversight.",
+   "why": "Upgrading the model is the least interesting move in the stack: if retrieval is stale, numbers are uncited, and decisions are ungated, a better generator just produces better-looking failures faster. Budget and scrutiny should flow to the pipeline joints, not the model checkpoint.",
+   "uw": "When a team frames an LLM project as 'pick the best model,' reframe the plan around the pipeline: curation, retrieval, constraint, alignment, governance.",
+   "intents": [
+    "change someone's mind",
+    "a system feels stuck"
+   ],
+   "source_locator": "Preface",
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "related_ids": [
+    9
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "title": "Four layers have to agree",
+   "type": "concept",
+   "steal": "The architecture has four layers, illustrated in Figure 11.1 . Evidence and assurance flow upward from infrastructure and behavior to risk and accountability, while policy, limits, permissions, and escalation rules flow downward. The layers are interdependent rather than sequential maturity levels.",
+   "why": "Controls fail at layer boundaries, not inside layers: a calibrated model fed stale data, or fresh data flowing through unpermissioned tools, breaks the system even though each layer 'works.' The four layers are the checklist for where to look when something goes wrong.",
+   "uw": "When designing or auditing a financial LLM system, verify all four layers agree — infrastructure, behavior, risk, accountability — instead of certifying the model alone.",
+   "intents": [
+    "a system feels stuck",
+    "make an idea concrete"
+   ],
+   "source_locator": "Ch. 11, §11.4",
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "related_ids": [
+    8
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "title": "A fine-tuning run is defined by its contract",
+   "type": "definition",
+   "steal": "a financial fine-tuning experiment is not defined by a model name and a training set. It is defined by a decision date, a permissible information set, a task loss, a calibration protocol, and an approval boundary.",
+   "why": "Model name plus training set is how demos are described; decision date plus information set plus loss plus calibration plus approval boundary is how production systems are defended. Without the contract, a fine-tune can't be reproduced, audited, or blamed — it can only be admired.",
+   "uw": "Before greenlighting any fine-tuning run, demand the contract: what data as of when, what loss, what calibration check, who approved it.",
+   "intents": [
+    "make an idea concrete",
+    "a better question"
+   ],
+   "source_locator": "Ch. 3, §3.1",
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "related_ids": [
+    7,
+    11
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "title": "RAG's two controls",
+   "type": "mechanism",
+   "steal": "Two things distinguish it from a generic one, and both are controls rather than models. The availability filter D ≤ t admits only documents that existed at the decision time t , which is what stops a backtest from reading tomorrow’s filing. The claim-level verifier checks each material claim A i against its retrieved evidence bundle E i before the answer is released, which is what stops a fluent answer from being an unsupported one.",
+   "why": "A RAG system fails in exactly two places that matter: letting the future leak in (the availability filter) and letting fluent prose out without evidence (the claim verifier). Everything else — embeddings, chunking, reranking — is optimization inside those two guardrails.",
+   "uw": "When evaluating a RAG build, check the two controls first: does retrieval enforce the decision-time cutoff, and does anything verify claims against evidence before release?",
+   "intents": [
+    "notice what others miss",
+    "a system feels stuck"
+   ],
+   "source_locator": "Ch. 4, §4.2",
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "related_ids": [
+    7,
+    10
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "title": "MCP is a protocol, not a governance framework",
+   "type": "argument",
+   "steal": "MCP is an interoperability protocol, not a complete governance framework. A regulated institution must therefore place a separate financial control envelope around MCP-based tool use. This envelope includes identity, least-privilege authorization, typed tool contracts, point-in-time evidence checks, deterministic numerical recomputation, approval gates, idempotent execution, and tamper-evident audit records.",
+   "why": "A protocol standardizes how tools talk; it says nothing about who may call them, with what authority, or what happens when they lie. Treating MCP as governance is like treating TCP as a firewall — the envelope has to be built separately, or every connected tool inherits the model's authority by default.",
+   "uw": "When wiring MCP tools into a regulated workflow, build the control envelope first: identity, least-privilege auth, typed contracts, approval gates, audit records.",
+   "intents": [
+    "change someone's mind",
+    "notice what others miss"
+   ],
+   "source_locator": "Ch. 6, §6.1",
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "related_ids": [
+    6
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "title": "Every artifact carries its provenance",
+   "type": "mechanism",
+   "steal": "a sentence that reaches the memo without one is not a stylistic lapse but a broken audit trail.",
+   "why": "The chain breaks at table extraction — where a structured number gets flattened into prose and loses its row, column, and timestamp. Once that happens the memo looks rigorous and is unauditable; the fix is provenance at the artifact level, not prettier writing.",
+   "uw": "When a generated memo contains numbers, trace each one back to its source artifact before trusting it — a number without lineage is decoration.",
+   "intents": [
+    "notice what others miss",
+    "make an idea concrete"
+   ],
+   "source_locator": "Ch. 8, §8.1",
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "related_ids": [
+    4
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "title": "One scalar reward can't hold compliance",
+   "type": "argument",
+   "steal": "Capturing all of these dimensions in a single scalar reward is challenging; in practice, institutions often train separate reward models for different preference dimensions and combine their signals.",
+   "why": "A single scalar forces rigor, calibration, tone, compliance, and readability to trade off against each other inside one number — so the model learns whichever dimension is easiest to game. Separate reward models per dimension keep the trade-offs visible and auditable.",
+   "uw": "When reviewing an RLHF setup for a compliance-sensitive task, ask how many reward dimensions are trained separately — one scalar for everything is a red flag.",
+   "intents": [
+    "change someone's mind",
+    "a better question"
+   ],
+   "source_locator": "Ch. 3, §3.7.5",
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "related_ids": [
+    6
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "title": "Performance is not a single-number property",
+   "type": "argument",
+   "steal": "For generative systems, quality is vector-valued. A financial LLM is not judged only by a semantic metric such as ROUGE, BLEU, cosine similarity, or pairwise preference. It is judged by a tuple: (3) covering task usefulness, evidence faithfulness, numerical consistency, calibration, policy compliance, latency, and cost.",
+   "why": "A model that tops the semantic-similarity leaderboard can still hallucinate numbers, leak the future, and cost a fortune to run. Judging by one metric optimizes for the metric; judging by the tuple forces the trade-offs into the open.",
+   "uw": "When comparing models or vendors, demand the full tuple — usefulness, faithfulness, numerical consistency, calibration, compliance, latency, cost — not a single score.",
+   "intents": [
+    "change someone's mind",
+    "a strange example"
+   ],
+   "source_locator": "Preface",
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "related_ids": [
+    4
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
   }
  ]
 }
