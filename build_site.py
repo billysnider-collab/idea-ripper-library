@@ -169,11 +169,11 @@ footer{color:var(--muted);font-size:.8rem;padding:2rem 1.5rem;border-top:1px sol
 #splash h1{font-size:2.6rem;margin:0 0 .4rem;position:relative;z-index:2}
 #splash .tag{color:var(--muted);font-size:1rem;max-width:34rem;position:relative;z-index:2;margin:0 0 1.4rem}
 #floatfield{position:absolute;inset:0;z-index:1;pointer-events:none}
-.floater{position:absolute;max-width:250px;background:rgba(18,26,43,.85);border:1px solid var(--border);border-radius:10px;padding:.5rem .7rem;font-size:.78rem;text-align:left;pointer-events:auto;cursor:pointer;animation:drift ease-in-out infinite}
+.floater{position:absolute;max-width:230px;background:rgba(18,26,43,.85);border:1px solid var(--border);border-radius:10px;padding:.5rem .7rem;font-size:.78rem;text-align:left;pointer-events:auto;cursor:pointer;animation:drift ease-in-out infinite}
 .floater .ft{font-weight:600;color:var(--fg);display:block;margin-bottom:.15rem;font-size:.8rem}
 .floater .fs{color:var(--muted);font-style:italic;display:block}
 .floater:hover{border-color:var(--amber)}
-@keyframes drift{0%,100%{transform:translateY(-10px) rotate(var(--rot,0deg))}50%{transform:translateY(12px) rotate(var(--rot,0deg))}}
+@keyframes drift{0%,100%{transform:translateY(-7px) rotate(var(--rot,0deg))}50%{transform:translateY(7px) rotate(var(--rot,0deg))}}
 #splash .dive{position:relative;z-index:2;background:transparent;border:1px solid var(--amber);color:var(--amber);border-radius:999px;padding:.55rem 1.4rem;font-size:.9rem;cursor:pointer}
 #splash .dive:hover{background:var(--amber);color:#0b1220}
 @media (prefers-reduced-motion:reduce){.floater{animation:none}}
@@ -203,6 +203,8 @@ footer{color:var(--muted);font-size:.8rem;padding:2rem 1.5rem;border-top:1px sol
 .hrow{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap}
 .hrow strong{font-size:1.3rem}
 @media (max-width:700px){.floater{display:none}}
+@media (max-height:500px){.floater{display:none}}
+@media (min-width:701px) and (max-width:900px){.floater{max-width:180px;font-size:.72rem}}
 @media(min-width:1000px){
 main{max-width:1180px}
 .controls .inner,.jumpchips,header{max-width:1180px}
@@ -333,14 +335,23 @@ function openHash(){
 }
 var field=document.getElementById('floatfield');
 if(field&&window.FLOATERS){
-  var pool=window.FLOATERS.slice(),picks=[],K=Math.min(6,pool.length),i;
+  /* fixed slots around the edges keep floaters from ever overlapping;
+     slot order is shuffled per load so the arrangement still feels fresh.
+     Narrower screens get 4 floaters in 2 roomy rows instead of 6 in 3. */
+  var SLOTS=window.innerWidth<900
+    ? [[6,8],[68,6],[9,66],[66,68]]
+    : [[5,6],[70,5],[3,36],[72,38],[8,68],[66,70]];
+  var pool=window.FLOATERS.slice(),picks=[],K=Math.min(SLOTS.length,pool.length),i;
   for(i=0;i<K;i++){picks.push(pool.splice(Math.floor(Math.random()*pool.length),1)[0]);}
   var cards=document.querySelectorAll('.card');
-  picks.forEach(function(p){
+  var si,sj,st;
+  for(si=SLOTS.length-1;si>0;si--){sj=Math.floor(Math.random()*(si+1));st=SLOTS[si];SLOTS[si]=SLOTS[sj];SLOTS[sj]=st;}
+  picks.forEach(function(p,idx){
     var d=document.createElement('div');
     d.className='floater';
-    d.style.left=(4+Math.random()*72).toFixed(1)+'%';
-    d.style.top=(6+Math.random()*68).toFixed(1)+'%';
+    var s=SLOTS[idx%SLOTS.length];
+    d.style.left=(s[0]+(Math.random()*4-2)).toFixed(1)+'%';
+    d.style.top=(s[1]+(Math.random()*4-2)).toFixed(1)+'%';
     d.style.animationDuration=(9+Math.random()*9).toFixed(1)+'s';
     d.style.animationDelay=(-Math.random()*12).toFixed(1)+'s';
     d.style.setProperty('--rot',(Math.random()*6-3).toFixed(1)+'deg');
