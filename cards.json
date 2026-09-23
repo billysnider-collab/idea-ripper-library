@@ -396,6 +396,31 @@
    "book": "The paradoxical pope: the contemplative and active lives of Gregory the Great — Elizabeth E. Marvel",
    "genre": "Thesis",
    "bookline": "Masters thesis — Gordon-Conwell Theological Seminary, 2015. Full text: https://archive.org/details/2015MarvelElizabeth"
+  },
+  {
+   "book": "Seizing the Digital High Ground: Military Operations and Politics in the Social Media Era — author not named in IA metadata",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — National Defense University (Joint Advanced Warfighting School), 2015. Full text: https://archive.org/details/DTIC_ADA622701"
+  },
+  {
+   "book": "Yemen: Comparative Insurgency and Counterinsurgency — Ryan Johnson",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/yemencomparative1094545200"
+  },
+  {
+   "book": "Complexity Theory and Its Applications in Linear Quantum Optics — Jonathan P. Olson",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Louisiana State University, 2016. Full text: https://archive.org/details/arxiv-1607.02991"
+  },
+  {
+   "book": "Water Quality and Faecal Coliform Dynamics in Aquaculture Bheris of East Calcutta Wetland — Rajashree Ghosh",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Sister Nivedita University, 2025. Full text: https://archive.org/details/sgng.20660-water-quality-and-fecal-coliform-dyanamics-in-aquacul-ture-bheri-"
+  },
+  {
+   "book": "The Housing Secure Initiative: Helping Families Overcome Housing Insecurity — Geoffrey Heth",
+   "genre": "Thesis",
+   "bookline": "D.Min. thesis-project thesis — Gordon-Conwell Theological Seminary, 2023. Full text: https://archive.org/details/heth-geoffrey-w-final"
   }
  ],
  "cards": [
@@ -2675,6 +2700,46 @@
    "steal": "Gregory the Great's monastic years at St. Andrews — the contemplative life — were the preparation that let him steer the Roman Church through plague, famine, and invasion; he reconciled contemplation with action into a model of ecclesiastical leadership, crystallized in the mission of monks to England that secured Rome's central authority into the Middle Ages.",
    "why": "Leadership under civilizational collapse — Gregory held the Roman Church together while the empire around it came apart, and the thesis argues his preparation was withdrawal, not war-gaming.",
    "uw": "The leader who can hold a crisis is often the one who trained in stillness — contemplative formation can be preparation for action, not retreat from it."
+  },
+  {
+   "title": "Seizing the Digital High Ground: Military Operations and Politics in the Social Media Era",
+   "book": "Seizing the Digital High Ground: Military Operations and Politics in the Social Media Era — author not named in IA metadata",
+   "type": "argument",
+   "steal": "Unless the military vastly improves its understanding of social media's utility and invests more in applying it, it risks losing relevance and becoming a blunt instrument for executing political aims and providing security in the 21st century; the British military's current doctrinal view is limited, best characterised as caution, with opinion divided on relative threats and opportunities.",
+   "why": "It names the mechanism of modern information warfare: social media has decisively altered the speed, scrutiny, and sensitivity of the military's operational environment — imposing values and manipulating the news is increasingly difficult for governments and Great Powers.",
+   "uw": "Treat a new information environment as a threat to be policed and you fall behind; treat it as terrain to be seized and you stay relevant — caution is a doctrine, not a strategy."
+  },
+  {
+   "title": "Yemen: Comparative Insurgency and Counterinsurgency",
+   "book": "Yemen: Comparative Insurgency and Counterinsurgency — Ryan Johnson",
+   "type": "argument",
+   "steal": "Yemen's counterinsurgency and counterterrorism policies were less effective against the Houthi movement than against AQAP because of four factors: the military's poor COIN/CT policies, the international effort's focus on AQAP, the Houthis' ability to recruit and mobilize large numbers of followers, and the Houthi leadership's pragmatic alliances — together these gave the Houthis the advantage over both AQAP and the Yemeni government.",
+   "why": "Written in March 2015 as the Houthis captured Sanaa, it diagnosed the exact resilience mechanisms — mass mobilization plus pragmatic alliances — that explain how the Houthis survived a decade of war and now hold the Red Sea chokepoint.",
+   "uw": "Counterinsurgency fails when it fights the wrong enemy first — the international fixation on AQAP left the Houthis room to out-organize and out-ally everyone."
+  },
+  {
+   "title": "Complexity Theory and Its Applications in Linear Quantum Optics",
+   "book": "Complexity Theory and Its Applications in Linear Quantum Optics — Jonathan P. Olson",
+   "type": "argument",
+   "steal": "The 2010 discovery that the BosonSampling problem is likely hard for a classical computer to simulate opened a new technology path: passive linear optical networks with quantum states of light inherit the same computational hardness, and the intuitions behind BosonSampling led to developments in optical metrology suggesting quantum sensors could be viable within a few years with only marginal improvements in technology.",
+   "why": "It traces how a result in abstract computational complexity becomes a sensor roadmap — the through-line from \"a classical computer cannot efficiently simulate this\" to deployable quantum metrology.",
+   "uw": "Today's abstract complexity result is tomorrow's hardware — when a problem is provably hard classically, the physics that makes it hard is itself the technology."
+  },
+  {
+   "title": "Water Quality and Faecal Coliform Dynamics in Aquaculture Bheris of East Calcutta Wetland",
+   "book": "Water Quality and Faecal Coliform Dynamics in Aquaculture Bheris of East Calcutta Wetland — Rajashree Ghosh",
+   "type": "argument",
+   "steal": "The East Kolkata Wetlands' \"bheris\" — shallow fish ponds fed by treated urban wastewater — are a century-old, Ramsar-recognized circular system that converts municipal sewage into protein; a six-month multi-site assessment found a notable improvement in the Water Quality Index across several sites and a significant reduction in faecal coliform counts, indicating growing suitability for sustainable aquaculture.",
+   "why": "One of the world's oldest large-scale circular-economy food systems — a city farming fish in its own treated wastewater — and the measured trend is improving water quality, not declining.",
+   "uw": "The most durable circular economies aren't new tech — Kolkata has been turning sewage into protein for a century; measure the system before assuming it's failing."
+  },
+  {
+   "title": "The Housing Secure Initiative: Helping Families Overcome Housing Insecurity",
+   "book": "The Housing Secure Initiative: Helping Families Overcome Housing Insecurity — Geoffrey Heth",
+   "type": "argument",
+   "steal": "A church can attempt to move families from housing insecurity to housing security through deep, long-term relational community investment: RockPointe Church's Housing Secure Initiative was a 36-month journey with six Calgary families, treating them with the dignity and compassion the author sees modeled by Jesus, with the aim of transformation of people, families, communities, and nations.",
+   "why": "It is a documented non-state, non-market intervention in the housing crisis — community-relationship capital as the mechanism, a small-sample practice-based counter-model to top-down housing policy.",
+   "uw": "Housing insecurity is also a community deficit — long, committed relational support can attempt what neither the market nor the state delivers on its own."
   }
  ]
 }
