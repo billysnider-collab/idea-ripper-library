@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IDEA RIPPER — visual lock</title>
+<link rel="icon" type="image/svg+xml" href="r-mark.svg">
+<style>
+:root{--paper:#f2e8d5;--ink:#14110c;--red:#d92b1f;--yellow:#ffd21f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Segoe UI",system-ui,sans-serif;line-height:1.5}
+.wrap{max-width:860px;margin:0 auto;padding:2rem 1.25rem 4rem}
+h1{font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;font-family:ui-monospace,Menlo,Consolas,monospace;margin:0 0 .4rem;color:#57503f}
+h2{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;font-family:ui-monospace,Menlo,Consolas,monospace;margin:2.6rem 0 .8rem;color:#57503f;border-bottom:2px solid var(--ink);padding-bottom:.4rem}
+.hero{background:#f2e8d5}
+.hero img{display:block;width:min(560px,100%)}
+.closeup{background:#f2e8d5;border:1px solid #d8c9a8}
+.closeup img{display:block;width:100%}
+.marks{display:flex;align-items:flex-end;gap:2.5rem;flex-wrap:wrap}
+.marks figure{margin:0;text-align:center}
+.marks figcaption{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.68rem;color:#57503f;margin-top:.4rem}
+.mono{background:#fff;border:1px solid #d8c9a8;padding:1.5rem}
+.mono img{display:block;width:min(480px,100%)}
+.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.6rem}
+.sw{border:1px solid #d8c9a8;padding:.7rem;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.72rem}
+.sw i{display:block;height:44px;margin-bottom:.5rem;border:1px solid rgba(0,0,0,.15)}
+.check{list-style:none;margin:0;padding:0;font-size:.92rem}
+.check li{margin:.45rem 0;padding-left:1.6rem;position:relative}
+.check li::before{content:"";position:absolute;left:0;top:.32em;width:.9em;height:.5em;border-left:3px solid var(--red);border-bottom:3px solid var(--red);transform:rotate(-45deg) skew(-8deg)}
+.kill{font-size:.85rem;color:#57503f;columns:2;column-gap:2rem}
+.kill li{margin:.25rem 0;break-inside:avoid}
+.sample{max-width:560px;background:#121a2b;color:#f3f0e8;border:1px solid #243049;border-radius:8px;padding:.9rem 1rem;position:relative;margin-top:1rem}
+.stolentab{position:absolute;top:-10px;right:12px;background:var(--yellow);color:var(--ink);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:.22rem .55rem .26rem;transform:rotate(2deg);box-shadow:0 2px 5px rgba(0,0,0,.4);border-radius:1px}
+.kicker{display:flex;align-items:center;gap:.45rem;margin:.55rem 0 .1rem;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.62rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8b97ad}
+.kicker svg{width:1.5rem;height:.6rem;flex:none}
+.kicker .ktext{border-bottom:2px solid var(--red);padding-bottom:1px}
+.steal{font-family:Georgia,serif;font-size:1.02rem;margin:.3rem 0}
+.note{font-size:.85rem;color:#57503f;border-left:3px solid var(--red);padding-left:.8rem;margin-top:2rem}
+a{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Idea Ripper — visual lock · 2026-09-23</h1>
+
+<h2>1 · The wordmark</h2>
+<div class="hero"><img src="wordmark-inline.svg" alt="IDEA RIPPER wordmark with a red tear through RIPPER"></div>
+
+<h2>2 · The tear, close up</h2>
+<div class="closeup"><img src="wordmark-closeup.svg" alt="Close-up of the red tear through RIPPER"></div>
+
+<h2>3 · The R mark — torn-page seal</h2>
+<div class="marks">
+<figure><img src="r-mark.svg" width="120" height="120" alt="R mark large"><figcaption>120 px</figcaption></figure>
+<figure><img src="r-mark-32.png" width="32" height="32" alt="R mark 32px"><figcaption>32 px</figcaption></figure>
+<figure><img src="r-mark-16.png" width="16" height="16" alt="R mark 16px"><figcaption>16 px favicon</figcaption></figure>
+</div>
+
+<h2>4 · Mono — single-color print</h2>
+<div class="mono"><img src="wordmark-mono.svg" alt="IDEA RIPPER wordmark in single black"></div>
+
+<h2>5 · Keeper card chrome</h2>
+<div class="sample">
+<span class="stolentab">Stolen</span>
+<div class="kicker"><svg viewBox="0 0 20 8" aria-hidden="true"><polyline points="1,4.5 5,2 9,5.5 13,2 17,5 19,3" fill="none" stroke="#d92b1f" stroke-width="2"/></svg><span class="ktext">Ripped from</span></div>
+<p class="steal">"The best part of the book, lifted clean."</p>
+<div class="kicker"><svg viewBox="0 0 20 8" aria-hidden="true"><polyline points="1,4.5 5,2 9,5.5 13,2 17,5 19,3" fill="none" stroke="#d92b1f" stroke-width="2"/></svg><span class="ktext">Use when</span></div>
+<p class="steal" style="font-family:inherit;font-size:.9rem">You need the idea, not the chapter.</p>
+</div>
+
+<h2>6 · Palette</h2>
+<div class="swatches">
+<div class="sw"><i style="background:#14110c"></i>Black — the source / wordmark<br>#14110c</div>
+<div class="sw"><i style="background:#f2e8d5"></i>Warm paper — books, cards, context<br>#f2e8d5</div>
+<div class="sw"><i style="background:#ffd21f"></i>Electric yellow — keeper / STOLEN<br>#ffd21f</div>
+<div class="sw"><i style="background:#d92b1f"></i>Red — the rip / annotation / extraction<br>#d92b1f</div>
+</div>
+
+<h2>7 · The lock — Billy's checklist</h2>
+<ul class="check">
+<li>Product name stays IDEA RIPPER — no renames, no "Book Job" / "Contraband Library" titles</li>
+<li>One decisive red tear through RIPPER — legible after the cut</li>
+<li>Torn-page R as favicon / seal, separate from the wordmark</li>
+<li>Keeper cards: yellow STOLEN tab + red annotation mark</li>
+<li>Kill / rewrite / ungraded cards get NO yellow tab (data-status hook is live)</li>
+<li>Feel: publishing imprint + field notebook + slightly illicit tool</li>
+<li>Flat ink, rough torn edges, red-pencil underlines — no AI/SaaS gloss</li>
+<li>Mono version reads in single-color print</li>
+</ul>
+
+<h2>8 · Kill list</h2>
+<ul class="kill">
+<li>eyes</li><li>satellites</li><li>real agency seals</li><li>TOP SECRET stamps</li><li>glowing brains</li><li>shredder-as-destruction</li><li>soft pastels</li><li>blue SaaS glow</li><li>dark-academia cosplay</li><li>conspiracy seals</li><li>renaming the product</li>
+</ul>
+
+<p class="note">Supersedes the Hermes theme brief <a href="IDEA-RIPPERS-THEME-BRIEF-20260923.md">IDEA-RIPPERS-THEME-BRIEF-20260923.md</a> for the mark — the brief is retained as an appendix. Source: <code>brand/make_mark.py</code>. Favicon PNGs: 16 / 32 / 180.</p>
+</div>
+</body>
+</html>

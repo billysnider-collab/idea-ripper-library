@@ -23,6 +23,11 @@ genre_order = ds["genre_order"]
 def books_in_genre(g):
     return [b for b in books if b["genre"] == g][::-1]
 curated = ds.get("curated", "")
+wm_path = os.path.join(BASE, "brand", "wordmark-inline.svg")
+WORDMARK_SVG = open(wm_path, encoding="utf-8").read() if os.path.exists(wm_path) else "<strong>Idea Ripper</strong>"
+RIP_SVG = ('<svg class="ripmark" viewBox="0 0 20 8" aria-hidden="true">'
+           '<polyline points="1,4.5 5,2 9,5.5 13,2 17,5 19,3" fill="none" stroke="#d92b1f" stroke-width="2"/>'
+           '</svg>')
 
 # full-book deep dives: standalone briefs too rich to shred into keepers
 fb_path = os.path.join(BASE, "fullbooks.json")
@@ -83,24 +88,29 @@ def book_block(b):
         pv = c["steal"]
         if len(pv) > 90:
             pv = pv[:90].rsplit(" ", 1)[0] + "\u2026"
+        kicker_rip = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Ripped from</span></div>'
+        kicker_use = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Use when</span></div>'
         parts.append(
             '<article class="card%s" id="c%d" data-n="%d" '
-            'data-book="%s" data-genre="%s" data-type="%s" data-search="%s">'
+            'data-book="%s" data-genre="%s" data-type="%s" data-status="%s" data-search="%s">'
+            '<span class="stolentab">Stolen</span>'
             '<div class="cardhead" role="button" tabindex="0">'
             '<span class="num">%d</span>'
             '<span class="ctext"><span class="ctitle">%s</span><span class="pv">%s</span></span>'
             '<span class="pill %s">%s</span></div>'
             '<div class="cardbody">'
+            '%s'
             '<p class="steal">%s</p>'
             '<p class="why"><span class="k">Why it matters:</span> %s</p>'
+            '%s'
             '<p class="uw">%s</p>'
             '<div class="actions"><button type="button" data-copy="steal">Copy steal</button>'
             '<button type="button" data-copy="uw">Copy use-when</button>'
             '<button type="button" data-copy="link">Copy link</button></div>'
             '</div></article>'
-            % (" open" if thesis_open else "", n_, n_, esca(c["book"]), esca(b["genre"]), esca(c["type"]), esca(search),
+            % (" open" if thesis_open else "", n_, n_, esca(c["book"]), esca(b["genre"]), esca(c["type"]), c.get("status", "keeper"), esca(search),
                n_, esc(c["title"]), esc(pv), esca(c["type"]), esc(c["type"]),
-               esc(c["steal"]), esc(c["why"]), esc(c["uw"])))
+               kicker_rip, esc(c["steal"]), esc(c["why"]), kicker_use, esc(c["uw"])))
     parts.append('</div></section>')
     return "\n".join(parts)
 
@@ -415,6 +425,20 @@ main{max-width:1180px}
 .fbmeta{color:var(--muted);font-size:.78rem;margin:.4rem 0 0}
 .cardhead .fbnum{color:var(--amber);font-size:.85rem;flex:none;min-width:2.2rem}
 @media(min-width:1000px){.fbook:not(.collapsed) .fbcards{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;align-items:start}.fbook:not(.collapsed) .fbcards .card{margin:0}}
+/* ===== IDEA RIPPER visual lock (Billy lock 2026-09-23) ===== */
+header.masthead{max-width:none;padding:0;background:#f2e8d5;color:#14110c;border-bottom:3px solid #14110c}
+.mast-inner{max-width:1180px;margin:0 auto;padding:1.1rem 1.25rem .95rem}
+.wordmark{max-width:330px}
+.wordmark svg{display:block}
+.mast-sub{margin:.6rem 0 0;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.7rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase}
+.mast-sub .sep{color:#d92b1f}
+.mast-meta{margin:.3rem 0 0;font-size:.82rem;color:#57503f}
+.card{position:relative}
+.stolentab{position:absolute;top:-10px;right:12px;z-index:2;background:#ffd21f;color:#14110c;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:.22rem .55rem .26rem;transform:rotate(2deg);box-shadow:0 2px 5px rgba(0,0,0,.4);border-radius:1px;pointer-events:none}
+.card[data-status="kill"] .stolentab,.card[data-status="rewrite"] .stolentab,.card[data-status="ungraded"] .stolentab{display:none}
+.kicker{display:flex;align-items:center;gap:.45rem;margin:.55rem 0 .1rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.62rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8b97ad}
+.kicker .ripmark{width:1.5rem;height:.6rem;flex:none}
+.kicker .ktext{border-bottom:2px solid #d92b1f;padding-bottom:1px}
 """
 
 JS = r"""
@@ -610,6 +634,9 @@ page = """<!DOCTYPE html>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Cool Keepers - Idea Ripper</title>
+<link rel="icon" type="image/svg+xml" href="brand/r-mark.svg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="brand/r-mark-32.png"/>
+<link rel="apple-touch-icon" href="brand/apple-touch-icon.png"/>
 <style>%s</style>
 </head>
 <body>
@@ -619,9 +646,11 @@ page = """<!DOCTYPE html>
 <p class="tag">Stealable mechanisms from books worth stealing from. The list grows as the ripping gets better.</p>
 <button type="button" class="dive" id="dive">Dive into the library ↓</button>
 </section>
-<header>
-<div class="hrow"><strong>Cool Keepers</strong><span class="meta">%d keepers &middot; %d books &middot; curated %s</span></div>
-</header>
+<header class="masthead"><div class="mast-inner">
+<div class="wordmark" role="img" aria-label="Idea Ripper">%s</div>
+<p class="mast-sub">Cool Keepers <span class="sep">/</span> the idea-hunting library</p>
+<p class="mast-meta">%d keepers &middot; %d books &middot; curated %s</p>
+</div></header>
 <section id="intro">
 <p><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every keeper is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>
 <p><strong>How to hunt:</strong> tap a book to open its keepers, tap a card for the full steal, copy anything you want. Search hunts titles, steals, and use-whens all at once.</p>
@@ -649,7 +678,7 @@ page = """<!DOCTYPE html>
 <script>%s</script>
 <div id="toast" role="status"></div>
 </body>
-</html>""" % (CSS, n, len(books), curated, fb_intro, genre_opts, book_opts, type_opts, chips,
+</html>""" % (CSS, WORDMARK_SVG, n, len(books), curated, fb_intro, genre_opts, book_opts, type_opts, chips,
               "\n\n".join(sections), len(books), n, fb_footer, floaters_json, JS)
 
 open(os.path.join(BASE, "index.html"), "w", encoding="utf-8").write(page)
