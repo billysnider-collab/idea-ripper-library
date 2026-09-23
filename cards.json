@@ -160,6 +160,36 @@
    "book": "The Chaldean Oracles — attributed to Zoroaster (Westcott / Sapere Aude)",
    "genre": "Hermetica",
    "bookline": "Fragmentary oracles of the Intelligible Triad — Paternal Mind, silence, and the flower of mind."
+  },
+  {
+   "book": "Hermetic Arcanum — Jean d'Espagnet (Collectanea Hermetica Vol. I)",
+   "genre": "Hermetica",
+   "bookline": "Classic alchemical procedure text — Nature, Art, and the multiplying virtue hid in metals."
+  },
+  {
+   "book": "A Short Enquiry concerning the Hermetic Art — A Lover of Philalethes (Vol. III)",
+   "genre": "Hermetica",
+   "bookline": "Rosicrucian enquiry — imagination as occult tool, Hidden Fire, Great Work."
+  },
+  {
+   "book": "Aesch Mezareph (Purifying Fire) — from Kabalah Denudata (Vol. IV)",
+   "genre": "Hermetica",
+   "bookline": "Chymico-Kabbalistic map — metals seated on the Sephiroth."
+  },
+  {
+   "book": "Somnium Scipionis — Cicero (Vol. V, with L.O. essay)",
+   "genre": "Hermetica",
+   "bookline": "Scipio's dream — states, souls, spheres, and duty to stay embodied."
+  },
+  {
+   "book": "Euphrates, or the Waters of the East — Thomas Vaughan (Vol. VII)",
+   "genre": "Hermetica",
+   "bookline": "Rosicrucian tract on the secret water that flows from fire — element as state, not modern chemistry."
+  },
+  {
+   "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
+   "genre": "Nonfiction",
+   "bookline": "Scholarly map of Jewish mysticism — against rationalist dismissal, toward living authority of the vision."
   }
  ],
  "cards": [
@@ -1514,6 +1544,270 @@
    "steal": "To this end we are commanded to learn the Intelligible which exists beyond the mind, that divine portion of the being which exists beyond Intellect: and this it is only possible to grasp with the flower of the mind.",
    "why": "Even Mind has a beyond; the grasp-organ is the \"flower\" of mind — peak, not bulk cognition.",
    "uw": "Use when ordinary intellect is necessary but not sufficient for the real object."
+  },
+  {
+   "title": "Secret beyond Nature and Art is blindness",
+   "book": "Hermetic Arcanum — Jean d'Espagnet (Collectanea Hermetica Vol. I)",
+   "type": "argument",
+   "steal": "Whosoever affirmeth that the Philosophers' grand Secret is beyond the powers of Nature and Art, he is blind because he ignores the forces of Sol and Luna.",
+   "why": "The secret is not supernatural — blindness is ignoring the luminaries already in Nature's toolkit.",
+   "uw": "When someone treats a craft secret as magic instead of forces they refuse to name."
+  },
+  {
+   "title": "From metals, metals — species stays species",
+   "book": "Hermetic Arcanum — Jean d'Espagnet (Collectanea Hermetica Vol. I)",
+   "type": "mechanism",
+   "steal": "Whosoever seeketh the Art of perfecting and multiplying imperfect Metals, beyond the nature of Metals, goes in error, for from Metals the Metals are to be derived; even as from Man, Mankind; and from an Ox only, is that species to be obtained.",
+   "why": "Transformation is constrained by lineage — you cannot jump species and call it Art.",
+   "uw": "When a redesign claims to invent a new kind while only dressing the old genus."
+  },
+  {
+   "title": "Multiplying virtue hid — Art makes it manifest",
+   "book": "Hermetic Arcanum — Jean d'Espagnet (Collectanea Hermetica Vol. I)",
+   "type": "mechanism",
+   "steal": "Metals, we must confess, cannot be multiplied by the instinct and labour of Nature only; yet we may affirm that the multiplying virtue is hid in their depths, and manifested itself by the help of Art: In this Work, Nature standeth in need of the aid of Art; and both do make a perfect whole.",
+   "why": "Potential is latent in Nature; Art is the reveal operation — neither works alone.",
+   "uw": "When arguing that craft does not invent capacity, it surfaces what was buried."
+  },
+  {
+   "title": "Sol seeds; Luna is Matrix of Nature",
+   "book": "Hermetic Arcanum — Jean d'Espagnet (Collectanea Hermetica Vol. I)",
+   "type": "mechanism",
+   "steal": "NOW Sol is Masculine, forasmuch as he sendeth forth active and energizing seed; Luna is Feminine or Negative and she is called the Matrix of Nature, because she receiveth the sperm, and fostereth it by monthly provision, yet doth Luna not altogether want in positive or active virtue.",
+   "why": "Polarity is functional (seed / matrix), and the \"negative\" side still has active virtue — not a dead receptacle.",
+   "uw": "When a dual system treats one pole as pure passivity."
+  },
+  {
+   "title": "No tincture without Sol and Luna",
+   "book": "Hermetic Arcanum — Jean d'Espagnet (Collectanea Hermetica Vol. I)",
+   "type": "argument",
+   "steal": "He that seeks for a physical tincture without Sol and Luna, loseth both his cost and pains: for Sol afforded a most plentiful tincture of redness, and Luna of whiteness, for these two only are called perfect; because they are filled with the substance of purest Sulphur, perfectly clarified by the skill of nature.",
+   "why": "Perfect dyes come from already-clarified sources — skip the luminaries and you buy failure twice.",
+   "uw": "When a process skips the two proven carriers and hopes a third ingredient will color everything."
+  },
+  {
+   "title": "Mercury must first receive a tincture",
+   "book": "Hermetic Arcanum — Jean d'Espagnet (Collectanea Hermetica Vol. I)",
+   "type": "mechanism",
+   "steal": "Let thy Mercury therefore receive a tincture from one or other of these luminaries; for anything must of necessity possess a tincture before it can tinge other bodies.",
+   "why": "You cannot transmit what you do not hold — the medium must be dyed before it dyes.",
+   "uw": "When a messenger, API, or culture is asked to change others without being changed first."
+  },
+  {
+   "title": "Reveiling as well as revealing",
+   "book": "Hermetic Arcanum — Jean d'Espagnet (Collectanea Hermetica Vol. I)",
+   "type": "passage",
+   "steal": "Yet it must be confessed that he has well succeeded in reveiling, as well as revealing, the secret of what was meant by the Prima Materia and the real nature alike of The Sulphur, The Salt, and The Mercury.",
+   "why": "Occult pedagogy does both: disclose enough to run, veil enough to keep the unworthy out.",
+   "uw": "When a text seems simultaneously helpful and obstructive on purpose."
+  },
+  {
+   "title": "Who can read may run",
+   "book": "Hermetic Arcanum — Jean d'Espagnet (Collectanea Hermetica Vol. I)",
+   "type": "passage",
+   "steal": "The Arcanum describes at considerable length, and with obvious good faith, the procedure of one school of Alchymists in the search for the secret of the Stone Philosophical, and it formulates the stages of the work so that he or she who can read may run.",
+   "why": "Stages are written for the literate initiate — literacy is the speed limit, not the map's length.",
+   "uw": "When a manual is dense for gatekeeping, not for padding."
+  },
+  {
+   "title": "Imagination is a sun in the soul",
+   "book": "A Short Enquiry concerning the Hermetic Art — A Lover of Philalethes (Vol. III)",
+   "type": "mechanism",
+   "steal": "The imagination is a sun in the soul of man acting in its own sphere, as the sun in our system acts on the earth.",
+   "why": "Imagination is not fancy — it is a local star that acts on its own orbit of matter.",
+   "uw": "When \"just imagination\" is used to dismiss a formative power."
+  },
+  {
+   "title": "Spirit master, imagination tool, body material",
+   "book": "A Short Enquiry concerning the Hermetic Art — A Lover of Philalethes (Vol. III)",
+   "type": "definition",
+   "steal": "The Spirit is the master, imagination the tool; and the body the plastic material.",
+   "why": "Three-layer workshop: will owns, imagination shapes, body receives.",
+   "uw": "When designing (or diagnosing) a creative system that conflates tool with master."
+  },
+  {
+   "title": "Imagination forms sidereal entities out of thoughts",
+   "book": "A Short Enquiry concerning the Hermetic Art — A Lover of Philalethes (Vol. III)",
+   "type": "mechanism",
+   "steal": "Imagination is the power by which the will forms sidereal entities out of thoughts, it can produce and cure disease.",
+   "why": "Thought → formed entity; the same power pathologizes and heals.",
+   "uw": "When will + image is doing real work — placebo, panic, design, curse — and you need the mechanism named."
+  },
+  {
+   "title": "Curiosity from manifestation to causes = Great Work instinct",
+   "book": "A Short Enquiry concerning the Hermetic Art — A Lover of Philalethes (Vol. III)",
+   "type": "argument",
+   "steal": "The man whose curiosity carries him from the contemplation of the manifestation to the contemplation of its causes, is the man whose instincts are him to undertake the Great Work.",
+   "why": "The Great Work begins as a curiosity vector: effects → causes, not as a costume.",
+   "uw": "When spotting who belongs in the deep craft by how they ask why."
+  },
+  {
+   "title": "Hidden Fire separates impure from pure",
+   "book": "A Short Enquiry concerning the Hermetic Art — A Lover of Philalethes (Vol. III)",
+   "type": "mechanism",
+   "steal": "The Solar heat of nature in her working to produce a crop for man's needs and benefit, is also a type of the Hidden Fire by which the alchymist is able to separate the impure from the pure, and to produce the mystic gold from amongst the dross of worldly mind and common matter.",
+   "why": "Ordinary sun-heat is the type; Hidden Fire is the same logic applied to mind-dross.",
+   "uw": "When an analogy from agriculture needs to carry into psychic or craft purification."
+  },
+  {
+   "title": "Cleansing fires separate pure from impure",
+   "book": "Aesch Mezareph (Purifying Fire) — from Kabalah Denudata (Vol. IV)",
+   "type": "definition",
+   "steal": "The whole title refers to \"Cleansing Fires\", as the mode by which pure gold was obtained in Alchymy, by burning off the dross and so separating the pure from the impure—on the material plane!",
+   "why": "Purification is combustion of dross — fire as filter, not as decoration.",
+   "uw": "When a purge ritual or process needs a material metaphor that is also literal."
+  },
+  {
+   "title": "Mysteries of this Wisdom = superior Kabalah",
+   "book": "Aesch Mezareph (Purifying Fire) — from Kabalah Denudata (Vol. IV)",
+   "type": "argument",
+   "steal": "But know, that the Mysteries of this Wisdom, differ not from the superior mysteries of the Kabalah.",
+   "why": "Alchemy here is not a side hobby — it claims identity with the higher Kabbalistic mysteries.",
+   "uw": "When two \"separate\" esoteric lanes are actually one system under two costumes."
+  },
+  {
+   "title": "Metallic Root sits at Kether",
+   "book": "Aesch Mezareph (Purifying Fire) — from Kabalah Denudata (Vol. IV)",
+   "type": "mechanism",
+   "steal": "Therefore the Metallic Root here possesseth the place of Kether, which hath an occult Nature, involved in great obscurity, and from which all Metals have their Origin; even as the Nature of Kether is hidden, and the other Sephiroth flow from thence.",
+   "why": "Origin nodes are obscure by design — everything flows from what you cannot see clearly.",
+   "uw": "When mapping a hierarchy whose root is intentionally under-specified."
+  },
+  {
+   "title": "Lead as Chokmah — Father of following natures",
+   "book": "Aesch Mezareph (Purifying Fire) — from Kabalah Denudata (Vol. IV)",
+   "type": "mechanism",
+   "steal": "Lead hath the place of Chokmah, because Chokmah immediately proceeds from Kether, as it immediately comes from the Metallic Root, and in Enigmatic similes, it is called the \"Father\" of the following Natures.",
+   "why": "Base metal as wisdom-position — primacy is structural, not glamorous.",
+   "uw": "When the \"father\" element in a system looks like the cheap one."
+  },
+  {
+   "title": "Thick water / Salt / Sulphur as Kether / Chokmah / Binah",
+   "book": "Aesch Mezareph (Purifying Fire) — from Kabalah Denudata (Vol. IV)",
+   "type": "definition",
+   "steal": "The thick water is Kether, Salt is Chokmah, and Sulphur is Binah; for known reasons.",
+   "why": "Triad mapped onto states of matter — ontology you can almost touch.",
+   "uw": "When you need a portable three-term bridge between Kabbalah and lab language."
+  },
+  {
+   "title": "States are what the supreme Deity finds acceptable",
+   "book": "Somnium Scipionis — Cicero (Vol. V, with L.O. essay)",
+   "type": "argument",
+   "steal": "For nothing on earth is more acceptable to that supreme Deity who reigns over the whole Universe, than those assemblages and combinations of men united by Law which we call States; the rulers and preservers whereof coming forth from this place, return thither.",
+   "why": "Politics is not a fall from heaven — lawful assemblies are the preferred earthly form, and rulers recycle to the stars.",
+   "uw": "When civic order needs a cosmological warrant without a church."
+  },
+  {
+   "title": "Soul retained in the body until commanded",
+   "book": "Somnium Scipionis — Cicero (Vol. V, with L.O. essay)",
+   "type": "mechanism",
+   "steal": "Both by thee and all pious persons, the Soul should be retained in the keeping of the body: not without His command, by whom that Soul is given to you, must it depart from mortal life, lest you should appear to be untrue to that duty to Mankind which has been assigned to you by the Deity.",
+   "why": "Suicide/exit without command is framed as desertion of assigned human duty.",
+   "uw": "When a tradition forbids self-exit as betrayal of post, not as property crime."
+  },
+  {
+   "title": "Nine spheres, outermost celestial",
+   "book": "Somnium Scipionis — Cicero (Vol. V, with L.O. essay)",
+   "type": "mechanism",
+   "steal": "The universe consists of nine circles or rather Spheres, all connected together, one of which is celestial and the furthest off, embracing all the rest, the supreme Deity preserving and governing the others.",
+   "why": "Cosmology as nested governance — the outermost embraces and runs the inners.",
+   "uw": "When modeling nested control planes (outer ring governs)."
+  },
+  {
+   "title": "Stars as animated globes with divine souls",
+   "book": "Somnium Scipionis — Cicero (Vol. V, with L.O. essay)",
+   "type": "passage",
+   "steal": "Which is called the Earth: and a Soul has been given to them from those sempiternal fires which you call Stars and Constellations; these being spherical and globular bodies, animated with divine Souls, pursue their circling orbits with marvellous celerity.",
+   "why": "Astronomy as psychology of fire-souls — orbits are living duty, not dead mechanics.",
+   "uw": "When you need pre-modern cosmos-as-alive without romantic fluff."
+  },
+  {
+   "title": "Particular place in Heaven for those who serve the Fatherland",
+   "book": "Somnium Scipionis — Cicero (Vol. V, with L.O. essay)",
+   "type": "passage",
+   "steal": "For all those who have preserved, assisted, and enlarged their Fatherland, a particular place in Heaven is assigned, where the blessed enjoy everlasting life.",
+   "why": "Afterlife real estate is allocated by civic service — patriotism as soteriology.",
+   "uw": "When a culture pays eternal status for state-preservation work."
+  },
+  {
+   "title": "Element means a state of matter",
+   "book": "Euphrates, or the Waters of the East — Thomas Vaughan (Vol. VII)",
+   "type": "definition",
+   "steal": "The word \"Element\" as used by the learned at the period when \"Euphrates\" was penned, meant rather a \"state\" of matter, such as the hot, cold, moist and dry natures; or the solid, liquid, gaseous or ethereal conditions; or the stationary, slow, quick or instantaneous processes of change.",
+   "why": "False friend alert — \"element\" here is phase/process, not periodic-table atom.",
+   "uw": "When a modern reader imports chemistry into early modern matter-talk."
+  },
+  {
+   "title": "Seek the first mixture of elements — fresh",
+   "book": "Euphrates, or the Waters of the East — Thomas Vaughan (Vol. VII)",
+   "type": "argument",
+   "steal": "This Admonition; if thou would'st know Nature, take heed of Antimonie and the common metalls; seek onely that very first mixture of elements, which Nature makes in the great world; seek it I say, whilst it is fresh and new, and having found it, conceal it.",
+   "why": "Skip the named metals; chase Nature's first mix while fresh; then shut up.",
+   "uw": "When a hunt is distracted by famous reagents instead of the upstream mixture."
+  },
+  {
+   "title": "Dissolvent not to be sought in metals",
+   "book": "Euphrates, or the Waters of the East — Thomas Vaughan (Vol. VII)",
+   "type": "argument",
+   "steal": "But to seek that Dissolvent, or the matter whereof it is made, in Metals, is not only Error but Madness.",
+   "why": "Looking for the solvent inside what it is meant to dissolve is category madness.",
+   "uw": "When a team searches for the unlock inside the locked object."
+  },
+  {
+   "title": "Universal matter — foundation and nourishment",
+   "book": "Euphrates, or the Waters of the East — Thomas Vaughan (Vol. VII)",
+   "type": "concept",
+   "steal": "Universal, that is the foundation of all Nature, that is the matter whereof all things are made, and wherewith being made are nourished.",
+   "why": "One matter both constitutes and feeds — origin and logistics are the same substrate.",
+   "uw": "When a system needs one substrate for build and for sustain."
+  },
+  {
+   "title": "Secret water flows from fire",
+   "book": "Euphrates, or the Waters of the East — Thomas Vaughan (Vol. VII)",
+   "type": "passage",
+   "steal": "CURSE FOUNTAIN, OF THAT SECRET WHOSE WATER FLOWS FROM FIRE; AND CARRIES IN IT THE BEAMS OF THE SUN AND MOON.",
+   "why": "Paradox engine: water sourced from fire, carrying both luminaries — the image is the thesis.",
+   "uw": "When a secret needs a heraldic paradox in one line."
+  },
+  {
+   "title": "Rationalist bias dismissed the mystical realm",
+   "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
+   "type": "argument",
+   "steal": "Master of the realm of Jewish mysticism, an area largely neglected, and even contemptuously dismissed, by earlier Jewish historical scholarship with its rationalist bias, and that in so doing he would effect a fundamental revision in the understanding of Jewish history.",
+   "why": "Methodological contempt erased a whole province of history — recovery revises the map.",
+   "uw": "When a field’s “serious” gatekeepers have been wrong by exclusion."
+  },
+  {
+   "title": "Balustrade the mystic leans on",
+   "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
+   "type": "mechanism",
+   "steal": "Kind of balustrade on which the mystic leans, so as not to be plunged suddenly or unprepared into an ecstasy in which the holy waters might drown his consciousness.",
+   "why": "Tradition is a rail, not a cage — it prevents drowning in unprepared ecstasy.",
+   "uw": "When form/ritual is accused of blocking experience and you need the safety-rail argument."
+  },
+  {
+   "title": "Scrupulous scholarship can track the elusive",
+   "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
+   "type": "evidence",
+   "steal": "The Zohar, the central text of the Kabbalah, is a breathtaking example of how scrupulous scholarship can attain a kind of Mozartian lucidity and precision in the process of tracking down an elusive historical phenomenon.",
+   "why": "Precision is not the enemy of mystery — it is how you catch what keeps slipping.",
+   "uw": "When people claim scholarly method kills the object of study."
+  },
+  {
+   "title": "Mystic vision has spiritual authority for moderns",
+   "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
+   "type": "argument",
+   "steal": "That the profundity of the mystic vision is of more than antiquarian interest to Scholem: it speaks to him, and his implicit assumption is that it has an element of spiritual authority that can speak to other modern people.",
+   "why": "Scholem’s history is not taxidermy — the vision still claims authority now.",
+   "uw": "When a scholar is secretly a believer in the object's ongoing force."
+  },
+  {
+   "title": "Edifice from late-antique Gnosis to Hasidism",
+   "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
+   "type": "passage",
+   "steal": "Of this book from the Jewish Gnosticism of late antiquity to the Hasidism of the eighteenth and nineteenth centuries, is a scholarly edifice that will stand the test of time.",
+   "why": "The arc is the argument — continuous building across centuries, not isolated freak events.",
+   "uw": "When a tradition looks discontinuous until someone draws the long beam."
   }
  ]
 }
