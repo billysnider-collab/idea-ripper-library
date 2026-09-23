@@ -421,6 +421,11 @@
    "book": "The Housing Secure Initiative: Helping Families Overcome Housing Insecurity — Geoffrey Heth",
    "genre": "Thesis",
    "bookline": "D.Min. thesis-project thesis — Gordon-Conwell Theological Seminary, 2023. Full text: https://archive.org/details/heth-geoffrey-w-final"
+  },
+  {
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston",
+   "genre": "Nonfiction",
+   "bookline": "Japanese religion — Aston's 1921 classic on Shinto: nature-gods, ritual purity, myth, and the making of the Imperial cult."
   }
  ],
  "cards": [
@@ -2333,7 +2338,7 @@
    ],
    "source_locator": "Ch. 14, §14.1",
    "related_ids": [
-    2
+    17
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2351,7 +2356,7 @@
    ],
    "source_locator": "Ch. 14, §14.9",
    "related_ids": [
-    1
+    16
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2369,7 +2374,7 @@
    ],
    "source_locator": "Ch. 14, §14.2.2",
    "related_ids": [
-    2
+    17
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2387,7 +2392,7 @@
    ],
    "source_locator": "Ch. 13, §13.4.10",
    "related_ids": [
-    7
+    22
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2420,7 +2425,7 @@
    ],
    "source_locator": "Ch. 11, §11.1",
    "related_ids": [
-    3
+    18
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2438,7 +2443,7 @@
    ],
    "source_locator": "Ch. 13, §13.8",
    "related_ids": [
-    4
+    19
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2456,7 +2461,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    9
+    24
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2474,7 +2479,7 @@
    "source_locator": "Ch. 11, §11.4",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    8
+    23
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2492,8 +2497,8 @@
    "source_locator": "Ch. 3, §3.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    7,
-    11
+    22,
+    26
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2511,8 +2516,8 @@
    "source_locator": "Ch. 4, §4.2",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    7,
-    10
+    22,
+    25
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2530,7 +2535,7 @@
    "source_locator": "Ch. 6, §6.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    6
+    21
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2548,7 +2553,7 @@
    "source_locator": "Ch. 8, §8.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    4
+    19
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2566,7 +2571,7 @@
    "source_locator": "Ch. 3, §3.7.5",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    6
+    21
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2584,7 +2589,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    4
+    19
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2740,6 +2745,223 @@
    "steal": "A church can attempt to move families from housing insecurity to housing security through deep, long-term relational community investment: RockPointe Church's Housing Secure Initiative was a 36-month journey with six Calgary families, treating them with the dignity and compassion the author sees modeled by Jesus, with the aim of transformation of people, families, communities, and nations.",
    "why": "It is a documented non-state, non-market intervention in the housing crisis — community-relationship capital as the mechanism, a small-sample practice-based counter-model to top-down housing policy.",
    "uw": "Housing insecurity is also a community deficit — long, committed relational support can attempt what neither the market nor the state delivers on its own."
+  },
+  {
+   "title": "Shinto is not ancestor-worship",
+   "type": "contradiction",
+   "steal": "It is quite true that there is a large element of ancestor worship in modern Japanese religious practices, but a very little examination shows that all the great deities of the older Shinto are not Man, but Nature gods.",
+   "why": "Corrects the most durable misunderstanding of Shinto — held even by most educated Japanese in Aston's day — by naming what the old gods actually were: Sun, Moon, Earth, Sea, Rain-storm, Fire, Thunder.",
+   "uw": "When a belief about a tradition comes mostly from its modern packaging, check the founding layer — the ancestors may be younger than the gods.",
+   "intents": [
+    "change someone's mind"
+   ],
+   "source_locator": "Chapter II — General Character of Shinto",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "A religion of love, not fear",
+   "type": "definition",
+   "steal": "It is rather, as Schiller called the worship of the gods of Greece, a Wonnedienst, a religion inspired by love and gratitude more than by fear.",
+   "why": "Flips the default anthropology assumption — the saying 'Fear first made the Gods' does not hold here; the three greatest gods are beneficent beings and their festivals are occasions of rejoicing.",
+   "uw": "When explaining why a religion endures, test the fear hypothesis against the love hypothesis — Shinto's staying power came from gratitude.",
+   "intents": [
+    "change someone's mind",
+    "notice what others miss"
+   ],
+   "source_locator": "Chapter II — General Character of Shinto",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "Kami are high, not infinite",
+   "type": "definition",
+   "steal": "The Kami are high, swift, good, rich, living, but not infinite, omnipotent, or omniscient.",
+   "why": "Defines the operating range of Shinto divinity: powerful superiors rather than an all-everything God — which is why they can be offended, propitiated, and kept at a ritual distance.",
+   "uw": "When a system's gods have limits, read the religion as a technology for managing superiors rather than a metaphysics of the absolute.",
+   "intents": [
+    "make an idea concrete"
+   ],
+   "source_locator": "Chapter II — General Character of Shinto",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "Motoori's definition of Kami",
+   "type": "definition",
+   "steal": "Not only human beings, but birds, beasts, plants and trees, seas and mountains, and all other things whatsoever which deserve to be dreaded and revered for the extraordinary and pre-eminent powers which they possess, are called Kami.",
+   "why": "The widest working definition of divinity in the book — dread and reverence for extraordinary power, with no requirement of goodness, nobleness, or serviceableness.",
+   "uw": "When deciding what counts as a 'god' in someone else's religion, use their criterion (dread-worthy power), not yours (moral perfection).",
+   "intents": [
+    "change someone's mind",
+    "a strange example"
+   ],
+   "source_locator": "Chapter II — General Character of Shinto",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "Gods with no characters",
+   "type": "argument",
+   "steal": "They are very feebly characterised. Indeed, most of them may be said to have no characters at all.",
+   "why": "Aston's claim that the ancient Japanese imagination produced hundreds of deities but almost no personalities — polytheism without portraiture, distinct from the Greek model.",
+   "uw": "When a pantheon feels thin, consider that weak characterization is the feature: gods as addressable powers, not characters.",
+   "intents": [
+    "notice what others miss"
+   ],
+   "source_locator": "Chapter II — General Character of Shinto",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "Gods die of being forgotten",
+   "type": "mechanism",
+   "steal": "There is a constant depletion in their ranks by the mere force of oblivion, while, on the other hand, new deities come into notice.",
+   "why": "Worship as the life-support system of gods: without attention they sink into oblivion and new ones surface — divinity as an attention economy.",
+   "uw": "When tracking which ideas survive in an organization, watch attention the way Shinto watches worship — what stops being noticed dies.",
+   "intents": [
+    "a strange example",
+    "a system feels stuck"
+   ],
+   "source_locator": "Chapter II — General Character of Shinto",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "The Sun-goddess is no autocrat",
+   "type": "argument",
+   "steal": "Yet she is not what we should call a Supreme Deity. She is by no means an autocrat.",
+   "why": "Even heaven's ruler — unrivalled in dignity, Ruler of Heaven — shares power with a Council of the Gods that decides important matters; Shinto's cosmos runs on distributed authority.",
+   "uw": "When power looks absolute at the top, check for the council — Shinto's heaven is governed by committee, not decree.",
+   "intents": [
+    "notice what others miss"
+   ],
+   "source_locator": "Chapter IV — The Gods",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "The mirror that is never opened",
+   "type": "mechanism",
+   "steal": "It is kept in a bag of brocade which is never opened or repaired, a new one being added on the top of its predecessor when the latter is too much worn for further use.",
+   "why": "Reverence maintained by refusing verification — the Sun-goddess's shintai at Ise is preserved by layering new wrappings over old, never looking inside.",
+   "uw": "When a system's authority rests on something no one may inspect, expect the rule 'add a layer, never open' — that is how sacred objects stay sacred.",
+   "intents": [
+    "a strange example",
+    "make an idea concrete"
+   ],
+   "source_locator": "Chapter IV — The Gods",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "Priests with no cure of souls",
+   "type": "definition",
+   "steal": "They have no 'cure of souls,' and their duties are confined to reading the litanies and seeing to the repairs of the shrine.",
+   "why": "The Shinto priest as facilities manager, not shepherd — appointed by the civil authorities, indistinguishable from the laity off duty; religion as maintenance, not ministry.",
+   "uw": "When a role looks priestly, check the job description — Shinto's kannushi maintains the building and reads the liturgy; souls are someone else's department.",
+   "intents": [
+    "make an idea concrete"
+   ],
+   "source_locator": "Chapter V — The Priesthood",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "Shrine means palace; festival means government",
+   "type": "concept",
+   "steal": "Miya meant equally shrine and palace. Matsuri, a Shinto festival, is the same word that we also find in Matsurigoto, government.",
+   "why": "The sacred and the secular were never separated in ancient Japan — the language itself fuses worship and rule, with the Mikado as high priest and sovereign at once.",
+   "uw": "When analyzing a system where religion and state seem fused, look at the vocabulary — if one word does both jobs, the separation was never real.",
+   "intents": [
+    "change someone's mind"
+   ],
+   "source_locator": "Chapter V — The Priesthood",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "Prayers are for material blessings only",
+   "type": "definition",
+   "steal": "Shinto prayers are for material blessings only.",
+   "why": "Rain in drought, good harvests, health, long life to the sovereign — the norito liturgies petition for outcomes in this world, never for salvation or the soul.",
+   "uw": "When reading a prayer, note what it asks for — Shinto's ask list is entirely material, which tells you what the religion is for.",
+   "intents": [
+    "make an idea concrete"
+   ],
+   "source_locator": "Chapter VI — Worship",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "The offence was ritual, the Jewish moral",
+   "type": "argument",
+   "steal": "It is the crime of taking away human life which is condemned in the Decalogue: the Ohoharahi objects to wounds as nasty, unsightly things, unmeet for a God to look upon or to be in any way associated with. In a word, the Japanese offence was ritual, the Jewish moral.",
+   "why": "The sharpest one-line comparative ethics in the book — self-inflicted wounds, the cutting of dead bodies, and justifiable homicide all polluted equally, because pollution is about unsightliness before the gods, not wrongness.",
+   "uw": "When two rules look alike, compare the motive underneath — same prohibition, ritual motive versus moral motive, completely different religions.",
+   "intents": [
+    "change someone's mind",
+    "a better question"
+   ],
+   "source_locator": "Chapter VII — Morality and Purity",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "No ethics code as proof of goodness",
+   "type": "argument",
+   "steal": "Shintoists do not deny this feature of their religion, but claim that the absence of a code of ethics is a proof of the superior natural goodness of the Japanese nation. It needs no such artificial aids to virtuous conduct.",
+   "why": "The most audacious defense of a missing moral code in the book — the absence of ethics reframed as evidence of natural virtue rather than a gap.",
+   "uw": "When someone defends the absence of a rule as proof of virtue, ask what happens when the virtue is tested — Aston spent the whole chapter showing the gap.",
+   "intents": [
+    "a better question",
+    "change someone's mind"
+   ],
+   "source_locator": "Chapter VII — Morality and Purity",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "Buddhism swallowed the gods as avatars",
+   "type": "mechanism",
+   "steal": "They discovered that whether Nature-gods or Man-gods they were nothing more than avatars or incarnations of the various Buddhas.",
+   "why": "The mechanism of religious conquest by absorption — Buddhist missionaries did not refute Shinto's gods, they reclassified them as local forms of Buddhas, producing Ryobu Shinto.",
+   "uw": "When a new system wants to win without a fight, watch for reclassification — the old gods survive by becoming avatars of the new ones.",
+   "intents": [
+    "notice what others miss"
+   ],
+   "source_locator": "Chapter IX — Later History",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "Shinto is doomed to extinction",
+   "type": "prediction",
+   "steal": "Without a code of morals, or an efficient ecclesiastical organisation, with little aid from the arts of painting, sculpture, and architecture, and with a sacred literature scanty and feeble compared with those of its foreign rivals, Shinto is doomed to extinction.",
+   "why": "Aston's 1921 closing verdict — delivered with total confidence, and worth keeping as a card precisely because history gets to grade it: the religion he buried is still alive.",
+   "uw": "When an expert declares a living tradition dead, keep the receipt — Aston wrote the obituary in 1921 and the patient survived him.",
+   "intents": [
+    "a better question",
+    "a strange example"
+   ],
+   "source_locator": "Chapter IX — Later History",
+   "ripped_at": "2026-09-23",
+   "related_ids": [],
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston"
   }
  ]
 }
