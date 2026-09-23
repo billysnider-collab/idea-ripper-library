@@ -27,7 +27,7 @@ def main():
         assert b["bookline"].strip(), "empty bookline " + b["book"]
 
     t = open(os.path.join(HERE, "index.html"), encoding="utf-8").read()
-    found = re.findall(r'<article class="card"', t)
+    found = re.findall(r'<article class="card(?:"| )', t)
     assert len(found) == nc, "page has %d cards, dataset has %d" % (len(found), nc)
     nums = re.findall(r'<span class="num">(\d+)</span>', t)
     assert [int(n) for n in nums] == list(range(1, nc + 1)), "numbering broken"

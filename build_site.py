@@ -70,6 +70,7 @@ def book_block(b):
         % (gh, esc(b["book"]), len(bcards), "" if len(bcards) == 1 else "s",
            esc(b["bookline"]), esc(samples)))
     parts.append('<div class="cards">')
+    thesis_open = b["genre"] == "Thesis"  # one book = one card: skip the second click
     for c in bcards:
         n_ = c["_n"]
         search = " ".join([c["title"], c["steal"], c["why"], c["uw"]]).lower()
@@ -77,7 +78,7 @@ def book_block(b):
         if len(pv) > 90:
             pv = pv[:90].rsplit(" ", 1)[0] + "\u2026"
         parts.append(
-            '<article class="card" id="c%d" data-n="%d" '
+            '<article class="card%s" id="c%d" data-n="%d" '
             'data-book="%s" data-genre="%s" data-type="%s" data-search="%s">'
             '<div class="cardhead" role="button" tabindex="0">'
             '<span class="num">%d</span>'
@@ -91,7 +92,7 @@ def book_block(b):
             '<button type="button" data-copy="uw">Copy use-when</button>'
             '<button type="button" data-copy="link">Copy link</button></div>'
             '</div></article>'
-            % (n_, n_, esca(c["book"]), esca(b["genre"]), esca(c["type"]), esca(search),
+            % (" open" if thesis_open else "", n_, n_, esca(c["book"]), esca(b["genre"]), esca(c["type"]), esca(search),
                n_, esc(c["title"]), esc(pv), esca(c["type"]), esc(c["type"]),
                esc(c["steal"]), esc(c["why"]), esc(c["uw"])))
     parts.append('</div></section>')
@@ -244,7 +245,7 @@ function apply(fromInput){
     if(bv&&c.dataset.book!==bv)ok=false;
     if(tv&&c.dataset.type!==tv)ok=false;
     c.classList.toggle('hidden',!ok);
-    if(fromInput)c.classList.toggle('open',!!term&&ok);
+    if(fromInput)c.classList.toggle('open',!!term&&ok||(!term&&ok&&c.dataset.genre==='Thesis'));
   });
   document.querySelectorAll('.book').forEach(function(b){
     var vis=!!b.querySelector('.card:not(.hidden)');
