@@ -597,10 +597,10 @@
    "uw": "Use when past-life material needs a crime stake in one sentence."
   },
   {
-   "title": "Soul return vs final resting place",
+   "title": "Reincarnation breaks the eschatology",
    "book": "Simultaneous — Eric Heisserer",
    "type": "question",
-   "steal": "But if we are talking about a soul returning to live again as a human after passing to the afterlife, I don’t know how a final resting place for souls works in that system.",
+   "steal": "A soul returning to live again as a human after passing to the afterlife — I don't know how a final resting place for souls works in that system.",
    "why": "Afterlife systems need closure mechanics; a soul that returns breaks the eschatology.",
    "uw": "Use when reincarnation talk collides with a theology that needs endings."
   },
@@ -717,12 +717,12 @@
    "uw": "Use when a biopic or brand story only markets wins."
   },
   {
-   "title": "Stories as next-best immortality",
+   "title": "The story is the immortality",
    "book": "Gilgamesh (tr. Sophus Helle)",
    "type": "mechanism",
    "steal": "Through stories, the teller can achieve the next best thing to immortality: eternal life in literature.",
-   "why": "Narrative is the workaround when the body cannot be saved.",
-   "uw": "Use when someone asks what consolation art offers against death."
+   "why": "Gilgamesh quests for literal immortality and loses the plant to a snake; he returns to Uruk and the epic's last gesture points at the walls. Denied eternal life, he gets eternal literature — the oldest surviving epic is about a man who fails the quest and keeps the story.",
+   "uw": "Use when the quest fails but the record outlives it."
   },
   {
    "title": "Stories are immortality and a kind of death",
@@ -768,7 +768,7 @@
    "title": "Sages sent before the Flood to bring civilization",
    "book": "Myths from Mesopotamia — Stephanie Dalley",
    "type": "concept",
-   "steal": "Introduction xvii sages who were sent before the Flood by the god Ea to bring civilization to mankind, and authors after the Flood were honoured with sage-like status.",
+   "steal": "Sages who were sent before the Flood by the god Ea to bring civilization to mankind, and authors after the Flood were honoured with sage-like status.",
    "why": "Culture is a pre-disaster gift; later authors inherit sage status by echo.",
    "uw": "Use when a tradition claims civilizing knowledge arrived as mission, not evolution."
   },
@@ -904,7 +904,7 @@
    "title": "Three days of freedom, leash still on",
    "book": "The Master and Margarita — Mikhail Bulgakov",
    "type": "mechanism",
-   "steal": "However, being granted freedom for a whole three days, Margarita",
+   "steal": "However, being granted freedom for a whole three days, Margarita chose from this entire luxurious apartment what was far from the best place.",
    "why": "Granted liberty advertises its own limits; the visible leash is the point.",
    "uw": "Use when temporary liberty is granted and the constraint is still visible."
   },
@@ -1101,7 +1101,7 @@
    "uw": "Use when someone says the \"real self\" is only the private one."
   },
   {
-   "title": "Death can happen to anyone, at any time",
+   "title": "Paramedics in no rush",
    "book": "Motherclown — Harriet Alida Lye",
    "type": "passage",
    "steal": "When she returned, rushing back from Max's after the phone call, his body was already on a stretcher, surrounded by paramedics in no rush, and in that instant, she understood: Death can happen to anyone, at any time.",
@@ -1136,7 +1136,7 @@
    "title": "Only major HIV maker that refused the UN patent share",
    "book": "No More Tears — Gardiner Harris",
    "type": "evidence",
-   "steal": "For example, I found that J & J was the only major manufacturer of HIV/AIDS medicines that refused to share its patents with a United Nations program that has saved millions of.",
+   "steal": "For example, I found that J & J was the only major manufacturer of HIV/AIDS medicines that refused to share its patents with a United Nations program that has saved millions of African lives.",
    "why": "Access rhetoric vs. patent behavior — the gap between the press release and the license.",
    "uw": "Use when contrasting pharma access rhetoric with patent behavior."
   },
@@ -1401,7 +1401,7 @@
    "book": "Tiny Machine Learning QuickStart — Simone Salerno",
    "type": "evidence",
    "steal": "Due to size, efficiency, power, and cost constraints, embedded hardware is characterized by limited resources (CPU, program space, and RAM).",
-   "why": "Four constraints stack — size, efficiency, power, cost — into the same thin resource envelope.",
+   "why": "The envelope is the forcing function: fixed mass, fixed power, fixed link budget means every subsystem trades against every other — constraint is what turns a wish list into a design.",
    "uw": "Use when someone argues \"just use a bigger chip\" as if cost and power were free."
   },
   {
@@ -1688,7 +1688,7 @@
    "title": "Curiosity from manifestation to causes = Great Work instinct",
    "book": "A Short Enquiry concerning the Hermetic Art — A Lover of Philalethes (Vol. III)",
    "type": "argument",
-   "steal": "The man whose curiosity carries him from the contemplation of the manifestation to the contemplation of its causes, is the man whose instincts are him to undertake the Great Work.",
+   "steal": "The man whose curiosity carries him from the contemplation of the manifestation to the contemplation of its causes, is the man whose instincts are preparing him to undertake the Great Work.",
    "why": "The Great Work begins as a curiosity vector: effects → causes, not as a costume.",
    "uw": "When spotting who belongs in the deep craft by how they ask why."
   },
@@ -1784,8 +1784,8 @@
    "title": "Methane as the simplest organic molecule",
    "book": "Every Molecule Matters — Simon Cotton",
    "type": "definition",
-   "steal": "The simplest organic molecule is methane (one carbon atom bonded to three hydrogen atoms).",
-   "why": "Organic chemistry bottoms out at a three-hydrogen carbon — complexity has a floor.",
+   "steal": "The simplest organic molecule is methane (one carbon atom bonded to four hydrogen atoms).",
+   "why": "Organic chemistry bottoms out at a four-hydrogen carbon — complexity has a floor.",
    "uw": "When you need the smallest unit that still counts as \"organic.\""
   },
   {
@@ -1832,7 +1832,7 @@
    "title": "Plants use volatile molecules as messages",
    "book": "Every Molecule Matters — Simon Cotton",
    "type": "mechanism",
-   "steal": "A) is widespread in the plant kingdom; a volatile molecule, many plants make use of it, often to send messages (pages 144–145).",
+   "steal": "Volatile molecules are widespread in the plant kingdom; many plants make use of them, often to send messages.",
    "why": "Plant \"talk\" is chemistry in the air — signaling without neurons.",
    "uw": "When ecology needs a non-metaphorical language channel."
   },
@@ -1904,7 +1904,7 @@
    "title": "n-qubit state as 2^n complex unit vector",
    "book": "Quantum Computing — S. Herbert",
    "type": "definition",
-   "steal": "Together, postulates 1 and 4 state that an n-qubit quantum state is represented by a 2n -element complex unit vector.",
+   "steal": "Together, postulates 1 and 4 state that an n-qubit quantum state is represented by a 2^n-element complex unit vector.",
    "why": "Dimension explodes as 2^n — the cost of the state space is the feature.",
    "uw": "When classical intuition expects linear growth in bits."
   },
