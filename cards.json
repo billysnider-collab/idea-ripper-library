@@ -8,7 +8,8 @@
   "Horror & Weird",
   "Crime & Mystery",
   "Literary Fiction",
-  "Nonfiction"
+  "Nonfiction",
+  "Thesis"
  ],
  "books": [
   {
@@ -200,6 +201,126 @@
    "book": "A Marriage at Sea — Sophie Elmhirst",
    "genre": "Nonfiction",
    "bookline": "True story of a couple alone on the ocean — boat as autocracy, hull as tempering."
+  },
+  {
+   "book": "Battlefield Medical Network: Biosensors in a Tactical Environment — Ralph R. Montgomery",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1027506"
+  },
+  {
+   "book": "Effectiveness of EfficientNet-B4 and EfficientNet-B7 Deepfake Detection Techniques — Jasmin P. Bharadiya",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — University of the Cumberlands, 2021. Full text: https://archive.org/details/jasmin-bharadiya-thesis"
+  },
+  {
+   "book": "Autonomous Underwater Vehicle Architecture Synthesis for Shipwreck Interior Exploration — Ross A. Eldred",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/autonomousunderw1094547940"
+  },
+  {
+   "book": "To Study the Clinical and Etiological Profile of Epileptic Spasms in Children — Dr. Amneet Kaur",
+   "genre": "Thesis",
+   "bookline": "MD thesis — Baba Farid University of Health Sciences (Faridkot), 2023. Full text: https://archive.org/details/sgng.17194-to-study-the-clinical-and-etiological-profile-of-epileptic-spasms"
+  },
+  {
+   "book": "Sustainable Mobility and Pedestrian Plan for Pilgrimage Tourism in Vrindavan — Esha Shinde",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology (Nagpur), 2024. Full text: https://archive.org/details/sgng.19267-sustainable-mobility-and-pedestrian-plan-for-pilgrimage-tourism-i"
+  },
+  {
+   "book": "Changes in Latitudes, Changes in Attitudes: Narrating a Regime Change — Pattric R. Patterson and Matthew D. Ziobro",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA620695"
+  },
+  {
+   "book": "Computational Studies of Entanglement in Spin Chains Involving Fibonacci and Bernoulli Number Sequences — Ankan Bhattacharyya",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology (Nagpur), 2025. Full text: https://archive.org/details/sgng.19109-computational-studies-of-entanglement-in-spin-chains-involving-fi"
+  },
+  {
+   "book": "Solid-State High Power Radio Frequency Directed Energy Systems in Support of USMC Force Protection Operations — Michael D. Simon",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/solidstatehighpo1094545944"
+  },
+  {
+   "book": "Can the Outer Space Treaty Prevent Conflicts in Orbit in the 21st Century? — Nicole M. Breen",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2018. Full text: https://archive.org/details/cantheouterspace1094559607"
+  },
+  {
+   "book": "Combating Daesh: A Socially Unconventional Strategy — Derek J. Raymond",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/combatingdaeshso1094545928"
+  },
+  {
+   "book": "Networks before Empires — Michele Massa",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Institute of Archaeology, 2016. Full text: https://archive.org/details/massa-thesis-combined"
+  },
+  {
+   "book": "Exploring the Effects of Mucuna Pruriens Seed Powder on Parkinson's Disease Management: Insights from Drosophila Mutant Models — Vikrant Chandel",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — The University of Trans-Disciplinary Health Sciences and Technology, 2023. Full text: https://archive.org/details/sgng.19495-exploring-the-effects-of-mucuna-pruriens-seed-powder-on-parkinson"
+  },
+  {
+   "book": "The 21st Century Scarlet Letter: China's Use of Digital Global Influence to Gain Power and Weaken U.S. Leadership — Brandi Y. Williams",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/thestcenturyscar1094566743"
+  },
+  {
+   "book": "Investigations into the impact of astronomical phenomena on the terrestrial biosphere and climate — Fabo Feng",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Ruperto-Carola-University of Heidelberg, Germany, 2015. Full text: https://archive.org/details/arxiv-1505.07856"
+  },
+  {
+   "book": "China's War by Other Means: Unveiling China's Quest for Information Dominance — Maj Teresa L. Sullivan",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — U.S. Army Command and General Staff College, 2017. Full text: https://archive.org/details/DTIC_AD1039548"
+  },
+  {
+   "book": "Technique for geolocation of EMI emitters by O3b satellites — James P. Connolly",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/techniqueforgeol1094549440"
+  },
+  {
+   "book": "Real-Time Detection of Operational Military Information in Social Media — Patrick M. Gillen",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_AD1008935"
+  },
+  {
+   "book": "Spin Squeezing, Macrorealism and the Heisenberg uncertainty principle — Giuseppe Vitagliano",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — University of the Basque Country, 2015. Full text: https://archive.org/details/arxiv-1511.08104"
+  },
+  {
+   "book": "Experiencing the Elements: Self-Building Through the Embodied Extension of Conceptual Metaphors in Contemporary Ritual Magic — David Riley Campbell",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — University of Amsterdam, 2024. Full text: https://archive.org/details/experiencing-the-elements-thesis-of-david-riley-campbell-at-the-university-of-amsterdam-2024"
+  },
+  {
+   "book": "Integrating Blue Infrastructure in Temple Towns: A Case of Nashik's Sacred Waterscapes — Kajol Chaudhari",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology (VNIT) Nagpur, 2025. Full text: https://archive.org/details/sgng.19281-integrating-blue-infrastructure-in-temple-towns-a-case-of-nashik-"
+  },
+  {
+   "book": "ENIP Fuzz: a Scapy-based EtherNet/IP fuzzer for security testing — Francisco Tacliad",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/enipfuzzscapybas1094556714"
+  },
+  {
+   "book": "Adopting Cloud Computing in the Pakistan Navy — Tahir Majeed Asim",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632313"
+  },
+  {
+   "book": "Cyberspace actions in a counterinsurgency — Andrzej V. Kujawski",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/cyberspacections1094549331"
+  },
+  {
+   "book": "Analysis of Sleep, Mood, Behavior, and Suicide Risk of Sailors on the USS Ashland — Eric M. Myers",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/analysisofsleepm1094566115"
   }
  ],
  "cards": [
@@ -1922,6 +2043,198 @@
    "steal": "Seeing the fishing boat was a fleeting shock, like noticing a figure passing across a window in a remote house.",
    "why": "Other humans register as uncanny intrusion after long isolation.",
    "uw": "When solitude recalibrates what \"contact\" feels like."
+  },
+  {
+   "title": "Battlefield Medical Network: Biosensors in a Tactical Environment",
+   "book": "Battlefield Medical Network: Biosensors in a Tactical Environment — Ralph R. Montgomery",
+   "type": "mechanism",
+   "steal": "Off-the-shelf biosensors failed as configured in tactical maritime field tests, but the thesis argues they could meet Maritime Interdiction Operations needs if re-architected around a smartphone syncing over a mobile ad-hoc network — a system-of-sensors concept serving both downrange casualty care and DoD/VA strategic health planning.",
+   "why": "Incomplete or missing treatment information undermines downrange care at higher echelons, and timely aggregated morbidity data drives strategic medical capacity planning.",
+   "uw": "Test the device in the environment, not the lab — commercial sensors that worked on paper failed in the tactical maritime setting, and the fix was architectural (phone plus ad-hoc network), not a better sensor."
+  },
+  {
+   "title": "Effectiveness of EfficientNet-B4 and EfficientNet-B7 Deepfake Detection Techniques",
+   "book": "Effectiveness of EfficientNet-B4 and EfficientNet-B7 Deepfake Detection Techniques — Jasmin P. Bharadiya",
+   "type": "evidence",
+   "steal": "Deepfake detection is structurally reactive — detectors are trained on outdated generation tech; the thesis measures EfficientNet-B4/B7 in two phases (untrained on the latest deepfake datasets vs. trained on them, both benchmark-validated) to quantify how much latest-generation training data improves detection effectiveness.",
+   "why": "Deepfakes can fabricate a candidate saying things they never said; if detectors only reliably catch last year's fakes, the defense is permanently one generation behind the offense.",
+   "uw": "A detector trained on yesterday's threat is a history lesson, not a shield — detection systems must be retrained on the newest generation of fakes or they measure the past."
+  },
+  {
+   "title": "Autonomous Underwater Vehicle Architecture Synthesis for Shipwreck Interior Exploration",
+   "book": "Autonomous Underwater Vehicle Architecture Synthesis for Shipwreck Interior Exploration — Ross A. Eldred",
+   "type": "mechanism",
+   "steal": "No existing AUV can penetrate a shipwreck's interior; the thesis synthesizes the WIEVLE (wreck interior exploration vehicle) architecture — functional analysis, requirements, key performance parameters, and tradeoff analysis against DEPTHX, HAUV, ARROWS, and ACQUAS — using the sunken Soviet nuclear submarine Komsomolets as the design reference mission, including hypothetical intelligence-collection targets.",
+   "why": "Sunken wrecks like Komsomolets — a nuclear reactor and torpedoes on the seafloor — are intelligence and environmental targets that no human diver or existing robot can safely penetrate.",
+   "uw": "Design from the mission, not the platform — starting with the Komsomolets reference mission and its intel targets is what exposed the five capability gaps in every existing AUV."
+  },
+  {
+   "title": "To Study the Clinical and Etiological Profile of Epileptic Spasms in Children",
+   "book": "To Study the Clinical and Etiological Profile of Epileptic Spasms in Children — Dr. Amneet Kaur",
+   "type": "evidence",
+   "steal": "In this North Indian cohort, epileptic spasms are overwhelmingly a perinatal-injury disease — 80.5% of 41 cases traced to perinatal illness, with perinatal asphyxia the lead cause and neonatal hypoglycemic brain injury an under-recognized driver tied to low birth weight, suboptimal neonatal care, and reluctance to use alternative feeds.",
+   "why": "Epileptic spasms cause severe developmental regression (73.2% of cases here) — and the leading causes are preventable perinatal injuries, not medical mysteries.",
+   "uw": "When the cause is preventable, the study is an indictment — four in five cases traced to perinatal injury means the intervention point is the delivery room, not the neurology ward."
+  },
+  {
+   "title": "Sustainable Mobility and Pedestrian Plan for Pilgrimage Tourism in Vrindavan",
+   "book": "Sustainable Mobility and Pedestrian Plan for Pilgrimage Tourism in Vrindavan — Esha Shinde",
+   "type": "argument",
+   "steal": "Vrindavan's pilgrimage economy is choking on its own traffic — millions of devotees a year, chronic congestion, pollution, and erosion of the city's spiritual ambiance; the thesis proposes a heritage-first mobility model: pedestrian-only temple precincts, electric shuttles, expanded e-rickshaw networks, smart mobility hubs, cycle tracks, Yamuna ghat restoration, and eco-sensitive zoning.",
+   "why": "Pilgrimage cities across India face the same collision — sacred heritage versus unregulated tourism growth; Vrindavan is the worked example of planning for both at once.",
+   "uw": "Plan for the pilgrim, not just the vehicle — the fix for a heritage city's congestion starts with pedestrian precincts and last-mile access, not wider roads."
+  },
+  {
+   "title": "Changes in Latitudes, Changes in Attitudes: Narrating a Regime Change",
+   "book": "Changes in Latitudes, Changes in Attitudes: Narrating a Regime Change — Pattric R. Patterson and Matthew D. Ziobro",
+   "type": "argument",
+   "steal": "America's regime-change operations failed strategically not for lack of covert capability but for lack of narrative — the US toppled governments through special warfare yet never built a story that won domestic and international support; the thesis uses social movement theory on three cases (Iran 1953, Guatemala 1954, Nicaragua 1978-1990) to argue influence operations must pair a legitimate, credible rebel leader with relentless ideological framing that paints the targeted regime's conditions as unacceptable.",
+   "why": "Coups win palaces; narratives win the peace — the thesis's conclusion is that the story told during and after a regime change determines whether US policy goals survive it.",
+   "uw": "Covert action without a credible story is a strategic liability — winning the operation and losing the narrative means losing the war you actually fought."
+  },
+  {
+   "title": "Computational Studies of Entanglement in Spin Chains Involving Fibonacci and Bernoulli Number Sequences",
+   "book": "Computational Studies of Entanglement in Spin Chains Involving Fibonacci and Bernoulli Number Sequences — Ankan Bhattacharyya",
+   "type": "mechanism",
+   "steal": "Spin chains whose interaction strengths follow Fibonacci and Bernoulli number sequences — proposed here for the first time, in inverse-Fibonacci and Bernoulli forms — are viable models for quasicrystal-like order; the thesis numerically maps ground-state energies and qubit-pair entanglement (concurrences) across these chains and derives a fourth-order polynomial relating the Bernoulli and inverse-Fibonacci ground-state energies.",
+   "why": "Entanglement in structured spin chains is a building block for quantum computing — number-sequence-ordered chains give researchers a new tractable model for quasicrystal-like quantum systems and qubit correlations.",
+   "uw": "Order hides in number sequences — imposing Fibonacci and Bernoulli patterns on spin-chain interactions produced a first-of-kind model for quasicrystal-like quantum systems, plus a measurable relation between the two orderings."
+  },
+  {
+   "title": "Solid-State High Power Radio Frequency Directed Energy Systems in Support of USMC Force Protection Operations",
+   "book": "Solid-State High Power Radio Frequency Directed Energy Systems in Support of USMC Force Protection Operations — Michael D. Simon",
+   "type": "argument",
+   "steal": "Solid-state high-power radio frequency (HPRF) directed-energy systems emit enough power to disrupt vehicle electronic systems without costly collateral damage to people or property — a viable non-lethal addition to entry control point operations for force protection.",
+   "why": "Gives commanders a middle option between waving a suspect vehicle through and shooting at it — relevant as directed-energy moves from the lab into base defense and counter-drone roles.",
+   "uw": "The non-lethal middle matters — when the only tools are lethal force or a warning, the hardest tactical decisions have no good answer."
+  },
+  {
+   "title": "Can the Outer Space Treaty Prevent Conflicts in Orbit in the 21st Century?",
+   "book": "Can the Outer Space Treaty Prevent Conflicts in Orbit in the 21st Century? — Nicole M. Breen",
+   "type": "question",
+   "steal": "The 1967 Outer Space Treaty's language does not adequately address the three emerging conflict drivers — orbital space debris, the weaponization of space, and asteroid and Moon mining — leaving gaps that could lead to conflict in orbit.",
+   "why": "A 1967 treaty written for two spacefaring states now governs mega-constellations, ASAT tests, and commercial Moon ambitions — the gap between the law and the hardware is where the next orbital crisis starts.",
+   "uw": "Treaties decay when the technology they were written for is replaced — a framework built for a duopoly can't govern dozens of actors plus private industry."
+  },
+  {
+   "title": "Combating Daesh: A Socially Unconventional Strategy",
+   "book": "Combating Daesh: A Socially Unconventional Strategy — Derek J. Raymond",
+   "type": "argument",
+   "steal": "The US minimalist strategy against Daesh (military partnerships plus air support) was ineffective; a socially unconventional strategy — mapping the network with social network analysis and turning its own social-movement dynamics against it — could induce implosion from within.",
+   "why": "Every counterterror campaign since has wrestled with the same question — you can't bomb a network out of existence without understanding the social logic that holds it together.",
+   "uw": "Map the network before you fight it — kinetic force degrades capability, but only attacking the movement's social structure unravels it."
+  },
+  {
+   "title": "Networks before Empires",
+   "book": "Networks before Empires — Michele Massa",
+   "type": "evidence",
+   "steal": "Long-distance exchange networks in Early Bronze Age Anatolia (c. 3200–1950 BC) ran on organized systems — specialized production, exchange intermediaries, route control, and rising elites leveraging the region's metal wealth — centuries before any empire managed them.",
+   "why": "Trade networks don't wait for empires — complex exchange systems with middlemen and route control predate state power by millennia, a pattern that repeats in every shadow economy since.",
+   "uw": "Infrastructure precedes institutions — exchange networks with intermediaries, route control, and standards emerged before the states that later claimed to run them."
+  },
+  {
+   "title": "Exploring the Effects of Mucuna Pruriens Seed Powder on Parkinson's Disease Management: Insights from Drosophila Mutant Models",
+   "book": "Exploring the Effects of Mucuna Pruriens Seed Powder on Parkinson's Disease Management: Insights from Drosophila Mutant Models — Vikrant Chandel",
+   "type": "evidence",
+   "steal": "Mucuna pruriens (kapikachu) seed powder shows preliminary promise against Parkinson's symptoms in a Drosophila model — standardized L-DOPA content, higher TAG levels (low TAG is tied to PD progression), and reduced relish gene expression (inflammation signaling) in PARK2-mutant flies after four weeks of dietary supplementation — but the author stresses this is preliminary and needs further study.",
+   "why": "A traditional Ayurvedic remedy contains the same molecule as the frontline Parkinson's drug (L-DOPA) — the thesis tests whether the folk preparation does anything measurable in a genetic model, with an honest preliminary-only verdict.",
+   "uw": "Standardize before you claim — the thesis's first real result was just measuring what's actually in the powder, without which every observed effect is uninterpretable."
+  },
+  {
+   "title": "The 21st Century Scarlet Letter: China's Use of Digital Global Influence to Gain Power and Weaken U.S. Leadership",
+   "book": "The 21st Century Scarlet Letter: China's Use of Digital Global Influence to Gain Power and Weaken U.S. Leadership — Brandi Y. Williams",
+   "type": "argument",
+   "steal": "China's Belt and Road and Digital Silk Road influence expansion has succeeded because recipient countries — including U.S. allies — value the economic visibility more than they fear the growing dependencies, and the coming nationwide social credit system gives Beijing a tool to convert those ties into manipulation and leverage; government social-media monitoring demonstrably damages civil liberties, and where civil liberties fall, democracy falls with them.",
+   "why": "Dependency is the mechanism of influence — the thesis argues the leverage isn't the loan, it's the data and visibility ties that follow; and social-credit-style monitoring isn't an exportable abstraction, it measurably erodes the civil liberties of the populations it's aimed at.",
+   "uw": "Influence compounds through dependency, not gifts — whoever controls the visibility infrastructure can convert economic partnership into political leverage."
+  },
+  {
+   "title": "Investigations into the impact of astronomical phenomena on the terrestrial biosphere and climate",
+   "book": "Investigations into the impact of astronomical phenomena on the terrestrial biosphere and climate — Fabo Feng",
+   "type": "evidence",
+   "steal": "Mass extinctions over the past 550 million years are explained just as well by a uniform random distribution as by any galactic mechanism — no clear link between the Sun's galactic orbit and Earth's extinction record; meanwhile the Sun's motion through the Galaxy does not significantly influence the impact-cratering rate, and Earth's own obliquity (tilt) is the dominant trigger of ice-age deglaciations over the past 2 million years.",
+   "why": "A rigorous negative result — the fashionable \"galactic causes of extinctions\" hypothesis fails a Bayesian test, the weird comet orbits need no Nemesis planet, and the ice ages answer to orbital tilt.",
+   "uw": "Test the null first — extinction events fit pure randomness as well as any exotic cosmic mechanism; you can only claim a galactic cause after the null fails."
+  },
+  {
+   "title": "China's War by Other Means: Unveiling China's Quest for Information Dominance",
+   "book": "China's War by Other Means: Unveiling China's Quest for Information Dominance — Maj Teresa L. Sullivan",
+   "type": "argument",
+   "steal": "China executes communication strategy in ways U.S. information practitioners \"may not fully comprehend\" — achieving objectives through Diplomacy, Information, Military and Economic instruments of power, planned differently across three engagements: the 1979 land invasion of Vietnam, the 1996 Taiwan Strait crisis, and the 2007 anti-satellite missile test; the thesis frames this as China's quest for information dominance.",
+   "why": "The vulnerability the thesis names is the comprehension gap itself — Beijing plans communication strategy around its engagements in a register Western doctrine doesn't read well, which is exactly how information dominance gets built unopposed.",
+   "uw": "Study the adversary's playbook in their own terms — projecting your doctrine onto their actions blinds you to what they're actually doing."
+  },
+  {
+   "title": "Technique for geolocation of EMI emitters by O3b satellites",
+   "book": "Technique for geolocation of EMI emitters by O3b satellites — James P. Connolly",
+   "type": "mechanism",
+   "steal": "A new Doppler-based method using frequency data from a single O3b antenna can geolocate Ka-band EMI (jammer) sources to within 16 km across O3b's service area — latitude error averaging 3.8 km, longitude 11.8 km — enough to mitigate interference or shrink the search box for higher-capability assets; modeled as a low-cost capability units could maintain organically.",
+   "why": "It turns a commercial broadband constellation into a spectrum watchdog — interference characterization and geolocation, two steps of the Joint Spectrum Interference Resolution process, get faster and cheaper without new hardware in orbit.",
+   "uw": "Repurpose commercial infrastructure for military sensing — the constellation was built for broadband, but its Doppler signature makes it a jammer-finder too."
+  },
+  {
+   "title": "Real-Time Detection of Operational Military Information in Social Media",
+   "book": "Real-Time Detection of Operational Military Information in Social Media — Patrick M. Gillen",
+   "type": "mechanism",
+   "steal": "A machine can be trained to find military members on social media using publicly released military information and ingest their postings in real time to detect possible operational military information; the thesis's closing recommendation: the Navy should stop releasing personnel information publicly merely because it's unclassified — \"Information that is unclassified should not warrant a blanket public release on the Internet.\"",
+   "why": "The thesis proved the adversary's playbook works — automate the public trail and unclassified posts aggregate into operational intelligence; the \"unclassified = publishable\" reflex is, in the thesis's own word, negligent behavior.",
+   "uw": "Unclassified is not the same as safe to publish — the aggregation is the weapon."
+  },
+  {
+   "title": "Spin Squeezing, Macrorealism and the Heisenberg uncertainty principle",
+   "book": "Spin Squeezing, Macrorealism and the Heisenberg uncertainty principle — Giuseppe Vitagliano",
+   "type": "mechanism",
+   "steal": "New spin-squeezing inequalities for detecting entanglement in large ensembles of atoms outperform past approaches — especially for unpolarized states — and for symmetric states of spin-1/2 particles they are exactly equivalent to the PPT (partial-transpose) criterion; the thesis's larger aim is testing whether macroscopic systems violate classical principles like local-realism and macrorealism.",
+   "why": "Entanglement detection in big atomic ensembles is the backbone of quantum metrology — tighter detection criteria mean more precise quantum sensors and clocks.",
+   "uw": "When the standard test can't see the states you care about, redesign the test — spin squeezing catches entanglement the usual criteria are blind to."
+  },
+  {
+   "title": "Experiencing the Elements: Self-Building Through the Embodied Extension of Conceptual Metaphors in Contemporary Ritual Magic",
+   "book": "Experiencing the Elements: Self-Building Through the Embodied Extension of Conceptual Metaphors in Contemporary Ritual Magic — David Riley Campbell",
+   "type": "concept",
+   "steal": "Contemporary ritual magic works as \"self-building\" through the embodied extension of conceptual metaphors — the elements are cultivated as bodily, metaphorically structured experience rather than believed-in abstractions; the thesis positions the practice in a methodological middle way between debunking and supernatural belief.",
+   "why": "It's an academic attempt to explain ritual magic's persistence without reducing it to fraud or faith — as a technology of the self built from metaphor made flesh.",
+   "uw": "Ask what a practice does before asking whether it's true — ritual read as embodied self-fashioning explains its endurance better than debunking or belief."
+  },
+  {
+   "title": "Integrating Blue Infrastructure in Temple Towns: A Case of Nashik's Sacred Waterscapes",
+   "book": "Integrating Blue Infrastructure in Temple Towns: A Case of Nashik's Sacred Waterscapes — Kajol Chaudhari",
+   "type": "argument",
+   "steal": "Nashik's sacred waterscapes — the Godavari riverfront, temple tanks, ghats — are degrading under urbanization and tourism stress; using GIS spatial analysis, field observations, and stakeholder consultations, the study maps water-body typologies over time and proposes a holistic, context-sensitive action plan balancing heritage, ecology, and urban life.",
+   "why": "Temple towns are sacred-ecology systems, not just heritage sites — the thesis treats the water network as the connective tissue and argues rapid urbanization is breaking it.",
+   "uw": "Sacred cities run on sacred infrastructure — plan the water, not just the monuments, or you lose both the ecology and the heritage."
+  },
+  {
+   "title": "ENIP Fuzz: a Scapy-based EtherNet/IP fuzzer for security testing",
+   "book": "ENIP Fuzz: a Scapy-based EtherNet/IP fuzzer for security testing — Francisco Tacliad",
+   "type": "mechanism",
+   "steal": "EtherNet/IP is an industrial control protocol built on TCP/IP — extending TCP/IP to industrial control systems made them \"more readily accessible to the outside world,\" and embedded control systems on Navy afloat and ashore platforms use EtherNet/IP, making those platforms prime targets for cyber attack; the thesis built ENIP Fuzz, a Scapy-based fuzzer, to test a proprietary EtherNet/IP implementation's susceptibility to malformed packets.",
+   "why": "The protocols that run ships, plants, and grids were bolted onto the internet's plumbing — and the way to find their holes before attackers do is to throw malformed packets at them deliberately.",
+   "uw": "Probe your systems the way an attacker would — security lives in the implementation, not the diagram, and fuzzing is how you make the diagram tell the truth."
+  },
+  {
+   "title": "Adopting Cloud Computing in the Pakistan Navy",
+   "book": "Adopting Cloud Computing in the Pakistan Navy — Tahir Majeed Asim",
+   "type": "argument",
+   "steal": "Although Pakistan's cloud computing industry was \"still under development,\" the thesis lays out an adoption framework for the Pakistan Navy — analyzing cloud models against the NIST reference architecture, the DoD strategy, and the U.S. Navy's cloud roadmap — aimed at information sharing, economy of effort, IT reliability, and eliminating IT over-expenditures, with the stated goal of a \"highly resilient, secure, reliable, quick, and integrated solution\" to increase warfighter mission effectiveness and operational efficiency.",
+   "why": "A 2015 blueprint for how a developing-navy partner of consequence plans to digitize its force — the framework is less about technology than about what a military values when it modernizes: sharing, economy, reliability, and stopping IT waste.",
+   "uw": "Modernization is strategy first, servers second — the thesis treats cloud adoption as a doctrine question (who shares what, to what end) before it's an IT procurement question."
+  },
+  {
+   "title": "Cyberspace actions in a counterinsurgency",
+   "book": "Cyberspace actions in a counterinsurgency — Andrzej V. Kujawski",
+   "type": "argument",
+   "steal": "U.S. DoD joint doctrine is insufficient for incorporating cyberspace operations into counterinsurgency (COIN) campaigns — existing doctrine \"does not address many types of missions and operations that can produce effects in support of the COIN tenets\"; the thesis maps cyberspace actions from joint cyberspace doctrine against COIN tenets in a matrix, evaluates which effects are accounted for, seen in actual COINs, and significant — then proposes doctrine additions for the highest-impact, least-accounted-for intersections, drawing only on unclassified sources.",
+   "why": "It names a real doctrine gap — the military has both cyber capabilities and COIN doctrine, but no adequate bridge between them — and systematically prioritizes exactly which missing guidance matters most.",
+   "uw": "When two mature toolkits don't connect, the missing map is the vulnerability — building the matrix of what-doctrine-misses is how you find the guidance gap before the enemy finds the operational one."
+  },
+  {
+   "title": "Analysis of Sleep, Mood, Behavior, and Suicide Risk of Sailors on the USS Ashland",
+   "book": "Analysis of Sleep, Mood, Behavior, and Suicide Risk of Sailors on the USS Ashland — Eric M. Myers",
+   "type": "evidence",
+   "steal": "Sailors on the USS Ashland (LSD-48) averaged 6.33 hours of sleep per night (SD 1.14) — significantly below the recommended 7+ hours — and a comparison against 37 other Navy platforms found Ashland sailors were not significantly different from the rest of the fleet: all 38 groups together averaged 6.35 hours, with only 13% of the studies finding sailors averaging more than 7 hours; the study links the sleep shortfall to mood, behavior, and suicide risk, motivated by \"recent collisions and multiple suicides\" as the cost of failure.",
+   "why": "The striking finding isn't that one ship's sailors are tired — it's that the whole fleet is tired, and tiredness is quantified against collisions and suicides; chronic sleep deprivation is a fleet-wide condition with documented lethal stakes.",
+   "uw": "When every unit measures below the bar, it's not a unit problem — it's a system problem; the Ashland study makes the case that fleet sleep is a structural readiness issue, not a discipline one."
   }
  ]
 }
