@@ -58,11 +58,6 @@ for _g in genre_order:
                 _ordered.append(_c)
 for _i, _c in enumerate(_ordered):
     _c["_n"] = _i + 1
-floaters_json = json.dumps(
-    [{"n": i + 1, "title": c["title"], "steal": c["steal"],
-      "book": c["book"], "type": c["type"]}
-     for i, c in enumerate(_ordered)],
-    ensure_ascii=False).replace("</", "<\\/")
 
 def book_block(b):
     gh = ghue[b["genre"]]
@@ -330,18 +325,7 @@ main{max-width:920px;margin:0 auto;padding:1rem 1.25rem 3rem}
 .pill.mechanism{color:var(--amber);border-color:var(--amber)}
 .hidden{display:none!important}
 footer{color:var(--muted);font-size:.8rem;padding:2rem 1.5rem;border-top:1px solid var(--border);text-align:center}
-#splash{position:relative;min-height:92vh;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 1.25rem 4rem}
-#splash h1{font-size:2.6rem;margin:0 0 .4rem;position:relative;z-index:2}
-#splash .tag{color:var(--muted);font-size:1rem;max-width:34rem;position:relative;z-index:2;margin:0 0 1.4rem}
-#floatfield{position:absolute;inset:0;z-index:1;pointer-events:none}
-.floater{position:absolute;max-width:230px;background:rgba(18,26,43,.85);border:1px solid var(--border);border-radius:10px;padding:.5rem .7rem;font-size:.78rem;text-align:left;pointer-events:auto;cursor:pointer;animation:drift ease-in-out infinite}
-.floater .ft{font-weight:600;color:var(--fg);display:block;margin-bottom:.15rem;font-size:.8rem}
-.floater .fs{color:var(--muted);font-style:italic;display:block}
-.floater:hover{border-color:var(--amber)}
-@keyframes drift{0%,100%{transform:translateY(-7px) rotate(var(--rot,0deg))}50%{transform:translateY(7px) rotate(var(--rot,0deg))}}
-#splash .dive{position:relative;z-index:2;background:transparent;border:1px solid var(--amber);color:var(--amber);border-radius:999px;padding:.55rem 1.4rem;font-size:.9rem;cursor:pointer}
-#splash .dive:hover{background:var(--amber);color:#0b1220}
-@media (prefers-reduced-motion:reduce){.floater{animation:none}}
+
 /* v2: collapsed books, steal previews, chips, toast, jump chips */
 .bookhead{cursor:pointer}
 .bookhead .bmain{flex:1;min-width:0}
@@ -367,9 +351,6 @@ footer{color:var(--muted);font-size:.8rem;padding:2rem 1.5rem;border-top:1px sol
 #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 .hrow{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap}
 .hrow strong{font-size:1.3rem}
-@media (max-width:700px){.floater{display:none}}
-@media (max-height:500px){.floater{display:none}}
-@media (min-width:701px) and (max-width:900px){.floater{max-width:180px;font-size:.72rem}}
 @media(min-width:1000px){
 main{max-width:1180px}
 .controls .inner,.jumpchips,header{max-width:1180px}
@@ -572,44 +553,6 @@ function openHash(){
     if(bk){setBook(bk,true);setTimeout(function(){bk.scrollIntoView({block:'start'});},60);return true;}}
   return false;
 }
-var field=document.getElementById('floatfield');
-if(field&&window.FLOATERS){
-  /* fixed slots around the edges keep floaters from ever overlapping;
-     slot order is shuffled per load so the arrangement still feels fresh.
-     Narrower screens get 4 floaters in 2 roomy rows instead of 6 in 3. */
-  var SLOTS=window.innerWidth<900
-    ? [[6,8],[68,6],[9,66],[66,68]]
-    : [[5,6],[70,5],[3,36],[72,38],[8,68],[66,70]];
-  var pool=window.FLOATERS.slice(),picks=[],K=Math.min(SLOTS.length,pool.length),i;
-  for(i=0;i<K;i++){picks.push(pool.splice(Math.floor(Math.random()*pool.length),1)[0]);}
-  var cards=document.querySelectorAll('.card:not([data-fb])');
-  var si,sj,st;
-  for(si=SLOTS.length-1;si>0;si--){sj=Math.floor(Math.random()*(si+1));st=SLOTS[si];SLOTS[si]=SLOTS[sj];SLOTS[sj]=st;}
-  picks.forEach(function(p,idx){
-    var d=document.createElement('div');
-    d.className='floater';
-    var s=SLOTS[idx%SLOTS.length];
-    d.style.left=(s[0]+(Math.random()*4-2)).toFixed(1)+'%';
-    d.style.top=(s[1]+(Math.random()*4-2)).toFixed(1)+'%';
-    d.style.animationDuration=(9+Math.random()*9).toFixed(1)+'s';
-    d.style.animationDelay=(-Math.random()*12).toFixed(1)+'s';
-    d.style.setProperty('--rot',(Math.random()*6-3).toFixed(1)+'deg');
-    var t=document.createElement('span');t.className='ft';t.textContent=p.title;
-    var s=document.createElement('span');s.className='fs';
-    s.textContent=p.steal.length>110?p.steal.slice(0,110)+'…':p.steal;
-    d.appendChild(t);d.appendChild(s);
-    d.title=p.book+' — click to open card '+p.n;
-    d.addEventListener('click',function(){
-      var c=cards[p.n-1];
-      if(c){var b=c.closest('.book');setBook(b,true);c.classList.add('open');
-        c.scrollIntoView({behavior:'smooth',block:'center'});
-        if(history.replaceState){try{history.replaceState(null,'','#c'+p.n);}catch(_){}}}
-    });
-    field.appendChild(d);
-  });
-}
-var dive=document.getElementById('dive');
-if(dive){dive.addEventListener('click',function(){document.getElementById('intro').scrollIntoView({behavior:'smooth'});});}
 var firstBook=document.querySelector('.book');
 if(firstBook)manual[firstBook.id]=true;
 apply(false);
@@ -640,12 +583,7 @@ page = """<!DOCTYPE html>
 <style>%s</style>
 </head>
 <body>
-<section id="splash">
-<div id="floatfield" aria-hidden="true"></div>
-<h1>Cool Keepers</h1>
-<p class="tag">Stealable mechanisms from books worth stealing from. The list grows as the ripping gets better.</p>
-<button type="button" class="dive" id="dive">Dive into the library ↓</button>
-</section>
+
 <header class="masthead"><div class="mast-inner">
 <div class="wordmark" role="img" aria-label="Idea Ripper">%s</div>
 <p class="mast-sub">Cool Keepers <span class="sep">/</span> the idea-hunting library</p>
@@ -674,12 +612,11 @@ page = """<!DOCTYPE html>
 <p class="noresults" id="noresults" hidden>No keepers match — try a mechanism word (interlock, delay, patronage).</p>
 </main>
 <footer>Last curated September 22, 2026 &middot; %d books &middot; %d keepers%s &middot; ripped with the Idea Ripper pipeline</footer>
-<script>var FLOATERS=%s;</script>
 <script>%s</script>
 <div id="toast" role="status"></div>
 </body>
 </html>""" % (CSS, WORDMARK_SVG, n, len(books), curated, fb_intro, genre_opts, book_opts, type_opts, chips,
-              "\n\n".join(sections), len(books), n, fb_footer, floaters_json, JS)
+              "\n\n".join(sections), len(books), n, fb_footer, JS)
 
 open(os.path.join(BASE, "index.html"), "w", encoding="utf-8").write(page)
 print("built: %d cards, %d books, %d genres" % (n, len(books), len(genre_order)))
