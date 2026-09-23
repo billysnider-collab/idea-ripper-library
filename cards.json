@@ -172,11 +172,6 @@
    "bookline": "Rosicrucian tract on the secret water that flows from fire — element as state, not modern chemistry."
   },
   {
-   "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
-   "genre": "Nonfiction",
-   "bookline": "Scholarly map of Jewish mysticism — against rationalist dismissal, toward living authority of the vision."
-  },
-  {
    "book": "Every Molecule Matters — Simon Cotton",
    "genre": "Nonfiction",
    "bookline": "Chemistry told through molecules that shape food, drugs, war, color, and the body."
@@ -1663,46 +1658,6 @@
    "steal": "CURSE FOUNTAIN, OF THAT SECRET WHOSE WATER FLOWS FROM FIRE; AND CARRIES IN IT THE BEAMS OF THE SUN AND MOON.",
    "why": "Paradox engine: water sourced from fire, carrying both luminaries — the image is the thesis.",
    "uw": "When a secret needs a heraldic paradox in one line."
-  },
-  {
-   "title": "Rationalist bias dismissed the mystical realm",
-   "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
-   "type": "argument",
-   "steal": "Master of the realm of Jewish mysticism, an area largely neglected, and even contemptuously dismissed, by earlier Jewish historical scholarship with its rationalist bias, and that in so doing he would effect a fundamental revision in the understanding of Jewish history.",
-   "why": "Methodological contempt erased a whole province of history — recovery revises the map.",
-   "uw": "When a field’s “serious” gatekeepers have been wrong by exclusion."
-  },
-  {
-   "title": "Balustrade the mystic leans on",
-   "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
-   "type": "mechanism",
-   "steal": "Kind of balustrade on which the mystic leans, so as not to be plunged suddenly or unprepared into an ecstasy in which the holy waters might drown his consciousness.",
-   "why": "Tradition is a rail, not a cage — it prevents drowning in unprepared ecstasy.",
-   "uw": "When form/ritual is accused of blocking experience and you need the safety-rail argument."
-  },
-  {
-   "title": "Scrupulous scholarship can track the elusive",
-   "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
-   "type": "evidence",
-   "steal": "The Zohar, the central text of the Kabbalah, is a breathtaking example of how scrupulous scholarship can attain a kind of Mozartian lucidity and precision in the process of tracking down an elusive historical phenomenon.",
-   "why": "Precision is not the enemy of mystery — it is how you catch what keeps slipping.",
-   "uw": "When people claim scholarly method kills the object of study."
-  },
-  {
-   "title": "Mystic vision has spiritual authority for moderns",
-   "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
-   "type": "argument",
-   "steal": "That the profundity of the mystic vision is of more than antiquarian interest to Scholem: it speaks to him, and his implicit assumption is that it has an element of spiritual authority that can speak to other modern people.",
-   "why": "Scholem’s history is not taxidermy — the vision still claims authority now.",
-   "uw": "When a scholar is secretly a believer in the object's ongoing force."
-  },
-  {
-   "title": "Edifice from late-antique Gnosis to Hasidism",
-   "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
-   "type": "passage",
-   "steal": "Of this book from the Jewish Gnosticism of late antiquity to the Hasidism of the eighteenth and nineteenth centuries, is a scholarly edifice that will stand the test of time.",
-   "why": "The arc is the argument — continuous building across centuries, not isolated freak events.",
-   "uw": "When a tradition looks discontinuous until someone draws the long beam."
   },
   {
    "title": "Methane as the simplest organic molecule",
