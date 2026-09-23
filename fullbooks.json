@@ -507,51 +507,888 @@
    "chapter_summaries": [
     {
      "unit": "Introduction",
-     "summary": "Morris rejects static “Anglo-Saxon” generalizations and promises a selective story of how England and the English emerged through centuries of transformation."
+     "summary": "Morris rejects static “Anglo-Saxon” generalizations and promises a selective story of how England and the English emerged through centuries of transformation.",
+     "thesis": "The introduction argues that the Anglo-Saxon period cannot be treated as a single golden-age culture because it was a seven-century transformation from fragmented pagan kingdoms to a unified Christian England, and that modern readers must understand rather than idolize that unequal society.",
+     "key_events": [
+      {
+       "what": "The Sutton Hoo ship burial, with its helmet and treasure, was concealed under a mound.",
+       "when": "early seventh century",
+       "who": "an unnamed elite lord"
+      },
+      {
+       "what": "Christianity expanded dynamically and monasteries and bishoprics were founded.",
+       "when": "second half of the seventh century",
+       "who": "unnamed kings and churchmen"
+      },
+      {
+       "what": "Alfred the Great styled himself king of the Anglo-Saxons.",
+       "when": "late ninth century",
+       "who": "Alfred the Great"
+      },
+      {
+       "what": "King Harold died at the Battle of Hastings, leading directly to the Norman Conquest.",
+       "when": "1066",
+       "who": "King Harold"
+      }
+     ],
+     "causes": [
+      "The dynamic expansion of Christianity and the foundation of monasteries and bishoprics in the seventh century.",
+      "The consolidation of competing smaller kingdoms into a single kingdom of England.",
+      "Economic growth, including expanding trade, towns, ports, and an abundant silver coinage.",
+      "Later political and religious conflicts encouraged selective readings of limited evidence that produced golden-age myths."
+     ],
+     "consequences": [
+      "By 1066 England was a peaceful and prosperous Christian kingdom with cathedrals, monasteries, local churches, towns, cities, ports, and silver coinage.",
+      "Harold's death at Hastings led directly to the Norman Conquest.",
+      "The Anglo-Saxon period was later mythologized as a golden age for women and for representative freedoms, and eventually as a marker of racial superiority.",
+      "The term Anglo-Saxon remains useful but contested, with some scholars urging its abandonment."
+     ],
+     "evidence": [
+      "The Sutton Hoo treasure and helmet reveal early seventh-century elite burial, artistry, and a non-Christian warrior culture.",
+      "The Bayeux Tapestry depicts the death of King Harold at Hastings.",
+      "Bede's Ecclesiastical History supplies only brief sections on religious women.",
+      "Late eleventh-century political tracts commissioned by queens Emma and Edith touch on their careers.",
+      "Tenth-century royal charters show queens and mothers as leading witnesses, but not their personalities or careers.",
+      "Tacitus's account of German women is a Roman moral critique, not reliable evidence for Anglo-Saxon women's status.",
+      "Archaeology is virtually the only source for the first two centuries after Roman rule."
+     ],
+     "reading": "The author reads the period as a long, uneven but fundamental transformation that produced both enduring institutions and dazzling art and a highly unequal, patriarchal, persecuting, slave-owning society. Later golden-age and racial myths are projections, not history."
     },
     {
      "unit": "1 The Ruin of Britain",
-     "summary": "After Roman Britain’s catastrophic early-fifth-century collapse, substantial Germanic settlement filled a landscape whose ruined culture offered little to emulate."
+     "summary": "After Roman Britain’s catastrophic early-fifth-century collapse, substantial Germanic settlement filled a landscape whose ruined culture offered little to emulate.",
+     "thesis": "This chapter argues that Roman Britain's prosperity and security collapsed in the early fifth century through imperial military and economic withdrawal, internal usurpations, and barbarian raids, and that the subsequent Anglo-Saxon settlement was a complex, multi-phase migration that transformed the province into a divided and degraded Britain.",
+     "key_events": [
+      {
+       "what": "The Roman army in Britain revolts and proclaims Constantine emperor, who then takes troops to Gaul",
+       "when": "406–407",
+       "who": "British army, Constantine"
+      },
+      {
+       "what": "Britons expel Roman magistrates and establish self-rule after a Saxon invasion",
+       "when": "c. 409",
+       "who": "Britons, Zosimus"
+      },
+      {
+       "what": "First archaeological indications of Saxon settlement appear in eastern Britain, including burials, artefacts and buildings",
+       "when": "c. 430",
+       "who": "Saxon settlers from northern Germany and southern Scandinavia"
+      },
+      {
+       "what": "Saxon revolt seizes control of a substantial area of Britain",
+       "when": "c. 441",
+       "who": "Saxons and Britons, recorded in the Gallic Chronicle of 452"
+      },
+      {
+       "what": "Battle of Badon Hill ends the period of constant warfare between Britons and Saxons",
+       "when": "c. 500",
+       "who": "Britons and Saxons, as described by Gildas"
+      }
+     ],
+     "causes": [
+      "Reduction of the Roman garrison in Britain from about 50,000 men in the second century to around a third by AD 300",
+      "Removal of the western imperial court from Trier to Milan in 381 and later to Italy",
+      "Cessation of bulk coin imports to Britain after the mint moved from Milan to Ravenna in 402",
+      "Repeated Saxon, Pictish, Scots and Attacot raids and invasions",
+      "Usurpations such as Magnus Maximus and Constantine III draining British troops",
+      "Hunnic pressure on the Goths and the Adrianople disaster destabilizing the empire",
+      "Break with Rome left Britain in chaos and under assault from Picts, Scots and Saxons, with no legions and a disarmed civilian population",
+      "British authorities recruited Saxon mercenaries to fight other barbarian groups",
+      "Civic life and organized Christianity had already collapsed in Britain before Saxon settlement, leaving little attractive Roman culture to preserve",
+      "Continued migration from northern Europe and southern Scandinavia, including later Scandinavian arrivals, fed settlement and new identities"
+     ],
+     "consequences": [
+      "Widespread burial of hoards, with over a thousand known from Roman Britain and a peak around AD 400",
+      "Abandonment of towns and villas, and collapse of pottery, ironmongery and coinage",
+      "Population displacement, famine, disease and violence",
+      "The British revolt of 409 severing Roman political and economic links",
+      "Saxon raids and later mercenary revolt ravaging Britain",
+      "Legendary accounts by Gildas and Bede shaping later memory of the Saxon arrival",
+      "Eastern Britain split into a northern zone with strong Saxon cultural attachment and a southern zone with Romano-British continuity",
+      "In the east, Britons adopted Germanic language and pagan gods, while in the west a degraded Christian British culture survived",
+      "New 'Anglian' and 'Saxon' identities formed after migration, expressed in dress and material culture",
+      "Long warfare between Britons and Saxons ended at Badon Hill, followed by civil wars among British rulers"
+     ],
+     "evidence": [
+      "Hoxne Hoard: 584 gold and over 14,000 silver coins, latest minted 407–408; 98.5% of silver coins clipped",
+      "Notitia Dignitatum shows British units relocated to the Balkans and Richborough by the 390s",
+      "Archaeological site occupancy: villa rooms occupied fell by a third and town rooms by half by 375",
+      "Coin finds cease in significant quantities after 402; imitations and clipped coins appear",
+      "Sidonius Apollinaris describes Saxon pirates' ferocity and pagan sacrifice in fifth-century Gaul",
+      "Gildas's The Ruin of Britain and Bede's Ecclesiastical History provide the mercenary revolt narrative",
+      "Gallic Chronicle of 452 entry for 441 says the Britains were 'widely reduced to the rule of the Saxons'",
+      "Archaeology: cremation cemeteries such as Spong Hill, furnished inhumations, Saxon Relief Style and Quoit Brooch Style distributions",
+      "Wrist-clasp distribution from Norway stops at the cultural frontier, indicating an Anglian identity by the late fifth century",
+      "Language evidence: only around thirty Old English words borrowed from Brittonic and English day names from Germanic gods",
+      "Tintagel amphorae and Cadbury Congresbury re-used Roman cremation urns show western elite imports and material degradation"
+     ],
+     "reading": "The author reads hoards as 'reliable barometers of unrest' and treats the 409 revolt not as liberation but as the severing of imperial links that tipped Britain into free fall. He also argues that Saxon settlement was substantial but regionally varied, that its cultural triumph owed less to numbers than to the prior collapse of Roman Britain, and that 'Anglian' and 'Saxon' identities crystallized only after migration."
     },
     {
      "unit": "2 War-Wolves and Ring-Givers",
-     "summary": "Late-sixth-century catastrophe and coercion forged Anglo-Saxon kingship as competitive ring-giving warlordship; conversion and Penda’s fall remade the ideological landscape."
+     "summary": "Late-sixth-century catastrophe and coercion forged Anglo-Saxon kingship as competitive ring-giving warlordship; conversion and Penda’s fall remade the ideological landscape.",
+     "thesis": "Anglo-Saxon kingship emerged abruptly in the late sixth century from environmental crisis and violence, flourished briefly as competitive pagan over-kingship, and became Christian only after Penda's death in 655.",
+     "key_events": [
+      {
+       "what": "Furnished burials decline; elite barrows and grand halls appear",
+       "when": "c. 570s",
+       "who": "unknown emerging elites"
+      },
+      {
+       "what": "Augustine's Roman mission arrives; Æthelberht converts",
+       "when": "597",
+       "who": "Augustine, Æthelberht, Bertha"
+      },
+      {
+       "what": "Battle of River Idle kills Æthelfrith, elevates Rædwald",
+       "when": "616",
+       "who": "Rædwald, Æthelfrith, Eadwine"
+      },
+      {
+       "what": "Rædwald buried in ship under mound with rich goods",
+       "when": "c. 625",
+       "who": "Wuffing dynasty"
+      },
+      {
+       "what": "Oswiu defeats and kills Penda at Winwæd",
+       "when": "15 November 655",
+       "who": "Oswiu, Penda"
+      }
+     ],
+     "causes": [
+      "Mid-sixth-century volcanic dust-veil, famine, and plague destabilized communities",
+      "Food shortages increased raiding and violence, making tribute lords attractive",
+      "Ambitious warlords coerced weaker neighbours into economic and political subservience",
+      "Frankish marriage, gold, and Christian mission advantaged Kentish kings materially and ideologically",
+      "Competition among newly powerful kings drove extravagant burials and hall-building",
+      "Wuffings competed with Prittlewell burial, creating spectacular Sutton Hoo ship burial",
+      "Eadwine's Christian marriage brought priest and papal pressure, leading to baptism",
+      "Cadwallon sought revenge after Eadwine seized Anglesey and Man",
+      "Penda rose through warfare, tribute, and dynastic vengeance",
+      "Oswiu attacked Penda after a tribute offer broke uneasy peace"
+     ],
+     "consequences": [
+      "Emergence of visible elites and tribute-taking lordships in late sixth century",
+      "Formation of many small kingdoms, some expanding by bullying neighbours",
+      "Æthelberht's Kent became pre-eminent with law-code, church, Canterbury archbishopric",
+      "Battle of River Idle reversed Northumbrian dynasties, elevated Rædwald",
+      "Sutton Hoo preserved richest princely burial, revealing Wuffings' Scandinavian connections",
+      "Eadwine's baptism established York bishopric and began stone church",
+      "Cadwallon's devastation split Northumbria, led to Oswald's Heavenfield victory",
+      "Penda's death ended last great pagan king, enabled Mercian Christianization",
+      "Staffordshire Hoard may be Penda's tribute or Winwæd war gear",
+      "Christianity's rapid progress coincided with decline in princely barrows and halls"
+     ],
+     "evidence": [
+      "Beowulf depicts halls, ring-giving, warrior loyalty, blood-feud, and fame-seeking",
+      "Henry of Huntingdon's heptarchy rests on no authority; Bede names dozen kingdoms",
+      "Chronicle origin stories legendary: three ships, alliterative pairs, place-name reversal",
+      "West Stow modest settlement; late sixth-century barrows and halls show elite emergence",
+      "Tribal Hidage lists thirty-five peoples assessed from 100,000 to few hundred hides",
+      "Bede's list of over-kings and Frankish/Kentish grave goods and gold finds",
+      "Bede supplies narrative of Rædwald's altars, Eadwine's baptism, battles, Penda's dismemberment",
+      "1939 Sutton Hoo excavation found ship, helmet, gold buckle, mid-620s coins",
+      "Prittlewell chamber contained rich grave goods, two gold crosses, no body",
+      "Yeavering excavations revealed great halls, cattle enclosures, possible pagan temple",
+      "2009 Staffordshire Hoard contained five kilograms gold war gear, Christian items",
+      "Beowulf parallels ship burial, hall culture, last survivor's treasure burial"
+     ],
+     "reading": "The author reads Beowulf as an ethnographic guide to violent gift-giving kingship and written origin legends as later rationalizations; the real story is archaeological and environmental. Sutton Hoo, Yeavering, and the wars of Eadwine, Oswald, and Penda reveal a short-lived competitive pagan kingship that Christianity replaced only after Penda's death."
     },
     {
      "unit": "3 God’s Chosen Instrument",
-     "summary": "Through Wilfrid’s career, Roman ecclesiastical order advances by synod, patronage, and sometimes the sword, while popular understanding stays thin."
+     "summary": "Through Wilfrid’s career, Roman ecclesiastical order advances by synod, patronage, and sometimes the sword, while popular understanding stays thin.",
+     "thesis": "Wilfrid’s Roman formation, Whitby, and long conflict with Theodore and Northumbrian kings made Roman observance official and revived Canterbury’s authority, but left his personal ambitions only partly fulfilled and entrenched Northumbrian separatism.",
+     "key_events": [
+      {
+       "what": "Synod of Whitby rules for Roman Easter",
+       "when": "664",
+       "who": "Oswiu, Wilfrid, Colman"
+      },
+      {
+       "what": "Theodore arrives Canterbury and tours kingdoms",
+       "when": "669",
+       "who": "Theodore"
+      },
+      {
+       "what": "Wilfrid deposed and diocese divided",
+       "when": "678",
+       "who": "Theodore, Ecgfrith, Wilfrid"
+      },
+      {
+       "what": "Ecgfrith killed at Nechtansmere",
+       "when": "685",
+       "who": "Ecgfrith and Picts"
+      },
+      {
+       "what": "Council on Nidd restored Ripon and Hexham",
+       "when": "c. 705",
+       "who": "Ælfflæd, Berhtwald, Wilfrid"
+      }
+     ],
+     "causes": [
+      "Oswald's Irish exile brought Iona Christianity to Northumbria",
+      "Irish monasticism suited non-urban Irish society",
+      "Wilfrid's Roman pilgrimage exposed him to continental episcopal power",
+      "Alchfrith's patronage installed Wilfrid at Ripon",
+      "Easter dating dispute divided Oswiu's court",
+      "Plague killed bishops and depopulated monasteries",
+      "Rome struggled to find willing archbishop",
+      "Theodore wanted more bishops to cover dioceses",
+      "Wilfrid's wealth and retinue rivaled kings",
+      "Ecgfrith overreached against Picts",
+      "Wilfrid assumed his old Northumbrian authority would resume",
+      "Aldfrith upheld Theodore's division of dioceses",
+      "Theodore's death emboldened Wilfrid to reverse settlement",
+      "Austerfield bishops sought to strip Wilfrid's rank and property",
+      "Pope's verdict was inconclusive and referred case back",
+      "Deaths of Aldfrith and Bosa opened compromise space",
+      "Wilfrid's declining health made him settle for less"
+     ],
+     "consequences": [
+      "Oswiu adopted Roman Easter and tonsure",
+      "Colman resigned and left Lindisfarne",
+      "Wilfrid denied Northumbrian bishopric",
+      "Plague caused pagan revival in Essex",
+      "Wilfrid became best-qualified bishop in Britain",
+      "Chad appointed bishop in Wilfrid's absence",
+      "Wilfrid exiled and later restored",
+      "Northumbrian empire contracted after Nechtansmere",
+      "Cædwalla conquered southern kingdoms with Wilfrid's support",
+      "Wearmouth and Jarrow merged under Ceolfrith",
+      "Wilfrid banished from Northumbria a second time",
+      "He made a third appeal to Rome",
+      "Pope referred dispute to Canterbury",
+      "Aldfrith's death triggered succession crisis",
+      "Council of Nidd gave Wilfrid Ripon and Hexham, not York",
+      "Wilfrid died in 710",
+      "York became archbishopric twenty-five years later",
+      "Northumbrian separatism from southern churches increased"
+     ],
+     "evidence": [
+      "Stephen's Life is contemporary, propagandistic, only Austerfield/Rome account",
+      "Stephen's tone is hysterical and distorts papal outcome",
+      "Bede supplies an alternative narrative",
+      "Hexham crypt survives from the 670s",
+      "Bradwell-on-Sea church stands intact",
+      "Bewcastle cross inscription mentions Alchfrith",
+      "Bede records peasants jeering monks over lost worship",
+      "Stephen of Ripon omits Cædwalla's paganism",
+      "Synod record says no decision on more bishops",
+      "Jarrow dedication stone dates 685",
+      "Bede preserves Wilfrid's tomb inscription praising him as Wilfridus magnus",
+      "Papal records disprove Wilfrid's claimed authority over north",
+      "Bede lists bishops below Humber subject to Mercia"
+     ],
+     "reading": "Wilfrid’s career shows conversion was contested between Irish and Roman traditions, and Whitby was a royal political settlement as much as a doctrinal victory. The author reads Wilfrid as a transformative but ruthless overmighty bishop whose ambition and violent alliances threatened kings, while Theodore’s reforms revived Canterbury and deepened Northumbrian separatism, leaving ordinary people marginal."
     },
     {
      "unit": "4 An English Empire?",
-     "summary": "Offa builds a southern Mercian annexation empire and Carolingian-style display as English identity sharpens against the Britons—then his dynasty collapses."
+     "summary": "Offa builds a southern Mercian annexation empire and Carolingian-style display as English identity sharpens against the Britons—then his dynasty collapses.",
+     "thesis": "Mercian supremacy under Æthelbald and Offa rested on London's commercial revenues and coercive annexation, and Offa's Dyke was a costly frontier obstacle rather than a garrisoned military wall, while Offa's violent consolidation and ideological legitimation sharpened the English-British boundary but his dynasty collapsed.",
+     "key_events": [
+      {
+       "what": "Mercia secured control of London",
+       "when": "by 733",
+       "who": "Æthelbald"
+      },
+      {
+       "what": "Offa seized Mercian throne after civil war",
+       "when": "757",
+       "who": "Offa"
+      },
+      {
+       "what": "Offa annexed Kent and Sussex",
+       "when": "764-772",
+       "who": "Offa"
+      },
+      {
+       "what": "Ecgfrith consecrated after Lichfield archbishopric created",
+       "when": "787",
+       "who": "Offa, Ecgfrith, Hygeberht"
+      },
+      {
+       "what": "Offa dies; Ecgfrith dies months later",
+       "when": "796",
+       "who": "Offa, Ecgfrith"
+      }
+     ],
+     "causes": [
+      "London's toll revenue gave Mercia competitive edge",
+      "International trade and silver coinage revived Lundenwic",
+      "Mercia was landlocked and needed continental trade links",
+      "British raids threatened Mercia's western frontier",
+      "Æthelbald's murder left succession open",
+      "Offa sought permanent annexation over loose hegemony",
+      "Need to secure Ecgfrith's dynastic succession",
+      "Control of Canterbury mint and silver supplies",
+      "Carolingian and Roman imperial models of legitimacy",
+      "Growing English ethnic identity against Britons"
+     ],
+     "consequences": [
+      "Offa built Britain's longest linear earthwork",
+      "Kent and Sussex became Mercian provinces",
+      "Sussex kings were demoted to ealdormen",
+      "Kent rebelled against Offa in 776",
+      "Kentish kings disappear from record",
+      "Offa's coinage becomes voluminous and portrait-bearing",
+      "Lichfield archbishopric carved from Canterbury",
+      "Wessex becomes indirectly subordinate through Beorhtric",
+      "Ecgfrith's death ends Offa's dynasty",
+      "Historians debate dyke's military or raid-blocking purpose"
+     ],
+     "evidence": [
+      "Asser wrote Offa built dyke from sea to sea",
+      "Æthelbald's charters show London toll exemptions by 733",
+      "Bede called London an emporium for many nations",
+      "Boniface's letters criticize Æthelbald's forced labour",
+      "Gumley charter demands bridge and fortress work",
+      "Pillar of Eliseg records Powys recovery from Angles",
+      "Anglo-Saxon Chronicle records Offa subdued Hastingas in 771",
+      "Charters show Kentish kings vanish after 785",
+      "Coin finds show Offa's name on 99 per cent",
+      "Anglo-Saxon Chronicle records contentious Chelsea council",
+      "Alcuin letters mention dissension and Offa's bloodshed",
+      "Charlemagne's letter addresses bishops in Offa's kingdom",
+      "Place-name evidence shows western Mercia anglicized"
+     ],
+     "reading": "The author reads Mercian power as resting on London's commercial revenues and coercive consolidation, and Offa's Dyke as a costly obstacle to raiding rather than a garrisoned military barrier. Offa appears as a brutal but ideologically sophisticated empire-builder who copied Carolingian Romanitas and exploited English identity, yet his consecration plan could not overcome dynastic fragility."
     },
     {
      "unit": "5 Storm from the North",
-     "summary": "Viking escalation from Lindisfarne to the great army destroys most kingdoms and creates the emergency for English reinvention."
+     "summary": "Viking escalation from Lindisfarne to the great army destroys most kingdoms and creates the emergency for English reinvention.",
+     "thesis": "Viking raids, beginning with Lindisfarne in 793, escalated from coastal plunder to large overwintering armies and conquest, exploiting economic inequality, naval innovation, and political fragmentation, until dynastic deaths left Alfred as Wessex's last hope.",
+     "key_events": [
+      {
+       "what": "Viking raid on Lindisfarne monastery",
+       "when": "793",
+       "who": "Scandinavian raiders"
+      },
+      {
+       "what": "Viking fleet overwinters at Thanet and storms Canterbury/London",
+       "when": "850-1",
+       "who": "Viking army"
+      },
+      {
+       "what": "Charles defeated Marne Vikings and fortified Pîtres",
+       "when": "862",
+       "who": "Charles the Bald"
+      },
+      {
+       "what": "Great heathen army invaded, took York, killed Edmund",
+       "when": "865-869",
+       "who": "Ivar, Halfdan"
+      },
+      {
+       "what": "Æthelred died after defeats; Alfred last heir",
+       "when": "871",
+       "who": "Æthelred, Alfred"
+      }
+     ],
+     "causes": [
+      "Economic disparities between rich Christian coasts and poor Scandinavia",
+      "Adoption of sails enabled direct North Sea crossings",
+      "Frankish civil wars invited viking allies and raids",
+      "Christian holy war against Saxons threatened pagans",
+      "Rich monasteries were soft, isolated, undefended targets",
+      "Æthelwulf's will divided the kingdom",
+      "Wessex nobles preferred an adult king",
+      "Charles's Seine defenses diverted Vikings",
+      "Northumbrian civil strife invited attack",
+      "East Anglia and Mercia could not resist",
+      "New summer army reinforced Vikings"
+     ],
+     "consequences": [
+      "Shock and ideological terror among Christians",
+      "Monks relocated from Iona to Kells",
+      "Lundenwic and Hamwic abandoned for walled Roman sites",
+      "Viking fleets grew to hundreds of ships",
+      "Mercia's empire collapsed",
+      "Wessex enlarged",
+      "Royal pilgrimage and succession division in Wessex",
+      "Wessex reunited under one king",
+      "Northumbria conquered",
+      "East Anglia conquered",
+      "Mercia sought Wessex aid",
+      "Alfred became last surviving son",
+      "Vikings entrenched in Wessex"
+     ],
+     "evidence": [
+      "Anglo-Saxon Chronicle records omens, raids, battles, royal deaths",
+      "Alcuin's letters describe Lindisfarne atrocity and captivity",
+      "Annals of St Bertin record Frankish raids, civil wars, Pîtres",
+      "Charters demand defensive measures, refuge, Mercian-Wessex alliance",
+      "Oseberg and Gokstad ships show crew sizes",
+      "Asser describes battles, succession, Æthelbald's marriage scandal",
+      "No contemporary evidence for blood eagle or Edmund's martyrdom details"
+     ],
+     "reading": "The author interprets Viking violence as no worse than Christian warfare but ideologically shocking for targeting churches. The great army was a conquest force, and Frankish defenses redirected pressure to England, leaving Alfred as Wessex's sole hope."
     },
     {
      "unit": "6 Resurrection",
-     "summary": "Alfred saves Wessex, takes western Mercia, and politicizes *Angelcynn*—forging an Anglo-Saxon kingdom without yet ruling all England."
+     "summary": "Alfred saves Wessex, takes western Mercia, and politicizes *Angelcynn*—forging an Anglo-Saxon kingdom without yet ruling all England.",
+     "thesis": "Alfred’s later greatness was largely modern projection, but his real achievement was surviving the 878 crisis, defeating Guthrum, and using baptism, English identity, and defensive consolidation to turn Wessex into a new Anglo-Saxon kingdom.",
+     "key_events": [
+      {
+       "what": "Alfred becomes king amid crisis",
+       "when": "871",
+       "who": "Alfred, Wessex"
+      },
+      {
+       "what": "Alfred wins at Edington, imposes baptism",
+       "when": "May 878",
+       "who": "Alfred, Guthrum"
+      },
+      {
+       "what": "Alfred restored London and received Angelcynn submission",
+       "when": "886",
+       "who": "Alfred, Æthelred"
+      },
+      {
+       "what": "Two viking fleets landed in Kent, renewing war",
+       "when": "892",
+       "who": "Danes from Francia"
+      },
+      {
+       "what": "Alfred builds two burhs on Lea, traps Danes",
+       "when": "895",
+       "who": "Alfred"
+      }
+     ],
+     "causes": [
+      "Great heathen army conquered Northumbria, East Anglia, Mercia",
+      "Wessex warrior class depleted by 870-871 defeats",
+      "Vikings settled rather than leaving Britain",
+      "Alfred’s Edington victory gave him leverage",
+      "Viking armies were mobile and offensive",
+      "Defensive war offered little profit",
+      "Existing burhs were under-garrisoned",
+      "Viking raids destroyed monasteries and libraries",
+      "Latin literacy had already declined",
+      "Alfred needed wider military participation",
+      "Wessex burhs blocked viking seizure and plunder",
+      "Alfred's army presence deterred raiders in Devon",
+      "Londoners attacked Lea camp after winter watching",
+      "Alfred built burhs to block river escape",
+      "Viking naval superiority prompted Alfred's fleet",
+      "Ship losses and Mercian pressure ended attack"
+     ],
+     "consequences": [
+      "Alfred paid tribute in 871",
+      "Guthrum baptized, accepted Christian rules",
+      "Western Mercia annexed under Alfred",
+      "Angelcynn identity promoted politically",
+      "New viking force at Fulham tested peace",
+      "Burh network required 27,000 garrison men",
+      "Rochester withstood siege until royal relief",
+      "London became political center of Angelcynn",
+      "Latin texts translated into English",
+      "English promoted as literary and common identity",
+      "Renewed viking invasion in 892",
+      "Danes raided Sussex; Chichester garrison killed many",
+      "Londoners fled after losing four thegns",
+      "Danes abandoned boats, rode to Bridgnorth",
+      "Alfred's fleet ran aground; some Danes hanged",
+      "Viking attack on Wessex subsided",
+      "Alfred died 899; buried at Winchester"
+     ],
+     "evidence": [
+      "Asser’s Life of King Alfred",
+      "Anglo-Saxon Chronicle",
+      "Torksey and Repton excavations",
+      "Alfred-Guthrum treaty text",
+      "Coins with REX ANGLO[RUM]",
+      "Anglo-Saxon Chronicle records Guthrum settling East Anglia",
+      "Burghal Hidage lists burhs and hide formula",
+      "Asser describes Rochester's defence and Alfred's relief",
+      "Alfred's Pastoral Care preface claims his translation",
+      "Codex Aureus inscription records ransom from vikings",
+      "Chronicle reports Angelcynn submitted to Alfred in London",
+      "Wareham and Winchester wall lengths match hidage calculations",
+      "Chronicle reports Chichester killed many hundreds, captured ships",
+      "Chronicle says Londoners lost four king's thegns",
+      "Chronicle notes viking naval superiority from old warships",
+      "Chronicle silent on Alfred's last three years",
+      "Asser finished biography in 893",
+      "Later chroniclers wrongly claimed Alfred ruled all England"
+     ],
+     "reading": "Alfred’s later ‘greatness’ was partly modern and self-fashioned, but his real shift was from paying vikings to leave to converting and binding them as Christian neighbours, while using English identity to absorb Mercia. His defensive and cultural programmes systematized existing resources rather than inventing them, and his rule remained limited to Wessex and part of Mercia."
     },
     {
      "unit": "7 Imperial Overstretch?",
-     "summary": "Æthelstan briefly makes a kingdom of the English and a Britain claim; Brunanburh’s myth cannot prevent rapid northern undo."
+     "summary": "Æthelstan briefly makes a kingdom of the English and a Britain claim; Brunanburh’s myth cannot prevent rapid northern undo.",
+     "thesis": "Æthelstan's claim to rule all Britain by 927 rested on Edwardian and Mercian conquest, dynastic accident, wealth, and military force, but his imperial overlordship provoked a northern-Celtic coalition and unraveled after Brunanburh.",
+     "key_events": [
+      {
+       "what": "Edward and Æthelflæd conquered Danelaw south of Humber",
+       "when": "917-918",
+       "who": "Edward, Æthelflæd"
+      },
+      {
+       "what": "Æthelstan consecrated with crown at Kingston",
+       "when": "4 September 925",
+       "who": "Æthelstan"
+      },
+      {
+       "what": "Æthelstan annexed Northumbria and met northern kings at Eamont",
+       "when": "927",
+       "who": "Æthelstan"
+      },
+      {
+       "what": "Battle of Brunanburh",
+       "when": "937",
+       "who": "Æthelstan, Olaf, Constantine, Owain"
+      },
+      {
+       "what": "Æthelstan died; Northumbria fell to vikings",
+       "when": "939–940",
+       "who": "Æthelstan, viking king of York"
+      }
+     ],
+     "causes": [
+      "Æthelwold's grievance over Alfred's succession",
+      "Scandinavian settlers threatened Wessex",
+      "Edward and Æthelflæd built frontier burhs",
+      "Danish settlers lacked cohesion",
+      "Sihtric's death left York vacant",
+      "Alfred's restored coinage funded campaigns",
+      "York plunder and Welsh tribute enriched Æthelstan",
+      "Conquered Danelaw retained local jarls and holds",
+      "Constantine and Owain avoided royal assemblies",
+      "Humiliated Celtic rulers sought anti-English alliance",
+      "Olaf claimed York his father failed to seize"
+     ],
+     "consequences": [
+      "Æthelstan became first king of all English",
+      "Northern kings submitted at Eamont",
+      "Mercia lost independence after Æthelflæd's death",
+      "Æthelstan styled king of all Britain",
+      "Edward's conquests enabled Æthelstan's northern expansion",
+      "Æthelstan held huge open-air assemblies",
+      "British rulers attended as subreguli",
+      "Brunanburh became remembered as great English victory",
+      "Victory effects limited; enemies survived",
+      "After Æthelstan's death Northumbria quickly fell"
+     ],
+     "evidence": [
+      "Æthelstan's charter and gifts recorded at Chester-le-Street",
+      "Surviving stole, maniple, gospel, pectoral cross",
+      "William of Malmesbury's Deeds and lost ancient volume",
+      "Anglo-Saxon Chronicle annals",
+      "Place names, loan words, metal-detector finds",
+      "Domesday Survey place-name data",
+      "Irish annals on Æthelflæd",
+      "William of Malmesbury records York plunder and Welsh tribute",
+      "Charter witness lists show assemblies and subreguli",
+      "Great Prophecy reveals Welsh desire to destroy English power",
+      "Annals of Ulster and Chronicle poem record Brunanburh bloodshed",
+      "Æthelweard mythologized Brunanburh as lasting peace"
+     ],
+     "reading": "The author reads Æthelstan's imperial title and conquest as the product of prior West Saxon and Mercian expansion, wealth, and dynastic contingency, not inevitable English unity. His authority over northern and western rulers was real but rested on forced submission and fragile deals; Brunanburh was celebrated yet its effects were limited and quickly reversed."
     },
     {
      "unit": "8 One Nation Under God",
-     "summary": "Reformers culminating under Edgar sacralize uniformity; Edgar’s death removes the shepherd and shakes the realm."
+     "summary": "Reformers culminating under Edgar sacralize uniformity; Edgar’s death removes the shepherd and shakes the realm.",
+     "thesis": "The tenth-century monastic reform movement rose through factional court politics to dominate the English kingdom, culminating in Edgar's coercive, imperially crowned uniformity.",
+     "key_events": [
+      {
+       "what": "Edmund appoints Dunstan abbot of Glastonbury",
+       "when": "c. 940",
+       "who": "Edmund, Dunstan"
+      },
+      {
+       "what": "Eadwig's accession purges reformers",
+       "when": "955-956",
+       "who": "Eadwig, Dunstan, Eadgifu, Æthelstan Half-King"
+      },
+      {
+       "what": "kingdom partitioned along Thames",
+       "when": "957",
+       "who": "Eadwig and Edgar"
+      },
+      {
+       "what": "Eadwig dies, Edgar unites kingdom",
+       "when": "959",
+       "who": "Edgar"
+      },
+      {
+       "what": "Edgar's imperial coronation at Bath",
+       "when": "973",
+       "who": "Edgar, Dunstan, Oswald"
+      }
+     ],
+     "causes": [
+      "Viking raids destroyed or impoverished monasteries",
+      "Minsters became secularized under lay control",
+      "Cluniac reform spread from continental houses",
+      "Æthelstan's diplomacy exposed English clerics to reform",
+      "Royal patronage endowed reformed monasteries",
+      "Factional court politics drove exiles and returns",
+      "Eadwig backed wrong people and alienated reformers",
+      "Edgar was tutored by Æthelwold and supported reform",
+      "Reformers sought a king to enforce their project",
+      "Carolingian and Ottonian models inspired uniformity",
+      "Royal authority was needed to impose religious discipline"
+     ],
+     "consequences": [
+      "Glastonbury became an intellectual and political powerhouse",
+      "Reform gained ideological cohesion for the new kingdom",
+      "Northumbrian kingship ended under Eadred",
+      "Eadwig's regime became unstable and opposition coalesced around Edgar",
+      "Dunstan was exiled to Ghent",
+      "Æthelwold made Abingdon rich",
+      "Monasteries re-founded and secular clerks expelled",
+      "Regularis Concordia imposed one monastic observance",
+      "Shires and hundreds standardized local government",
+      "Coinage standardized as one kingdom, one coin",
+      "Edgar crowned as imperial, sacred king",
+      "Edgar's death triggered civil war"
+     ],
+     "evidence": [
+      "Life of St Dunstan details court, visions, Cheddar story, 957 partition",
+      "Anglo-Saxon Chronicle records Olaf, Edmund's death, northern submissions",
+      "Royal charters show witness lists and Eadwig's land grants",
+      "William of Malmesbury claimed Glastonbury's early foundation",
+      "Saints' lives document reformers' careers",
+      "Life of St Oswald describes coronation and death",
+      "Æthelwold's biographer recounts Winchester expulsions",
+      "Regularis Concordia prescribes royal protection and prayers",
+      "New Minster charter justifies expelling clerks",
+      "Coinage and charters show standardization and imperial titles"
+     ],
+     "reading": "The author reads monastic reform as a movement that outlasted short-lived kings and gave ideological cohesion to the new kingdom; under Edgar, reformers used royal power to impose coercive uniformity on church, law, and coinage, elevating him to imperial sacral kingship."
     },
     {
      "unit": "9 The Ill-Counselled King",
-     "summary": "A kingdom now called England endures renewed viking assault, *unrædas*, and Danish conquest in 1016."
+     "summary": "A kingdom now called England endures renewed viking assault, *unrædas*, and Danish conquest in 1016.",
+     "thesis": "Æthelred's reign began with contested succession and factional murder, unfolded through failed attempts to buy, co-opt, massacre, and out-arm vikings, and ended in Danish conquest after his death and Edmund's.",
+     "key_events": [
+      {
+       "what": "Edward the Martyr murdered",
+       "when": "978",
+       "who": "Ælfhere, Ælfthryth, Æthelwold faction"
+      },
+      {
+       "what": "English defeated at Maldon",
+       "when": "11 August 991",
+       "who": "Byrhtnoth, Olaf Tryggvason"
+      },
+      {
+       "what": "St Brice's Day Massacre kills Danish mercenaries",
+       "when": "13 Nov 1002",
+       "who": "Æthelred"
+      },
+      {
+       "what": "Swein conquers England; Æthelred flees",
+       "when": "1013",
+       "who": "Swein Forkbeard, Æthelred"
+      },
+      {
+       "what": "Cnut defeats Edmund at Assandun; Edmund dies",
+       "when": "October-November 1016",
+       "who": "Cnut, Edmund"
+      }
+     ],
+     "causes": [
+      "Edgar's sons by different mothers created succession dispute",
+      "Monastic reform dispossessed clerks and laymen",
+      "Renewed English prosperity attracted Scandinavian raiders",
+      "Æthelred's youth left rule to regents",
+      "Defeat at Maldon shattered English military confidence",
+      "Viking raids and tributes drained royal resources",
+      "Æthelred's mercenary policy failed",
+      "St Brice's massacre provoked Swein",
+      "Factional rivalry wrecked the new fleet",
+      "Oppressive taxation and sheriffs alienated subjects",
+      "Nobles held personal grudges after 1005 purge",
+      "Æthelred's misrule prompted demands for reform",
+      "Court feud between Eadric and Æthelhelm's family",
+      "Eadric's ambition and treachery",
+      "Æthelred's illness and death",
+      "Edmund's defiance of Æthelred"
+     ],
+     "consequences": [
+      "Edward murdered and later venerated as saint",
+      "Æthelred paid £10,000 tribute to vikings",
+      "Royal absence from battle bred cowardice accusations",
+      "Æthelred restored monastic lands after 993",
+      "Apocalyptic anxiety intensified religious devotion",
+      "Æthelred fled to Normandy",
+      "Swein became king, then died",
+      "Danes elected Cnut",
+      "English nobles reconsidered loyalty",
+      "Heregeld and sheriffs oppressed England",
+      "Mercenary policy collapsed",
+      "Æthelred restored but failed to reduce tax burden",
+      "Cnut maims hostages and withdraws",
+      "Eadric murders rivals and defects to Danes",
+      "Edmund becomes king, fights four battles",
+      "Cnut succeeds to all England"
+     ],
+     "evidence": [
+      "William of Malmesbury's baptism story borrowed from Byzantine tale",
+      "Anglo-Saxon Chronicle, written with hindsight, records conditional return, battles, deaths",
+      "Life of St Oswald details anti-monastic reaction",
+      "Charters show Ælfthryth excluded then restored",
+      "Archaeology reveals urban plots and village nucleation",
+      "Ælfric describes slave and gebur obligations",
+      "Treaty of 994 text",
+      "St Frideswide charter",
+      "St John's and Ridgeway Hill mass graves",
+      "Coinage showing helmet and Lamb of God",
+      "Wulfstan's penitential decrees",
+      "Wulfstan's Sermon of the Wolf urges restoring Æthelred",
+      "Æthelstan's will shows court alignments",
+      "Ælfric's passion of St George notes non-martial saint"
+     ],
+     "reading": "The author argues Æthelred's later reputation is distorted by hindsight and legend, but his factional violence, military failures, and extractive policies were real. His co-option of vikings institutionalized plunder, and bad counsel doomed resistance until Cnut's conquest."
     },
     {
      "unit": "10 Twilight",
-     "summary": "Godwine power grown from Danish conquest ends in Harold’s brief kingship and Norman destruction of the old elite."
+     "summary": "Godwine power grown from Danish conquest ends in Harold’s brief kingship and Norman destruction of the old elite.",
+     "thesis": "The chapter argues that England's path to 1066 was shaped by the unstable Danish Conquest, the Godwine family's rise, and Harold's contingent kingship, culminating in the Norman landing.",
+     "key_events": [
+      {
+       "what": "Cnut conquers England and takes the throne",
+       "when": "1016",
+       "who": "Cnut"
+      },
+      {
+       "what": "Godwine family exiled then returns by force",
+       "when": "1051–1052",
+       "who": "Godwine, Edward"
+      },
+      {
+       "what": "Harold crowned king after Edward dies",
+       "when": "January 1066",
+       "who": "Harold"
+      },
+      {
+       "what": "Harold destroys Norwegian army at Stamford Bridge",
+       "when": "25 September 1066",
+       "who": "Harold Godwineson"
+      },
+      {
+       "what": "William lands at Sussex and advances to Hastings",
+       "when": "28 September 1066",
+       "who": "William of Normandy"
+      }
+     ],
+     "causes": [
+      "Danish Conquest of 1016 traumatized English elite",
+      "Cnut's purge created vacancies for loyalists",
+      "Godwine's Danish marriage and collaboration won royal trust",
+      "Cnut's death left disputed succession",
+      "Harthacnut's delay strengthened Harold's claim",
+      "Edward's long exile left him without English allies",
+      "Edward and Edith produced no heir",
+      "Edward promised the crown to Duke William",
+      "Godwine refused to ravage Dover",
+      "Edward dismissed his mercenary fleet",
+      "Godwine's family returned with armed force",
+      "Harold sought release of hostages in Normandy",
+      "Tostig's harsh rule provoked Northumbrian revolt",
+      "Edward died without a clear adult heir",
+      "Tostig persuaded Hardrada England was ripe",
+      "Harold dispersed southern coastal forces",
+      "Norwegians left York without mail-shirts",
+      "Harold marched rapidly north"
+     ],
+     "consequences": [
+      "Godwine family rose to dominate Wessex and beyond",
+      "Alfred murdered, deepening dynastic bitterness",
+      "Harold Harefoot briefly ruled all England",
+      "Harthacnut's harsh tax alienated magnates",
+      "Edward recalled and crowned, but dependent on Godwine",
+      "Tension over Norman appointments split king and earl",
+      "Godwine family reduced Edward to a puppet",
+      "Stigand became archbishop of Canterbury",
+      "Harold swore to support William's claim",
+      "Tostig was exiled and allied with Hardrada",
+      "Harold was crowned king in 1066",
+      "William prepared a cross-Channel invasion",
+      "Hardrada and Tostig killed",
+      "Norwegian invasion destroyed",
+      "Harold's kingship vindicated",
+      "William lands in Sussex"
+     ],
+     "evidence": [
+      "Anglo-Saxon Chronicle records Cnut's purge and succession",
+      "Life of King Edward praises Godwine and Edith",
+      "Encomium Emma promotes Harthacnut, slurs Harold",
+      "William of Malmesbury describes slave trade and Gytha",
+      "Skaldic verse boasts of English slaughter",
+      "Wulfstan's homily fears heathen practices",
+      "Quadripartitus says Edward swore to uphold Cnut's laws",
+      "Anglo-Saxon Chronicle records Godwine's eminence and fall",
+      "Life of King Edward praises Harold and peace",
+      "Bayeux Tapestry depicts Harold's oath and coronation",
+      "Eadmer explains Harold's hostage mission",
+      "William of Malmesbury doubts Edward bequeathed throne",
+      "Chronicle notes Stigand's illegitimate archbishopric",
+      "Anglo-Saxon Chronicle calls Hardrada's coming unexpected",
+      "Life of King Edward says Humber ran red",
+      "Chronicle says 24 ships returned",
+      "Life laments brothers' hearts too hard"
+     ],
+     "reading": "The author argues that Cnut's conquest was less stable than traditionally supposed, creating divisions that the Godwine family exploited, and that Harold's rise and Stamford Bridge victory were pragmatic and contingent rather than inevitable. The Norman landing then transformed a domestic succession crisis into a cross-Channel conquest."
     },
     {
      "unit": "Conclusion",
-     "summary": "1066 shatters the elite but leaves England’s deeper frame intact enough that Normans become a new chapter, not the end."
+     "summary": "1066 shatters the elite but leaves England’s deeper frame intact enough that Normans become a new chapter, not the end.",
+     "thesis": "The Norman Conquest replaced England's ruling class and reshaped society, but it conserved Anglo-Saxon foundations, making 1066 a new chapter rather than an end.",
+     "key_events": [
+      {
+       "what": "Harold killed at Hastings",
+       "when": "1066",
+       "who": "Harold, Norman knights"
+      },
+      {
+       "what": "William crowned king after London submits",
+       "when": "Christmas 1066",
+       "who": "William"
+      },
+      {
+       "what": "Harrying of the North devastates region",
+       "when": "1069-70",
+       "who": "William"
+      },
+      {
+       "what": "Domesday Survey records elite replacement",
+       "when": "1086",
+       "who": "William"
+      },
+      {
+       "what": "Twelfth-century historians write English history",
+       "when": "1120s-1130s",
+       "who": "William of Malmesbury, Henry of Huntingdon"
+      }
+     ],
+     "causes": [
+      "Norman victory at Hastings",
+      "English refusal to submit",
+      "Norman castle-building strategy",
+      "Tenth-century English government machinery",
+      "Norman Christian respect for churches"
+     ],
+     "consequences": [
+      "Old English elite almost totally replaced",
+      "About 500 castles planted",
+      "Slavery declined sharply",
+      "Political killing ended",
+      "Domesday Book created",
+      "Old English texts survived",
+      "Shires and villages persisted"
+     ],
+     "evidence": [
+      "William of Poitiers: earth covered with English nobility and youth",
+      "Anglo-Saxon Chronicle: castles built far and wide",
+      "Domesday: only thirteen English tenants-in-chief",
+      "Chronicler in 1130s: foreigners treated slaves better",
+      "Eadmer: forbears to tell of William's treatment",
+      "William of Malmesbury: to mend broken chain of history"
+     ],
+     "reading": "The author argues the Conquest was both catastrophic and constructive: it destroyed the English elite but preserved enough institutional and cultural foundations that later generations could see it as continuity, not rupture."
     }
    ]
   }

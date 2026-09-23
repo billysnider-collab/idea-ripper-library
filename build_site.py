@@ -104,6 +104,47 @@ def book_block(b):
     parts.append('</div></section>')
     return "\n".join(parts)
 
+def fb_chapter_detail(ch):
+    """Rich chapter section: thesis, key events, causes/consequences, evidence,
+    the author's reading. Falls back to the old one-line layout for chapters
+    without enriched data."""
+    unit = esc(ch.get("unit", ""))
+    summ = esc(ch.get("summary", ""))
+    if not ch.get("thesis") and not ch.get("key_events"):
+        return '<dl class="fbchaps"><dt>%s</dt><dd>%s</dd></dl>' % (unit, summ)
+    p = ['<details class="fbchap"><summary><span class="fbchapunit">%s</span>'
+         ' <span class="fbchapsum">%s</span></summary>' % (unit, summ)]
+    if ch.get("thesis"):
+        p.append('<p class="fbthesis"><span class="k">Chapter thesis:</span> %s</p>' % esc(ch["thesis"]))
+    evs = ch.get("key_events") or []
+    if evs:
+        p.append('<p class="fbclab">Key events</p><div class="twrap">'
+                 '<table class="fbtable fbevents"><tr><th>What</th><th>When</th><th>Who</th></tr>')
+        for e in evs:
+            p.append('<tr><td>%s</td><td>%s</td><td>%s</td></tr>'
+                     % (esc(e.get("what", "")), esc(e.get("when", "")), esc(e.get("who", ""))))
+        p.append('</table></div>')
+    ca = ch.get("causes") or []
+    cq = ch.get("consequences") or []
+    if ca or cq:
+        p.append('<div class="fbcols"><div><p class="fbclab">Causes</p><ul class="fblist">')
+        for c in ca:
+            p.append('<li>%s</li>' % esc(c))
+        p.append('</ul></div><div><p class="fbclab">Consequences</p><ul class="fblist">')
+        for c in cq:
+            p.append('<li>%s</li>' % esc(c))
+        p.append('</ul></div></div>')
+    ed = ch.get("evidence") or []
+    if ed:
+        p.append('<p class="fbclab">Evidence</p><ul class="fblist">')
+        for e in ed:
+            p.append('<li>%s</li>' % esc(e))
+        p.append('</ul>')
+    if ch.get("reading"):
+        p.append('<p class="fbreading"><span class="k">The author\'s reading:</span> %s</p>' % esc(ch["reading"]))
+    p.append('</details>')
+    return "\n".join(p)
+
 def fullbook_block(fb):
     """Standalone deep-dive entry: argument map, themes, timeline, author-vs-fact,
     synthesis, the full card deck, and chapter summaries. Cards reuse keeper
@@ -199,10 +240,9 @@ def fullbook_block(fb):
                '<p class="fbmeta">%s</p>' % esc(meta) if meta else ""))
     parts.append('</div>')
     if fb.get("chapter_summaries"):
-        parts.append('<h3 class="fbsub">Chapter by chapter</h3><dl class="fbchaps">')
+        parts.append('<h3 class="fbsub">Chapter by chapter</h3>')
         for ch in fb["chapter_summaries"]:
-            parts.append('<dt>%s</dt><dd>%s</dd>' % (esc(ch.get("unit", "")), esc(ch.get("summary", ""))))
-        parts.append('</dl>')
+            parts.append(fb_chapter_detail(ch))
     parts.append('</div></section>')
     return "\n".join(parts)
 
@@ -356,6 +396,22 @@ main{max-width:1180px}
 .fbassess dd{margin:.15rem 0 .3rem;color:var(--muted)}
 .fbchaps dt{font-weight:600;font-size:.85rem;margin-top:.45rem}
 .fbchaps dd{margin:.1rem 0 .3rem;color:var(--muted)}
+.fbchap{border:1px solid var(--border);border-radius:8px;margin:.5rem 0;background:var(--panel)}
+.fbchap>summary{cursor:pointer;padding:.55rem .8rem;list-style:none;display:block}
+.fbchap>summary::-webkit-details-marker{display:none}
+.fbchap>summary::before{content:"▸ ";color:var(--amber)}
+.fbchap[open]>summary::before{content:"▾ "}
+.fbchapunit{font-weight:700;font-size:.88rem}
+.fbchapsum{color:var(--muted);font-size:.8rem}
+.fbthesis{margin:.5rem .9rem;font-size:.88rem}
+.fbthesis .k,.fbreading .k{color:var(--amber);font-weight:600}
+.fbclab{color:var(--amber);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin:.7rem .9rem .25rem}
+.fblist{margin:.1rem .9rem .5rem 1.9rem;font-size:.85rem;color:var(--fg)}
+.fblist li{margin:.22rem 0}
+.fbcols{display:grid;grid-template-columns:1fr 1fr;gap:0 .6rem}
+@media(max-width:700px){.fbcols{grid-template-columns:1fr}}
+.fbreading{margin:.6rem .9rem .9rem;font-size:.88rem;border-left:2px solid var(--amber);padding-left:.6rem}
+.fbevents td:first-child{white-space:normal}
 .fbmeta{color:var(--muted);font-size:.78rem;margin:.4rem 0 0}
 .cardhead .fbnum{color:var(--amber);font-size:.85rem;flex:none;min-width:2.2rem}
 @media(min-width:1000px){.fbook:not(.collapsed) .fbcards{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;align-items:start}.fbook:not(.collapsed) .fbcards .card{margin:0}}
