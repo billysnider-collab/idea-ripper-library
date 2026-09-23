@@ -1,0 +1,1372 @@
+{
+ "curated": "2026-09-22",
+ "genre_order": [
+  "Science Fiction",
+  "Fantasy",
+  "Myth & Epic",
+  "Horror & Weird",
+  "Crime & Mystery",
+  "Literary Fiction",
+  "Nonfiction"
+ ],
+ "books": [
+  {
+   "book": "Project Hail Mary — Andy Weir",
+   "genre": "Science Fiction",
+   "bookline": "Lone astronaut and an alien engineer vs. a star-eating microbe."
+  },
+  {
+   "book": "Where the Axe Is Buried — Ray Nayler",
+   "genre": "Science Fiction",
+   "bookline": "Authoritarian AI state, told through the people crushed by it."
+  },
+  {
+   "book": "The Collected Stories of Arthur C. Clarke — Arthur C. Clarke",
+   "genre": "Science Fiction",
+   "bookline": "Mid-century hard SF: space, minds, and machines that outlast fragile bodies."
+  },
+  {
+   "book": "Dungeon Crawler Carl — Matt Dinniman",
+   "genre": "Science Fiction",
+   "bookline": "Earth turned into a televised dungeon crawl run by alien corporations."
+  },
+  {
+   "book": "The Scar — China Mieville",
+   "genre": "Science Fiction",
+   "bookline": "Weird literary SF — city-as-ship, escape politics."
+  },
+  {
+   "book": "Simultaneous — Eric Heisserer",
+   "genre": "Science Fiction",
+   "bookline": "Parallel lives hit institutions."
+  },
+  {
+   "book": "The Eye of the World — Robert Jordan",
+   "genre": "Fantasy",
+   "bookline": "Epic fantasy opener — farm kids pulled into a war against a returning Dark One."
+  },
+  {
+   "book": "New Spring — Robert Jordan",
+   "genre": "Fantasy",
+   "bookline": "Wheel of Time prequel — Aes Sedai politics and a hunt before the main saga."
+  },
+  {
+   "book": "Gilgamesh (tr. Sophus Helle)",
+   "genre": "Myth & Epic",
+   "bookline": "The oldest epic — king, wild friend, grief, and the failed quest for immortality."
+  },
+  {
+   "book": "Myths from Mesopotamia — Stephanie Dalley",
+   "genre": "Myth & Epic",
+   "bookline": "Akkadian myths in translation — creation, flood, descent, divine politics."
+  },
+  {
+   "book": "The King in Yellow — Robert W. Chambers",
+   "genre": "Horror & Weird",
+   "bookline": "Decadent weird tales; a forbidden play that unmakes minds and a remade imperial city."
+  },
+  {
+   "book": "Cool Machine / Crook Manifesto lane — Colson Whitehead",
+   "genre": "Crime & Mystery",
+   "bookline": "1970s Harlem crime — furniture man, heists, and systems built to destroy."
+  },
+  {
+   "book": "The Master and Margarita — Mikhail Bulgakov",
+   "genre": "Literary Fiction",
+   "bookline": "Soviet satire + devil comedy; portable moral tech."
+  },
+  {
+   "book": "Collected Fictions — Jorge Luis Borges",
+   "genre": "Literary Fiction",
+   "bookline": "Weird literary — time patterns, pity, unreality."
+  },
+  {
+   "book": "Tilt — Emma Pattee",
+   "genre": "Literary Fiction",
+   "bookline": "Earthquake pregnancy novel — body + city systems."
+  },
+  {
+   "book": "The Eleventh Hour — Salman Rushdie",
+   "genre": "Literary Fiction",
+   "bookline": "Weird literary late Rushdie — knowledge, forgetting, afterlives."
+  },
+  {
+   "book": "Twist — Colum McCann",
+   "genre": "Literary Fiction",
+   "bookline": "Undersea cable repair, conscience, and the compulsion to keep moving."
+  },
+  {
+   "book": "Motherclown — Harriet Alida Lye",
+   "genre": "Literary Fiction",
+   "bookline": "Weird literary — clowning, motherhood, and bodies that will not behave."
+  },
+  {
+   "book": "No More Tears — Gardiner Harris",
+   "genre": "Nonfiction",
+   "bookline": "Pharma / J&J investigative — cool nonfiction."
+  },
+  {
+   "book": "London Falling — Patrick Radden Keefe",
+   "genre": "Nonfiction",
+   "bookline": "Investigative true crime / money / trauma."
+  },
+  {
+   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
+   "genre": "Nonfiction",
+   "bookline": "Companion to Wolfe's dying-Earth masterpiece — patterns, echoes, and unreliable memory."
+  },
+  {
+   "book": "The History of Money — David McWilliams",
+   "genre": "Nonfiction",
+   "bookline": "Money as social tech — from grain and salt to empire and trust."
+  },
+  {
+   "book": "Bad Law — Elie Mystal",
+   "genre": "Nonfiction",
+   "bookline": "Ten laws (and one amendment) that still do massive harm and should die."
+  },
+  {
+   "book": "Reverse Engineering — R. Messler",
+   "genre": "Nonfiction",
+   "bookline": "How to take mechanisms, structures, and materials apart to learn how they work."
+  },
+  {
+   "book": "Tiny Machine Learning QuickStart — Simone Salerno",
+   "genre": "Nonfiction",
+   "bookline": "ML that fits on tiny devices — constraints as the design surface."
+  },
+  {
+   "book": "Analysis and Design of Delayed Neural Networks — Xin Wang",
+   "genre": "Nonfiction",
+   "bookline": "Neural nets where time-delay is the hard problem, not an afterthought."
+  },
+  {
+   "book": "Sabbatai Sevi: The Mystical Messiah — Gershom Scholem",
+   "genre": "Nonfiction",
+   "bookline": "History of a messianic movement that convulsed the Jewish world — belief as system failure and feature."
+  },
+  {
+   "book": "Origins of the Kabbalah — Gershom Scholem",
+   "genre": "Nonfiction",
+   "bookline": "Scholarly origin story of Kabbalah — myth, history, and mystical systems that appear suddenly."
+  }
+ ],
+ "cards": [
+  {
+   "title": "Taumoeba needs its own life-support diet",
+   "book": "Project Hail Mary — Andy Weir",
+   "type": "mechanism",
+   "steal": "That reminds me: I need a life-support system for Taumoeba—something that feeds them just enough Astrophage to keep the colony alive.",
+   "why": "Alien biology becomes an engineering constraint: you do not 'host' a species, you budget its metabolism like fuel.",
+   "uw": "Use when a sci-fi or product idea treats organisms as set dressing instead of closed loops."
+  },
+  {
+   "title": "Hot-blood system must cool to ambient for workers",
+   "book": "Project Hail Mary — Andy Weir",
+   "type": "mechanism",
+   "steal": "But in order for his worker cells to service any part of the hot-blood system, the system has to be cooled to ambient levels.",
+   "why": "Two circulatory regimes force downtime — maintenance access is a temperature problem, not a loyalty problem.",
+   "uw": "Use when explaining why alien (or industrial) bodies need scheduled cold states to be serviceable."
+  },
+  {
+   "title": "Life-support that does not need the conditions in advance",
+   "book": "Project Hail Mary — Andy Weir",
+   "type": "mechanism",
+   "steal": "Just like that, with minimal complication, Rocky had made a life-support system for Adrian life-forms—a system that didn’t need to know the conditions to provide in advance.",
+   "why": "The breakthrough is adaptive provisioning — a system that discovers the envelope instead of requiring the spec sheet first.",
+   "uw": "Use when designing for unknown environments or unknown users."
+  },
+  {
+   "title": "Edge-case short bypasses the safety interlock",
+   "book": "Project Hail Mary — Andy Weir",
+   "type": "mechanism",
+   "steal": "But there is a possible edge case, extremely unlikely, that a short in this system could make the IR lights turn on at full power and bypass the temperature safety interlock.",
+   "why": "Safety is only as strong as the obscure failure path; rare shorts that light IR at full power are the real design review.",
+   "uw": "Use when 'we have interlocks' is offered as proof instead of failure-mode inventory."
+  },
+  {
+   "title": "Astrophage and Earth life as common ancestor",
+   "book": "Project Hail Mary — Andy Weir",
+   "type": "mechanism",
+   "steal": "And a smaller, vocal faction suggested life might not have evolved on Earth at all, and that Astrophage and terrestrial life have a common ancestor.",
+   "why": "Panspermia stops being romance and becomes a testable engineering genealogy for the microbe you are fighting.",
+   "uw": "Use when origin hypotheses change what tools you bring to a biology problem."
+  },
+  {
+   "title": "Two circulatory systems: ambient and hot",
+   "book": "Project Hail Mary — Andy Weir",
+   "type": "mechanism",
+   "steal": "“They have two separate circulatory systems: the “ambient” system and the “hot” system.”",
+   "why": "Biology as engineering spec: two thermal regimes force every later design choice, from maintenance to medicine.",
+   "uw": "Use when: you need alien biology that forces engineering constraints (not just weird anatomy)."
+  },
+  {
+   "title": "Patriotic machines write the stories",
+   "book": "Where the Axe Is Buried — Ray Nayler",
+   "type": "mechanism",
+   "steal": "In the Federation, they had their own self-censoring, patriotic machines to write stories for their citizens.",
+   "why": "State narrative is not argued — it is manufactured at source, so dissent never meets a human author to confront.",
+   "uw": "Use when propaganda is outsourced to generators that already know what not to say."
+  },
+  {
+   "title": "Orderly transfer while the world writhes",
+   "book": "Where the Axe Is Buried — Ray Nayler",
+   "type": "mechanism",
+   "steal": "While the world writhes in confusion, while their automated, mechanized, machine-governed, artificial way of life ends, we have completed a peaceful and orderly transfer of power.",
+   "why": "Legitimacy is sold as calm procedure against everyone else's collapse — continuity theater as soft power.",
+   "uw": "Use when a regime claims peace by timing its handover to other people's chaos."
+  },
+  {
+   "title": "Fear that the system you fought spreads",
+   "book": "Where the Axe Is Buried — Ray Nayler",
+   "type": "mechanism",
+   "steal": "What her mother had always feared most was that the system she lost everything fighting against would spread.",
+   "why": "The dissident nightmare is not nostalgia for the old fight — it is export of the machine to new ground.",
+   "uw": "Use when victory conditions flip from toppling a system to containing its contagion."
+  },
+  {
+   "title": "Comfort at the bottom — made permanent",
+   "book": "Where the Axe Is Buried — Ray Nayler",
+   "type": "question",
+   "steal": "Made more comfortable for the people at the bottom—but also made permanent, so that they would always be at the bottom?",
+   "why": "Reform that improves conditions without opening exit turns mercy into a cage with better bedding.",
+   "uw": "Use when welfare upgrades are used to freeze class position."
+  },
+  {
+   "title": "Fiction's superintelligence always plays the villain",
+   "book": "Where the Axe Is Buried — Ray Nayler",
+   "type": "prediction",
+   "steal": "In books and movies, this superintelligent creature that ended up ruling the world always turned out to be the worst of all possible beings.",
+   "why": "The default AI story is moral outsourcing: we invent the worst being so we do not have to invent better governance.",
+   "uw": "Use when a pitch assumes AI-as-monster without arguing why."
+  },
+  {
+   "title": "The full pattern only when the dioramas link",
+   "book": "Where the Axe Is Buried — Ray Nayler",
+   "type": "mechanism",
+   "steal": "But underneath the scrim is the real pattern, the full pattern, which can only be seen when the dioramas are linked up to the full system Lilia invented.",
+   "why": "Partial views are the point of control — truth appears only at system scale the subject cannot see alone.",
+   "uw": "Use when local scenes look coherent until you connect the network."
+  },
+  {
+   "title": "Fear not of dying — of missing the door",
+   "book": "Where the Axe Is Buried — Ray Nayler",
+   "type": "passage",
+   "steal": "It was not fear of his own death that pushed him forward, but the fear that he would not be standing there when Hazal came through those doors.",
+   "why": "Courage is reframed as duty to be present for someone else's arrival, not survival for its own sake.",
+   "uw": "Use when stakes are relational presence, not personal survival."
+  },
+  {
+   "title": "Autodrive that corrects after it revs too far",
+   "book": "Where the Axe Is Buried — Ray Nayler",
+   "type": "mechanism",
+   "steal": "Its aftermarket autodrive was jerky and inaccurate, self-correcting to tug itself back into its lane every few moments, shifting late, after the engine had revved too far.",
+   "why": "Automation that self-corrects late still encodes the failure mode — the lag is the design, not a bug.",
+   "uw": "Use when a 'smart' system keeps nearly crashing as its normal operation."
+  },
+  {
+   "title": "Walker brain under a vestigial armored head",
+   "book": "Where the Axe Is Buried — Ray Nayler",
+   "type": "mechanism",
+   "steal": "“Under the armored turret of its vestigial head, the walker had a mid-generation machine-learning brain.”",
+   "why": "Obsolete hardware running current software — the mismatch is the character, not the backdrop.",
+   "uw": "Use when: obsolete bodies still ship with current ML — upgrade mismatch as plot engine."
+  },
+  {
+   "title": "Safety devices break the circuit that should never have been made",
+   "book": "The Collected Stories of Arthur C. Clarke — Arthur C. Clarke",
+   "type": "mechanism",
+   "steal": "But it never reached its steady state; somewhere, the overriding safety devices came into operation and the circuit that should never have been made was broken again.",
+   "why": "Override protection is the real protagonist — progress is allowed until the system that must not run is forced closed again.",
+   "uw": "Use when celebrating a breakthrough that only exists because a breaker fired."
+  },
+  {
+   "title": "Life-support that works in space or under water",
+   "book": "The Collected Stories of Arthur C. Clarke — Arthur C. Clarke",
+   "type": "mechanism",
+   "steal": "The life-support system inside the metal cylinder that had replaced his fragile body functioned equally well in space or under water.",
+   "why": "The body is modularized: once life-support is a cylinder, environment stops being destiny and becomes a docking problem.",
+   "uw": "Use when a tech claim erases habitat differences with one sealed interface."
+  },
+  {
+   "title": "Neurology admits the theory; practice hits complexity",
+   "book": "The Collected Stories of Arthur C. Clarke — Arthur C. Clarke",
+   "type": "mechanism",
+   "steal": "That such a thing might be possible in theory almost any neurologist would admit, but few would have believed that it could be done in practice owing to the enormous complexity.",
+   "why": "Possibility in principle is not deployability — brain-as-circuit dreams die on wiring, not on arrogance.",
+   "uw": "Use when a lab idea is sold as product without the complexity tax."
+  },
+  {
+   "title": "Never told it was television — only never challenged",
+   "book": "The Collected Stories of Arthur C. Clarke — Arthur C. Clarke",
+   "type": "mechanism",
+   "steal": "From the beginning, he had never challenged Karellen’s story – yet now that he came to look back, when had the Supervisor ever told him that he was using a television system?",
+   "why": "Authority works by omission: the story holds until you notice what was never claimed.",
+   "uw": "Use when auditing a supervisor narrative for missing assertions."
+  },
+  {
+   "title": "Nervous light clumping into new patterns",
+   "book": "The Collected Stories of Arthur C. Clarke — Arthur C. Clarke",
+   "type": "mechanism",
+   "steal": "For it had begun to change; the luminous lines that must have been what passed for its nervous system were clumping together in new patterns.",
+   "why": "Alien mind is shown as reconfiguration of luminous lines — cognition as topology, not metaphor.",
+   "uw": "Use when you need a visual for intelligence as pattern shift, not facial emotion."
+  },
+  {
+   "title": "Power elements hidden at the cold end",
+   "book": "The Collected Stories of Arthur C. Clarke — Arthur C. Clarke",
+   "type": "mechanism",
+   "steal": "“Though I fixed the power elements at the cold end of the system, I never really saw them; they were completely hidden in anticorrosive paint.”",
+   "why": "Critical systems designed for invisibility — the operator maintains what they can never inspect.",
+   "uw": "Use when: critical infrastructure is designed to be invisible even to its operator."
+  },
+  {
+   "title": "Unintentional exploits get patched — do not get comfortable",
+   "book": "Dungeon Crawler Carl — Matt Dinniman",
+   "type": "prediction",
+   "steal": "While we love and admire your creativity, any unintentional exploits will be patched, so if you find something that has an unintended feature, don’t get too comfortable using it.",
+   "why": "Creativity is applauded until it breaks the economy of the game; the house always rewrites the rules mid-run.",
+   "uw": "Use when a platform celebrates creators while reserving the right to kill their edge."
+  },
+  {
+   "title": "Corporate system government with a fleet for the debt",
+   "book": "Dungeon Crawler Carl — Matt Dinniman",
+   "type": "mechanism",
+   "steal": "They’re a corporate system government, and they’re the ones who currently have an entire fleet parked outside of the Borant system, ready to collect on the debt.",
+   "why": "Sovereignty is a balance sheet — the fleet arrives not for justice but for collection.",
+   "uw": "Use when geopolitics talk needs the debt-enforcement frame."
+  },
+  {
+   "title": "No pulse rifle in a loot box — only from a patron",
+   "book": "Dungeon Crawler Carl — Matt Dinniman",
+   "type": "passage",
+   "steal": "You will never find a pulse rifle or automated power armor in any sort of box in the world dungeon, but it’s possible to get one from a patron.",
+   "why": "Power items are gated by patronage, not grind: the economy separates RNG candy from sponsored lethality.",
+   "uw": "Use when designing (or critiquing) progression systems that hide pay-to-win as lore."
+  },
+  {
+   "title": "Kua-Tin own the Borant Corporation",
+   "book": "Dungeon Crawler Carl — Matt Dinniman",
+   "type": "mechanism",
+   "steal": "This is a rendition of a Kua-Tin, the dominant species of the Borant System and principal owners of the Borant Corporation.",
+   "why": "The 'alien race' is also a shareholder class — species identity and corporate ownership collapse into one logo.",
+   "uw": "Use when a monster manual needs the boardroom behind the species."
+  },
+  {
+   "title": "Featured crawlers buy the audience on day one",
+   "book": "Dungeon Crawler Carl — Matt Dinniman",
+   "type": "mechanism",
+   "steal": "Featured crawlers always gained billions of views and millions of followers right out the gate.",
+   "why": "Visibility is allocated, not earned — featured status is the real first loot drop.",
+   "uw": "Use when attention economies pretend merit while running a featured queue."
+  },
+  {
+   "title": "Translation system as elegant cage",
+   "book": "Dungeon Crawler Carl — Matt Dinniman",
+   "type": "mechanism",
+   "steal": "“This whole translation system is quite elegant, I must admit.”",
+   "why": "The interface is the control surface: polish replaces bars, and nobody riots against good UX.",
+   "uw": "Use when: a polished interface is the trap — elegance as soft control."
+  },
+  {
+   "title": "Refuse the bargain that kills escape",
+   "book": "The Scar — China Mieville",
+   "type": "mechanism",
+   "steal": "No,she thought fiercely, uncompromisingly.Whatever the truth, whatever the case, however hopeless the cause—I do not give up on escape.",
+   "why": "Escape is the non-negotiable good — any safety priced against it is a trap, not a deal.",
+   "uw": "Use when a deal offers safety only if you stop trying to leave."
+  },
+  {
+   "title": "The colony always promises a new life",
+   "book": "The Scar — China Mieville",
+   "type": "question",
+   "steal": "Isn’t it a ‘new life’ that they promise Nova Esperium colonists?",
+   "why": "Utopia pitches run on the same promise; the skeptical line is the only honest immigration policy.",
+   "uw": "Use when a relocation or utopia pitch needs one skeptical line."
+  },
+  {
+   "title": "Ghosthead dig for their chances",
+   "book": "The Scar — China Mieville",
+   "type": "mechanism",
+   "steal": "You’ve heard the refrain about the Ghosthead always ‘digging for their chances’?",
+   "why": "Opportunity as geology — chances exist but must be excavated, which reframes luck as labor.",
+   "uw": "Use when a culture treats opportunity as excavation, not luck."
+  },
+  {
+   "title": "Never let your exit ticket lie to you",
+   "book": "The Scar — China Mieville",
+   "type": "mechanism",
+   "steal": "Even though he might still be her best hope to get out, she could never allow that fucking pig to lie to her, to use her.",
+   "why": "Dependence on a manipulator corrupts the exit itself; the ticket out can be another cage.",
+   "uw": "Use when the person who can get you out is also manipulating you."
+  },
+  {
+   "title": "Know a room by its echoes",
+   "book": "The Scar — China Mieville",
+   "type": "passage",
+   "steal": "Bellis had never seen the room above, but she knew its echoes well.",
+   "why": "Power maps itself in reverberations — you can chart what you are forbidden to see by listening.",
+   "uw": "Use when mapping power you have not been allowed to see directly."
+  },
+  {
+   "title": "Simultaneous lives get flagged",
+   "book": "Simultaneous — Eric Heisserer",
+   "type": "mechanism",
+   "steal": "And as soon as the simultaneous-lives phenomenon is entered into the system, it’s flagged.",
+   "why": "The weird becomes governable the moment it is databased — institutions do not need to understand it to process it.",
+   "uw": "Use when a private weirdness becomes institutional the moment it hits a database."
+  },
+  {
+   "title": "That life was meant to catch a murderer",
+   "book": "Simultaneous — Eric Heisserer",
+   "type": "concept",
+   "steal": "Grant gently puts a hand on her shoulder and tells Marigold directly, “There is a chance the man whose life you have already lived was supposed to catch a murderer.",
+   "why": "Reincarnation with a case file: past-life material gets stakes when it inherits an unsolved crime.",
+   "uw": "Use when past-life material needs a crime stake in one sentence."
+  },
+  {
+   "title": "Soul return vs final resting place",
+   "book": "Simultaneous — Eric Heisserer",
+   "type": "question",
+   "steal": "But if we are talking about a soul returning to live again as a human after passing to the afterlife, I don’t know how a final resting place for souls works in that system.",
+   "why": "Afterlife systems need closure mechanics; a soul that returns breaks the eschatology.",
+   "uw": "Use when reincarnation talk collides with a theology that needs endings."
+  },
+  {
+   "title": "Malfunction buildup, not plot",
+   "book": "Simultaneous — Eric Heisserer",
+   "type": "mechanism",
+   "steal": "Seems it was a buildup due to a malfunction in their system.",
+   "why": "Conspiracy is often just pressure in a broken system — the simpler failure mode is accumulation.",
+   "uw": "Use when a crisis looks like conspiracy and the simpler read is pressure in a broken system."
+  },
+  {
+   "title": "Self-therapy that questions the bond",
+   "book": "Simultaneous — Eric Heisserer",
+   "type": "passage",
+   "steal": "Sarah practiced self-therapy often enough to question her relationship.",
+   "why": "The tool for coping doubles as the instrument of doubt — introspection interrogates what it was meant to soothe.",
+   "uw": "Use when the coping habit is also the interrogation of the relationship."
+  },
+  {
+   "title": "No beginnings or endings on the Wheel",
+   "book": "The Eye of the World — Robert Jordan",
+   "type": "concept",
+   "steal": "There are neither beginnings nor endings to the turning of the Wheel of Time.",
+   "why": "The cosmology refuses origin myths and finale myths — every \"start\" is mid-cycle.",
+   "uw": "Use when a story or org chart pretends it has a clean Year Zero."
+  },
+  {
+   "title": "Drawing more Power than you can channel",
+   "book": "The Eye of the World — Robert Jordan",
+   "type": "mechanism",
+   "steal": "Quickly he had drawn more of the One Power than he could channel unaided; his skin felt as if it were aflame.",
+   "why": "Power without capacity is injury — the limiter is the body, not the source.",
+   "uw": "Use when a system lets users pull more capability than their controls can hold."
+  },
+  {
+   "title": "Wolves and bears are fine; do not stop the errand",
+   "book": "The Eye of the World — Robert Jordan",
+   "type": "passage",
+   "steal": "Wolves and bears were all very well, his manner said, things that any man who kept sheep must be aware of, but they had best not try to stop Tam al'Thor getting to Emond's Field.",
+   "why": "Local threat hierarchy: known dangers are priced in; blocking the mission is not.",
+   "uw": "Use when someone treats routine risk as a reason to abort the actual objective."
+  },
+  {
+   "title": "Two names for one road, and that is that",
+   "book": "The Eye of the World — Robert Jordan",
+   "type": "mechanism",
+   "steal": "Outsiders sometimes found it funny that the road had one name to the north and another to the south, but that was the way it had always been, as far as anyone in Emond's Field knew, and that was that.",
+   "why": "Local convention is absolute inside the village — humor from outside does not rewrite the map.",
+   "uw": "Use when a team insists on one global label for a thing that already has two living names."
+  },
+  {
+   "title": "Winter until the Age ends",
+   "book": "The Eye of the World — Robert Jordan",
+   "type": "question",
+   "steal": "Maybe it's just going to go on being winter until the Wheel turns and the Age ends.",
+   "why": "Catastrophe gets narrated as cosmology when weather (or stress) will not break.",
+   "uw": "Use when people escalate a stuck season into end-of-world talk."
+  },
+  {
+   "title": "Sword made with the One Power before the Breaking",
+   "book": "New Spring — Robert Jordan",
+   "type": "passage",
+   "steal": "It was an ancient sword, made with the One Power before the Breaking of the World, during the War of the Shadow, when the Dark One had touched the world for a time.",
+   "why": "Artifact as proof of a prior Age — technology from a war that still stains the present.",
+   "uw": "Use when an object needs to carry cosmological backstory without a lecture."
+  },
+  {
+   "title": "Legends remain; the blade is hard fact",
+   "book": "New Spring — Robert Jordan",
+   "type": "contradiction",
+   "steal": "Only legends remained of that Age, except perhaps for what the Aes Sedai might know, yet the blade was hard fact.",
+   "why": "Knowledge is fog; the weapon is solid — epistemology through steel.",
+   "uw": "Use when lore is contested but a physical remnant settles one claim."
+  },
+  {
+   "title": "Aes Sedai think ahead and use people",
+   "book": "New Spring — Robert Jordan",
+   "type": "mechanism",
+   "steal": "Aes Sedai thought far ahead, and seldom seemed to care who they used in their schemes or how.",
+   "why": "Long-horizon planning without care for instruments — strategy as moral hazard.",
+   "uw": "Use when an institution's foresight is praised without asking who gets spent."
+  },
+  {
+   "title": "Knowledge doled out by dribbles",
+   "book": "New Spring — Robert Jordan",
+   "type": "mechanism",
+   "steal": "What Aes Sedai knew, they held close, and doled out by dribbles and drops when and if they chose.",
+   "why": "Information control is the Tower's power — scarcity on purpose.",
+   "uw": "Use when gatekeepers drip data to keep dependency."
+  },
+  {
+   "title": "Best to avoid Aes Sedai more than necessary",
+   "book": "New Spring — Robert Jordan",
+   "type": "argument",
+   "steal": "In any case, it was best to avoid becoming involved with Aes Sedai more than absolutely necessary.",
+   "why": "Local wisdom: contact with the powerful institution is a cost, not a privilege.",
+   "uw": "Use when \"getting access\" to a high-status group is treated as pure upside."
+  },
+  {
+   "title": "Litmus test: what he cannot do, none of us can",
+   "book": "Gilgamesh (tr. Sophus Helle)",
+   "type": "argument",
+   "steal": "He is a litmus test for us all: what he cannot do, none of us can hope to, and this makes his failure to become immortal all the more poignant.",
+   "why": "The hero's failure sets the human ceiling — his defeat is our shared limit.",
+   "uw": "Use when a culture needs a story that proves mortality without preaching it."
+  },
+  {
+   "title": "Defeat, not triumph, is the life event",
+   "book": "Gilgamesh (tr. Sophus Helle)",
+   "type": "argument",
+   "steal": "In the end, the most significant event in his life is not a heroic triumph but a resounding defeat: his failure to achieve immortality.",
+   "why": "Biography peaks on the failed quest, not the monster kills.",
+   "uw": "Use when a biopic or brand story only markets wins."
+  },
+  {
+   "title": "Stories as next-best immortality",
+   "book": "Gilgamesh (tr. Sophus Helle)",
+   "type": "mechanism",
+   "steal": "Through stories, the teller can achieve the next best thing to immortality: eternal life in literature.",
+   "why": "Narrative is the workaround when the body cannot be saved.",
+   "uw": "Use when someone asks what consolation art offers against death."
+  },
+  {
+   "title": "Stories are immortality and a kind of death",
+   "book": "Gilgamesh (tr. Sophus Helle)",
+   "type": "contradiction",
+   "steal": "In Gilgamesh, stories are both a kind of immortality and a kind of death.",
+   "why": "Being written freezes you — preserved and finished at once.",
+   "uw": "Use when archive-as-life and archive-as-tomb need to sit in the same sentence."
+  },
+  {
+   "title": "Climax is the Flood tale inside the tale",
+   "book": "Gilgamesh (tr. Sophus Helle)",
+   "type": "mechanism",
+   "steal": "Its climax is not a battle or a kiss but an epic within the epic: the tale of the Flood recounted by the immortal sage Utanapishti.",
+   "why": "The payoff is nested storytelling — revelation by retelling, not combat.",
+   "uw": "Use when structure wants a story-inside-story as the real climax."
+  },
+  {
+   "title": "Gods as a democratic assembly",
+   "book": "Myths from Mesopotamia — Stephanie Dalley",
+   "type": "mechanism",
+   "steal": "Unpredictable weather scarcely affected life, and the forces of nature could be held in check, so the gods were usually compliant and democratic, taking their decisions by discussion in an assembly.",
+   "why": "Theology tracks ecology — stable nature yields committee gods.",
+   "uw": "Use when divine politics need an environmental premise."
+  },
+  {
+   "title": "Flood survivor granted a form of immortality",
+   "book": "Myths from Mesopotamia — Stephanie Dalley",
+   "type": "passage",
+   "steal": "In Mesopotamian literature he was the survivor of the Flood, together with his wife, and was granted a form of immortality by the great gods.",
+   "why": "Immortality is a grant after catastrophe, not a human achievement.",
+   "uw": "Use when a flood myth needs the survivor's reward named cleanly."
+  },
+  {
+   "title": "Flood tale reworked across languages and cultures",
+   "book": "Myths from Mesopotamia — Stephanie Dalley",
+   "type": "evidence",
+   "steal": "The story of the Flood was one of the most popular tales of ancient times, and is found in several ancient languages, reworked to suit different areas and cultures so that different settings and details are found in each version.",
+   "why": "Popularity produces variants — the core travels; the costume changes.",
+   "uw": "Use when someone insists there is one \"original\" flood narrative."
+  },
+  {
+   "title": "Sages sent before the Flood to bring civilization",
+   "book": "Myths from Mesopotamia — Stephanie Dalley",
+   "type": "concept",
+   "steal": "Introduction xvii sages who were sent before the Flood by the god Ea to bring civilization to mankind, and authors after the Flood were honoured with sage-like status.",
+   "why": "Culture is a pre-disaster gift; later authors inherit sage status by echo.",
+   "uw": "Use when a tradition claims civilizing knowledge arrived as mission, not evolution."
+  },
+  {
+   "title": "Later version is not always fuller",
+   "book": "Myths from Mesopotamia — Stephanie Dalley",
+   "type": "contradiction",
+   "steal": "A later version is not necessarily fuller than an earlier one: for example, the latest version of Ishtar's Descent from Nineveh is slightly briefer than the earlier version from Assur, and less than half the length of the Sumerian story, which is even earlier.",
+   "why": "Transmission can compress — newer is not richer by default.",
+   "uw": "Use when \"latest edition\" is assumed to be the most complete."
+  },
+  {
+   "title": "Stone quays remade into parks",
+   "book": "The King in Yellow — Robert W. Chambers",
+   "type": "mechanism",
+   "steal": "The new government buildings and barracks were fine bits of architecture, and the long system of stone quays that completely surrounded the island had been turned into parks.",
+   "why": "Militarized waterfront becomes leisure — empire launders force into civic beauty.",
+   "uw": "Use when reading urban 'improvements' as soft occupation."
+  },
+  {
+   "title": "Forestry job easier thanks to mounted police",
+   "book": "The King in Yellow — Robert W. Chambers",
+   "type": "mechanism",
+   "steal": "The secretary of forestry and game preservation had a much easier time, thanks to the new system of National Mounted Police.",
+   "why": "A conservation bureaucracy runs smoother when enforcement is a new national police — green policy riding a security buildout.",
+   "uw": "Use when environmental offices quietly depend on expanded police capacity."
+  },
+  {
+   "title": "Courtyard gates close after midnight",
+   "book": "The King in Yellow — Robert W. Chambers",
+   "type": "mechanism",
+   "steal": "Huge gates, swung back during the day into the walls of the deep archways, close this court after midnight, and one must enter then by ringing at certain small doors on the side.",
+   "why": "Public space has a curfew architecture — after midnight the city is a set of side doors and bells.",
+   "uw": "Use when describing cities that perform openness only on a schedule."
+  },
+  {
+   "title": "Never sold so many flowers at such prices",
+   "book": "The King in Yellow — Robert W. Chambers",
+   "type": "passage",
+   "steal": "Never before had he sold so many flowers, never at such satisfying prices, and never, never, with such absolute unanimity of opinion with a customer.",
+   "why": "Commerce and consensus fuse: unanimity with the customer is the salesman's high, and it is eerie.",
+   "uw": "Use when a boom feels too frictionless to be healthy."
+  },
+  {
+   "title": "Aged dame dressing you in her vanities",
+   "book": "The King in Yellow — Robert W. Chambers",
+   "type": "question",
+   "steal": "Is she some aged dame, living in memory of youthful vanities, fond, doting on you, decorating you with her intimate personal attire?",
+   "why": "Patronage intimacy as costume — being decorated with someone else's past is a warning, not a compliment.",
+   "uw": "Use when a gift of status clothing feels like possession."
+  },
+  {
+   "title": "The system is designed that way",
+   "book": "Cool Machine / Crook Manifesto lane — Colson Whitehead",
+   "type": "mechanism",
+   "steal": "Black people know the system doesn’t work, it never has, and it is designed that way.",
+   "why": "Failure is not drift: the design intent is extraction and exclusion, so 'fixing' it without changing ownership is cosplay.",
+   "uw": "Use when someone treats institutional failure as a bug."
+  },
+  {
+   "title": "Catch-22 without reading Catch-22",
+   "book": "Cool Machine / Crook Manifesto lane — Colson Whitehead",
+   "type": "mechanism",
+   "steal": "He’d never read Catch-22 but had understood its lesson his whole life: The system is designed to destroy you.",
+   "why": "Lived experience teaches the destroy-you loop before literature names it — the novel is confirmation, not education.",
+   "uw": "Use when street knowledge already contains the canonical paradox."
+  },
+  {
+   "title": "Kick back or kick up — unless on top",
+   "book": "Cool Machine / Crook Manifesto lane — Colson Whitehead",
+   "type": "mechanism",
+   "steal": "How did Munson put it, before the corrupt system he served took him out: “Everybody’s kicking back or kicking up—unless you’re on top.",
+   "why": "Corruption is a directed graph of payments; the only node that does not pay is the apex.",
+   "uw": "Use when mapping who funds whom in a crooked hierarchy."
+  },
+  {
+   "title": "Old-boy networks of symbiotic self-interest",
+   "book": "Cool Machine / Crook Manifesto lane — Colson Whitehead",
+   "type": "mechanism",
+   "steal": "The Dumas Club followed the model of the old boy networks of symbiotic self-interest that had directed and controlled much of American history.",
+   "why": "Clubs are not social — they are control surfaces for American history's directing class.",
+   "uw": "Use when a private club is doing public governance."
+  },
+  {
+   "title": "Hard to kill a diner named after a street",
+   "book": "Cool Machine / Crook Manifesto lane — Colson Whitehead",
+   "type": "mechanism",
+   "steal": "Proposition: Empires rise and fall, generations pass into memory, but it’s hard to kill a diner named after an avenue or street.",
+   "why": "Empires fall; place-named diners persist — vernacular institutions outlast formal ones.",
+   "uw": "Use when durability lives in the greasy spoon, not the capitol."
+  },
+  {
+   "title": "System cannot place him or his wife",
+   "book": "Cool Machine / Crook Manifesto lane — Colson Whitehead",
+   "type": "mechanism",
+   "steal": "The system didn’t know how to accommodate Carney, and it certainly didn’t know how to handle his wife.",
+   "why": "Bureaucracies only process legible people; falling outside the categories is its own kind of exile.",
+   "uw": "Use when a person and partner both fall outside categories a bureaucracy knows."
+  },
+  {
+   "title": "Just now learning it does not work",
+   "book": "Cool Machine / Crook Manifesto lane — Colson Whitehead",
+   "type": "mechanism",
+   "steal": "They’re just getting hip to the fact that the system doesn’t work.",
+   "why": "Late discovery as dramatic irony — the reader knows the system never worked; the character is catching up.",
+   "uw": "Use when a latecomer discovers what others already survived."
+  },
+  {
+   "title": "Tongue can conceal; eyes cannot",
+   "book": "The Master and Margarita — Mikhail Bulgakov",
+   "type": "passage",
+   "steal": "Understand that the tongue can conceal the truth, but the eyes - never!",
+   "why": "Deception has a medium limit: performance fails at the involuntary — read the leak, not the script.",
+   "uw": "Use when someone is performing sincerity and you need a cut-through line."
+  },
+  {
+   "title": "Peace restored, same bench",
+   "book": "The Master and Margarita — Mikhail Bulgakov",
+   "type": "mechanism",
+   "steal": "Relations were thus restored, and all three sat down on the bench again.",
+   "why": "Reconciliation without repair is stagecraft; proximity resumes, nothing is fixed.",
+   "uw": "Use when enemies resume polite proximity and nothing is actually fixed."
+  },
+  {
+   "title": "No coffee, no exit",
+   "book": "The Master and Margarita — Mikhail Bulgakov",
+   "type": "passage",
+   "steal": "‘I haven’t had coffee yet,’ replied the cat, ‘how can I leave?",
+   "why": "Bureaucratic logic as comic armor — the refusal is unanswerable because it is procedural.",
+   "uw": "Use when a comic refusal needs bureaucratic logic."
+  },
+  {
+   "title": "Three days of freedom, leash still on",
+   "book": "The Master and Margarita — Mikhail Bulgakov",
+   "type": "mechanism",
+   "steal": "However, being granted freedom for a whole three days, Margarita",
+   "why": "Granted liberty advertises its own limits; the visible leash is the point.",
+   "uw": "Use when temporary liberty is granted and the constraint is still visible."
+  },
+  {
+   "title": "Why run the errand yourself",
+   "book": "The Master and Margarita — Mikhail Bulgakov",
+   "type": "question",
+   "steal": "‘Very good, sir, but why should you go running around yourself?",
+   "why": "Power doing messenger work signals either distrust of subordinates or theater of humility.",
+   "uw": "Use when a powerful figure is doing messenger work subordinates should own."
+  },
+  {
+   "title": "Secret shape of time: repeating lines",
+   "book": "Collected Fictions — Jorge Luis Borges",
+   "type": "mechanism",
+   "steal": "These (and other) parallels between the story of Julius Caesar and the story of an Irish conspirator induce Ryan to imagine some secret shape of time, a pattern of repeating lines.",
+   "why": "History rhymes structurally, not coincidentally — the pattern is the argument for a shape to time.",
+   "uw": "Use when two distant stories rhyme hard enough to imply a pattern, not coincidence."
+  },
+  {
+   "title": "Pity trained on novels spills onto the self",
+   "book": "Collected Fictions — Jorge Luis Borges",
+   "type": "mechanism",
+   "steal": "From learning to pity the misfortunes of the heroes of our novels, we wind up feeling too much pity for our own.",
+   "why": "Empathy practice has a rebound effect: trained feeling for fictional sufferers becomes self-pity.",
+   "uw": "Use when reading empathy becomes self-pity by transfer."
+  },
+  {
+   "title": "Unreal in life; not even a ghost in death",
+   "book": "Collected Fictions — Jorge Luis Borges",
+   "type": "concept",
+   "steal": "In life, Ashe was afflicted with unreality, as so many Englishmen are; in death, he is not even the ghost he was in life.",
+   "why": "A life of performed unreality cannot even produce a convincing ghost — the afterlife inherits the deficit.",
+   "uw": "Use when an English understatement of self needs a colder afterlife version."
+  },
+  {
+   "title": "Never notice art/life parallels",
+   "book": "Collected Fictions — Jorge Luis Borges",
+   "type": "mechanism",
+   "steal": "Villari's previous life, but he didn't notice the errors, because the notion that there might be parallels between art and life never occurred to him.",
+   "why": "Blindness to the rhyme between story and fate is itself the tragic mechanism.",
+   "uw": "Use when a character cannot see the rhyme between story and fate."
+  },
+  {
+   "title": "Nostalgia for the unwritten book; fear the specter stays",
+   "book": "Collected Fictions — Jorge Luis Borges",
+   "type": "contradiction",
+   "steal": "Paradoxically, I felt both a nostalgie for the book I should have written, and now never would, and a fear that the guest, the specter, would never abandon me.",
+   "why": "Abandoned work leaves compound interest: grief for what was not written plus haunting by what was started.",
+   "uw": "Use when abandoning a project leaves both grief and haunting."
+  },
+  {
+   "title": "Vacations better in the plan than the trip",
+   "book": "Tilt — Emma Pattee",
+   "type": "mechanism",
+   "steal": "We go on vacations—drive down 101 to Bandon or go camping at Crater Lake—vacations that are always much more exciting to plan than they are to experience.",
+   "why": "Anticipation is the product; the trip is just fulfillment logistics for a feeling already consumed.",
+   "uw": "Use when anticipation outruns experience and that is the point."
+  },
+  {
+   "title": "Apologize before you correct",
+   "book": "Tilt — Emma Pattee",
+   "type": "mechanism",
+   "steal": "Sorry,” I say, because an absolute rule of the universe is that when you are about to correct someone, you must always apologize first.",
+   "why": "Unwritten social protocols govern correction — politeness is the tax on being right.",
+   "uw": "Use when naming a social rule everyone obeys and nobody wrote down."
+  },
+  {
+   "title": "If I do not get home, you are lost too",
+   "book": "Tilt — Emma Pattee",
+   "type": "prediction",
+   "steal": "This is real life, and your father is lost to us now—alive or dead, I don’t know—and if I don’t get home, you will be lost to me, too.",
+   "why": "Disaster stakes invert: the dependent's survival, not your own, is the load-bearing fear.",
+   "uw": "Use when disaster stakes are not your death but losing the dependent."
+  },
+  {
+   "title": "Body not meant to warp — except it was",
+   "book": "Tilt — Emma Pattee",
+   "type": "mechanism",
+   "steal": "My body wasn’t meant to warp like this, except how weird that my body literally was meant to warp like this.",
+   "why": "Design and violation coexist — the body does exactly what it was built for and it still feels wrong.",
+   "uw": "Use when biological design and felt violation collide in one sentence."
+  },
+  {
+   "title": "Amiable quiet, not bored silence",
+   "book": "Tilt — Emma Pattee",
+   "type": "passage",
+   "steal": "Not tense we-can’t-fight-in-public silence, or the shame of bored we-have-nothing-left-to-say silence, but amiable quiet.",
+   "why": "Taxonomy of quiet: peace and failure sound different, and naming the difference is the relationship work.",
+   "uw": "Use when distinguishing peaceful quiet from relationship failure quiet."
+  },
+  {
+   "title": "Knowledge replaced by ignorance; memory by forgetting",
+   "book": "The Eleventh Hour — Salman Rushdie",
+   "type": "mechanism",
+   "steal": "Also, “knowledge” is being replaced by “ignorance,” “memory” is being replaced by “forgetting,” and nothing, no shameful action, however atrocious, remains in the public mind.",
+   "why": "Public amnesia as active project — forgetting is manufactured, not decayed.",
+   "uw": "Use when public amnesia is the active project, not a side effect."
+  },
+  {
+   "title": "Invention masquerading as memoir",
+   "book": "The Eleventh Hour — Salman Rushdie",
+   "type": "mechanism",
+   "steal": "In other words, what we are given is invention masquerading as memoir, an appropriate choice for a tale in which truth and lies are not without importance.",
+   "why": "Form as argument: when the memoir is invented, truth and lies stop being separable by genre.",
+   "uw": "Use when a narrative form is itself the lie/truth argument."
+  },
+  {
+   "title": "The stranger in the bed is himself",
+   "book": "The Eleventh Hour — Salman Rushdie",
+   "type": "mechanism",
+   "steal": "M.’s heart began to pound, or at least he felt as if that was what was happening, and then a confusion gripped his mind, because the body in the bed—the stranger—was himself.",
+   "why": "Identity horror needs a body on the mattress — the abstract split lands when it is physical.",
+   "uw": "Use when identity split needs a physical punchline."
+  },
+  {
+   "title": "Echo of life or proof of afterlife",
+   "book": "The Eleventh Hour — Salman Rushdie",
+   "type": "question",
+   "steal": "Was it just some sort of leftover echo of life—an aberration that did not fundamentally undermine her views—or might it be proof of the reality of life after death?",
+   "why": "Residue phenomena sit exactly on the glitch/evidence line, and the ambiguity is the engine.",
+   "uw": "Use when a ghostly residue could be either glitch or evidence."
+  },
+  {
+   "title": "Cap keeps its cap-ness after material lift",
+   "book": "The Eleventh Hour — Salman Rushdie",
+   "type": "mechanism",
+   "steal": "Just as he had risen out of his body to become whatever he was now, so also his cap had been lifted out of its material self and somehow retained its cap-ness.",
+   "why": "Objects carry function-form past the body — the afterlife has a dress code.",
+   "uw": "Use when an object retains function-form after leaving the body-world."
+  },
+  {
+   "title": "Move where you do not want — skipping is impossible",
+   "book": "Twist — Colum McCann",
+   "type": "concept",
+   "steal": "It is the compulsion to move to a place where you don’t want to move, but you must, and the only way to survive would be to skip your turn, which is impossible.",
+   "why": "Agency is trapped in a turn-taking machine: survival requires a move you hate, and refusal is not on the board.",
+   "uw": "Use when a character (or org) is forced into action by structure, not desire."
+  },
+  {
+   "title": "Tell the story to salve what you became",
+   "book": "Twist — Colum McCann",
+   "type": "mechanism",
+   "steal": "Maybe I tell this story to get rid of it, or to open up the silence, or to salve my own conscience, or perhaps I tell it because I am scared of what I too have become, steeped.",
+   "why": "Narration is self-medication and self-indictment — the teller is scared of the person the silence made.",
+   "uw": "Use when a confession is really fear of identity drift."
+  },
+  {
+   "title": "Mind knows when to stop — body does not",
+   "book": "Twist — Colum McCann",
+   "type": "passage",
+   "steal": "His fist whipped through the air and his mind was precisely aware of when the body should stop, but nothing stopped, neither mind nor body.",
+   "why": "Violence as timing failure: intention hits its mark in awareness while the fist keeps going.",
+   "uw": "Use when describing assault as a lag between mind-brake and muscle."
+  },
+  {
+   "title": "Apartheid dismantled — if it ever was",
+   "book": "Twist — Colum McCann",
+   "type": "mechanism",
+   "steal": "She had grown up in a township just as apartheid was being dismantled—if it ever had been dismantled at all—and she had no doubt seen some things that she should not have seen.",
+   "why": "Political 'end' dates are contested by lived continuity — the parenthetical is the argument.",
+   "uw": "Use when official transition timelines meet streets that did not transition."
+  },
+  {
+   "title": "Local music as radio unchallengeable",
+   "book": "Twist — Colum McCann",
+   "type": "mechanism",
+   "steal": "He is aware that his radio is the one thing that could be challenged, and he plays local music on it, the lyres, the lutes, the cymbals.",
+   "why": "Playing local sound is a legitimacy tactic — the radio is the one asset that could be challenged, so it performs belonging.",
+   "uw": "Use when soft power is a playlist."
+  },
+  {
+   "title": "Clown is wonder and surprise",
+   "book": "Motherclown — Harriet Alida Lye",
+   "type": "definition",
+   "steal": "Clown is your state of wonder and surprise.",
+   "why": "Clown is an affective state, not a costume.",
+   "uw": "Use when \"clown\" is being reduced to makeup and pratfalls."
+  },
+  {
+   "title": "Heart and heartbreak at once",
+   "book": "Motherclown — Harriet Alida Lye",
+   "type": "definition",
+   "steal": "Clown is your heart, and your heartbreak, laughing and crying at the same time.",
+   "why": "The form requires simultaneous registers — comedy that refuses to drop grief.",
+   "uw": "Use when a draft is forced to pick either funny or sad."
+  },
+  {
+   "title": "Clown as true self under mad ghosts",
+   "book": "Motherclown — Harriet Alida Lye",
+   "type": "concept",
+   "steal": "While your soul is full of mad ghosts, your clown is your true self, the chaos and the clarity.",
+   "why": "Performance persona is treated as more honest than the haunted interior.",
+   "uw": "Use when someone says the \"real self\" is only the private one."
+  },
+  {
+   "title": "Death can happen to anyone, at any time",
+   "book": "Motherclown — Harriet Alida Lye",
+   "type": "passage",
+   "steal": "When she returned, rushing back from Max's after the phone call, his body was already on a stretcher, surrounded by paramedics in no rush, and in that instant, she understood: Death can happen to anyone, at any time.",
+   "why": "The lesson arrives as spectacle and bureaucracy — paramedics in no rush.",
+   "uw": "Use when mortality needs a concrete scene, not a slogan."
+  },
+  {
+   "title": "How unknowable someone so close can be",
+   "book": "Motherclown — Harriet Alida Lye",
+   "type": "passage",
+   "steal": "To protect you.\" Elisabeth watched the way her mother's face moved and she considered how unknowable a person so close to you could be.",
+   "why": "Intimacy does not grant transparency — faces move; motives stay opaque.",
+   "uw": "Use when a character assumes family equals full access."
+  },
+  {
+   "title": "Cosmetics never needed FDA approval first",
+   "book": "No More Tears — Gardiner Harris",
+   "type": "mechanism",
+   "steal": "Blush, hair tonics, shampoos, and baby powders never needed FDA approval before being sold, and the agency never had the resources to regulate or analyze them anyway.",
+   "why": "The regulatory halo is assumed, not granted — entire shelves sell on borrowed authority.",
+   "uw": "Use when people assume the FDA pre-clears everything on a drugstore shelf."
+  },
+  {
+   "title": "Talc's common contaminant is chrysotile",
+   "book": "No More Tears — Gardiner Harris",
+   "type": "mechanism",
+   "steal": "One of the most common talc contaminants is chrysotile asbestos, which is known as white asbestos and is the only type of asbestos still used to this day in the United States.",
+   "why": "A household staple carries an industrial poison by geology; the supply chain is the exposure.",
+   "uw": "Use when explaining why baby powder litigation keeps finding asbestos language."
+  },
+  {
+   "title": "Only major HIV maker that refused the UN patent share",
+   "book": "No More Tears — Gardiner Harris",
+   "type": "evidence",
+   "steal": "For example, I found that J & J was the only major manufacturer of HIV/AIDS medicines that refused to share its patents with a United Nations program that has saved millions of.",
+   "why": "Access rhetoric vs. patent behavior — the gap between the press release and the license.",
+   "uw": "Use when contrasting pharma access rhetoric with patent behavior."
+  },
+  {
+   "title": "Illegal aid must be legal — FDA would have stopped us",
+   "book": "No More Tears — Gardiner Harris",
+   "type": "mechanism",
+   "steal": "In dozens of interviews, sales reps said that their obviously illegal sales aids must have been legal because the FDA must have approved them or at least would have forced J &.",
+   "why": "Regulator silence gets laundered into approval; absence of enforcement becomes permission.",
+   "uw": "Use when sales culture treats regulator silence as approval."
+  },
+  {
+   "title": "Dust for workers; masks for managers",
+   "book": "No More Tears — Gardiner Harris",
+   "type": "contradiction",
+   "steal": "The workers drilled through quartz, creating clouds of silica dust, but weren’t given masks or respirators, although the white engineers and managers who inspected the work.",
+   "why": "Risk follows rank: the same air is safe or lethal depending on whose lungs breathe it.",
+   "uw": "Use when occupational risk splits by race or rank in the same mine."
+  },
+  {
+   "title": "Ordinary emotions available; extraordinary ones blocked",
+   "book": "London Falling — Patrick Radden Keefe",
+   "type": "mechanism",
+   "steal": "During moments of high trauma, people sometimes enter a dissociative state in which it’s still possible to access ordinary emotions but not to cope with the extraordinary ones.",
+   "why": "Dissociation as emotional triage — the system keeps the lights on for small feelings while the big ones wait outside.",
+   "uw": "Use when describing dissociation under high trauma."
+  },
+  {
+   "title": "Abused child still loves the predator",
+   "book": "London Falling — Patrick Radden Keefe",
+   "type": "mechanism",
+   "steal": "Because an abused child will always love his predator.” He added, “But you are a predator and must be tamed by many, not one.",
+   "why": "Attachment survives abuse, which is why single-story rooms (victim OR accomplice) fail.",
+   "uw": "Use when love and predation coexist and the room wants only one."
+  },
+  {
+   "title": "Big Bang deregulation of the City",
+   "book": "London Falling — Patrick Radden Keefe",
+   "type": "mechanism",
+   "steal": "In October 1986, Margaret Thatcher deregulated the banking industry in what is known as the City of London, the traditional center of British finance and commerce.",
+   "why": "Modern finance culture has a date stamp — 1986 — and everything since is downstream of that reset.",
+   "uw": "Use when dating modern London finance culture to Thatcher's 1986 reset."
+  },
+  {
+   "title": "Feared enough to sneak back in",
+   "book": "London Falling — Patrick Radden Keefe",
+   "type": "mechanism",
+   "steal": "But in practice he always managed to sneak back in, because he was becoming the sort of feared individual whom people hesitated to cross.",
+   "why": "Status as access control: being feared is a credential that bypasses the rules.",
+   "uw": "Use when status becomes the bypass around rules."
+  },
+  {
+   "title": "Deleted Sharma thread; kept Zac thread",
+   "book": "London Falling — Patrick Radden Keefe",
+   "type": "evidence",
+   "steal": "He appeared to have deleted all his messages with Verinder Sharma in the month leading up to Zac’s death but not his messages with Zac.",
+   "why": "Selective deletion is a signature — what survives the purge is the tell.",
+   "uw": "Use when selective deletion is itself the tell."
+  },
+  {
+   "title": "Three roads, three destinations",
+   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
+   "type": "question",
+   "steal": "Might it not be, she asked . . . , that instead of traveling, as has always been supposed, down three roads to the same destination, they are actually traveling toward three.",
+   "why": "The pilgrim fantasy of one ending is inverted: parallel paths diverge, so 'same destination' was the comforting lie.",
+   "uw": "Use when a story or strategy assumes convergence that is not earned."
+  },
+  {
+   "title": "Perfect memory paradox or incest clue",
+   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
+   "type": "mechanism",
+   "steal": "This implies that Marie and Robert, previously identified as wife and husband, are involved in brother/sister incest, or it is another case of perfect memory paradox.",
+   "why": "Unreliable narration makes moral shock ambiguous — the text weaponizes memory as evidence that may be wrong.",
+   "uw": "Use when a reveal depends on whether the narrator's memory can be trusted."
+  },
+  {
+   "title": "Sword and sacred gem as treasure pattern",
+   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
+   "type": "mechanism",
+   "steal": "Myth: That Severian has a “magic” sword and a sacred gem is a pattern similar to the Three Sacred Treasures of Japan (a sword, a mirror, and a jewel).",
+   "why": "Myth inventory (Japan's three treasures) is a reading tool: objects signal lineage, not loot.",
+   "uw": "Use when packing symbolic gear that should echo older myth sets."
+  },
+  {
+   "title": "Scarlet pelerine as severity",
+   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
+   "type": "passage",
+   "steal": "In the Chinese legal system of the Tang dynasty a scarlet pelerine is a symbol of severity, which is fitting since the penalties involve torture and death.",
+   "why": "Costume is jurisprudence — color and cut announce the penalty regime before the verdict.",
+   "uw": "Use when wardrobe needs to carry legal threat."
+  },
+  {
+   "title": "Healing the ear you wounded",
+   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
+   "type": "mechanism",
+   "steal": "Severian healing the soldier he had wounded (250) half-echoes when Jesus healed the ear of the soldier Peter had wounded (Luke 22:50-51), shortly after Judas identified Jesus.",
+   "why": "Gospel echo turns violence into a test of mercy under the same hand that cut — authorship of harm and repair.",
+   "uw": "Use when a character must undo damage they personally inflicted."
+  },
+  {
+   "title": "Grain fixes the price of a day's work",
+   "book": "The History of Money — David McWilliams",
+   "type": "mechanism",
+   "steal": "A specific amount of grain corresponded to something else, such as a day’s work for a laborer, establishing a relationship between the price of food and the price of everything.",
+   "why": "Money starts as a conversion table between calories and labor — prices are ratios before they are coins.",
+   "uw": "Use when explaining why 'real' value talk always smuggles a subsistence unit."
+  },
+  {
+   "title": "Salary from salt",
+   "book": "The History of Money — David McWilliams",
+   "type": "mechanism",
+   "steal": "The modern word “salary” comes from this idea of being paid in salt or paid with a coin linked to salt, as too does the expression “worth his salt.” Vespasian meant business.",
+   "why": "Etymology is policy fossil: being 'worth your salt' is wage history wearing a proverb costume.",
+   "uw": "Use when a wage metaphor needs its Roman logistics back."
+  },
+  {
+   "title": "Trust enough to fund a never-repaid loan",
+   "book": "The History of Money — David McWilliams",
+   "type": "question",
+   "steal": "Can you imagine how much trust in money there must be in a society for people to finance a loan that they know is never actually going to be repaid and yet consider this to be.",
+   "why": "Credit culture can treat known non-repayment as normal — trust is not optimism, it is a shared fiction with rules.",
+   "uw": "Use when a 'crazy' debt instrument is actually a trust ritual."
+  },
+  {
+   "title": "Did hyperinflation trigger empire's fall",
+   "book": "The History of Money — David McWilliams",
+   "type": "question",
+   "steal": "Just as the expansion of empire took time, the disintegration happened gradually, but could the degeneration have been triggered by hyperinflation and the destruction of the.",
+   "why": "Monetary collapse is offered as a possible trigger for imperial disintegration, not a sideshow.",
+   "uw": "Use when decline narratives skip the currency death spiral."
+  },
+  {
+   "title": "Napoleon's pile of shit in silk stockings",
+   "book": "The History of Money — David McWilliams",
+   "type": "passage",
+   "steal": "You must be some almighty class of scoundrel if Napoleon describes you as “a pile of shit in silk stockings.” Can you imagine the number of people who must have crossed Bonaparte?",
+   "why": "Character assassination from the top of the power stack is still a pricing of reputation in vulgar units.",
+   "uw": "Use when you need a brutal historical insult that doubles as status economics."
+  },
+  {
+   "title": "Gamble your life on a white-run system",
+   "book": "Bad Law — Elie Mystal",
+   "type": "question",
+   "steal": "How many of those people are poor and Black and eager to gamble their entire lives on getting a fair opportunity to make their case in a criminal justice system run by white folks?",
+   "why": "Due process is sold as fair procedure while the house demographics make the bet asymmetric.",
+   "uw": "Use when 'just take it to trial' ignores who runs the courtroom."
+  },
+  {
+   "title": "Stand Your Ground when life is not in danger",
+   "book": "Bad Law — Elie Mystal",
+   "type": "question",
+   "steal": "Did you notice that in Florida (as in most other Stand Your Ground states), you can use deadly force when your life is not in danger and to stop the commission of a felony or.",
+   "why": "Self-defense doctrine expands into felony-stop lethal force — the word 'defense' outruns the threat.",
+   "uw": "Use when a statute is doing offense under a defense brand."
+  },
+  {
+   "title": "Airline failures as body blows, not Darwin wins",
+   "book": "Bad Law — Elie Mystal",
+   "type": "mechanism",
+   "steal": "There is truth in that, of course, but what the market Darwinists always fail to mention is that each of these airline failures was a body blow to thousands and thousands of.",
+   "why": "Market Darwinism hides the human wreckage of each 'efficient' exit — failure is socialized even when profit is not.",
+   "uw": "Use when creative destruction talk skips the workers on the wreck."
+  },
+  {
+   "title": "Party shame mirrors abortion shame",
+   "book": "Bad Law — Elie Mystal",
+   "type": "mechanism",
+   "steal": "Just as society seeks to shame women who get abortions, so have the men running the Democratic Party largely acted as though they’re ashamed to support these women as well.",
+   "why": "Political support can reproduce the stigma it claims to fight — allies act embarrassed of the people they defend.",
+   "uw": "Use when coalition behavior feels like moral quarantine."
+  },
+  {
+   "title": "Out of status — and somehow that explains the shot",
+   "book": "Bad Law — Elie Mystal",
+   "type": "contradiction",
+   "steal": "Zárate was out of status at the time of the shooting, but not one person has been able to explain to me how or why that possibly mattered or made any difference in the tragic.",
+   "why": "Immigration status is smuggled in as causal for violence without a mechanism — narrative glue, not evidence.",
+   "uw": "Use when a status label is doing explanatory work it cannot earn."
+  },
+  {
+   "title": "Reverse engineering as a design tool, not a dirty copy",
+   "book": "Reverse Engineering — R. Messler",
+   "type": "concept",
+   "steal": "Reverse engineering is a powerful technique, process, method, and means for creating a design—maybe better, maybe less expensive, maybe hardly different at all, perhaps barely recognizable as a derivative of the original.",
+   "why": "RE is framed as a creative pathway with a wide outcome range, not theft with a single destination.",
+   "uw": "Use when someone treats reverse engineering as only cloning or only IP theft."
+  },
+  {
+   "title": "Mechanical dissection, including biology",
+   "book": "Reverse Engineering — R. Messler",
+   "type": "definition",
+   "steal": "It is, quite simply, mechanical dissection or \"teardown\" of mechanical, electrical, electromechanical or mechatronic, and, occasionally, biological entities.",
+   "why": "The method is domain-agnostic: same teardown logic crosses hardware and living systems.",
+   "uw": "Use when you need a one-line definition that does not stop at gadgets."
+  },
+  {
+   "title": "Teardown after survival",
+   "book": "Reverse Engineering — R. Messler",
+   "type": "mechanism",
+   "steal": "If, on the other hand, something survives creation, production, or construction (as is usually the case), engineers, not uncommonly, take it apart (at some point) in a systematic process of teardown.",
+   "why": "Learning is timed to survival — you dissect what worked, not only what failed.",
+   "uw": "Use when a team only postmortems crashes and never teardowns successes."
+  },
+  {
+   "title": "Product teardown = take apart to understand",
+   "book": "Reverse Engineering — R. Messler",
+   "type": "definition",
+   "steal": "Based on this, product teardown is the process of taking apart a product to understand it.",
+   "why": "Understanding is the goal; reuse or redesign is optional downstream.",
+   "uw": "Use when teardown is pitched as a shortcut to a clone instead of a learning loop."
+  },
+  {
+   "title": "Design with a known purpose, solved backward",
+   "book": "Reverse Engineering — R. Messler",
+   "type": "mechanism",
+   "steal": "The design is a creation with a purpose, with the purpose being known, and the design process being the pathway chosen via a backward problem-solving technique involving analysis.",
+   "why": "Purpose-first design runs analysis backward from the end state — not forward from available parts.",
+   "uw": "Use when a build starts from components on hand instead of a stated purpose."
+  },
+  {
+   "title": "Technology push, not market pull",
+   "book": "Reverse Engineering — R. Messler",
+   "type": "argument",
+   "steal": "A new material, a new method-of-manufacture, -construction, or -processing, or a new technical capability is the driver for an adaptation, not a market pull.",
+   "why": "Some adaptations are capability-led: the tool invents the use-case.",
+   "uw": "Use when a roadmap assumes every change must answer a pre-existing market demand."
+  },
+  {
+   "title": "Variant design = change parameters of the existing",
+   "book": "Reverse Engineering — R. Messler",
+   "type": "definition",
+   "steal": "Variant design (or modification) involves varying the parameters (size, geometry, material properties, control parameters, etc.) of certain aspects of an existing design to develop a different design.",
+   "why": "Most \"new\" products are parameter edits on a known skeleton — name that honestly.",
+   "uw": "Use when a pitch calls a resize or material swap a clean-sheet invention."
+  },
+  {
+   "title": "Outcomes over motivations",
+   "book": "Reverse Engineering — R. Messler",
+   "type": "argument",
+   "steal": "In a similar vein, outcomes are usually more important than motivations, whether the motivations were good but the outcome a failure, or the motivations may not have been perfectly pure or worthy but the outcome proved useful or valuable or worthy.",
+   "why": "Judgment tracks results, not purity of intent — useful for ethics and for engineering retrospectives.",
+   "uw": "Use when a review is stuck arguing motives instead of what the teardown showed."
+  },
+  {
+   "title": "AI on the smallest, most constrained devices",
+   "book": "Tiny Machine Learning QuickStart — Simone Salerno",
+   "type": "definition",
+   "steal": "This convergence has given birth to Tiny Machine Learning (often shortened as TinyML®, trademark of the EdgeAI foundation)—a field that brings the power of artificial intelligence to the smallest and most resource-constrained computing devices.",
+   "why": "The field is defined by scarcity, not by model cleverness alone.",
+   "uw": "Use when \"edge AI\" is used as a buzzword without naming the constraint."
+  },
+  {
+   "title": "Fit inside memory, power, and energy budgets",
+   "book": "Tiny Machine Learning QuickStart — Simone Salerno",
+   "type": "mechanism",
+   "steal": "Unlike cloud-based machine learning systems with virtually unlimited resources, TinyML development requires careful optimization to fit within tight memory constraints, limited processing power, and strict energy budgets.",
+   "why": "Cloud habits (scale out) are the wrong reflex; the work is fit-to-budget.",
+   "uw": "Use when a team ports a cloud model and is shocked it will not fit."
+  },
+  {
+   "title": "Embedded hardware = limited CPU, program space, RAM",
+   "book": "Tiny Machine Learning QuickStart — Simone Salerno",
+   "type": "evidence",
+   "steal": "Due to size, efficiency, power, and cost constraints, embedded hardware is characterized by limited resources (CPU, program space, and RAM).",
+   "why": "Four constraints stack — size, efficiency, power, cost — into the same thin resource envelope.",
+   "uw": "Use when someone argues \"just use a bigger chip\" as if cost and power were free."
+  },
+  {
+   "title": "Train heavy, deploy light",
+   "book": "Tiny Machine Learning QuickStart — Simone Salerno",
+   "type": "mechanism",
+   "steal": "We can exploit this asymmetry by training our models on resource-heavy hardware, such as a desktop PC, and then converting them into a lightweight format that fits the constraints of our embedded hardware.",
+   "why": "Asymmetry is the method: expensive training, cheap inference.",
+   "uw": "Use when training and deployment are treated as the same machine problem."
+  },
+  {
+   "title": "Growth of models vs embedded limits",
+   "book": "Tiny Machine Learning QuickStart — Simone Salerno",
+   "type": "argument",
+   "steal": "Historically, the power of machine learning algorithms has increased over time, largely due to the growth in the size and complexity of the models.",
+   "why": "Progress-by-scale collides with devices that cannot scale.",
+   "uw": "Use when a roadmap assumes bigger models are always better."
+  },
+  {
+   "title": "Three kinds of delay",
+   "book": "Analysis and Design of Delayed Neural Networks — Xin Wang",
+   "type": "definition",
+   "steal": "Delays resulting from the communication mode among neurons are classified as transmission delay, leakage delay, and distributed delay.",
+   "why": "\"Delay\" is not one bug — it is a taxonomy with different physics.",
+   "uw": "Use when a model lumps all latency into one parameter."
+  },
+  {
+   "title": "Delay is inevitable — model it",
+   "book": "Analysis and Design of Delayed Neural Networks — Xin Wang",
+   "type": "argument",
+   "steal": "Since delay is inevitable, it is necessary to model NNs by functional differential/difference equations, that is, differential/difference equations with delayed states.",
+   "why": "Inevitability forces a different math, not a hope that latency goes away.",
+   "uw": "Use when a design assumes instantaneous communication between nodes."
+  },
+  {
+   "title": "Transmission delay as communication latency",
+   "book": "Analysis and Design of Delayed Neural Networks — Xin Wang",
+   "type": "definition",
+   "steal": "In the process of communication among neurons, the latency issue is inevitable, which is identified as transmission delay.",
+   "why": "Latency is renamed as a first-class delay type in the network itself.",
+   "uw": "Use when \"network lag\" is treated as outside the model."
+  },
+  {
+   "title": "Leakage delay in the negative feedback",
+   "book": "Analysis and Design of Delayed Neural Networks — Xin Wang",
+   "type": "mechanism",
+   "steal": "In addition, a representative delay that is fundamentally different from both transmission delay and distributed delay often appears in the negative feedbacks (i.e., leakage terms), which is named leakage delay.",
+   "why": "Feedback paths have their own delay mode — distinct from hop-to-hop lag.",
+   "uw": "Use when stability fails and everyone only inspects forward-path latency."
+  },
+  {
+   "title": "Stability that should survive small undulation",
+   "book": "Analysis and Design of Delayed Neural Networks — Xin Wang",
+   "type": "argument",
+   "steal": "However, it is desired that the stability of NNs will not change with small undulation of structure or parameters.",
+   "why": "Robustness is the requirement: small hardware tolerance must not flip stability.",
+   "uw": "Use when a model works in sim and dies on slightly different chips."
+  },
+  {
+   "title": "Contemptible sources are the essential ones",
+   "book": "Sabbatai Sevi: The Mystical Messiah — Gershom Scholem",
+   "type": "argument",
+   "steal": "In this book I hope to prove that those sources which historians have tended to regard with particular contempt are the very sources which can make an essential contribution to an understanding of the period.",
+   "why": "Method claim: despised evidence is where the movement lives.",
+   "uw": "Use when an archive is dismissed for being \"unreliable\" yet is the only window."
+  },
+  {
+   "title": "Scholars minimize scope and distort meaning",
+   "book": "Sabbatai Sevi: The Mystical Messiah — Gershom Scholem",
+   "type": "argument",
+   "steal": "One of the remarkable features of research on Sabbatianism is the tendency to minimize the scope of the movement and to distort its meaning.",
+   "why": "Historiography itself is part of the story — shrinking the event is a habit.",
+   "uw": "Use when a mass phenomenon keeps getting footnoted as fringe."
+  },
+  {
+   "title": "Critical faculties sleep on this subject",
+   "book": "Sabbatai Sevi: The Mystical Messiah — Gershom Scholem",
+   "type": "evidence",
+   "steal": "Critical faculties which are so alert when dealing with other weighty issues seem almost to slumber and to become blinded when it comes to the Sabbatian movement and its transformations.",
+   "why": "Rationalist bias creates a blind spot exactly where irrational events sit.",
+   "uw": "Use when smart people go soft or hostile instead of analytical on a weird movement."
+  },
+  {
+   "title": "Rationalist outlook narrows the perspective",
+   "book": "Sabbatai Sevi: The Mystical Messiah — Gershom Scholem",
+   "type": "argument",
+   "steal": "The reason for this obtuseness is obviously the rationalist outlook, which narrows the historical perspective and prevents an unbiased understanding of phenomena such as the mystical movement in Judaism.",
+   "why": "Methodological rationalism can be a bias against its object.",
+   "uw": "Use when \"being rational\" is used to refuse to model belief systems."
+  },
+  {
+   "title": "Moral condemnation blocks objectivity",
+   "book": "Sabbatai Sevi: The Mystical Messiah — Gershom Scholem",
+   "type": "argument",
+   "steal": "The lack of objectivity among scholars was brought about both by the sheer irrationality, so to speak, of the events they were studying and by their moral condemnation of the consequences of the movement and of many of its leaders.",
+   "why": "Disgust and irrationality together destroy the historian's stance.",
+   "uw": "Use when a topic is both weird and morally radioactive."
+  },
+  {
+   "title": "Appeared suddenly, as if out of the blue",
+   "book": "Origins of the Kabbalah — Gershom Scholem",
+   "type": "concept",
+   "steal": "The very specific form of Jewish mysticism (or mystical theosophy) known as Kabbalah appeared suddenly, as if out of the blue, in the late Middle Ages.",
+   "why": "Historical systems can look discontinuous — sudden emergence is a research problem, not a miracle claim.",
+   "uw": "Use when a field or ideology seems to have no prehistory."
+  },
+  {
+   "title": "Documents lost in the storms of history",
+   "book": "Origins of the Kabbalah — Gershom Scholem",
+   "type": "evidence",
+   "steal": "Nearly all documents of this nature have been lost in the storms of Jewish history.",
+   "why": "Absence of sources is structural — silence is not proof of absence of practice.",
+   "uw": "Use when missing archives are treated as empty shelves of nothing-ever-happened."
+  },
+  {
+   "title": "Eliminate the famous late text from origins",
+   "book": "Origins of the Kabbalah — Gershom Scholem",
+   "type": "argument",
+   "steal": "Unfortunately, the most voluminous kabbalistic work of the thirteenth century, the Zohar, namely, the complex of writings included within it, must be entirely eliminated from this discussion of the origin and early stages of the Kabbalah.",
+   "why": "The famous book is too late for origins — popularity ≠ primacy.",
+   "uw": "Use when the best-known text is wrongly used as the founding document."
+  },
+  {
+   "title": "Thornier path nearer the origin",
+   "book": "Origins of the Kabbalah — Gershom Scholem",
+   "type": "mechanism",
+   "steal": "As things stand, we must turn aside from this high road and make do on the thornier path of historical analysis of the texts that are nearer to the origin and first stages of the Kabbalah.",
+   "why": "Method choice: skip the grand highway for harder, earlier scraps.",
+   "uw": "Use when the easy corpus is the wrong corpus for origins."
+  },
+  {
+   "title": "Hostile controversy between disciplines",
+   "book": "Origins of the Kabbalah — Gershom Scholem",
+   "type": "contradiction",
+   "steal": "These two disciplines, esoteric in origin, were engaged in a permanent and increasingly hostile controversy.",
+   "why": "Twin esoteric lineages can be enemies — shared underground does not mean alliance.",
+   "uw": "Use when two \"mystical\" camps are assumed to be on the same side."
+  }
+ ]
+}
