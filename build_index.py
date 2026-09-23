@@ -14,8 +14,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 def main():
     ds = json.load(open(os.path.join(HERE, "cards.json"), encoding="utf-8"))
     cards, books = ds["cards"], ds["books"]
-    assert len(cards) == 152, "expected 152 cards, got %d" % len(cards)
-    assert len(books) == 28, "expected 28 books, got %d" % len(books)
+    nc, nbk = len(cards), len(books)
+    assert nc > 0 and nbk > 0
     for c in cards:
         for f in ("title", "steal", "why", "uw"):
             assert c.get(f) and c[f].strip(), "card missing %s: %r" % (f, c.get("title"))
@@ -28,9 +28,9 @@ def main():
 
     t = open(os.path.join(HERE, "index.html"), encoding="utf-8").read()
     found = re.findall(r'<article class="card"', t)
-    assert len(found) == 152, "page has %d cards" % len(found)
+    assert len(found) == nc, "page has %d cards, dataset has %d" % (len(found), nc)
     nums = re.findall(r'<span class="num">(\d+)</span>', t)
-    assert [int(n) for n in nums] == list(range(1, 153)), "numbering broken"
+    assert [int(n) for n in nums] == list(range(1, nc + 1)), "numbering broken"
     for g in ds["genre_order"]:
         assert ('<h2 class="genre" data-genre="%s">' % html.escape(g, quote=True)) in t, "missing genre " + g
     for b in books:
@@ -46,7 +46,8 @@ def main():
         for part in ('class="cardhead"', 'class="cardbody"', 'class="steal"',
                      'class="why"', 'class="uw"'):
             assert part in c, "card %d missing %s" % (i, part)
-    print("keepers page OK: 152 cards, 28 books, 7 genres, numbered 1-152")
+    print("keepers page OK: %d cards, %d books, %d genres, numbered 1-%d"
+          % (nc, nbk, len(ds["genre_order"]), nc))
 
 if __name__ == "__main__":
     main()

@@ -4,6 +4,7 @@
   "Science Fiction",
   "Fantasy",
   "Myth & Epic",
+  "Hermetica",
   "Horror & Weird",
   "Crime & Mystery",
   "Literary Fiction",
@@ -149,6 +150,16 @@
    "book": "Origins of the Kabbalah — Gershom Scholem",
    "genre": "Nonfiction",
    "bookline": "Scholarly origin story of Kabbalah — myth, history, and mystical systems that appear suddenly."
+  },
+  {
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "genre": "Hermetica",
+   "bookline": "Classical Hermetica in English — Mind (nous), Light, Word, and Man as image of the Father."
+  },
+  {
+   "book": "The Chaldean Oracles — attributed to Zoroaster (Westcott / Sapere Aude)",
+   "genre": "Hermetica",
+   "bookline": "Fragmentary oracles of the Intelligible Triad — Paternal Mind, silence, and the flower of mind."
   }
  ],
  "cards": [
@@ -1367,6 +1378,142 @@
    "steal": "These two disciplines, esoteric in origin, were engaged in a permanent and increasingly hostile controversy.",
    "why": "Twin esoteric lineages can be enemies — shared underground does not mean alliance.",
    "uw": "Use when two \"mystical\" camps are assumed to be on the same side."
+  },
+  {
+   "title": "Light, Mind, Word — the first naming",
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "type": "definition",
+   "steal": "Then said he, \"I am that Light, the Mind, thy God, who am before that Moist Nature that appeareth out of Darkness, and that Bright and Lightful Word from the Mind is the Son of God.\"",
+   "why": "God self-identifies as Light and Mind; the Word is not a later book but the Mind's bright issue.",
+   "uw": "Use when you need the Hermetic stack in one sentence — Light / Mind / Word before cosmology."
+  },
+  {
+   "title": "Seeing, Hearing, Mind — unison is Life",
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "type": "mechanism",
+   "steal": "Thus,\" replied he, \"Understand it, That which in thee Seeth and Heareth, the Word of the Lord, and the Mind, the Father, God, Differeth not One from the Other, and the Unison of these is Life.\"",
+   "why": "Perception, Word, and Mind are not three gods — their unison *is* life.",
+   "uw": "Use when someone splits spirit / intellect / speech into rival faculties."
+  },
+  {
+   "title": "Mind brings forth another Mind — the Workman",
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "type": "mechanism",
+   "steal": "For the Mind being God, Male and Female, Life and Light, brought forth by his Word; another Mind, the Workman: Which being God of the Fire, and the Spirit, fashioned and formed seven other Governors, which in their Circles contain the Sensible World, whose Government or Disposition is called Fate or Destiny.",
+   "why": "Demiurge is a second Mind issued by Word; the seven governors are Fate's machinery, not random stars.",
+   "uw": "Use when designing a cosmos where fate is engineered governance, not luck."
+  },
+  {
+   "title": "Word leaps into the Workman — Matter left without Reason",
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "type": "mechanism",
+   "steal": "Straightway leaped out, or exalted itself from the downward born Elements of God, the Word of God into the clean and pure Workmanship of Nature, and was united to the Workman, Mind, for it was Consubstantial; and so the downward born Elements of Nature were left without Reason, that they might be the only Matter.",
+   "why": "Matter is what remains when Word-Mind union withdraws Reason — dumb substrate by design.",
+   "uw": "Use when a system needs a clean split between form-giving intelligence and leftover material."
+  },
+  {
+   "title": "Father Mind brings forth Man like himself",
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "type": "passage",
+   "steal": "But the Father of all things, the Mind being Life and Light, brought forth Man, like unto himself, whom he loved as his proper Birth, for he was all beauteous, having the Image of his Father.",
+   "why": "Anthropology starts as paternal love of likeness — Man is not an accident of mud.",
+   "uw": "Use when human dignity needs a metaphysical warrant, not a social one."
+  },
+  {
+   "title": "Life and Light into Soul and Mind",
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "type": "definition",
+   "steal": "And Man was made of Life and Light into Soul and Mind, of Life the Soul, of Light the Mind.",
+   "why": "Mapping is exact: Life→Soul, Light→Mind — nous is photometric, not merely cognitive.",
+   "uw": "Use when you need the Hermetic equation for what Mind *is* made of."
+  },
+  {
+   "title": "Mind is not cut off from God — light of the sun",
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "type": "mechanism",
+   "steal": "The Mind therefore is not cut off, or divided from the essentiality of God, but united as the light of the sun.",
+   "why": "Nous is continuous with God the way sunlight is continuous with the sun — division talk is category error.",
+   "uw": "Use when someone treats mind as a sealed private box cut off from the source."
+  },
+  {
+   "title": "Nesting: Soul in Body, Mind in Soul, Word in Mind, Mind in God",
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "type": "mechanism",
+   "steal": "For the blessed God, the good Demon said or commanded the Soul to be in the Body, the Mind, in the Soul, the Word, or Speech, or Reason in the Mind, and the Mind in God, and that God is the Father of them all.",
+   "why": "Nested containers — each layer hosts the next; God fathers the whole stack.",
+   "uw": "Use when modeling consciousness as layered hosting, not a flat single substance."
+  },
+  {
+   "title": "Word image of Mind; Mind of God",
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "type": "definition",
+   "steal": "Therefore the Word is the Image of the Mind, and the Mind of God, and the Body of the Idea; and the Idea of the Soul.",
+   "why": "Cascading images: Word←Mind←God, Body←Idea←Soul — representation all the way down.",
+   "uw": "Use when an ontology needs image-chains instead of substance dualism."
+  },
+  {
+   "title": "Mind and Speech gifted equal to immortality",
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "type": "argument",
+   "steal": "Consider this also, O Son, That God hath freely bestowed upon man, above all other living things, these two, to wit, Mind and Speech, or Reason, equal to immortality.",
+   "why": "Nous + logos are the immortality-grade gifts — not the body, not status.",
+   "uw": "Use when ranking what makes a human \"above\" other animals without biology chauvinism."
+  },
+  {
+   "title": "Pious Soul — Mind enters and leads into Light of Knowledge",
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "type": "mechanism",
+   "steal": "But into a pious Soul, the Mind entering, leads it into the Light of Knowledge.",
+   "why": "Knowledge-light is ingress: Mind enters the prepared soul; piety is the open door.",
+   "uw": "Use when epistemology needs a moral precondition without turning into self-help."
+  },
+  {
+   "title": "God is Cause that Mind is — not Mind itself",
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "type": "contradiction",
+   "steal": "God is not a Mind, but the Cause that the Mind is; not a Spirit, but the Cause that the Spirit is; not Light, but the Cause that Light is.",
+   "why": "Apophatic brake: even Hermetic Mind-language must not collapse God into a faculty.",
+   "uw": "Use when a system confuses the source with the first emanation."
+  },
+  {
+   "title": "First Mind in the Paternal Depth",
+   "book": "The Chaldean Oracles — attributed to Zoroaster (Westcott / Sapere Aude)",
+   "type": "concept",
+   "steal": "It will be seen that the First Mind and the Intelligible Triad, Pater, Potentia, or Mater, and Mens, are allotted to the Intelligible World of Supramundane Light: the \"First Mind\" represents the archetypal intelligence as an entity in the bosom of the Paternal Depth.",
+   "why": "Nous here is archetypal entity inside the Father's depth — not a brain metaphor.",
+   "uw": "Use when you need the Chaldean placement of Mind above the sensible world."
+  },
+  {
+   "title": "Intelligible beyond ratiocination",
+   "book": "The Chaldean Oracles — attributed to Zoroaster (Westcott / Sapere Aude)",
+   "type": "definition",
+   "steal": "As it is said, \"Mind is with Him, power with them.\" The word \"Intelligible\" is used in the Platonic sense, to denote a mode of being, power or perception, transcending intellectual comprehension, i.e., wholly distinct from, and superior to, ratiocination.",
+   "why": "Intelligible ≠ intellectual: it outranks discursive reason by definition.",
+   "uw": "Use when someone reduces \"intelligible\" to \"what we can argue about.\""
+  },
+  {
+   "title": "Soul endowed with much mind (Nous)",
+   "book": "The Chaldean Oracles — attributed to Zoroaster (Westcott / Sapere Aude)",
+   "type": "passage",
+   "steal": "It becometh you to hasten unto the Light, and to the Rays of the Father, from whom was sent unto you a Soul (Psyche) endued with much mind (Nous).",
+   "why": "The soul arrives already loaded with nous — ascent is return along the paternal rays.",
+   "uw": "Use when a character's vocation is framed as returning a gift already given."
+  },
+  {
+   "title": "Inscrutable God known through Mind alone",
+   "book": "The Chaldean Oracles — attributed to Zoroaster (Westcott / Sapere Aude)",
+   "type": "mechanism",
+   "steal": "Hence the inscrutable God is called silent by the divine ones, and is said to consent with Mind, and to be known to human souls through the power of the Mind alone.",
+   "why": "Silence + Mind: the path to the inscrutable is not chatter and not sense — nous only.",
+   "uw": "Use when theology needs a reason that silence is not emptiness."
+  },
+  {
+   "title": "Flower of the mind — beyond Intellect",
+   "book": "The Chaldean Oracles — attributed to Zoroaster (Westcott / Sapere Aude)",
+   "type": "mechanism",
+   "steal": "To this end we are commanded to learn the Intelligible which exists beyond the mind, that divine portion of the being which exists beyond Intellect: and this it is only possible to grasp with the flower of the mind.",
+   "why": "Even Mind has a beyond; the grasp-organ is the \"flower\" of mind — peak, not bulk cognition.",
+   "uw": "Use when ordinary intellect is necessary but not sufficient for the real object."
   }
  ]
 }
