@@ -38,7 +38,8 @@ def main():
         assert html.escape(b["bookline"], quote=False) in t, "missing bookline " + b["book"]
     for part in ('id="q"', 'id="fgenre"', 'id="fbook"', 'id="ftype"',
                  'id="expand"', 'id="collapse"', 'data-copy="steal"',
-                 'data-copy="uw"', "Last curated"):
+                 'data-copy="uw"', "Last curated", 'id="splash"',
+                 'id="floatfield"', 'id="dive"'):
         assert part in t, "page missing " + part
     # each rendered card keeps the grounded fields
     bodies = re.findall(r'<article class="card".*?</article>', t, re.S)
