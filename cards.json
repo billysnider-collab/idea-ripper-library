@@ -366,6 +366,36 @@
    "book": "Ethics, Eugenics, and Public Education in Georgia (1910-1965) — Aaron Gerald Guest Sr.",
    "genre": "Thesis",
    "bookline": "Masters thesis — Columbus State University, 2017. Full text: https://archive.org/details/guest-csu"
+  },
+  {
+   "book": "The Triangle Offense: Using Social Movement Theory to Analyze Russia's Gray Zone Strategy — Alexander V. Simmons",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — National Defense University (Joint Advanced Warfighting School), 2017. Full text: https://archive.org/details/DTIC_AD1032497"
+  },
+  {
+   "book": "Server-based and server-less BYOD solutions to support electronic learning — Joshua C. Benson & Brian R. McCarthy",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/serverbasedndser1094549343"
+  },
+  {
+   "book": "Measuring Resilience — Joshua L. Boyle",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/measuringresilie1094566593"
+  },
+  {
+   "book": "Investigating the effect of Copper (CuI) depletion on the serotonergic neurons and serotonin signalling in the nematode based model — Iram Khan",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Sister Nivedita University, 2025. Full text: https://archive.org/details/sgng.20150-investigating-the-effect-of-copper-cui-depletion-on-the-serotoner"
+  },
+  {
+   "book": "Indo-Slavic lexical isoglosses and the prehistoric dispersal of Indo-Iranian — A.I. Palmér",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Leiden University, 2024. Full text: https://archive.org/details/indo-slavic-thesis"
+  },
+  {
+   "book": "The paradoxical pope: the contemplative and active lives of Gregory the Great — Elizabeth E. Marvel",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Gordon-Conwell Theological Seminary, 2015. Full text: https://archive.org/details/2015MarvelElizabeth"
   }
  ],
  "cards": [
@@ -2597,6 +2627,54 @@
    "steal": "Georgia's forced sterilization of over 4,000 people from 1939 to 1965 rested on eugenic ideology serving as an \"objective\" scientific justification for white supremacy and racial hierarchy — and the state's public schools were an active transmission belt, teaching eugenics to the populace.",
    "why": "A case study in how a scientific consensus captures institutions — policy, courts, and classrooms moved together on the same \"objective\" premise.",
    "uw": "When science becomes the alibi for state power, follow the teaching — the classroom is where a contested idea becomes the next generation's common sense."
+  },
+  {
+   "title": "The Triangle Offense: Using Social Movement Theory to Analyze Russia's Gray Zone Strategy",
+   "book": "The Triangle Offense: Using Social Movement Theory to Analyze Russia's Gray Zone Strategy — Alexander V. Simmons",
+   "type": "argument",
+   "steal": "Social Movement Theory's tripartite structure — ideological framing, resource mobilization, political opportunity — gives senior strategists a working model for analyzing gray-zone adversaries: applied to Russia and Ukraine, it identifies the adversary's existing sources of tension, likely vulnerabilities in a target region, and viable countermeasures.",
+   "why": "The gray zone is named in the thesis as one of the greatest challenges facing the United States; this gives analysts a compact, systematic lens for spotting where an adversary draws strength and where a target region is soft, before the shooting starts.",
+   "uw": "To counter an adversary's gray-zone playbook, borrow a model from another field — social-movement analysis makes murky influence campaigns legible as framing, funding, and opportunity."
+  },
+  {
+   "title": "Server-based and server-less BYOD solutions to support electronic learning",
+   "book": "Server-based and server-less BYOD solutions to support electronic learning — Joshua C. Benson & Brian R. McCarthy",
+   "type": "argument",
+   "steal": "The Navy can securely deliver eLearning content to service members' personal devices through either a server-based or a server-less BYOD method — both demonstrated with working proofs of concept — creating a low-risk environment that preserves government network security while professional military education keeps moving.",
+   "why": "At the time, no viable in-policy solution existed anywhere in the Department of the Navy for eLearning on personal devices; the thesis supplied the baseline for secure mobile learning at scale.",
+   "uw": "When security policy blocks the obvious tool, prototype two paths in parallel — one conventional, one server-less — and let feasibility testing pick the winner."
+  },
+  {
+   "title": "Measuring Resilience",
+   "book": "Measuring Resilience — Joshua L. Boyle",
+   "type": "argument",
+   "steal": "Physiological metrics from commercial wearables can be associated with self-reported assessments to proactively assess resilience and identify service members at risk of compromised resilience — with the OURA ring's PPG sensor, HRV metrics, and sleep algorithms performing well enough to track large cohorts over time.",
+   "why": "After two decades of war, the military still lacked any tangible way to assess or train resilience; this moves the question from self-report vibes to trackable biometrics.",
+   "uw": "If you cannot measure the outcome, instrument the proxy — physiological signals can stand in for psychological states once validated against self-reports."
+  },
+  {
+   "title": "Investigating the effect of Copper (CuI) depletion on the serotonergic neurons and serotonin signalling in the nematode based model",
+   "book": "Investigating the effect of Copper (CuI) depletion on the serotonergic neurons and serotonin signalling in the nematode based model — Iram Khan",
+   "type": "argument",
+   "steal": "Depleting copper (CuI) with tetrathiomolybdate in C. elegans selectively destroys serotonergic HSN neurons — broken axonal extensions, degraded egg-laying from impaired serotonin release to the vulval muscles — while pharyngeal ADF/NSM neurons stay structurally and functionally intact.",
+   "why": "It demonstrates differential susceptibility in a clean model — the same trace-element deficiency destroys one neuron population and leaves another untouched, mirroring how Menkes disease patients show selective neurodegeneration.",
+   "uw": "Vulnerability is cell-type specific — a toxin's damage map tells you more about the system's architecture than about the toxin itself."
+  },
+  {
+   "title": "Indo-Slavic lexical isoglosses and the prehistoric dispersal of Indo-Iranian",
+   "book": "Indo-Slavic lexical isoglosses and the prehistoric dispersal of Indo-Iranian — A.I. Palmér",
+   "type": "argument",
+   "steal": "Shared lexical innovations between Indo-Iranian and Balto-Slavic reveal a period of shared development — the Indo-Slavic linkage — meaning Indo-Iranian did not spread straight eastward from the Core Indo-European homeland; it moved into northeast Europe during the 3rd millennium BCE and only then spread east toward the Urals.",
+   "why": "It redraws the migration map — a detour through northeast Europe instead of the long-assumed direct eastward push out of the steppe.",
+   "uw": "Shared vocabulary is a migration map — the words two language branches innovated together trace where their speakers once stood."
+  },
+  {
+   "title": "The paradoxical pope: the contemplative and active lives of Gregory the Great",
+   "book": "The paradoxical pope: the contemplative and active lives of Gregory the Great — Elizabeth E. Marvel",
+   "type": "argument",
+   "steal": "Gregory the Great's monastic years at St. Andrews — the contemplative life — were the preparation that let him steer the Roman Church through plague, famine, and invasion; he reconciled contemplation with action into a model of ecclesiastical leadership, crystallized in the mission of monks to England that secured Rome's central authority into the Middle Ages.",
+   "why": "Leadership under civilizational collapse — Gregory held the Roman Church together while the empire around it came apart, and the thesis argues his preparation was withdrawal, not war-gaming.",
+   "uw": "The leader who can hold a crisis is often the one who trained in stillness — contemplative formation can be preparation for action, not retreat from it."
   }
  ]
 }
