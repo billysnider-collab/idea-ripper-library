@@ -88,7 +88,6 @@ def book_block(b):
         parts.append(
             '<article class="card%s" id="c%d" data-n="%d" '
             'data-book="%s" data-genre="%s" data-type="%s" data-status="%s" data-search="%s">'
-            '<span class="stolentab">Stolen</span>'
             '<div class="cardhead" role="button" tabindex="0">'
             '<span class="num">%d</span>'
             '<span class="ctext"><span class="ctitle">%s</span><span class="pv">%s</span></span>'
@@ -415,8 +414,6 @@ header.masthead{max-width:none;padding:0;background:#f2e8d5;color:#14110c;border
 .mast-sub .sep{color:#d92b1f}
 .mast-meta{margin:.3rem 0 0;font-size:.82rem;color:#57503f}
 .card{position:relative}
-.stolentab{position:absolute;top:-10px;right:12px;z-index:2;background:#ffd21f;color:#14110c;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:.22rem .55rem .26rem;transform:rotate(2deg);box-shadow:0 2px 5px rgba(0,0,0,.4);border-radius:1px;pointer-events:none}
-.card[data-status="kill"] .stolentab,.card[data-status="rewrite"] .stolentab,.card[data-status="ungraded"] .stolentab{display:none}
 .kicker{display:flex;align-items:center;gap:.45rem;margin:.55rem 0 .1rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.62rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8b97ad}
 .kicker .ripmark{width:1.5rem;height:.6rem;flex:none}
 .kicker .ktext{border-bottom:2px solid #d92b1f;padding-bottom:1px}
