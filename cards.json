@@ -346,6 +346,26 @@
    "book": "Atalhos para Adiabaticidade e Aplicacoes em Computacao Quantica (Shortcuts to Adiabaticity and Applications in Quantum Computation) — Alan Costa dos Santos",
    "genre": "Thesis",
    "bookline": "Masters thesis — Universidade Federal Fluminense, 2016. Full text: https://archive.org/details/arxiv-1603.05071"
+  },
+  {
+   "book": "Using Mathematical Modeling and Set-Based Design Principles to Recommend an Existing CVL Design — William H. Ehlies",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/DTIC_AD1046831"
+  },
+  {
+   "book": "Technological Evolution of High Temperature Superconductors — Jordan R. White",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_AD1009326"
+  },
+  {
+   "book": "Supply Chain: Wake Up; It is Critical to Military Success — Christopher E. Dexter",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Joint Advanced Warfighting School, 2014. Full text: https://archive.org/details/DTIC_ADA621695"
+  },
+  {
+   "book": "Ethics, Eugenics, and Public Education in Georgia (1910-1965) — Aaron Gerald Guest Sr.",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Columbus State University, 2017. Full text: https://archive.org/details/guest-csu"
   }
  ],
  "cards": [
@@ -2545,6 +2565,38 @@
    "steal": "The dissertation introduces two models for universal superadiabatic quantum computing built on counter-diabatic Hamiltonians — one using superadiabatic quantum teleportation as a primitive for arbitrary n-qubit gates, the other using controlled superadiabatic evolutions to implement n-controlled gates with simple time-independent Hamiltonians — and argues via the quantum speed limit that superadiabatic evolution is in principle compatible with arbitrarily small time intervals, constrained by energetic cost.",
    "why": "It's a concrete attack on adiabatic quantum computing's main weakness — slowness — showing the speed limit is about energy budget, not an intrinsic time floor.",
    "uw": "When a theorem limits your speed, check what the limit actually prices — here the \"speed limit\" prices energy, so the engineering question becomes how much energy you can afford, not how fast physics allows."
+  },
+  {
+   "title": "Using Mathematical Modeling and Set-Based Design Principles to Recommend an Existing CVL Design",
+   "book": "Using Mathematical Modeling and Set-Based Design Principles to Recommend an Existing CVL Design — William H. Ehlies",
+   "type": "argument",
+   "steal": "Nimitz- and Ford-class supercarriers' size and expense are a strategic vulnerability in a future maritime conflict; light aircraft carriers (CVLs) would reduce the risk to grand strategy and cut life-cycle and operating costs, provided a CVL can carry the needed mix of rotary-wing, fixed-wing, electronic-attack, and unmanned aircraft — and set-based design can produce the feasible CVL by mapping the trade space in tonnage, launch method, propulsion, and performance.",
+   "why": "It puts a method behind the distributed-vs.-concentrated naval debate — instead of point-optimizing one ship, map the whole design space and keep options open until the constraints are known.",
+   "uw": "When the stakes are high and the future is uncertain, map the trade space before picking the answer — set-based design narrows many options in parallel instead of betting on one."
+  },
+  {
+   "title": "Technological Evolution of High Temperature Superconductors",
+   "book": "Technological Evolution of High Temperature Superconductors — Jordan R. White",
+   "type": "argument",
+   "steal": "High-temperature superconducting (HTS) cable is nearing full-scale integration — already demonstrated in the commercial electric grid and successfully tested by the Navy (a working HTS degaussing system on a modern U.S. destroyer in 2008), with electric-ship propulsion and high-energy weapons like rail guns and lasers as the next targets; patent-trend analysis projects continued innovation.",
+   "why": "Superconductors sit at the junction of the energy and naval lanes — a cable that moves power with near-zero loss rewrites both grid economics and warship design.",
+   "uw": "Patent filings are a leading indicator — when you want to know where a technology is going, count what's being claimed, not what's being announced."
+  },
+  {
+   "title": "Supply Chain: Wake Up; It is Critical to Military Success",
+   "book": "Supply Chain: Wake Up; It is Critical to Military Success — Christopher E. Dexter",
+   "type": "argument",
+   "steal": "The DOD's global supply chain has no single owner — TRANSCOM and the Defense Logistics Agency form the foundation of the execution mechanism but neither owns the entire process, and the governing legislation, directives, and instructions are ambiguous enough to breed inefficiency. The fix: clear, well-defined roles and responsibilities, a single designated process owner, and one integrated IT system under that owner.",
+   "why": "\"The line between disorder and order lies in logistics\" — the thesis documents that the world's most expensive logistics enterprise is governed by ambiguity and personalities, not ownership.",
+   "uw": "If no one owns the whole process, no one can fix it — ambiguous governance doesn't produce flexibility, it produces drift."
+  },
+  {
+   "title": "Ethics, Eugenics, and Public Education in Georgia (1910-1965)",
+   "book": "Ethics, Eugenics, and Public Education in Georgia (1910-1965) — Aaron Gerald Guest Sr.",
+   "type": "argument",
+   "steal": "Georgia's forced sterilization of over 4,000 people from 1939 to 1965 rested on eugenic ideology serving as an \"objective\" scientific justification for white supremacy and racial hierarchy — and the state's public schools were an active transmission belt, teaching eugenics to the populace.",
+   "why": "A case study in how a scientific consensus captures institutions — policy, courts, and classrooms moved together on the same \"objective\" premise.",
+   "uw": "When science becomes the alibi for state power, follow the teaching — the classroom is where a contested idea becomes the next generation's common sense."
   }
  ]
 }
