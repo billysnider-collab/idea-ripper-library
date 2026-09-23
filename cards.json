@@ -190,6 +190,36 @@
    "book": "Major Trends in Jewish Mysticism — Gershom Scholem",
    "genre": "Nonfiction",
    "bookline": "Scholarly map of Jewish mysticism — against rationalist dismissal, toward living authority of the vision."
+  },
+  {
+   "book": "Every Molecule Matters — Simon Cotton",
+   "genre": "Nonfiction",
+   "bookline": "Chemistry told through molecules that shape food, drugs, war, color, and the body."
+  },
+  {
+   "book": "Brain Networks — M. Hassan (ed./contrib. volume)",
+   "genre": "Nonfiction",
+   "bookline": "Neuroscience of connectivity — nodes, edges, synapses, resting networks."
+  },
+  {
+   "book": "Quantum Computing — S. Herbert",
+   "genre": "Nonfiction",
+   "bookline": "Foundations of qubits — superposition, entanglement, measurement, no free signaling."
+  },
+  {
+   "book": "The Traitors Circle — Jonathan Freedland",
+   "genre": "Nonfiction",
+   "bookline": "German resistance circle under Nazism — Gestapo, courage, and how little we hear of opposition inside Germany."
+  },
+  {
+   "book": "When the Going Was Good — Graydon Carter",
+   "genre": "Nonfiction",
+   "bookline": "Magazine-world memoir — print lag, newsstands, and how glossies ran on float."
+  },
+  {
+   "book": "A Marriage at Sea — Sophie Elmhirst",
+   "genre": "Nonfiction",
+   "bookline": "True story of a couple alone on the ocean — boat as autocracy, hull as tempering."
   }
  ],
  "cards": [
@@ -1808,6 +1838,270 @@
    "steal": "Of this book from the Jewish Gnosticism of late antiquity to the Hasidism of the eighteenth and nineteenth centuries, is a scholarly edifice that will stand the test of time.",
    "why": "The arc is the argument — continuous building across centuries, not isolated freak events.",
    "uw": "When a tradition looks discontinuous until someone draws the long beam."
+  },
+  {
+   "title": "Methane as the simplest organic molecule",
+   "book": "Every Molecule Matters — Simon Cotton",
+   "type": "definition",
+   "steal": "The simplest organic molecule is methane (one carbon atom bonded to three hydrogen atoms).",
+   "why": "Organic chemistry bottoms out at a three-hydrogen carbon — complexity has a floor.",
+   "uw": "When you need the smallest unit that still counts as \"organic.\""
+  },
+  {
+   "title": "Morphine as prehistoric medicinal molecule",
+   "book": "Every Molecule Matters — Simon Cotton",
+   "type": "evidence",
+   "steal": "Morphine has been used as a medicinal molecule for much longer; it was the active ingredient of opium obtained from poppies which was used as a painkiller as far back as prehistoric times.",
+   "why": "Pharma history starts in botany — the molecule predates the pharmacy.",
+   "uw": "When a \"modern\" drug story needs deep time."
+  },
+  {
+   "title": "Flipped glucose makes cellulose unlike starch",
+   "book": "Every Molecule Matters — Simon Cotton",
+   "type": "mechanism",
+   "steal": "Every other glucose molecule in the chain is flipped over, leading to 'linear' unbranched chains, which are quite different from what is found in starch or glycogen.",
+   "why": "One geometric flip changes the polymer from food-store to structural fiber.",
+   "uw": "When explaining how tiny structural changes rewrite material destiny."
+  },
+  {
+   "title": "Polypeptide — size without a precise cutoff",
+   "book": "Every Molecule Matters — Simon Cotton",
+   "type": "definition",
+   "steal": "There comes a point when the molecule is referred to as a polypeptide, though there is no precise definition of the molecular size involved; polypeptides are usually taken to be made of somewhere between 20 and 50 amino acids, all joined together by peptide links.",
+   "why": "Scientific categories can be useful without sharp borders — the chain length band is convention.",
+   "uw": "When a field argues over labels that are fuzzy by design."
+  },
+  {
+   "title": "Onion lachrymatory factor in seconds",
+   "book": "Every Molecule Matters — Simon Cotton",
+   "type": "mechanism",
+   "steal": "This molecule is known as the onion lachrymatory factor – a very rapid reaction, occurring within seconds.",
+   "why": "Everyday tears are a named molecule on a seconds-scale clock.",
+   "uw": "When you need chemistry that is domestic, fast, and undeniable."
+  },
+  {
+   "title": "β-carotene as lycopene isomer",
+   "book": "Every Molecule Matters — Simon Cotton",
+   "type": "evidence",
+   "steal": "Contrast this with β-carotene, the molecule that is responsible for the colour of carrots; also C40H56, it is thus an isomer of lycopene.",
+   "why": "Same formula, different arrangement, different color job — isomers as career change.",
+   "uw": "When composition looks identical but function diverges."
+  },
+  {
+   "title": "Plants use volatile molecules as messages",
+   "book": "Every Molecule Matters — Simon Cotton",
+   "type": "mechanism",
+   "steal": "A) is widespread in the plant kingdom; a volatile molecule, many plants make use of it, often to send messages (pages 144–145).",
+   "why": "Plant \"talk\" is chemistry in the air — signaling without neurons.",
+   "uw": "When ecology needs a non-metaphorical language channel."
+  },
+  {
+   "title": "Hodgkin solves B12 — first metalloenzyme structure",
+   "book": "Every Molecule Matters — Simon Cotton",
+   "type": "passage",
+   "steal": "As an extremely large molecule (and the largest vitamin known, as well as the only one to contain a metal), it posed a challenging problem for the great crystallographer Dorothy Hodgkin, but solve it she did; published in 1956, it was the first structure of a metalloenzyme to be reported.",
+   "why": "Size + metal made B12 a crystallography boss fight — and a first.",
+   "uw": "When a structure problem is historically load-bearing for a whole method."
+  },
+  {
+   "title": "Brain communication as pathway network",
+   "book": "Brain Networks — M. Hassan (ed./contrib. volume)",
+   "type": "definition",
+   "steal": "BC refers to the intricate network of neural pathways that facilitate communication between different brain regions, essential for cognition, behavior, and perception.",
+   "why": "Cognition is framed as inter-region traffic, not a single GPU in the skull.",
+   "uw": "When someone still talks about \"the brain center for X\" as a lone island."
+  },
+  {
+   "title": "Nodes and edges as the connectivity grammar",
+   "book": "Brain Networks — M. Hassan (ed./contrib. volume)",
+   "type": "definition",
+   "steal": "Here, two important concepts in the network connectivity of the brain are nodes and edges.",
+   "why": "Graph language is not metaphor — it is the measurement frame.",
+   "uw": "When translating brain talk into network science without mysticism."
+  },
+  {
+   "title": "No physical wire between neurons",
+   "book": "Brain Networks — M. Hassan (ed./contrib. volume)",
+   "type": "contradiction",
+   "steal": "The network of neurons builds the foundation of the entire nervous system but there is no specific physical connection between two neurons.",
+   "why": "Network without continuous material link — junction, not cable.",
+   "uw": "When \"wired\" brains need the synaptic gap restored."
+  },
+  {
+   "title": "Synapses as electrical and chemical junctions",
+   "book": "Brain Networks — M. Hassan (ed./contrib. volume)",
+   "type": "mechanism",
+   "steal": "The entire neuronal network is connected by special junctions called \"Synapses\" and they can be both electrical and chemical, passing the signals throughout the body.",
+   "why": "Two transmission modes in one junction type — speed and modulation share an address.",
+   "uw": "When a system needs both fast sync and slow chemistry at the same interface."
+  },
+  {
+   "title": "DMN more active at rest than in task",
+   "book": "Brain Networks — M. Hassan (ed./contrib. volume)",
+   "type": "evidence",
+   "steal": "The DMN is a network of brain regions that is more active at rest than during task performance [20].",
+   "why": "Default is not idle — rest has its own active coalition.",
+   "uw": "When \"doing nothing\" is treated as neural silence."
+  },
+  {
+   "title": "Measure and the slit chooses",
+   "book": "Quantum Computing — S. Herbert",
+   "type": "mechanism",
+   "steal": "The qubit can then optionally be measured, in which case either of the states |0⟩ and |1⟩ is observed, as the measurement apparatus detects through which slit the photon passes.",
+   "why": "Measurement is apparatus choosing a slit story — not a gentle peek.",
+   "uw": "When \"observe\" is used as if it were free."
+  },
+  {
+   "title": "Unmeasured qubit keeps interference",
+   "book": "Quantum Computing — S. Herbert",
+   "type": "mechanism",
+   "steal": "If a measurement is not taken, the qubit will be in a superposition of |0⟩ and |1⟩, and its onward evolution can involve the interference of these two components.",
+   "why": "Superposition is useful only while uncollapsed — interference is the payload.",
+   "uw": "When explaining why you cannot peek mid-algorithm without killing the advantage."
+  },
+  {
+   "title": "n-qubit state as 2^n complex unit vector",
+   "book": "Quantum Computing — S. Herbert",
+   "type": "definition",
+   "steal": "Together, postulates 1 and 4 state that an n-qubit quantum state is represented by a 2n -element complex unit vector.",
+   "why": "Dimension explodes as 2^n — the cost of the state space is the feature.",
+   "uw": "When classical intuition expects linear growth in bits."
+  },
+  {
+   "title": "Unitary as Bloch-sphere map",
+   "book": "Quantum Computing — S. Herbert",
+   "type": "mechanism",
+   "steal": "As a single-qubit unitary maps a single-qubit state to another single-qubit state, a unitary transformation is itself an operation that maps all of the points on the surface of the Bloch sphere to other points on the surface of the Bloch sphere.",
+   "why": "Gates are rigid rotations of the sphere — no leaking off the surface.",
+   "uw": "When visualizing quantum ops as geometry, not algebra."
+  },
+  {
+   "title": "Collapse kills superluminal signaling fantasy",
+   "book": "Quantum Computing — S. Herbert",
+   "type": "argument",
+   "steal": "Whereas if Alice has measured her qubit, then Bob's qubit has collapsed – it is either in state 0, or state 1 (each with probability 1/2).",
+   "why": "Entanglement plus local measurement does not give Bob Alice's message — only shared randomness after collapse.",
+   "uw": "When someone claims spooky action equals a phone."
+  },
+  {
+   "title": "Dawn raid kept secret by jailing witnesses",
+   "book": "The Traitors Circle — Jonathan Freedland",
+   "type": "mechanism",
+   "steal": "The Gestapo wanted all of them: that way this dawn raid would remain a secret, with all those who had witnessed it remaining safely mute in custody.",
+   "why": "Secrecy is engineered by locking the audience — custody as mute button.",
+   "uw": "When a cover-up looks like over-arrest rather than under-reporting."
+  },
+  {
+   "title": "Duplicate key into Gestapo HQ",
+   "book": "The Traitors Circle — Jonathan Freedland",
+   "type": "passage",
+   "steal": "She inveigled her way inside Gestapo headquarters and, thanks to a duplicate key she had acquired – perhaps through comrades in the resistance – found the file the secret police had compiled on her.",
+   "why": "Resistance reads its own dossier — the file is both weapon and mirror.",
+   "uw": "When the hunted must steal the archive that defines them."
+  },
+  {
+   "title": "Little heard of German opposition",
+   "book": "The Traitors Circle — Jonathan Freedland",
+   "type": "argument",
+   "steal": "We know of the French resistance and of underground movements across Europe, but tend to hear little about opposition in Germany itself.",
+   "why": "Memory markets prefer foreign resistors — internal dissent is the under-told ledger.",
+   "uw": "When a national myth of total complicity needs a counter-archive."
+  },
+  {
+   "title": "Arrested often, still not cowed",
+   "book": "The Traitors Circle — Jonathan Freedland",
+   "type": "passage",
+   "steal": "Even though he had been arrested frequently by the Gestapo – held for three days as early as January 1934 and held again for a month when he was linked to a failed attempt on Hitler's life in November 1938 – Metzger refused to be cowed.",
+   "why": "Repeated detention fails as deterrent when the subject treats it as weather.",
+   "uw": "When repression is supposed to work by frequency and still does not."
+  },
+  {
+   "title": "Plan to storm the Chancellery",
+   "book": "The Traitors Circle — Jonathan Freedland",
+   "type": "mechanism",
+   "steal": "If Hitler did as they feared, their plan would see a group of rebel soldiers storm into the Reich Chancellery, where they would either arrest or assassinate the Führer.",
+   "why": "Contingent coup logic — violence gated on Hitler's next move, not abstract virtue.",
+   "uw": "When plotting resistance that waits for a trigger act."
+  },
+  {
+   "title": "Ten days to two weeks from printer to newsstand",
+   "book": "When the Going Was Good — Graydon Carter",
+   "type": "mechanism",
+   "steal": "With a monthly magazine, you have ten days to two weeks between the time it leaves the printer and when it appears on newsstands.",
+   "why": "Print has a built-in latency tax — the magazine is already old when it arrives.",
+   "uw": "When comparing digital instant to physical distribution clocks."
+  },
+  {
+   "title": "Release the story before the printers",
+   "book": "When the Going Was Good — Graydon Carter",
+   "type": "mechanism",
+   "steal": "We couldn't afford to wait until the magazine hit the newsstands, so we decided to release the story even before we shipped it to the printers.",
+   "why": "Scoop beats object — the physical issue becomes a souvenir of news already spent.",
+   "uw": "When the artifact is slower than the claim it contains."
+  },
+  {
+   "title": "Printer paid after newsstand and ads",
+   "book": "When the Going Was Good — Graydon Carter",
+   "type": "mechanism",
+   "steal": "They print your magazine, and then you pay them once you've recovered your meager rewards from newsstand sales, subscriptions, and advertising.",
+   "why": "Print capitalism runs on float — labor and paper credit the dream.",
+   "uw": "When a business model depends on paying vendors after the bet resolves."
+  },
+  {
+   "title": "Weekly for the upwardly mobile on the go",
+   "book": "When the Going Was Good — Graydon Carter",
+   "type": "definition",
+   "steal": "Their new magazine was designed as a weekly that would sum up the news of the day for people such as themselves: educated, upwardly mobile, and on the go.",
+   "why": "Format is class cosplay — the weekly is a mirror for its target tribe.",
+   "uw": "When a product brief is secretly a demographic selfie."
+  },
+  {
+   "title": "Poetry editor sues for two years' back wages",
+   "book": "When the Going Was Good — Graydon Carter",
+   "type": "passage",
+   "steal": "When the magazine was in the long, tragic process of folding, I was called by someone in local government, informing me that this woman, our poetry editor, was suing me for two years' back wages.",
+   "why": "Collapse surfaces unpaid labor first — art staff as the last creditors.",
+   "uw": "When a dying institution's true ledger shows up in a lawsuit."
+  },
+  {
+   "title": "Successful boat as benign autocracy",
+   "book": "A Marriage at Sea — Sophie Elmhirst",
+   "type": "mechanism",
+   "steal": "Their boat, like all successful boats, was a form of benign autocracy that depended on inflexible rules.",
+   "why": "Survival craft rejects democracy — inflexible rules are the kindness.",
+   "uw": "When a high-stakes team romanticizes consensus at sea (or in ops)."
+  },
+  {
+   "title": "Giant wave bends the crosstree",
+   "book": "A Marriage at Sea — Sophie Elmhirst",
+   "type": "passage",
+   "steal": "A giant wave crashed over the boat and bent one of the crosstrees, a horizontal beam in the rigging, halfway up the mast.",
+   "why": "Violence lands on a named part — disaster is specific hardware failure.",
+   "uw": "When weather needs a precise injury, not \"the storm hit us.\""
+  },
+  {
+   "title": "Ocean tempered by hard wood and bunk",
+   "book": "A Marriage at Sea — Sophie Elmhirst",
+   "type": "mechanism",
+   "steal": "On Auralyn, the ocean had been tempered by the hard wood of the hull and the rigid surface of a bunk.",
+   "why": "Comfort is insulation geometry — ocean stays hostile; wood and bunk mediate it.",
+   "uw": "When safety is a material sandwich between body and chaos."
+  },
+  {
+   "title": "Pacific is not the English Channel",
+   "book": "A Marriage at Sea — Sophie Elmhirst",
+   "type": "argument",
+   "steal": "Maurice reminded her that the Pacific Ocean was not like the English Channel, teeming with ships.",
+   "why": "Rescue density is geography — empty ocean rewrites risk math.",
+   "uw": "When someone imports crowded-water assumptions into empty-water plans."
+  },
+  {
+   "title": "Fishing boat as figure past a remote window",
+   "book": "A Marriage at Sea — Sophie Elmhirst",
+   "type": "passage",
+   "steal": "Seeing the fishing boat was a fleeting shock, like noticing a figure passing across a window in a remote house.",
+   "why": "Other humans register as uncanny intrusion after long isolation.",
+   "uw": "When solitude recalibrates what \"contact\" feels like."
   }
  ]
 }
