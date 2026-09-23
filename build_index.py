@@ -17,8 +17,12 @@ def main():
     nums = re.findall(r'<span class="num">(\d+)</span>', t)
     assert [int(n) for n in nums] == list(range(1, len(cards) + 1)), "numbering broken: %s" % nums
     for i, c in enumerate(cards, 1):
-        for part in ("<h3>", 'class="src"', 'class="steal"', 'class="uw"'):
+        for part in ("<h3>", 'class="src"', 'class="bookline"', 'class="steal"', 'class="why"', 'class="uw"'):
             assert part in c, "card %d missing %s" % (i, part)
+        for field, name in (("bookline", "book line"), ("why", "why-it-matters")):
+            m = re.search(r'class="%s".*?>(.*?)</p>' % field, c, re.S)
+            text = re.sub(r"<.*?>", "", m.group(1)).strip()
+            assert len(text) > 12, "card %d has empty %s" % (i, name)
     print("keepers page OK: %d cards, numbered 1-%d" % (len(cards), len(cards)))
 
 if __name__ == "__main__":

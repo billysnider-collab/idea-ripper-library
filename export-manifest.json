@@ -1,10 +1,12 @@
 {
   "page": "cool-keepers",
-  "cards": 60,
+  "cards": 99,
   "generated_at": "2026-09-22",
+  "format": "bookline / steal / why-it-matters / use-when",
   "batches": [
     {"n": 10, "source": "TEN-COOL-KEEPERS_5_ajn3.md"},
-    {"n": 50, "source": "TEN-BOOKS-FIVE-EACH-20260922_6_m4nw.md"}
+    {"n": 50, "source": "TEN-BOOKS-FIVE-EACH-20260922_6_m4nw.md"},
+    {"n": 53, "source": "NEXT-BATCH-GROUNDED-20260922_7_wxqk.md", "note": "14 upgrades of existing cards, 39 new"}
   ],
   "note": "Hand-curated keepers page (Billy's lists). Grows as ripping improves; new keepers appended as article cards. Prior 16-book build archived locally."
 }
