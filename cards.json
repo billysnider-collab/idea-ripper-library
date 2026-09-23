@@ -326,6 +326,26 @@
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "bookline": "Miquel Noguer i Alonso, 2026 (Packt) — A hands-on guide to LLM architectures, agents, RAG, governance, and evaluation in finance.",
    "genre": "Nonfiction"
+  },
+  {
+   "book": "Bridging the Gap: Enhancing SNA Within the Marine Corps Intelligence Community — Robert C. Schotter",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632494"
+  },
+  {
+   "book": "Optical Theory Improvements to Space Domain Awareness — Tyler J. Hardy",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Air Force Institute of Technology (Air University), 2016. Full text: https://archive.org/details/arxiv-1603.05071"
+  },
+  {
+   "book": "The Federal Task Force on Housing and Urban Development and the Limits of Participatory Democracy, 1968-1969 — Brendan Nicholas Gemmell",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Dalhousie University, 2017. Full text: https://archive.org/details/gemmell-2017-federal-task-force-on-housing-and-urban-development-1968-1969"
+  },
+  {
+   "book": "Atalhos para Adiabaticidade e Aplicacoes em Computacao Quantica (Shortcuts to Adiabaticity and Applications in Quantum Computation) — Alan Costa dos Santos",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Universidade Federal Fluminense, 2016. Full text: https://archive.org/details/arxiv-1603.05071"
   }
  ],
  "cards": [
@@ -2493,6 +2513,38 @@
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
+  },
+  {
+   "title": "Bridging the Gap: Enhancing SNA Within the Marine Corps Intelligence Community",
+   "book": "Bridging the Gap: Enhancing SNA Within the Marine Corps Intelligence Community — Robert C. Schotter",
+   "type": "argument",
+   "steal": "Social network analysis (SNA) is a worthwhile intelligence method that the Marine Corps intelligence enterprise (MCISRE) does not currently use — survey and interview findings show Marine Corps intelligence personnel are not proficient in SNA and routinely confuse it with link analysis and social media analysis (SMA), with causal factors mapped across the DOTmLPF pillars.",
+   "why": "It documents a capability gap by name — the analytic method the force's own roadmaps call for is the one its people can't distinguish from two adjacent techniques.",
+   "uw": "A tool nobody can tell apart from its neighbors is a tool nobody can use — naming the confusion precisely (SNA vs. link analysis vs. social media analysis) is the first step to closing the gap."
+  },
+  {
+   "title": "Optical Theory Improvements to Space Domain Awareness",
+   "book": "Optical Theory Improvements to Space Domain Awareness — Tyler J. Hardy",
+   "type": "argument",
+   "steal": "The dissertation introduces two models for universal superadiabatic quantum computing built on counter-diabatic Hamiltonians — one using superadiabatic quantum teleportation as a primitive for arbitrary n-qubit gates, the other using controlled superadiabatic evolutions to implement n-controlled gates with simple time-independent Hamiltonians — and argues via the quantum speed limit that superadiabatic evolution is in principle compatible with arbitrarily small time intervals, constrained by energetic cost.",
+   "why": "It's a concrete attack on adiabatic quantum computing's main weakness — slowness — showing the speed limit is about energy budget, not an intrinsic time floor.",
+   "uw": "When a theorem limits your speed, check what the limit actually prices — here the \"speed limit\" prices energy, so the engineering question becomes how much energy you can afford, not how fast physics allows."
+  },
+  {
+   "title": "The Federal Task Force on Housing and Urban Development and the Limits of Participatory Democracy, 1968-1969",
+   "book": "The Federal Task Force on Housing and Urban Development and the Limits of Participatory Democracy, 1968-1969 — Brendan Nicholas Gemmell",
+   "type": "argument",
+   "steal": "The 1969 Hellyer Task Force on Housing and Urban Development — launched during Trudeaumania's participatory-politics wave after a Canada-wide public consultation — blended \"liberal\" and \"deliberative\" types of participatory democracy in a four-part typology the thesis proposes; the differing political approaches of Paul Hellyer and Pierre Elliott Trudeau help explain the Cabinet's hostile reception of the report and Hellyer's resignation in April 1969.",
+   "why": "Public consultation doesn't fail in one way — the thesis gives a taxonomy (liberal, deliberative, radical, revolutionary) for diagnosing exactly which kind of participation a reform actually invited.",
+   "uw": "When a consultation exercise collapses, ask which democracy it was practicing — Hellyer's task force asked for input in one register and was judged in another."
+  },
+  {
+   "title": "Atalhos para Adiabaticidade e Aplicacoes em Computacao Quantica (Shortcuts to Adiabaticity and Applications in Quantum Computation)",
+   "book": "Atalhos para Adiabaticidade e Aplicacoes em Computacao Quantica (Shortcuts to Adiabaticity and Applications in Quantum Computation) — Alan Costa dos Santos",
+   "type": "argument",
+   "steal": "The dissertation introduces two models for universal superadiabatic quantum computing built on counter-diabatic Hamiltonians — one using superadiabatic quantum teleportation as a primitive for arbitrary n-qubit gates, the other using controlled superadiabatic evolutions to implement n-controlled gates with simple time-independent Hamiltonians — and argues via the quantum speed limit that superadiabatic evolution is in principle compatible with arbitrarily small time intervals, constrained by energetic cost.",
+   "why": "It's a concrete attack on adiabatic quantum computing's main weakness — slowness — showing the speed limit is about energy budget, not an intrinsic time floor.",
+   "uw": "When a theorem limits your speed, check what the limit actually prices — here the \"speed limit\" prices energy, so the engineering question becomes how much energy you can afford, not how fast physics allows."
   }
  ]
 }
