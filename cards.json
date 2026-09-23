@@ -142,16 +142,6 @@
    "bookline": "Neural nets where time-delay is the hard problem, not an afterthought."
   },
   {
-   "book": "Sabbatai Sevi: The Mystical Messiah — Gershom Scholem",
-   "genre": "Nonfiction",
-   "bookline": "History of a messianic movement that convulsed the Jewish world — belief as system failure and feature."
-  },
-  {
-   "book": "Origins of the Kabbalah — Gershom Scholem",
-   "genre": "Nonfiction",
-   "bookline": "Scholarly origin story of Kabbalah — myth, history, and mystical systems that appear suddenly."
-  },
-  {
    "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
    "genre": "Hermetica",
    "bookline": "Classical Hermetica in English — Mind (nous), Light, Word, and Man as image of the Father."
@@ -170,11 +160,6 @@
    "book": "A Short Enquiry concerning the Hermetic Art — A Lover of Philalethes (Vol. III)",
    "genre": "Hermetica",
    "bookline": "Rosicrucian enquiry — imagination as occult tool, Hidden Fire, Great Work."
-  },
-  {
-   "book": "Aesch Mezareph (Purifying Fire) — from Kabalah Denudata (Vol. IV)",
-   "genre": "Hermetica",
-   "bookline": "Chymico-Kabbalistic map — metals seated on the Sephiroth."
   },
   {
    "book": "Somnium Scipionis — Cicero (Vol. V, with L.O. essay)",
@@ -1360,86 +1345,6 @@
    "uw": "Use when a model works in sim and dies on slightly different chips."
   },
   {
-   "title": "Contemptible sources are the essential ones",
-   "book": "Sabbatai Sevi: The Mystical Messiah — Gershom Scholem",
-   "type": "argument",
-   "steal": "In this book I hope to prove that those sources which historians have tended to regard with particular contempt are the very sources which can make an essential contribution to an understanding of the period.",
-   "why": "Method claim: despised evidence is where the movement lives.",
-   "uw": "Use when an archive is dismissed for being \"unreliable\" yet is the only window."
-  },
-  {
-   "title": "Scholars minimize scope and distort meaning",
-   "book": "Sabbatai Sevi: The Mystical Messiah — Gershom Scholem",
-   "type": "argument",
-   "steal": "One of the remarkable features of research on Sabbatianism is the tendency to minimize the scope of the movement and to distort its meaning.",
-   "why": "Historiography itself is part of the story — shrinking the event is a habit.",
-   "uw": "Use when a mass phenomenon keeps getting footnoted as fringe."
-  },
-  {
-   "title": "Critical faculties sleep on this subject",
-   "book": "Sabbatai Sevi: The Mystical Messiah — Gershom Scholem",
-   "type": "evidence",
-   "steal": "Critical faculties which are so alert when dealing with other weighty issues seem almost to slumber and to become blinded when it comes to the Sabbatian movement and its transformations.",
-   "why": "Rationalist bias creates a blind spot exactly where irrational events sit.",
-   "uw": "Use when smart people go soft or hostile instead of analytical on a weird movement."
-  },
-  {
-   "title": "Rationalist outlook narrows the perspective",
-   "book": "Sabbatai Sevi: The Mystical Messiah — Gershom Scholem",
-   "type": "argument",
-   "steal": "The reason for this obtuseness is obviously the rationalist outlook, which narrows the historical perspective and prevents an unbiased understanding of phenomena such as the mystical movement in Judaism.",
-   "why": "Methodological rationalism can be a bias against its object.",
-   "uw": "Use when \"being rational\" is used to refuse to model belief systems."
-  },
-  {
-   "title": "Moral condemnation blocks objectivity",
-   "book": "Sabbatai Sevi: The Mystical Messiah — Gershom Scholem",
-   "type": "argument",
-   "steal": "The lack of objectivity among scholars was brought about both by the sheer irrationality, so to speak, of the events they were studying and by their moral condemnation of the consequences of the movement and of many of its leaders.",
-   "why": "Disgust and irrationality together destroy the historian's stance.",
-   "uw": "Use when a topic is both weird and morally radioactive."
-  },
-  {
-   "title": "Appeared suddenly, as if out of the blue",
-   "book": "Origins of the Kabbalah — Gershom Scholem",
-   "type": "concept",
-   "steal": "The very specific form of Jewish mysticism (or mystical theosophy) known as Kabbalah appeared suddenly, as if out of the blue, in the late Middle Ages.",
-   "why": "Historical systems can look discontinuous — sudden emergence is a research problem, not a miracle claim.",
-   "uw": "Use when a field or ideology seems to have no prehistory."
-  },
-  {
-   "title": "Documents lost in the storms of history",
-   "book": "Origins of the Kabbalah — Gershom Scholem",
-   "type": "evidence",
-   "steal": "Nearly all documents of this nature have been lost in the storms of Jewish history.",
-   "why": "Absence of sources is structural — silence is not proof of absence of practice.",
-   "uw": "Use when missing archives are treated as empty shelves of nothing-ever-happened."
-  },
-  {
-   "title": "Eliminate the famous late text from origins",
-   "book": "Origins of the Kabbalah — Gershom Scholem",
-   "type": "argument",
-   "steal": "Unfortunately, the most voluminous kabbalistic work of the thirteenth century, the Zohar, namely, the complex of writings included within it, must be entirely eliminated from this discussion of the origin and early stages of the Kabbalah.",
-   "why": "The famous book is too late for origins — popularity ≠ primacy.",
-   "uw": "Use when the best-known text is wrongly used as the founding document."
-  },
-  {
-   "title": "Thornier path nearer the origin",
-   "book": "Origins of the Kabbalah — Gershom Scholem",
-   "type": "mechanism",
-   "steal": "As things stand, we must turn aside from this high road and make do on the thornier path of historical analysis of the texts that are nearer to the origin and first stages of the Kabbalah.",
-   "why": "Method choice: skip the grand highway for harder, earlier scraps.",
-   "uw": "Use when the easy corpus is the wrong corpus for origins."
-  },
-  {
-   "title": "Hostile controversy between disciplines",
-   "book": "Origins of the Kabbalah — Gershom Scholem",
-   "type": "contradiction",
-   "steal": "These two disciplines, esoteric in origin, were engaged in a permanent and increasingly hostile controversy.",
-   "why": "Twin esoteric lineages can be enemies — shared underground does not mean alliance.",
-   "uw": "Use when two \"mystical\" camps are assumed to be on the same side."
-  },
-  {
    "title": "Light, Mind, Word — the first naming",
    "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
    "type": "definition",
@@ -1678,46 +1583,6 @@
    "steal": "The Solar heat of nature in her working to produce a crop for man's needs and benefit, is also a type of the Hidden Fire by which the alchymist is able to separate the impure from the pure, and to produce the mystic gold from amongst the dross of worldly mind and common matter.",
    "why": "Ordinary sun-heat is the type; Hidden Fire is the same logic applied to mind-dross.",
    "uw": "When an analogy from agriculture needs to carry into psychic or craft purification."
-  },
-  {
-   "title": "Cleansing fires separate pure from impure",
-   "book": "Aesch Mezareph (Purifying Fire) — from Kabalah Denudata (Vol. IV)",
-   "type": "definition",
-   "steal": "The whole title refers to \"Cleansing Fires\", as the mode by which pure gold was obtained in Alchymy, by burning off the dross and so separating the pure from the impure—on the material plane!",
-   "why": "Purification is combustion of dross — fire as filter, not as decoration.",
-   "uw": "When a purge ritual or process needs a material metaphor that is also literal."
-  },
-  {
-   "title": "Mysteries of this Wisdom = superior Kabalah",
-   "book": "Aesch Mezareph (Purifying Fire) — from Kabalah Denudata (Vol. IV)",
-   "type": "argument",
-   "steal": "But know, that the Mysteries of this Wisdom, differ not from the superior mysteries of the Kabalah.",
-   "why": "Alchemy here is not a side hobby — it claims identity with the higher Kabbalistic mysteries.",
-   "uw": "When two \"separate\" esoteric lanes are actually one system under two costumes."
-  },
-  {
-   "title": "Metallic Root sits at Kether",
-   "book": "Aesch Mezareph (Purifying Fire) — from Kabalah Denudata (Vol. IV)",
-   "type": "mechanism",
-   "steal": "Therefore the Metallic Root here possesseth the place of Kether, which hath an occult Nature, involved in great obscurity, and from which all Metals have their Origin; even as the Nature of Kether is hidden, and the other Sephiroth flow from thence.",
-   "why": "Origin nodes are obscure by design — everything flows from what you cannot see clearly.",
-   "uw": "When mapping a hierarchy whose root is intentionally under-specified."
-  },
-  {
-   "title": "Lead as Chokmah — Father of following natures",
-   "book": "Aesch Mezareph (Purifying Fire) — from Kabalah Denudata (Vol. IV)",
-   "type": "mechanism",
-   "steal": "Lead hath the place of Chokmah, because Chokmah immediately proceeds from Kether, as it immediately comes from the Metallic Root, and in Enigmatic similes, it is called the \"Father\" of the following Natures.",
-   "why": "Base metal as wisdom-position — primacy is structural, not glamorous.",
-   "uw": "When the \"father\" element in a system looks like the cheap one."
-  },
-  {
-   "title": "Thick water / Salt / Sulphur as Kether / Chokmah / Binah",
-   "book": "Aesch Mezareph (Purifying Fire) — from Kabalah Denudata (Vol. IV)",
-   "type": "definition",
-   "steal": "The thick water is Kether, Salt is Chokmah, and Sulphur is Binah; for known reasons.",
-   "why": "Triad mapped onto states of matter — ontology you can almost touch.",
-   "uw": "When you need a portable three-term bridge between Kabbalah and lab language."
   },
   {
    "title": "States are what the supreme Deity finds acceptable",
