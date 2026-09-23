@@ -30,15 +30,13 @@ for c in cards:
 for b in books:
     assert b["genre"] in genre_order and b["bookline"].strip()
 
-# book colors: deterministic hue rotation
-hues = {}
-for i, b in enumerate(books):
-    hues[b["book"]] = (i * 47) % 360
+# chip colors: one hue per genre so chips mean something (genre color)
+ghue = {g: int(i * 360 / len(genre_order)) for i, g in enumerate(genre_order)}
 
 types = sorted({c["type"] for c in cards})
 n = len(cards)
 
-# splash floaters: cards in render order (genre -> book -> card), numbered 1..N
+# render order (genre -> book -> card); stamp global card numbers 1..N
 _ordered = []
 for _g in genre_order:
     for _b in books:
@@ -47,6 +45,8 @@ for _g in genre_order:
         for _c in cards:
             if _c["book"] == _b["book"]:
                 _ordered.append(_c)
+for _i, _c in enumerate(_ordered):
+    _c["_n"] = _i + 1
 floaters_json = json.dumps(
     [{"n": i + 1, "title": c["title"], "steal": c["steal"],
       "book": c["book"], "type": c["type"]}
@@ -54,45 +54,53 @@ floaters_json = json.dumps(
     ensure_ascii=False).replace("</", "<\\/")
 
 def book_block(b):
-    hue = hues[b["book"]]
+    gh = ghue[b["genre"]]
+    slug = slugify(b["book"])
     bcards = [c for c in cards if c["book"] == b["book"]]
-    parts = ['<div class="book" data-book="%s" data-genre="%s">' % (esca(b["book"]), esca(b["genre"]))]
-    parts.append('<div class="bookhead"><span class="chip" style="background:hsl(%d,45%%,55%%)"></span>'
-                 '<span class="btitle">%s</span><span class="bcount">%d</span></div>'
-                 % (hue, esc(b["book"]), len(bcards)))
-    parts.append('<p class="bookline">%s</p>' % esc(b["bookline"]))
+    samples = " · ".join("\u201c%s\u201d" % c["title"] for c in bcards[:2])
+    parts = ['<section class="book collapsed" id="b-%s" data-book="%s" data-genre="%s">'
+             % (slug, esca(b["book"]), esca(b["genre"]))]
+    parts.append(
+        '<div class="bookhead" role="button" tabindex="0" aria-expanded="false">'
+        '<span class="chip" style="background:hsl(%d,45%%,55%%)"></span>'
+        '<span class="bmain"><span class="btitle">%s <span class="bcount">%d keeper%s</span></span>'
+        '<span class="bookline">%s</span>'
+        '<span class="bsamples">%s</span></span>'
+        '<span class="bchev">\u25be</span></div>'
+        % (gh, esc(b["book"]), len(bcards), "" if len(bcards) == 1 else "s",
+           esc(b["bookline"]), esc(samples)))
+    parts.append('<div class="cards">')
     for c in bcards:
+        n_ = c["_n"]
         search = " ".join([c["title"], c["steal"], c["why"], c["uw"]]).lower()
+        pv = c["steal"]
+        if len(pv) > 90:
+            pv = pv[:90].rsplit(" ", 1)[0] + "\u2026"
         parts.append(
-            '<article class="card" style="border-left-color:hsl(%d,45%%,55%%)" '
+            '<article class="card" id="c%d" data-n="%d" '
             'data-book="%s" data-genre="%s" data-type="%s" data-search="%s">'
             '<div class="cardhead" role="button" tabindex="0">'
-            '<span class="num">%d</span><span class="ctitle">%s</span>'
+            '<span class="num">%d</span>'
+            '<span class="ctext"><span class="ctitle">%s</span><span class="pv">%s</span></span>'
             '<span class="pill %s">%s</span></div>'
             '<div class="cardbody">'
             '<p class="steal">%s</p>'
             '<p class="why"><span class="k">Why it matters:</span> %s</p>'
             '<p class="uw">%s</p>'
             '<div class="actions"><button type="button" data-copy="steal">Copy steal</button>'
-            '<button type="button" data-copy="uw">Copy use-when</button></div>'
+            '<button type="button" data-copy="uw">Copy use-when</button>'
+            '<button type="button" data-copy="link">Copy link</button></div>'
             '</div></article>'
-            % (hue, esca(c["book"]), esca(b["genre"]), esca(c["type"]), esca(search),
-               0, esc(c["title"]), esca(c["type"]), esc(c["type"]),
+            % (n_, n_, esca(c["book"]), esca(b["genre"]), esca(c["type"]), esca(search),
+               n_, esc(c["title"]), esc(pv), esca(c["type"]), esc(c["type"]),
                esc(c["steal"]), esc(c["why"]), esc(c["uw"])))
-    parts.append('</div>')
+    parts.append('</div></section>')
     return "\n".join(parts)
 
-# number cards globally in render order
-html_cards = []
-counter = [0]
-def numbered_block(b):
-    s = book_block(b)
-    def repl(m):
-        counter[0] += 1
-        return '<span class="num">%d</span>' % counter[0]
-    return re.sub(r'<span class="num">0</span>', repl, s)
-
 import re
+def slugify(s):
+    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+
 genre_of = {b["book"]: b["genre"] for b in books}
 sections = []
 for g in genre_order:
@@ -103,7 +111,12 @@ for g in genre_order:
     sections.append('<h2 class="genre" data-genre="%s">%s <span class="gcount">%d cards · %d books</span></h2>'
                     % (esca(g), esc(g), gcount, len(gbooks)))
     for b in gbooks:
-        sections.append(numbered_block(b))
+        sections.append(book_block(b))
+
+chips = "\n".join(
+    '<button type="button" data-target="b-%s" data-genre="%s" title="%s">%s</button>'
+    % (slugify(b["book"]), esca(b["genre"]), esca(b["book"]), esc(b["book"]))
+    for b in books)
 
 genre_opts = "\n".join('<option value="%s">%s</option>' % (esca(g), esc(g)) for g in genre_order)
 book_opts = "\n".join('<option value="%s">%s</option>' % (esca(b["book"]), esc(b["book"])) for b in books)
@@ -163,26 +176,80 @@ footer{color:var(--muted);font-size:.8rem;padding:2rem 1.5rem;border-top:1px sol
 #splash .dive{position:relative;z-index:2;background:transparent;border:1px solid var(--amber);color:var(--amber);border-radius:999px;padding:.55rem 1.4rem;font-size:.9rem;cursor:pointer}
 #splash .dive:hover{background:var(--amber);color:#0b1220}
 @media (prefers-reduced-motion:reduce){.floater{animation:none}}
+/* v2: collapsed books, steal previews, chips, toast, jump chips */
+.bookhead{cursor:pointer}
+.bookhead .bmain{flex:1;min-width:0}
+.btitle{font-weight:600;font-size:1rem}
+.btitle .bcount{color:var(--muted);font-size:.78rem;font-weight:400;margin-left:.5rem}
+.bookline{color:var(--muted);font-size:.85rem;margin:.15rem 0 .1rem}
+.bsamples{color:var(--muted);font-size:.78rem;font-style:italic;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0 0 .2rem}
+.bchev{margin-left:auto;color:var(--muted);flex:none;transition:transform .15s}
+.book.collapsed .bchev{transform:rotate(-90deg)}
+.book .cards{margin-top:.4rem}
+.book.collapsed .cards{display:none}
+.ctext{flex:1;min-width:0}
+.ctitle{display:block}
+.pv{display:block;color:var(--muted);font-size:.8rem;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card.open .pv{display:none}
+.card .steal{font-family:Georgia,'Iowan Old Style','Source Serif 4',serif;font-size:1.03rem}
+.card .uw{color:#a7b2c7}
+.noresults{color:var(--muted);text-align:center;padding:2.5rem 0}
+.jumpchips{max-width:920px;margin:0 auto;padding:.55rem 1.25rem 0;display:flex;gap:.35rem;overflow-x:auto;scrollbar-width:thin}
+.jumpchips button{flex:none;max-width:12rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--panel);border:1px solid var(--border);color:var(--muted);border-radius:999px;padding:.22rem .65rem;font-size:.75rem;cursor:pointer}
+.jumpchips button:hover{color:var(--amber);border-color:var(--amber)}
+#toast{position:fixed;left:50%;bottom:1.5rem;transform:translateX(-50%) translateY(8px);background:var(--panel);border:1px solid var(--amber);color:var(--fg);border-radius:8px;padding:.5rem 1rem;font-size:.85rem;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:50}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.hrow{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap}
+.hrow strong{font-size:1.3rem}
+@media (max-width:700px){.floater{display:none}}
+@media(min-width:1000px){
+main{max-width:1180px}
+.controls .inner,.jumpchips,header{max-width:1180px}
+.book:not(.collapsed) .cards{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;align-items:start}
+.book:not(.collapsed) .card{margin:0}
+}
 """
 
-JS = """
+JS = r"""
 (function(){
 var q=document.getElementById('q'),gs=document.getElementById('fgenre'),
     bs=document.getElementById('fbook'),ts=document.getElementById('ftype'),
-    count=document.getElementById('count'),total=document.querySelectorAll('.card').length;
-function apply(autoOpen){
-  var term=q.value.trim().toLowerCase();
+    count=document.getElementById('count'),nores=document.getElementById('noresults'),
+    toastEl=document.getElementById('toast'),
+    total=document.querySelectorAll('.card').length,
+    manual={},toastT=null;
+function toast(msg){
+  toastEl.textContent=msg;toastEl.classList.add('show');
+  clearTimeout(toastT);toastT=setTimeout(function(){toastEl.classList.remove('show');},1500);
+}
+function setBook(book,expand){
+  book.classList.toggle('collapsed',!expand);
+  manual[book.id]=expand;
+  var hd=book.querySelector('.bookhead');
+  if(hd)hd.setAttribute('aria-expanded',expand?'true':'false');
+}
+function apply(fromInput){
+  var term=q.value.trim().toLowerCase(),
+      gv=gs.value,bv=bs.value,tv=ts.value,
+      filtering=!!(term||gv||bv||tv);
   document.querySelectorAll('.card').forEach(function(c){
     var ok=true;
     if(term&&c.dataset.search.indexOf(term)<0)ok=false;
-    if(gs.value&&c.dataset.genre!==gs.value)ok=false;
-    if(bs.value&&c.dataset.book!==bs.value)ok=false;
-    if(ts.value&&c.dataset.type!==ts.value)ok=false;
+    if(gv&&c.dataset.genre!==gv)ok=false;
+    if(bv&&c.dataset.book!==bv)ok=false;
+    if(tv&&c.dataset.type!==tv)ok=false;
     c.classList.toggle('hidden',!ok);
-    if(autoOpen)c.classList.toggle('open',!!term&&ok);
+    if(fromInput)c.classList.toggle('open',!!term&&ok);
   });
   document.querySelectorAll('.book').forEach(function(b){
-    b.classList.toggle('hidden',!b.querySelector('.card:not(.hidden)'));
+    var vis=!!b.querySelector('.card:not(.hidden)');
+    b.classList.toggle('hidden',!vis);
+    if(vis){
+      if(filtering){b.classList.remove('collapsed');}
+      else{b.classList.toggle('collapsed',!manual[b.id]);}
+      var hd=b.querySelector('.bookhead');
+      if(hd)hd.setAttribute('aria-expanded',b.classList.contains('collapsed')?'false':'true');
+    }
   });
   document.querySelectorAll('.genre').forEach(function(g){
     var show=false,next=g.nextElementSibling;
@@ -192,59 +259,110 @@ function apply(autoOpen){
     }
     g.classList.toggle('hidden',!show);
   });
+  document.querySelectorAll('#jumpchips button').forEach(function(ch){
+    ch.classList.toggle('hidden',!!gv&&ch.dataset.genre!==gv);
+  });
   var vis=document.querySelectorAll('.card:not(.hidden)').length;
   count.textContent='showing '+vis+' of '+total;
+  nores.hidden=vis>0;
 }
-[q,gs,bs,ts].forEach(function(el){el.addEventListener('input',function(){apply(true);});el.addEventListener('change',function(){apply(false);});});
+[q,gs,bs,ts].forEach(function(el){
+  el.addEventListener('input',function(){apply(true);});
+  el.addEventListener('change',function(){apply(false);});
+});
+function toggleCard(card,open){
+  var will=open===undefined?!card.classList.contains('open'):open;
+  card.classList.toggle('open',will);
+  if(will&&history.replaceState){try{history.replaceState(null,'','#c'+card.dataset.n);}catch(_){}}
+}
 document.querySelectorAll('.cardhead').forEach(function(h){
-  function t(){h.parentElement.classList.toggle('open');}
+  h.addEventListener('click',function(){toggleCard(h.parentElement);});
+  h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleCard(h.parentElement);}});
+});
+document.querySelectorAll('.bookhead').forEach(function(h){
+  function t(){var b=h.parentElement;setBook(b,b.classList.contains('collapsed'));}
   h.addEventListener('click',t);
   h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t();}});
 });
 document.getElementById('expand').addEventListener('click',function(){
-  document.querySelectorAll('.card:not(.hidden)').forEach(function(c){c.classList.add('open');});});
+  document.querySelectorAll('.book:not(.hidden)').forEach(function(b){
+    setBook(b,true);
+    b.querySelectorAll('.card:not(.hidden)').forEach(function(c){c.classList.add('open');});
+  });
+});
 document.getElementById('collapse').addEventListener('click',function(){
-  document.querySelectorAll('.card.open').forEach(function(c){c.classList.remove('open');});});
+  document.querySelectorAll('.book').forEach(function(b){
+    setBook(b,false);
+    b.querySelectorAll('.card.open').forEach(function(c){c.classList.remove('open');});
+  });
+});
 document.querySelectorAll('[data-copy]').forEach(function(btn){
   btn.addEventListener('click',function(e){
     e.stopPropagation();
-    var card=btn.closest('.card');
-    var txt=btn.dataset.copy==='steal'?card.querySelector('.steal').textContent:card.querySelector('.uw').textContent;
-    function done(){btn.textContent='Copied';setTimeout(function(){btn.textContent=btn.dataset.copy==='steal'?'Copy steal':'Copy use-when';},1200);}
-    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,done);}
-    else{var ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(_){}document.body.removeChild(ta);done();}
+    var card=btn.closest('.card'),kind=btn.dataset.copy,txt;
+    if(kind==='steal')txt=card.querySelector('.steal').textContent;
+    else if(kind==='uw')txt=card.querySelector('.uw').textContent;
+    else txt=location.origin+location.pathname+'#c'+card.dataset.n;
+    function done(ok){toast(ok?(kind==='link'?'Link copied':'Copied'):'Copy failed');}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){done(true);},function(){done(false);});}
+    else{var ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done(true);}catch(_){done(false);}document.body.removeChild(ta);}
   });
 });
-apply(false);
-})();
-(function(){
+document.querySelectorAll('#jumpchips button').forEach(function(ch){
+  ch.addEventListener('click',function(){
+    var b=document.getElementById(ch.dataset.target);
+    if(b){setBook(b,true);b.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+function openHash(){
+  var m=/^#c(\d+)$/.exec(location.hash),c;
+  if(m&&(c=document.getElementById('c'+m[1]))){
+    var b=c.closest('.book');setBook(b,true);c.classList.add('open');
+    setTimeout(function(){c.scrollIntoView({block:'center'});},60);return true;
+  }
+  m=/^#b-([a-z0-9-]+)$/.exec(location.hash);
+  if(m){var bk=document.getElementById('b-'+m[1]);
+    if(bk){setBook(bk,true);setTimeout(function(){bk.scrollIntoView({block:'start'});},60);return true;}}
+  return false;
+}
 var field=document.getElementById('floatfield');
-if(!field||!window.FLOATERS)return;
-var pool=window.FLOATERS.slice(),picks=[],K=Math.min(12,pool.length),i,p;
-for(i=0;i<K;i++){picks.push(pool.splice(Math.floor(Math.random()*pool.length),1)[0]);}
-var cards=document.querySelectorAll('.card');
-picks.forEach(function(p){
-  var d=document.createElement('div');
-  d.className='floater';
-  d.style.left=(4+Math.random()*72).toFixed(1)+'%%';
-  d.style.top=(6+Math.random()*68).toFixed(1)+'%%';
-  d.style.animationDuration=(9+Math.random()*9).toFixed(1)+'s';
-  d.style.animationDelay=(-Math.random()*12).toFixed(1)+'s';
-  d.style.setProperty('--rot',(Math.random()*6-3).toFixed(1)+'deg');
-  var t=document.createElement('span');t.className='ft';t.textContent=p.title;
-  var s=document.createElement('span');s.className='fs';
-  s.textContent=p.steal.length>110?p.steal.slice(0,110)+'\u2026':p.steal;
-  d.appendChild(t);d.appendChild(s);
-  d.title=p.book+' \u2014 click to open card '+p.n;
-  d.addEventListener('click',function(){
-    var c=cards[p.n-1];
-    if(c){c.scrollIntoView({behavior:'smooth',block:'center'});c.classList.add('open');}
+if(field&&window.FLOATERS){
+  var pool=window.FLOATERS.slice(),picks=[],K=Math.min(6,pool.length),i;
+  for(i=0;i<K;i++){picks.push(pool.splice(Math.floor(Math.random()*pool.length),1)[0]);}
+  var cards=document.querySelectorAll('.card');
+  picks.forEach(function(p){
+    var d=document.createElement('div');
+    d.className='floater';
+    d.style.left=(4+Math.random()*72).toFixed(1)+'%';
+    d.style.top=(6+Math.random()*68).toFixed(1)+'%';
+    d.style.animationDuration=(9+Math.random()*9).toFixed(1)+'s';
+    d.style.animationDelay=(-Math.random()*12).toFixed(1)+'s';
+    d.style.setProperty('--rot',(Math.random()*6-3).toFixed(1)+'deg');
+    var t=document.createElement('span');t.className='ft';t.textContent=p.title;
+    var s=document.createElement('span');s.className='fs';
+    s.textContent=p.steal.length>110?p.steal.slice(0,110)+'…':p.steal;
+    d.appendChild(t);d.appendChild(s);
+    d.title=p.book+' — click to open card '+p.n;
+    d.addEventListener('click',function(){
+      var c=cards[p.n-1];
+      if(c){var b=c.closest('.book');setBook(b,true);c.classList.add('open');
+        c.scrollIntoView({behavior:'smooth',block:'center'});
+        if(history.replaceState){try{history.replaceState(null,'','#c'+p.n);}catch(_){}}}
+    });
+    field.appendChild(d);
   });
-  field.appendChild(d);
-});
+}
 var dive=document.getElementById('dive');
 if(dive){dive.addEventListener('click',function(){document.querySelector('main').scrollIntoView({behavior:'smooth'});});}
+var firstBook=document.querySelector('.book');
+if(firstBook)manual[firstBook.id]=true;
+apply(false);
+if(!openHash()&&firstBook){
+  var fc=firstBook.querySelector('.card');
+  if(fc){fc.classList.add('open');if(history.replaceState){try{history.replaceState(null,'','#c'+fc.dataset.n);}catch(_){}}}
+}
 })();
+
 """
 
 page = """<!DOCTYPE html>
@@ -263,10 +381,7 @@ page = """<!DOCTYPE html>
 <button type="button" class="dive" id="dive">Dive into the library ↓</button>
 </section>
 <header>
-<h1>Cool Keepers</h1>
-<p class="job">Stealable mechanisms from books worth stealing from.</p>
-<p class="purpose">Hand-picked rips. No self-help, no love stories. The list grows as the ripping gets better.</p>
-<p class="meta">%d keepers &middot; %d books &middot; curated %s</p>
+<div class="hrow"><strong>Cool Keepers</strong><span class="meta">%d keepers &middot; %d books &middot; curated %s</span></div>
 </header>
 <div class="controls"><div class="inner">
 <input type="search" id="q" placeholder="Search titles, steals, use-when&hellip;" aria-label="Search cards"/>
@@ -280,14 +395,17 @@ page = """<!DOCTYPE html>
 <button type="button" id="collapse">Collapse all</button>
 <span class="count" id="count"></span>
 </div></div>
+<nav class="jumpchips" id="jumpchips" aria-label="Jump to a book">%s</nav>
 <main>
 %s
+<p class="noresults" id="noresults" hidden>No keepers match — try a mechanism word (interlock, delay, patronage).</p>
 </main>
 <footer>Last curated September 22, 2026 &middot; %d books &middot; %d keepers &middot; ripped with the Idea Ripper pipeline</footer>
 <script>var FLOATERS=%s;</script>
 <script>%s</script>
+<div id="toast" role="status"></div>
 </body>
-</html>""" % (CSS, n, len(books), curated, genre_opts, book_opts, type_opts,
+</html>""" % (CSS, n, len(books), curated, genre_opts, book_opts, type_opts, chips,
               "\n\n".join(sections), len(books), n, floaters_json, JS)
 
 open(os.path.join(BASE, "index.html"), "w", encoding="utf-8").write(page)
