@@ -18,6 +18,10 @@ ds = json.load(open(os.path.join(BASE, "cards.json"), encoding="utf-8"))
 books = ds["books"]            # ordered by first appearance
 cards = ds["cards"]
 genre_order = ds["genre_order"]
+
+# display order: within each genre, most recently added books first
+def books_in_genre(g):
+    return [b for b in books if b["genre"] == g][::-1]
 curated = ds.get("curated", "")
 
 # validation: every card has all four fields; every book has genre + blurb
@@ -36,12 +40,10 @@ ghue = {g: int(i * 360 / len(genre_order)) for i, g in enumerate(genre_order)}
 types = sorted({c["type"] for c in cards})
 n = len(cards)
 
-# render order (genre -> book -> card); stamp global card numbers 1..N
+# render order (genre -> book [newest first] -> card); stamp global card numbers 1..N
 _ordered = []
 for _g in genre_order:
-    for _b in books:
-        if _b["genre"] != _g:
-            continue
+    for _b in books_in_genre(_g):
         for _c in cards:
             if _c["book"] == _b["book"]:
                 _ordered.append(_c)
@@ -105,7 +107,7 @@ def slugify(s):
 genre_of = {b["book"]: b["genre"] for b in books}
 sections = []
 for g in genre_order:
-    gbooks = [b for b in books if b["genre"] == g]
+    gbooks = books_in_genre(g)
     if not gbooks:
         continue
     gcount = sum(1 for c in cards if genre_of[c["book"]] == g)
