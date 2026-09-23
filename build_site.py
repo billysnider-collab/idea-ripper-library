@@ -208,6 +208,11 @@ main{max-width:1180px}
 .book:not(.collapsed) .cards{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;align-items:start}
 .book:not(.collapsed) .card{margin:0}
 }
+#intro{max-width:920px;margin:0 auto;padding:1rem 1.25rem 0;color:var(--muted);font-size:.9rem}
+#intro p{margin:.45rem 0;max-width:60rem}
+#intro strong{color:var(--fg);font-weight:600}
+@media (max-width:700px){.bsamples{display:none}}
+@media(min-width:1000px){#intro{max-width:1180px}}
 """
 
 JS = r"""
@@ -353,7 +358,7 @@ if(field&&window.FLOATERS){
   });
 }
 var dive=document.getElementById('dive');
-if(dive){dive.addEventListener('click',function(){document.querySelector('main').scrollIntoView({behavior:'smooth'});});}
+if(dive){dive.addEventListener('click',function(){document.getElementById('intro').scrollIntoView({behavior:'smooth'});});}
 var firstBook=document.querySelector('.book');
 if(firstBook)manual[firstBook.id]=true;
 apply(false);
@@ -383,6 +388,10 @@ page = """<!DOCTYPE html>
 <header>
 <div class="hrow"><strong>Cool Keepers</strong><span class="meta">%d keepers &middot; %d books &middot; curated %s</span></div>
 </header>
+<section id="intro">
+<p><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every keeper is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>
+<p><strong>How to hunt:</strong> tap a book to open its keepers, tap a card for the full steal, copy anything you want. Search hunts titles, steals, and use-whens all at once.</p>
+</section>
 <div class="controls"><div class="inner">
 <input type="search" id="q" placeholder="Search titles, steals, use-when&hellip;" aria-label="Search cards"/>
 <select id="fgenre" aria-label="Filter by genre"><option value="">All genres</option>

@@ -40,7 +40,7 @@ def main():
                  'id="expand"', 'id="collapse"', 'data-copy="steal"',
                  'data-copy="uw"', 'data-copy="link"', "Last curated", 'id="splash"',
                  'id="floatfield"', 'id="dive"', 'id="jumpchips"',
-                 'id="noresults"', 'id="toast"', 'class="book collapsed"',
+                 'id="noresults"', 'id="toast"', 'id="intro"', 'class="book collapsed"',
                  'class="pv"'):
         assert part in t, "page missing " + part
     # each rendered card keeps the grounded fields
