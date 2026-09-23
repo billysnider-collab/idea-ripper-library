@@ -1,0 +1,559 @@
+{
+ "books": [
+  {
+   "id": "marc-morris-the-anglo-saxons-a-history-of-the-beginnings-of-england-400-1066",
+   "author": "Marc Morris",
+   "title": "The Anglo-Saxons: A History of the Beginnings of England: 400–1066",
+   "publisher": "Pegasus, 2021",
+   "lens": "How did various peoples and kingdoms in post-Roman Britain gradually become what we call England?",
+   "date": "2026-09-23",
+   "argument_map": {
+    "because": "Roman Britain’s political-economic system collapsed in the early fifth century, and substantial Germanic settlement filled a ruined landscape that offered little Romano-British culture worth adopting",
+    "led_to": "competitive Anglo-Saxon kingdoms, Christianization (often coercive), and a sharpening sense of shared *English* ethnicity defined especially against Britons and later against viking pagans",
+    "however": "ethnic identity and Mercian/West Saxon “empires” repeatedly outran durable institutions—unity won by Offa, Alfred, Æthelstan, or Edgar could fracture through succession, overstretch, or bad counsel—",
+    "therefore": "England emerges gradually as a named Christian kingdom with burhs, shires, and a politicized *Angelcynn* identity forged under pressure, sturdy enough that even the Norman replacement of the ruling class (1066) becomes a new chapter rather than the erasure of the frame. ---"
+   },
+   "themes": [
+    {
+     "title": "Identity before (and as) polity.",
+     "body": "*Angli*/Englishness gathers across kingdoms in the eighth century; Alfred weaponizes *Angelcynn* to fuse Wessex and Mercia; Æthelstan’s *Rex Anglorum* and Æthelred-era *Engla-Lande* show naming catching up to conquest and crisis."
+    },
+    {
+     "title": "Religion as power technology.",
+     "body": "Conversion, Easter conformity, monastic reform, and baptism of enemies (Guthrum) remake legitimacy, borders of belonging, and elite monumental culture—while deepening enmity with Britons and structuring responses to vikings."
+    },
+    {
+     "title": "Unity is temporary without capacity.",
+     "body": "Tribute overlordship, annexation, burhs, reform uniformity, and Danish/Norman conquests all show that “England” must be continually remade; glory (Brunanburh, Edgar’s peace) does not guarantee permanence."
+    }
+   ],
+   "timeline": [
+    {
+     "date": "c. 409–450",
+     "cause": "Troop drain, unpaid army, break with Rome, Saxon settlement into collapse",
+     "changed": "Roman civic economy dies; Germanic cultural dominance in east",
+     "pace": "Immediate collapse; gradual ethnogenesis"
+    },
+    {
+     "date": "c. 570–650",
+     "cause": "Mid-century climate/plague shocks; competitive coercion",
+     "changed": "Kingship, halls, barrows, tribute kingdoms",
+     "pace": "Gradual then accelerating hierarchy"
+    },
+    {
+     "date": "664",
+     "cause": "Court/doctrinal conflict; Wilfrid’s Roman case",
+     "changed": "Northumbria (then wider Church) aligns to Rome on Easter",
+     "pace": "Immediate decision; gradual institutional follow-through"
+    },
+    {
+     "date": "655 / late 7th c.",
+     "cause": "Penda’s fall; Theodore’s organization",
+     "changed": "Christian kingship becomes default; minster landscape",
+     "pace": "Mixed"
+    },
+    {
+     "date": "757–796",
+     "cause": "Mercian military + London wealth + Carolingian models",
+     "changed": "Southern annexation empire; English/British binary monumentalized (dyke)",
+     "pace": "Immediate force; fragile dynasty"
+    },
+    {
+     "date": "793 → 865",
+     "cause": "Soft rich coasts; sails; Frankish wars; then conquest army",
+     "changed": "From raid panic to kingdom destruction",
+     "pace": "Escalating"
+    },
+    {
+     "date": "878–886",
+     "cause": "Edington; Guthrum baptism; Angelcynn program; London",
+     "changed": "Wessex survives; “kingdom of the Anglo-Saxons” ideology",
+     "pace": "Immediate military; deliberate identity politics"
+    },
+    {
+     "date": "927–939",
+     "cause": "Northern conquest; Brunanburh",
+     "changed": "*Rex Anglorum* / Britain claims — then rapid northern undo",
+     "pace": "Victory immediate; durability fails"
+    },
+    {
+     "date": "c. 959–975",
+     "cause": "Reformers + Edgar",
+     "changed": "Sacral uniformity; “godly” kingdom theater",
+     "pace": "Gradual reform; peak under Edgar"
+    },
+    {
+     "date": "978–1016",
+     "cause": "Second viking age; faction/*unrædas*",
+     "changed": "Named England under fiscal/military stress → Danish conquest",
+     "pace": "Cumulative failure"
+    },
+    {
+     "date": "1066",
+     "cause": "Succession crisis; Norman invasion",
+     "changed": "Ruling class replaced; England as polity persists",
+     "pace": "Elite rupture immediate; deep frame continuous"
+    }
+   ],
+   "author_vs_fact": [
+    {
+     "claim": "Post-410 collapse was extreme—“most dramatic” social-economic crash",
+     "anchored": "Archaeology: pottery, towns, villas thin after early 5th c.",
+     "status": "Strong on material collapse; scale of death is inferential"
+    },
+    {
+     "claim": "Migration was substantial (not only elite transfer)",
+     "anchored": "Language shift; few Brittonic loans; cemeteries; boat capacity thought-experiment",
+     "status": "DNA reading remains contested; regional variation admitted"
+    },
+    {
+     "claim": "Bretwaldaship not an institution",
+     "anchored": "Bede’s list + ASC label vs tribute practice",
+     "status": "Consensus among many modern historians; older textbooks differ"
+    },
+    {
+     "claim": "Offa’s Dyke more ideological/ethnic marker than Hadrianic wall",
+     "anchored": "Asser; lack of forts/patrol archaeology; English/British enmity texts",
+     "status": "Purpose still debated (raid control vs ideology vs both)"
+    },
+    {
+     "claim": "Alfred politicized *Angelcynn* to hold Mercia",
+     "anchored": "Treaty wording; Asser’s titles; Chronicle 886",
+     "status": "Strong; originality of burhs more qualified by Morris himself"
+    },
+    {
+     "claim": "Æthelstan’s northern empire overstretched",
+     "anchored": "Fast post-939 reversal to viking York",
+     "status": "Battle location unknown; “overstretch” is interpretive framing"
+    },
+    {
+     "claim": "Æthelred richly deserves “ill-counselled”",
+     "anchored": "ASC *unrædas*; factional careers (Eadric)",
+     "status": "Revisionists soften blame; Morris largely unconvinced"
+    },
+    {
+     "claim": "1066 ends ASM elite more than “England”",
+     "anchored": "Domesday tenurial replacement; survival of shires/texts",
+     "status": "Continuity vs catastrophe remains classic dispute"
+    }
+   ],
+   "synthesis": {
+    "five_sentences": "Morris tells how post-Roman Britain’s wreckage, Germanic settlement, and warlord kingdoms became—unevenly—a Christian people and then a kingdom called England. He refuses timeless “Anglo-Saxon” generalizations, tracking change era by era through collapse, kingship, conversion, Mercian empire, viking storm, Alfredian resurrection, West Saxon reconquest, monastic reform, renewed Scandinavian conquest, and Norman twilight. English identity appears first as ethnicity and Church belonging, then as Alfred’s political *Angelcynn*, then as Æthelstan’s *Rex Anglorum* and Æthelred’s *Engla-Lande*. Institutions (burhs, shires, coinage, minsters) accumulate under pressure but repeatedly fail when succession, faction, or overstretch intervene. By 1066 England exists strongly enough that replacing its aristocracy does not delete the country.",
+    "biggest_ideas": [
+     "England is made, not remembered whole from 449.",
+     "Shared Englishness is a political and religious project —especially against Britons and under viking duress.",
+     "Capacity and counsel matter as much as charisma —burhs and reform can build a realm; *unrædas* and thin northern integration can unbuild it."
+    ],
+    "turning_points": "Roman collapse & settlement; late-sixth kingship; Whitby/Christian order; Offa’s annexation empire & English/British boundary; 865 conquest army; Alfred’s 878–886 settlement & identity program; Æthelstan’s brief pan-British claim and undo; Edgar’s reform peak; 1016 Danish conquest; 1066 elite replacement.",
+    "assessment": {
+     "explains_well": "Change over time; the hinge from multi-kingdom Britain to an English kingdom under Alfred and his heirs; the ideological work of ethnicity and Church; the difference between raid and conquest viking phases.",
+     "evidence_relied_on": "Bede, Gildas, Asser, ASC, saints’ lives, charters/coins, and archaeology (hoards, burials, wics, dykes)—explicitly uneven by period.",
+     "remains_uncertain": "Scale and local texture of fifth-century migration; motives behind Offa’s Dyke; how many burhs Alfred personally created; Brunanburh’s site; how far St Brice’s killings reached; Edward’s promise to William.",
+     "another_historian_might_dispute": "Degree of Romano-British continuity; whether Alfred’s greatness is overstated relative to Mercian precedents and Edward/Æthelflæd; rehabilitation of Æthelred; how “national” tenth-century England really was versus a West Saxon imperial core."
+    }
+   },
+   "cards": [
+    {
+     "n": 1,
+     "title": "Half a millennium of transformation",
+     "type": "argument",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "Those intervening centuries had been ones of fundamental transformation.",
+     "why_it_matters": "Morris’s methodological premise: “Anglo-Saxon” is not one stable culture from Sutton Hoo to Hastings.",
+     "use_when": "When readers flatten 500 years into one timeless people.",
+     "chapter": "Introduction",
+     "period": "c. 600–1066",
+     "source_locator": "Introduction — Sutton Hoo vs Hastings contrast",
+     "intent": "change-over-time",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 2,
+     "title": "Collapse before the settlers",
+     "type": "argument",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "Once its economic and political links with the empire were severed, Britain went into free fall… society had collapsed. It was, in the words of one modern historian, “probably the most dramatic period of social and economic collapse in British history”.",
+     "why_it_matters": "Saxon success follows Roman failure; causation starts with imperial unravelling, not only boats from Germania.",
+     "use_when": "Explaining why lowland Britain became Germanic-speaking.",
+     "chapter": "1 The Ruin of Britain",
+     "period": "c. 409–450",
+     "source_locator": "Ch. 1 — after Zosimus revolt / archaeology thin",
+     "intent": "causation",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 3,
+     "title": "Why British culture did not triumph",
+     "type": "mechanism",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "The likeliest answer is that, by the time the Saxons came to settle in Britain, they found little that was worth preserving… The broken Britain that the Saxons found consequently had no allure, and in British culture they saw nothing they wished to emulate.",
+     "why_it_matters": "Mechanism for language/religion flip despite probable Briton numerical majority.",
+     "use_when": "Identity-formation and migration debates (vs Gaul/Spain).",
+     "chapter": "1 The Ruin of Britain",
+     "period": "5th–6th centuries",
+     "source_locator": "Ch. 1 — comparison with continental barbarian kingdoms",
+     "intent": "identity-formation",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 4,
+     "title": "Kings emerge from coercion",
+     "type": "mechanism",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "Ceorls who had previously been independent, farming their single hides of land… now found themselves bound to contribute to the upkeep of one particular individual or family that was lording it above the rest.",
+     "why_it_matters": "Kingdoms grow from late-sixth-century tribute extraction, not fifth-century foundation legends.",
+     "use_when": "Origins of Anglo-Saxon kingship; distrust “heptarchy in 449”.",
+     "chapter": "2 War-Wolves and Ring-Givers",
+     "period": "c. 570–650",
+     "source_locator": "Ch. 2 — -ing names / Ine’s render analogy",
+     "intent": "kingship",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 5,
+     "title": "No institutional bretwaldaship",
+     "type": "argument",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "Few historians nowadays, however, would argue that there was any institutional basis to “bretwaldaship”… The reality was that there were no rules in this game of thrones, and kings did not defer to other kings out of respect for some universally recognized high office. Compulsion through force was all, and subservience was expressed in the form of tribute.",
+     "why_it_matters": "Early “English empire” talk is anachronistic; overlordship is personal and coercive.",
+     "use_when": "Comparing Æthelberht, Rædwald, Eadwine, Offa, Egbert.",
+     "chapter": "2 War-Wolves and Ring-Givers",
+     "period": "early 7th century",
+     "source_locator": "Ch. 2 — after Sutton Hoo / Eadwine standards",
+     "intent": "kingship",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 6,
+     "title": "Whitby: Peter’s keys decide Easter",
+     "type": "argument",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "“Do you think,” he asked, “that a handful of people in a corner of the remotest island is to be preferred to the universal Church of Christ which is spread throughout the world?” … Is it true, he asked Colman, that Christ said these words to Peter? … In that case, the king announced, he had best side with Rome, since Peter was the keeper of the keys to the kingdom of heaven.",
+     "why_it_matters": "Roman conformity becomes Northumbrian policy; shared Christian calendar underpins later English Church unity.",
+     "use_when": "Christianization; Roman vs Irish traditions.",
+     "chapter": "3 God’s Chosen Instrument",
+     "period": "664",
+     "source_locator": "Ch. 3 — Synod of Whitby debate",
+     "intent": "christianization",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 7,
+     "title": "Conversion some freely, some by command",
+     "type": "evidence",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "In the months that followed he reportedly baptized many thousands – “some freely”, says Stephen, in a moment of greater candour, “and some at the king’s command”.",
+     "why_it_matters": "Shows coercive edge of seventh-century mission—religion as royal instrument.",
+     "use_when": "Power + religion; Wilfrid in Sussex.",
+     "chapter": "3 God’s Chosen Instrument",
+     "period": "681–c. 685",
+     "source_locator": "Ch. 3 — Wilfrid in Sussex",
+     "intent": "christianization",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 8,
+     "title": "Offa annexes, not merely overlords",
+     "type": "argument",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "Offa, by contrast, set out to build something more permanent. In his scheme, Mercia would not simply dominate neighbouring kingdoms; it would annex them, absorb them, and relegate them to the status of mere provinces within an expanded Mercian empire.",
+     "why_it_matters": "Qualitative shift from tribute hegemony (Penda/Æthelbald) toward provincial absorption.",
+     "use_when": "Empire-building; Kent/Sussex case studies.",
+     "chapter": "4 An English Empire?",
+     "period": "757–796",
+     "source_locator": "Ch. 4 — Offa’s program after accession",
+     "intent": "kingship",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 9,
+     "title": "Angli becomes “the English”",
+     "type": "concept",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "But increasingly during the eighth century people were using Angli as a general term to describe all the Germanic-speaking peoples in Britain, including those who at other times were referred to as Saxons and Jutes… there is a clear sense that Angli was pulling ahead.",
+     "why_it_matters": "Ethnic Englishness precedes Alfred’s polity; max one concept card for the book.",
+     "use_when": "Dating identity-formation before political unification.",
+     "chapter": "4 An English Empire?",
+     "period": "8th century",
+     "source_locator": "Ch. 4 — Bede/Boniface/Æthelbald language",
+     "intent": "identity-formation",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 10,
+     "title": "Dyke marks the English Other",
+     "type": "mechanism",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "By deciding to build a barrier against them, Offa was isolating them, frustrating travel and trade… But over and above this he was emphasizing, in the most visible way possible for an early medieval ruler, the differences between the Britons on one side, and the English on the other.",
+     "why_it_matters": "Frontier as identity technology: wilisc vs englisc.",
+     "use_when": "Border politics; English/British enmity.",
+     "chapter": "4 An English Empire?",
+     "period": "late 8th century",
+     "source_locator": "Ch. 4 — conclusion on Offa’s Dyke purpose",
+     "intent": "identity-formation",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 11,
+     "title": "Vikings take what is undefended",
+     "type": "mechanism",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "A more straightforward explanation is that Scandinavians started seizing this wealth because they realized it was theirs for the taking… The Scandinavians knew all about the rich coastal communities of the kingdoms to the south, and they also knew that they were undefended.",
+     "why_it_matters": "First-order cause of the raid era: inequality + soft targets, not romantic overpopulation alone.",
+     "use_when": "Opening viking impact; Lindisfarne context.",
+     "chapter": "5 Storm from the North",
+     "period": "late 8th–early 9th centuries",
+     "source_locator": "Ch. 5 — motives section after Lindisfarne",
+     "intent": "viking-impact",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 12,
+     "title": "Great army of conquest",
+     "type": "argument",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "This was no mere raiding party, nor even an occupying force that intended to stay for a season or two until the wealth of the land was exhausted. It was an army of conquest, planning to take over entire kingdoms.",
+     "why_it_matters": "865 as phase change—horses, winter camps, kingdom-toppling.",
+     "use_when": "Distinguishing raid vs conquest vikingology.",
+     "chapter": "5 Storm from the North",
+     "period": "865–871",
+     "source_locator": "Ch. 5 — arrival of micel here in East Anglia",
+     "intent": "viking-impact",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 13,
+     "title": "Baptize Guthrum to normalize the frontier",
+     "type": "mechanism",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "By requiring his defeated enemies to receive baptism, therefore, Alfred was aiming to normalize relations with the new rulers beyond his own borders… By recognizing Alfred as a godfather, Guthrum acknowledged some degree of subordination. By adopting Guthrum as his spiritual son, Alfred conferred legitimacy on him as a ruler.",
+     "why_it_matters": "Christian diplomacy as statecraft after Edington—not naïve forgiveness.",
+     "use_when": "Post-878 settlement politics; Viking integration.",
+     "chapter": "6 Resurrection",
+     "period": "878",
+     "source_locator": "Ch. 6 — after Aller baptism analysis",
+     "intent": "viking-impact",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 14,
+     "title": "Angelcynn as political program",
+     "type": "argument",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "Instead, Alfred began to promote the idea that the peoples of Wessex and Mercia were united by a common ethnicity… the long-established idea that the people of Mercia and Wessex… were all in some sense “English”, was being used for overtly political ends: to convince the people of Mercia that they had not been annexed, but were an integral part of a new, larger, political entity, “the kingdom of the Anglo-Saxons”.",
+     "why_it_matters": "Core answer to Billy’s lens: Englishness weaponized to fuse kingdoms under stress.",
+     "use_when": "Nation-making; Alfredian identity.",
+     "chapter": "6 Resurrection",
+     "period": "c. 878–886",
+     "source_locator": "Ch. 6 — treaty with Guthrum / Asser’s Angulsaxonum rex",
+     "intent": "identity-formation",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 15,
+     "title": "Burhs widen who must fight",
+     "type": "mechanism",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "Alfred had succeeded in widening the participation in warfare beyond the military elite who traditionally rode into battle with the king. In order to man the walls of his burhs he needed to find thousands upon thousands of lesser men, and convince them (or their lords) that it was their duty to contribute to the kingdom’s defence.",
+     "why_it_matters": "Defensive revolution as social mobilization (even if not all burhs are his inventions).",
+     "use_when": "Military institutions; state capacity.",
+     "chapter": "6 Resurrection",
+     "period": "c. 880–893",
+     "source_locator": "Ch. 6 — Burghal Hidage discussion",
+     "intent": "kingship",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 16,
+     "title": "Except the part under Danish rule",
+     "type": "evidence",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "All that the Chronicle tells us is that Alfred died on 26 October, after a reign of twenty-eight years, and that he was king over the whole English people, “except the part that was under Danish rule”. That last clause is a quite considerable caveat… The reality was that he had defended Wessex and annexed about half of Mercia.",
+     "why_it_matters": "Blocks all-England Alfred myths; England still unfinished at 899.",
+     "use_when": "Limits of Alfredian achievement.",
+     "chapter": "6 Resurrection",
+     "period": "899",
+     "source_locator": "Ch. 6 — death/obituary",
+     "intent": "continuity",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 17,
+     "title": "Rex Anglorum after York",
+     "type": "evidence",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "After his annexation of Northumbria Æthelstan became simply Rex Anglorum – king of the English… Coins struck in Æthelstan’s name after 927 bore the legend “king of the whole of Britain”.",
+     "why_it_matters": "Titulature catches up to conquest: kingdom of the English as claim.",
+     "use_when": "Political naming of England.",
+     "chapter": "7 Imperial Overstretch?",
+     "period": "927–939",
+     "source_locator": "Ch. 7 — titulature after 927",
+     "intent": "identity-formation",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 18,
+     "title": "Brunanburh glory, northern undo",
+     "type": "argument",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "Northumbria had once again fallen to the vikings, and a pagan king of York ruled everything as far south as Watling Street. Within a vanishingly short space of time, all of Æthelstan’s conquests had been undone.",
+     "why_it_matters": "Chapter thesis: imperial reach without durable integration.",
+     "use_when": "Overstretch; fragility of tenth-century unity.",
+     "chapter": "7 Imperial Overstretch?",
+     "period": "939–c. 940",
+     "source_locator": "Ch. 7 — closing after Brunanburh poem",
+     "intent": "continuity",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 19,
+     "title": "Reformers glue the new kingdom",
+     "type": "argument",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "Dunstan and his followers saw it their duty, even their destiny, to resurrect monasticism… As a result reform came to comprehend not only the Church but the whole of Christian society… whose ideas helped to give ideological cohesion to the new kingdom.",
+     "why_it_matters": "Unity after reconquest needs sacral uniformity, not only armies.",
+     "use_when": "Edgar/Dunstan; religion and nationhood.",
+     "chapter": "8 One Nation Under God",
+     "period": "c. 940–975",
+     "source_locator": "Ch. 8 — opening thesis on Dunstan",
+     "intent": "christianization",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 20,
+     "title": "When the Good Shepherd dies",
+     "type": "evidence",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "“At his death,” says Oswald’s biographer, “the entire kingdom was shaken. Bishops were disturbed, ealdormen were angry, monks were struck with fear, the people terrified.” Even as the Peacemaker was being lowered into the ground at Glastonbury, the country was collapsing into civil war.",
+     "why_it_matters": "Godly order depended on Edgar’s person—continuity crisis baked in.",
+     "use_when": "975 as hinge to Æthelred era.",
+     "chapter": "8 One Nation Under God",
+     "period": "975",
+     "source_locator": "Ch. 8 — closing on Edgar’s death",
+     "intent": "kingship",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 21,
+     "title": "The country called Engla-Lande",
+     "type": "evidence",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "One of Æthelred’s ealdormen, Æthelweard… explained to his readers that the country he lived in had once been called Britannia, but was now called Anglia. The ealdorman’s friend, Ælfric of Eynsham… referred to it as “Engla-Lande”.",
+     "why_it_matters": "Name “England” appears in the crisis generation—identity lexicalized.",
+     "use_when": "When does England get its name?",
+     "chapter": "9 The Ill-Counselled King",
+     "period": "c. 980–1016",
+     "source_locator": "Ch. 9 — opening on documentation/name",
+     "intent": "identity-formation",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 22,
+     "title": "Disasters through unrædas",
+     "type": "argument",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "“All these disasters,” he lamented, “befell us through bad counsel [unrædas].” … For all the recent attempts to rescue him from the exaggerated vilification of later writers like William of Malmesbury, Æthelred’s reputation as an ill-counselled king still seems richly deserved.",
+     "why_it_matters": "Morris endorses structural failure of counsel/faction, not only bad luck.",
+     "use_when": "Crisis kingship; second viking age.",
+     "chapter": "9 The Ill-Counselled King",
+     "period": "978–1016",
+     "source_locator": "Ch. 9 — closing judgment",
+     "intent": "kingship",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 23,
+     "title": "Godwine made by Danish conquest",
+     "type": "mechanism",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "Their marriage had come about as a direct result of the Danish Conquest of 1016, and no Englishman had profited more from that hostile takeover than Godwine himself. In the course of the next half-century he and his family rose relentlessly, to the point where they could contemplate supplanting the rival dynasties that had promoted them.",
+     "why_it_matters": "Late ASM politics are North Sea fallout, not a teleology toward Normandy.",
+     "use_when": "Prefacing 1066; earl power.",
+     "chapter": "10 Twilight",
+     "period": "1016–1066",
+     "source_locator": "Ch. 10 — opening on Godwine family",
+     "intent": "viking-impact",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 24,
+     "title": "Hastings replaces the ruling class",
+     "type": "argument",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "The Norman Conquest saw the established ruling class of England almost entirely swept away, replaced by newcomers from across the Channel who had very different notions about the way a country should be governed.",
+     "why_it_matters": "1066 as social-political rupture at the top—even if England as frame survives.",
+     "use_when": "Conquest impact; elite continuity debates.",
+     "chapter": "10 Twilight",
+     "period": "1066",
+     "source_locator": "Ch. 10 — opening watershed discussion",
+     "intent": "continuity",
+     "ripped_at": "2026-09-23"
+    },
+    {
+     "n": 25,
+     "title": "England is still a work in progress",
+     "type": "passage",
+     "book_line": "Marc Morris — The Anglo-Saxons (400–1066): how post-Roman peoples and kingdoms became England",
+     "steal": "Roman Britannia, despite the grandeur of its ruins, lasted barely 400 years, and was over by the mid-fifth century. England is still a work in progress.",
+     "why_it_matters": "Final continuity claim: deep structures outlast 1066 elite death.",
+     "use_when": "Closing synthesis; long durée.",
+     "chapter": "Conclusion",
+     "period": "post-1066 / long legacy",
+     "source_locator": "Conclusion — enduring inheritance paragraph",
+     "intent": "continuity",
+     "ripped_at": "2026-09-23"
+    }
+   ],
+   "chapter_summaries": [
+    {
+     "unit": "Introduction",
+     "summary": "Morris rejects static “Anglo-Saxon” generalizations and promises a selective story of how England and the English emerged through centuries of transformation."
+    },
+    {
+     "unit": "1 The Ruin of Britain",
+     "summary": "After Roman Britain’s catastrophic early-fifth-century collapse, substantial Germanic settlement filled a landscape whose ruined culture offered little to emulate."
+    },
+    {
+     "unit": "2 War-Wolves and Ring-Givers",
+     "summary": "Late-sixth-century catastrophe and coercion forged Anglo-Saxon kingship as competitive ring-giving warlordship; conversion and Penda’s fall remade the ideological landscape."
+    },
+    {
+     "unit": "3 God’s Chosen Instrument",
+     "summary": "Through Wilfrid’s career, Roman ecclesiastical order advances by synod, patronage, and sometimes the sword, while popular understanding stays thin."
+    },
+    {
+     "unit": "4 An English Empire?",
+     "summary": "Offa builds a southern Mercian annexation empire and Carolingian-style display as English identity sharpens against the Britons—then his dynasty collapses."
+    },
+    {
+     "unit": "5 Storm from the North",
+     "summary": "Viking escalation from Lindisfarne to the great army destroys most kingdoms and creates the emergency for English reinvention."
+    },
+    {
+     "unit": "6 Resurrection",
+     "summary": "Alfred saves Wessex, takes western Mercia, and politicizes *Angelcynn*—forging an Anglo-Saxon kingdom without yet ruling all England."
+    },
+    {
+     "unit": "7 Imperial Overstretch?",
+     "summary": "Æthelstan briefly makes a kingdom of the English and a Britain claim; Brunanburh’s myth cannot prevent rapid northern undo."
+    },
+    {
+     "unit": "8 One Nation Under God",
+     "summary": "Reformers culminating under Edgar sacralize uniformity; Edgar’s death removes the shepherd and shakes the realm."
+    },
+    {
+     "unit": "9 The Ill-Counselled King",
+     "summary": "A kingdom now called England endures renewed viking assault, *unrædas*, and Danish conquest in 1016."
+    },
+    {
+     "unit": "10 Twilight",
+     "summary": "Godwine power grown from Danish conquest ends in Harold’s brief kingship and Norman destruction of the old elite."
+    },
+    {
+     "unit": "Conclusion",
+     "summary": "1066 shatters the elite but leaves England’s deeper frame intact enough that Normans become a new chapter, not the end."
+    }
+   ]
+  }
+ ]
+}

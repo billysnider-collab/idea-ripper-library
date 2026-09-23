@@ -24,6 +24,10 @@ def books_in_genre(g):
     return [b for b in books if b["genre"] == g][::-1]
 curated = ds.get("curated", "")
 
+# full-book deep dives: standalone briefs too rich to shred into keepers
+fb_path = os.path.join(BASE, "fullbooks.json")
+fbooks = json.load(open(fb_path, encoding="utf-8"))["books"] if os.path.exists(fb_path) else []
+
 # validation: every card has all four fields; every book has genre + blurb
 for c in cards:
     for f in ("title", "steal", "why", "uw"):
@@ -100,6 +104,108 @@ def book_block(b):
     parts.append('</div></section>')
     return "\n".join(parts)
 
+def fullbook_block(fb):
+    """Standalone deep-dive entry: argument map, themes, timeline, author-vs-fact,
+    synthesis, the full card deck, and chapter summaries. Cards reuse keeper
+    card visuals but carry data-fb so keeper search/count/hash logic skips them."""
+    parts = ['<section class="fbook collapsed" id="fb-%s">' % esca(fb["id"])]
+    blurb = fb["author"]
+    if fb.get("publisher"):
+        blurb += " (%s)" % fb["publisher"]
+    if fb.get("lens"):
+        blurb += " \u2014 " + fb["lens"]
+    parts.append(
+        '<div class="fbookhead" role="button" tabindex="0" aria-expanded="false">'
+        '<span class="chip" style="background:var(--amber)"></span>'
+        '<span class="bmain"><span class="btitle">%s <span class="bcount">full-book brief \u00b7 %d cards</span></span>'
+        '<span class="bookline">%s</span></span>'
+        '<span class="bchev">\u25be</span></div>'
+        % (esc(fb["title"]), len(fb["cards"]), esc(blurb)))
+    parts.append('<div class="fbookbody">')
+    am = fb.get("argument_map", {})
+    if am:
+        parts.append('<h3 class="fbsub">The argument</h3><div class="amap">')
+        for lab, key in (("Because", "because"), ("This led to", "led_to"),
+                         ("However", "however"), ("Therefore", "therefore")):
+            if am.get(key):
+                parts.append('<div class="amstep"><span class="amlab">%s</span><p>%s</p></div>'
+                             % (lab, esc(am[key])))
+        parts.append('</div>')
+    if fb.get("themes"):
+        parts.append('<h3 class="fbsub">Recurring themes</h3>')
+        for t in fb["themes"]:
+            parts.append('<p class="fbtheme"><strong>%s</strong> %s</p>'
+                         % (esc(t.get("title", "")), esc(t.get("body", ""))))
+    if fb.get("timeline"):
+        parts.append('<h3 class="fbsub">Turning points</h3><div class="twrap"><table class="fbtable">'
+                     '<tr><th>Date</th><th>Cause</th><th>What changed</th><th>Pace</th></tr>')
+        for r in fb["timeline"]:
+            parts.append('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>'
+                         % (esc(r.get("date", "")), esc(r.get("cause", "")),
+                            esc(r.get("changed", "")), esc(r.get("pace", ""))))
+        parts.append('</table></div>')
+    if fb.get("author_vs_fact"):
+        parts.append('<h3 class="fbsub">Author vs. the evidence</h3><div class="twrap"><table class="fbtable">'
+                     '<tr><th>Claim</th><th>Anchored in</th><th>Status</th></tr>')
+        for r in fb["author_vs_fact"]:
+            parts.append('<tr><td>%s</td><td>%s</td><td>%s</td></tr>'
+                         % (esc(r.get("claim", "")), esc(r.get("anchored", "")),
+                            esc(r.get("status", ""))))
+        parts.append('</table></div>')
+    sy = fb.get("synthesis", {})
+    if sy:
+        parts.append('<h3 class="fbsub">Synthesis</h3>')
+        if sy.get("five_sentences"):
+            parts.append('<p>%s</p>' % esc(sy["five_sentences"]))
+        if sy.get("biggest_ideas"):
+            parts.append('<p><strong>The three biggest ideas:</strong></p><ol class="fbideas">')
+            for idea in sy["biggest_ideas"]:
+                parts.append('<li>%s</li>' % esc(idea))
+            parts.append('</ol>')
+        if sy.get("turning_points"):
+            parts.append('<p><strong>Major turning points:</strong> %s</p>' % esc(sy["turning_points"]))
+        ass = sy.get("assessment", {})
+        if ass:
+            parts.append('<dl class="fbassess">')
+            for lab, key in (("Explains well", "explains_well"),
+                             ("Evidence relied on", "evidence_relied_on"),
+                             ("Remains uncertain", "remains_uncertain"),
+                             ("Another historian might dispute", "another_historian_might_dispute")):
+                if ass.get(key):
+                    parts.append('<dt>%s</dt><dd>%s</dd>' % (lab, esc(ass[key])))
+            parts.append('</dl>')
+    parts.append('<h3 class="fbsub">The %d cards</h3><div class="fbcards">' % len(fb["cards"]))
+    for c in fb["cards"]:
+        pv = c["steal"]
+        if len(pv) > 90:
+            pv = pv[:90].rsplit(" ", 1)[0] + "\u2026"
+        meta = " \u00b7 ".join(x for x in (c.get("chapter"), c.get("period")) if x)
+        parts.append(
+            '<article class="fbcard card" data-fb="1">'
+            '<div class="cardhead" role="button" tabindex="0">'
+            '<span class="fbnum">%d</span>'
+            '<span class="ctext"><span class="ctitle">%s</span><span class="pv">%s</span></span>'
+            '<span class="pill %s">%s</span></div>'
+            '<div class="cardbody">'
+            '<p class="steal">%s</p>'
+            '<p class="why"><span class="k">Why it matters:</span> %s</p>'
+            '<p class="uw">%s</p>'
+            '%s'
+            '<div class="actions"><button type="button" data-copy="steal">Copy steal</button>'
+            '<button type="button" data-copy="uw">Copy use-when</button></div>'
+            '</div></article>'
+            % (c["n"], esc(c["title"]), esc(pv), esca(c.get("type", "")), esc(c.get("type", "")),
+               esc(c["steal"]), esc(c["why_it_matters"]), esc(c["use_when"]),
+               '<p class="fbmeta">%s</p>' % esc(meta) if meta else ""))
+    parts.append('</div>')
+    if fb.get("chapter_summaries"):
+        parts.append('<h3 class="fbsub">Chapter by chapter</h3><dl class="fbchaps">')
+        for ch in fb["chapter_summaries"]:
+            parts.append('<dt>%s</dt><dd>%s</dd>' % (esc(ch.get("unit", "")), esc(ch.get("summary", ""))))
+        parts.append('</dl>')
+    parts.append('</div></section>')
+    return "\n".join(parts)
+
 import re
 def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -115,6 +221,13 @@ for g in genre_order:
                     % (esca(g), esc(g), gcount, len(gbooks)))
     for b in gbooks:
         sections.append(book_block(b))
+
+if fbooks:
+    fb_cards = sum(len(fb["cards"]) for fb in fbooks)
+    sections.append('<h2 class="genre fbshelf">Full Books <span class="gcount">%d deep %s &middot; %d cards</span></h2>'
+                    % (len(fbooks), "dive" if len(fbooks) == 1 else "dives", fb_cards))
+    for fb in fbooks:
+        sections.append(fullbook_block(fb))
 
 chips = "\n".join(
     '<button type="button" data-target="b-%s" data-genre="%s" title="%s">%s</button>'
@@ -218,6 +331,34 @@ main{max-width:1180px}
 #intro strong{color:var(--fg);font-weight:600}
 @media (max-width:700px){.bsamples{display:none}}
 @media(min-width:1000px){#intro{max-width:1180px}}
+/* full-book deep dives: standalone briefs, keeper card visuals, own toggle */
+.fbook{margin-bottom:1.5rem}
+.fbookhead{display:flex;align-items:center;gap:.6rem;margin:1.1rem 0 .1rem;cursor:pointer}
+.fbookhead .bmain{flex:1;min-width:0}
+.fbookhead .bchev{margin-left:auto;color:var(--muted);flex:none;transition:transform .15s}
+.fbook.collapsed .bchev{transform:rotate(-90deg)}
+.fbookbody{padding:.2rem 0 1rem}
+.fbook.collapsed .fbookbody{display:none}
+.fbsub{color:var(--amber);font-size:.95rem;margin:1.3rem 0 .4rem;font-weight:600}
+.amstep{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:.55rem .8rem;margin:.45rem 0}
+.amstep p{margin:.15rem 0 0}
+.amlab{color:var(--amber);font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
+.fbtheme{margin:.4rem 0}
+.fbtheme strong{color:var(--fg)}
+.twrap{overflow-x:auto}
+.fbtable{width:100%;border-collapse:collapse;font-size:.84rem;margin:.4rem 0}
+.fbtable th{text-align:left;color:var(--amber);font-weight:600;padding:.4rem .55rem;border-bottom:1px solid var(--border);white-space:nowrap}
+.fbtable td{padding:.4rem .55rem;border-bottom:1px solid var(--border);vertical-align:top}
+.fbtable td:first-child{white-space:nowrap}
+.fbideas{margin:.3rem 0 .6rem;padding-left:1.3rem}
+.fbideas li{margin:.25rem 0}
+.fbassess dt{color:var(--amber);font-weight:600;font-size:.85rem;margin-top:.5rem}
+.fbassess dd{margin:.15rem 0 .3rem;color:var(--muted)}
+.fbchaps dt{font-weight:600;font-size:.85rem;margin-top:.45rem}
+.fbchaps dd{margin:.1rem 0 .3rem;color:var(--muted)}
+.fbmeta{color:var(--muted);font-size:.78rem;margin:.4rem 0 0}
+.cardhead .fbnum{color:var(--amber);font-size:.85rem;flex:none;min-width:2.2rem}
+@media(min-width:1000px){.fbook:not(.collapsed) .fbcards{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;align-items:start}.fbook:not(.collapsed) .fbcards .card{margin:0}}
 """
 
 JS = r"""
@@ -226,7 +367,7 @@ var q=document.getElementById('q'),gs=document.getElementById('fgenre'),
     bs=document.getElementById('fbook'),ts=document.getElementById('ftype'),
     count=document.getElementById('count'),nores=document.getElementById('noresults'),
     toastEl=document.getElementById('toast'),
-    total=document.querySelectorAll('.card').length,
+    total=document.querySelectorAll('.card:not([data-fb])').length,
     manual={},toastT=null;
 function toast(msg){
   toastEl.textContent=msg;toastEl.classList.add('show');
@@ -242,7 +383,7 @@ function apply(fromInput){
   var term=q.value.trim().toLowerCase(),
       gv=gs.value,bv=bs.value,tv=ts.value,
       filtering=!!(term||gv||bv||tv);
-  document.querySelectorAll('.card').forEach(function(c){
+  document.querySelectorAll('.card:not([data-fb])').forEach(function(c){
     var ok=true;
     if(term&&c.dataset.search.indexOf(term)<0)ok=false;
     if(gv&&c.dataset.genre!==gv)ok=false;
@@ -261,7 +402,15 @@ function apply(fromInput){
       if(hd)hd.setAttribute('aria-expanded',b.classList.contains('collapsed')?'false':'true');
     }
   });
+  /* full-book deep dives stand alone: the keeper hunt box hides the shelf */
+  document.querySelectorAll('.fbook').forEach(function(b){
+    b.classList.toggle('hidden',filtering);
+  });
   document.querySelectorAll('.genre').forEach(function(g){
+    if(g.classList.contains('fbshelf')){
+      g.classList.toggle('hidden',filtering||!document.querySelector('.fbook:not(.hidden)'));
+      return;
+    }
     var show=false,next=g.nextElementSibling;
     while(next&&!next.classList.contains('genre')){
       if(next.classList.contains('book')&&!next.classList.contains('hidden')){show=true;break;}
@@ -272,7 +421,7 @@ function apply(fromInput){
   document.querySelectorAll('#jumpchips button').forEach(function(ch){
     ch.classList.toggle('hidden',!!gv&&ch.dataset.genre!==gv);
   });
-  var vis=document.querySelectorAll('.card:not(.hidden)').length;
+  var vis=document.querySelectorAll('.card:not([data-fb]):not(.hidden)').length;
   count.textContent='showing '+vis+' of '+total;
   nores.hidden=vis>0;
 }
@@ -283,7 +432,7 @@ function apply(fromInput){
 function toggleCard(card,open){
   var will=open===undefined?!card.classList.contains('open'):open;
   card.classList.toggle('open',will);
-  if(will&&history.replaceState){try{history.replaceState(null,'','#c'+card.dataset.n);}catch(_){}}
+  if(will&&card.dataset.n&&history.replaceState){try{history.replaceState(null,'','#c'+card.dataset.n);}catch(_){}}
 }
 document.querySelectorAll('.cardhead').forEach(function(h){
   h.addEventListener('click',function(){toggleCard(h.parentElement);});
@@ -291,6 +440,14 @@ document.querySelectorAll('.cardhead').forEach(function(h){
 });
 document.querySelectorAll('.bookhead').forEach(function(h){
   function t(){var b=h.parentElement;setBook(b,b.classList.contains('collapsed'));}
+  h.addEventListener('click',t);
+  h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t();}});
+});
+/* full-book shelf: own toggle, outside keeper expand/collapse-all */
+document.querySelectorAll('.fbookhead').forEach(function(h){
+  function t(){var b=h.parentElement,exp=b.classList.contains('collapsed');
+    b.classList.toggle('collapsed',!exp);
+    h.setAttribute('aria-expanded',exp?'true':'false');}
   h.addEventListener('click',t);
   h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t();}});
 });
@@ -345,7 +502,7 @@ if(field&&window.FLOATERS){
     : [[5,6],[70,5],[3,36],[72,38],[8,68],[66,70]];
   var pool=window.FLOATERS.slice(),picks=[],K=Math.min(SLOTS.length,pool.length),i;
   for(i=0;i<K;i++){picks.push(pool.splice(Math.floor(Math.random()*pool.length),1)[0]);}
-  var cards=document.querySelectorAll('.card');
+  var cards=document.querySelectorAll('.card:not([data-fb])');
   var si,sj,st;
   for(si=SLOTS.length-1;si>0;si--){sj=Math.floor(Math.random()*(si+1));st=SLOTS[si];SLOTS[si]=SLOTS[sj];SLOTS[sj]=st;}
   picks.forEach(function(p,idx){
@@ -384,6 +541,13 @@ if(!openHash()&&firstBook){
 
 """
 
+fb_intro = ""
+fb_footer = ""
+if fbooks:
+    fb_intro = ("<p><strong>Full Books:</strong> below the shelves \u2014 standalone deep-dives "
+                "(the argument, turning points, every card) for books too rich to shred into keepers.</p>")
+    fb_footer = " &middot; %d full-book brief%s" % (len(fbooks), "" if len(fbooks) == 1 else "s")
+
 page = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -405,6 +569,7 @@ page = """<!DOCTYPE html>
 <section id="intro">
 <p><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every keeper is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>
 <p><strong>How to hunt:</strong> tap a book to open its keepers, tap a card for the full steal, copy anything you want. Search hunts titles, steals, and use-whens all at once.</p>
+%s
 </section>
 <div class="controls"><div class="inner">
 <input type="search" id="q" placeholder="Search titles, steals, use-when&hellip;" aria-label="Search cards"/>
@@ -423,13 +588,13 @@ page = """<!DOCTYPE html>
 %s
 <p class="noresults" id="noresults" hidden>No keepers match — try a mechanism word (interlock, delay, patronage).</p>
 </main>
-<footer>Last curated September 22, 2026 &middot; %d books &middot; %d keepers &middot; ripped with the Idea Ripper pipeline</footer>
+<footer>Last curated September 22, 2026 &middot; %d books &middot; %d keepers%s &middot; ripped with the Idea Ripper pipeline</footer>
 <script>var FLOATERS=%s;</script>
 <script>%s</script>
 <div id="toast" role="status"></div>
 </body>
-</html>""" % (CSS, n, len(books), curated, genre_opts, book_opts, type_opts, chips,
-              "\n\n".join(sections), len(books), n, floaters_json, JS)
+</html>""" % (CSS, n, len(books), curated, fb_intro, genre_opts, book_opts, type_opts, chips,
+              "\n\n".join(sections), len(books), n, fb_footer, floaters_json, JS)
 
 open(os.path.join(BASE, "index.html"), "w", encoding="utf-8").write(page)
 print("built: %d cards, %d books, %d genres" % (n, len(books), len(genre_order)))
