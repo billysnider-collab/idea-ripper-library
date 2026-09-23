@@ -1,5 +1,5 @@
 {
- "curated": "2026-09-22",
+ "curated": "2026-09-23",
  "genre_order": [
   "Nonfiction",
   "Science Fiction",
@@ -321,6 +321,11 @@
    "book": "Analysis of Sleep, Mood, Behavior, and Suicide Risk of Sailors on the USS Ashland — Eric M. Myers",
    "genre": "Thesis",
    "bookline": "Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/analysisofsleepm1094566115"
+  },
+  {
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "bookline": "Miquel Noguer i Alonso, 2026 (Packt) — A hands-on guide to LLM architectures, agents, RAG, governance, and evaluation in finance.",
+   "genre": "Nonfiction"
   }
  ],
  "cards": [
@@ -2235,6 +2240,129 @@
    "steal": "Sailors on the USS Ashland (LSD-48) averaged 6.33 hours of sleep per night (SD 1.14) — significantly below the recommended 7+ hours — and a comparison against 37 other Navy platforms found Ashland sailors were not significantly different from the rest of the fleet: all 38 groups together averaged 6.35 hours, with only 13% of the studies finding sailors averaging more than 7 hours; the study links the sleep shortfall to mood, behavior, and suicide risk, motivated by \"recent collisions and multiple suicides\" as the cost of failure.",
    "why": "The striking finding isn't that one ship's sailors are tired — it's that the whole fleet is tired, and tiredness is quantified against collisions and suicides; chronic sleep deprivation is a fleet-wide condition with documented lethal stakes.",
    "uw": "When every unit measures below the bar, it's not a unit problem — it's a system problem; the Ashland study makes the case that fleet sleep is a structural readiness issue, not a discipline one."
+  },
+  {
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "title": "Prediction is not agency",
+   "steal": "Prediction and agency should not be conflated. A credit model can estimate the probability that a borrower breaches a covenant. An agentic credit workflow must additionally determine which documents are authoritative, retrieve the relevant covenant language, reconcile contradictory data, simulate possible interventions, check approval limits, request human authorization when required, execute an admissible action, and preserve an audit trail. Increasing the parameter count of the predictor does not, by itself, supply persistent memory, permissions, transaction semantics, or institutional accountability.",
+   "why": "A bigger model buys none of the institutional machinery an agent needs — memory, permissions, transaction semantics, accountability. So 'we upgraded the model' is never an answer to 'who authorized this action,' and agents must be judged on the actions they induce, not the accuracy of their outputs.",
+   "uw": "Use when a team proposes a stronger model as the fix for an agent that lacks memory, permissioning, or an audit trail.",
+   "type": "argument",
+   "intents": [
+    "change someone's mind",
+    "notice what others miss"
+   ],
+   "source_locator": "Ch. 14, §14.1",
+   "related_ids": [
+    241
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "title": "Grow the action set on evidence, not fluency",
+   "steal": "The technically and institutionally mature objective is bounded autonomy : the agent can plan, retrieve, calculate, and propose actions inside a formally defined action set, while external shields enforce limits and humans retain authority over material decisions.",
+   "why": "Fluency is the trait everyone watches improve, but it says nothing about whether an agent should be allowed to move money. The book's growth rule: the action set expands only after evidence of reliability, never because the model got more fluent — permissions follow demonstrated trustworthiness, not convincing prose.",
+   "uw": "Use when deciding what an AI agent is permitted to do in production: which actions stay read-only, which need review gates, which are off-limits.",
+   "type": "concept",
+   "intents": [
+    "change someone's mind",
+    "a system feels stuck"
+   ],
+   "source_locator": "Ch. 14, §14.9",
+   "related_ids": [
+    240
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "title": "Audit the action, not the rhetoric",
+   "steal": "This principle prevents a common category error. A model that says it will respect a mandate has not yet respected the mandate. A model that produces a prudent explanation has not yet produced an admissible order. A model that refuses a risky request in a benchmark has not thereby proved that a future tool call cannot violate an entitlement or capital limit. The audit object is the action process together with the evidence and controls surrounding it, not the rhetorical quality of the model’s answer.",
+   "why": "Benchmarks test words; real violations happen in tool calls, entitlements, and capital limits. A fluent refusal in a demo proves nothing about the next tool call, so the audit target has to be the action pipeline and its controls — never the explanation quality.",
+   "uw": "Use when a vendor demo, benchmark score, or red-team chat log is being offered as proof that an agent is safe to deploy.",
+   "type": "passage",
+   "intents": [
+    "change someone's mind",
+    "notice what others miss"
+   ],
+   "source_locator": "Ch. 14, §14.2.2",
+   "related_ids": [
+    241
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "title": "Numbers need a citation, not a story",
+   "steal": "Production systems should separate language generation from numerical computation. Let the LLM propose hypotheses, retrieve context, or explain model outputs, but let audited numerical code compute returns, volatilities, correlations, drawdowns, and portfolio weights. A forecast report should include confidence intervals, calibration diagnostics, and explicit uncertainty. If the model cannot cite the data and computation behind a number, the number should not enter the investment process.",
+   "why": "Fluency around a number feels like evidence for it, but small numerical errors drive large position changes. The fix is architectural — audited code computes, the model explains — not a better prompt.",
+   "uw": "Use when an LLM-generated forecast, ratio, or expected return is about to enter a report, model, or trade.",
+   "type": "passage",
+   "intents": [
+    "make an idea concrete",
+    "a better question"
+   ],
+   "source_locator": "Ch. 13, §13.4.10",
+   "related_ids": [
+    246
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "title": "Collusion without a conversation",
+   "steal": "Agents optimized independently can learn strategies that soften competition or align behavior through the environment. In finance, analogous mechanisms could appear in pricing, liquidity provision, collateral terms, or execution. Monitoring must therefore examine outcome patterns and incentives, not only source-code similarity or explicit messages.",
+   "why": "Coordination needs neither communication nor shared code — independent learners can discover mutually accommodating behavior through the market itself. That makes code audits and chat-log reviews structurally blind to the risk; only outcome patterns reveal it.",
+   "uw": "Use when assessing competition or systemic risk from multiple independently deployed trading or pricing agents.",
+   "type": "mechanism",
+   "intents": [
+    "notice what others miss",
+    "a strange example"
+   ],
+   "source_locator": "Ch. 14, §14.4.2",
+   "related_ids": [],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "title": "Governance makes good uses repeatable",
+   "steal": "The central purpose of governance is not to prevent the use of LLMs. It is to make valuable uses repeatable while keeping failure within tolerable bounds.",
+   "why": "This reframes governance from veto to engineering discipline: repeatability of the wins, boundedness of the losses. It is the definition you hand to a business line that reads every control proposal as innovation-blocking.",
+   "uw": "Use when a governance or model-risk proposal is being dismissed as bureaucracy that slows the business down.",
+   "type": "definition",
+   "intents": [
+    "change someone's mind"
+   ],
+   "source_locator": "Ch. 11, §11.1",
+   "related_ids": [
+    242
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
+  },
+  {
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "title": "Freeze everything at the forecast origin",
+   "steal": "A valid evaluation must freeze not only the price history but also the prompt, retrieval store, tools, memory, model version, and researcher workflow at each forecast origin.",
+   "why": "Backtests leak through channels most quants never freeze: the prompt, the retrieval index, the agent's memory, even the researcher's own iteration over prompt variants. Freezing prices alone leaves the impressive-but-invalid result intact.",
+   "uw": "Use when reviewing or designing a backtest of an LLM-based forecasting or trading system.",
+   "type": "mechanism",
+   "intents": [
+    "make an idea concrete",
+    "a better question"
+   ],
+   "source_locator": "Ch. 13, §13.8",
+   "related_ids": [
+    243
+   ],
+   "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
+   "ripped_at": "2026-09-23"
   }
  ]
 }
