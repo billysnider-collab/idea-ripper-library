@@ -17,7 +17,6 @@ BOOKS_DIR = os.path.join(HERE, "books")
 # (slug, title, author, genre) — the public, graded set
 BOOKS = [
     ("a-marriage-at-sea-sophie-elmhirst", "A Marriage at Sea", "Sophie Elmhirst", "Memoir & Biography"),
-    ("all-about-love-bell-hooks", "All About Love", "bell hooks", "Self-Help & Psychology"),
     ("cancel-me-if-you-can-dave-portnoy", "Cancel Me If You Can", "Dave Portnoy", "Memoir & Biography"),
     ("cool-machine-colson-whitehead", "Cool Machine", "Colson Whitehead", "Sci-Fi & Fantasy"),
     ("dogs-boys-and-other-things-ive-cried-about-isabel-klee", "Dogs, Boys, and Other Things I've Cried About", "Isabel Klee", "Memoir & Biography"),
@@ -29,8 +28,6 @@ BOOKS = [
     ("regime-change-maggie-haberman-and-jonathan-swan", "Regime Change", "Maggie Haberman and Jonathan Swan", "History & Politics"),
     ("simultaneous-eric-heisserer", "Simultaneous", "Eric Heisserer", "Sci-Fi & Fantasy"),
     ("strangers-belle-burden", "Strangers", "Belle Burden", "Memoir & Biography"),
-    ("the-anxious-generation-jonathan-haidt", "The Anxious Generation", "Jonathan Haidt", "Parenting & Family"),
-    ("the-body-keeps-the-score", "The Body Keeps the Score", "Bessel van der Kolk", "Self-Help & Psychology"),
     ("the-collected-stories-of-arthur-c-clarke", "The Collected Stories of Arthur C. Clarke", "Arthur C. Clarke", "Sci-Fi & Fantasy"),
     ("the-day-after-brian-tyler-cohen", "The Day After", "Brian Tyler Cohen", "History & Politics"),
     ("tilt-emma-pattee", "Tilt", "Emma Pattee", "Sci-Fi & Fantasy"),
