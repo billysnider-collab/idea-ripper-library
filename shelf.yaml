@@ -768,6 +768,14 @@ books:
   - book
   - genre
   - bookline
+- key: the-book-of-the-new-sun-gene-wolfe
+  genre: Science Fiction
+  bookline: Severian the torturer swears he never forgets — a detective game for catching
+    what he accidentally tells you.
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1187,3 +1195,12 @@ card_order:
 - 416
 - 417
 - 418
+- 419
+- 420
+- 421
+- 422
+- 423
+- 424
+- 425
+- 426
+- 427
