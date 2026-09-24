@@ -52,15 +52,17 @@ ghue = {g: int(i * 360 / len(genre_order)) for i, g in enumerate(genre_order)}
 types = sorted({c["type"] for c in cards})
 n = len(cards)
 
-# render order (genre -> book [newest first] -> card); stamp global card numbers 1..N
+# P0 freeze (2026-09-24): card identity is the permanent id stored in cards.json,
+# NOT display order. This walk only sets render order. Never derive numbers from position.
 _ordered = []
 for _g in genre_order:
     for _b in books_in_genre(_g):
         for _c in cards:
             if _c["book"] == _b["book"]:
                 _ordered.append(_c)
-for _i, _c in enumerate(_ordered):
-    _c["_n"] = _i + 1
+assert len(_ordered) == len(cards), "render walk missed cards"
+_ids = [c["id"] for c in cards]
+assert len(_ids) == len(set(_ids)) == len(cards), "card ids must be unique permanent ints"
 
 def book_block(b):
     gh = ghue[b["genre"]]
@@ -81,7 +83,7 @@ def book_block(b):
     parts.append('<div class="cards">')
     thesis_open = b["genre"] == "Thesis"  # one book = one card: skip the second click
     for c in bcards:
-        n_ = c["_n"]
+        n_ = c["id"]  # permanent id, frozen 2026-09-24; display order never renumbers
         search = " ".join([c["title"], c["steal"], c["why"], c["uw"]]).lower()
         pv = c["steal"]
         if len(pv) > 90:
