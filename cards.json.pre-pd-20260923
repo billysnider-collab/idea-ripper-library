@@ -446,26 +446,6 @@
    "book": "Tragedy and Hope — Carroll Quigley",
    "genre": "Nonfiction",
    "bookline": "Grand-strategy history — Quigley's 1966 classic on Western civilization's cycles, financial capitalism, the Anglo-American network, and the shape of the twentieth century."
-  },
-  {
-   "book": "The Prince — Niccolò Machiavelli",
-   "bookline": "Power mechanics — Machiavelli's 1532 classic on how principalities are won, held, and lost: virtue, fortune, and the economy of cruelty.",
-   "genre": "Nonfiction"
-  },
-  {
-   "book": "Meditations — Marcus Aurelius",
-   "bookline": "Stoic practice — the Roman emperor's private notebook: perception, impermanence, duty, and the inner citadel.",
-   "genre": "Nonfiction"
-  },
-  {
-   "book": "Democracy in America — Alexis de Tocqueville",
-   "bookline": "Democratic character — Tocqueville's 1835-40 study of equality's effects: associations, the tyranny of the majority, and soft despotism.",
-   "genre": "Nonfiction"
-  },
-  {
-   "book": "Propaganda — Edward L. Bernays",
-   "bookline": "Manufacturing consent — Bernays's 1928 manual on the invisible government, group leaders, and the engineering of public opinion.",
-   "genre": "Nonfiction"
   }
  ],
  "cards": [
@@ -2378,7 +2358,7 @@
    ],
    "source_locator": "Ch. 14, §14.1",
    "related_ids": [
-    67
+    34
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2396,7 +2376,7 @@
    ],
    "source_locator": "Ch. 14, §14.9",
    "related_ids": [
-    66
+    33
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2414,7 +2394,7 @@
    ],
    "source_locator": "Ch. 14, §14.2.2",
    "related_ids": [
-    67
+    34
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2432,7 +2412,7 @@
    ],
    "source_locator": "Ch. 13, §13.4.10",
    "related_ids": [
-    72
+    39
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2465,7 +2445,7 @@
    ],
    "source_locator": "Ch. 11, §11.1",
    "related_ids": [
-    68
+    35
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2483,7 +2463,7 @@
    ],
    "source_locator": "Ch. 13, §13.8",
    "related_ids": [
-    69
+    36
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2501,7 +2481,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    74
+    41
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2519,7 +2499,7 @@
    "source_locator": "Ch. 11, §11.4",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    73
+    40
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2537,8 +2517,8 @@
    "source_locator": "Ch. 3, §3.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    72,
-    76
+    39,
+    43
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2556,8 +2536,8 @@
    "source_locator": "Ch. 4, §4.2",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    72,
-    75
+    39,
+    42
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2575,7 +2555,7 @@
    "source_locator": "Ch. 6, §6.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    71
+    38
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2593,7 +2573,7 @@
    "source_locator": "Ch. 8, §8.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    69
+    36
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2611,7 +2591,7 @@
    "source_locator": "Ch. 3, §3.7.5",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    71
+    38
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2629,7 +2609,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    69
+    36
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -3275,469 +3255,6 @@
    "book": "Tragedy and Hope — Carroll Quigley",
    "ripped_at": "2026-09-23",
    "related_ids": []
-  },
-  {
-   "book": "The Prince — Niccolò Machiavelli",
-   "title": "The naturalness of acquiring",
-   "type": "argument",
-   "steal": "The wish to acquire is in truth very natural and common, and men always do so when they can, and for this they will be praised not blamed; but when they cannot do so, yet wish to do so by any means, then there is folly and blame.",
-   "why": "Sets the book’s moral frame: expansion itself is natural and praiseworthy; only incompetent expansion is folly.",
-   "uw": "When someone moralizes ambition itself instead of how it is pursued.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter III — Concerning Mixed Principalities",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "The Prince — Niccolò Machiavelli",
-   "title": "The innovator’s enemies",
-   "type": "mechanism",
-   "steal": "And it ought to be remembered that there is nothing more difficult to take in hand, more perilous to conduct, or more uncertain in its success, than to take the lead in the introduction of a new order of things, because the innovator has for enemies all those who have done well under the old conditions, and lukewarm defenders in those who may do well under the new.",
-   "why": "The original statement of why reform is hard: the old order’s beneficiaries fight, the new order’s beneficiaries don’t believe yet.",
-   "uw": "When a reform or reorg stalls and you need the mechanism, not the morale speech.",
-   "intents": [
-    "notice what others miss",
-    "a system feels stuck"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter VI — Concerning New Principalities Which Are Acquired By One’s Own Arms And Ability",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "The Prince — Niccolò Machiavelli",
-   "title": "Severities, properly used",
-   "type": "mechanism",
-   "steal": "Those may be called properly used, if of evil it is possible to speak well, that are applied at one blow and are necessary to one’s security, and that are not persisted in afterwards unless they can be turned to the advantage of the subjects.",
-   "why": "The economy of cruelty: all necessary harm at one stroke, then benefits; the drip-feed of harm is what loses states.",
-   "uw": "When debating whether to rip the bandage off.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter VIII — Concerning Those Who Have Obtained A Principality By Wickedness",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "The Prince — Niccolò Machiavelli",
-   "title": "The real truth of the matter",
-   "type": "argument",
-   "steal": "But, it being my intention to write a thing which shall be useful to him who apprehends it, it appears to me more appropriate to follow up the real truth of the matter than the imagination of it; for many have pictured republics and principalities which in fact have never been known or seen, because how one lives is so far distant from how one ought to live, that he who neglects what is done for what ought to be done, sooner effects his ruin than his preservation",
-   "why": "The book’s method in one line: study what is done, not what ought to be done, because the distance between them ruins the virtuous.",
-   "uw": "When a plan is built on how people should behave.",
-   "intents": [
-    "a better question"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter XV — Concerning Things For Which Men, And Especially Princes, Are Praised Or Blamed",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "The Prince — Niccolò Machiavelli",
-   "title": "Feared, not loved",
-   "type": "mechanism",
-   "steal": "It may be answered that one should wish to be both, but, because it is difficult to unite them in one person, it is much safer to be feared than loved, when, of the two, either must be dispensed with. Because this is to be asserted in general of men, that they are ungrateful, fickle, false, cowardly, covetous, and as long as you succeed they are yours entirely; they will offer you their blood, property, life, and children, as is said above, when the need is far distant; but when it approaches they turn against you.",
-   "why": "Love is voluntary and fickle; fear is a bond you control. The cold logic of relying on other men’s promises.",
-   "uw": "When trust is being treated as a strategy.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter XVII — Concerning Cruelty And Clemency, And Whether It Is Better To Be Loved Than Feared",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "The Prince — Niccolò Machiavelli",
-   "title": "The fox and the lion",
-   "type": "mechanism",
-   "steal": "so it is necessary for a prince to know how to make use of both natures, and that one without the other is not durable. A prince, therefore, being compelled knowingly to adopt the beast, ought to choose the fox and the lion; because the lion cannot defend himself against snares and the fox cannot defend himself against wolves. Therefore, it is necessary to be a fox to discover the snares and a lion to terrify the wolves.",
-   "why": "Force without cunning walks into snares; cunning without force cannot hold what it takes. One without the other is not durable.",
-   "uw": "When someone is all-lawyer or all-muscle.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter XVIII — Concerning The Way In Which Princes Should Keep Faith",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "The Prince — Niccolò Machiavelli",
-   "title": "Judge by the result",
-   "type": "argument",
-   "steal": "Every one sees what you appear to be, few really know what you are, and those few dare not oppose themselves to the opinion of the many, who have the majesty of the state to defend them; and in the actions of all men, and especially of princes, which it is not prudent to challenge, one judges by the result.",
-   "why": "The many see the surface and the few who see through it dare not contradict the many — outcomes launder methods.",
-   "uw": "When a winner’s methods go unexamined.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter XVIII — Concerning The Way In Which Princes Should Keep Faith",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "The Prince — Niccolò Machiavelli",
-   "title": "Fortune favors the bold",
-   "type": "mechanism",
-   "steal": "For my part I consider that it is better to be adventurous than cautious, because fortune is a woman, and if you wish to keep her under it is necessary to beat and ill-use her; and it is seen that she allows herself to be mastered by the adventurous rather than by those who go to work more coldly.",
-   "why": "Fortune is changeful and men are steadfast in their ways; boldness is the only stance that can master chance.",
-   "uw": "When caution is being sold as prudence in a volatile moment.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter XXV — What Fortune Can Effect In Human Affairs, And How To Withstand Her",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Meditations — Marcus Aurelius",
-   "title": "The morning briefing",
-   "type": "passage",
-   "steal": "Betimes in the morning say to thyself, This day I shalt have to do with an idle curious man, with an unthankful man, a railer, a crafty, false, or an envious man; an unsociable uncharitable man.",
-   "why": "Pre-decide your response to difficult people before the day starts — the obstacle named in advance loses its ambush.",
-   "uw": "When you walk into a day of difficult people.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "related_ids": [],
-   "source_locator": "Book I, §XV",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Meditations — Marcus Aurelius",
-   "title": "The inner citadel",
-   "type": "concept",
-   "steal": "At what time soever thou wilt, it is in thy power to retire into thyself, and to be at rest, and free from all businesses. A man cannot any whither retire better than to his own soul; he especially who is beforehand provided of such things within, which whensoever he doth withdraw himself to look in, may presently afford unto him perfect ease and tranquillity.",
-   "why": "The one retreat no circumstance can take: tranquillity as an inward order, not a place.",
-   "uw": "When escape feels like the only option.",
-   "intents": [
-    "a better question"
-   ],
-   "related_ids": [],
-   "source_locator": "Book IV",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Meditations — Marcus Aurelius",
-   "title": "Get up — it is your work",
-   "type": "passage",
-   "steal": "In the morning when thou findest thyself unwilling to rise, consider with thyself presently, it is to go about a man's work that I am stirred up.",
-   "why": "Duty reframed as nature: you were made for the work, not the warm bed.",
-   "uw": "When the snooze button is winning the argument.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "related_ids": [],
-   "source_locator": "Book V, §I",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Meditations — Marcus Aurelius",
-   "title": "The soul takes the dye of its thoughts",
-   "type": "mechanism",
-   "steal": "Such as thy thoughts and ordinary cogitations are, such will thy mind be in time. For the soul doth as it were receive its tincture from the fancies, and imaginations. Dye it therefore and thoroughly soak it with the assiduity of these cogitations.",
-   "why": "Attention is the mechanism of character: soak the mind deliberately, or it soaks up whatever surrounds it.",
-   "uw": "When choosing what to feed your attention.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "related_ids": [],
-   "source_locator": "Book V, §XV",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Meditations — Marcus Aurelius",
-   "title": "The best revenge",
-   "type": "passage",
-   "steal": "The best kind of revenge is, not to become like unto them.",
-   "why": "Retaliation is assimilation — the only clean victory is refusing the opponent’s shape.",
-   "uw": "When revenge feels righteous.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "related_ids": [],
-   "source_locator": "Book VI, §V",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Meditations — Marcus Aurelius",
-   "title": "See things unadorned",
-   "type": "mechanism",
-   "steal": "This is the carcass of a fish; this of a bird; and this of a hog. And again more generally; This phalernum, this excellent highly commended wine, is but the bare juice of an ordinary grape. This purple robe, but sheep's hairs, dyed with the blood of a shellfish.",
-   "why": "The Stoic stripping exercise: name things by what they physically are and the added glamour falls off.",
-   "uw": "When luxury or status is doing your thinking for you.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "related_ids": [],
-   "source_locator": "Book VI, §XIII",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Meditations — Marcus Aurelius",
-   "title": "Use the impediment",
-   "type": "mechanism",
-   "steal": "So may every reasonable creature, what crosses and impediments soever it meets with in the course of this mortal life, it may use them as fit and proper objects, to the furtherance of whatsoever it intended and absolutely proposed unto itself as its natural end and happiness.",
-   "why": "The obstacle as raw material: whatever blocks the action can be made the object of the action.",
-   "uw": "When a setback looks like the end of the plan.",
-   "intents": [
-    "a system feels stuck"
-   ],
-   "related_ids": [],
-   "source_locator": "Book VIII",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Meditations — Marcus Aurelius",
-   "title": "Nobody can hinder the right act",
-   "type": "argument",
-   "steal": "there is nobody that can hinder thee, but that thou mayest always both do and speak those things which are agreeable to that nature, whereof thou art a part.",
-   "why": "The inner-freedom claim: no one can stop you from doing and speaking what accords with your nature.",
-   "uw": "When external pressure is the excuse.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "related_ids": [],
-   "source_locator": "Book II, §VI",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Democracy in America — Alexis de Tocqueville",
-   "title": "Equality, the providential fact",
-   "type": "argument",
-   "steal": "The gradual development of the equality of conditions is therefore a providential fact, and it possesses all the characteristics of a divine decree: it is universal, it is durable, it constantly eludes all human interference, and all events as well as all men contribute to its progress.",
-   "why": "The book’s generative claim: equality of conditions is a divine-decree-level force no generation can check.",
-   "uw": "When democratic trends are treated as reversible policy choices.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "related_ids": [],
-   "source_locator": "Introduction — Volume I",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Democracy in America — Alexis de Tocqueville",
-   "title": "The fundamental fact",
-   "type": "concept",
-   "steal": "The more I advanced in the study of American society, the more I perceived that the equality of conditions is the fundamental fact from which all others seem to be derived, and the central point at which all my observations constantly terminated.",
-   "why": "Tocqueville’s method in one line: find the single fact from which all others derive.",
-   "uw": "When drowning in symptoms and you need the root.",
-   "intents": [
-    "a better question"
-   ],
-   "related_ids": [],
-   "source_locator": "Introduction — Volume I",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Democracy in America — Alexis de Tocqueville",
-   "title": "Association, the mother science",
-   "type": "mechanism",
-   "steal": "In democratic countries the science of association is the mother of science; the progress of all the rest depends upon the progress it has made.",
-   "why": "In democracies the art of associating is the master skill on which civilization depends.",
-   "uw": "When collective action fails and the proposed fix is a hero.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "related_ids": [],
-   "source_locator": "Volume II — Of the Use Which the Americans Make of Public Associations in Civil Life",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Democracy in America — Alexis de Tocqueville",
-   "title": "Individualism, defined",
-   "type": "definition",
-   "steal": "Individualism is a mature and calm feeling, which disposes each member of the community to sever himself from the mass of his fellow-creatures; and to draw apart with his family and his friends; so that, after he has thus formed a little circle of his own, he willingly leaves society at large to itself.",
-   "why": "The distinction that runs the book: individualism is a calm error of judgment, egotism a blind passion. Tocqueville coined the word for the new disease.",
-   "uw": "When withdrawal gets mislabeled as selfishness.",
-   "intents": [
-    "a better question"
-   ],
-   "related_ids": [],
-   "source_locator": "Volume II — Of Individualism in Democratic Countries",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Democracy in America — Alexis de Tocqueville",
-   "title": "Association against the majority",
-   "type": "argument",
-   "steal": "At the present time the liberty of association is become a necessary guarantee against the tyranny of the majority.",
-   "why": "The institutional answer to majority tyranny: not rights on paper but the organized habit of combining.",
-   "uw": "When a majority starts closing ranks.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "related_ids": [],
-   "source_locator": "Volume I — Of the Principal Causes Which Tend to Maintain the Democratic Republic in the United States",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Democracy in America — Alexis de Tocqueville",
-   "title": "Soft despotism",
-   "type": "concept",
-   "steal": "Above this race of men stands an immense and tutelary power, which takes upon itself alone to secure their gratifications, and to watch over their fate. That power is absolute, minute, regular, provident, and mild. It would be like the authority of a parent, if, like that authority, its object was to prepare men for manhood; but it seeks on the contrary to keep them in perpetual childhood",
-   "why": "The famous prophecy: a mild, absolute, minute power that keeps men in perpetual childhood and spares them the trouble of living.",
-   "uw": "When comfort is being traded for agency.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "related_ids": [],
-   "source_locator": "Volume II — What Sort of Despotism Democratic Nations Have to Fear",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Democracy in America — Alexis de Tocqueville",
-   "title": "The apprenticeship of liberty",
-   "type": "argument",
-   "steal": "It cannot be repeated too often that nothing is more fertile in prodigies than the art of being free; but there is nothing more arduous than the apprenticeship of liberty.",
-   "why": "Freedom is fertile but its apprenticeship is arduous — despotism’s temporary prosperity is the trap.",
-   "uw": "When liberty looks like too much trouble.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "related_ids": [],
-   "source_locator": "Volume I",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Democracy in America — Alexis de Tocqueville",
-   "title": "The sad Americans",
-   "type": "passage",
-   "steal": "In America I saw the freest and most enlightened men, placed in the happiest circumstances which the world affords: it seemed to me as if a cloud habitually hung upon their brow, and I thought them serious and almost sad even in their pleasures.",
-   "why": "The paradox of prosperity: the freest men brooding over advantages they do not possess, feverishly pursuing welfare.",
-   "uw": "When success does not feel like it.",
-   "intents": [
-    "a strange example"
-   ],
-   "related_ids": [],
-   "source_locator": "Volume II — Why the Americans Are Often So Restless in the Midst of Their Prosperity",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Democracy in America — Alexis de Tocqueville",
-   "title": "The press, last bulwark",
-   "type": "argument",
-   "steal": "but that servitude cannot be complete if the press is free: the press is the chiefest democratic instrument of freedom.",
-   "why": "Parliaments and popular sovereignty can coexist with servitude; a free press cannot.",
-   "uw": "When press freedom is treated as one liberty among many.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "related_ids": [],
-   "source_locator": "Volume II — Of the Press in the United States",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Propaganda — Edward L. Bernays",
-   "title": "The invisible government",
-   "type": "argument",
-   "steal": "The conscious and intelligent manipulation of the organized habits and opinions of the masses is an important element in democratic society. Those who manipulate this unseen mechanism of society constitute an invisible government which is the true ruling power of our country. We are governed, our minds are molded, our tastes formed, our ideas suggested, largely by men we have never heard of.",
-   "why": "The book’s opening thesis: democracy is governed by unseen manipulators of mass habit — a structural feature, not a conspiracy.",
-   "uw": "When “who really decides?” is the question.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter I — Organizing Chaos",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Propaganda — Edward L. Bernays",
-   "title": "The executive arm",
-   "type": "definition",
-   "steal": "Propaganda is the executive arm of the invisible government.",
-   "why": "Propaganda named as the operating machinery of the invisible government — every social project runs on it.",
-   "uw": "When someone thinks propaganda is only a wartime word.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter I — Organizing Chaos",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Propaganda — Edward L. Bernays",
-   "title": "Rubber-stamp minds",
-   "type": "mechanism",
-   "steal": "But instead of a mind, universal literacy has given him rubber stamps, rubber stamps inked with advertising slogans, with editorials, with published scientific data, with the trivialities of the tabloids and the platitudes of history, but quite innocent of original thought. Each man’s rubber stamps are the duplicates of millions of others, so that when those millions are exposed to the same stimuli, all receive identical imprints.",
-   "why": "Literacy did not produce independent minds; it produced identical imprints from identical stimuli — the precondition of mass persuasion.",
-   "uw": "When everyone suddenly agrees.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter I — Organizing Chaos",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Propaganda — Edward L. Bernays",
-   "title": "The intelligent minorities",
-   "type": "argument",
-   "steal": "clearly it is the intelligent minorities which need to make use of propaganda continuously and systematically. In the active proselytizing minorities in whom selfish interests and public interests coincide lie the progress and development of America. Only through the active energy of the intelligent few can the public at large become aware of and act upon new ideas. Small groups of persons can, and do, make the rest of us think what they please about a given subject.",
-   "why": "Bernays’s open claim: progress comes from small groups making the rest think what they please; minorities use propaganda continuously.",
-   "uw": "When a fringe idea goes mainstream overnight.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter II — The New Propaganda",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Propaganda — Edward L. Bernays",
-   "title": "Reach the group leaders",
-   "type": "mechanism",
-   "steal": "To reach and persuade the group leaders who dictate the public’s thoughts and actions is likewise expensive. For this reason there is an increasing tendency to concentrate the functions of propaganda in the hands of the propaganda specialist.",
-   "why": "The targeting doctrine: persuade the leaders who dictate the public’s thoughts and the group follows — hence the propaganda specialist.",
-   "uw": "When planning how an idea actually spreads.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter III — The New Propagandists",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Propaganda — Edward L. Bernays",
-   "title": "The PR counsel, defined",
-   "type": "definition",
-   "steal": "The public relations counsel, then, is the agent who, working with modern media of communication and the group formations of society, brings an idea to the consciousness of the public.",
-   "why": "The job description of the new profession: bringing ideas to public consciousness via media and group formations.",
-   "uw": "When “PR” needs distinguishing from advertising.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter III — The New Propagandists",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Propaganda — Edward L. Bernays",
-   "title": "Induce our leaders to lead",
-   "type": "argument",
-   "steal": "The great political problem in our modern democracy is how to induce our leaders to lead. The dogma that the voice of the people is the voice of God tends to make elected persons the will-less servants of their constituents.",
-   "why": "The democratic paradox: the voice-of-God dogma makes elected men will-less servants, producing political sterility.",
-   "uw": "When leaders only follow polls.",
-   "intents": [
-    "a better question"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter VI — Propaganda and Political Leadership",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "book": "Propaganda — Edward L. Bernays",
-   "title": "Influence the leaders, sway the herd",
-   "type": "mechanism",
-   "steal": "If you can influence the leaders, either with or without their conscious coöperation, you automatically influence the group which they sway.",
-   "why": "Mass psychology works without the mass: man feels himself a herd member alone in his room, so moving the leader moves the group.",
-   "uw": "When a message needs scale without a crowd.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter IV — The Psychology of Public Relations",
-   "ripped_at": "2026-09-23"
   }
  ]
 }
