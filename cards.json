@@ -13,11 +13,6 @@
  ],
  "books": [
   {
-   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
-   "genre": "Nonfiction",
-   "bookline": "Companion to Wolfe's dying-Earth masterpiece — patterns, echoes, and unreliable memory."
-  },
-  {
    "book": "Shinto: The Ancient Religion of Japan — William George Aston",
    "genre": "Nonfiction",
    "bookline": "Japanese religion — Aston's 1921 classic on Shinto: nature-gods, ritual purity, myth, and the making of the Imperial cult."
@@ -1504,51 +1499,6 @@
    "why": "Selective deletion is a signature — what survives the purge is the tell.",
    "uw": "Use when selective deletion is itself the tell.",
    "id": 187
-  },
-  {
-   "title": "Three roads, three destinations",
-   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
-   "type": "question",
-   "steal": "Might it not be, she asked . . . , that instead of traveling, as has always been supposed, down three roads to the same destination, they are actually traveling toward three.",
-   "why": "The pilgrim fantasy of one ending is inverted: parallel paths diverge, so 'same destination' was the comforting lie.",
-   "uw": "Use when a story or strategy assumes convergence that is not earned.",
-   "id": 224
-  },
-  {
-   "title": "Perfect memory paradox or incest clue",
-   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
-   "type": "mechanism",
-   "steal": "This implies that Marie and Robert, previously identified as wife and husband, are involved in brother/sister incest, or it is another case of perfect memory paradox.",
-   "why": "Unreliable narration makes moral shock ambiguous — the text weaponizes memory as evidence that may be wrong.",
-   "uw": "Use when a reveal depends on whether the narrator's memory can be trusted.",
-   "id": 225
-  },
-  {
-   "title": "Sword and sacred gem as treasure pattern",
-   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
-   "type": "mechanism",
-   "steal": "Myth: That Severian has a “magic” sword and a sacred gem is a pattern similar to the Three Sacred Treasures of Japan (a sword, a mirror, and a jewel).",
-   "why": "Myth inventory (Japan's three treasures) is a reading tool: objects signal lineage, not loot.",
-   "uw": "Use when packing symbolic gear that should echo older myth sets.",
-   "id": 226
-  },
-  {
-   "title": "Scarlet pelerine as severity",
-   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
-   "type": "passage",
-   "steal": "In the Chinese legal system of the Tang dynasty a scarlet pelerine is a symbol of severity, which is fitting since the penalties involve torture and death.",
-   "why": "Costume is jurisprudence — color and cut announce the penalty regime before the verdict.",
-   "uw": "Use when wardrobe needs to carry legal threat.",
-   "id": 227
-  },
-  {
-   "title": "Healing the ear you wounded",
-   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
-   "type": "mechanism",
-   "steal": "Severian healing the soldier he had wounded (250) half-echoes when Jesus healed the ear of the soldier Peter had wounded (Luke 22:50-51), shortly after Judas identified Jesus.",
-   "why": "Gospel echo turns violence into a test of mercy under the same hand that cut — authorship of harm and repair.",
-   "uw": "Use when a character must undo damage they personally inflicted.",
-   "id": 228
   },
   {
    "title": "Grain fixes the price of a day's work",

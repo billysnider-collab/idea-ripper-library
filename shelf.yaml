@@ -10,14 +10,6 @@ genre_order:
 - Literary Fiction
 - Thesis
 books:
-- key: gene-wolfe-s-the-book-of-the-new-sun-a-chapter-guide-michael-andre-driussi
-  genre: Nonfiction
-  bookline: Companion to Wolfe's dying-Earth masterpiece — patterns, echoes, and unreliable
-    memory.
-  field_order:
-  - book
-  - genre
-  - bookline
 - key: shinto-the-ancient-religion-of-japan-william-george-aston
   genre: Nonfiction
   bookline: 'Japanese religion — Aston''s 1921 classic on Shinto: nature-gods, ritual
@@ -886,11 +878,6 @@ card_order:
 - 185
 - 186
 - 187
-- 224
-- 225
-- 226
-- 227
-- 228
 - 28
 - 29
 - 30
