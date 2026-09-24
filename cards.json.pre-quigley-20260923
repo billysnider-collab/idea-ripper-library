@@ -441,11 +441,6 @@
    "book": "A Validation of the Proposed Royal Australian Navy Standard Work Week and Naval Management Diary Using a Simulated Crew of an Armidale Class Patrol Boat — Jessica Groot (Lieutenant",
    "genre": "Thesis",
    "bookline": "Masters thesis — Royal Australian Navy), Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632239"
-  },
-  {
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "genre": "Nonfiction",
-   "bookline": "Grand-strategy history — Quigley's 1966 classic on Western civilization's cycles, financial capitalism, the Anglo-American network, and the shape of the twentieth century."
   }
  ],
  "cards": [
@@ -2358,7 +2353,7 @@
    ],
    "source_locator": "Ch. 14, §14.1",
    "related_ids": [
-    33
+    17
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2376,7 +2371,7 @@
    ],
    "source_locator": "Ch. 14, §14.9",
    "related_ids": [
-    32
+    16
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2394,7 +2389,7 @@
    ],
    "source_locator": "Ch. 14, §14.2.2",
    "related_ids": [
-    33
+    17
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2412,7 +2407,7 @@
    ],
    "source_locator": "Ch. 13, §13.4.10",
    "related_ids": [
-    38
+    22
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2445,7 +2440,7 @@
    ],
    "source_locator": "Ch. 11, §11.1",
    "related_ids": [
-    34
+    18
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2463,7 +2458,7 @@
    ],
    "source_locator": "Ch. 13, §13.8",
    "related_ids": [
-    35
+    19
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2481,7 +2476,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    40
+    24
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2499,7 +2494,7 @@
    "source_locator": "Ch. 11, §11.4",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    39
+    23
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2517,8 +2512,8 @@
    "source_locator": "Ch. 3, §3.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    38,
-    42
+    22,
+    26
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2536,8 +2531,8 @@
    "source_locator": "Ch. 4, §4.2",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    38,
-    41
+    22,
+    25
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2555,7 +2550,7 @@
    "source_locator": "Ch. 6, §6.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    37
+    21
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2573,7 +2568,7 @@
    "source_locator": "Ch. 8, §8.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    35
+    19
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2591,7 +2586,7 @@
    "source_locator": "Ch. 3, §3.7.5",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    37
+    21
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2609,7 +2604,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    35
+    19
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -3006,241 +3001,6 @@
    "steal": "Simulating a 21-member Armidale-class patrol boat crew in the Navy Management Diary over three weeks, the proposed RAN Navy Standard Work Week model breaks down in practice — the maintenance category most often exceeded its allocated hours, which the thesis says may warrant platform- and occupation-specific customization; and the NMD's fatigue tool versus the SAFTE model (FAST software) produced statistically significant differences in predicted risk, so the methodology should be replicated on a larger sample with real operational performance observations before comparing the two.",
    "why": "A work-week policy that looks fine on a spreadsheet and fails at the maintenance line is how a navy discovers fatigue in the field instead of on paper — the thesis is an argument that crew-endurance models must be validated against operations, not against each other.",
    "uw": "When two validated-looking models disagree significantly, the answer isn't to pick one — it's to test both against reality."
-  },
-  {
-   "title": "The West kept reforming instead of dying",
-   "type": "argument",
-   "steal": "Western Civilization, on the contrary, did not pass from the Age of Crisis to the Age of Universal Empire, but instead was able to reform itself and entered upon a new period of expansion. Moreover, Western Civilization did this not once, but several times. It was this ability to reform or reorganize itself again and again which made Western Civilization the dominant factor in the world at the beginning of the twentieth century.",
-   "why": "Quigley's whole theory pivots here: every other civilization went expansion, crisis, universal empire, decay — the West broke the cycle by reorganizing itself, repeatedly, instead of consolidating into one empire.",
-   "uw": "When someone declares a civilization finished because its growth slowed — ask whether it is dying or reorganizing.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "source_locator": "Chapter 1 — Cultural Evolution in Civilizations",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "The four marks of an Age of Conflict",
-   "type": "concept",
-   "steal": "(a) it is a period of declining rate of expansion; (b) it is a period of growing tensions and class conflicts; (c) it is a period of increasingly frequent and increasingly violent imperialist wars; and (d) it is a period of growing irrationality, pessimism, superstitions, and otherworldliness.",
-   "why": "A diagnostic checklist for civilizational stall: the economics slow first, then the politics turn violent, then the culture turns superstitious — in that order, core before periphery.",
-   "uw": "When growth stalls and the culture war gets weirder at the same time — check the sequence, not just the symptoms.",
-   "intents": [
-    "notice what others miss",
-    "make an idea concrete"
-   ],
-   "source_locator": "Chapter 1 — Cultural Evolution in Civilizations",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "Expansion petrifies into vested interests",
-   "type": "mechanism",
-   "steal": "In time, this system of commercial capitalism became petrified into a structure of vested interests in which profits were sought by imposing restrictions on the production or interchange of goods rather than by encouraging these activities.",
-   "why": "The engine of every Quigley cycle: the organization that created the expansion hardens into the thing blocking the next one — profit shifts from making more to guarding what exists.",
-   "uw": "When an industry's profits come from blocking entrants rather than serving customers — you are looking at petrification, not competition.",
-   "intents": [
-    "see the mechanism",
-    "a system feels stuck"
-   ],
-   "source_locator": "Chapter 4 — The Pattern of Change",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "Four capitalists, four profit sources",
-   "type": "definition",
-   "steal": "The commercial capitalist sought profits from the exchange of goods; the industrial capitalist sought profits from the manufacture of goods; the financial capitalist sought profits from the manipulation of claims on money; and the monopoly capitalist sought profits from manipulation of the market to make the market price and the amount sold such that his profits would be maximized.",
-   "why": "Quigley's cleanest taxonomy: each stage of capitalism is defined by where profit is extracted — and each stage's profit source becomes the next stage's target for capture.",
-   "uw": "When classifying a business or an era — ask where the profit actually comes from, not what the brochure says.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "source_locator": "Chapter 4 — The Pattern of Change",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "The financial capitalists at their worst",
-   "type": "contradiction",
-   "steal": "The outbreak of war in 1914 showed these financial capitalists at their worst, narrow in outlook, ignorant, and selfish, while proclaiming, as usual, their total devotion to the social good.",
-   "why": "Quigley, the insider-sympathizer, delivers his harshest verdict on the bankers at the exact moment their system met reality — expertise as performance, self-interest as public service.",
-   "uw": "When the experts' models say a crisis is impossible and it happens anyway — remember who the models served.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "source_locator": "Chapter 19 — Reflation and Inflation, 1897-1925",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "Wars are not fought with gold",
-   "type": "contradiction",
-   "steal": "Wars, as events have proved since, are not fought with gold or even with money, but by the proper organization of real resources.",
-   "why": "The bankers' 1914 prediction — that the war must end in months for lack of gold — exposed the core fallacy: money is the scoreboard, organization is the game.",
-   "uw": "When finance people explain why something cannot be done — check whether they are describing money or reality.",
-   "intents": [
-    "change someone's mind",
-    "a better question"
-   ],
-   "source_locator": "Chapter 19 — Reflation and Inflation, 1897-1925",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "Four ways to pay for a war",
-   "type": "concept",
-   "steal": "a. Taxation gives no inflation and no debt. b. Fiat money gives inflation and no debt. c. Bank credit gives inflation and debt. d. Sales of bonds give no inflation but give debt.",
-   "why": "Sixteen words that decode a century of war finance: every government's funding mix is a choice about who pays — present taxpayers, savers, or the unborn.",
-   "uw": "When a government announces how it will fund a crisis — run it through the four cells and see who is really paying.",
-   "intents": [
-    "make an idea concrete",
-    "see the mechanism"
-   ],
-   "source_locator": "Chapter 19 — Reflation and Inflation, 1897-1925",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "A world system of financial control in private hands",
-   "type": "mechanism",
-   "steal": "the powers of financial capitalism had another far-reaching aim, nothing less than to create a world system of financial control in private hands able to dominate the political system of each country and the economy of the world as a whole. This system was to be controlled in a feudalist fashion by the central banks of the world acting in concert, by secret agreements arrived at in frequent private meetings and conferences.",
-   "why": "Quigley's most-quoted claim, stated as the bankers' own program: not conspiracy theory but institutional design — private, feudal, coordinated through central banks, apexed at the BIS in Basle.",
-   "uw": "When central bankers meet in Basle and markets move on the minutes — this is the architecture Quigley described.",
-   "intents": [
-    "see the mechanism",
-    "notice what others miss"
-   ],
-   "source_locator": "Chapter 20 — The Period of Stabilization, 1922-1930",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "How central banks dominate governments",
-   "type": "mechanism",
-   "steal": "Each central bank, in the hands of men like Montagu Norman of the Bank of England, Benjamin Strong of the New York Federal Reserve Bank, Charles Rist of the Bank of France, and Hjalmar Schacht of the Reichsbank, sought to dominate its government by its ability to control Treasury loans, to manipulate foreign exchanges, to influence the level of economic activity in the country, and to influence cooperative politicians by subsequent economic rewards in the business world.",
-   "why": "The mechanism, named with names: dominance through Treasury loans, exchange manipulation, the business cycle itself — and the revolving door as the enforcement arm.",
-   "uw": "When a central banker becomes a political oracle — ask which of the four levers is doing the talking.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "source_locator": "Chapter 20 — The Period of Stabilization, 1922-1930",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "The BIS: a private bank owned by central banks",
-   "type": "evidence",
-   "steal": "The B.I.S. as a private institution was owned by the seven chief central banks and was operated by the heads of these, who together formed its governing board. They made agreements on all the major financial problems of the world, as well as on many of the economic and political problems, especially in reference to loans, payments, and the economic future of the chief areas of the globe.",
-   "why": "The apex of Quigley's system in one paragraph: a private bank, owned by central banks that were themselves private corporations, settling the world's money by bookkeeping instead of shipping gold.",
-   "uw": "When someone says central banks are public institutions — the BIS charter says otherwise.",
-   "intents": [
-    "notice what others miss",
-    "a strange example"
-   ],
-   "source_locator": "Chapter 20 — The Period of Stabilization, 1922-1930",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "Rhodes's aim: federate the English-speaking peoples",
-   "type": "argument",
-   "steal": "These purposes centered on his desire to federate the English-speaking peoples and to bring all the habitable portions of the world under their control. For this purpose Rhodes left part of his great fortune to found the Rhodes Scholarships at Oxford in order to spread the English ruling class tradition throughout the English-speaking world as Ruskin had wanted.",
-   "why": "The motive behind the network, in Quigley's telling: the Rhodes Scholarships were not philanthropy but a personnel system — training an imperial ruling class under the cover of education.",
-   "uw": "When an elite fellowship claims to be about merit — ask what ruling tradition it was built to spread.",
-   "intents": [
-    "change someone's mind",
-    "notice what others miss"
-   ],
-   "source_locator": "Chapter 9 — The British Imperial Crisis",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "The secret society of February 5, 1891",
-   "type": "evidence",
-   "steal": "This association was formally established on February 5, 1891, when Rhodes and Stead organized a secret society of which Rhodes had been dreaming for sixteen years. In this secret society Rhodes was to be leader; Stead, Brett (Lord Esher), and Milner were to form an executive committee; Arthur (Lord) Balfour, (Sir) Harry Johnston, Lord Rothschild, Albert (Lord) Grey, and others were listed as potential members of a \"Circle of Initiates\"; while there was to be an outer circle known as the \"Association of Helpers\" (later organized by Milner as the Round Table organization).",
-   "why": "Quigley's documentary core for the network claim: a dated founding, a named executive committee, a Circle of Initiates, and an outer circle that became the Round Table — the organizational chart of the Anglo-American establishment.",
-   "uw": "When tracing how an idea becomes policy across decades — look for the personnel network, not just the institutions.",
-   "intents": [
-    "notice what others miss",
-    "a strange example"
-   ],
-   "source_locator": "Chapter 9 — The British Imperial Crisis",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "Five outlooks, from Enlightenment to Inclusive Diversity",
-   "type": "concept",
-   "steal": "Over the past two centuries, there have been five such stages: the Enlightenment in 1730-1790, the Romantic Movement in 1790-1850, the Age of Scientific Materialism in 1850-1895, the Period of Irrational Activism of 1895-1945, and our new Age of Inclusive Diversity since 1945.",
-   "why": "Quigley's cultural periodization: the twentieth century's new outlook is not a doctrine but a condition — diversity as the operating system, replacing the materialist certainties that ended in 1945.",
-   "uw": "When a debate feels like two centuries talking past each other — check which outlook each side inhabits.",
-   "intents": [
-    "make an idea concrete",
-    "a better question"
-   ],
-   "source_locator": "Chapter 60 — Rationalization and Science",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "The twentieth century began in 1950",
-   "type": "contradiction",
-   "steal": "The time covered by this book seems to this historian to fall into three periods: the nineteenth century from about 1814 to about 1895; the twentieth century, which did not begin until after World War II, perhaps as late as 1950; and a long period of transition from 1895 to 1950.",
-   "why": "Quigley's dating refuses the calendar: the 'twentieth century' is not 1900-1999 but the postwar order — and 1895-1950 was a 55-year transition, one of the most awful periods in all human history.",
-   "uw": "When periodizing any era — date it by the system change, not the round number.",
-   "intents": [
-    "change someone's mind",
-    "a better question"
-   ],
-   "source_locator": "Chapter 77 — Conclusion",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "War and depression are man-made, and needless",
-   "type": "argument",
-   "steal": "The hope of the twentieth century rests on its recognition that war and depression are man-made, and needless.",
-   "why": "The entire 1,300-page tragedy compressed into the hope: if the catastrophes were made by human choices, they can be unmade by human choices — the book's title in one sentence.",
-   "uw": "When catastrophe is framed as inevitable — ask who made it, and who benefits from the framing.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "source_locator": "Chapter 77 — Conclusion",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
-  },
-  {
-   "title": "The nineteenth century's epitaph",
-   "type": "passage",
-   "steal": "the nineteenth century was, however hopeful in its general processes, a period of materialism, selfishness, false values, hypocrisy, and secret vices.",
-   "why": "Quigley refuses nostalgia for the pre-1914 world: the horrors of 1914-1945 did not come from nowhere — they were the nineteenth century's underlying evils emerging 'in all their nakedness.'",
-   "uw": "When someone romanticizes a golden age — ask what evils were working underneath it.",
-   "intents": [
-    "change someone's mind",
-    "a better question"
-   ],
-   "source_locator": "Chapter 77 — Conclusion",
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "ripped_at": "2026-09-23",
-   "related_ids": []
   }
  ]
 }
