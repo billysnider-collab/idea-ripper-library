@@ -491,6 +491,31 @@
    "book": "Combating Daesh: A Socially Unconventional Strategy — Derek J. Raymond",
    "genre": "Thesis",
    "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/combatingdaeshso1094545928"
+  },
+  {
+   "book": "Civil-Military Relations and Militarization in El Salvador — Stephen D. Rittermann",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA620715"
+  },
+  {
+   "book": "Providing orbit information with predetermined bounded accuracy — Vitali Braun",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Technische Universität Braunschweig, 2016. Full text: https://archive.org/details/oapen-20.500.12657-56791"
+  },
+  {
+   "book": "China's role in counter-piracy operations — Ann K. Patterson",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/chinasroleincoun1094545923"
+  },
+  {
+   "book": "Open Receptacles: Imagination in Continental and Process Thought, and the Opening of Religious Pluralism — Rafael Reyes III",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Claremont School of Theology, 2019. Full text: https://archive.org/details/ReyesR"
+  },
+  {
+   "book": "Raízes Sofísticas – Sobre a escrita como phármakon para a fala (ou Da tradição gorgiana até Alcidamante de Eleia) — Lucio Lauro Barrozo Massafferri Salles",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Universidade Federal do Rio de Janeiro, 2018. Full text: https://archive.org/details/RazesSofsticas-SobreAEscritaComoPhrmakonParaAFalaOuDaTradioGorgianaAtAlcidamanteDeEleia"
   }
  ],
  "cards": [
@@ -5221,6 +5246,51 @@
    "related_ids": [],
    "ripped_at": "2026-09-24",
    "id": 12
+  },
+  {
+   "title": "Civil-Military Relations and Militarization in El Salvador",
+   "book": "Civil-Military Relations and Militarization in El Salvador — Stephen D. Rittermann",
+   "type": "argument",
+   "steal": "Under FMLN president Mauricio Funes (2009-2014), informal civil-military relations produced a largely undemocratic domestic-security response — troops in the streets — and a rising trend of militarization; the 1992 Chapultepec Peace Accords demobilized the old war but never reintegrated former combatants or rebuilt the economy, leaving transnational gangs and the drug trade as democratic El Salvador's dominant security challenge.",
+   "why": "It shows the mechanism by which a post-war democracy quietly remilitarizes — when the civilian police can't hold and the army fills the streets, the civil-military bargain reverts without a coup.",
+   "uw": "Informal civil-military relations produce undemocratic security policy — the institution you use for the emergency becomes the institution that defines normal.",
+   "id": 414
+  },
+  {
+   "title": "Providing orbit information with predetermined bounded accuracy",
+   "book": "Providing orbit information with predetermined bounded accuracy — Vitali Braun",
+   "type": "argument",
+   "steal": "Instead of handing satellite operators raw time-tagged position tables (forcing every operator to extrapolate on his own), orbit data can be delivered as Chebyshev polynomial coefficients that directly encode the state vector and covariance matrix over a time span — derived from a reference orbit by a least-squares fit with a modified geopotential, producing orbit information of predetermined, bounded accuracy for any Earth orbit.",
+   "why": "Collision-avoidance warnings are only as good as the orbit data every party shares — this is the plumbing that lets thousands of operators agree on where every object is, at the accuracy each is entitled to, without each re-running the math.",
+   "uw": "Don't ship raw data and make every consumer do the hard math — ship the answer at the accuracy each consumer is entitled to.",
+   "id": 415
+  },
+  {
+   "title": "China's role in counter-piracy operations",
+   "book": "China's role in counter-piracy operations — Ann K. Patterson",
+   "type": "argument",
+   "steal": "China's counter-piracy deployments in the Gulf of Aden and Southeast Asia were never just about pirates — they were a stepping-stone for a much larger maritime strategy. Comparing the two regions, the thesis finds some truth in all three explanations (meeting rivals' challenges and establishing geopolitical position; safeguarding economic interests; cooperating as a good global citizen) — and the deployments left China with a better-trained, more capable, more versatile navy, expanded economic reach, and tactics learned through cooperation with other navies.",
+   "why": "It names the mechanism of naval expansion through ostensibly benign missions — counter-piracy as the cover story under which a blue-water navy gets built, exercised, and normalized.",
+   "uw": "A mission's stated purpose and its strategic function can both be true at once — ask what the deployment builds, not just what it fights.",
+   "id": 416
+  },
+  {
+   "title": "Open Receptacles: Imagination in Continental and Process Thought, and the Opening of Religious Pluralism",
+   "book": "Open Receptacles: Imagination in Continental and Process Thought, and the Opening of Religious Pluralism — Rafael Reyes III",
+   "type": "argument",
+   "steal": "Religious pluralism looks impossible when reason is restricted to logic alone — logic forces a single outcome and hierarchizes or excludes faiths that don't fit its criteria; but with imagination (logic plus aesthetics, via Whitehead's immanence and creativity) admitted as a method, pluralism becomes integral to truth formation, religious experience, and a deeper understanding of the Divine.",
+   "why": "A transferable move — when a method can only produce one winner, the problem is the method's ontology, not the question; adding imagination (aesthetics) back into reasoning changes what counts as true.",
+   "uw": "If your method admits only one right answer, it will manufacture losers — expand the method before you condemn the question.",
+   "id": 417
+  },
+  {
+   "title": "Raízes Sofísticas – Sobre a escrita como phármakon para a fala (ou Da tradição gorgiana até Alcidamante de Eleia)",
+   "book": "Raízes Sofísticas – Sobre a escrita como phármakon para a fala (ou Da tradição gorgiana até Alcidamante de Eleia) — Lucio Lauro Barrozo Massafferri Salles",
+   "type": "argument",
+   "steal": "Gorgias treated language as a drug (phármakon) acting on the psyche, and his disciple Alcidamas pushed the argument further: writing is a subsidiary, inferior mode of language compared to live speech — the improvising speaker reads the room and rides its desires, while the writer, locked into a text prepared in advance, mistimes the moment, because no human foresight can predict exactly how an audience's mind will move.",
+   "why": "The oldest argument for why live performance beats the script — a 2,400-year-old account of why pre-written communication fails in any medium that rewards reading the room.",
+   "uw": "A fixed script can't read the room — the power of live speech is adaptation to the moment, which no amount of preparation fully simulates.",
+   "id": 418
   }
  ]
 }

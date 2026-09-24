@@ -732,6 +732,42 @@ books:
   - book
   - genre
   - bookline
+- key: civil-military-relations-and-militarization-in-el-salvador-stephen-d-rittermann
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA620715'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: providing-orbit-information-with-predetermined-bounded-accuracy-vitali-braun
+  genre: Thesis
+  bookline: 'PhD thesis — Technische Universität Braunschweig, 2016. Full text: https://archive.org/details/oapen-20.500.12657-56791'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: china-s-role-in-counter-piracy-operations-ann-k-patterson
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/chinasroleincoun1094545923'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: open-receptacles-imagination-in-continental-and-process-thought-and-the-opening-of-religious-pluralism-rafael-reyes-iii
+  genre: Thesis
+  bookline: 'PhD thesis — Claremont School of Theology, 2019. Full text: https://archive.org/details/ReyesR'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: ra-zes-sof-sticas-sobre-a-escrita-como-ph-rmakon-para-a-fala-ou-da-tradi-o-gorgiana-at-alcidamante-de-eleia-lucio-lauro-barrozo-massafferri-salles
+  genre: Thesis
+  bookline: 'PhD thesis — Universidade Federal do Rio de Janeiro, 2018. Full text:
+    https://archive.org/details/RazesSofsticas-SobreAEscritaComoPhrmakonParaAFalaOuDaTradioGorgianaAtAlcidamanteDeEleia'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1146,3 +1182,8 @@ card_order:
 - 10
 - 11
 - 12
+- 414
+- 415
+- 416
+- 417
+- 418
