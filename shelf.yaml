@@ -815,6 +815,14 @@ books:
   - book
   - genre
   - bookline
+- key: the-art-of-war-sun-tzu
+  genre: Nonfiction
+  bookline: c. 5th century BC; Lionel Giles translation (1910), public domain — the
+    oldest military treatise in the world
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1280,3 +1288,13 @@ card_order:
 - 467
 - 468
 - 469
+- 470
+- 471
+- 472
+- 473
+- 474
+- 475
+- 476
+- 477
+- 478
+- 479
