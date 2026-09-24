@@ -28,6 +28,7 @@ def books_in_genre(g):
 curated = ds.get("curated", "")
 wm_path = os.path.join(BASE, "brand", "wordmark-inline.svg")
 WORDMARK_SVG = open(wm_path, encoding="utf-8").read() if os.path.exists(wm_path) else "<strong>Idea Ripper</strong>"
+WORDMARK_SVG = WORDMARK_SVG.replace('role="img" aria-label="Idea Ripper"', 'aria-hidden="true"')
 RIP_SVG = ('<svg class="ripmark" viewBox="0 0 20 8" aria-hidden="true">'
            '<polyline points="1,4.5 5,2 9,5.5 13,2 17,5 19,3" fill="none" stroke="#d92b1f" stroke-width="2"/>'
            '</svg>')
@@ -72,12 +73,12 @@ def book_block(b):
     parts = ['<section class="book collapsed" id="b-%s" data-book="%s" data-genre="%s">'
              % (slug, esca(b["book"]), esca(b["genre"]))]
     parts.append(
-        '<div class="bookhead" role="button" tabindex="0" aria-expanded="false">'
+        '<h2 class="bh"><button type="button" class="bookhead" aria-expanded="false">'
         '<span class="chip" style="background:hsl(%d,45%%,55%%)"></span>'
         '<span class="bmain"><span class="btitle">%s <span class="bcount">%d rip%s</span></span>'
         '<span class="bookline">%s</span>'
         '<span class="bsamples">%s</span></span>'
-        '<span class="bchev">\u25be</span></div>'
+        '<span class="bchev">\u25be</span></button></h2>'
         % (gh, esc(b["book"]), len(bcards), "" if len(bcards) == 1 else "s",
            esc(b["bookline"]), esc(samples)))
     parts.append('<div class="cards">')
@@ -93,10 +94,10 @@ def book_block(b):
         parts.append(
             '<article class="card%s" id="c%d" data-n="%d" '
             'data-book="%s" data-genre="%s" data-type="%s" data-status="%s" data-search="%s">'
-            '<div class="cardhead" role="button" tabindex="0">'
+            '<h3 class="ch"><button type="button" class="cardhead" aria-expanded="%s">'
             '<span class="num">%d</span>'
             '<span class="ctext"><span class="ctitle">%s</span><span class="pv">%s</span></span>'
-            '<span class="pill %s">%s</span></div>'
+            '<span class="pill %s">%s</span></button></h3>'
             '<div class="cardbody">'
             '%s'
             '<p class="steal">%s</p>'
@@ -108,6 +109,7 @@ def book_block(b):
             '<button type="button" data-copy="link">Copy link</button></div>'
             '</div></article>'
             % (" open" if thesis_open else "", n_, n_, esca(c["book"]), esca(b["genre"]), esca(c["type"]), c.get("status", "keeper"), esca(search),
+               "true" if thesis_open else "false",
                n_, esc(c["title"]), esc(pv), esca(c["type"]), esc(c["type"]),
                kicker_rip, esc(c["steal"]), esc(c["why"]), kicker_use, esc(c["uw"])))
     parts.append('</div></section>')
@@ -165,11 +167,11 @@ def fullbook_block(fb):
     if fb.get("lens"):
         blurb += " \u2014 " + fb["lens"]
     parts.append(
-        '<div class="fbookhead" role="button" tabindex="0" aria-expanded="false">'
+        '<h2 class="bh"><button type="button" class="fbookhead" aria-expanded="false">'
         '<span class="chip" style="background:var(--amber)"></span>'
         '<span class="bmain"><span class="btitle">%s <span class="bcount">full-book brief \u00b7 %d cards</span></span>'
         '<span class="bookline">%s</span></span>'
-        '<span class="bchev">\u25be</span></div>'
+        '<span class="bchev">\u25be</span></button></h2>'
         % (esc(fb["title"]), len(fb["cards"]), esc(blurb)))
     parts.append('<div class="fbookbody">')
     am = fb.get("argument_map", {})
@@ -232,10 +234,10 @@ def fullbook_block(fb):
         meta = " \u00b7 ".join(x for x in (c.get("chapter"), c.get("period")) if x)
         parts.append(
             '<article class="fbcard card" data-fb="1">'
-            '<div class="cardhead" role="button" tabindex="0">'
+            '<h3 class="ch"><button type="button" class="cardhead" aria-expanded="false">'
             '<span class="fbnum">%d</span>'
             '<span class="ctext"><span class="ctitle">%s</span><span class="pv">%s</span></span>'
-            '<span class="pill %s">%s</span></div>'
+            '<span class="pill %s">%s</span></button></h3>'
             '<div class="cardbody">'
             '<p class="steal">%s</p>'
             '<p class="why"><span class="k">Why it matters:</span> %s</p>'
@@ -280,7 +282,7 @@ if fbooks:
         sections.append(fullbook_block(fb))
 
 chips = "\n".join(
-    '<button type="button" data-target="b-%s" data-genre="%s" title="%s">%s</button>'
+    '<a class="bchip" href="#b-%s" data-genre="%s" title="%s">%s</a>'
     % (slugify(b["book"]), esca(b["genre"]), esca(b["book"]), esc(b["book"]))
     for b in books)
 
@@ -423,6 +425,18 @@ header.masthead{max-width:none;padding:0;background:#f2e8d5;color:#14110c;border
 .kicker{display:flex;align-items:center;gap:.45rem;margin:.55rem 0 .1rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.62rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8b97ad}
 .kicker .ripmark{width:1.5rem;height:.6rem;flex:none}
 .kicker .ktext{border-bottom:2px solid #d92b1f;padding-bottom:1px}
+/* Phase 1 a11y (2026-09-24): native buttons, heading wrappers, focus, reduced motion */
+.bh,.ch{margin:0;font-size:1rem;font-weight:400}
+.bookhead,.fbookhead,.cardhead{font:inherit;color:inherit;background:none;border:0;padding:0;text-align:left;width:100%}
+button::-moz-focus-inner{border:0;padding:0}
+:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.book,.fbook{scroll-margin-top:4.5rem}
+.jumpchips a{flex:none;max-width:12rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--panel);border:1px solid var(--border);color:var(--muted);border-radius:999px;padding:.22rem .65rem;font-size:.75rem;cursor:pointer;text-decoration:none}
+.jumpchips a:hover{color:var(--amber);border-color:var(--amber)}
+.noresults button{background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:.4rem .7rem;font-size:.85rem;cursor:pointer;margin-left:.5rem}
+.noresults button:hover{color:var(--fg);border-color:var(--amber)}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 """
 
 JS = r"""
@@ -432,11 +446,12 @@ var q=document.getElementById('q'),gs=document.getElementById('fgenre'),
     count=document.getElementById('count'),nores=document.getElementById('noresults'),
     toastEl=document.getElementById('toast'),
     total=document.querySelectorAll('.card:not([data-fb])').length,
-    manual={},toastT=null;
-function toast(msg){
+    manual={},toastT=null,RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function toast(msg,ms){
   toastEl.textContent=msg;toastEl.classList.add('show');
-  clearTimeout(toastT);toastT=setTimeout(function(){toastEl.classList.remove('show');},1500);
+  clearTimeout(toastT);toastT=setTimeout(function(){toastEl.classList.remove('show');},ms||1500);
 }
+function jesc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function setBook(book,expand){
   book.classList.toggle('collapsed',!expand);
   manual[book.id]=expand;
@@ -482,38 +497,45 @@ function apply(fromInput){
     }
     g.classList.toggle('hidden',!show);
   });
-  document.querySelectorAll('#jumpchips button').forEach(function(ch){
+  document.querySelectorAll('#jumpchips a').forEach(function(ch){
     ch.classList.toggle('hidden',!!gv&&ch.dataset.genre!==gv);
   });
   var vis=document.querySelectorAll('.card:not([data-fb]):not(.hidden)').length;
   count.textContent='showing '+vis+' of '+total;
   nores.hidden=vis>0;
+  if(!nores.hidden){
+    nores.innerHTML='No rips match &ldquo;'+jesc(q.value.trim())+'&rdquo;. Try a broader term. <button type="button" id="clearq">Clear search</button>';
+    var cq=document.getElementById('clearq');
+    if(cq)cq.addEventListener('click',function(){q.value='';apply(true);q.focus();});
+  }
 }
 [q,gs,bs,ts].forEach(function(el){
   el.addEventListener('input',function(){apply(true);});
   el.addEventListener('change',function(){apply(false);});
 });
+q.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){q.value='';apply(true);}
+});
 function toggleCard(card,open){
   var will=open===undefined?!card.classList.contains('open'):open;
   card.classList.toggle('open',will);
+  var chd=card.querySelector('.cardhead');
+  if(chd)chd.setAttribute('aria-expanded',will?'true':'false');
   if(will&&card.dataset.n&&history.replaceState){try{history.replaceState(null,'','#c'+card.dataset.n);}catch(_){}}
 }
 document.querySelectorAll('.cardhead').forEach(function(h){
-  h.addEventListener('click',function(){toggleCard(h.parentElement);});
-  h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleCard(h.parentElement);}});
+  h.addEventListener('click',function(){toggleCard(h.closest('.card'));});
 });
 document.querySelectorAll('.bookhead').forEach(function(h){
-  function t(){var b=h.parentElement;setBook(b,b.classList.contains('collapsed'));}
+  function t(){var b=h.closest('section');setBook(b,b.classList.contains('collapsed'));}
   h.addEventListener('click',t);
-  h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t();}});
 });
 /* full-book shelf: own toggle, outside rip expand/collapse-all */
 document.querySelectorAll('.fbookhead').forEach(function(h){
-  function t(){var b=h.parentElement,exp=b.classList.contains('collapsed');
+  function t(){var b=h.closest('section'),exp=b.classList.contains('collapsed');
     b.classList.toggle('collapsed',!exp);
     h.setAttribute('aria-expanded',exp?'true':'false');}
   h.addEventListener('click',t);
-  h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t();}});
 });
 document.getElementById('expand').addEventListener('click',function(){
   document.querySelectorAll('.book:not(.hidden)').forEach(function(b){
@@ -534,26 +556,34 @@ document.querySelectorAll('[data-copy]').forEach(function(btn){
     if(kind==='steal')txt=card.querySelector('.steal').textContent;
     else if(kind==='uw')txt=card.querySelector('.uw').textContent;
     else txt=location.origin+location.pathname+'#c'+card.dataset.n;
-    function done(ok){toast(ok?(kind==='link'?'Link copied':'Copied'):'Copy failed');}
+    function done(ok){
+      if(ok){toast(kind==='link'?'Link copied':'Copied');return;}
+      try{var rng=document.createRange();rng.selectNodeContents(card);
+        var sel=getSelection();sel.removeAllRanges();sel.addRange(rng);}catch(_){}
+      toast('Copy failed \u2014 press Ctrl+C (Cmd+C on Mac) to copy the selected text',4000);
+    }
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){done(true);},function(){done(false);});}
     else{var ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done(true);}catch(_){done(false);}document.body.removeChild(ta);}
   });
 });
-document.querySelectorAll('#jumpchips button').forEach(function(ch){
-  ch.addEventListener('click',function(){
-    var b=document.getElementById(ch.dataset.target);
-    if(b){setBook(b,true);b.scrollIntoView({behavior:'smooth',block:'start'});}
+document.querySelectorAll('#jumpchips a').forEach(function(ch){
+  ch.addEventListener('click',function(e){
+    var b=document.getElementById(ch.getAttribute('href').slice(1));
+    if(b){e.preventDefault();setBook(b,true);
+      b.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});
+      if(history.replaceState){try{history.replaceState(null,'',ch.getAttribute('href'));}catch(_){}}}
   });
 });
 function openHash(){
   var m=/^#c(\d+)$/.exec(location.hash),c;
   if(m&&(c=document.getElementById('c'+m[1]))){
     var b=c.closest('.book');setBook(b,true);c.classList.add('open');
-    setTimeout(function(){c.scrollIntoView({block:'center'});},60);return true;
+    var oh=c.querySelector('.cardhead');if(oh)oh.setAttribute('aria-expanded','true');
+    setTimeout(function(){c.scrollIntoView({behavior:RM?'auto':'smooth',block:'center'});},60);return true;
   }
   m=/^#b-([a-z0-9-]+)$/.exec(location.hash);
   if(m){var bk=document.getElementById('b-'+m[1]);
-    if(bk){setBook(bk,true);setTimeout(function(){bk.scrollIntoView({block:'start'});},60);return true;}}
+    if(bk){setBook(bk,true);setTimeout(function(){bk.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});},60);return true;}}
   return false;
 }
 var firstBook=document.querySelector('.book');
@@ -561,7 +591,7 @@ if(firstBook)manual[firstBook.id]=true;
 apply(false);
 if(!openHash()&&firstBook){
   var fc=firstBook.querySelector('.card');
-  if(fc){fc.classList.add('open');if(history.replaceState){try{history.replaceState(null,'','#c'+fc.dataset.n);}catch(_){}}}
+  if(fc){fc.classList.add('open');var fh=fc.querySelector('.cardhead');if(fh)fh.setAttribute('aria-expanded','true');if(history.replaceState){try{history.replaceState(null,'','#c'+fc.dataset.n);}catch(_){}}}
 }
 })();
 
@@ -583,12 +613,12 @@ page = """<!DOCTYPE html>
 <link rel="icon" type="image/svg+xml" href="brand/r-mark.svg"/>
 <link rel="icon" type="image/png" sizes="32x32" href="brand/r-mark-32.png"/>
 <link rel="apple-touch-icon" href="brand/apple-touch-icon.png"/>
-<style>%s</style>
+<style>%s</style><noscript><style>.book.collapsed .cards,.fbook.collapsed .fbookbody{display:block!important}.cardbody{display:block!important}</style></noscript>
 </head>
 <body>
 
 <header class="masthead"><div class="mast-inner">
-<div class="wordmark" role="img" aria-label="Idea Ripper">%s</div>
+<h1 class="wordmark"><span class="sr-only">Idea Ripper</span>%s</h1>
 <p class="mast-sub">the idea-hunting library</p>
 <p class="mast-meta">%d rips &middot; %d books &middot; %d theses &middot; curated %s</p>
 </div></header>
