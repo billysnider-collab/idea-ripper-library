@@ -1,5 +1,5 @@
 {
- "curated": "2026-09-24",
+ "curated": "2026-09-23",
  "genre_order": [
   "Nonfiction",
   "Science Fiction",
@@ -13,29 +13,94 @@
  ],
  "books": [
   {
-   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
-   "genre": "Nonfiction",
-   "bookline": "Companion to Wolfe's dying-Earth masterpiece — patterns, echoes, and unreliable memory."
+   "book": "Project Hail Mary — Andy Weir",
+   "genre": "Science Fiction",
+   "bookline": "Lone astronaut and an alien engineer vs. a star-eating microbe."
   },
   {
-   "book": "Shinto: The Ancient Religion of Japan — William George Aston",
-   "genre": "Nonfiction",
-   "bookline": "Japanese religion — Aston's 1921 classic on Shinto: nature-gods, ritual purity, myth, and the making of the Imperial cult."
+   "book": "Where the Axe Is Buried — Ray Nayler",
+   "genre": "Science Fiction",
+   "bookline": "Authoritarian AI state, told through the people crushed by it."
   },
   {
-   "book": "Meditations — Marcus Aurelius",
-   "bookline": "Stoic practice — the Roman emperor's private notebook: perception, impermanence, duty, and the inner citadel.",
-   "genre": "Nonfiction"
+   "book": "The Collected Stories of Arthur C. Clarke — Arthur C. Clarke",
+   "genre": "Science Fiction",
+   "bookline": "Mid-century hard SF: space, minds, and machines that outlast fragile bodies."
   },
   {
-   "book": "A Marriage at Sea — Sophie Elmhirst",
-   "genre": "Nonfiction",
-   "bookline": "True story of a couple alone on the ocean — boat as autocracy, hull as tempering."
+   "book": "Dungeon Crawler Carl — Matt Dinniman",
+   "genre": "Science Fiction",
+   "bookline": "Earth turned into a televised dungeon crawl run by alien corporations."
   },
   {
-   "book": "When the Going Was Good — Graydon Carter",
-   "genre": "Nonfiction",
-   "bookline": "Magazine-world memoir — print lag, newsstands, and how glossies ran on float."
+   "book": "The Scar — China Mieville",
+   "genre": "Science Fiction",
+   "bookline": "Weird literary SF — city-as-ship, escape politics."
+  },
+  {
+   "book": "Simultaneous — Eric Heisserer",
+   "genre": "Science Fiction",
+   "bookline": "Parallel lives hit institutions."
+  },
+  {
+   "book": "The Eye of the World — Robert Jordan",
+   "genre": "Fantasy",
+   "bookline": "Epic fantasy opener — farm kids pulled into a war against a returning Dark One."
+  },
+  {
+   "book": "New Spring — Robert Jordan",
+   "genre": "Fantasy",
+   "bookline": "Wheel of Time prequel — Aes Sedai politics and a hunt before the main saga."
+  },
+  {
+   "book": "Gilgamesh (tr. Sophus Helle)",
+   "genre": "Myth & Epic",
+   "bookline": "The oldest epic — king, wild friend, grief, and the failed quest for immortality."
+  },
+  {
+   "book": "Myths from Mesopotamia — Stephanie Dalley",
+   "genre": "Myth & Epic",
+   "bookline": "Akkadian myths in translation — creation, flood, descent, divine politics."
+  },
+  {
+   "book": "The King in Yellow — Robert W. Chambers",
+   "genre": "Horror & Weird",
+   "bookline": "Decadent weird tales; a forbidden play that unmakes minds and a remade imperial city."
+  },
+  {
+   "book": "Cool Machine / Crook Manifesto lane — Colson Whitehead",
+   "genre": "Crime & Mystery",
+   "bookline": "1970s Harlem crime — furniture man, heists, and systems built to destroy."
+  },
+  {
+   "book": "The Master and Margarita — Mikhail Bulgakov",
+   "genre": "Literary Fiction",
+   "bookline": "Soviet satire + devil comedy; portable moral tech."
+  },
+  {
+   "book": "Collected Fictions — Jorge Luis Borges",
+   "genre": "Literary Fiction",
+   "bookline": "Weird literary — time patterns, pity, unreality."
+  },
+  {
+   "book": "Tilt — Emma Pattee",
+   "genre": "Literary Fiction",
+   "bookline": "Earthquake pregnancy novel — body + city systems."
+  },
+  {
+   "book": "The Eleventh Hour — Salman Rushdie",
+   "genre": "Literary Fiction",
+   "bookline": "Weird literary late Rushdie — knowledge, forgetting, afterlives."
+  },
+  {
+   "book": "Twist — Colum McCann",
+   "genre": "Literary Fiction",
+   "bookline": "Undersea cable repair, conscience, and the compulsion to keep moving."
+  },
+  {
+   "book": "Motherclown — Harriet Alida Lye",
+   "genre": "Literary Fiction",
+   "bookline": "Weird literary — clowning, motherhood, and bodies that will not behave."
   },
   {
    "book": "No More Tears — Gardiner Harris",
@@ -48,9 +113,14 @@
    "bookline": "Investigative true crime / money / trauma."
   },
   {
-   "book": "The Traitors Circle — Jonathan Freedland",
+   "book": "Gene Wolfe's The Book of the New Sun: A Chapter Guide — Michael Andre-Driussi",
    "genre": "Nonfiction",
-   "bookline": "German resistance circle under Nazism — Gestapo, courage, and how little we hear of opposition inside Germany."
+   "bookline": "Companion to Wolfe's dying-Earth masterpiece — patterns, echoes, and unreliable memory."
+  },
+  {
+   "book": "The History of Money — David McWilliams",
+   "genre": "Nonfiction",
+   "bookline": "Money as social tech — from grain and salt to empire and trust."
   },
   {
    "book": "Bad Law — Elie Mystal",
@@ -58,29 +128,49 @@
    "bookline": "Ten laws (and one amendment) that still do massive harm and should die."
   },
   {
-   "book": "Democracy in America — Alexis de Tocqueville",
-   "bookline": "Democratic character — Tocqueville's 1835-40 study of equality's effects: associations, the tyranny of the majority, and soft despotism.",
-   "genre": "Nonfiction"
+   "book": "Reverse Engineering — R. Messler",
+   "genre": "Nonfiction",
+   "bookline": "How to take mechanisms, structures, and materials apart to learn how they work."
   },
   {
-   "book": "Manufacturing Consent — Noam Chomsky & Edward S. Herman",
-   "bookline": "Propaganda model — Chomsky and Herman's 1988 classic on the five news filters, worthy and unworthy victims, and how consent is manufactured without censorship.",
-   "genre": "Nonfiction"
+   "book": "Tiny Machine Learning QuickStart — Simone Salerno",
+   "genre": "Nonfiction",
+   "bookline": "ML that fits on tiny devices — constraints as the design surface."
   },
   {
-   "book": "Propaganda — Edward L. Bernays",
-   "bookline": "Manufacturing consent — Bernays's 1928 manual on the invisible government, group leaders, and the engineering of public opinion.",
-   "genre": "Nonfiction"
+   "book": "Analysis and Design of Delayed Neural Networks — Xin Wang",
+   "genre": "Nonfiction",
+   "bookline": "Neural nets where time-delay is the hard problem, not an afterthought."
   },
   {
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "bookline": "Power tactics — Alinsky's 1971 organizer's manual: the thirteen rules of power tactics, the ethics of means and ends, the haves and have-nots, and the organizer who builds power for others to use.",
-   "genre": "Nonfiction"
+   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
+   "genre": "Hermetica",
+   "bookline": "Classical Hermetica in English — Mind (nous), Light, Word, and Man as image of the Father."
   },
   {
-   "book": "The Prince — Niccolò Machiavelli",
-   "bookline": "Power mechanics — Machiavelli's 1532 classic on how principalities are won, held, and lost: virtue, fortune, and the economy of cruelty.",
-   "genre": "Nonfiction"
+   "book": "The Chaldean Oracles — attributed to Zoroaster (Westcott / Sapere Aude)",
+   "genre": "Hermetica",
+   "bookline": "Fragmentary oracles of the Intelligible Triad — Paternal Mind, silence, and the flower of mind."
+  },
+  {
+   "book": "Hermetic Arcanum — Jean d'Espagnet (Collectanea Hermetica Vol. I)",
+   "genre": "Hermetica",
+   "bookline": "Classic alchemical procedure text — Nature, Art, and the multiplying virtue hid in metals."
+  },
+  {
+   "book": "A Short Enquiry concerning the Hermetic Art — A Lover of Philalethes (Vol. III)",
+   "genre": "Hermetica",
+   "bookline": "Rosicrucian enquiry — imagination as occult tool, Hidden Fire, Great Work."
+  },
+  {
+   "book": "Somnium Scipionis — Cicero (Vol. V, with L.O. essay)",
+   "genre": "Hermetica",
+   "bookline": "Scipio's dream — states, souls, spheres, and duty to stay embodied."
+  },
+  {
+   "book": "Euphrates, or the Waters of the East — Thomas Vaughan (Vol. VII)",
+   "genre": "Hermetica",
+   "bookline": "Rosicrucian tract on the secret water that flows from fire — element as state, not modern chemistry."
   },
   {
    "book": "Every Molecule Matters — Simon Cotton",
@@ -98,294 +188,19 @@
    "bookline": "Foundations of qubits — superposition, entanglement, measurement, no free signaling."
   },
   {
-   "book": "Reverse Engineering — R. Messler",
+   "book": "The Traitors Circle — Jonathan Freedland",
    "genre": "Nonfiction",
-   "bookline": "How to take mechanisms, structures, and materials apart to learn how they work."
+   "bookline": "German resistance circle under Nazism — Gestapo, courage, and how little we hear of opposition inside Germany."
   },
   {
-   "book": "Analysis and Design of Delayed Neural Networks — Xin Wang",
+   "book": "When the Going Was Good — Graydon Carter",
    "genre": "Nonfiction",
-   "bookline": "Neural nets where time-delay is the hard problem, not an afterthought."
+   "bookline": "Magazine-world memoir — print lag, newsstands, and how glossies ran on float."
   },
   {
-   "book": "Tiny Machine Learning QuickStart — Simone Salerno",
+   "book": "A Marriage at Sea — Sophie Elmhirst",
    "genre": "Nonfiction",
-   "bookline": "ML that fits on tiny devices — constraints as the design surface."
-  },
-  {
-   "book": "The Second Machine Age — Erik Brynjolfsson & Andrew McAfee",
-   "bookline": "Tech and inequality — Brynjolfsson & McAfee's 2014 classic on the second half of the chessboard: exponential digital progress, bounty versus spread, the Great Decoupling, and why the winning move is to race with machines, not against them.",
-   "genre": "Nonfiction"
-  },
-  {
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "bookline": "Business rebalancing — McAfee & Brynjolfsson's 2017 triple-revolution framework: mind to machine, product to platform, core to crowd; when algorithms beat experts, why platforms win the match game, and why companies survive the crowd anyway.",
-   "genre": "Nonfiction"
-  },
-  {
-   "book": "Tragedy and Hope — Carroll Quigley",
-   "genre": "Nonfiction",
-   "bookline": "Grand-strategy history — Quigley's 1966 classic on Western civilization's cycles, financial capitalism, the Anglo-American network, and the shape of the twentieth century."
-  },
-  {
-   "book": "The History of Money — David McWilliams",
-   "genre": "Nonfiction",
-   "bookline": "Money as social tech — from grain and salt to empire and trust."
-  },
-  {
-   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
-   "bookline": "Miquel Noguer i Alonso, 2026 (Packt) — A hands-on guide to LLM architectures, agents, RAG, governance, and evaluation in finance.",
-   "genre": "Nonfiction"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "bookline": "Andrew Aziz and performance psychologist Crede Sheehy-Kelly's 2025 system for building a complete trading system: strategy is a concept, a TradeBook is the manual — selection, identification, execution, review — and the edge is never one piece but the combination.",
-   "genre": "Nonfiction"
-  },
-  {
-   "book": "Simultaneous — Eric Heisserer",
-   "genre": "Science Fiction",
-   "bookline": "Parallel lives hit institutions."
-  },
-  {
-   "book": "The Scar — China Mieville",
-   "genre": "Science Fiction",
-   "bookline": "Weird literary SF — city-as-ship, escape politics."
-  },
-  {
-   "book": "Dungeon Crawler Carl — Matt Dinniman",
-   "genre": "Science Fiction",
-   "bookline": "Earth turned into a televised dungeon crawl run by alien corporations."
-  },
-  {
-   "book": "Where the Axe Is Buried — Ray Nayler",
-   "genre": "Science Fiction",
-   "bookline": "Authoritarian AI state, told through the people crushed by it."
-  },
-  {
-   "book": "The Collected Stories of Arthur C. Clarke — Arthur C. Clarke",
-   "genre": "Science Fiction",
-   "bookline": "Mid-century hard SF: space, minds, and machines that outlast fragile bodies."
-  },
-  {
-   "book": "Project Hail Mary — Andy Weir",
-   "genre": "Science Fiction",
-   "bookline": "Lone astronaut and an alien engineer vs. a star-eating microbe."
-  },
-  {
-   "book": "New Spring — Robert Jordan",
-   "genre": "Fantasy",
-   "bookline": "Wheel of Time prequel — Aes Sedai politics and a hunt before the main saga."
-  },
-  {
-   "book": "The Eye of the World — Robert Jordan",
-   "genre": "Fantasy",
-   "bookline": "Epic fantasy opener — farm kids pulled into a war against a returning Dark One."
-  },
-  {
-   "book": "Myths from Mesopotamia — Stephanie Dalley",
-   "genre": "Myth & Epic",
-   "bookline": "Akkadian myths in translation — creation, flood, descent, divine politics."
-  },
-  {
-   "book": "Gilgamesh (tr. Sophus Helle)",
-   "genre": "Myth & Epic",
-   "bookline": "The oldest epic — king, wild friend, grief, and the failed quest for immortality."
-  },
-  {
-   "book": "Euphrates, or the Waters of the East — Thomas Vaughan (Vol. VII)",
-   "genre": "Hermetica",
-   "bookline": "Rosicrucian tract on the secret water that flows from fire — element as state, not modern chemistry."
-  },
-  {
-   "book": "A Short Enquiry concerning the Hermetic Art — A Lover of Philalethes (Vol. III)",
-   "genre": "Hermetica",
-   "bookline": "Rosicrucian enquiry — imagination as occult tool, Hidden Fire, Great Work."
-  },
-  {
-   "book": "Hermetic Arcanum — Jean d'Espagnet (Collectanea Hermetica Vol. I)",
-   "genre": "Hermetica",
-   "bookline": "Classic alchemical procedure text — Nature, Art, and the multiplying virtue hid in metals."
-  },
-  {
-   "book": "Somnium Scipionis — Cicero (Vol. V, with L.O. essay)",
-   "genre": "Hermetica",
-   "bookline": "Scipio's dream — states, souls, spheres, and duty to stay embodied."
-  },
-  {
-   "book": "The Chaldean Oracles — attributed to Zoroaster (Westcott / Sapere Aude)",
-   "genre": "Hermetica",
-   "bookline": "Fragmentary oracles of the Intelligible Triad — Paternal Mind, silence, and the flower of mind."
-  },
-  {
-   "book": "The Divine Pymander — Hermes Trismegistus (tr. Everard)",
-   "genre": "Hermetica",
-   "bookline": "Classical Hermetica in English — Mind (nous), Light, Word, and Man as image of the Father."
-  },
-  {
-   "book": "The King in Yellow — Robert W. Chambers",
-   "genre": "Horror & Weird",
-   "bookline": "Decadent weird tales; a forbidden play that unmakes minds and a remade imperial city."
-  },
-  {
-   "book": "Cool Machine / Crook Manifesto lane — Colson Whitehead",
-   "genre": "Crime & Mystery",
-   "bookline": "1970s Harlem crime — furniture man, heists, and systems built to destroy."
-  },
-  {
-   "book": "Motherclown — Harriet Alida Lye",
-   "genre": "Literary Fiction",
-   "bookline": "Weird literary — clowning, motherhood, and bodies that will not behave."
-  },
-  {
-   "book": "Twist — Colum McCann",
-   "genre": "Literary Fiction",
-   "bookline": "Undersea cable repair, conscience, and the compulsion to keep moving."
-  },
-  {
-   "book": "Tilt — Emma Pattee",
-   "genre": "Literary Fiction",
-   "bookline": "Earthquake pregnancy novel — body + city systems."
-  },
-  {
-   "book": "The Eleventh Hour — Salman Rushdie",
-   "genre": "Literary Fiction",
-   "bookline": "Weird literary late Rushdie — knowledge, forgetting, afterlives."
-  },
-  {
-   "book": "Collected Fictions — Jorge Luis Borges",
-   "genre": "Literary Fiction",
-   "bookline": "Weird literary — time patterns, pity, unreality."
-  },
-  {
-   "book": "The Master and Margarita — Mikhail Bulgakov",
-   "genre": "Literary Fiction",
-   "bookline": "Soviet satire + devil comedy; portable moral tech."
-  },
-  {
-   "book": "Ethics, Eugenics, and Public Education in Georgia (1910-1965) — Aaron Gerald Guest Sr.",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Columbus State University, 2017. Full text: https://archive.org/details/guest-csu"
-  },
-  {
-   "book": "Experiencing the Elements: Self-Building Through the Embodied Extension of Conceptual Metaphors in Contemporary Ritual Magic — David Riley Campbell",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — University of Amsterdam, 2024. Full text: https://archive.org/details/experiencing-the-elements-thesis-of-david-riley-campbell-at-the-university-of-amsterdam-2024"
-  },
-  {
-   "book": "The paradoxical pope: the contemplative and active lives of Gregory the Great — Elizabeth E. Marvel",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Gordon-Conwell Theological Seminary, 2015. Full text: https://archive.org/details/2015MarvelElizabeth"
-  },
-  {
-   "book": "Indo-Slavic lexical isoglosses and the prehistoric dispersal of Indo-Iranian — A.I. Palmér",
-   "genre": "Thesis",
-   "bookline": "PhD thesis — Leiden University, 2024. Full text: https://archive.org/details/indo-slavic-thesis"
-  },
-  {
-   "book": "Networks before Empires — Michele Massa",
-   "genre": "Thesis",
-   "bookline": "PhD thesis — Institute of Archaeology, 2016. Full text: https://archive.org/details/massa-thesis-combined"
-  },
-  {
-   "book": "The Housing Secure Initiative: Helping Families Overcome Housing Insecurity — Geoffrey Heth",
-   "genre": "Thesis",
-   "bookline": "D.Min. thesis-project thesis — Gordon-Conwell Theological Seminary, 2023. Full text: https://archive.org/details/heth-geoffrey-w-final"
-  },
-  {
-   "book": "The Federal Task Force on Housing and Urban Development and the Limits of Participatory Democracy, 1968-1969 — Brendan Nicholas Gemmell",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Dalhousie University, 2017. Full text: https://archive.org/details/gemmell-2017-federal-task-force-on-housing-and-urban-development-1968-1969"
-  },
-  {
-   "book": "Water Quality and Faecal Coliform Dynamics in Aquaculture Bheris of East Calcutta Wetland — Rajashree Ghosh",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Sister Nivedita University, 2025. Full text: https://archive.org/details/sgng.20660-water-quality-and-fecal-coliform-dyanamics-in-aquacul-ture-bheri-"
-  },
-  {
-   "book": "Integrating Blue Infrastructure in Temple Towns: A Case of Nashik's Sacred Waterscapes — Kajol Chaudhari",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology (VNIT) Nagpur, 2025. Full text: https://archive.org/details/sgng.19281-integrating-blue-infrastructure-in-temple-towns-a-case-of-nashik-"
-  },
-  {
-   "book": "Sustainable Mobility and Pedestrian Plan for Pilgrimage Tourism in Vrindavan — Esha Shinde",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology (Nagpur), 2024. Full text: https://archive.org/details/sgng.19267-sustainable-mobility-and-pedestrian-plan-for-pilgrimage-tourism-i"
-  },
-  {
-   "book": "Investigating the effect of Copper (CuI) depletion on the serotonergic neurons and serotonin signalling in the nematode based model — Iram Khan",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Sister Nivedita University, 2025. Full text: https://archive.org/details/sgng.20150-investigating-the-effect-of-copper-cui-depletion-on-the-serotoner"
-  },
-  {
-   "book": "Exploring the Effects of Mucuna Pruriens Seed Powder on Parkinson's Disease Management: Insights from Drosophila Mutant Models — Vikrant Chandel",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — The University of Trans-Disciplinary Health Sciences and Technology, 2023. Full text: https://archive.org/details/sgng.19495-exploring-the-effects-of-mucuna-pruriens-seed-powder-on-parkinson"
-  },
-  {
-   "book": "To Study the Clinical and Etiological Profile of Epileptic Spasms in Children — Dr. Amneet Kaur",
-   "genre": "Thesis",
-   "bookline": "MD thesis — Baba Farid University of Health Sciences (Faridkot), 2023. Full text: https://archive.org/details/sgng.17194-to-study-the-clinical-and-etiological-profile-of-epileptic-spasms"
-  },
-  {
-   "book": "Investigations into the impact of astronomical phenomena on the terrestrial biosphere and climate — Fabo Feng",
-   "genre": "Thesis",
-   "bookline": "PhD thesis — Ruperto-Carola-University of Heidelberg, Germany, 2015. Full text: https://archive.org/details/arxiv-1505.07856"
-  },
-  {
-   "book": "Effectiveness of EfficientNet-B4 and EfficientNet-B7 Deepfake Detection Techniques — Jasmin P. Bharadiya",
-   "genre": "Thesis",
-   "bookline": "PhD thesis — University of the Cumberlands, 2021. Full text: https://archive.org/details/jasmin-bharadiya-thesis"
-  },
-  {
-   "book": "Empirical analysis of using erasure coding in outsourcing data storage with provable security — Abdallah Bakir",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/empiricalnalysis1094549341"
-  },
-  {
-   "book": "Complexity Theory and Its Applications in Linear Quantum Optics — Jonathan P. Olson",
-   "genre": "Thesis",
-   "bookline": "PhD thesis — Louisiana State University, 2016. Full text: https://archive.org/details/arxiv-1607.02991"
-  },
-  {
-   "book": "Atalhos para Adiabaticidade e Aplicacoes em Computacao Quantica (Shortcuts to Adiabaticity and Applications in Quantum Computation) — Alan Costa dos Santos",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Universidade Federal Fluminense, 2016. Full text: https://archive.org/details/arxiv-1603.05071"
-  },
-  {
-   "book": "Spin Squeezing, Macrorealism and the Heisenberg uncertainty principle — Giuseppe Vitagliano",
-   "genre": "Thesis",
-   "bookline": "PhD thesis — University of the Basque Country, 2015. Full text: https://archive.org/details/arxiv-1511.08104"
-  },
-  {
-   "book": "Computational Studies of Entanglement in Spin Chains Involving Fibonacci and Bernoulli Number Sequences — Ankan Bhattacharyya",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology (Nagpur), 2025. Full text: https://archive.org/details/sgng.19109-computational-studies-of-entanglement-in-spin-chains-involving-fi"
-  },
-  {
-   "book": "Server-based and server-less BYOD solutions to support electronic learning — Joshua C. Benson & Brian R. McCarthy",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/serverbasedndser1094549343"
-  },
-  {
-   "book": "Measuring Resilience — Joshua L. Boyle",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/measuringresilie1094566593"
-  },
-  {
-   "book": "Technique for geolocation of EMI emitters by O3b satellites — James P. Connolly",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/techniqueforgeol1094549440"
-  },
-  {
-   "book": "Solid-State High Power Radio Frequency Directed Energy Systems in Support of USMC Force Protection Operations — Michael D. Simon",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/solidstatehighpo1094545944"
-  },
-  {
-   "book": "Autonomous Underwater Vehicle Architecture Synthesis for Shipwreck Interior Exploration — Ross A. Eldred",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/autonomousunderw1094547940"
+   "bookline": "True story of a couple alone on the ocean — boat as autocracy, hull as tempering."
   },
   {
    "book": "Battlefield Medical Network: Biosensors in a Tactical Environment — Ralph R. Montgomery",
@@ -393,24 +208,99 @@
    "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1027506"
   },
   {
-   "book": "Optical Theory Improvements to Space Domain Awareness — Tyler J. Hardy",
+   "book": "Effectiveness of EfficientNet-B4 and EfficientNet-B7 Deepfake Detection Techniques — Jasmin P. Bharadiya",
    "genre": "Thesis",
-   "bookline": "PhD thesis — Air Force Institute of Technology (Air University), 2016. Full text: https://archive.org/details/arxiv-1603.05071"
+   "bookline": "PhD thesis — University of the Cumberlands, 2021. Full text: https://archive.org/details/jasmin-bharadiya-thesis"
   },
   {
-   "book": "Technological Evolution of High Temperature Superconductors — Jordan R. White",
+   "book": "Autonomous Underwater Vehicle Architecture Synthesis for Shipwreck Interior Exploration — Ross A. Eldred",
    "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_AD1009326"
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/autonomousunderw1094547940"
   },
   {
-   "book": "Using Mathematical Modeling and Set-Based Design Principles to Recommend an Existing CVL Design — William H. Ehlies",
+   "book": "To Study the Clinical and Etiological Profile of Epileptic Spasms in Children — Dr. Amneet Kaur",
    "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/DTIC_AD1046831"
+   "bookline": "MD thesis — Baba Farid University of Health Sciences (Faridkot), 2023. Full text: https://archive.org/details/sgng.17194-to-study-the-clinical-and-etiological-profile-of-epileptic-spasms"
   },
   {
-   "book": "Supply Chain: Wake Up; It is Critical to Military Success — Christopher E. Dexter",
+   "book": "Sustainable Mobility and Pedestrian Plan for Pilgrimage Tourism in Vrindavan — Esha Shinde",
    "genre": "Thesis",
-   "bookline": "Masters thesis — Joint Advanced Warfighting School, 2014. Full text: https://archive.org/details/DTIC_ADA621695"
+   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology (Nagpur), 2024. Full text: https://archive.org/details/sgng.19267-sustainable-mobility-and-pedestrian-plan-for-pilgrimage-tourism-i"
+  },
+  {
+   "book": "Changes in Latitudes, Changes in Attitudes: Narrating a Regime Change — Pattric R. Patterson and Matthew D. Ziobro",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA620695"
+  },
+  {
+   "book": "Computational Studies of Entanglement in Spin Chains Involving Fibonacci and Bernoulli Number Sequences — Ankan Bhattacharyya",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology (Nagpur), 2025. Full text: https://archive.org/details/sgng.19109-computational-studies-of-entanglement-in-spin-chains-involving-fi"
+  },
+  {
+   "book": "Solid-State High Power Radio Frequency Directed Energy Systems in Support of USMC Force Protection Operations — Michael D. Simon",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/solidstatehighpo1094545944"
+  },
+  {
+   "book": "Can the Outer Space Treaty Prevent Conflicts in Orbit in the 21st Century? — Nicole M. Breen",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2018. Full text: https://archive.org/details/cantheouterspace1094559607"
+  },
+  {
+   "book": "Combating Daesh: A Socially Unconventional Strategy — Derek J. Raymond",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/combatingdaeshso1094545928"
+  },
+  {
+   "book": "Networks before Empires — Michele Massa",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Institute of Archaeology, 2016. Full text: https://archive.org/details/massa-thesis-combined"
+  },
+  {
+   "book": "Exploring the Effects of Mucuna Pruriens Seed Powder on Parkinson's Disease Management: Insights from Drosophila Mutant Models — Vikrant Chandel",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — The University of Trans-Disciplinary Health Sciences and Technology, 2023. Full text: https://archive.org/details/sgng.19495-exploring-the-effects-of-mucuna-pruriens-seed-powder-on-parkinson"
+  },
+  {
+   "book": "The 21st Century Scarlet Letter: China's Use of Digital Global Influence to Gain Power and Weaken U.S. Leadership — Brandi Y. Williams",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/thestcenturyscar1094566743"
+  },
+  {
+   "book": "Investigations into the impact of astronomical phenomena on the terrestrial biosphere and climate — Fabo Feng",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Ruperto-Carola-University of Heidelberg, Germany, 2015. Full text: https://archive.org/details/arxiv-1505.07856"
+  },
+  {
+   "book": "China's War by Other Means: Unveiling China's Quest for Information Dominance — Maj Teresa L. Sullivan",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — U.S. Army Command and General Staff College, 2017. Full text: https://archive.org/details/DTIC_AD1039548"
+  },
+  {
+   "book": "Technique for geolocation of EMI emitters by O3b satellites — James P. Connolly",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/techniqueforgeol1094549440"
+  },
+  {
+   "book": "Real-Time Detection of Operational Military Information in Social Media — Patrick M. Gillen",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_AD1008935"
+  },
+  {
+   "book": "Spin Squeezing, Macrorealism and the Heisenberg uncertainty principle — Giuseppe Vitagliano",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — University of the Basque Country, 2015. Full text: https://archive.org/details/arxiv-1511.08104"
+  },
+  {
+   "book": "Experiencing the Elements: Self-Building Through the Embodied Extension of Conceptual Metaphors in Contemporary Ritual Magic — David Riley Campbell",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — University of Amsterdam, 2024. Full text: https://archive.org/details/experiencing-the-elements-thesis-of-david-riley-campbell-at-the-university-of-amsterdam-2024"
+  },
+  {
+   "book": "Integrating Blue Infrastructure in Temple Towns: A Case of Nashik's Sacred Waterscapes — Kajol Chaudhari",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology (VNIT) Nagpur, 2025. Full text: https://archive.org/details/sgng.19281-integrating-blue-infrastructure-in-temple-towns-a-case-of-nashik-"
   },
   {
    "book": "ENIP Fuzz: a Scapy-based EtherNet/IP fuzzer for security testing — Francisco Tacliad",
@@ -423,9 +313,9 @@
    "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632313"
   },
   {
-   "book": "A Validation of the Proposed Royal Australian Navy Standard Work Week and Naval Management Diary Using a Simulated Crew of an Armidale Class Patrol Boat — Jessica Groot (Lieutenant",
+   "book": "Cyberspace actions in a counterinsurgency — Andrzej V. Kujawski",
    "genre": "Thesis",
-   "bookline": "Masters thesis — Royal Australian Navy), Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632239"
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/cyberspacections1094549331"
   },
   {
    "book": "Analysis of Sleep, Mood, Behavior, and Suicide Risk of Sailors on the USS Ashland — Eric M. Myers",
@@ -433,9 +323,9 @@
    "bookline": "Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/analysisofsleepm1094566115"
   },
   {
-   "book": "Can the Outer Space Treaty Prevent Conflicts in Orbit in the 21st Century? — Nicole M. Breen",
-   "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2018. Full text: https://archive.org/details/cantheouterspace1094559607"
+   "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
+   "bookline": "Miquel Noguer i Alonso, 2026 (Packt) — A hands-on guide to LLM architectures, agents, RAG, governance, and evaluation in finance.",
+   "genre": "Nonfiction"
   },
   {
    "book": "Bridging the Gap: Enhancing SNA Within the Marine Corps Intelligence Community — Robert C. Schotter",
@@ -443,34 +333,39 @@
    "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632494"
   },
   {
-   "book": "Changes in Latitudes, Changes in Attitudes: Narrating a Regime Change — Pattric R. Patterson and Matthew D. Ziobro",
+   "book": "Optical Theory Improvements to Space Domain Awareness — Tyler J. Hardy",
    "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA620695"
+   "bookline": "PhD thesis — Air Force Institute of Technology (Air University), 2016. Full text: https://archive.org/details/arxiv-1603.05071"
   },
   {
-   "book": "Real-Time Detection of Operational Military Information in Social Media — Patrick M. Gillen",
+   "book": "The Federal Task Force on Housing and Urban Development and the Limits of Participatory Democracy, 1968-1969 — Brendan Nicholas Gemmell",
    "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_AD1008935"
+   "bookline": "Masters thesis — Dalhousie University, 2017. Full text: https://archive.org/details/gemmell-2017-federal-task-force-on-housing-and-urban-development-1968-1969"
   },
   {
-   "book": "The 21st Century Scarlet Letter: China's Use of Digital Global Influence to Gain Power and Weaken U.S. Leadership — Brandi Y. Williams",
+   "book": "Atalhos para Adiabaticidade e Aplicacoes em Computacao Quantica (Shortcuts to Adiabaticity and Applications in Quantum Computation) — Alan Costa dos Santos",
    "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/thestcenturyscar1094566743"
+   "bookline": "Masters thesis — Universidade Federal Fluminense, 2016. Full text: https://archive.org/details/arxiv-1603.05071"
   },
   {
-   "book": "Seizing the Digital High Ground: Military Operations and Politics in the Social Media Era — author not named in IA metadata",
+   "book": "Using Mathematical Modeling and Set-Based Design Principles to Recommend an Existing CVL Design — William H. Ehlies",
    "genre": "Thesis",
-   "bookline": "Masters thesis — National Defense University (Joint Advanced Warfighting School), 2015. Full text: https://archive.org/details/DTIC_ADA622701"
+   "bookline": "Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/DTIC_AD1046831"
   },
   {
-   "book": "From successful defense to problematic offense: the devolution of unconventional warfare — Timothy S. Ball",
+   "book": "Technological Evolution of High Temperature Superconductors — Jordan R. White",
    "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/fromsuccessfulde1094551617"
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_AD1009326"
   },
   {
-   "book": "Yemen: Comparative Insurgency and Counterinsurgency — Ryan Johnson",
+   "book": "Supply Chain: Wake Up; It is Critical to Military Success — Christopher E. Dexter",
    "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/yemencomparative1094545200"
+   "bookline": "Masters thesis — Joint Advanced Warfighting School, 2014. Full text: https://archive.org/details/DTIC_ADA621695"
+  },
+  {
+   "book": "Ethics, Eugenics, and Public Education in Georgia (1910-1965) — Aaron Gerald Guest Sr.",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Columbus State University, 2017. Full text: https://archive.org/details/guest-csu"
   },
   {
    "book": "The Triangle Offense: Using Social Movement Theory to Analyze Russia's Gray Zone Strategy — Alexander V. Simmons",
@@ -478,19 +373,124 @@
    "bookline": "Masters thesis — National Defense University (Joint Advanced Warfighting School), 2017. Full text: https://archive.org/details/DTIC_AD1032497"
   },
   {
-   "book": "Cyberspace actions in a counterinsurgency — Andrzej V. Kujawski",
+   "book": "Server-based and server-less BYOD solutions to support electronic learning — Joshua C. Benson & Brian R. McCarthy",
    "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/cyberspacections1094549331"
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/serverbasedndser1094549343"
   },
   {
-   "book": "China's War by Other Means: Unveiling China's Quest for Information Dominance — Maj Teresa L. Sullivan",
+   "book": "Measuring Resilience — Joshua L. Boyle",
    "genre": "Thesis",
-   "bookline": "Masters thesis — U.S. Army Command and General Staff College, 2017. Full text: https://archive.org/details/DTIC_AD1039548"
+   "bookline": "Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/measuringresilie1094566593"
   },
   {
-   "book": "Combating Daesh: A Socially Unconventional Strategy — Derek J. Raymond",
+   "book": "Investigating the effect of Copper (CuI) depletion on the serotonergic neurons and serotonin signalling in the nematode based model — Iram Khan",
    "genre": "Thesis",
-   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/combatingdaeshso1094545928"
+   "bookline": "Masters thesis — Sister Nivedita University, 2025. Full text: https://archive.org/details/sgng.20150-investigating-the-effect-of-copper-cui-depletion-on-the-serotoner"
+  },
+  {
+   "book": "Indo-Slavic lexical isoglosses and the prehistoric dispersal of Indo-Iranian — A.I. Palmér",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Leiden University, 2024. Full text: https://archive.org/details/indo-slavic-thesis"
+  },
+  {
+   "book": "The paradoxical pope: the contemplative and active lives of Gregory the Great — Elizabeth E. Marvel",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Gordon-Conwell Theological Seminary, 2015. Full text: https://archive.org/details/2015MarvelElizabeth"
+  },
+  {
+   "book": "Seizing the Digital High Ground: Military Operations and Politics in the Social Media Era — author not named in IA metadata",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — National Defense University (Joint Advanced Warfighting School), 2015. Full text: https://archive.org/details/DTIC_ADA622701"
+  },
+  {
+   "book": "Yemen: Comparative Insurgency and Counterinsurgency — Ryan Johnson",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/yemencomparative1094545200"
+  },
+  {
+   "book": "Complexity Theory and Its Applications in Linear Quantum Optics — Jonathan P. Olson",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Louisiana State University, 2016. Full text: https://archive.org/details/arxiv-1607.02991"
+  },
+  {
+   "book": "Water Quality and Faecal Coliform Dynamics in Aquaculture Bheris of East Calcutta Wetland — Rajashree Ghosh",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Sister Nivedita University, 2025. Full text: https://archive.org/details/sgng.20660-water-quality-and-fecal-coliform-dyanamics-in-aquacul-ture-bheri-"
+  },
+  {
+   "book": "The Housing Secure Initiative: Helping Families Overcome Housing Insecurity — Geoffrey Heth",
+   "genre": "Thesis",
+   "bookline": "D.Min. thesis-project thesis — Gordon-Conwell Theological Seminary, 2023. Full text: https://archive.org/details/heth-geoffrey-w-final"
+  },
+  {
+   "book": "Shinto: The Ancient Religion of Japan — William George Aston",
+   "genre": "Nonfiction",
+   "bookline": "Japanese religion — Aston's 1921 classic on Shinto: nature-gods, ritual purity, myth, and the making of the Imperial cult."
+  },
+  {
+   "book": "From successful defense to problematic offense: the devolution of unconventional warfare — Timothy S. Ball",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/fromsuccessfulde1094551617"
+  },
+  {
+   "book": "Empirical analysis of using erasure coding in outsourcing data storage with provable security — Abdallah Bakir",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/empiricalnalysis1094549341"
+  },
+  {
+   "book": "A Validation of the Proposed Royal Australian Navy Standard Work Week and Naval Management Diary Using a Simulated Crew of an Armidale Class Patrol Boat — Jessica Groot (Lieutenant",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Royal Australian Navy), Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632239"
+  },
+  {
+   "book": "Tragedy and Hope — Carroll Quigley",
+   "genre": "Nonfiction",
+   "bookline": "Grand-strategy history — Quigley's 1966 classic on Western civilization's cycles, financial capitalism, the Anglo-American network, and the shape of the twentieth century."
+  },
+  {
+   "book": "The Prince — Niccolò Machiavelli",
+   "bookline": "Power mechanics — Machiavelli's 1532 classic on how principalities are won, held, and lost: virtue, fortune, and the economy of cruelty.",
+   "genre": "Nonfiction"
+  },
+  {
+   "book": "Meditations — Marcus Aurelius",
+   "bookline": "Stoic practice — the Roman emperor's private notebook: perception, impermanence, duty, and the inner citadel.",
+   "genre": "Nonfiction"
+  },
+  {
+   "book": "Democracy in America — Alexis de Tocqueville",
+   "bookline": "Democratic character — Tocqueville's 1835-40 study of equality's effects: associations, the tyranny of the majority, and soft despotism.",
+   "genre": "Nonfiction"
+  },
+  {
+   "book": "Propaganda — Edward L. Bernays",
+   "bookline": "Manufacturing consent — Bernays's 1928 manual on the invisible government, group leaders, and the engineering of public opinion.",
+   "genre": "Nonfiction"
+  },
+  {
+   "book": "Manufacturing Consent — Noam Chomsky & Edward S. Herman",
+   "bookline": "Propaganda model — Chomsky and Herman's 1988 classic on the five news filters, worthy and unworthy victims, and how consent is manufactured without censorship.",
+   "genre": "Nonfiction"
+  },
+  {
+   "book": "Rules for Radicals — Saul D. Alinsky",
+   "bookline": "Power tactics — Alinsky's 1971 organizer's manual: the thirteen rules of power tactics, the ethics of means and ends, the haves and have-nots, and the organizer who builds power for others to use.",
+   "genre": "Nonfiction"
+  },
+  {
+   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
+   "bookline": "Business rebalancing — McAfee & Brynjolfsson's 2017 triple-revolution framework: mind to machine, product to platform, core to crowd; when algorithms beat experts, why platforms win the match game, and why companies survive the crowd anyway.",
+   "genre": "Nonfiction"
+  },
+  {
+   "book": "The Second Machine Age — Erik Brynjolfsson & Andrew McAfee",
+   "bookline": "Tech and inequality — Brynjolfsson & McAfee's 2014 classic on the second half of the chessboard: exponential digital progress, bounty versus spread, the Great Decoupling, and why the winning move is to race with machines, not against them.",
+   "genre": "Nonfiction"
+  },
+  {
+   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
+   "bookline": "Andrew Aziz and performance psychologist Crede Sheehy-Kelly's 2025 system for building a complete trading system: strategy is a concept, a TradeBook is the manual — selection, identification, execution, review — and the edge is never one piece but the combination.",
+   "genre": "Nonfiction"
   }
  ],
  "cards": [
@@ -2403,7 +2403,7 @@
    ],
    "source_locator": "Ch. 14, §14.1",
    "related_ids": [
-    14
+    141
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2421,7 +2421,7 @@
    ],
    "source_locator": "Ch. 14, §14.9",
    "related_ids": [
-    13
+    140
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2439,7 +2439,7 @@
    ],
    "source_locator": "Ch. 14, §14.2.2",
    "related_ids": [
-    14
+    141
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2457,7 +2457,7 @@
    ],
    "source_locator": "Ch. 13, §13.4.10",
    "related_ids": [
-    19
+    146
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2490,7 +2490,7 @@
    ],
    "source_locator": "Ch. 11, §11.1",
    "related_ids": [
-    15
+    142
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2508,7 +2508,7 @@
    ],
    "source_locator": "Ch. 13, §13.8",
    "related_ids": [
-    16
+    143
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2526,7 +2526,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    21
+    148
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2544,7 +2544,7 @@
    "source_locator": "Ch. 11, §11.4",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    20
+    147
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2562,8 +2562,8 @@
    "source_locator": "Ch. 3, §3.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    19,
-    23
+    146,
+    150
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2581,8 +2581,8 @@
    "source_locator": "Ch. 4, §4.2",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    19,
-    22
+    146,
+    149
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2600,7 +2600,7 @@
    "source_locator": "Ch. 6, §6.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    18
+    145
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2618,7 +2618,7 @@
    "source_locator": "Ch. 8, §8.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    16
+    143
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2636,7 +2636,7 @@
    "source_locator": "Ch. 3, §3.7.5",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    18
+    145
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2654,7 +2654,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    16
+    143
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
