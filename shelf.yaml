@@ -776,6 +776,14 @@ books:
   - book
   - genre
   - bookline
+- key: stranger-in-a-strange-land-robert-a-heinlein
+  genre: Science Fiction
+  bookline: 'A Martian-raised outsider becomes a prophet: how charisma manufactures
+    reality. Ripped as the book on trial against itself.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1205,3 +1213,10 @@ card_order:
 - 431
 - 432
 - 433
+- 434
+- 435
+- 436
+- 437
+- 438
+- 439
+- 440
