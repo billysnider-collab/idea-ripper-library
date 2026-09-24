@@ -471,11 +471,6 @@
    "book": "Manufacturing Consent — Noam Chomsky & Edward S. Herman",
    "bookline": "Propaganda model — Chomsky and Herman's 1988 classic on the five news filters, worthy and unworthy victims, and how consent is manufactured without censorship.",
    "genre": "Nonfiction"
-  },
-  {
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "bookline": "Power tactics — Alinsky's 1971 organizer's manual: the thirteen rules of power tactics, the ethics of means and ends, the haves and have-nots, and the organizer who builds power for others to use.",
-   "genre": "Nonfiction"
   }
  ],
  "cards": [
@@ -2388,7 +2383,7 @@
    ],
    "source_locator": "Ch. 14, §14.1",
    "related_ids": [
-    99
+    82
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2406,7 +2401,7 @@
    ],
    "source_locator": "Ch. 14, §14.9",
    "related_ids": [
-    98
+    81
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2424,7 +2419,7 @@
    ],
    "source_locator": "Ch. 14, §14.2.2",
    "related_ids": [
-    99
+    82
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2442,7 +2437,7 @@
    ],
    "source_locator": "Ch. 13, §13.4.10",
    "related_ids": [
-    104
+    87
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2475,7 +2470,7 @@
    ],
    "source_locator": "Ch. 11, §11.1",
    "related_ids": [
-    100
+    83
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2493,7 +2488,7 @@
    ],
    "source_locator": "Ch. 13, §13.8",
    "related_ids": [
-    101
+    84
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2511,7 +2506,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    106
+    89
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2529,7 +2524,7 @@
    "source_locator": "Ch. 11, §11.4",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    105
+    88
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2547,8 +2542,8 @@
    "source_locator": "Ch. 3, §3.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    104,
-    108
+    87,
+    91
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2566,8 +2561,8 @@
    "source_locator": "Ch. 4, §4.2",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    104,
-    107
+    87,
+    90
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2585,7 +2580,7 @@
    "source_locator": "Ch. 6, §6.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    103
+    86
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2603,7 +2598,7 @@
    "source_locator": "Ch. 8, §8.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    101
+    84
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2621,7 +2616,7 @@
    "source_locator": "Ch. 3, §3.7.5",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    103
+    86
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2639,7 +2634,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    101
+    84
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -3957,244 +3952,6 @@
    ],
    "related_ids": [],
    "source_locator": "Preface",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Power is what the enemy thinks you have",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "Always remember the first rule of power tactics: Power is not only what you have but what the enemy thinks you have.",
-   "why": "Power is perception: the size of your force is measured in the enemy's head, not in your headcount.",
-   "uw": "When you're outnumbered and need to look bigger than you are.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Never go outside the experience of your people",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "The second rule is: Never go outside the experience of your people. When an action or tactic is outside the experience of the people, the result is confusion, fear, and retreat. It also means a collapse of communication, as we have noted.",
-   "why": "Novelty in tactics backfires on your own side first — your people retreat before the enemy even reacts.",
-   "uw": "Before trying a tactic your people have never seen before.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Go outside the experience of the enemy",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "The third rule is: Wherever possible go outside of the experience of the enemy. Here you want to cause confusion, fear, and retreat.",
-   "why": "The mirror of rule two: unfamiliar tactics are a weapon only when pointed at the other side.",
-   "uw": "When you're planning how the enemy will react to something new.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Make the enemy live up to its own book of rules",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "The fourth rule is: Make the enemy live up to their own book of rules. You can kill them with this, for they can no more obey their own rules than the Christian church can live up to Christianity.",
-   "why": "No institution can survive full compliance with its own stated standards — so demand exactly that.",
-   "uw": "When an institution preaches one thing and practices another.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Ridicule is man's most potent weapon",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "The fourth rule carries within it the fifth rule: Ridicule is man's most potent weapon. It is almost impossible to counterattack ridicule. Also it infuriates the opposition, who then react to your advantage.",
-   "why": "Laughter can't be answered with a press release — and an angry opponent makes your mistakes for you.",
-   "uw": "When the other side's dignity is its armor.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "A good tactic is one your people enjoy",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "The sixth rule is: A good tactic is one that your people enjoy. If your people are not having a ball doing it, there is something very wrong with the tactic.",
-   "why": "Fun is a tactical diagnostic — enjoyment sustains action longer than duty does.",
-   "uw": "When participation is flagging and you can't figure out why.",
-   "intents": [
-    "a system feels stuck"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "A tactic that drags on too long becomes a drag",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "The seventh rule: A tactic that drags on too long becomes a drag. Man can sustain militant interest in any issue for only a limited time, after which it becomes a ritualistic commitment, like going to church on Sunday mornings.",
-   "why": "Energy has a shelf life — a stale tactic keeps the form of action while the life drains out of it.",
-   "uw": "When a campaign is running on habit instead of heat.",
-   "intents": [
-    "a system feels stuck"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Keep the pressure on",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "The eighth rule: Keep the pressure on, with different tactics and actions, and utilize all events of the period for your purpose.",
-   "why": "Relief is the enemy's recovery time — variety of attack keeps the opposition from ever resetting.",
-   "uw": "When the other side is hoping you'll get tired.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "The threat is more terrifying than the thing itself",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "The ninth rule: The threat is usually more terrifying than the thing itself.",
-   "why": "Imagination does the work of force — the enemy's fear of what you might do outruns anything you could actually do.",
-   "uw": "When you have leverage but not the strength to spend it.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Constant pressure produces the reaction",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "The tenth rule: The major premise for tactics is the development of operations that will maintain a constant pressure upon the opposition. It is this unceasing pressure that results in the reactions from the opposition that are essential for the success of the campaign.",
-   "why": "The action is in the reaction — you don't win exchanges, you keep the enemy reacting, because reactions are what you steer.",
-   "uw": "When you're designing a campaign as a sequence, not a single event.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Push a negative until it breaks into its counterside",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "The eleventh rule is: If you push a negative hard and deep enough it will break through into its counterside; this is based on the principle that every positive has its negative.",
-   "why": "Overextension flips: push the enemy's attack far enough and it becomes your asset — panic makes them burglarize your office and leave their fingerprints everywhere.",
-   "uw": "When the opposition is overreaching and about to discredit itself.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "A successful attack needs a constructive alternative",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "The twelfth rule: The price of a successful attack is a constructive alternative. You cannot risk being trapped by the enemy in his sudden agreement with your demand and saying “You’re right—we don’t know what to do about this issue. Now you tell us.”",
-   "why": "Winning the argument without an answer hands you the problem — surrender can be the enemy's best counterattack.",
-   "uw": "Before you demand something, have the replacement ready.",
-   "intents": [
-    "a better question"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Pick the target, freeze it, personalize it, polarize it",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "mechanism",
-   "steal": "The thirteenth rule: Pick the target, freeze it, personalize it, and polarize it.",
-   "why": "Institutions survive by diffusing responsibility until attack is impossible — so you pin one name to the evil and never let it squirm free.",
-   "uw": "When everyone's responsible and therefore no one is.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "The immaculate conception of ends",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "argument",
-   "steal": "The man of action views the issue of means and ends in pragmatic and strategic terms. He has no other problem; he thinks only of his actual resources and the possibilities of various choices of action. He asks of ends only whether they are achievable and worth the cost; of means, only whether they will work. To say that corrupt means corrupt the ends is to believe in the immaculate conception of ends and principles. The real arena is corrupt and bloody.",
-   "why": "Alinsky's ethics: judge tactics by whether they work and whether the end is worth it — purity of means is a luxury of observers, not actors.",
-   "uw": "When someone demands clean hands in a dirty fight.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "related_ids": [],
-   "source_locator": "Of Means and Ends",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "The Haves, the Have-Nots, and the Have-a-Little, Want Mores",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "concept",
-   "steal": "Mankind has been and is divided into three parts: the Haves, the Have-Nots, and the Have-a-Little, Want Mores.",
-   "why": "Every power fight runs on this trinity — the comfortable freeze the status quo, the desperate want to take, and the middle class wants change without risk.",
-   "uw": "When you're mapping who actually has a stake in changing things.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "The Purpose",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "The organizer builds power for others to use",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "definition",
-   "steal": "This is the basic difference between the leader and the organizer. The leader goes on to build power to fulfill his desires, to hold and wield the power for purposes both social and personal. He wants power himself. The organizer finds his goal in creation of power for others to use.",
-   "why": "Leadership accumulates power; organizing distributes it — the organizer's product is other people's power, not his own.",
-   "uw": "When you're tempted to become the leader instead of the builder.",
-   "intents": [
-    "a better question"
-   ],
-   "related_ids": [],
-   "source_locator": "Of the Organizer",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "They were being laughed at, and this was insufferable",
-   "book": "Rules for Radicals — Saul D. Alinsky",
-   "type": "evidence",
-   "steal": "I looked blank and replied, “Maybe I am innocent and uninformed of what has been happening here, but as far as I know the only thing Eastman Kodak has done on the race issue in America has been to introduce color film.” The reaction was shock, anger, and resentment from Kodak. They were not being attacked or insulted—they were being laughed at, and this was insufferable.",
-   "why": "Ridicule in the field: Kodak could survive attack but not laughter — the fifth rule demonstrated on the most powerful company in Rochester.",
-   "uw": "When you need proof that ridicule works on the powerful.",
-   "intents": [
-    "a strange example"
-   ],
-   "related_ids": [],
-   "source_locator": "Tactics",
    "ripped_at": "2026-09-23"
   }
  ]
