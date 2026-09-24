@@ -288,7 +288,10 @@ chips = "\n".join(
 
 genre_opts = "\n".join('<option value="%s">%s</option>' % (esca(g), esc(g)) for g in genre_order)
 book_opts = "\n".join('<option value="%s">%s</option>' % (esca(b["book"]), esc(b["book"])) for b in books)
-type_opts = "\n".join('<option value="%s">%s</option>' % (esca(t2), esc(t2)) for t2 in types)
+type_counts = {t2: sum(1 for c in cards if c["type"] == t2) for t2 in types}
+type_checks = "\n".join(
+    '<label class="tcheck"><input type="checkbox" name="ftype" value="%s"/> %s <span class="tn">(%d)</span></label>'
+    % (esca(t2), esc(t2), type_counts[t2]) for t2 in types)
 
 CSS = """
 :root{--bg:#0b1220;--panel:#121a2b;--fg:#f3f0e8;--muted:#8b97ad;--amber:#e8a54b;--border:#243049}
@@ -437,12 +440,37 @@ button::-moz-focus-inner{border:0;padding:0}
 .noresults button{background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:.4rem .7rem;font-size:.85rem;cursor:pointer;margin-left:.5rem}
 .noresults button:hover{color:var(--fg);border-color:var(--amber)}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+/* Phase 2 (2026-09-24): match highlighting, type checkboxes, deep-link target, mobile filters */
+mark{background:var(--amber);color:#14110c;font-weight:700;border-radius:2px;padding:0 .1em}
+.card.deeplink{outline:2px solid var(--amber);outline-offset:3px}
+.count{min-width:18ch;text-align:right}
+.typefilter{position:relative}
+.typefilter>summary{cursor:pointer;list-style:none;background:var(--panel);border:1px solid var(--border);color:var(--fg);border-radius:8px;padding:.45rem .6rem;font-size:.85rem}
+.typefilter>summary::-webkit-details-marker{display:none}
+.typefilter>summary::before{content:"▸ ";color:var(--amber)}
+.typefilter[open]>summary::before{content:"▾ "}
+.typefilter fieldset{border:1px solid var(--border);border-radius:8px;padding:.6rem .8rem;margin:.45rem 0 0;display:flex;flex-wrap:wrap;gap:.4rem .9rem;flex:1 1 100%;background:var(--panel)}
+.typefilter legend{font-size:.78rem;color:var(--muted);padding:0 .35rem}
+.tcheck{display:inline-flex;align-items:center;gap:.35rem;font-size:.85rem;cursor:pointer;color:var(--fg)}
+.tcheck input{accent-color:var(--amber);width:1rem;height:1rem}
+.tn{color:var(--muted);font-size:.78rem}
+.tcount{background:var(--amber);color:#14110c;border-radius:999px;font-size:.72rem;font-weight:700;padding:.05rem .45rem;margin-left:.25rem}
+#cleartypes{background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:6px;padding:.3rem .65rem;font-size:.8rem;cursor:pointer}
+#cleartypes:hover{color:var(--fg);border-color:var(--amber)}
+@media(max-width:700px){
+.controls input[type=search]{flex:1 1 100%}
+.typefilter{flex:1 1 100%}
+.typefilter>summary{width:100%}
+.book,.fbook{scroll-margin-top:8rem}
+.controls{padding-top:env(safe-area-inset-top,0px)}
+}
 """
 
 JS = r"""
 (function(){
 var q=document.getElementById('q'),gs=document.getElementById('fgenre'),
-    bs=document.getElementById('fbook'),ts=document.getElementById('ftype'),
+    bs=document.getElementById('fbook'),
+    tboxes=document.querySelectorAll('input[name=ftype]'),
     count=document.getElementById('count'),nores=document.getElementById('noresults'),
     toastEl=document.getElementById('toast'),
     total=document.querySelectorAll('.card:not([data-fb])').length,
@@ -458,16 +486,40 @@ function setBook(book,expand){
   var hd=book.querySelector('.bookhead');
   if(hd)hd.setAttribute('aria-expanded',expand?'true':'false');
 }
+function checkedTypes(){
+  var v=[];
+  for(var i=0;i<tboxes.length;i++)if(tboxes[i].checked)v.push(tboxes[i].value);
+  return v;
+}
+function updateTypeUI(){
+  var n=checkedTypes().length,tc=document.getElementById('tcount'),cl=document.getElementById('cleartypes');
+  if(n){tc.textContent=n;tc.hidden=false;}else{tc.hidden=true;}
+  cl.hidden=!n;
+}
+function setHash(h){
+  if(history.replaceState){try{history.replaceState(null,'',location.pathname+location.search+h);}catch(_){}}
+}
+function syncURL(){
+  if(!history.replaceState)return;
+  var p,term=q.value.trim(),tvs=checkedTypes();
+  try{p=new URLSearchParams(location.search);}catch(_){p=new URLSearchParams();}
+  if(term)p.set('q',term);else p.delete('q');
+  if(tvs.length)p.set('type',tvs.join(','));else p.delete('type');
+  if(gs.value)p.set('g',gs.value);else p.delete('g');
+  if(bs.value)p.set('b',bs.value);else p.delete('b');
+  var qs=p.toString();
+  try{history.replaceState(null,'',location.pathname+(qs?'?'+qs:'')+location.hash);}catch(_){}
+}
 function apply(fromInput){
   var term=q.value.trim().toLowerCase(),
-      gv=gs.value,bv=bs.value,tv=ts.value,
-      filtering=!!(term||gv||bv||tv);
+      gv=gs.value,bv=bs.value,tvs=checkedTypes(),
+      filtering=!!(term||gv||bv||tvs.length);
   document.querySelectorAll('.card:not([data-fb])').forEach(function(c){
     var ok=true;
     if(term&&c.dataset.search.indexOf(term)<0)ok=false;
     if(gv&&c.dataset.genre!==gv)ok=false;
     if(bv&&c.dataset.book!==bv)ok=false;
-    if(tv&&c.dataset.type!==tv)ok=false;
+    if(tvs.length&&tvs.indexOf(c.dataset.type)<0)ok=false;
     c.classList.toggle('hidden',!ok);
     if(fromInput)c.classList.toggle('open',!!term&&ok||(!term&&ok&&c.dataset.genre==='Thesis'));
   });
@@ -504,14 +556,85 @@ function apply(fromInput){
   count.textContent='showing '+vis+' of '+total;
   nores.hidden=vis>0;
   if(!nores.hidden){
-    nores.innerHTML='No rips match &ldquo;'+jesc(q.value.trim())+'&rdquo;. Try a broader term. <button type="button" id="clearq">Clear search</button>';
-    var cq=document.getElementById('clearq');
-    if(cq)cq.addEventListener('click',function(){q.value='';apply(true);q.focus();});
+    var msg='No rips match',tm=q.value.trim(),tn=checkedTypes();
+    if(tm)msg+=' &ldquo;'+jesc(tm)+'&rdquo;';
+    if(tn.length)msg+=(tm?' with':'')+' type &ldquo;'+tn.map(jesc).join(', ')+'&rdquo;';
+    if(!tm&&!tn.length&&(gv||bv))msg+=' the current filters';
+    msg+='. <button type="button" id="clearall">Clear search and filters</button>';
+    nores.innerHTML=msg;
+    var ca=document.getElementById('clearall');
+    if(ca)ca.addEventListener('click',function(){
+      q.value='';gs.value='';bs.value='';
+      for(var i=0;i<tboxes.length;i++)tboxes[i].checked=false;
+      apply(true);q.focus();
+    });
+  }
+  updateTypeUI();
+  syncURL();
+  scheduleHighlight(term);
+}
+function clearMarks(root){
+  var marks=root.querySelectorAll('mark'),i,m,p;
+  for(i=0;i<marks.length;i++){
+    m=marks[i];p=m.parentNode;
+    while(m.firstChild)p.insertBefore(m.firstChild,m);
+    p.removeChild(m);
+    p.normalize();
   }
 }
-[q,gs,bs,ts].forEach(function(el){
-  el.addEventListener('input',function(){apply(true);});
-  el.addEventListener('change',function(){apply(false);});
+function markTerm(el,term){
+  var walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null,false),nodes=[],nd,i,t,low,idx,last,frag,mk;
+  while(nd=walker.nextNode()){
+    if(nd.parentNode&&nd.parentNode.className==='k')continue;
+    nodes.push(nd);
+  }
+  for(i=0;i<nodes.length;i++){
+    t=nodes[i];low=t.nodeValue.toLowerCase();idx=low.indexOf(term);
+    if(idx<0)continue;
+    frag=document.createDocumentFragment();last=0;
+    while((idx=low.indexOf(term,last))>=0){
+      if(idx>last)frag.appendChild(document.createTextNode(t.nodeValue.slice(last,idx)));
+      mk=document.createElement('mark');
+      mk.textContent=t.nodeValue.slice(idx,idx+term.length);
+      frag.appendChild(mk);
+      last=idx+term.length;
+    }
+    frag.appendChild(document.createTextNode(t.nodeValue.slice(last)));
+    t.parentNode.replaceChild(frag,t);
+  }
+}
+var hlT=null;
+function scheduleHighlight(term){
+  clearTimeout(hlT);
+  hlT=setTimeout(function(){
+    document.querySelectorAll('.card:not([data-fb])').forEach(function(c){clearMarks(c);});
+    if(term){
+      document.querySelectorAll('.card:not([data-fb]):not(.hidden)').forEach(function(c){
+        ['.ctitle','.steal','.why','.uw'].forEach(function(sel){
+          var el=c.querySelector(sel);if(el)markTerm(el,term);
+        });
+      });
+    }
+  },term?150:0);
+}
+var liveT=null;
+function announceLive(){
+  var el=document.getElementById('countlive');
+  if(el)el.textContent=count.textContent;
+}
+function scheduleLive(){clearTimeout(liveT);liveT=setTimeout(announceLive,400);}
+q.addEventListener('input',function(){apply(true);scheduleLive();});
+q.addEventListener('change',function(){apply(false);});
+[gs,bs].forEach(function(el){
+  el.addEventListener('input',function(){apply(true);announceLive();});
+  el.addEventListener('change',function(){apply(false);announceLive();});
+});
+for(var ti=0;ti<tboxes.length;ti++){
+  tboxes[ti].addEventListener('change',function(){apply(true);announceLive();});
+}
+document.getElementById('cleartypes').addEventListener('click',function(){
+  for(var i=0;i<tboxes.length;i++)tboxes[i].checked=false;
+  apply(true);announceLive();
 });
 q.addEventListener('keydown',function(e){
   if(e.key==='Escape'){q.value='';apply(true);}
@@ -521,7 +644,7 @@ function toggleCard(card,open){
   card.classList.toggle('open',will);
   var chd=card.querySelector('.cardhead');
   if(chd)chd.setAttribute('aria-expanded',will?'true':'false');
-  if(will&&card.dataset.n&&history.replaceState){try{history.replaceState(null,'','#c'+card.dataset.n);}catch(_){}}
+  if(will&&card.dataset.n)setHash('#c'+card.dataset.n);
 }
 document.querySelectorAll('.cardhead').forEach(function(h){
   h.addEventListener('click',function(){toggleCard(h.closest('.card'));});
@@ -571,14 +694,15 @@ document.querySelectorAll('#jumpchips a').forEach(function(ch){
     var b=document.getElementById(ch.getAttribute('href').slice(1));
     if(b){e.preventDefault();setBook(b,true);
       b.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});
-      if(history.replaceState){try{history.replaceState(null,'',ch.getAttribute('href'));}catch(_){}}}
+      setHash(ch.getAttribute('href'));}
   });
 });
 function openHash(){
   var m=/^#c(\d+)$/.exec(location.hash),c;
   if(m&&(c=document.getElementById('c'+m[1]))){
-    var b=c.closest('.book');setBook(b,true);c.classList.add('open');
-    var oh=c.querySelector('.cardhead');if(oh)oh.setAttribute('aria-expanded','true');
+    var b=c.closest('.book');setBook(b,true);c.classList.add('open');c.classList.add('deeplink');
+    var oh=c.querySelector('.cardhead');
+    if(oh){oh.setAttribute('aria-expanded','true');try{oh.focus({preventScroll:true});}catch(_){}}
     setTimeout(function(){c.scrollIntoView({behavior:RM?'auto':'smooth',block:'center'});},60);return true;
   }
   m=/^#b-([a-z0-9-]+)$/.exec(location.hash);
@@ -588,10 +712,22 @@ function openHash(){
 }
 var firstBook=document.querySelector('.book');
 if(firstBook)manual[firstBook.id]=true;
-apply(false);
-if(!openHash()&&firstBook){
+(function restoreURL(){
+  var p,qq,tt,gg,bb,want,i;
+  try{p=new URLSearchParams(location.search);}catch(_){return;}
+  qq=p.get('q');if(qq)q.value=qq;
+  tt=p.get('type');
+  if(tt){want={};tt.split(',').forEach(function(t){want[t]=1;});
+    for(i=0;i<tboxes.length;i++)tboxes[i].checked=!!want[tboxes[i].value];}
+  gg=p.get('g');if(gg)gs.value=gg;
+  bb=p.get('b');if(bb)bs.value=bb;
+  if(tt){var d=document.getElementById('typefilter');if(d)d.open=true;}
+})();
+var restoredQ=q.value.trim()!=='';
+apply(restoredQ);
+if(!openHash()&&firstBook&&!restoredQ){
   var fc=firstBook.querySelector('.card');
-  if(fc){fc.classList.add('open');var fh=fc.querySelector('.cardhead');if(fh)fh.setAttribute('aria-expanded','true');if(history.replaceState){try{history.replaceState(null,'','#c'+fc.dataset.n);}catch(_){}}}
+  if(fc){fc.classList.add('open');var fh=fc.querySelector('.cardhead');if(fh)fh.setAttribute('aria-expanded','true');setHash('#c'+fc.dataset.n);}
 }
 })();
 
@@ -633,11 +769,17 @@ page = """<!DOCTYPE html>
 %s</select>
 <select id="fbook" aria-label="Filter by book"><option value="">All books</option>
 %s</select>
-<select id="ftype" aria-label="Filter by type"><option value="">All types</option>
-%s</select>
+<details class="typefilter" id="typefilter">
+<summary>Filter by type <span class="tcount" id="tcount" hidden></span></summary>
+<fieldset>
+<legend>Filter by type</legend>
+%s
+<button type="button" id="cleartypes" hidden>Clear type filters</button>
+</fieldset>
+</details>
 <button type="button" id="expand">Expand all</button>
 <button type="button" id="collapse">Collapse all</button>
-<span class="count" id="count"></span>
+<span class="count" id="count"></span><span id="countlive" class="sr-only" aria-live="polite"></span>
 </div></div>
 <nav class="jumpchips" id="jumpchips" aria-label="Jump to a book">%s</nav>
 <main>
@@ -648,7 +790,7 @@ page = """<!DOCTYPE html>
 <script>%s</script>
 <div id="toast" role="status"></div>
 </body>
-</html>""" % (CSS, WORDMARK_SVG, n, n_books, n_theses, curated, fb_intro, genre_opts, book_opts, type_opts, chips,
+</html>""" % (CSS, WORDMARK_SVG, n, n_books, n_theses, curated, fb_intro, genre_opts, book_opts, type_checks, chips,
               "\n\n".join(sections), n_books, n_theses, n, fb_footer, JS)
 
 open(os.path.join(BASE, "index.html"), "w", encoding="utf-8").write(page)
