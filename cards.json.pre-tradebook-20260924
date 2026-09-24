@@ -486,11 +486,6 @@
    "book": "The Second Machine Age — Erik Brynjolfsson & Andrew McAfee",
    "bookline": "Tech and inequality — Brynjolfsson & McAfee's 2014 classic on the second half of the chessboard: exponential digital progress, bounty versus spread, the Great Decoupling, and why the winning move is to race with machines, not against them.",
    "genre": "Nonfiction"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "bookline": "Andrew Aziz and performance psychologist Crede Sheehy-Kelly's 2025 system for building a complete trading system: strategy is a concept, a TradeBook is the manual — selection, identification, execution, review — and the edge is never one piece but the combination.",
-   "genre": "Nonfiction"
   }
  ],
  "cards": [
@@ -2403,7 +2398,7 @@
    ],
    "source_locator": "Ch. 14, §14.1",
    "related_ids": [
-    141
+    129
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2421,7 +2416,7 @@
    ],
    "source_locator": "Ch. 14, §14.9",
    "related_ids": [
-    140
+    128
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2439,7 +2434,7 @@
    ],
    "source_locator": "Ch. 14, §14.2.2",
    "related_ids": [
-    141
+    129
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2457,7 +2452,7 @@
    ],
    "source_locator": "Ch. 13, §13.4.10",
    "related_ids": [
-    146
+    134
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2490,7 +2485,7 @@
    ],
    "source_locator": "Ch. 11, §11.1",
    "related_ids": [
-    142
+    130
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2508,7 +2503,7 @@
    ],
    "source_locator": "Ch. 13, §13.8",
    "related_ids": [
-    143
+    131
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2526,7 +2521,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    148
+    136
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2544,7 +2539,7 @@
    "source_locator": "Ch. 11, §11.4",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    147
+    135
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2562,8 +2557,8 @@
    "source_locator": "Ch. 3, §3.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    146,
-    150
+    134,
+    138
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2581,8 +2576,8 @@
    "source_locator": "Ch. 4, §4.2",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    146,
-    149
+    134,
+    137
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2600,7 +2595,7 @@
    "source_locator": "Ch. 6, §6.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    145
+    133
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2618,7 +2613,7 @@
    "source_locator": "Ch. 8, §8.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    143
+    131
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2636,7 +2631,7 @@
    "source_locator": "Ch. 3, §3.7.5",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    145
+    133
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2654,7 +2649,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    143
+    131
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -4634,179 +4629,6 @@
    ],
    "related_ids": [],
    "source_locator": "Chapter 15: Technology and the Future",
-   "ripped_at": "2026-09-24"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "title": "A strategy is a concept; a TradeBook is a manual",
-   "type": "definition",
-   "steal": "There is a fundamental difference between a strategy and a TradeBook. A strategy outlines the overall concept—what to look for in a particular type of trade and how that trade generally works. A TradeBook, however, is much more practical, more like a manual.",
-   "why": "The book's spine sentence: a strategy only says what to look for, a TradeBook scripts selection, identification, planning, entries, exits, stops, position sizing, management, and psychology.",
-   "uw": "When someone pitches a 'strategy' with no rules for entries, exits, or review.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "source_locator": "Chapter 1: The TradeBook Advantage",
-   "related_ids": [],
-   "ripped_at": "2026-09-24"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "title": "The edge is the combination, not one piece",
-   "type": "argument",
-   "steal": "The edge in trading doesn’t come from any one of these pieces on their own. It comes from combining them into a system that works for you. That’s what a TradeBook helps you build—a personalized, complete, and practical trading guide based on your tools, your mindset, and your strategy.",
-   "why": "Technology, strategy, and psychology each fail alone; the TradeBook is the overlap where all three meet, and that overlap is the only durable edge.",
-   "uw": "When a trader keeps buying better tools instead of building a system.",
-   "intents": [
-    "change someone's mind",
-    "see the mechanism"
-   ],
-   "source_locator": "Chapter 1: The TradeBook Advantage",
-   "related_ids": [],
-   "ripped_at": "2026-09-24"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "title": "Gamification traded against the retail trader",
-   "type": "evidence",
-   "steal": "A November 2024 study shed light on this trend, analyzing 142 gamification features in the mobile trading apps of 17 major U.S. brokers. The research found that while these features successfully increased retail trading activity and income for brokers and market makers, they often led to lower returns and higher volatility for the retail traders themselves.",
-   "why": "The technology chapter's warning: the tools were built to increase broker income, and they work — by making you trade more and win less.",
-   "uw": "When a flashy app makes trading feel like a game and you trade more than planned.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "source_locator": "Chapter 2: Technology and Trading Instruments",
-   "related_ids": [],
-   "ripped_at": "2026-09-24"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "title": "Consistent hours, consistent results",
-   "type": "argument",
-   "steal": "The consistency of your trading hours has a direct impact on the consistency of your results.",
-   "why": "A one-line case for routine as infrastructure: concentrated volatility at defined hours lets a retail trader be sharp; 24/7 markets invite 24/7 bleed.",
-   "uw": "When your trading day has no edges and neither do your results.",
-   "intents": [
-    "a better question"
-   ],
-   "source_locator": "Chapter 2: Technology and Trading Instruments",
-   "related_ids": [],
-   "ripped_at": "2026-09-24"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "title": "Sitting out is a skill",
-   "type": "concept",
-   "steal": "Recognizing when not to trade is as valuable as knowing when to take a position.",
-   "why": "Most price action is choppy with no clear winner; the discipline to wait for a readable signal is priced like an entry skill.",
-   "uw": "When you feel the pull to trade an ambiguous tape.",
-   "intents": [
-    "notice what others miss"
-   ],
-   "source_locator": "Chapter 3: Understanding Price Action and Developing Well-Defined Strategies",
-   "related_ids": [],
-   "ripped_at": "2026-09-24"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "title": "Your edge is a TradeBook, codified and identifiable",
-   "type": "definition",
-   "steal": "Bear Bull Traders calls your edge in the markets your “TradeBooks”, and we define your edge as a specific market opportunity codified in a specific TradeBook, which is repeatedly identifiable, and provides you with a positive expected value in profit, over time, when executed with discipline.",
-   "why": "The formal definition: an edge is not a feeling about a setup, it is an opportunity written down, repeatedly recognizable, and positive-expectancy — the casino model of trading.",
-   "uw": "When asked to name your edge and you can only describe vibes.",
-   "intents": [
-    "see the mechanism",
-    "make an idea concrete"
-   ],
-   "source_locator": "Chapter 4: Building and Executing a TradeBook",
-   "related_ids": [],
-   "ripped_at": "2026-09-24"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "title": "The TradeBook answers: should I take this trade?",
-   "type": "argument",
-   "steal": "If you cannot put the trade opportunity into any of your TradeBooks, it means you should not take that trade. And this is the most important purpose of your TradeBooks. They help you answer the question: Should I take the trade or not?",
-   "why": "The TradeBook's gatekeeping function: it converts 'this looks good' into a binary fit-or-skip decision, which is where most retail losses begin.",
-   "uw": "When a tempting setup does not quite fit your plan but you want it anyway.",
-   "intents": [
-    "change someone's mind",
-    "a better question"
-   ],
-   "source_locator": "Chapter 4: Building and Executing a TradeBook",
-   "related_ids": [],
-   "ripped_at": "2026-09-24"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "title": "Success is not being right most of the time",
-   "type": "evidence",
-   "steal": "This highlights a vital aspect of trading: success is not about being right most of the time. Instead, it is about ensuring that your winning trades are large enough to outweigh your losses.",
-   "why": "Seven years of ORB research: stopped out 75% of the time, profitable on 25%, and still beating the market — expectancy, not win rate, is the scoreboard.",
-   "uw": "When a low win rate tempts you to abandon a working system.",
-   "intents": [
-    "change someone's mind",
-    "notice what others miss"
-   ],
-   "source_locator": "Chapter 4: Building and Executing a TradeBook",
-   "related_ids": [],
-   "ripped_at": "2026-09-24"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "title": "Drawdowns are asymmetric: 50% down needs 100% to recover",
-   "type": "evidence",
-   "steal": "A 50% loss means you will need to double your account (100%) just to get back to even.",
-   "why": "Losses compound against you, which is why the stop loss is the foundation of the whole system: capital protection is the edge beneath the edge.",
-   "uw": "When sizing up a trade, run the recovery math first.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "source_locator": "Chapter 4: Building and Executing a TradeBook",
-   "related_ids": [],
-   "ripped_at": "2026-09-24"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "title": "Not home runs; the long game",
-   "type": "argument",
-   "steal": "This calculation demonstrates why protecting your capital and maintaining consistent, small gains are key to long-term success. It is not about hitting home runs; it is about playing the long game.",
-   "why": "0.5% a day compounded grows an account nearly 20-fold in three years — the math case for boring consistency over spectacular trades.",
-   "uw": "When impatience pushes you toward the big swing instead of the small edge.",
-   "intents": [
-    "change someone's mind"
-   ],
-   "source_locator": "Chapter 4: Building and Executing a TradeBook",
-   "related_ids": [],
-   "ripped_at": "2026-09-24"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "title": "Psychology means executing the TradeBook exactly as intended",
-   "type": "definition",
-   "steal": "So, from here on in, when I talk about trading psychology, I am talking about the mindset and emotional control that enables you to execute your TradeBooks, exactly as intended, every time you trade.",
-   "why": "Sheehy-Kelly de-fogs trading psychology: it is not vibes or affirmations, it is the measurable ability to execute the book you wrote — the mental edge.",
-   "uw": "When psychology talk drifts into mysticism instead of execution discipline.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "source_locator": "Chapter 5: Building a Trading Psychology Edge",
-   "related_ids": [],
-   "ripped_at": "2026-09-24"
-  },
-  {
-   "book": "TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly & Andrew Aziz",
-   "title": "Execute the TradeBook above the PNL",
-   "type": "argument",
-   "steal": "Prioritize the successful execution of your TradeBooks above your PNL.",
-   "why": "The counterintuitive core of the psychology chapter: over-focusing on the money is what produces the rule-breaking that loses the money — measure the process instead.",
-   "uw": "When a green day of sloppy trading feels like success, or a disciplined red day feels like failure.",
-   "intents": [
-    "change someone's mind",
-    "a system feels stuck"
-   ],
-   "source_locator": "Chapter 5: Building a Trading Psychology Edge",
-   "related_ids": [],
    "ripped_at": "2026-09-24"
   }
  ]
