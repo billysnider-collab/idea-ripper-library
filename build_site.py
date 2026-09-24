@@ -18,6 +18,9 @@ ds = json.load(open(os.path.join(BASE, "cards.json"), encoding="utf-8"))
 books = ds["books"]            # ordered by first appearance
 cards = ds["cards"]
 genre_order = ds["genre_order"]
+# theses are ideas, not books: never count or label them as books
+n_theses = sum(1 for b in books if b["genre"] == "Thesis")
+n_books = len(books) - n_theses
 
 # display order: within each genre, most recently added books first
 def books_in_genre(g):
@@ -261,8 +264,9 @@ for g in genre_order:
     if not gbooks:
         continue
     gcount = sum(1 for c in cards if genre_of[c["book"]] == g)
-    sections.append('<h2 class="genre" data-genre="%s">%s <span class="gcount">%d cards · %d books</span></h2>'
-                    % (esca(g), esc(g), gcount, len(gbooks)))
+    gunit = "theses" if g == "Thesis" else "books"
+    sections.append('<h2 class="genre" data-genre="%s">%s <span class="gcount">%d cards · %d %s</span></h2>'
+                    % (esca(g), esc(g), gcount, len(gbooks), gunit))
     for b in gbooks:
         sections.append(book_block(b))
 
@@ -584,7 +588,7 @@ page = """<!DOCTYPE html>
 <header class="masthead"><div class="mast-inner">
 <div class="wordmark" role="img" aria-label="Idea Ripper">%s</div>
 <p class="mast-sub">the idea-hunting library</p>
-<p class="mast-meta">%d rips &middot; %d books &middot; curated %s</p>
+<p class="mast-meta">%d rips &middot; %d books &middot; %d theses &middot; curated %s</p>
 </div></header>
 <section id="intro">
 <p><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>
@@ -608,12 +612,12 @@ page = """<!DOCTYPE html>
 %s
 <p class="noresults" id="noresults" hidden>No rips match — try a mechanism word (interlock, delay, patronage).</p>
 </main>
-<footer>Last curated September 22, 2026 &middot; %d books &middot; %d rips%s &middot; ripped with the Idea Ripper pipeline</footer>
+<footer>Last curated September 22, 2026 &middot; %d books &middot; %d theses &middot; %d rips%s &middot; ripped with the Idea Ripper pipeline</footer>
 <script>%s</script>
 <div id="toast" role="status"></div>
 </body>
-</html>""" % (CSS, WORDMARK_SVG, n, len(books), curated, fb_intro, genre_opts, book_opts, type_opts, chips,
-              "\n\n".join(sections), len(books), n, fb_footer, JS)
+</html>""" % (CSS, WORDMARK_SVG, n, n_books, n_theses, curated, fb_intro, genre_opts, book_opts, type_opts, chips,
+              "\n\n".join(sections), n_books, n_theses, n, fb_footer, JS)
 
 open(os.path.join(BASE, "index.html"), "w", encoding="utf-8").write(page)
-print("built: %d cards, %d books, %d genres" % (n, len(books), len(genre_order)))
+print("built: %d cards, %d books, %d theses, %d genres" % (n, n_books, n_theses, len(genre_order)))
