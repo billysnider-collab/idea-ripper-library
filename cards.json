@@ -2358,7 +2358,7 @@
    ],
    "source_locator": "Ch. 14, §14.1",
    "related_ids": [
-    33
+    34
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2376,7 +2376,7 @@
    ],
    "source_locator": "Ch. 14, §14.9",
    "related_ids": [
-    32
+    33
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2394,7 +2394,7 @@
    ],
    "source_locator": "Ch. 14, §14.2.2",
    "related_ids": [
-    33
+    34
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2412,7 +2412,7 @@
    ],
    "source_locator": "Ch. 13, §13.4.10",
    "related_ids": [
-    38
+    39
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2445,7 +2445,7 @@
    ],
    "source_locator": "Ch. 11, §11.1",
    "related_ids": [
-    34
+    35
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2463,7 +2463,7 @@
    ],
    "source_locator": "Ch. 13, §13.8",
    "related_ids": [
-    35
+    36
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2481,7 +2481,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    40
+    41
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2499,7 +2499,7 @@
    "source_locator": "Ch. 11, §11.4",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    39
+    40
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2517,8 +2517,8 @@
    "source_locator": "Ch. 3, §3.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    38,
-    42
+    39,
+    43
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2536,8 +2536,8 @@
    "source_locator": "Ch. 4, §4.2",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    38,
-    41
+    39,
+    42
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2555,7 +2555,7 @@
    "source_locator": "Ch. 6, §6.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    37
+    38
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2573,7 +2573,7 @@
    "source_locator": "Ch. 8, §8.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    35
+    36
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2591,7 +2591,7 @@
    "source_locator": "Ch. 3, §3.7.5",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    37
+    38
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2609,7 +2609,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    35
+    36
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -3238,6 +3238,20 @@
     "a better question"
    ],
    "source_locator": "Chapter 77 — Conclusion",
+   "book": "Tragedy and Hope — Carroll Quigley",
+   "ripped_at": "2026-09-23",
+   "related_ids": []
+  },
+  {
+   "title": "The international Anglophile network",
+   "type": "evidence",
+   "steal": "There does exist, and has existed for a generation, an international Anglophile network which operates, to some extent, in the way the ... Right believes the Communists act. In fact, this network, which we may identify as the Round Table Groups, has no aversion to cooperating with the Communists, or any other groups, and frequently does so. I know of the operations of this network because I have studied it for twenty years and was permitted for two years, in the early 1960's, to examine its papers and secret records.",
+   "why": "The book's most famous admission, in Quigley's own voice: a named network — the Round Table Groups — operating internationally for a generation, studied by him for twenty years with two years of access to its papers and secret records.",
+   "uw": "When the establishment is dismissed as a figure of speech — Quigley studied this one for twenty years and read its secret records.",
+   "intents": [
+    "notice what others miss"
+   ],
+   "source_locator": "Chapter 65 — American Confusions, 1945-1950",
    "book": "Tragedy and Hope — Carroll Quigley",
    "ripped_at": "2026-09-23",
    "related_ids": []
