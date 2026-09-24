@@ -30,7 +30,10 @@ def main():
     found = re.findall(r'<article class="card(?:"| )', t)
     assert len(found) == nc, "page has %d cards, dataset has %d" % (len(found), nc)
     nums = re.findall(r'<span class="num">(\d+)</span>', t)
-    assert [int(n) for n in nums] == list(range(1, nc + 1)), "numbering broken"
+    # P0 (2026-09-24): card ids are permanent; display order is independent of
+    # numbering. Every card must render exactly once, in any order.
+    assert sorted(int(n) for n in nums) == sorted(c["id"] for c in cards), \
+        "numbering broken"
     for g in ds["genre_order"]:
         assert ('<h2 class="genre" data-genre="%s">' % html.escape(g, quote=True)) in t, "missing genre " + g
     for b in books:

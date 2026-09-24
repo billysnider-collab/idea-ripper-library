@@ -1,0 +1,1148 @@
+curated: '2026-09-24'
+genre_order:
+- Nonfiction
+- Science Fiction
+- Fantasy
+- Myth & Epic
+- Hermetica
+- Horror & Weird
+- Crime & Mystery
+- Literary Fiction
+- Thesis
+books:
+- key: gene-wolfe-s-the-book-of-the-new-sun-a-chapter-guide-michael-andre-driussi
+  genre: Nonfiction
+  bookline: Companion to Wolfe's dying-Earth masterpiece — patterns, echoes, and unreliable
+    memory.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: shinto-the-ancient-religion-of-japan-william-george-aston
+  genre: Nonfiction
+  bookline: 'Japanese religion — Aston''s 1921 classic on Shinto: nature-gods, ritual
+    purity, myth, and the making of the Imperial cult.'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: meditations-marcus-aurelius
+  genre: Nonfiction
+  bookline: 'Stoic practice — the Roman emperor''s private notebook: perception, impermanence,
+    duty, and the inner citadel.'
+  field_order:
+  - book
+  - bookline
+  - genre
+- key: a-marriage-at-sea-sophie-elmhirst
+  genre: Nonfiction
+  bookline: True story of a couple alone on the ocean — boat as autocracy, hull as
+    tempering.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: when-the-going-was-good-graydon-carter
+  genre: Nonfiction
+  bookline: Magazine-world memoir — print lag, newsstands, and how glossies ran on
+    float.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: no-more-tears-gardiner-harris
+  genre: Nonfiction
+  bookline: Pharma / J&J investigative — cool nonfiction.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: london-falling-patrick-radden-keefe
+  genre: Nonfiction
+  bookline: Investigative true crime / money / trauma.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-traitors-circle-jonathan-freedland
+  genre: Nonfiction
+  bookline: German resistance circle under Nazism — Gestapo, courage, and how little
+    we hear of opposition inside Germany.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: bad-law-elie-mystal
+  genre: Nonfiction
+  bookline: Ten laws (and one amendment) that still do massive harm and should die.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: democracy-in-america-alexis-de-tocqueville
+  genre: Nonfiction
+  bookline: 'Democratic character — Tocqueville''s 1835-40 study of equality''s effects:
+    associations, the tyranny of the majority, and soft despotism.'
+  field_order:
+  - book
+  - bookline
+  - genre
+- key: manufacturing-consent-noam-chomsky-edward-s-herman
+  genre: Nonfiction
+  bookline: Propaganda model — Chomsky and Herman's 1988 classic on the five news
+    filters, worthy and unworthy victims, and how consent is manufactured without
+    censorship.
+  field_order:
+  - book
+  - bookline
+  - genre
+- key: propaganda-edward-l-bernays
+  genre: Nonfiction
+  bookline: Manufacturing consent — Bernays's 1928 manual on the invisible government,
+    group leaders, and the engineering of public opinion.
+  field_order:
+  - book
+  - bookline
+  - genre
+- key: rules-for-radicals-saul-d-alinsky
+  genre: Nonfiction
+  bookline: 'Power tactics — Alinsky''s 1971 organizer''s manual: the thirteen rules
+    of power tactics, the ethics of means and ends, the haves and have-nots, and the
+    organizer who builds power for others to use.'
+  field_order:
+  - book
+  - bookline
+  - genre
+- key: the-prince-niccol-machiavelli
+  genre: Nonfiction
+  bookline: 'Power mechanics — Machiavelli''s 1532 classic on how principalities are
+    won, held, and lost: virtue, fortune, and the economy of cruelty.'
+  field_order:
+  - book
+  - bookline
+  - genre
+- key: every-molecule-matters-simon-cotton
+  genre: Nonfiction
+  bookline: Chemistry told through molecules that shape food, drugs, war, color, and
+    the body.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: brain-networks-m-hassan-ed-contrib-volume
+  genre: Nonfiction
+  bookline: Neuroscience of connectivity — nodes, edges, synapses, resting networks.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: quantum-computing-s-herbert
+  genre: Nonfiction
+  bookline: Foundations of qubits — superposition, entanglement, measurement, no free
+    signaling.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: reverse-engineering-r-messler
+  genre: Nonfiction
+  bookline: How to take mechanisms, structures, and materials apart to learn how they
+    work.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: analysis-and-design-of-delayed-neural-networks-xin-wang
+  genre: Nonfiction
+  bookline: Neural nets where time-delay is the hard problem, not an afterthought.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: tiny-machine-learning-quickstart-simone-salerno
+  genre: Nonfiction
+  bookline: ML that fits on tiny devices — constraints as the design surface.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-second-machine-age-erik-brynjolfsson-andrew-mcafee
+  genre: Nonfiction
+  bookline: 'Tech and inequality — Brynjolfsson & McAfee''s 2014 classic on the second
+    half of the chessboard: exponential digital progress, bounty versus spread, the
+    Great Decoupling, and why the winning move is to race with machines, not against
+    them.'
+  field_order:
+  - book
+  - bookline
+  - genre
+- key: machine-platform-crowd-andrew-mcafee-erik-brynjolfsson
+  genre: Nonfiction
+  bookline: 'Business rebalancing — McAfee & Brynjolfsson''s 2017 triple-revolution
+    framework: mind to machine, product to platform, core to crowd; when algorithms
+    beat experts, why platforms win the match game, and why companies survive the
+    crowd anyway.'
+  field_order:
+  - book
+  - bookline
+  - genre
+- key: tragedy-and-hope-carroll-quigley
+  genre: Nonfiction
+  bookline: Grand-strategy history — Quigley's 1966 classic on Western civilization's
+    cycles, financial capitalism, the Anglo-American network, and the shape of the
+    twentieth century.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-history-of-money-david-mcwilliams
+  genre: Nonfiction
+  bookline: Money as social tech — from grain and salt to empire and trust.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: large-language-models-in-finance-miquel-noguer-i-alonso
+  genre: Nonfiction
+  bookline: Miquel Noguer i Alonso, 2026 (Packt) — A hands-on guide to LLM architectures,
+    agents, RAG, governance, and evaluation in finance.
+  field_order:
+  - book
+  - bookline
+  - genre
+- key: tradebook-how-to-build-a-complete-trading-system-stock-market-trading-and-investing-crede-sheehy-kelly-andrew-aziz
+  genre: Nonfiction
+  bookline: 'Andrew Aziz and performance psychologist Crede Sheehy-Kelly''s 2025 system
+    for building a complete trading system: strategy is a concept, a TradeBook is
+    the manual — selection, identification, execution, review — and the edge is never
+    one piece but the combination.'
+  field_order:
+  - book
+  - bookline
+  - genre
+- key: simultaneous-eric-heisserer
+  genre: Science Fiction
+  bookline: Parallel lives hit institutions.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-scar-china-mieville
+  genre: Science Fiction
+  bookline: Weird literary SF — city-as-ship, escape politics.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: dungeon-crawler-carl-matt-dinniman
+  genre: Science Fiction
+  bookline: Earth turned into a televised dungeon crawl run by alien corporations.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: where-the-axe-is-buried-ray-nayler
+  genre: Science Fiction
+  bookline: Authoritarian AI state, told through the people crushed by it.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-collected-stories-of-arthur-c-clarke-arthur-c-clarke
+  genre: Science Fiction
+  bookline: 'Mid-century hard SF: space, minds, and machines that outlast fragile
+    bodies.'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: project-hail-mary-andy-weir
+  genre: Science Fiction
+  bookline: Lone astronaut and an alien engineer vs. a star-eating microbe.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: new-spring-robert-jordan
+  genre: Fantasy
+  bookline: Wheel of Time prequel — Aes Sedai politics and a hunt before the main
+    saga.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-eye-of-the-world-robert-jordan
+  genre: Fantasy
+  bookline: Epic fantasy opener — farm kids pulled into a war against a returning
+    Dark One.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: myths-from-mesopotamia-stephanie-dalley
+  genre: Myth & Epic
+  bookline: Akkadian myths in translation — creation, flood, descent, divine politics.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: gilgamesh-tr-sophus-helle
+  genre: Myth & Epic
+  bookline: The oldest epic — king, wild friend, grief, and the failed quest for immortality.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: euphrates-or-the-waters-of-the-east-thomas-vaughan-vol-vii
+  genre: Hermetica
+  bookline: Rosicrucian tract on the secret water that flows from fire — element as
+    state, not modern chemistry.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: a-short-enquiry-concerning-the-hermetic-art-a-lover-of-philalethes-vol-iii
+  genre: Hermetica
+  bookline: Rosicrucian enquiry — imagination as occult tool, Hidden Fire, Great Work.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: hermetic-arcanum-jean-d-espagnet-collectanea-hermetica-vol-i
+  genre: Hermetica
+  bookline: Classic alchemical procedure text — Nature, Art, and the multiplying virtue
+    hid in metals.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: somnium-scipionis-cicero-vol-v-with-l-o-essay
+  genre: Hermetica
+  bookline: Scipio's dream — states, souls, spheres, and duty to stay embodied.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-chaldean-oracles-attributed-to-zoroaster-westcott-sapere-aude
+  genre: Hermetica
+  bookline: Fragmentary oracles of the Intelligible Triad — Paternal Mind, silence,
+    and the flower of mind.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-divine-pymander-hermes-trismegistus-tr-everard
+  genre: Hermetica
+  bookline: Classical Hermetica in English — Mind (nous), Light, Word, and Man as
+    image of the Father.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-king-in-yellow-robert-w-chambers
+  genre: Horror & Weird
+  bookline: Decadent weird tales; a forbidden play that unmakes minds and a remade
+    imperial city.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: cool-machine-crook-manifesto-lane-colson-whitehead
+  genre: Crime & Mystery
+  bookline: 1970s Harlem crime — furniture man, heists, and systems built to destroy.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: motherclown-harriet-alida-lye
+  genre: Literary Fiction
+  bookline: Weird literary — clowning, motherhood, and bodies that will not behave.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: twist-colum-mccann
+  genre: Literary Fiction
+  bookline: Undersea cable repair, conscience, and the compulsion to keep moving.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: tilt-emma-pattee
+  genre: Literary Fiction
+  bookline: Earthquake pregnancy novel — body + city systems.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-eleventh-hour-salman-rushdie
+  genre: Literary Fiction
+  bookline: Weird literary late Rushdie — knowledge, forgetting, afterlives.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: collected-fictions-jorge-luis-borges
+  genre: Literary Fiction
+  bookline: Weird literary — time patterns, pity, unreality.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-master-and-margarita-mikhail-bulgakov
+  genre: Literary Fiction
+  bookline: Soviet satire + devil comedy; portable moral tech.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: ethics-eugenics-and-public-education-in-georgia-1910-1965-aaron-gerald-guest-sr
+  genre: Thesis
+  bookline: 'Masters thesis — Columbus State University, 2017. Full text: https://archive.org/details/guest-csu'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: experiencing-the-elements-self-building-through-the-embodied-extension-of-conceptual-metaphors-in-contemporary-ritual-magic-david-riley-campbell
+  genre: Thesis
+  bookline: 'Masters thesis — University of Amsterdam, 2024. Full text: https://archive.org/details/experiencing-the-elements-thesis-of-david-riley-campbell-at-the-university-of-amsterdam-2024'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-paradoxical-pope-the-contemplative-and-active-lives-of-gregory-the-great-elizabeth-e-marvel
+  genre: Thesis
+  bookline: 'Masters thesis — Gordon-Conwell Theological Seminary, 2015. Full text:
+    https://archive.org/details/2015MarvelElizabeth'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: indo-slavic-lexical-isoglosses-and-the-prehistoric-dispersal-of-indo-iranian-a-i-palm-r
+  genre: Thesis
+  bookline: 'PhD thesis — Leiden University, 2024. Full text: https://archive.org/details/indo-slavic-thesis'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: networks-before-empires-michele-massa
+  genre: Thesis
+  bookline: 'PhD thesis — Institute of Archaeology, 2016. Full text: https://archive.org/details/massa-thesis-combined'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-housing-secure-initiative-helping-families-overcome-housing-insecurity-geoffrey-heth
+  genre: Thesis
+  bookline: 'D.Min. thesis-project thesis — Gordon-Conwell Theological Seminary, 2023.
+    Full text: https://archive.org/details/heth-geoffrey-w-final'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-federal-task-force-on-housing-and-urban-development-and-the-limits-of-participatory-democracy-1968-1969-brendan-nicholas-gemmell
+  genre: Thesis
+  bookline: 'Masters thesis — Dalhousie University, 2017. Full text: https://archive.org/details/gemmell-2017-federal-task-force-on-housing-and-urban-development-1968-1969'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: water-quality-and-faecal-coliform-dynamics-in-aquaculture-bheris-of-east-calcutta-wetland-rajashree-ghosh
+  genre: Thesis
+  bookline: 'Masters thesis — Sister Nivedita University, 2025. Full text: https://archive.org/details/sgng.20660-water-quality-and-fecal-coliform-dyanamics-in-aquacul-ture-bheri-'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: integrating-blue-infrastructure-in-temple-towns-a-case-of-nashik-s-sacred-waterscapes-kajol-chaudhari
+  genre: Thesis
+  bookline: 'Masters thesis — Visvesvaraya National Institute of Technology (VNIT)
+    Nagpur, 2025. Full text: https://archive.org/details/sgng.19281-integrating-blue-infrastructure-in-temple-towns-a-case-of-nashik-'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: sustainable-mobility-and-pedestrian-plan-for-pilgrimage-tourism-in-vrindavan-esha-shinde
+  genre: Thesis
+  bookline: 'Masters thesis — Visvesvaraya National Institute of Technology (Nagpur),
+    2024. Full text: https://archive.org/details/sgng.19267-sustainable-mobility-and-pedestrian-plan-for-pilgrimage-tourism-i'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: investigating-the-effect-of-copper-cui-depletion-on-the-serotonergic-neurons-and-serotonin-signalling-in-the-nematode-based-model-iram-khan
+  genre: Thesis
+  bookline: 'Masters thesis — Sister Nivedita University, 2025. Full text: https://archive.org/details/sgng.20150-investigating-the-effect-of-copper-cui-depletion-on-the-serotoner'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: exploring-the-effects-of-mucuna-pruriens-seed-powder-on-parkinson-s-disease-management-insights-from-drosophila-mutant-models-vikrant-chandel
+  genre: Thesis
+  bookline: 'Masters thesis — The University of Trans-Disciplinary Health Sciences
+    and Technology, 2023. Full text: https://archive.org/details/sgng.19495-exploring-the-effects-of-mucuna-pruriens-seed-powder-on-parkinson'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: to-study-the-clinical-and-etiological-profile-of-epileptic-spasms-in-children-dr-amneet-kaur
+  genre: Thesis
+  bookline: 'MD thesis — Baba Farid University of Health Sciences (Faridkot), 2023.
+    Full text: https://archive.org/details/sgng.17194-to-study-the-clinical-and-etiological-profile-of-epileptic-spasms'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: investigations-into-the-impact-of-astronomical-phenomena-on-the-terrestrial-biosphere-and-climate-fabo-feng
+  genre: Thesis
+  bookline: 'PhD thesis — Ruperto-Carola-University of Heidelberg, Germany, 2015.
+    Full text: https://archive.org/details/arxiv-1505.07856'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: effectiveness-of-efficientnet-b4-and-efficientnet-b7-deepfake-detection-techniques-jasmin-p-bharadiya
+  genre: Thesis
+  bookline: 'PhD thesis — University of the Cumberlands, 2021. Full text: https://archive.org/details/jasmin-bharadiya-thesis'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: empirical-analysis-of-using-erasure-coding-in-outsourcing-data-storage-with-provable-security-abdallah-bakir
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/empiricalnalysis1094549341'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: complexity-theory-and-its-applications-in-linear-quantum-optics-jonathan-p-olson
+  genre: Thesis
+  bookline: 'PhD thesis — Louisiana State University, 2016. Full text: https://archive.org/details/arxiv-1607.02991'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: atalhos-para-adiabaticidade-e-aplicacoes-em-computacao-quantica-shortcuts-to-adiabaticity-and-applications-in-quantum-computation-alan-costa-dos-santos
+  genre: Thesis
+  bookline: 'Masters thesis — Universidade Federal Fluminense, 2016. Full text: https://archive.org/details/arxiv-1603.05071'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: spin-squeezing-macrorealism-and-the-heisenberg-uncertainty-principle-giuseppe-vitagliano
+  genre: Thesis
+  bookline: 'PhD thesis — University of the Basque Country, 2015. Full text: https://archive.org/details/arxiv-1511.08104'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: computational-studies-of-entanglement-in-spin-chains-involving-fibonacci-and-bernoulli-number-sequences-ankan-bhattacharyya
+  genre: Thesis
+  bookline: 'Masters thesis — Visvesvaraya National Institute of Technology (Nagpur),
+    2025. Full text: https://archive.org/details/sgng.19109-computational-studies-of-entanglement-in-spin-chains-involving-fi'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: server-based-and-server-less-byod-solutions-to-support-electronic-learning-joshua-c-benson-brian-r-mccarthy
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/serverbasedndser1094549343'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: measuring-resilience-joshua-l-boyle
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/measuringresilie1094566593'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: technique-for-geolocation-of-emi-emitters-by-o3b-satellites-james-p-connolly
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/techniqueforgeol1094549440'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: solid-state-high-power-radio-frequency-directed-energy-systems-in-support-of-usmc-force-protection-operations-michael-d-simon
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/solidstatehighpo1094545944'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: autonomous-underwater-vehicle-architecture-synthesis-for-shipwreck-interior-exploration-ross-a-eldred
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/autonomousunderw1094547940'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: battlefield-medical-network-biosensors-in-a-tactical-environment-ralph-r-montgomery
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1027506'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: optical-theory-improvements-to-space-domain-awareness-tyler-j-hardy
+  genre: Thesis
+  bookline: 'PhD thesis — Air Force Institute of Technology (Air University), 2016.
+    Full text: https://archive.org/details/arxiv-1603.05071'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: technological-evolution-of-high-temperature-superconductors-jordan-r-white
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_AD1009326'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: using-mathematical-modeling-and-set-based-design-principles-to-recommend-an-existing-cvl-design-william-h-ehlies
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/DTIC_AD1046831'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: supply-chain-wake-up-it-is-critical-to-military-success-christopher-e-dexter
+  genre: Thesis
+  bookline: 'Masters thesis — Joint Advanced Warfighting School, 2014. Full text:
+    https://archive.org/details/DTIC_ADA621695'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: enip-fuzz-a-scapy-based-ethernet-ip-fuzzer-for-security-testing-francisco-tacliad
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/enipfuzzscapybas1094556714'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: adopting-cloud-computing-in-the-pakistan-navy-tahir-majeed-asim
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632313'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: a-validation-of-the-proposed-royal-australian-navy-standard-work-week-and-naval-management-diary-using-a-simulated-crew-of-an-armidale-class-patrol-boat-jessica-groot-lieutenant
+  genre: Thesis
+  bookline: 'Masters thesis — Royal Australian Navy), Naval Postgraduate School, 2015.
+    Full text: https://archive.org/details/DTIC_ADA632239'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: analysis-of-sleep-mood-behavior-and-suicide-risk-of-sailors-on-the-uss-ashland-eric-m-myers
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/analysisofsleepm1094566115'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: can-the-outer-space-treaty-prevent-conflicts-in-orbit-in-the-21st-century-nicole-m-breen
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2018. Full text: https://archive.org/details/cantheouterspace1094559607'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: bridging-the-gap-enhancing-sna-within-the-marine-corps-intelligence-community-robert-c-schotter
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632494'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: changes-in-latitudes-changes-in-attitudes-narrating-a-regime-change-pattric-r-patterson-and-matthew-d-ziobro
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA620695'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: real-time-detection-of-operational-military-information-in-social-media-patrick-m-gillen
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_AD1008935'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-21st-century-scarlet-letter-china-s-use-of-digital-global-influence-to-gain-power-and-weaken-u-s-leadership-brandi-y-williams
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/thestcenturyscar1094566743'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: seizing-the-digital-high-ground-military-operations-and-politics-in-the-social-media-era-author-not-named-in-ia-metadata
+  genre: Thesis
+  bookline: 'Masters thesis — National Defense University (Joint Advanced Warfighting
+    School), 2015. Full text: https://archive.org/details/DTIC_ADA622701'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: from-successful-defense-to-problematic-offense-the-devolution-of-unconventional-warfare-timothy-s-ball
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/fromsuccessfulde1094551617'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: yemen-comparative-insurgency-and-counterinsurgency-ryan-johnson
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/yemencomparative1094545200'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-triangle-offense-using-social-movement-theory-to-analyze-russia-s-gray-zone-strategy-alexander-v-simmons
+  genre: Thesis
+  bookline: 'Masters thesis — National Defense University (Joint Advanced Warfighting
+    School), 2017. Full text: https://archive.org/details/DTIC_AD1032497'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: cyberspace-actions-in-a-counterinsurgency-andrzej-v-kujawski
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/cyberspacections1094549331'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: china-s-war-by-other-means-unveiling-china-s-quest-for-information-dominance-maj-teresa-l-sullivan
+  genre: Thesis
+  bookline: 'Masters thesis — U.S. Army Command and General Staff College, 2017. Full
+    text: https://archive.org/details/DTIC_AD1039548'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: combating-daesh-a-socially-unconventional-strategy-derek-j-raymond
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/combatingdaeshso1094545928'
+  field_order:
+  - book
+  - genre
+  - bookline
+card_order:
+- 229
+- 230
+- 231
+- 232
+- 233
+- 234
+- 241
+- 242
+- 243
+- 244
+- 245
+- 246
+- 247
+- 248
+- 249
+- 235
+- 236
+- 237
+- 238
+- 239
+- 240
+- 250
+- 251
+- 252
+- 253
+- 254
+- 255
+- 256
+- 257
+- 258
+- 259
+- 260
+- 261
+- 262
+- 263
+- 264
+- 265
+- 266
+- 267
+- 268
+- 269
+- 270
+- 271
+- 272
+- 273
+- 274
+- 275
+- 276
+- 277
+- 278
+- 279
+- 280
+- 281
+- 282
+- 283
+- 284
+- 285
+- 326
+- 327
+- 328
+- 329
+- 330
+- 331
+- 332
+- 333
+- 334
+- 335
+- 336
+- 337
+- 338
+- 339
+- 340
+- 341
+- 342
+- 343
+- 344
+- 345
+- 346
+- 347
+- 353
+- 354
+- 355
+- 356
+- 357
+- 348
+- 349
+- 350
+- 351
+- 352
+- 358
+- 359
+- 360
+- 361
+- 362
+- 363
+- 364
+- 365
+- 366
+- 367
+- 188
+- 189
+- 190
+- 191
+- 192
+- 183
+- 184
+- 185
+- 186
+- 187
+- 224
+- 225
+- 226
+- 227
+- 228
+- 28
+- 29
+- 30
+- 31
+- 32
+- 173
+- 174
+- 175
+- 176
+- 177
+- 90
+- 91
+- 92
+- 93
+- 94
+- 95
+- 96
+- 97
+- 80
+- 81
+- 82
+- 83
+- 84
+- 85
+- 86
+- 87
+- 88
+- 89
+- 286
+- 287
+- 288
+- 289
+- 290
+- 291
+- 292
+- 293
+- 294
+- 295
+- 296
+- 297
+- 298
+- 299
+- 300
+- 301
+- 302
+- 308
+- 309
+- 310
+- 311
+- 312
+- 313
+- 314
+- 315
+- 316
+- 317
+- 318
+- 319
+- 320
+- 303
+- 304
+- 305
+- 306
+- 307
+- 321
+- 322
+- 323
+- 324
+- 325
+- 108
+- 109
+- 110
+- 111
+- 112
+- 113
+- 114
+- 115
+- 103
+- 104
+- 105
+- 106
+- 107
+- 98
+- 99
+- 100
+- 101
+- 102
+- 178
+- 179
+- 180
+- 181
+- 182
+- 193
+- 194
+- 195
+- 196
+- 197
+- 198
+- 199
+- 200
+- 388
+- 399
+- 389
+- 401
+- 404
+- 377
+- 394
+- 390
+- 379
+- 368
+- 409
+- 402
+- 375
+- 400
+- 369
+- 391
+- 376
+- 395
+- 412
+- 405
+- 383
+- 382
+- 370
+- 380
+- 13
+- 14
+- 15
+- 16
+- 17
+- 18
+- 19
+- 20
+- 21
+- 22
+- 23
+- 24
+- 25
+- 26
+- 27
+- 378
+- 387
+- 407
+- 396
+- 385
+- 386
+- 384
+- 413
+- 371
+- 393
+- 392
+- 403
+- 410
+- 411
+- 374
+- 372
+- 397
+- 406
+- 408
+- 209
+- 210
+- 211
+- 212
+- 213
+- 214
+- 215
+- 216
+- 217
+- 218
+- 219
+- 220
+- 221
+- 222
+- 223
+- 373
+- 398
+- 381
+- 33
+- 34
+- 35
+- 36
+- 37
+- 38
+- 39
+- 40
+- 41
+- 42
+- 43
+- 44
+- 45
+- 46
+- 47
+- 48
+- 49
+- 116
+- 117
+- 118
+- 119
+- 120
+- 121
+- 122
+- 123
+- 201
+- 202
+- 203
+- 204
+- 205
+- 206
+- 207
+- 208
+- 164
+- 165
+- 166
+- 167
+- 168
+- 169
+- 170
+- 171
+- 172
+- 141
+- 142
+- 143
+- 144
+- 145
+- 146
+- 147
+- 148
+- 149
+- 150
+- 151
+- 152
+- 153
+- 154
+- 155
+- 156
+- 157
+- 158
+- 159
+- 160
+- 161
+- 162
+- 163
+- 124
+- 125
+- 126
+- 127
+- 128
+- 129
+- 130
+- 131
+- 132
+- 133
+- 134
+- 135
+- 136
+- 137
+- 138
+- 139
+- 140
+- 50
+- 51
+- 52
+- 53
+- 54
+- 55
+- 56
+- 57
+- 58
+- 59
+- 60
+- 61
+- 62
+- 63
+- 64
+- 65
+- 66
+- 67
+- 68
+- 69
+- 70
+- 71
+- 72
+- 73
+- 74
+- 75
+- 76
+- 77
+- 78
+- 79
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+- 10
+- 11
+- 12
