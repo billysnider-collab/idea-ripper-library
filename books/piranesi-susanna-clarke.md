@@ -40,7 +40,7 @@ I am Piranesi. The name is not the one he was born with, that was Matthew Rose S
 
 ## Why it matters
 
-The cluster's identity question, inverted. In Third Policeman, identity dissolves (half a bicycle); in VALIS, it splits (Fat vs. Dick); here it is replaced, and the replacement is an upgrade. Piranesi does not want his old self back. That is the disturbing part: the book suggests identity might be a habitat rather than an essence. Put the organism in a kinder universe and a kinder self grows. Ask not who is he really? but what does the House make possible that the old world didn't?
+Here identity is not dissolved or split, it is replaced, and the replacement is an upgrade. Piranesi does not want his old self back. That is the disturbing part: the book suggests identity might be a habitat rather than an essence. Put the organism in a kinder universe and a kinder self grows. Ask not who is he really? but what does the House make possible that the old world didn't?
 
 ## Use when
 
@@ -61,7 +61,7 @@ The Beauty of the House is immeasurable; its Kindness infinite. The House is inf
 
 ## Why it matters
 
-Every other book in the cluster gives us a hostile or indifferent metaphysics: Wolfe's dying sun, Dick's possibly-mad revelation, O'Brien's looping afterlife bureaucracy. Clarke runs the control experiment: what if the unreliable universe is benevolent? The House never lies to Piranesi, never traps him the way the parish traps the narrator, the traps are all human (the Other, Arne-Sayles). The metaphysical dread of the cluster dissolves here into something stranger: a universe you can trust. Do you trust the House? I ask Myself. Yes, I answer Myself. The terror is not in the House; it is in what people do with it.
+Most metaphysical fiction gives us a hostile or indifferent universe. This book runs the control experiment: what if the universe is benevolent? The House never lies to Piranesi and never traps him, every trap in the story is human (the Other, Arne-Sayles). The dread dissolves into something stranger: a universe you can trust. Do you trust the House? I ask Myself. Yes, I answer Myself. The terror is not in the House; it is in what people do with it.
 
 ## Use when
 
@@ -82,7 +82,7 @@ The Prophet called the Other 'Ketterley'. Val Ketterley, the Other, does not lov
 
 ## Why it matters
 
-The book's moral axis is not good vs. evil but love vs. use. Ketterley treats the House the way a bad reader treats a text, as a resource to be strip-mined. Piranesi treats it the way a good reader treats a book worth ripping, with attention, gratitude, return visits. The villain is not a metaphysical force; he is a bad reader. In a cluster obsessed with unreliable universes, Clarke locates the unreliability where it belongs: in the exploiter's relationship to reality, not in reality itself.
+The book's moral axis is not good vs. evil but love vs. use. Ketterley treats the House the way a bad reader treats a text, as a resource to be strip-mined. Piranesi treats it the way a good reader treats a book worth ripping, with attention, gratitude, return visits. The villain is not a metaphysical force; he is a bad reader. The unreliability is not in the House but in the exploiter's relationship to it.
 
 ## Use when
 
@@ -103,7 +103,7 @@ Do you trust the House? I ask Myself. Yes, I answer Myself. Piranesi's knowledge
 
 ## Why it matters
 
-This is the direct answer to VALIS's evidence ledger. Dick's method: hold belief and skepticism apart forever, keep the ledger, never collapse. Clarke's method: trust first, and let the trust produce knowledge the ledger never could. Piranesi knows things about the House no skeptic could learn, because the skeptic never stays long enough, never loves it enough, to be taught. The book proposes that some realities only open to the devoted, that suspicion is not always rigor; sometimes it is just distance. The catalog rule still holds (he records everything), but the catalog is kept by a lover, and that changes what the catalog can see.
+Piranesi's method is the inversion of the skeptic's ledger: trust first, and let the trust produce knowledge suspicion never could. He knows things about the House no detached observer could learn, because the observer never stays long enough, never loves it enough, to be taught. The book proposes that some realities only open to the devoted, that suspicion is not always rigor; sometimes it is just distance. He still keeps the catalog (he records everything), but the catalog is kept by a lover, and that changes what the catalog can see.
 
 ## Use when
 
@@ -124,7 +124,7 @@ I visit all the Dead, but particularly the Folded-Up Child. I bring them food, w
 
 ## Why it matters
 
-In Third Policeman, the jokes about death are data pointing to the narrator's own death. Here death is not a twist but a practice: the dead are company, and tending them is how Piranesi stays human in an infinite house. The skeletons are the previous catalogers, the ones the House kept, including, by implication, everyone Arne-Sayles and Ketterley lured and lost. Piranesi's kindness to the dead is the proof of his epistemology: he treats the vanished the way he treats the living, with attention. The dead are not a mystery to solve; they are neighbors to visit.
+Here death is not a twist but a practice: the dead are company, and tending them is how Piranesi stays human in an infinite house. The skeletons are the previous catalogers, the ones the House kept, including, by implication, everyone Arne-Sayles and Ketterley lured and lost. Piranesi's kindness to the dead is the proof of his epistemology: he treats the vanished the way he treats the living, with attention. The dead are not a mystery to solve; they are neighbors to visit.
 
 ## Use when
 
@@ -141,11 +141,11 @@ intents: ["name the mechanism", "notice what others miss"]
 ---
 ## Steal
 
-Piranesi capitalizes the way a child theologizes: the House, the Other, the Statues, the Tides, the Halls, Himself, Myself. Everything important gets a capital letter. His sentences are simple, precise, and completely sincere, the inverse of O'Brien's precise-insane machine.
+Piranesi capitalizes the way a child theologizes: the House, the Other, the Statues, the Tides, the Halls, Himself, Myself. Everything important gets a capital letter. His sentences are simple, precise, and completely sincere.
 
 ## Why it matters
 
-Three language machines in the cluster: Wolfe's archaic precision (trust the narrator?), Dick's new vocabulary (grok recruits believers), O'Brien's perfect syntax carrying madness (the form persuades, not the content). Clarke's is the fourth: capitalization as consecration. Piranesi's diction does not argue or deceive; it honors. The capitals are a record of what he loves, and the love is legible in the grammar. Language here is not a trap or a recruitment tool, it is a liturgy. Which raises the cluster's sharpest question: what if the way you write about a universe determines what the universe will show you?
+Capitalization as consecration: Piranesi's diction does not argue or deceive; it honors. The capitals are a record of what he loves, and the love is legible in the grammar. Language here is not a trap or a recruitment tool, it is a liturgy. Which raises the sharpest question the book asks: what if the way you write about a universe determines what the universe will show you?
 
 ## Use when
 
@@ -162,11 +162,11 @@ intents: ["name the mechanism", "change someone's mind"]
 ---
 ## Steal
 
-Laurence Arne-Sayles built a Theory of Other Worlds; Ketterley followed it into the House; the House kept them both. The dossier reads like a de Selby footnote file: scholarly apparatus around a man who vanished into his own theory.
+Laurence Arne-Sayles built a Theory of Other Worlds; Ketterley followed it into the House; the House kept them both. The dossier is pure scholarly apparatus, timelines, pros and cons, close associates interviewed, assembled around a man who vanished into his own theory.
 
 ## Why it matters
 
-The de Selby parallel is exact and deliberate: a philosopher whose system exists only in commentary, whose followers ruin themselves for it. But Clarke inverts the valence. De Selby's system is absurd; Arne-Sayles's was true, there really are other worlds, and the House is one of them. The theory was right and it still ate its believers, because being right about the House is not the same as belonging in it. Ketterley had the correct theory and the wrong relationship; Piranesi has no theory and the right one. In a cluster about evidence becoming belief, this is the final turn: the belief can be true and still destroy you, if you arrive as an exploiter instead of a guest.
+Arne-Sayles is the philosopher whose system exists only in commentary, whose followers ruin themselves for it. His theory was true, there really are other worlds, and the House is one of them. And it still ate its believers, because being right about the House is not the same as belonging in it. Ketterley had the correct theory and the wrong relationship; Piranesi has no theory and the right one. The final turn: a belief can be true and still destroy you, if you arrive as an exploiter instead of a guest.
 
 ## Use when
 

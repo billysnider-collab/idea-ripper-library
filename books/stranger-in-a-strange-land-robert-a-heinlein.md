@@ -132,7 +132,7 @@ Freedom is being used to mean no consequences: this passage is the counter-examp
 
 --- card
 id: 440
-title: "The Wolfe test: can you trust the man who escaped everyone's assumptions?"
+title: "The invented-word test: can you trust the man with his own dictionary?"
 field_order: ["title", "book", "type", "steal", "why", "uw", "id", "related_ids", "source_locator", "ripped_at", "intents"]
 type: "concept"
 related_ids: [424, 420]
@@ -142,11 +142,11 @@ intents: ["change someone's mind", "make a connection"]
 ---
 ## Steal
 
-Wolfe asks: can you trust the narrator? Heinlein asks something slightly different: can you trust the person who claims to have escaped everyone else's assumptions? Both books are fascinated by language as a machine for controlling perception. Mike learns English, then creates a vocabulary. Once people adopt the vocabulary, they begin seeing reality through it. Thou art God, grok, water brother: adopt the words and you have adopted the world.
+Mike learns English, then creates a vocabulary: Thou art God, grok, water brother. Once people adopt the vocabulary, they begin seeing reality through it. The book's core doctrine begins as a word Mike seizes in a living room, and the word remakes a movement.
 
 ## Why it matters
 
-The claim I have no assumptions is itself the most powerful assumption: it exempts the speaker from the skepticism applied to everyone else. Pair this with the Wolfe rips: Severian controls the story by controlling the narration; Mike controls the movement by controlling the dictionary. Same machine, different gears.
+The claim I have no assumptions is itself the most powerful assumption: it exempts the speaker from the skepticism applied to everyone else. Watch what happens when a charismatic figure introduces a proprietary vocabulary: adopt the words and you have adopted the world. The test is simple, who defined the terms of the conversation, and what can you no longer say inside them?
 
 ## Use when
 

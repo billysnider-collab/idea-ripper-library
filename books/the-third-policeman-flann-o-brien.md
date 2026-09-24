@@ -40,7 +40,7 @@ Is it about a bicycle? Asked three times across the book, casually, identically,
 
 ## Why it matters
 
-Circularity is the catalog's load-bearing anomaly. A story that loops is not a story about events, it is a story about a condition. Progress is the assumption the book quietly removes: the narrator keeps arriving, keeps asking, keeps being processed by the same machinery. Ask not what happens next but what kind of universe makes next meaningless. This is the direct inversion of VALIS: there, the narrator cannot tell if the revelation is real; here, the reader cannot tell if time is real.
+Circularity is the catalog's load-bearing anomaly. A story that loops is not a story about events, it is a story about a condition. Progress is the assumption the book quietly removes: the narrator keeps arriving, keeps asking, keeps being processed by the same machinery. Ask not what happens next but what kind of universe makes next meaningless. The loop is the book's deepest claim: the problem was never whether the narrator is reliable. It is whether time is.
 
 ## Use when
 
@@ -166,7 +166,7 @@ Everything is composed of small particles of itself and they are flying around i
 
 ## Why it matters
 
-The sentence is grammatically perfect, rhythmically confident, and semantically insane, and that is the machine. O'Brien discovered that precision of statement is independent of sanity of content: say anything in the right cadence, with the right subordinate clauses, and it lands with the force of fact. The Sergeant never hesitates, never qualifies, never notices. Language, in this parish, does not describe reality, it replaces it. Compare VALIS: there, new vocabulary (grok, VALIS) recruits believers; here, perfect syntax recruits assent. Two different language machines, same warning.
+The sentence is grammatically perfect, rhythmically confident, and semantically insane, and that is the machine. O'Brien discovered that precision of statement is independent of sanity of content: say anything in the right cadence, with the right subordinate clauses, and it lands with the force of fact. The Sergeant never hesitates, never qualifies, never notices. Language, in this parish, does not describe reality, it replaces it. The Sergeant's machine has one moving part: the confidence of the sentence. Perfect syntax recruits assent all by itself.
 
 ## Use when
 
@@ -187,7 +187,7 @@ The imposed rule: we don't explain the weirdness away. We catalog it. Then, once
 
 ## Why it matters
 
-This is the method that makes the other eight rips work. Explaining too early collapses the evidence, every it's just a dream or it's all a metaphor destroys data. The catalog preserves anomalies until a model earns them: the loop, the bicycles, the dead narrator, the confident policemen, the precise-insane sentences. And the VALIS contrast sharpens it: there we ask whether the revelation is genuine; here we ask whether the universe is reliable. Different problem, same discipline, hold the weirdness open until the model with the fewest assumptions claims it.
+This is the method that makes the other eight rips work. Explaining too early collapses the evidence, every it's just a dream or it's all a metaphor destroys data. The catalog preserves anomalies until a model earns them: the loop, the bicycles, the dead narrator, the confident policemen, the precise-insane sentences. The discipline is: hold the weirdness open until the model with the fewest assumptions claims it. Catalog first, model last, explain never.
 
 ## Use when
 
