@@ -808,6 +808,13 @@ books:
   - book
   - genre
   - bookline
+- key: xyeval-agents-say-yes-to-bad-advice-zhengxuan-wu-yuxuan-li-oyvind-tafjord-been-kim-google-deepmind
+  genre: Nonfiction
+  bookline: Paper, arXiv:2609.23939, September 2026 + https://arxiv.org/abs/2609.23939
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1267,3 +1274,9 @@ card_order:
 - 461
 - 462
 - 463
+- 464
+- 465
+- 466
+- 467
+- 468
+- 469
