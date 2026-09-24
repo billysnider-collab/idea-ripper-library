@@ -81,11 +81,11 @@ def book_block(b):
     parts.append(
         '<h2 class="bh"><button type="button" class="bookhead" aria-expanded="false">'
         '<span class="chip" style="background:hsl(%d,45%%,55%%)"></span>'
-        '<span class="bmain"><span class="exlibris">EX LIBRIS // %s // %d RIPS</span><span class="btitle">%s <span class="bcount">%d rip%s</span></span>'
+        '<span class="bmain"><span class="btitle">%s <span class="bcount">%d rip%s</span></span>'
         '<span class="bookline">%s</span>'
         '<span class="bsamples">%s</span></span>'
         '<span class="bchev">\u25be</span></button></h2>'
-        % (gh, esc(b["book"]), len(bcards), esc(b["book"]), len(bcards), "" if len(bcards) == 1 else "s",
+        % (gh, esc(b["book"]), len(bcards), "" if len(bcards) == 1 else "s",
            esc(b["bookline"]), esc(samples)))
     parts.append('<div class="cards">')
     thesis_open = b["genre"] == "Thesis"  # one book = one card: skip the second click
@@ -371,8 +371,6 @@ body{margin:0;font-family:var(--font-serif);font-size:var(--fs-base);line-height
 /* ---------- frame: masthead ---------- */
 header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:var(--ink-frame);border-bottom:3px solid var(--accent-rip)}
 .mast-inner{max-width:var(--page-max);margin:0 auto;padding:var(--space-md) var(--page-gutter) var(--space-md)}
-.marking{margin:0 0 var(--space-2xs);font-family:var(--font-mono);font-size:var(--fs-xs);font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-frame)}
-.marking .sep{color:var(--accent-rip)}
 .wordmark{max-width:var(--wordmark-max);margin:0}
 .wordmark svg{display:block;width:100%;height:auto}
 /* existing mark, presented in frame ink: shapes untouched, fills remapped */
@@ -409,7 +407,6 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .jumpchips a:hover{border-color:var(--accent-rip)}
 /* ---------- frame: footer ---------- */
 footer{background:var(--surface-frame);color:var(--ink-frame);font-family:var(--font-mono);font-size:var(--fs-sm);padding:var(--space-xl) var(--page-gutter);border-top:3px solid var(--accent-rip);text-align:center}
-footer .motto{margin:0 0 var(--space-sm);font-size:var(--fs-xs);font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-frame)}
 footer .fmeta{margin:0;color:var(--ink-structure-frame)}
 /* ---------- reading zone ---------- */
 #intro{max-width:var(--page-narrow);margin:0 auto;padding:var(--space-md) var(--page-gutter) 0;color:var(--ink-body);font-size:var(--fs-base)}
@@ -429,7 +426,6 @@ button::-moz-focus-inner{border:0;padding:0}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .chip{display:inline-block;width:var(--space-sm);height:var(--space-sm);border-radius:var(--radius-sm);flex:none}
 .bookhead .bmain,.fbookhead .bmain{flex:1;min-width:0}
-.exlibris{display:block;font-family:var(--font-mono);font-size:var(--fs-xs);font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-structure);margin-bottom:var(--space-2xs)}
 .btitle{font-weight:400;font-size:var(--fs-base);color:var(--ink-body);line-height:var(--lh-tight)}
 .btitle .bcount{color:var(--ink-structure);font-size:var(--fs-sm);font-weight:400;margin-left:var(--space-xs);font-family:var(--font-mono)}
 .bookline{color:var(--ink-structure);font-size:var(--fs-sm);margin:var(--space-3xs) 0 var(--space-3xs)}
@@ -534,14 +530,14 @@ main{max-width:var(--page-max)}
   body{background:var(--print-paper);color:var(--print-ink)}
   header.masthead{background:var(--print-paper);border-bottom:2px solid var(--print-ink)}
   .mast-inner{padding:var(--space-sm) 0}
-  .wordmark svg,.marking,.mast-sub,.mast-meta{display:none!important}
+  .wordmark svg,.mast-sub,.mast-meta{display:none!important}
   .print-title{display:block!important;font-family:var(--font-serif);font-size:var(--fs-xl);font-weight:700;color:var(--print-ink);margin:0}
   main,#intro{max-width:none;padding-left:0;padding-right:0}
   #intro{color:var(--print-ink)}
   #intro strong{color:var(--print-ink)}
   .genre{color:var(--print-ink);border-bottom:2px solid var(--print-ink)}
   .gcount{color:var(--print-ink)}
-  .exlibris,.chip,.bchev,.pv,.tcount{display:none!important}
+  .chip,.bchev,.pv,.tcount{display:none!important}
   .bookhead,.fbookhead,.cardhead{cursor:default;color:var(--print-ink)}
   .bh,.ch,.btitle{font-weight:700;color:var(--print-ink)}
   .btitle .bcount,.bookline,.bsamples{color:var(--print-ink)}
@@ -558,7 +554,6 @@ main{max-width:var(--page-max)}
   mark{background:none;color:var(--print-ink);font-weight:700}
   main a{color:var(--print-ink);text-decoration:none}
   footer{background:var(--print-paper);color:var(--print-ink);border-top:2px solid var(--print-ink)}
-  footer .motto{display:none}
   footer .fmeta{color:var(--print-ink)}
   .amstep,.fbchap{background:var(--print-paper);border-color:var(--print-ink)}
   *{box-shadow:none!important;text-shadow:none!important}
@@ -857,7 +852,6 @@ page = """<!DOCTYPE html>
 <body>
 
 <header class="masthead"><div class="mast-inner">
-<p class="marking">IDEA RIPPER <span class="sep">//</span> EYES ONLY</p>
 <h1 class="wordmark"><span class="sr-only">Idea Ripper</span>%s</h1>
 <p class="print-title">Idea Ripper \u2014 the idea-hunting library</p>
 <p class="mast-sub">the idea-hunting library</p>
@@ -891,7 +885,7 @@ page = """<!DOCTYPE html>
 %s
 <p class="noresults" id="noresults" hidden>No rips match — try a mechanism word (interlock, delay, patronage).</p>
 </main>
-<footer><p class="motto">MULTUM NON MULTA</p><p class="fmeta">Last curated %s &middot; %d books &middot; %d theses &middot; %d rips%s &middot; ripped with the Idea Ripper pipeline</p></footer>
+<footer><p class="fmeta">Last curated %s &middot; %d books &middot; %d theses &middot; %d rips%s &middot; ripped with the Idea Ripper pipeline</p></footer>
 <script>%s</script>
 <div id="toast" role="status"></div>
 </body>
