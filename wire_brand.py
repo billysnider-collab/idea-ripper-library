@@ -60,13 +60,13 @@ s = head + "def fb_chapter_detail" + tail
 rep('<header>\n<div class="hrow"><strong>Cool Keepers</strong><span class="meta">%d keepers &middot; %d books &middot; curated %s</span></div>\n</header>',
     '<header class="masthead"><div class="mast-inner">\n'
     '<div class="wordmark" role="img" aria-label="Idea Ripper">%s</div>\n'
-    '<p class="mast-sub">Cool Keepers <span class="sep">/</span> the idea-hunting library</p>\n'
+    '<p class="mast-sub">the idea-hunting library</p>\n'
     '<p class="mast-meta">%d keepers &middot; %d books &middot; curated %s</p>\n'
     '</div></header>')
 
 # 5) favicons
-rep('<title>Cool Keepers - Idea Ripper</title>',
-    '<title>Cool Keepers - Idea Ripper</title>\n'
+rep('<title>Idea Ripper - the idea-hunting library</title>',
+    '<title>Idea Ripper - the idea-hunting library</title>\n'
     '<link rel="icon" type="image/svg+xml" href="brand/r-mark.svg"/>\n'
     '<link rel="icon" type="image/png" sizes="32x32" href="brand/r-mark-32.png"/>\n'
     '<link rel="apple-touch-icon" href="brand/apple-touch-icon.png"/>')

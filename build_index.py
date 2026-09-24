@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validator for the Cool Keepers hunt-layer page (2026-09-22).
+"""Validator for the Idea Ripper hunt-layer page (2026-09-22).
 
 Dataset lives in cards.json; build_site.py renders index.html from it.
 This script verifies both: the dataset (all four grounded fields on every
@@ -49,7 +49,7 @@ def main():
         for part in ('class="cardhead"', 'class="cardbody"', 'class="steal"',
                      'class="why"', 'class="uw"'):
             assert part in c, "card %d missing %s" % (i, part)
-    print("keepers page OK: %d cards, %d books, %d genres, numbered 1-%d"
+    print("rips page OK: %d cards, %d books, %d genres, numbered 1-%d"
           % (nc, nbk, len(ds["genre_order"]), nc))
 
 if __name__ == "__main__":

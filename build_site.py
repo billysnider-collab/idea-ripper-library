@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Cool Keepers hunt-layer page from cards.json.
+"""Build the Idea Ripper hunt-layer page from cards.json.
 
 Design: deduped book blurbs (once per book header), sticky search/filter bar,
 collapsed cards (scan layer), book color chips, copy buttons, trust footer.
@@ -29,7 +29,7 @@ RIP_SVG = ('<svg class="ripmark" viewBox="0 0 20 8" aria-hidden="true">'
            '<polyline points="1,4.5 5,2 9,5.5 13,2 17,5 19,3" fill="none" stroke="#d92b1f" stroke-width="2"/>'
            '</svg>')
 
-# full-book deep dives: standalone briefs too rich to shred into keepers
+# full-book deep dives: standalone briefs too rich to shred into rips
 fb_path = os.path.join(BASE, "fullbooks.json")
 fbooks = json.load(open(fb_path, encoding="utf-8"))["books"] if os.path.exists(fb_path) else []
 
@@ -69,7 +69,7 @@ def book_block(b):
     parts.append(
         '<div class="bookhead" role="button" tabindex="0" aria-expanded="false">'
         '<span class="chip" style="background:hsl(%d,45%%,55%%)"></span>'
-        '<span class="bmain"><span class="btitle">%s <span class="bcount">%d keeper%s</span></span>'
+        '<span class="bmain"><span class="btitle">%s <span class="bcount">%d rip%s</span></span>'
         '<span class="bookline">%s</span>'
         '<span class="bsamples">%s</span></span>'
         '<span class="bchev">\u25be</span></div>'
@@ -151,8 +151,8 @@ def fb_chapter_detail(ch):
 
 def fullbook_block(fb):
     """Standalone deep-dive entry: argument map, themes, timeline, author-vs-fact,
-    synthesis, the full card deck, and chapter summaries. Cards reuse keeper
-    card visuals but carry data-fb so keeper search/count/hash logic skips them."""
+    synthesis, the full card deck, and chapter summaries. Cards reuse rip
+    card visuals but carry data-fb so rip search/count/hash logic skips them."""
     parts = ['<section class="fbook collapsed" id="fb-%s">' % esca(fb["id"])]
     blurb = fb["author"]
     if fb.get("publisher"):
@@ -361,7 +361,7 @@ main{max-width:1180px}
 #intro strong{color:var(--fg);font-weight:600}
 @media (max-width:700px){.bsamples{display:none}}
 @media(min-width:1000px){#intro{max-width:1180px}}
-/* full-book deep dives: standalone briefs, keeper card visuals, own toggle */
+/* full-book deep dives: standalone briefs, rip card visuals, own toggle */
 .fbook{margin-bottom:1.5rem}
 .fbookhead{display:flex;align-items:center;gap:.6rem;margin:1.1rem 0 .1rem;cursor:pointer}
 .fbookhead .bmain{flex:1;min-width:0}
@@ -460,7 +460,7 @@ function apply(fromInput){
       if(hd)hd.setAttribute('aria-expanded',b.classList.contains('collapsed')?'false':'true');
     }
   });
-  /* full-book deep dives stand alone: the keeper hunt box hides the shelf */
+  /* full-book deep dives stand alone: the rip hunt box hides the shelf */
   document.querySelectorAll('.fbook').forEach(function(b){
     b.classList.toggle('hidden',filtering);
   });
@@ -501,7 +501,7 @@ document.querySelectorAll('.bookhead').forEach(function(h){
   h.addEventListener('click',t);
   h.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();t();}});
 });
-/* full-book shelf: own toggle, outside keeper expand/collapse-all */
+/* full-book shelf: own toggle, outside rip expand/collapse-all */
 document.querySelectorAll('.fbookhead').forEach(function(h){
   function t(){var b=h.parentElement,exp=b.classList.contains('collapsed');
     b.classList.toggle('collapsed',!exp);
@@ -565,7 +565,7 @@ fb_intro = ""
 fb_footer = ""
 if fbooks:
     fb_intro = ("<p><strong>Full Books:</strong> below the shelves \u2014 standalone deep-dives "
-                "(the argument, turning points, every card) for books too rich to shred into keepers.</p>")
+                "(the argument, turning points, every card) for books too rich to shred into rips.</p>")
     fb_footer = " &middot; %d full-book brief%s" % (len(fbooks), "" if len(fbooks) == 1 else "s")
 
 page = """<!DOCTYPE html>
@@ -573,7 +573,7 @@ page = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Cool Keepers - Idea Ripper</title>
+<title>Idea Ripper - the idea-hunting library</title>
 <link rel="icon" type="image/svg+xml" href="brand/r-mark.svg"/>
 <link rel="icon" type="image/png" sizes="32x32" href="brand/r-mark-32.png"/>
 <link rel="apple-touch-icon" href="brand/apple-touch-icon.png"/>
@@ -583,12 +583,12 @@ page = """<!DOCTYPE html>
 
 <header class="masthead"><div class="mast-inner">
 <div class="wordmark" role="img" aria-label="Idea Ripper">%s</div>
-<p class="mast-sub">Cool Keepers <span class="sep">/</span> the idea-hunting library</p>
-<p class="mast-meta">%d keepers &middot; %d books &middot; curated %s</p>
+<p class="mast-sub">the idea-hunting library</p>
+<p class="mast-meta">%d rips &middot; %d books &middot; curated %s</p>
 </div></header>
 <section id="intro">
-<p><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every keeper is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>
-<p><strong>How to hunt:</strong> tap a book to open its keepers, tap a card for the full steal, copy anything you want. Search hunts titles, steals, and use-whens all at once.</p>
+<p><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>
+<p><strong>How to hunt:</strong> tap a book to open its rips, tap a card for the full steal, copy anything you want. Search hunts titles, steals, and use-whens all at once.</p>
 %s
 </section>
 <div class="controls"><div class="inner">
@@ -606,9 +606,9 @@ page = """<!DOCTYPE html>
 <nav class="jumpchips" id="jumpchips" aria-label="Jump to a book">%s</nav>
 <main>
 %s
-<p class="noresults" id="noresults" hidden>No keepers match — try a mechanism word (interlock, delay, patronage).</p>
+<p class="noresults" id="noresults" hidden>No rips match — try a mechanism word (interlock, delay, patronage).</p>
 </main>
-<footer>Last curated September 22, 2026 &middot; %d books &middot; %d keepers%s &middot; ripped with the Idea Ripper pipeline</footer>
+<footer>Last curated September 22, 2026 &middot; %d books &middot; %d rips%s &middot; ripped with the Idea Ripper pipeline</footer>
 <script>%s</script>
 <div id="toast" role="status"></div>
 </body>
