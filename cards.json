@@ -526,6 +526,21 @@
    "book": "Stranger in a Strange Land — Robert A. Heinlein",
    "genre": "Science Fiction",
    "bookline": "A Martian-raised outsider becomes a prophet: how charisma manufactures reality. Ripped as the book on trial against itself."
+  },
+  {
+   "book": "VALIS — Philip K. Dick",
+   "genre": "Science Fiction",
+   "bookline": "A divided narrator investigates his own revelation: prophet and crank kept alive at once. Ripped with the evidence ledger, not the verdict."
+  },
+  {
+   "book": "The Third Policeman — Flann O'Brien",
+   "genre": "Literary Fiction",
+   "bookline": "A comic novel that is a metaphysical machine in disguise. Ripped as OSINT for a surreal novel: catalog the weirdness, model last."
+  },
+  {
+   "book": "Piranesi — Susanna Clarke",
+   "genre": "Literary Fiction",
+   "bookline": "A man catalogs an infinite house. The narrator is already doing the OSINT method inside the novel — which puts the method itself on trial."
   }
  ],
  "cards": [
@@ -5536,6 +5551,351 @@
    "intents": [
     "change someone's mind",
     "make a connection"
+   ]
+  },
+  {
+   "title": "The divided narrator: can a man investigate himself objectively?",
+   "book": "VALIS — Philip K. Dick",
+   "type": "passage",
+   "steal": "I am Horselover Fat, and I am writing this in the third person to gain much-needed objectivity. Fat believes he is receiving information from a transcendent intelligence. Dick, the authorial persona, investigates Fat. They are the same person.",
+   "why": "This is the doorway and the trap at once. The book turns autobiography into an epistemological problem: every piece of evidence for the revelation is gathered by the man who needs the revelation to be true, and every debunking is issued by the same man who needs it debunked. Objectivity is announced in the very sentence that destroys it. When you read VALIS, you are not watching an investigation, you are watching a mind build the apparatus that will certify its own conclusions.",
+   "uw": "A narrator claims to be investigating a belief they already hold: watch who appointed the investigator.",
+   "id": 441,
+   "source_locator": "Opening - the Gloria Knudson passage",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "notice what others miss",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "God, alien, computer, or pattern imposed on chaos: keep the ledger",
+   "book": "VALIS — Philip K. Dick",
+   "type": "mechanism",
+   "steal": "VALIS could be God, an alien, a computer, or a pattern imposed on chaos. PKD deliberately refuses to make the distinction comfortable. The move is not to solve it but to keep a literal evidence ledger: Claim, then Evidence, then Alternative explanation, then What remains unexplained.",
+   "why": "Most books about revelation want you to pick a side: believer or skeptic. VALIS is built to keep both readings alive simultaneously, and that is the experiment. The ledger is the discipline: every time Fat adds an entry to the revelation column, the narrator adds one to the breakdown column, and the reader has to hold both without collapsing them. Resist the temptation to solve it, the refusal is the point.",
+   "uw": "A text offers you a mystery and pressures you to choose belief or dismissal: keep the ledger instead.",
+   "id": 442,
+   "source_locator": "Throughout - the exegesis passages",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "name the mechanism",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "The pink beam: two investigations, not one",
+   "book": "VALIS — Philip K. Dick",
+   "type": "passage",
+   "steal": "Fat's account: God had fired a beam of pink light directly at him, at his head, his eyes, and with the beam came knowledge he never had, down to the medical specifics of his son's undiagnosed birth defect. The narrator's account, in the same chapter: I deem it a symptom of Fat's breakdown. Then the laser-prank scene: two teenagers aim a homemade pink laser at them in a parking lot, the narrator asks Fat That color pink? and Fat says nothing.",
+   "why": "The book runs two investigations side by side without resolving them. Investigation one: what would have to be true about reality for this experience to mean what Fat thinks it means? Investigation two: what would have to be true about Fat's mind for the experience to feel exactly as convincing as it does? The text itself supplies the debunker: The mentally disturbed do not employ the Principle of Scientific Parsimony, they shoot for the baroque, written by the same hand that wrote the revelation. The narrator debunks Fat in real time, and Fat keeps going anyway. That simultaneity is the whole book.",
+   "uw": "An extraordinary experience comes with its own built-in skeptic, and the believer outruns him.",
+   "id": 443,
+   "source_locator": "Early - the pink beam account and the laser-prank scene",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "notice what others miss",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "The Empire never ended: religion as ancient vocabulary for information",
+   "book": "VALIS — Philip K. Dick",
+   "type": "argument",
+   "steal": "The Empire never ended. Early Christianity becomes a parallel information system: empire, persecution, hidden community, encoded knowledge, revelation, transformation. PKD overlays that structure onto modern America. The question: is VALIS actually a science-fiction story about information, and religion is PKD's ancient vocabulary for describing information?",
+   "why": "This may be the deepest rabbit hole in the book. Strip the theology and the structure is pure information theory: a signal persecuted by a noisy channel (the Empire), preserved by redundancy (the hidden community), transmitted in code (scripture), decoded by a receiver (Fat). The Empire never ended is then not a historical claim but a systems claim: the same information war is running now, with new hardware. PKD's mysticism may be a compression algorithm for something he could not say plainly.",
+   "uw": "Ancient religious structures map exactly onto modern information systems: ask what the theology is compressing.",
+   "id": 444,
+   "source_locator": "The exegesis - 'The Empire never ended' passages",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "change someone's mind",
+    "make a connection"
+   ]
+  },
+  {
+   "title": "Don't let PKD hypnotize you: connection is not causation",
+   "book": "VALIS — Philip K. Dick",
+   "type": "mechanism",
+   "steal": "VALIS is designed to make you feel that connections are accumulating. A detail appears. Then another. Then another. Suddenly everything seems connected. That is precisely when to stop and ask: connection or causation? Pattern or proof? Recurrence or coincidence? Narrative symmetry or external evidence?",
+   "why": "The book's rhetoric is a machine for manufacturing conviction: recurrence feels like evidence, symmetry feels like design, accumulation feels like proof. But a novel controls which details appear, the author is dealing from a stacked deck. The reading itself becomes an experiment: can you feel the hypnosis working and still keep the ledger? PKD is showing you, in real time, how a mind talks itself into certainty. The danger is not that Fat is wrong; it is that the mechanism works on the reader too.",
+   "uw": "Details are accumulating and everything starts to feel connected: that feeling is the thing to investigate.",
+   "id": 445,
+   "source_locator": "The reading experience itself - the accumulation passages",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "name the mechanism",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "At what point does evidence become belief, and belief start manufacturing evidence?",
+   "book": "VALIS — Philip K. Dick",
+   "type": "concept",
+   "steal": "The question is not What is VALIS? It is: at what point does evidence become belief, and at what point does belief start manufacturing evidence? What if the book's central revelation is real, and what if the book itself is the mechanism by which the narrator becomes convinced it is real?",
+   "why": "This is where VALIS gets vicious. The exegesis is not a record of an investigation; it is the investigation manufacturing its own object. Every entry that confirms the revelation was written by a mind already committed to finding confirmation. The feedback loop is the revelation. That is true whether VALIS is God or a breakdown, the mechanism is identical, which is why the book refuses to choose. Certainty is not the output of the evidence; certainty is what the evidence-collection process was built to produce.",
+   "uw": "Someone's research keeps confirming what they believed before they started: the investigation is the belief, wearing a lab coat.",
+   "id": 446,
+   "source_locator": "Whole book - the central question",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "change someone's mind",
+    "name the mechanism"
+   ]
+  },
+  {
+   "title": "The narrator is a murderer: how much can we trust?",
+   "book": "The Third Policeman — Flann O'Brien",
+   "type": "passage",
+   "steal": "The narrator, unnamed, a de Selby scholar, confesses early: It was for de Selby I committed my first serious sin. It was for him that I committed my greatest sin. The greatest sin is murder: old Mathers, felled by an iron bicycle-pump, hacked to death with a heavy spade and then securely buried in a field. Everything that follows, the parish, the policemen, the bicycles, is narrated by this man.",
+   "why": "Narrator reliability is the first OSINT entry. A murderer justifying himself is not a neutral camera: every absurdity the policemen spout, every precise-insane statement, arrives filtered through a mind with a motive to make the world look stranger than his crime. Before asking what the parish means, ask who is showing it to you, and what he needs you not to notice.",
+   "uw": "A bizarre world is reported by a narrator with blood on his hands: discount the scenery until you have priced the witness.",
+   "id": 447,
+   "source_locator": "Opening - the de Selby confession",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "notice what others miss",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "'Is it about a bicycle?': the story loops",
+   "book": "The Third Policeman — Flann O'Brien",
+   "type": "passage",
+   "steal": "Is it about a bicycle? Asked three times across the book, casually, identically, the last time as the story returns to its own beginning. The narrative does not progress; it traps. The ending hands you the opening.",
+   "why": "Circularity is the catalog's load-bearing anomaly. A story that loops is not a story about events, it is a story about a condition. Progress is the assumption the book quietly removes: the narrator keeps arriving, keeps asking, keeps being processed by the same machinery. Ask not what happens next but what kind of universe makes next meaningless. This is the direct inversion of VALIS: there, the narrator cannot tell if the revelation is real; here, the reader cannot tell if time is real.",
+   "uw": "A narrative returns to its start: stop tracking plot and start tracking the trap.",
+   "id": 448,
+   "source_locator": "Recurring - asked three times, opening through closing",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "notice what others miss",
+    "name the mechanism"
+   ]
+  },
+  {
+   "title": "Half a bicycle: what makes someone the same person?",
+   "book": "The Third Policeman — Flann O'Brien",
+   "type": "passage",
+   "steal": "Michael Gilhaney, said the Sergeant, is nearly sixty years of age by plain computation and if he is itself, he has spent no less than thirty-five years riding his bicycle. If it was not that his bicycle was stolen every Monday he would be sure to be more than half-way now. Half-way to where? Half-way to being a bicycle himself, said the Sergeant.",
+   "why": "The joke is a genuine identity problem. If atoms are exchanged between rider and ridden, and the Sergeant's physics says they are, then at what percentage of bicycle-atoms does Gilhaney stop being Gilhaney? The book poses the Ship of Theseus as a police matter. Identity, in this parish, is not a soul or a memory but an atomic ledger, and the ledger is kept by the County Council.",
+   "uw": "Identity is treated as a substance that can be diluted, exchanged, or stolen: ask who keeps the ledger.",
+   "id": 449,
+   "source_locator": "The Sergeant's Atomic Theory lecture",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "change someone's mind",
+    "notice what others miss"
+   ]
+  },
+  {
+   "title": "De Selby's footnotes: when scientific language becomes mythology",
+   "book": "The Third Policeman — Flann O'Brien",
+   "type": "argument",
+   "steal": "De Selby, the philosopher the narrator ruined himself for, exists only in footnotes: cited, disputed, footnoted by commentators, never present. His science arrives as scholarly apparatus with no experiment behind it. The Sergeant does the same in speech: Everything is composed of small particles of itself. These diminutive gentlemen are called atoms. They are lively as twenty leprechauns doing a jig on top of a tombstone.",
+   "why": "The form of science is preserved while the content becomes mythology: citations, lectures, instruments, algebra, all deployed in service of claims like half a bicycle. O'Brien's target is not science but scientism: the moment the vocabulary of rigor is used to launder absurdity. The footnotes are the joke and the point, authority borrowed from a man who never appears, defending theories no one can test, in a parish where the County Council is the final arbiter of physics.",
+   "uw": "Precise technical language is carrying an insane conclusion: check whether the apparatus is doing work or doing theater.",
+   "id": 450,
+   "source_locator": "The de Selby apparatus - footnotes throughout",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "name the mechanism",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "The policemen: why absurd bureaucracy feels legitimate",
+   "book": "The Third Policeman — Flann O'Brien",
+   "type": "mechanism",
+   "steal": "The policemen run an endless bureaucracy of measurements, instruments, and procedures, MacCruiskeen crafting impossibly fine devices, the Sergeant administering the parish with total procedural confidence, and it all feels legitimate while being completely absurd. The system never justifies itself; it performs justification until the performance becomes the justification.",
+   "why": "This is the book's political nerve. Absurd systems feel legitimate not because their reasons are good but because their procedures are confident: the instruments, the ledgers, the questions asked in the right tone. O'Brien catalogs the exact mechanism by which bureaucracy manufactures consent, not by argument but by atmosphere. The narrator never successfully challenges the policemen because you cannot argue with a procedure; you can only submit to it or flee it.",
+   "uw": "A system is clearly absurd but everyone complies: look at the procedures, not the reasons.",
+   "id": 451,
+   "source_locator": "The barracks - Sergeant Pluck and MacCruiskeen",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "name the mechanism",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "The jokes about death aren't jokes",
+   "book": "The Third Policeman — Flann O'Brien",
+   "type": "argument",
+   "steal": "Old Mathers was felled by an iron bicycle-pump, hacked to death with a heavy spade and then securely buried in a field, by the narrator. Then the narrator walks into a parish where death is treated as an administrative detail and everything loops. The book's jokes about death are not jokes: they are the condition of the narrative. The circularity rip and this one are the same rip seen from two sides, the story loops because the narrator is dead, and the jokes are the tell.",
+   "why": "Billy's rule, don't explain the weirdness away, catalog it, earns its keep here. The death-jokes are catalog entries, not punchlines: each one is evidence for the model. Once the model (the narrator died; the parish is the afterlife's bureaucracy) is on the table, every joke retroactively becomes a datum. This is OSINT discipline applied to fiction: the hypothesis that explains the most entries with the fewest assumptions wins, and he's dead explains the loop, the policemen, the bicycles, and the tone all at once.",
+   "uw": "A comic text keeps joking about death: catalog every instance before deciding any of them is just a joke.",
+   "id": 452,
+   "source_locator": "The Mathers murder through the loop",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "notice what others miss",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "Bicycles: why the joke object is philosophically load-bearing",
+   "book": "The Third Policeman — Flann O'Brien",
+   "type": "concept",
+   "steal": "Of all objects, the book chooses the bicycle, the most ordinary machine in the parish, and makes it the site of its metaphysics. The Atomic Theory runs on bicycles: riders exchange atoms with their machines until the boundary dissolves. The bicycle is funny, which is why it works: the philosophy arrives disguised as a joke about the most unphilosophical object available.",
+   "why": "O'Brien's method: put the metaphysics in the joke object and the jokes in the metaphysics. The bicycle does triple duty, it is the murder weapon (the pump), the identity problem (half a bicycle), and the loop's refrain (Is it about a bicycle?). An object that comic is carrying that much structural weight is never just comic. When cataloging weirdness, weight the joke objects heaviest: the author hid the load-bearing beams where you would least look for them.",
+   "uw": "The silliest object in a text keeps recurring: it is probably structural.",
+   "id": 453,
+   "source_locator": "The Atomic Theory - bicycles throughout",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "name the mechanism",
+    "notice what others miss"
+   ]
+  },
+  {
+   "title": "Precise statements, increasing insanity: O'Brien's language machine",
+   "book": "The Third Policeman — Flann O'Brien",
+   "type": "mechanism",
+   "steal": "Everything is composed of small particles of itself and they are flying around in concentric circles and arcs and segments and innumerable other geometrical figures too numerous to mention collectively, never standing still or resting but spinning away and darting hither and thither and back again, all the time on the go. These diminutive gentlemen are called atoms.",
+   "why": "The sentence is grammatically perfect, rhythmically confident, and semantically insane, and that is the machine. O'Brien discovered that precision of statement is independent of sanity of content: say anything in the right cadence, with the right subordinate clauses, and it lands with the force of fact. The Sergeant never hesitates, never qualifies, never notices. Language, in this parish, does not describe reality, it replaces it. Compare VALIS: there, new vocabulary (grok, VALIS) recruits believers; here, perfect syntax recruits assent. Two different language machines, same warning.",
+   "uw": "A statement is perfectly formed and completely mad: the form is doing the persuading, not the content.",
+   "id": 454,
+   "source_locator": "The Sergeant's dialogue throughout",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "name the mechanism",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "Catalog, don't explain: OSINT for a surreal novel",
+   "book": "The Third Policeman — Flann O'Brien",
+   "type": "concept",
+   "steal": "The imposed rule: we don't explain the weirdness away. We catalog it. Then, once enough evidence accumulates, we ask what model of reality explains the greatest number of details with the fewest assumptions. OSINT for a surreal novel.",
+   "why": "This is the method that makes the other eight rips work. Explaining too early collapses the evidence, every it's just a dream or it's all a metaphor destroys data. The catalog preserves anomalies until a model earns them: the loop, the bicycles, the dead narrator, the confident policemen, the precise-insane sentences. And the VALIS contrast sharpens it: there we ask whether the revelation is genuine; here we ask whether the universe is reliable. Different problem, same discipline, hold the weirdness open until the model with the fewest assumptions claims it.",
+   "uw": "Reading anything surreal, mystical, or conspiratorial: catalog first, model last, explain never.",
+   "id": 455,
+   "source_locator": "Billy's imposed rule - the method itself",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "name the mechanism",
+    "use in an argument"
+   ]
+  },
+  {
+   "title": "The narrator is already doing our method",
+   "book": "Piranesi — Susanna Clarke",
+   "type": "concept",
+   "steal": "This notebook is my Catalogue of Statues. In the others I keep my Journal in which I write my thoughts and memories and make a record of my days. Piranesi dates his entries, cross-references them, and admits the system's flaw: One of the drawbacks of keeping a journal is the difficulty of finding important entries again.",
+   "why": "The method is inside the novel. The OSINT rule, catalog the weirdness, model last, is literally Piranesi's daily practice: he is the cataloger of the surreal. Which puts the method on trial: what does the perfect cataloger fail to see? Piranesi records everything and understands almost nothing about his own situation, the Other's exploitation, his stolen identity, the dead. The catalog is complete and the model is absent. Data without theory is not neutrality; it is a different kind of blindness. The book asks: what good is a perfect evidence ledger if you never ask what the evidence is for?",
+   "uw": "Someone is collecting evidence flawlessly and concluding nothing: the catalog has become a substitute for the question.",
+   "id": 456,
+   "source_locator": "The journals - the Catalogue of Statues",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "name the mechanism",
+    "notice what others miss"
+   ]
+  },
+  {
+   "title": "'I am Piranesi': identity as something the House gave him",
+   "book": "Piranesi — Susanna Clarke",
+   "type": "passage",
+   "steal": "I am Piranesi. The name is not the one he was born with, that was Matthew Rose Sorensen, a life he cannot remember. The House is the cause of my forgetting. His identity is not recovered; it is issued: the House took the old self and gave him a new one, and the new one is happier.",
+   "why": "The cluster's identity question, inverted. In Third Policeman, identity dissolves (half a bicycle); in VALIS, it splits (Fat vs. Dick); here it is replaced, and the replacement is an upgrade. Piranesi does not want his old self back. That is the disturbing part: the book suggests identity might be a habitat rather than an essence. Put the organism in a kinder universe and a kinder self grows. Ask not who is he really? but what does the House make possible that the old world didn't?",
+   "uw": "Someone's identity changed completely after their environment changed: maybe the self was the habitat all along.",
+   "id": 457,
+   "source_locator": "The identity passages - Matthew Rose Sorensen",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "change someone's mind",
+    "notice what others miss"
+   ]
+  },
+  {
+   "title": "The House: what if the universe is kind?",
+   "book": "Piranesi — Susanna Clarke",
+   "type": "argument",
+   "steal": "The Beauty of the House is immeasurable; its Kindness infinite. The House is infinite halls, tides, statues, vestibules, a universe that provides: food from the sea, fresh water, shelter, beauty on every wall. It asks nothing.",
+   "why": "Every other book in the cluster gives us a hostile or indifferent metaphysics: Wolfe's dying sun, Dick's possibly-mad revelation, O'Brien's looping afterlife bureaucracy. Clarke runs the control experiment: what if the unreliable universe is benevolent? The House never lies to Piranesi, never traps him the way the parish traps the narrator, the traps are all human (the Other, Arne-Sayles). The metaphysical dread of the cluster dissolves here into something stranger: a universe you can trust. Do you trust the House? I ask Myself. Yes, I answer Myself. The terror is not in the House; it is in what people do with it.",
+   "uw": "The setting is the antagonist in every story you know: try one where the setting is innocent and the people are the problem.",
+   "id": 458,
+   "source_locator": "The opening journals - the description of the World",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "change someone's mind",
+    "notice what others miss"
+   ]
+  },
+  {
+   "title": "The Other: the one who uses vs. the one who loves",
+   "book": "Piranesi — Susanna Clarke",
+   "type": "passage",
+   "steal": "The Prophet called the Other 'Ketterley'. Val Ketterley, the Other, does not love the House; he uses it. He wants its power, its other worlds, its prestige. He keeps Piranesi docile, feeds him tasks, withholds the truth. Two relationships to the same infinite reality: Piranesi's devotion and Ketterley's extraction.",
+   "why": "The book's moral axis is not good vs. evil but love vs. use. Ketterley treats the House the way a bad reader treats a text, as a resource to be strip-mined. Piranesi treats it the way a good reader treats a book worth ripping, with attention, gratitude, return visits. The villain is not a metaphysical force; he is a bad reader. In a cluster obsessed with unreliable universes, Clarke locates the unreliability where it belongs: in the exploiter's relationship to reality, not in reality itself.",
+   "uw": "Two people inhabit the same reality and one is thriving while the other schemes: check whether the difference is love vs. use.",
+   "id": 459,
+   "source_locator": "The Prophet's testimony - 'Ketterley'",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "name the mechanism",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "Kindness as epistemology: trust as a way of knowing",
+   "book": "Piranesi — Susanna Clarke",
+   "type": "concept",
+   "steal": "Do you trust the House? I ask Myself. Yes, I answer Myself. Piranesi's knowledge of the House comes from love, not analysis. He knows the tides because he attends to them; he knows the statues because he visits them. His epistemology is devotion.",
+   "why": "This is the direct answer to VALIS's evidence ledger. Dick's method: hold belief and skepticism apart forever, keep the ledger, never collapse. Clarke's method: trust first, and let the trust produce knowledge the ledger never could. Piranesi knows things about the House no skeptic could learn, because the skeptic never stays long enough, never loves it enough, to be taught. The book proposes that some realities only open to the devoted, that suspicion is not always rigor; sometimes it is just distance. The catalog rule still holds (he records everything), but the catalog is kept by a lover, and that changes what the catalog can see.",
+   "uw": "Analysis has stalled on something people love: the lovers may know things the ledger can't.",
+   "id": 460,
+   "source_locator": "The journals - 'Do you trust the House?'",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "change someone's mind",
+    "name the mechanism"
+   ]
+  },
+  {
+   "title": "He brings the dead water lilies",
+   "book": "Piranesi — Susanna Clarke",
+   "type": "passage",
+   "steal": "I visit all the Dead, but particularly the Folded-Up Child. I bring them food, water and water lilies. The House is full of skeletons, the Biscuit-Box Man, the Folded-Up Child, thirteen in all, and Piranesi tends them like a parish priest tends graves. He names them, visits them, feeds them.",
+   "why": "In Third Policeman, the jokes about death are data pointing to the narrator's own death. Here death is not a twist but a practice: the dead are company, and tending them is how Piranesi stays human in an infinite house. The skeletons are the previous catalogers, the ones the House kept, including, by implication, everyone Arne-Sayles and Ketterley lured and lost. Piranesi's kindness to the dead is the proof of his epistemology: he treats the vanished the way he treats the living, with attention. The dead are not a mystery to solve; they are neighbors to visit.",
+   "uw": "A text keeps its dead around instead of burying them: they are probably the point.",
+   "id": 461,
+   "source_locator": "The visits to the Dead",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "notice what others miss",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "The capitalized world: language as devotion",
+   "book": "Piranesi — Susanna Clarke",
+   "type": "mechanism",
+   "steal": "Piranesi capitalizes the way a child theologizes: the House, the Other, the Statues, the Tides, the Halls, Himself, Myself. Everything important gets a capital letter. His sentences are simple, precise, and completely sincere, the inverse of O'Brien's precise-insane machine.",
+   "why": "Three language machines in the cluster: Wolfe's archaic precision (trust the narrator?), Dick's new vocabulary (grok recruits believers), O'Brien's perfect syntax carrying madness (the form persuades, not the content). Clarke's is the fourth: capitalization as consecration. Piranesi's diction does not argue or deceive; it honors. The capitals are a record of what he loves, and the love is legible in the grammar. Language here is not a trap or a recruitment tool, it is a liturgy. Which raises the cluster's sharpest question: what if the way you write about a universe determines what the universe will show you?",
+   "uw": "Someone's diction consecrates ordinary things: read the capitals as a map of their devotions.",
+   "id": 462,
+   "source_locator": "The diction throughout - the House, the Other, the Statues",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "name the mechanism",
+    "notice what others miss"
+   ]
+  },
+  {
+   "title": "Arne-Sayles: the theory that ate its believers",
+   "book": "Piranesi — Susanna Clarke",
+   "type": "argument",
+   "steal": "Laurence Arne-Sayles built a Theory of Other Worlds; Ketterley followed it into the House; the House kept them both. The dossier reads like a de Selby footnote file: scholarly apparatus around a man who vanished into his own theory.",
+   "why": "The de Selby parallel is exact and deliberate: a philosopher whose system exists only in commentary, whose followers ruin themselves for it. But Clarke inverts the valence. De Selby's system is absurd; Arne-Sayles's was true, there really are other worlds, and the House is one of them. The theory was right and it still ate its believers, because being right about the House is not the same as belonging in it. Ketterley had the correct theory and the wrong relationship; Piranesi has no theory and the right one. In a cluster about evidence becoming belief, this is the final turn: the belief can be true and still destroy you, if you arrive as an exploiter instead of a guest.",
+   "uw": "Someone was right about the facts and ruined by them: the theory wasn't the problem; the relationship was.",
+   "id": 463,
+   "source_locator": "The Arne-Sayles dossier - the Theory of Other Worlds",
+   "ripped_at": "2026-09-24",
+   "intents": [
+    "name the mechanism",
+    "change someone's mind"
    ]
   }
  ]

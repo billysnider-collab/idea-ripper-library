@@ -784,6 +784,30 @@ books:
   - book
   - genre
   - bookline
+- key: valis-philip-k-dick
+  genre: Science Fiction
+  bookline: 'A divided narrator investigates his own revelation: prophet and crank
+    kept alive at once. Ripped with the evidence ledger, not the verdict.'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-third-policeman-flann-o-brien
+  genre: Literary Fiction
+  bookline: 'A comic novel that is a metaphysical machine in disguise. Ripped as OSINT
+    for a surreal novel: catalog the weirdness, model last.'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: piranesi-susanna-clarke
+  genre: Literary Fiction
+  bookline: A man catalogs an infinite house. The narrator is already doing the OSINT
+    method inside the novel — which puts the method itself on trial.
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1220,3 +1244,26 @@ card_order:
 - 438
 - 439
 - 440
+- 441
+- 442
+- 443
+- 444
+- 445
+- 446
+- 447
+- 448
+- 449
+- 450
+- 451
+- 452
+- 453
+- 454
+- 455
+- 456
+- 457
+- 458
+- 459
+- 460
+- 461
+- 462
+- 463
