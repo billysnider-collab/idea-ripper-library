@@ -476,11 +476,6 @@
    "book": "Rules for Radicals — Saul D. Alinsky",
    "bookline": "Power tactics — Alinsky's 1971 organizer's manual: the thirteen rules of power tactics, the ethics of means and ends, the haves and have-nots, and the organizer who builds power for others to use.",
    "genre": "Nonfiction"
-  },
-  {
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "bookline": "Business rebalancing — McAfee & Brynjolfsson's 2017 triple-revolution framework: mind to machine, product to platform, core to crowd; when algorithms beat experts, why platforms win the match game, and why companies survive the crowd anyway.",
-   "genre": "Nonfiction"
   }
  ],
  "cards": [
@@ -2393,7 +2388,7 @@
    ],
    "source_locator": "Ch. 14, §14.1",
    "related_ids": [
-    115
+    99
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2411,7 +2406,7 @@
    ],
    "source_locator": "Ch. 14, §14.9",
    "related_ids": [
-    114
+    98
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2429,7 +2424,7 @@
    ],
    "source_locator": "Ch. 14, §14.2.2",
    "related_ids": [
-    115
+    99
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2447,7 +2442,7 @@
    ],
    "source_locator": "Ch. 13, §13.4.10",
    "related_ids": [
-    120
+    104
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2480,7 +2475,7 @@
    ],
    "source_locator": "Ch. 11, §11.1",
    "related_ids": [
-    116
+    100
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2498,7 +2493,7 @@
    ],
    "source_locator": "Ch. 13, §13.8",
    "related_ids": [
-    117
+    101
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2516,7 +2511,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    122
+    106
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2534,7 +2529,7 @@
    "source_locator": "Ch. 11, §11.4",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    121
+    105
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2552,8 +2547,8 @@
    "source_locator": "Ch. 3, §3.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    120,
-    124
+    104,
+    108
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2571,8 +2566,8 @@
    "source_locator": "Ch. 4, §4.2",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    120,
-    123
+    104,
+    107
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2590,7 +2585,7 @@
    "source_locator": "Ch. 6, §6.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    119
+    103
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2608,7 +2603,7 @@
    "source_locator": "Ch. 8, §8.1",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    117
+    101
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2626,7 +2621,7 @@
    "source_locator": "Ch. 3, §3.7.5",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    119
+    103
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -2644,7 +2639,7 @@
    "source_locator": "Preface",
    "book": "Large Language Models in Finance — Miquel Noguer i Alonso",
    "related_ids": [
-    117
+    101
    ],
    "source_url": "https://www.kobo.com/ww/en/ebook/large-language-models-in-finance-1",
    "ripped_at": "2026-09-23"
@@ -4200,230 +4195,6 @@
    ],
    "related_ids": [],
    "source_locator": "Tactics",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "The three rebalancings",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "concept",
-   "steal": "We will try to convince you that because of recent technological changes, companies need to rethink the balance between minds and machines, between products and platforms, and between the core and the crowd. The second element in each pair has become much more capable and more powerful just within the past few years, so it needs to be considered with fresh eyes.",
-   "why": "The book's entire thesis in one paragraph: nothing is obsolete, but the balance point in all three pairs has moved — and most companies are still calibrated to the old one.",
-   "uw": "When you're deciding where the next dollar of investment goes: mind or machine, product or platform, core or crowd.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 1: The Triple Revolution",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "136 studies: the formulas beat the experts",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "evidence",
-   "steal": "They found 136 such studies, covering everything from prediction of IQ to diagnosis of heart disease. In 48% of them, there was no significant difference between the two; the experts, in other words, were on average no better than the formulas. A much bigger blow to the notion of human superiority in judgment came from the finding that in 46% of the studies considered, the human experts actually performed significantly worse than the numbers and formulas alone.",
-   "why": "Fifty years of head-to-head research, quantified: experts tie the formula half the time and lose to it nearly half the time — the empirical foundation for handing decisions to algorithms.",
-   "uw": "When an expert's gut says one thing and the model says another.",
-   "intents": [
-    "a strange example"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 2: The Hardest Thing to Accept About Ourselves",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Meehl: no controversy points so uniformly one way",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "evidence",
-   "steal": "There is no controversy in social science that shows such a large body of qualitatively diverse studies coming out so uniformly in the same direction as this one [the relative validity of statistical versus clinical prediction]. When you are pushing over 100 investigations, predicting everything from the outcome of football games to the diagnosis of liver disease and when you can hardly come up with a half dozen studies showing even a weak tendency in favor of the clinician, it is time to draw a practical conclusion.",
-   "why": "Meehl's summary is the kill shot for expert judgment: across a hundred-plus investigations, the evidence points one direction — use the formula.",
-   "uw": "When someone defends expert intuition against the data.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 2: The Hardest Thing to Accept About Ourselves",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Tetlock: humanity barely bests a chimp",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "evidence",
-   "steal": "In a test involving more than 82,000 forecasts, Tetlock found that “humanity barely bests [a] chimp” throwing darts at the possible outcomes.",
-   "why": "82,000 expert forecasts, and the species barely beats random darts — the prediction half of the book's case against the expert core.",
-   "uw": "When a forecast is presented as expertise rather than a coin flip with footnotes.",
-   "intents": [
-    "a strange example"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 2: The Hardest Thing to Accept About Ourselves",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "HiPPO: the highest-paid person's opinion",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "definition",
-   "steal": "In 2006, Avinash Kaushik and Ronny Kohavi, two data analysis professionals who were then working at Intuit and Microsoft, respectively, came up with the acronym HiPPO to summarize the dominant decision-making style at most companies. It stands for “highest-paid person’s opinion.”",
-   "why": "The name for the old decision regime: whoever is paid most decides most — the exact habit the data-driven rebalancing is meant to kill.",
-   "uw": "When a meeting is about to be decided by rank instead of evidence.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 2: The Hardest Thing to Accept About Ourselves",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Machine learning, defined",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "definition",
-   "steal": "Machine learning—the art and science of building software systems that can detect patterns and formulate winning strategies after being shown many examples—is finally fulfilling its early promise and accomplishing useful work.",
-   "why": "The hinge of the whole machine section: ML is pattern detection from examples, not programmed rules — which is why it suddenly started working.",
-   "uw": "When you need the one-sentence version of what machine learning actually is.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 3: Our Most Mind-Like Machines",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "AI still lacks common sense",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "argument",
-   "steal": "Machine learning systems (and all other forms of AI) still lack common sense.",
-   "why": "The permanent caveat on the machine section: pattern-matching at scale, yes — understanding the world, no.",
-   "uw": "When AI hype needs its one-sentence brake pedal.",
-   "intents": [
-    "a better question"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 3: Our Most Mind-Like Machines",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "DANCE: the drivers of the robot explosion",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "concept",
-   "steal": "Drivers of the robotic Cambrian Explosion include data, algorithms, networks, the cloud, and exponential improvements in hardware: DANCE. Robots and their kin will be increasingly used wherever work is dull, dirty, dangerous, and dear.",
-   "why": "Five drivers, one acronym, one deployment rule: robots go where work is dull, dirty, dangerous, or dear — a checklist for where automation lands next.",
-   "uw": "When you're scanning your own industry for what gets automated first.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 4: Hi, Robot",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Free, perfect, and instant",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "concept",
-   "steal": "The marginal cost of an additional digital copy is (almost) zero, each digital copy is a perfect replica of the original, and each digital copy can be transmitted across the planet virtually instantly.",
-   "why": "The three economic properties that let bits eat every industry they touch — the physics underneath the whole platform section.",
-   "uw": "When you're asking whether your industry is next to be digitized.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 6: The Toll of a New Machine",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "A platform, defined",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "definition",
-   "steal": "A platform can be described as a digital environment characterized by near-zero marginal cost of access, reproduction, and distribution.",
-   "why": "The book's working definition: a platform is not an app or a website, it's an economic environment — near-zero cost to join, copy, and spread.",
-   "uw": "When you need to tell a platform from a product.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 6: The Toll of a New Machine",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Demand-side economies of scale",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "concept",
-   "steal": "Networked goods become more valuable as more people use them. The result is “demand-side economies of scale,” giving an advantage to bigger networks.",
-   "why": "The flip of industrial economics: advantage goes to the biggest network, not the biggest factory — which is why platforms tip to winner-take-most.",
-   "uw": "When you're sizing up why the biggest platform keeps winning.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 6: The Toll of a New Machine",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Complements: the platform's demand engine",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "concept",
-   "steal": "Two products are complements if a drop in the price of one pushes out the demand curve for the other.",
-   "why": "The one-line economics behind the whole platform playbook: open the platform, let outsiders build complements, watch demand for your product rise.",
-   "uw": "When you're deciding whether to open up or lock down.",
-   "intents": [
-    "see the mechanism"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 7: Paying Complements, and Other Smart Strategies",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "The crowd is the opposite of the core",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "definition",
-   "steal": "The crowd is, in many ways, the opposite of the core: it’s huge, diverse, largely uncontrollable, and often messy.",
-   "why": "The third rebalance stated as a contrast: the core is built, the crowd is found — huge, diverse, uncontrollable, and increasingly more powerful than what's inside.",
-   "uw": "When you're weighing an internal team against the world outside it.",
-   "intents": [
-    "make an idea concrete"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 10: That Escalated Quickly",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "The crowd beats the credentialed core, repeatedly",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "evidence",
-   "steal": "Over and over again, the recognized experts of the core see their performance beaten by uncredentialed and conventionally inexperienced members of the crowd.",
-   "why": "The empirical claim of the crowd section: it's not a theory about openness, it's a track record of outsiders beating insiders.",
-   "uw": "When the experts say only experts can solve it.",
-   "intents": [
-    "a strange example"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 11: Why the Expert You Know Is Not the Expert You Need",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Why companies survive: incomplete contracting",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "concept",
-   "steal": "Companies and other nonmarket organizations are needed to deal with the problem of incomplete contracting—the fact that contracts cannot realistically specify all possible contingencies in the messy real world.",
-   "why": "The authors' answer to their own provocative chapter title: the crowd can't replace companies because contracts can't cover reality — someone has to hold the residual right to decide.",
-   "uw": "When decentralization hype says companies are finished.",
-   "intents": [
-    "a better question"
-   ],
-   "related_ids": [],
-   "source_locator": "Chapter 13: Are Companies Passé? (Hint: No)",
-   "ripped_at": "2026-09-23"
-  },
-  {
-   "title": "Ask what we want to do with technology",
-   "book": "Machine, Platform, Crowd — Andrew McAfee & Erik Brynjolfsson",
-   "type": "argument",
-   "steal": "So we should ask not “What will technology do to us?” but rather “What do we want to do with technology?”",
-   "why": "The book's closing reversal: technology is a tool, not a fate — the question was never what it does to us, but what we choose to do with it.",
-   "uw": "When the conversation turns fatalist about AI, platforms, or crowds.",
-   "intents": [
-    "a better question"
-   ],
-   "related_ids": [],
-   "source_locator": "Conclusion: Economies and Societies Beyond Computation",
    "ripped_at": "2026-09-23"
   }
  ]
