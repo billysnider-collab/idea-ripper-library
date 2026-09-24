@@ -426,6 +426,21 @@
    "book": "Shinto: The Ancient Religion of Japan — William George Aston",
    "genre": "Nonfiction",
    "bookline": "Japanese religion — Aston's 1921 classic on Shinto: nature-gods, ritual purity, myth, and the making of the Imperial cult."
+  },
+  {
+   "book": "From successful defense to problematic offense: the devolution of unconventional warfare — Timothy S. Ball",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/fromsuccessfulde1094551617"
+  },
+  {
+   "book": "Empirical analysis of using erasure coding in outsourcing data storage with provable security — Abdallah Bakir",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/empiricalnalysis1094549341"
+  },
+  {
+   "book": "A Validation of the Proposed Royal Australian Navy Standard Work Week and Naval Management Diary Using a Simulated Crew of an Armidale Class Patrol Boat — Jessica Groot (Lieutenant",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Royal Australian Navy), Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632239"
   }
  ],
  "cards": [
@@ -2962,6 +2977,30 @@
    "ripped_at": "2026-09-23",
    "related_ids": [],
    "book": "Shinto: The Ancient Religion of Japan — William George Aston"
+  },
+  {
+   "title": "From successful defense to problematic offense: the devolution of unconventional warfare",
+   "book": "From successful defense to problematic offense: the devolution of unconventional warfare — Timothy S. Ball",
+   "type": "argument",
+   "steal": "Unconventional warfare began in World War II as a defensive tactic for assisting an occupied ally, but Special Forces later redefined it to include offensive regime change; offensive UW, practiced extensively by the CIA during the Cold War, produced poor results, and it remains problematic — unreliable proxy forces, unpredictable outcomes, negative international perception. Defensive UW, under certain conditions, remains justified and practical.",
+   "why": "It names the mechanism behind every proxy-war debate — backing someone else's fighters looks cheap until the proxies, the blowback, and the perception bill arrive. The CIA's own 2014 study (cited in the thesis) found arming rebels seldom works.",
+   "uw": "Offense by proxy inherits everyone else's agency — if you can't vet the proxy, you can't own the outcome."
+  },
+  {
+   "title": "Empirical analysis of using erasure coding in outsourcing data storage with provable security",
+   "book": "Empirical analysis of using erasure coding in outsourcing data storage with provable security — Abdallah Bakir",
+   "type": "argument",
+   "steal": "Proof of retrievability (POR) and proof of data possession (PDP) are cryptographic auditing tools that give probabilistic guarantees a server or cloud is actually storing your data — without downloading the whole file — and can recover the original data under certain limits; maximum distance separable (MDS) codes, specifically Reed-Solomon and Cauchy Reed-Solomon, are the recoverability engine, and the thesis surveys them and implements both into a prototype POR library built on the liberasurecode library.",
+   "why": "Every \"is my cloud copy intact?\" guarantee rests on this primitive — verifying petabytes without re-downloading them is what makes outsourced storage auditable instead of faith-based.",
+   "uw": "You don't need to hold the whole thing to prove it's intact — probabilistic proof beats full inspection; audit at the cheapest level that still binds."
+  },
+  {
+   "title": "A Validation of the Proposed Royal Australian Navy Standard Work Week and Naval Management Diary Using a Simulated Crew of an Armidale Class Patrol Boat",
+   "book": "A Validation of the Proposed Royal Australian Navy Standard Work Week and Naval Management Diary Using a Simulated Crew of an Armidale Class Patrol Boat — Jessica Groot (Lieutenant",
+   "type": "argument",
+   "steal": "Simulating a 21-member Armidale-class patrol boat crew in the Navy Management Diary over three weeks, the proposed RAN Navy Standard Work Week model breaks down in practice — the maintenance category most often exceeded its allocated hours, which the thesis says may warrant platform- and occupation-specific customization; and the NMD's fatigue tool versus the SAFTE model (FAST software) produced statistically significant differences in predicted risk, so the methodology should be replicated on a larger sample with real operational performance observations before comparing the two.",
+   "why": "A work-week policy that looks fine on a spreadsheet and fails at the maintenance line is how a navy discovers fatigue in the field instead of on paper — the thesis is an argument that crew-endurance models must be validated against operations, not against each other.",
+   "uw": "When two validated-looking models disagree significantly, the answer isn't to pick one — it's to test both against reality."
   }
  ]
 }
