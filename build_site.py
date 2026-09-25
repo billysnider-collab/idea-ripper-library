@@ -75,18 +75,21 @@ def book_block(b):
     gh = ghue[b["genre"]]
     slug = slugify(b["book"])
     bcards = [c for c in cards if c["book"] == b["book"]]
+    _bt, _ba = b["book"].rsplit(" — ", 1) if " — " in b["book"] else (b["book"], "")
+    _bauthor = '<span class="bauthor">%s</span>' % esc(_ba) if _ba else ""
     samples = " · ".join("\u201c%s\u201d" % c["title"] for c in bcards[:2])
     parts = ['<section class="book collapsed" id="b-%s" data-book="%s" data-genre="%s">'
              % (slug, esca(b["book"]), esca(b["genre"]))]
     parts.append(
         '<h2 class="bh"><button type="button" class="bookhead" aria-expanded="false">'
         '<span class="chip" style="background:hsl(%d,45%%,55%%)"></span>'
-        '<span class="bmain"><span class="btitle">%s <span class="bcount">%d rip%s</span></span>'
+        '<span class="bmain"><span class="btitle"><span class="bttext" title="%s">%s</span> <span class="bcount">%d rip%s</span></span>'
+        '%s'
         '<span class="bookline">%s</span>'
         '<span class="bsamples">%s</span></span>'
         '<span class="bchev">\u25be</span></button></h2>'
-        % (gh, esc(b["book"]), len(bcards), "" if len(bcards) == 1 else "s",
-           esc(b["bookline"]), esc(samples)))
+        % (gh, esca(b["book"]), esc(_bt), len(bcards), "" if len(bcards) == 1 else "s",
+           _bauthor, esc(b["bookline"]), esc(samples)))
     parts.append('<div class="cards">')
     thesis_open = b["genre"] == "Thesis"  # one book = one card: skip the second click
     for c in bcards:
@@ -275,8 +278,8 @@ for g in genre_order:
         continue
     gcount = sum(1 for c in cards if genre_of[c["book"]] == g)
     gunit = "theses" if g == "Thesis" else "books"
-    sections.append('<h2 class="genre" data-genre="%s">%s <span class="gcount">%d cards · %d %s</span></h2>'
-                    % (esca(g), esc(g), gcount, len(gbooks), gunit))
+    sections.append('<h2 class="genre" data-genre="%s" id="g-%s">%s <span class="gcount">%d cards · %d %s</span></h2>'
+                    % (esca(g), slugify(g), esc(g), gcount, len(gbooks), gunit))
     for b in gbooks:
         sections.append(book_block(b))
 
@@ -287,10 +290,20 @@ if fbooks:
     for fb in fbooks:
         sections.append(fullbook_block(fb))
 
+# genre index: one compact link per genre (label + mono card count)
+_gcounts = {g: sum(1 for c in cards if genre_of[c["book"]] == g) for g in genre_order}
+gindex = "\n".join(
+    '<a class="gix" href="#g-%s" data-genre="%s">%s · <span class="gixc">%d</span></a>'
+    % (slugify(g), esca(g), esc(g), _gcounts[g])
+    for g in genre_order if _gcounts[g])
+# jump scents: the 12 most recently added books (highest max card id)
+def _maxid(b):
+    return max(c["id"] for c in cards if c["book"] == b["book"])
+scents = sorted(books, key=_maxid, reverse=True)[:12]
 chips = "\n".join(
     '<a class="bchip" href="#b-%s" data-genre="%s" title="%s">%s</a>'
     % (slugify(b["book"]), esca(b["genre"]), esca(b["book"]), esc(b["book"]))
-    for b in books)
+    for b in scents)
 
 genre_opts = "\n".join('<option value="%s">%s</option>' % (esca(g), esc(g)) for g in genre_order)
 book_opts = "\n".join('<option value="%s">%s</option>' % (esca(b["book"]), esc(b["book"])) for b in books)
@@ -405,6 +418,12 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .jumpchips{max-width:none;background:var(--surface-frame);border-bottom:1px solid var(--line-frame);margin:0;padding:var(--space-xs) var(--page-gutter);display:flex;gap:var(--space-2xs);overflow-x:auto;scrollbar-width:thin}
 .jumpchips a{flex:none;max-width:var(--chip-max);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--surface-frame-raised);border:1px solid var(--line-frame);color:var(--ink-frame);border-radius:var(--radius-pill);padding:var(--space-2xs) var(--space-sm);font-size:var(--fs-xs);font-family:var(--font-mono);cursor:pointer;text-decoration:none}
 .jumpchips a:hover{border-color:var(--accent-rip)}
+.jumpchips{align-items:center}
+.gindex{flex:none;display:flex;flex-wrap:wrap;gap:var(--space-3xs) var(--space-sm);align-items:center;padding:var(--space-3xs) var(--space-sm) var(--space-3xs) 0;border-right:1px solid var(--line-frame);margin-right:var(--space-2xs)}
+.gindex a{flex:none;max-width:none;background:none;border:0;border-radius:0;padding:0;font-family:var(--font-mono);font-size:.75rem;color:var(--ink-structure-frame);white-space:nowrap}
+.gindex a:hover{color:var(--ink-frame);border-color:transparent}
+.gindex .gixc{font-variant-numeric:tabular-nums}
+.scents{flex:1;min-width:0;display:flex;gap:var(--space-2xs);overflow-x:auto;scrollbar-width:thin;padding:var(--space-3xs) 0}
 /* ---------- frame: footer ---------- */
 footer{background:var(--surface-frame);color:var(--ink-frame);font-family:var(--font-mono);font-size:var(--fs-sm);padding:var(--space-xl) var(--page-gutter);border-top:3px solid var(--accent-rip);text-align:center}
 footer .fmeta{margin:0;color:var(--ink-structure-frame)}
@@ -412,9 +431,11 @@ footer .fmeta{margin:0;color:var(--ink-structure-frame)}
 #intro{max-width:var(--page-narrow);margin:0 auto;padding:var(--space-md) var(--page-gutter) 0;color:var(--ink-body);font-size:var(--fs-base)}
 #intro p{margin:var(--space-xs) 0;max-width:var(--measure)}
 #intro strong{color:var(--ink-body);font-weight:700}
+.intromore{margin:var(--space-xs) 0}
+.intromore summary{cursor:pointer;color:var(--ink-structure);font-size:var(--fs-sm)}
 main{max-width:var(--page-narrow);margin:0 auto;padding:var(--space-md) var(--page-gutter) var(--space-2xl)}
 main a{color:var(--link)}
-.genre{margin:var(--space-xl) 0 var(--space-sm);font-size:var(--fs-xl);font-weight:400;color:var(--ink-body);border-bottom:2px solid var(--accent-rip);padding-bottom:var(--space-2xs);line-height:var(--lh-tight)}
+.genre{margin:var(--space-xl) 0 var(--space-sm);font-size:1.4rem;font-weight:400;color:var(--ink-body);border-bottom:2px solid var(--accent-rip);padding-bottom:var(--space-2xs);line-height:var(--lh-tight)}
 .gcount{color:var(--ink-structure);font-size:var(--fs-sm);font-weight:400;font-family:var(--font-mono)}
 .book,.fbook{margin-bottom:var(--space-lg);scroll-margin-top:var(--scroll-mt)}
 /* ---------- book strip ---------- */
@@ -426,10 +447,13 @@ button::-moz-focus-inner{border:0;padding:0}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .chip{display:inline-block;width:var(--space-sm);height:var(--space-sm);border-radius:var(--radius-sm);flex:none}
 .bookhead .bmain,.fbookhead .bmain{flex:1;min-width:0}
-.btitle{font-weight:400;font-size:var(--fs-base);color:var(--ink-body);line-height:var(--lh-tight)}
-.btitle .bcount{color:var(--ink-structure);font-size:var(--fs-sm);font-weight:400;margin-left:var(--space-xs);font-family:var(--font-mono)}
-.bookline{color:var(--ink-structure);font-size:var(--fs-sm);margin:var(--space-3xs) 0 var(--space-3xs)}
-.bsamples{color:var(--ink-structure);font-size:var(--fs-sm);font-style:italic;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0 0 var(--space-2xs)}
+.btitle{display:block;font-weight:400;font-size:1.125rem;color:var(--ink-body);line-height:var(--lh-tight)}
+.btitle .bcount{color:var(--ink-structure);font-size:.75rem;font-weight:400;margin-left:var(--space-xs);font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.bauthor{display:block;color:var(--ink-structure);font-size:.8125rem;margin-top:var(--space-3xs)}
+.bookline{display:block;color:var(--ink-structure);font-size:var(--fs-sm);margin:var(--space-3xs) 0 var(--space-3xs)}
+.bsamples{display:block;color:var(--ink-structure);font-size:var(--fs-sm);font-style:italic;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0 0 var(--space-2xs)}
+.book[data-genre="Thesis"] .btitle{display:flex;min-width:0;align-items:baseline}
+.book[data-genre="Thesis"] .bttext{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bchev{margin-left:auto;color:var(--ink-structure);flex:none}
 .book.collapsed .bchev{transform:rotate(-90deg)}
 .book .cards{margin-top:var(--space-xs)}
@@ -526,7 +550,7 @@ main{max-width:var(--page-max)}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 /* ---------- print: no frame, no red, black on white ---------- */
 @media print{
-  .controls,.jumpchips,#toast,.actions,.noresults button{display:none!important}
+  .controls,.jumpchips,.gindex,#toast,.actions,.noresults button{display:none!important}
   body{background:var(--print-paper);color:var(--print-ink)}
   header.masthead{background:var(--print-paper);border-bottom:2px solid var(--print-ink)}
   .mast-inner{padding:var(--space-sm) 0}
@@ -786,7 +810,7 @@ document.querySelectorAll('[data-copy]').forEach(function(btn){
 document.querySelectorAll('#jumpchips a').forEach(function(ch){
   ch.addEventListener('click',function(e){
     var b=document.getElementById(ch.getAttribute('href').slice(1));
-    if(b){e.preventDefault();setBook(b,true);
+    if(b){e.preventDefault();if(b.classList.contains('book'))setBook(b,true);
       b.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});
       setHash(ch.getAttribute('href'));}
   });
@@ -802,6 +826,9 @@ function openHash(){
   m=/^#b-([a-z0-9-]+)$/.exec(location.hash);
   if(m){var bk=document.getElementById('b-'+m[1]);
     if(bk){setBook(bk,true);setTimeout(function(){bk.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});},60);return true;}}
+  m=/^#g-([a-z0-9-]+)$/.exec(location.hash);
+  if(m){var gn=document.getElementById('g-'+m[1]);
+    if(gn){setTimeout(function(){gn.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});},60);return true;}}
   return false;
 }
 var firstBook=document.querySelector('.book');
@@ -859,8 +886,10 @@ page = """<!DOCTYPE html>
 </div></header>
 <section id="intro">
 <p><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>
+<details class="intromore"><summary>How to hunt</summary>
 <p><strong>How to hunt:</strong> tap a book to open its rips, tap a card for the full steal, copy anything you want. Search hunts titles, steals, and use-whens all at once.</p>
 %s
+</details>
 </section>
 <div class="controls"><div class="inner">
 <input type="search" id="q" placeholder="Search titles, steals, use-when&hellip;" aria-label="Search cards"/>
@@ -880,7 +909,7 @@ page = """<!DOCTYPE html>
 <button type="button" id="collapse">Collapse all</button>
 <span class="count" id="count"></span><span id="countlive" class="sr-only" aria-live="polite"></span>
 </div></div>
-<nav class="jumpchips" id="jumpchips" aria-label="Jump to a book">%s</nav>
+<nav class="jumpchips" id="jumpchips" aria-label="Jump to a genre or book"><span class="gindex">%s</span><span class="scents">%s</span></nav>
 <main>
 %s
 <p class="noresults" id="noresults" hidden>No rips match — try a mechanism word (interlock, delay, patronage).</p>
@@ -889,7 +918,7 @@ page = """<!DOCTYPE html>
 <script>%s</script>
 <div id="toast" role="status"></div>
 </body>
-</html>""" % (CSS, WORDMARK_SVG, n, n_books, n_theses, curated, fb_intro, genre_opts, book_opts, type_checks, chips,
+</html>""" % (CSS, WORDMARK_SVG, n, n_books, n_theses, curated, fb_intro, genre_opts, book_opts, type_checks, gindex, chips,
               "\n\n".join(sections), curated_long, n_books, n_theses, n, fb_footer, JS)
 
 open(os.path.join(BASE, "index.html"), "w", encoding="utf-8").write(page)

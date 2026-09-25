@@ -35,7 +35,9 @@ def main():
     assert sorted(int(n) for n in nums) == sorted(c["id"] for c in cards), \
         "numbering broken"
     for g in ds["genre_order"]:
-        assert ('<h2 class="genre" data-genre="%s">' % html.escape(g, quote=True)) in t, "missing genre " + g
+        # genre h2s carry an id="g-<slug>" anchor (shelf-entrance redesign);
+        # assert on the stable prefix, not the full tag.
+        assert ('<h2 class="genre" data-genre="%s"' % html.escape(g, quote=True)) in t, "missing genre " + g
     for b in books:
         assert t.count('data-book="%s"' % html.escape(b["book"], quote=True)) >= 1, "missing book block " + b["book"]
         assert html.escape(b["bookline"], quote=False) in t, "missing bookline " + b["book"]
