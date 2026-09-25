@@ -138,6 +138,14 @@ books:
   - book
   - genre
   - bookline
+- key: accessing-the-healing-power-of-the-vagus-nerve
+  genre: Nonfiction
+  bookline: 'Stanley Rosenberg''s 2017 polyvagal self-help — the ventral vagus, the
+    social-engagement system, and the Basic Exercise for resetting autonomic state.'
+  field_order:
+  - book
+  - genre
+  - bookline
 - key: quantum-computing-s-herbert
   genre: Nonfiction
   bookline: Foundations of qubits — superposition, entanglement, measurement, no free
@@ -1316,3 +1324,14 @@ card_order:
 - 485
 - 486
 - 487
+- 488
+- 489
+- 490
+- 491
+- 492
+- 493
+- 494
+- 495
+- 496
+- 497
+- 498
