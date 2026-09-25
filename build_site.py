@@ -831,8 +831,7 @@ function openHash(){
     if(gn){setTimeout(function(){gn.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});},60);return true;}}
   return false;
 }
-var firstBook=document.querySelector('.book');
-if(firstBook)manual[firstBook.id]=true;
+openHash();
 (function restoreURL(){
   var p,qq,tt,gg,bb,want,i;
   try{p=new URLSearchParams(location.search);}catch(_){return;}
@@ -846,10 +845,7 @@ if(firstBook)manual[firstBook.id]=true;
 })();
 var restoredQ=q.value.trim()!=='';
 apply(restoredQ);
-if(!openHash()&&firstBook&&!restoredQ){
-  var fc=firstBook.querySelector('.card');
-  if(fc){fc.classList.add('open');var fh=fc.querySelector('.cardhead');if(fh)fh.setAttribute('aria-expanded','true');setHash('#c'+fc.dataset.n);}
-}
+openHash();
 })();
 
 """
