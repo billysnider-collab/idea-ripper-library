@@ -586,6 +586,31 @@
    "book": "The Art of War — Sun Tzu",
    "genre": "Nonfiction",
    "bookline": "c. 5th century BC; Lionel Giles translation (1910), public domain — the oldest military treatise in the world"
+  },
+  {
+   "book": "Special Operations And Cyber Warfare — Jason C. Tebedo",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1031528"
+  },
+  {
+   "book": "An Analysis of the Evolution of Government Patent Policy in Research and Development Contracts — Patrick James Flanagan",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 1981. Full text: https://archive.org/details/DTIC_ADA1027131"
+  },
+  {
+   "book": "A multi-armed bandit approach to following a Markov Chain — Ezra W. Akin",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/amultiarmedbandi1094555572"
+  },
+  {
+   "book": "Urban Green Spaces and its Impact on Quality of Life: A Case in Chandrapur — Mahi Gajbhiye",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology, Nagpur, 2024. Full text: https://archive.org/details/sgng.19271-urban-green-spaces-and-its-impact-on-quality-of-life-a-case-in-ch"
+  },
+  {
+   "book": "A parallel quantum computer simulator — James E. Fischer",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/aparallelquantum1094550540"
   }
  ],
  "cards": [
@@ -7181,6 +7206,51 @@
     "name the mechanism",
     "change someone's mind"
    ]
+  },
+  {
+   "title": "Special Operations And Cyber Warfare",
+   "book": "Special Operations And Cyber Warfare — Jason C. Tebedo",
+   "type": "argument",
+   "steal": "Cyber operations map directly onto USSOCOM's congressionally mandated core activities, and the thesis tests whether USCYBERCOM's support is sufficient for special-operations cyber requirements — or whether USSOCOM should build its own internal cyber capability, analyzed through decision theory and operational design.",
+   "why": "It frames cyber as a domain special operators may have to fight in themselves rather than borrow — the organizational question underneath every modern campaign that pairs kinetic strikes with network effects.",
+   "uw": "When the shared service can't meet your mission tempo, building your own capability is an organizational-design question, not just a technical one.",
+   "id": 548
+  },
+  {
+   "title": "An Analysis of the Evolution of Government Patent Policy in Research and Development Contracts",
+   "book": "An Analysis of the Evolution of Government Patent Policy in Research and Development Contracts — Patrick James Flanagan",
+   "type": "argument",
+   "steal": "Decades of post-WWII debate over who owns inventions from federally funded R&D produced no uniform government patent policy; the 1980 patent and trademark amendments were a compromise between the \"title\" school (government keeps ownership) and the \"license\" school (contractors keep it, government takes a license), after executive, legislative, and judicial efforts all failed to unify the rules.",
+   "why": "The 1980 compromise (the Bayh-Dole era) is the legal bedrock under today's fights over who owns AI, semiconductor, and biotech breakthroughs paid for with public money.",
+   "uw": "When no one owns the rules, a workable compromise beats another decade of debate — the 1980 amendments ended 35 years of stalemate by splitting the difference.",
+   "id": 549
+  },
+  {
+   "title": "A multi-armed bandit approach to following a Markov Chain",
+   "book": "A multi-armed bandit approach to following a Markov Chain — Ezra W. Akin",
+   "type": "argument",
+   "steal": "The \"follow the target\" problem — many possible locations, far fewer sensors, only intermittent observation — can be solved as a multi-armed bandit over a discrete-time Markov chain: at each time step, allocate the sensor to the state with the highest probability of containing the target.",
+   "why": "It's the mathematics of ISR triage — how to allocate scarce eyes when continuous coverage is impossible.",
+   "uw": "When you can't watch everything, the optimal move is a computed bet on where to look next — allocate to the highest-probability state, not the widest coverage.",
+   "id": 550
+  },
+  {
+   "title": "Urban Green Spaces and its Impact on Quality of Life: A Case in Chandrapur",
+   "book": "Urban Green Spaces and its Impact on Quality of Life: A Case in Chandrapur — Mahi Gajbhiye",
+   "type": "argument",
+   "steal": "In Chandrapur — a rapidly urbanizing coal-mining and thermal-power city — thirty years of satellite data plus household surveys show urban greenery strongly correlates with emotional well-being, physical health, and social interaction; urbanization degraded vegetation cover and raised surface temperatures, but even small, strategically placed green spaces produced noticeable improvement.",
+   "why": "It quantifies green space as health infrastructure in exactly the kind of industrial city that has the least of it.",
+   "uw": "Green space isn't decoration — in a stressed industrial city it measurably moves health, safety, and temperature.",
+   "id": 551
+  },
+  {
+   "title": "A parallel quantum computer simulator",
+   "book": "A parallel quantum computer simulator — James E. Fischer",
+   "type": "argument",
+   "steal": "A matrix-free sequential quantum computer simulator vastly improves time and memory performance on a single processor; distributing the algorithm with MPI across parallel processors lets it simulate quantum systems too large to fit in any single machine's memory.",
+   "why": "Before large-scale quantum hardware exists, simulation is how quantum algorithms get developed — and the binding constraint is memory, not just speed.",
+   "uw": "When the problem won't fit in memory, change the math before buying a bigger machine.",
+   "id": 552
   }
  ]
 }

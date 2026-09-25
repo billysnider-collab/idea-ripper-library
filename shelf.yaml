@@ -885,6 +885,42 @@ books:
   - book
   - genre
   - bookline
+- key: special-operations-and-cyber-warfare-jason-c-tebedo
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1031528'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: an-analysis-of-the-evolution-of-government-patent-policy-in-research-and-development-contracts-patrick-james-flanagan
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 1981. Full text: https://archive.org/details/DTIC_ADA1027131'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: a-multi-armed-bandit-approach-to-following-a-markov-chain-ezra-w-akin
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/amultiarmedbandi1094555572'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: urban-green-spaces-and-its-impact-on-quality-of-life-a-case-in-chandrapur-mahi-gajbhiye
+  genre: Thesis
+  bookline: 'Masters thesis — Visvesvaraya National Institute of Technology, Nagpur,
+    2024. Full text: https://archive.org/details/sgng.19271-urban-green-spaces-and-its-impact-on-quality-of-life-a-case-in-ch'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: a-parallel-quantum-computer-simulator-james-e-fischer
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/aparallelquantum1094550540'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1428,3 +1464,8 @@ card_order:
 - 545
 - 546
 - 547
+- 548
+- 549
+- 550
+- 551
+- 552
