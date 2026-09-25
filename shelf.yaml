@@ -26,6 +26,14 @@ books:
   - book
   - bookline
   - genre
+- key: the-importance-of-living-lin-yutang
+  genre: Nonfiction
+  bookline: 'Lin Yutang''s 1937 defense of the unhurried, embodied, humorous life:
+    reason over regimentation, leisure over efficiency, taste over erudition.'
+  field_order:
+  - book
+  - genre
+  - bookline
 - key: a-marriage-at-sea-sophie-elmhirst
   genre: Nonfiction
   bookline: True story of a couple alone on the ocean — boat as autocracy, hull as
@@ -113,6 +121,15 @@ books:
   - book
   - bookline
   - genre
+- key: how-to-win-friends-and-influence-people-dale-carnegie
+  genre: Nonfiction
+  bookline: 'The 1936 classic on handling people: win cooperation through appreciation,
+    genuine interest, and making others feel important — never through criticism or
+    argument.'
+  field_order:
+  - book
+  - genre
+  - bookline
 - key: declaration-of-independence-thomas-jefferson
   genre: Nonfiction
   bookline: 'Founding document — Jefferson''s 1776 draft for the Second Continental
@@ -140,8 +157,17 @@ books:
   - bookline
 - key: accessing-the-healing-power-of-the-vagus-nerve
   genre: Nonfiction
-  bookline: 'Stanley Rosenberg''s 2017 polyvagal self-help — the ventral vagus, the
-    social-engagement system, and the Basic Exercise for resetting autonomic state.'
+  bookline: Stanley Rosenberg's 2017 polyvagal self-help — the ventral vagus, the
+    social-engagement system, and the Basic Exercise for resetting autonomic state.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-power-of-your-subconscious-mind-joseph-murphy
+  genre: Nonfiction
+  bookline: 'Subconscious programming — Murphy''s 1963 classic: the conscious/subconscious
+    division of labor, the law of belief, and impression techniques for healing, wealth,
+    and success.'
   field_order:
   - book
   - genre
@@ -172,6 +198,15 @@ books:
 - key: tiny-machine-learning-quickstart-simone-salerno
   genre: Nonfiction
   bookline: ML that fits on tiny devices — constraints as the design surface.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: 8051-microcontroller-notes
+  genre: Nonfiction
+  bookline: 'Embedded-systems study notes on the 8051 microcontroller: architecture,
+    registers, memory map, addressing modes, timers, interrupts, serial communication,
+    and real-world interfacing.'
   field_order:
   - book
   - genre
@@ -1355,3 +1390,41 @@ card_order:
 - 496
 - 497
 - 498
+- 510
+- 511
+- 512
+- 513
+- 514
+- 515
+- 516
+- 517
+- 518
+- 519
+- 520
+- 521
+- 522
+- 523
+- 524
+- 525
+- 526
+- 527
+- 528
+- 529
+- 530
+- 531
+- 532
+- 533
+- 534
+- 535
+- 536
+- 537
+- 538
+- 539
+- 540
+- 541
+- 542
+- 543
+- 544
+- 545
+- 546
+- 547

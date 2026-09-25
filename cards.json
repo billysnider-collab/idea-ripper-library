@@ -23,6 +23,11 @@
    "genre": "Nonfiction"
   },
   {
+   "book": "The Importance of Living — Lin Yutang",
+   "genre": "Nonfiction",
+   "bookline": "Lin Yutang's 1937 defense of the unhurried, embodied, humorous life: reason over regimentation, leisure over efficiency, taste over erudition."
+  },
+  {
    "book": "A Marriage at Sea — Sophie Elmhirst",
    "genre": "Nonfiction",
    "bookline": "True story of a couple alone on the ocean — boat as autocracy, hull as tempering."
@@ -78,6 +83,11 @@
    "genre": "Nonfiction"
   },
   {
+   "book": "How to Win Friends and Influence People — Dale Carnegie",
+   "genre": "Nonfiction",
+   "bookline": "The 1936 classic on handling people: win cooperation through appreciation, genuine interest, and making others feel important — never through criticism or argument."
+  },
+  {
    "book": "Declaration of Independence — Thomas Jefferson",
    "bookline": "Founding document — Jefferson's 1776 draft for the Second Continental Congress: natural rights, the consent of the governed, the right and duty of revolution, the long indictment of the King, and the pledge of lives, fortunes, and sacred honor. Public domain.",
    "genre": "Nonfiction"
@@ -98,6 +108,11 @@
    "bookline": "Stanley Rosenberg's 2017 polyvagal self-help — the ventral vagus, the social-engagement system, and the Basic Exercise for resetting autonomic state."
   },
   {
+   "book": "The Power of Your Subconscious Mind — Joseph Murphy",
+   "genre": "Nonfiction",
+   "bookline": "Subconscious programming — Murphy's 1963 classic: the conscious/subconscious division of labor, the law of belief, and impression techniques for healing, wealth, and success."
+  },
+  {
    "book": "Quantum Computing — S. Herbert",
    "genre": "Nonfiction",
    "bookline": "Foundations of qubits — superposition, entanglement, measurement, no free signaling."
@@ -116,6 +131,11 @@
    "book": "Tiny Machine Learning QuickStart — Simone Salerno",
    "genre": "Nonfiction",
    "bookline": "ML that fits on tiny devices — constraints as the design surface."
+  },
+  {
+   "book": "8051 Microcontroller Notes",
+   "genre": "Nonfiction",
+   "bookline": "Embedded-systems study notes on the 8051 microcontroller: architecture, registers, memory map, addressing modes, timers, interrupts, serial communication, and real-world interfacing."
   },
   {
    "book": "The Second Machine Age — Erik Brynjolfsson & Andrew McAfee",
@@ -6598,6 +6618,568 @@
    "intents": [
     "make a decision",
     "notice what others miss"
+   ]
+  },
+  {
+   "title": "Reality + Dreams + Humor = Wisdom",
+   "book": "The Importance of Living — Lin Yutang",
+   "type": "mechanism",
+   "steal": "\"Reality + Dreams + Humor = Wisdom\" — Lin's calculus. Dreams (imagination, aspiration, idealism) are the fuel of life; humor is the regulator that keeps them from curdling into fanaticism; reality is the ballast. Reality without dreams is mere animal existence; dreams without humor harden into fanaticism; dreams and humor without reality are empty fantasy; reality and humor without dreams are dead conservatism. Wisdom is the three held together.",
+   "why": "Every movement, plan, and person can be diagnosed by asking which term is missing. The zealot has dreams and certainty but no humor; the cynic has reality and humor but no dreams; the naif has dreams and humor but no reality. Check your own ratio before you trust your own convictions.",
+   "uw": "A cause, a pitch, or your own enthusiasm starts feeling airtight — look for the missing term before it costs you.",
+   "id": 510,
+   "source_locator": "Chapter One, II. A Pseudo-Scientific Formula",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "The scamp is the last enemy of the dictator",
+   "book": "The Importance of Living — Lin Yutang",
+   "type": "concept",
+   "steal": "\"Human dignity must be associated with the idea of a scamp and not with that of an obedient, disciplined and regimented soldier.\" Man is \"the greatest scamp on earth\" — curious, dreamy, humorous, wayward. The scamp can't be standardized: he plays, dreams, laughs, and refuses the uniform. His waywardness isn't a flaw to be trained out; it's the proof he hasn't been fully domesticated by institutions. Regimes fear him precisely because he cannot be regimented.",
+   "why": "Every institution — schools, armies, corporations, parties — quietly tries to replace the scamp with the soldier as its ideal human product. Lin's test: \"only he who handles his ideas lightly is master of his ideas, and only he who is master of his ideas is not enslaved by them.\" Seriousness is effort; lightness is mastery. Measure a person or an organization by how much scamp survives in it.",
+   "uw": "You catch yourself (or your organization) rewarding obedience and discipline while quietly punishing curiosity, playfulness, and waywardness.",
+   "id": 511,
+   "source_locator": "Chapter One, III. The Scamp as Ideal",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "change someone's mind",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "Harmonize the appetites; don't amputate them",
+   "book": "The Importance of Living — Lin Yutang",
+   "type": "argument",
+   "steal": "\"Any good practical philosophy must start out with the recognition of our having a body.\" Lin calls this reasonable naturalism: passions and desires are neither good nor bad in themselves — they are simply given. The civilized task is to bring appetite, feeling, intellect, and conscience into harmony, not to purge the flesh as medieval Christians and Buddhists tried to do. Spirit that scorns the body becomes inhuman; a program of life that ignores the body is not noble, it's abstract.",
+   "why": "Most moral and productivity systems are amputation systems: they declare whole parts of human nature (hunger, laziness, desire, play) as enemies and then demand willpower to fight them. Lin's alternative — expect neither too much nor too little of man, harmonize rather than deny — is cheaper, kinder, and actually works, because it starts from the creature that exists rather than the angel that doesn't.",
+   "uw": "A philosophy, diet, or productivity doctrine asks you to declare war on your own body — try tuning the appetites instead of executing them.",
+   "id": 512,
+   "source_locator": "Chapter Two, III. Spirit and Flesh",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "change someone's mind",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "Death is the leveler that makes life vivid",
+   "book": "The Importance of Living — Lin Yutang",
+   "type": "mechanism",
+   "steal": "\"Every funeral procession carries a banner upon which are written the words, 'Equality of Mankind.'\" Death dissolves every hierarchy — the king's thousand acres buy him the same five-foot bed as the peasant's. Because everyone dies, ownership is temporary and status is theater. This doesn't sadden life; it concentrates it. Mortality is the mechanism that turns earthly existence into the only show that matters: \"I am therefore as good as a king,\" because the king and I both end up the same size.",
+   "why": "The fear of death is routinely exploited to sell you urgency, ambition, and accumulation — as if frantic achievement could outrun the banner. Lin inverts it: accepting death is what frees you to enjoy what's actually here. A vague hope of immortality \"detracts from our wholehearted enjoyment\" of the only life that's certain.",
+   "uw": "Ambition starts selling you the idea that you must become immortal-by-achievement — remember the funeral banner and price the present correctly.",
+   "id": 513,
+   "source_locator": "Chapter Three, III. On Being Mortal",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "see clearly",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "The individual is the end, not the means",
+   "book": "The Importance of Living — Lin Yutang",
+   "type": "argument",
+   "steal": "\"Philosophy not only begins with the individual, but also ends with the individual.\" The person is the final fact of life — \"an end in himself, and not a means to other creations of the human mind.\" Lin's test: the greatest empire on earth exists so that an ordinary Englishman in Sussex \"may live a fairly happy and reasonable life.\" A false philosophy inverts it and assumes the man in Sussex exists so that there may be a great empire. States, institutions, and civilizations are judged by one metric: do individual lives get happier and more reasonable?",
+   "why": "Every abstract system — state, party, class, market, ideology — quietly tries to turn persons into fuel. Lin's doctrine is the acid test that dissolves them all: if the scheme doesn't terminate in a happier individual life, it's a machine for consuming people. This is the argument to reach for whenever someone asks you to sacrifice yourself for a collective abstraction.",
+   "uw": "An institution, ideology, or \"greater good\" argument asks you to be the means — demand proof that you, the individual, are the end.",
+   "id": 514,
+   "source_locator": "Chapter Four, VI. The Doctrine of the Individual",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "win an argument",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "Be decent because you're human, not because heaven pays",
+   "book": "The Importance of Living — Lin Yutang",
+   "type": "argument",
+   "steal": "\"We should lead a decent human life simply because we are decent human beings\" — the line that cut Lin's last tie to Christianity. Morality built on heaven-and-hell bookkeeping cheapens morality itself: it implies you wouldn't be decent without the reward, and it drags goodness through a gauntlet of hypothetical postulates — sin, redemption, celestial treasure — none capable of direct proof. Paganism's simplicity: doing good is its own justification. Love among men should be a final, absolute fact, without being reminded of a third party in heaven.",
+   "why": "Transaction-based morality is fragile morality. If your decency depends on cosmic wages, it collapses the moment the wages look uncertain — and it insults the dignity of the act itself. Lin's pagan standard is sturdier: reverence for the beauty, grandeur, and mystery of life is sufficient, and the orphan who has learned to be independent is more mature than the child waiting for a father's presents.",
+   "uw": "Someone frames ethics as a cosmic loyalty program — rewards for the good, punishments for the bad — and you need the case that decency stands on its own feet.",
+   "id": 515,
+   "source_locator": "Chapter Thirteen, II. Why I Am a Pagan",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "change someone's mind",
+    "win an argument"
+   ]
+  },
+  {
+   "title": "All human happiness is biological",
+   "book": "The Importance of Living — Lin Yutang",
+   "type": "argument",
+   "steal": "\"All human happiness is biological happiness... all human happiness is sensuous happiness.\" The material/spiritual split is a fraud: the partition separating flesh from spirit is extremely thin. Digestion, sleep, a cool spring on a parched throat, the morning air after sleep — these aren't crude preludes to the \"real\" pleasures. Art, affection, music, even religious feeling all arrive through the senses. Deny the body and you get a world with \"knowledge without understanding, criticism without appreciation, beauty without love, truth without passion.\"",
+   "why": "Refined people love to be embarrassed by their senses, treating bodily pleasure as vulgar and \"higher\" pleasures as disembodied. Lin argues the reverse: the higher pleasures are just the senses, cultivated. Taste, hearing, touch, appetite — trained, not transcended — are the actual machinery of enjoyment. Asceticism doesn't refine you; it disconnects you from your own instruments.",
+   "uw": "Culture or religion tells you to feel guilty about enjoying food, comfort, music, or the morning air — the senses are the instrument, not the enemy.",
+   "id": 516,
+   "source_locator": "Chapter Six, II. Human Happiness Is Sensuous",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "change someone's mind",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "Leisure is usable emptiness",
+   "book": "The Importance of Living — Lin Yutang",
+   "type": "mechanism",
+   "steal": "\"Leisure in time is like unoccupied floor space in a room.\" Unused time is to life what unused floor space is to a room — the part that makes everything else usable. Fill every inch with efficiency and there's no room to move; the girl in the room where every inch is utilized feels cramped, not rich. Culture, judgment, friendship, and taste aren't byproducts of production — they're products of loafing. Efficiency, punctuality, and the hunger for achievement are the three American vices precisely because they pave over the empty space where life happens.",
+   "why": "The productivity frame treats unoccupied time as waste to be optimized. Lin's mechanism says the opposite: emptiness is the enabling condition. A schedule with no slack can't produce judgment, a life with no idleness can't produce culture, and a person who can't loaf gracefully can't think clearly. Protect the empty floor the way you'd protect the foundation of the house.",
+   "uw": "Your calendar is fully optimized and your life feels cramped — you don't need better time management; you need deliberately unoccupied time.",
+   "id": 517,
+   "source_locator": "Chapter Seven, II. The Chinese Theory of Leisure",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "Education is taste, not storage",
+   "book": "The Importance of Living — Lin Yutang",
+   "type": "argument",
+   "steal": "\"The aim of education or culture is merely the development of good taste in knowledge and good form in conduct.\" The cultured person is not the well-read one — \"one who likes and dislikes the right things.\" Erudition without discernment is just facts without judgment; modern education rewards memorization because facts are easy to test and taste is not. Real culture is independent judgment with the courage to call fashionable, academic, political, or prestigious humbug by its name.",
+   "why": "The credential game optimizes for storage: degrees, reading lists, diplomas. Lin argues the whole game is measuring the wrong thing — knowledge should be a personal adventure of likes and dislikes, not compliance. A person with taste can navigate a flood of information; a person with only storage drowns in it while looking impressive.",
+   "uw": "Judging an education, a hire, or your own learning — ask about taste and judgment, not the size of the warehouse.",
+   "id": 518,
+   "source_locator": "Chapter Twelve, I. Good Taste in Knowledge",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "change someone's mind",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "Reasonableness beats logic in human affairs",
+   "book": "The Importance of Living — Lin Yutang",
+   "type": "mechanism",
+   "steal": "\"The logical man is always self-righteous and therefore inhuman and therefore wrong, while the reasonable man suspects that perhaps he is wrong and is therefore always right.\" Logic deprived of common sense becomes inhuman: it pushes every theory doggedly to its absurd conclusion and erects the state, the class, or the system into a god that swallows the individual. Reasonableness — \"humanized thinking\" — rounds out ideas and tones down their angularities. In human affairs the illogical course is often the convincing one: the postscript that contradicts the letter, the pardon that voids the argument, the unanswerable case answered with compassion.",
+   "why": "Most modern disputes are fought with flawless logic on both sides and zero reasonableness — which is why they never end. The mechanism Lin names: certainty is the tell. The person who is entirely sure is the person the argument has captured; the person with a flash of doubt in the postscript is the one still thinking. Fanaticism, left or right, is not a doctrine problem — it's a reasonableness deficit.",
+   "uw": "An argument is airtight and everyone is still miserable — the logic isn't wrong, it's inhuman; look for the reasonable postscript.",
+   "id": 519,
+   "source_locator": "Chapter Fourteen, III. Be Reasonable",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "see clearly",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "The integrated 8051: one 8-bit machine that is CPU, memory, timers, UART, and ports at once",
+   "book": "8051 Microcontroller Notes",
+   "type": "concept",
+   "steal": "The original 8051 is an 8-bit processor with 128 bytes of RAM, 4 KB of on-chip ROM, two timers, one serial port, and four 8-bit I/O ports — a whole control system, not just a CPU, squeezed into one chip with its peripherals permanently wired in.",
+   "why": "The notes never treat the 8051 as a lone processor; every section (ports, timers, serial, interrupts) is about how the core cooperates with its on-chip peripherals, so the useful unit of study is the whole chip's data paths, not any one instruction.",
+   "uw": "Designing or debugging any microcontroller system — decide what to integrate versus what to add externally, and how much work a constrained core can offload to its on-chip peripherals.",
+   "id": 520,
+   "source_locator": "8051 FAMILY",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "see clearly",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "The 8051 memory map: four register banks, 128 bit-addressable bits, and SFRs at 80H-FFH",
+   "book": "8051 Microcontroller Notes",
+   "type": "mechanism",
+   "steal": "Internal RAM is stratified by function: 00H-1FH holds four banks of eight registers selected by RS1/RS0 (PSW.4/PSW.3), 20H-2FH gives 128 individually addressable bits, 30H-7FH is plain scratchpad — and the special-function registers sit in a separate control plane at 80H-FFH, addressable by name or number. The stack pointer starts at 07H, so the first push lands at 08H.",
+   "why": "On the 8051, where data lives determines how you touch it — register bits, bit RAM, and SFRs each have their own access rules — so the memory map is not background detail, it is the instruction set's context.",
+   "uw": "Writing or debugging 8051 code — choose register banks vs scratchpad deliberately, guard the stack against the register area, and reach control hardware only through its SFR addresses.",
+   "id": 521,
+   "source_locator": "SFR Registers and Their Addresses",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "build something",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "Five addressing modes, and why register-indirect is restricted to R0 and R1",
+   "book": "8051 Microcontroller Notes",
+   "type": "mechanism",
+   "steal": "The 8051 offers five addressing modes — immediate, register, direct, register-indirect, indexed — but register-indirect into internal RAM is limited to R0 and R1, and code-space table reads use MOVC A,@A+DPTR while external data uses MOVX; the chip keeps a 64 KB code space and a separate 64 KB external data space, so the instruction, not just the address, chooses which memory you touch.",
+   "why": "This is the notes' recurring lesson that addressing is a hardware data path, not just syntax: the same DPTR can reach ROM via MOVC or external RAM via MOVX, and that distinction is how lookup tables, external memory, and code fetches stay separate on a 16-bit address bus.",
+   "uw": "Laying out data on an 8051 — put constant tables in code space for MOVC, variables in external data space for MOVX, and keep pointer discipline to R0/R1 for internal indirect access.",
+   "id": 522,
+   "source_locator": "ADDRESSING MODES",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "build something",
+    "name the mechanism"
+   ]
+  },
+  {
+   "title": "Read-modify-write instructions read the port latch, not the pin",
+   "book": "8051 Microcontroller Notes",
+   "type": "mechanism",
+   "steal": "Some instructions read the external pin state, but read-modify-write instructions read the internal port latch, modify it, and write it back — so a bit toggled this way reflects what the port was last driven to, not what is happening on the pin. Port 0 is open-drain and needs external 10K pull-ups; it also multiplexes address/data (AD0-AD7), while P2 carries the high address byte (A8-A15) and P3 pins double as RxD/TxD, INT0/INT1, T0/T1, WR, and RD.",
+   "why": "This latch-vs-pin split is the classic source of 8051 port bugs — toggling a bit can resurrect a stale value — and the notes treat the ports' alternate functions as the price of the chip's integration: every pin does two jobs.",
+   "uw": "Toggling 8051 port bits or driving external buses — know whether your instruction reads the latch or the pin, add the pull-ups on P0, and account for which pins are stolen by timers, interrupts, or memory access.",
+   "id": 523,
+   "source_locator": "Reading Latch Instructions Reading a latch (Read-Modify-Write)",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "see clearly",
+    "build something"
+   ]
+  },
+  {
+   "title": "The timer as an overflow machine: TMOD splits control, THx/TLx count up, TFx signals the roll-over",
+   "book": "8051 Microcontroller Notes",
+   "type": "mechanism",
+   "steal": "One machine cycle is 12 oscillator periods (1.085 us at 11.0592 MHz), and that heartbeat feeds Timer 0 and Timer 1. The TMOD register splits control between them — the lower nibble configures Timer 0, the upper nibble Timer 1 — each timer counts in THx/TLx, raises the TFx flag on overflow, and is started or stopped with TRx. Mode 1 is a 16-bit counter that must be reloaded by hand after every overflow; Mode 2 is 8-bit auto-reload, where TH holds the reload value and TL counts and silently reloads on overflow.",
+   "why": "The notes hammer one insight: precision timing on a tiny chip is not about speed, it is about the reload discipline — mode choice decides whether you pay a reload cost per tick or let the hardware do it, which is exactly how the notes generate baud rates and square waves.",
+   "uw": "Generating a delay, square wave, or baud clock on the 8051 — pick the mode whose reload discipline fits the job, then compute the TH/TL values from the 1.085 us heartbeat.",
+   "id": 524,
+   "source_locator": "TIMERS — TMOD Register",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "build something",
+    "name the mechanism"
+   ]
+  },
+  {
+   "title": "The UART as a framing machine: start bit, 8 data bits, stop bit, with software-cleared TI and RI",
+   "book": "8051 Microcontroller Notes",
+   "type": "mechanism",
+   "steal": "In the 8-bit asynchronous mode, every byte is framed with one start bit, eight data bits, and one stop bit. SBUF is the byte register; SCON controls the mode; TI fires when the stop bit has been transmitted and RI fires when a full byte lands — and the CPU must clear both flags itself, or the handshake stalls. Baud comes from Timer 1 running in mode 2, so at 11.0592 MHz the reload values TH1 = FDH, FAH, F4H, and E8H give 9600, 4800, 2400, and 1200 baud respectively.",
+   "why": "The notes present serial communication as three cooperating mechanisms — framing, flags, and a timer-derived clock — and the load-bearing detail is that the CPU, not the hardware, owns TI/RI; forgetting to clear them is a silent deadlock.",
+   "uw": "Bringing up an 8051 UART link — verify the framing in SCON, confirm Timer 1 mode 2 with the right TH1 reload, and always clear TI/RI in the handler before doing anything else.",
+   "id": 525,
+   "source_locator": "SERIAL PORT",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "build something",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "Interrupts on the 8051: a fixed vector table, EA as a master switch, IP priority, and RETI clearing the in-service flag",
+   "book": "8051 Microcontroller Notes",
+   "type": "mechanism",
+   "steal": "Six interrupts live at fixed ROM addresses — Reset 0000H, INT0 0003H, TF0 000BH, INT1 0013H, TF1 001BH, serial 0023H. On an interrupt the CPU finishes the current instruction, pushes the PC, and jumps; the ISR ends with RETI, which restores the PC and clears the interrupt-in-service flag so the pin can fire again. The IE register masks each interrupt individually but nothing works unless EA (IE.7) is set, and the IP register can reorder the default priority (INT0, TF0, INT1, TF1, serial).",
+   "why": "The notes' core contrast is polling versus interrupts — polling burns the CPU watching devices that need nothing, while interrupts let the chip do real work until TF or a pin demands attention — and the whole system hinges on two one-bit disciplines: EA as the master switch and RETI's hidden flag-clear.",
+   "uw": "Designing interrupt-driven 8051 firmware — set EA plus the individual IE bit, place the ISR at its vector address, and end with RETI (never RET) so the interrupt can re-arm.",
+   "id": 526,
+   "source_locator": "INTERRUPTS — Six Interrupts in 8051",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism",
+    "build something"
+   ]
+  },
+  {
+   "title": "Memory-mapped I/O and address decoding: the 74LS138 turns address bits into chip selects, and aliases are the price of partial decoding",
+   "book": "8051 Microcontroller Notes",
+   "type": "mechanism",
+   "steal": "The 8051 talks to peripherals like memory: the 74LS138 3-to-8 decoder turns three address lines (A, B, C) into eight active-low outputs, each wired to a chip's CS pin, so one decoder selects eight memory blocks. An I/O chip like the 8255 is wired to the bus as if it were RAM and driven with MOVX; its A1/A0 lines pick Port A, Port B, Port C, or the control register, and a control word configures each port as input or output (with a bit-set/reset mode that can flip single Port C bits). Decoding only part of the address creates aliases — many addresses reaching the same physical port — which must be documented.",
+   "why": "This is the notes' bridge from chip internals to real hardware: the CPU's address bus becomes a selection mechanism, and the engineering judgment is what to decode fully (clean addresses) versus partially (cheap but aliased).",
+   "uw": "Expanding an 8051 system with external memory or I/O chips — decode enough address lines for clean selects, document every alias, and configure peripherals with a control word before touching their data ports.",
+   "id": 527,
+   "source_locator": "MEMORY ADDRESS DECODING — Using 74LS138 3-8 Decoder",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "build something",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "The Captain and the Engine Room",
+   "book": "The Power of Your Subconscious Mind — Joseph Murphy",
+   "type": "concept",
+   "steal": "Your mind has two workers with opposite job descriptions. The conscious mind is the captain on the bridge: it chooses, reasons, and decides. The subconscious is the engine-room crew: it never questions an order, never talks back, never checks whether the order is wise — it simply executes. \"Your subconscious mind takes the orders you give it based upon what your conscious mind believes and accepts as true.\" Say \"I can't afford it\" as a reflex and the crew steers you onto exactly those rocks, faithfully, for years.",
+   "why": "This is the load-bearing frame of the entire book. Every technique, every anecdote, every chapter on wealth, health, or fear is a corollary: if the crew never argues, the only thing that matters is which orders you keep issuing. The ship metaphor also explains failure without mysticism — bad orders, bad destination.",
+   "uw": "Someone blames circumstances instead of their own standing instructions.",
+   "id": 528,
+   "source_locator": "The Treasure House Within You",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "The Law of Belief",
+   "book": "The Power of Your Subconscious Mind — Joseph Murphy",
+   "type": "concept",
+   "steal": "Murphy's one law: \"The law of your mind is the law of belief.\" And belief is not reverence for a true doctrine — \"Know that belief is a thought in your Mind, and what you think you create.\" The mechanism cares about the felt thought, never the object: \"Remember, it is not the thing believed in, but the belief in your own mind, which brings about the result.\" That is why a splinter of sidewalk wood set in a ring and a saint's relic produce the same healing — the patient supplies the only ingredient that matters: conviction.",
+   "why": "It decouples the whole method from any religion, theory, or healer — which is also Murphy's defense of the entire project. If the object doesn't matter, no doctrine can claim a monopoly on results, and no doctrine can be blamed for failures either. Belief is demoted from truth to technique.",
+   "uw": "Someone insists only the right method, teacher, or theory can work.",
+   "id": 529,
+   "source_locator": "The Treasure House Within You",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "The Soil Cannot Argue",
+   "book": "The Power of Your Subconscious Mind — Joseph Murphy",
+   "type": "concept",
+   "steal": "The subconscious is non-selective soil: it grows weeds as willingly as wheat. Murphy's exhibit is the hypnotic subject who acts out Napoleon on command, or sneezes at a cup of cold water he was told is pepper — suggestion accepted as fact becomes physiology. \"Your subconscious mind does not argue with you. It accepts what your conscious mind decrees.\" The corollary with teeth: \"Remember that your subconscious mind cannot take a joke.\" The offhand self-insult lands as an order.",
+   "why": "It explains why idle negativity and \"joking\" self-putdowns are not harmless — the receiver has no sense of humor and no fact-checker. Every casual \"I'm so stupid,\" \"I'll never,\" \"watch, I'll get sick\" is a work order signed by the boss.",
+   "uw": "Catching yourself or others in casual self-negation passed off as humor.",
+   "id": 530,
+   "source_locator": "How Your Own Mind Works",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "see clearly"
+   ]
+  },
+  {
+   "title": "The Watchman at the Gate",
+   "book": "The Power of Your Subconscious Mind — Joseph Murphy",
+   "type": "concept",
+   "steal": "The conscious mind's real job is not achieving — it is filtering. Murphy calls it the \"watchman at the gate\": \"your conscious mind is the 'watchman at the gate,' and its chief function is to protect your subconscious mind from false impressions.\" Newspapers, gossip, a careless diagnosis, childhood programming, a fortune-teller's verdict — all arrive at the gate as suggestions from others, and none of them has power until the watchman mentally consents and lets it in. The relative who died \"as predicted\" by a crystal gazer was killed by his own consent, not her powers.",
+   "why": "It reframes vigilance as the highest mental duty: choosing is more consequential than striving. You don't need a stronger crew; you need a stricter gate. It is also Murphy's one clear ethical bright line — you are responsible for what you admit, no matter who said it.",
+   "uw": "Deciding what to let into your head — news, diagnoses, other people's verdicts.",
+   "id": 531,
+   "source_locator": "How Your Own Mind Works",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism"
+   ]
+  },
+  {
+   "title": "One Healing Power",
+   "book": "The Power of Your Subconscious Mind — Joseph Murphy",
+   "type": "argument",
+   "steal": "Murphy's thesis of the healing chapters: Mesmer's magnets, Lourdes water, chiropractic, Christian Science, the surgeon's scalpel — every school claims its theory heals, and every school can point to cures. His conclusion: the theory is irrelevant; the instrument is identical in all cases — the patient's own subconscious, triggered by faith. \"There is only one process of healing and that is faith. There is only one healing power, namely, your subconscious mind.\" Paracelsus said it four centuries earlier: \"Faith, however, produces miracles; and whether it is true or false faith, it will always produce the same wonders.\"\n\nMurphy presents these as case anecdotes (shrine healings, an 1840s surgeon's operations, a blister raised by a postage stamp, tuberculosis cured by a sidewalk-wood \"relic\") — never as controlled evidence, with no follow-up and no failures reported. Modern medicine rejects the premise.",
+   "why": "It is the book's boldest and most load-bearing claim — the one that either makes the whole system coherent or collapses it. Read honestly: the anecdotes are the method's marketing, not its proof. The value is in the mechanism (belief as technique), not the case reports.",
+   "uw": "Evaluating any healing claim — ask what the patient believed, not what the healer did.",
+   "id": 532,
+   "source_locator": "Mental Healings in Modern Times",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "The Sleep Window",
+   "book": "The Power of Your Subconscious Mind — Joseph Murphy",
+   "type": "mechanism",
+   "steal": "The subconscious is most impressionable in the drowsy state: \"the highest degree of outcropping of the subconscious occurs prior to sleep and just after we awaken\" — in that state the conscious mind's objections go quiet and a suggestion sinks in like a lullaby. Baudoin's formula, which Murphy adopts as the master technique: \"A very simple way of securing this (impregnation of the subconscious mind) is to condense the idea, which is to be the object of suggestion, to sum it up in a brief phrase, which can be readily graven on the memory, and to repeat it over and over again as a lullaby.\" Hence the \"sleep technique\": hand the subconscious its assignment on the way down — \"Wealth,\" \"Answer,\" \"It is finished in Divine Order\" — and let the night shift execute it.",
+   "why": "This converts an abstract doctrine into a nightly procedure — the book's core transferable technique. Every other method in the book (visualization, affirmation, thanksgiving) is just a different way of getting an impression through this window while the watchman sleeps.",
+   "uw": "You need an idea to take root — plant it at the doorstep of sleep.",
+   "id": 533,
+   "source_locator": "Practical Techniques in Mental Healings",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism"
+   ]
+  },
+  {
+   "title": "The Mental Movie",
+   "book": "The Power of Your Subconscious Mind — Joseph Murphy",
+   "type": "mechanism",
+   "steal": "Don't pray for the future; rehearse the finished end as present fact. Murphy's visualization rule: \"Imagine the end desired and feel its reality\" — the feeling is the ink that makes the impression stick. \"A mental picture held in the mind, backed by faith, will come to pass.\" He acted it literally: selling his own house by nightly pulling the imaginary \"For sale\" sign from the lawn; the woman who \"drove\" a Cadillac in her imagination for two weeks before one arrived. The operating sentence: \"Act as though I am, and I will be.\"",
+   "why": "This is what distinguishes his method from wishing: the demand is not desire but subjective conviction of already-having. Desire says \"someday\" — which the subconscious files as \"not now.\" The mental movie gives the engine room a completed blueprint with no missing steps to argue about.",
+   "uw": "Turning a goal into an instruction the subconscious can execute.",
+   "id": 534,
+   "source_locator": "Practical Techniques in Mental Healings",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism"
+   ]
+  },
+  {
+   "title": "The Law of Reversed Effort",
+   "book": "The Power of Your Subconscious Mind — Joseph Murphy",
+   "type": "concept",
+   "steal": "Effort defeats itself. Coué's law, which Murphy adopts wholesale: \"When your desires and imagination are in conflict your imagination invariably gains the day.\" Gritting your teeth to remember blanks the exam mind; forcing prayer produces the opposite of the prayer. \"Mental coercion or too much effort shows anxiety and fear which block your answer. Easy does it.\" The subconscious obeys the dominant image, not the strongest will — and straining only proves to it that you doubt the outcome, which it then executes.",
+   "why": "It is the book's built-in answer to \"why didn't it work\" — and a standing veto on white-knuckling any technique. Every method in the book is specified as relaxed, drowsy, childlike; effort is not a virtue here, it is evidence of conflict.",
+   "uw": "A goal is being pursued harder the further it recedes.",
+   "id": 535,
+   "source_locator": "How to Get the Results You Want",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "Wealth Is a Subconscious Conviction",
+   "book": "The Power of Your Subconscious Mind — Joseph Murphy",
+   "type": "concept",
+   "steal": "\"Wealth is simply a subconscious conviction on the part of the individual\" — not a balance sheet, but a standing inner posture. \"The feeling of wealth produces wealth.\" Murphy treats the subconscious as a universal bank that pays compound interest in both directions: \"To him that hath the feeling of wealth, more wealth shall be added; to him that hath the feeling of lack, more lack shall be added. Your subconscious multiplies and magnifies whatever you deposit in it.\" Hence two prohibitions: no \"blank checks\" — \"There is not enough to go around\" is a signed order for scarcity — and no envy, because condemning someone else's wealth programs the crew to steer yours away from you. Affirmations fail when the conscious mind detects a lie (\"I am wealthy\" while broke creates conflict), so Murphy prescribes affirming the process instead: \"By day and by night I am being prospered in all of my interests\" — which no inner skeptic can argue with.",
+   "why": "It applies the master mechanism to the domain most people try to solve with effort alone, and it explains the failure mode of naive positive thinking from inside the system's own logic: the subconscious obeys what you feel is true, not what you say.",
+   "uw": "Someone's money habits contradict their money goals.",
+   "id": 536,
+   "source_locator": "How to Use the Power of Your Subconscious for Wealth",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "Habit Is the Subconscious on Autopilot",
+   "book": "The Power of Your Subconscious Mind — Joseph Murphy",
+   "type": "mechanism",
+   "steal": "Habit is not character — it is the subconscious executing old tracks. \"You are a creature of habit. Habit is the function of your subconscious mind.\" To rewrite one, stop fighting it with will (see the law of reversed effort) and re-expose the plate: \"Your conscious mind is the camera, and your subconscious mind is the sensitive plate on which you register or impress the picture.\" Rehearse the end-scene nightly — the alcoholic father hearing his daughter say \"Daddy, it's wonderful to have you home\" — until the new track outcompetes the old. \"Your imagination took you to the bottle; let it take you now to freedom and peace of mind.\" Entry condition: \"If you have a keen desire to free yourself from any destructive habit, you are fifty-one percent healed already\" — the new desire must outweigh the old before anything else can work.",
+   "why": "It gives the book a complete addiction-recovery protocol with no moralizing: don't suppress the urge, out-picture it. The law of substitution — replace, don't resist — is the practical engine under the whole philosophy.",
+   "uw": "Someone wants to break a pattern they've already failed to break by force.",
+   "id": 537,
+   "source_locator": "How Your Subconscious Removes Mental Blocks",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "make a decision",
+    "name the mechanism"
+   ]
+  },
+  {
+   "title": "Criticism doesn't reform — it recruits the defense attorney",
+   "book": "How to Win Friends and Influence People — Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Criticism is futile because it puts a person on the defensive and usually makes him strive to justify himself.\" The person you blame doesn't hear your correction — he hears a threat, and \"Any fool can criticize, condemn and complain — and most fools do.\" Carnegie argues that even convicted killers considered themselves justified, and \"Criticism is dangerous, because it wounds a person's precious pride, hurts his sense of importance, and arouses resentment.\" The correction you wanted to deliver is now behind a wall of self-defense you built yourself. His prescription: \"Instead of condemning people, let's try to understand them, and to figure out why they do what they do.\"",
+   "why": "This is the load-bearing mechanism under the whole book: correction creates the defense that makes correction impossible. If you can't get a person to change by attacking, the book's answer isn't attack better — it's replace attack with a different instrument entirely.",
+   "uw": "You're about to criticize someone and want it to actually change them — try understanding the behavior's cause instead of condemning it.",
+   "id": 538,
+   "source_locator": "Part One, Chapter 1: If You Want to Gather Honey, Don't Kick Over the Beehive",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism",
+    "win an argument"
+   ]
+  },
+  {
+   "title": "Feed the craving for importance — but never with flattery",
+   "book": "How to Win Friends and Influence People — Dale Carnegie",
+   "type": "mechanism",
+   "steal": "There is one burning desire shared by every person you'll ever meet: \"the desire to be important,\" which Carnegie calls \"a gnawing and unfaltering human hunger.\" The winning move is \"honest and sincere appreciation,\" and the losing move is flattery: \"One comes from the heart out; the other comes from the teeth out. One is unselfish; the other selfish. One is universally admired; the other universally condemned.\" He sharpens the difference — \"Flattery is telling the other person precisely what he thinks about himself\" — and gives the rule behind it: \"talk to people about themselves and they will listen for hours.\"",
+   "why": "Most people try to impress others when they should be attending to others. This rip flips the polarity: the person who satisfies the importance-craving without faking it gets liked, trusted, and listened to — the person who flatters gets detected and discounted.",
+   "uw": "You need to win someone over — find something genuinely admirable about them and say it, instead of praising yourself.",
+   "id": 539,
+   "source_locator": "Part One, Chapter 2: The Big Secret of Dealing with People",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "Translate your request into their eager want",
+   "book": "How to Win Friends and Influence People — Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"The only way on earth to influence other people is to talk about what they want and show them how to get it.\" Before every request, do the translation: find the connection between your ask and their eager want, then present the ask entirely in their terms. Carnegie gives the field case: a man who couldn't sell his car to a neighbor for $100 — \"it wouldn't do any good to tell him all the things I wanted; he wasn't interested in me or what I wanted\" — realized the neighbor wanted a garage, and offered him the car so he'd have \"something to put in the garage\" — sold instantly. The principle: \"arouse in the other person an eager want.\"",
+   "why": "Persuasion fails at the translation step: people present their own reasons when only the other person's reasons can move them. This is the book's master algorithm for influence — want-translation before every ask.",
+   "uw": "Someone is ignoring your request — stop restating your reasons and restate the request inside what they already want.",
+   "id": 540,
+   "source_locator": "Part One, Chapter 3: He Who Can Do This Has the Whole World with Him",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism",
+    "change someone's mind"
+   ]
+  },
+  {
+   "title": "Be interested, not interesting — attention is the architecture of likability",
+   "book": "How to Win Friends and Influence People — Dale Carnegie",
+   "type": "mechanism",
+   "steal": "The book's six likability techniques are one mechanism wearing six outfits: make the other person the subject. \"You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you.\" The cluster: become genuinely interested, smile, remember their name (\"the sweetest and most important sound in any language\"), be a good listener, talk in terms of their interests, and make them feel important. The listener version is sharpest: \"To be interesting, be interested. Ask questions that other persons will enjoy answering. Encourage them to talk about themselves and their accomplishments.\"",
+   "why": "People chronically invest in being impressive when likability is purchased with attention. The six rules are not tactics to memorize — they are six dials on one instrument: how much of this interaction is about them.",
+   "uw": "You're trying to make a good impression — invert it: make the impression they make on you the thing they remember.",
+   "id": 541,
+   "source_locator": "Part Two, Chapters 1–4: Do This and You'll Be Welcome Anywhere",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "Let them talk until the poison is out",
+   "book": "How to Win Friends and Influence People — Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Many people calling for an interview, seeking an audience with a person in authority, do not want anything except a sympathetic ear — someone who will listen to them while they unburden themselves. It seems that no one wants sympathy so much as do these hard-boiled businessmen.\" The listener's job during the vent is to do almost nothing: \"Listen patiently and with an open mind. Be sincere about it. Encourage the expression of the other person's ideas.\" Carnegie's case: an insurance company defused an indignant policyholder not by arguing but by letting him talk for hours — \"When the storm blew over, the adjuster offered to do what was obviously right.\"",
+   "why": "The reflex is to fix, argue, or interrupt the vent — all three add pressure to a full vessel. The mechanism says the talking IS the fix: attention drains the charge, and only then is the person capable of hearing anything.",
+   "uw": "Someone comes at you hot with a complaint — don't solve, don't defend, don't interrupt; let the talk finish the job it started.",
+   "id": 542,
+   "source_locator": "Part Two, Chapter 4: Become a Good Listener; Part Three, Chapter 6: The Safety Valve in Handling Complaints",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "You can't win an argument — so avoid it, and never say 'you're wrong'",
+   "book": "How to Win Friends and Influence People — Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Nine times out of ten, an argument ends with each of the contestants more firmly convinced than ever that he is absolutely right.\" The scoreboard is rigged: \"You can't win an argument. You can't because if you lose it, you lose it; and if you win it, you lose it.\" Winning costs you the person's goodwill — which was the actual prize — and the loser \"will resent your triumph.\" The corollary is absolute: \"never say 'You're wrong'\" — even to a customer, even when you're right. The replacement move is respect for the other opinion and an instant, honest admission when you err.",
+   "why": "Arguments are negative-sum by structure: the winner loses goodwill, the loser doubles down, and the \"right\" answer arrives inside a humiliation that guarantees it won't be adopted. This is the book's veto on a whole class of conflict.",
+   "uw": "You're about to prove someone wrong — ask what winning costs, then say \"you're wrong\" to nobody and watch the resistance drop.",
+   "id": 543,
+   "source_locator": "Part Three, Chapters 1–2: You Can't Win an Argument; A Sure Way of Making Enemies",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "win an argument",
+    "name the mechanism"
+   ]
+  },
+  {
+   "title": "Admit error faster than the other side can accuse",
+   "book": "How to Win Friends and Influence People — Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"When we are wrong, we may admit it to ourselves; and if we are handled gently and tactfully, we may admit it to others and even take pride in our frankness and broadmindedness; but not if someone else is trying to ram the unpalatable fact down our throats.\" The move is preemptive: \"If you are wrong, admit it quickly and emphatically.\" Carnegie's field case is literal — accused by a policeman of walking his dog off-leash, he condemned himself before the officer could: \"You're absolutely right. It's inexcusable\" — and the officer, with nothing left to prosecute, dropped it. The mechanism: \"By fighting, you never get enough, but by yielding, you get more than you expected.\"",
+   "why": "Self-accusation disarms accusation: you steal the other person's ammunition by firing it yourself. Pride is protected — yours is displayed as frankness, theirs as magnanimity — and the conflict evaporates for lack of an opponent.",
+   "uw": "You're caught and the other side is loading up — beat them to the sentence with a faster, more emphatic admission.",
+   "id": 544,
+   "source_locator": "Part Three, Chapter 3: If You're Wrong, Admit It",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "Stack yeses, then let the idea be theirs",
+   "book": "How to Win Friends and Influence People — Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Get the other person saying 'yes, yes' immediately if you can.\" Start from points of agreement — keep the other person answering yes to small truths until the psychology of agreement makes the final yes feel like continuity. Then hand over the ownership: \"let the other person feel that the idea is his or hers.\" Carnegie credits the method to Socrates, who \"asked questions with which his opponent would have to agree. He kept on winning one admission after another until he had an armful of yeses. He kept on asking questions until finally, almost without realizing it, his opponents found themselves embracing a conclusion they would have bitterly denied a few minutes previously.\"",
+   "why": "This is the book's two-step persuasion engine: momentum (the yes-sequence lowers the cost of each next yes) plus ownership (an idea someone feels they own needs no defending against). People fight imposed conclusions and nurture their own — so make the conclusion feel like theirs.",
+   "uw": "You need a yes that will stick — build it from small agreed yeses, then let them arrive at your conclusion as if it were theirs.",
+   "id": 545,
+   "source_locator": "Part Three, Chapters 5 and 7: The Secret of Socrates; Let the Other Person Feel the Idea Is His or Hers",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "change someone's mind",
+    "name the mechanism"
+   ]
+  },
+  {
+   "title": "Deliver correction like Novocain, not a hammer",
+   "book": "How to Win Friends and Influence People — Dale Carnegie",
+   "type": "mechanism",
+   "steal": "Correction has a delivery protocol: \"Begin with praise and honest appreciation,\" then \"call attention to people's mistakes indirectly,\" then \"talk about your own mistakes before criticizing the other person.\" The but-to-and swap is the precision instrument: \"Many people begin their criticism with sincere praise followed by the word 'but' and ending with a critical statement... Once 'but' is used, the praise is canceled.\" Swap \"but\" for \"and\" and the praise survives the correction. Asking questions instead of giving orders completes the protocol — it makes the corrected person a collaborator in their own fix. And the smallest unit of the method: \"Let the other person save face.\"",
+   "why": "The protocol's insight is that resistance is a delivery problem, not a truth problem: the same correction that detonates when hammered lands when anesthetized. Every element — praise first, indirect attention, your own mistakes, \"and\" not \"but\", questions not orders — exists to keep the other person's pride out of the fight.",
+   "uw": "You have to correct someone and need the correction to land instead of detonate.",
+   "id": 546,
+   "source_locator": "Part Four, Chapters 1–5: If You Must Find Fault, This Is the Way to Begin",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "Give them a reputation to live up to",
+   "book": "How to Win Friends and Influence People — Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Give a dog a good name\" — attribute a virtue to someone and they will work to deserve it. \"Give the other person a fine reputation to live up to, and he will make prodigious efforts rather than see you disillusioned.\" Carnegie gives the field case of a father who praised his misbehaving son as a good boy: \"That was the turning point in the boy's life.\" The mechanism generalizes: \"praise the slightest improvement and praise every improvement. Be 'hearty in your approbation and lavish in your praise.'\" The final instrument is encouragement framed as ease: \"Use encouragement. Make the fault seem easy to correct\" — people live up to the difficulty level you imply.",
+   "why": "This is the constructive half of the book's influence system — the other half was about not attacking. Assigning a reputation is the cheapest behavior-change technology in the book: it costs one sentence and recruits the person's own pride as your enforcer.",
+   "uw": "You need someone to change — tell them the virtue you already see in them and let their pride do the rest.",
+   "id": 547,
+   "source_locator": "Part Four, Chapters 6–9: Give a Dog a Good Name",
+   "ripped_at": "2026-09-25",
+   "intents": [
+    "name the mechanism",
+    "change someone's mind"
    ]
   }
  ]
