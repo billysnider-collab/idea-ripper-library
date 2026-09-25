@@ -196,6 +196,15 @@ books:
   - book
   - bookline
   - genre
+- key: zero-to-one-peter-thiel-blake-masters
+  genre: Nonfiction
+  bookline: 'Startup contrarianism — Thiel''s 2014 classic on going from 0 to 1 (creating
+    something new) instead of 1 to n (copying what works): monopoly over competition,
+    secrets, definite optimism, the power law, and distribution.'
+  field_order:
+  - book
+  - bookline
+  - genre
 - key: tragedy-and-hope-carroll-quigley
   genre: Nonfiction
   bookline: Grand-strategy history — Quigley's 1966 classic on Western civilization's
@@ -1218,6 +1227,17 @@ card_order:
 - 57
 - 58
 - 59
+- 499
+- 500
+- 501
+- 502
+- 503
+- 504
+- 505
+- 506
+- 507
+- 508
+- 509
 - 60
 - 61
 - 62
