@@ -918,4 +918,25 @@ page = """<!DOCTYPE html>
               "\n\n".join(sections), curated_long, n_books, n_theses, n, fb_footer, JS)
 
 open(os.path.join(BASE, "index.html"), "w", encoding="utf-8").write(page)
+
+# sitemap.xml — real URLs only (Google ignores #fragments); aids Search Console discovery
+from datetime import date as _date
+_today = _date.today().isoformat()
+_sm_urls = [("https://idearipper.com/", "daily", "1.0"), ("https://idearipper.com/brand/", "monthly", "0.5")]
+_sm_lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+for _loc, _freq, _pri in _sm_urls:
+    _sm_lines.append("  <url>")
+    _sm_lines.append("    <loc>%s</loc>" % _loc)
+    _sm_lines.append("    <lastmod>%s</lastmod>" % _today)
+    _sm_lines.append("    <changefreq>%s</changefreq>" % _freq)
+    _sm_lines.append("    <priority>%s</priority>" % _pri)
+    _sm_lines.append("  </url>")
+_sm_lines.append("</urlset>")
+open(os.path.join(BASE, "sitemap.xml"), "w", encoding="utf-8").write(chr(10).join(_sm_lines) + chr(10))
+# robots.txt — allow all, point crawlers at the sitemap
+open(os.path.join(BASE, "robots.txt"), "w", encoding="utf-8").write(
+    "User-agent: *" + chr(10) + "Allow: /" + chr(10) + chr(10) +
+    "Sitemap: https://idearipper.com/sitemap.xml" + chr(10))
+print("sitemap: %d urls -> sitemap.xml + robots.txt" % len(_sm_urls))
 print("built: %d cards, %d books, %d theses, %d genres" % (n, n_books, n_theses, len(genre_order)))
