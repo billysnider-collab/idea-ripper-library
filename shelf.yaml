@@ -113,6 +113,16 @@ books:
   - book
   - bookline
   - genre
+- key: declaration-of-independence-thomas-jefferson
+  genre: Nonfiction
+  bookline: 'Founding document — Jefferson''s 1776 draft for the Second Continental
+    Congress: natural rights, the consent of the governed, the right and duty of revolution,
+    the long indictment of the King, and the pledge of lives, fortunes, and sacred
+    honor. Public domain.'
+  field_order:
+  - book
+  - bookline
+  - genre
 - key: every-molecule-matters-simon-cotton
   genre: Nonfiction
   bookline: Chemistry told through molecules that shape food, drugs, war, color, and
@@ -1298,3 +1308,11 @@ card_order:
 - 477
 - 478
 - 479
+- 480
+- 481
+- 482
+- 483
+- 484
+- 485
+- 486
+- 487
