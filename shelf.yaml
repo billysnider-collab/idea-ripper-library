@@ -986,6 +986,14 @@ books:
   - genre
   - bookline
   - anchor
+- key: crime-and-punishment-fyodor-dostoevsky
+  genre: Literary Fiction
+  bookline: 'Raskolnikov''s airtight theory meets the body that cannot stand it: nine
+    rips on ideology, guilt, and the person who answers both.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1590,3 +1598,12 @@ card_order:
 - 606
 - 607
 - 608
+- 609
+- 610
+- 611
+- 612
+- 613
+- 614
+- 615
+- 616
+- 617
