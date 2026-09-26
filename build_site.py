@@ -415,7 +415,7 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .mast-inner{position:relative}
 .rip-request{position:absolute;top:var(--space-md);right:var(--page-gutter);font-family:var(--font-mono);font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-frame);border:1px solid var(--ink-frame);border-radius:999px;padding:.5em 1.1em;text-decoration:none;white-space:nowrap}
 .rip-request:hover{background:var(--ink-frame);color:var(--surface-frame)}
-@media (max-width:560px){.rip-request{font-size:11px;padding:.4em .8em}}
+@media (max-width:560px){.rip-request{position:static;display:inline-block;margin-top:var(--space-sm);font-size:11px;padding:.45em .9em}}
 /* ---------- frame: controls ---------- */
 .controls{position:sticky;top:0;z-index:20;background:var(--surface-frame);border-bottom:1px solid var(--line-frame);padding:var(--space-sm) 0}
 .controls .inner{max-width:var(--page-max);margin:0 auto;padding:0 var(--page-gutter);display:flex;gap:var(--space-xs);flex-wrap:wrap;align-items:center}
