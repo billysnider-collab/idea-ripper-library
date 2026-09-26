@@ -611,6 +611,26 @@
    "book": "A parallel quantum computer simulator — James E. Fischer",
    "genre": "Thesis",
    "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/aparallelquantum1094550540"
+  },
+  {
+   "book": "Phases of violent extremism: targeting the evolution of Al-Shabaab — Richard S. Jordan",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/phasesofviolente1094547974"
+  },
+  {
+   "book": "GPS: Public Utility or Software Platform — Marc A. Thibault Jr.",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1030085"
+  },
+  {
+   "book": "The port security grant program: good enough, or can it be made better? — Paul D. J. Arnett",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/theportsecurityg1094549476"
+  },
+  {
+   "book": "The Island that broke the ocean's surface and what it left behind — Gendra Lacle",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Leiden University, 2023. Full text: https://archive.org/details/MANA-DIG-THESIS-GENDRA-LACLE-2024"
   }
  ],
  "cards": [
@@ -7251,6 +7271,42 @@
    "why": "Before large-scale quantum hardware exists, simulation is how quantum algorithms get developed — and the binding constraint is memory, not just speed.",
    "uw": "When the problem won't fit in memory, change the math before buying a bigger machine.",
    "id": 552
+  },
+  {
+   "title": "Phases of violent extremism: targeting the evolution of Al-Shabaab",
+   "book": "Phases of violent extremism: targeting the evolution of Al-Shabaab — Richard S. Jordan",
+   "type": "argument",
+   "steal": "Al-Shabaab can be targeted by stage — Phase One (pre-establishment) read through historical and cultural context, Phase Two (formation and growth) through social-movement theory, Phase Three (mature organization) through organizational-design theory — and deterrence is judged a workable strategy only at certain seams, gaps, strengths, and weaknesses in each stage; military operations alone are \"an insufficient long-term counter-extremism strategy.\"",
+   "why": "It gives policymakers a phase-specific lens on violent extremist organizations instead of one-size-fits-all counterterrorism — the seams move as the organization matures.",
+   "uw": "Match the strategy to the organization's stage — what deters a forming movement won't deter a mature one.",
+   "id": 553
+  },
+  {
+   "title": "GPS: Public Utility or Software Platform",
+   "book": "GPS: Public Utility or Software Platform — Marc A. Thibault Jr.",
+   "type": "argument",
+   "steal": "Viewing GPS as a \"software platform\" instead of a \"public utility\" changes the resilience picture: the utility lens shows the U.S. hardened GPS through system design and redundancies (more satellites than required, dispersed infrastructure, stronger signals), while the platform lens shows resilience grew further by adding navigation signals — but manufacturers, application developers, and users themselves are the binding constraint on any further resilience gains.",
+   "why": "It frames the modern GPS-interference problem precisely — the signal itself is hardened, but the ecosystem built on top of it is the soft underbelly.",
+   "uw": "When you can't measure the vulnerability directly, change the conceptual lens — two lenses can reveal what one data gap hides.",
+   "id": 554
+  },
+  {
+   "title": "The port security grant program: good enough, or can it be made better?",
+   "book": "The port security grant program: good enough, or can it be made better? — Paul D. J. Arnett",
+   "type": "argument",
+   "steal": "Fifteen years in, the Port Security Grant Program hardened individual facilities — building \"Maginot Lines,\" or worse, \"independent pill boxes, which the Threat can bypass rather than directly confront\" — instead of making the maritime transportation system resilient as a whole; the program should aim to make the system \"like a block of ballistic gel; able to absorb impact and still retain its shape,\" kept as a discrete program with transparency and fiduciary reforms.",
+   "why": "It's the resilience-vs-hardening debate behind every infrastructure grant program — defending points fails, defending systems survives.",
+   "uw": "Don't build walls around assets; build systems that absorb the hit — defense in depth beats a brittle perimeter.",
+   "id": 555
+  },
+  {
+   "title": "The Island that broke the ocean's surface and what it left behind",
+   "book": "The Island that broke the ocean's surface and what it left behind — Gendra Lacle",
+   "type": "argument",
+   "steal": "Aruba's underwater cultural heritage — submerged sites spanning the Archaic, Ceramic, and Historic periods — is largely unmapped and under threat from mechanical, biological, chemical, and human factors; the thesis inventories known and expected archaeological resources and weighs in-situ against ex-situ preservation to argue for a managed framework for the island's submerged heritage.",
+   "why": "A case study in how rising seas and human activity endanger coastal heritage worldwide — and how a small island can inventory what it has before it disappears.",
+   "uw": "You can't protect what you haven't inventoried — the heritage survey is the prerequisite for any preservation policy.",
+   "id": 556
   }
  ]
 }

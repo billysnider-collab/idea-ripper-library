@@ -921,6 +921,34 @@ books:
   - book
   - genre
   - bookline
+- key: phases-of-violent-extremism-targeting-the-evolution-of-al-shabaab-richard-s-jordan
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/phasesofviolente1094547974'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: gps-public-utility-or-software-platform-marc-a-thibault-jr
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1030085'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-port-security-grant-program-good-enough-or-can-it-be-made-better-paul-d-j-arnett
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/theportsecurityg1094549476'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-island-that-broke-the-ocean-s-surface-and-what-it-left-behind-gendra-lacle
+  genre: Thesis
+  bookline: 'Masters thesis — Leiden University, 2023. Full text: https://archive.org/details/MANA-DIG-THESIS-GENDRA-LACLE-2024'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1469,3 +1497,7 @@ card_order:
 - 550
 - 551
 - 552
+- 553
+- 554
+- 555
+- 556
