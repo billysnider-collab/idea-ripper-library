@@ -1,5 +1,5 @@
 {
- "curated": "2026-09-24",
+ "curated": "2026-09-26",
  "genre_order": [
   "Science Fiction",
   "Fantasy",
@@ -11,6 +11,7 @@
   "Literary Fiction",
   "Thesis"
  ],
+ "recent_first": 5,
  "books": [
   {
    "book": "Shinto: The Ancient Religion of Japan — William George Aston",

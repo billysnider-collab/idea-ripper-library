@@ -277,11 +277,26 @@ def book_slug(b):
 
 genre_of = {b["book"]: b["genre"] for b in books}
 sections = []
+# recently updated shelf: the N books with the highest max card id (theses excluded:
+# theses are ideas, not books). Rendered first, above the genre sections, and excluded
+# from their genre sections below so every card still renders exactly once.
+RECENT_N = ds.get("recent_first", 5)
+def _book_maxid(bname):
+    return max(c["id"] for c in cards if c["book"] == bname)
+recent_books = sorted([b for b in books if b["genre"] != "Thesis"],
+                      key=lambda b: _book_maxid(b["book"]), reverse=True)[:RECENT_N]
+recent_names = set(b["book"] for b in recent_books)
+if recent_books:
+    rcount = sum(1 for c in cards if c["book"] in recent_names)
+    sections.append('<h2 class="genre" data-genre="Recently updated" id="g-recently-updated">Recently updated <span class="gcount">%d cards · %d books</span></h2>'
+                    % (rcount, len(recent_books)))
+    for b in recent_books:
+        sections.append(book_block(b))
 for g in genre_order:
-    gbooks = books_in_genre(g)
+    gbooks = [b for b in books_in_genre(g) if b["book"] not in recent_names]
     if not gbooks:
         continue
-    gcount = sum(1 for c in cards if genre_of[c["book"]] == g)
+    gcount = sum(1 for c in cards if genre_of[c["book"]] == g and c["book"] not in recent_names)
     gunit = "theses" if g == "Thesis" else "books"
     sections.append('<h2 class="genre" data-genre="%s" id="g-%s">%s <span class="gcount">%d cards · %d %s</span></h2>'
                     % (esca(g), slugify(g), esc(g), gcount, len(gbooks), gunit))
@@ -836,7 +851,18 @@ function openHash(){
     if(gn){setTimeout(function(){gn.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});},60);return true;}}
   return false;
 }
-openHash();
+var _dlTakeover=false;
+["touchstart","wheel","keydown"].forEach(function(ev){window.addEventListener(ev,function(){_dlTakeover=true;},{once:true,passive:true});});
+function deepLink(){
+  var h=location.hash;
+  if(!openHash())return;
+  var n=0;
+  var iv=setInterval(function(){
+    if(_dlTakeover||location.hash!==h||++n>3){clearInterval(iv);return;}
+    openHash();
+  },800);
+}
+deepLink();
 (function restoreURL(){
   var p,qq,tt,gg,bb,want,i;
   try{p=new URLSearchParams(location.search);}catch(_){return;}
