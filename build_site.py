@@ -277,7 +277,7 @@ def book_slug(b):
 
 genre_of = {b["book"]: b["genre"] for b in books}
 sections = []
-# recently updated shelf: the N books with the highest max card id (theses excluded:
+# recently ripped shelf: the N books with the highest max card id (theses excluded:
 # theses are ideas, not books). Rendered first, above the genre sections, and excluded
 # from their genre sections below so every card still renders exactly once.
 RECENT_N = ds.get("recent_first", 5)
@@ -288,7 +288,7 @@ recent_books = sorted([b for b in books if b["genre"] != "Thesis"],
 recent_names = set(b["book"] for b in recent_books)
 if recent_books:
     rcount = sum(1 for c in cards if c["book"] in recent_names)
-    sections.append('<h2 class="genre" data-genre="Recently updated" id="g-recently-updated">Recently updated <span class="gcount">%d cards · %d books</span></h2>'
+    sections.append('<h2 class="genre" data-genre="Recently ripped" id="g-recently-ripped">Recently ripped <span class="gcount">%d cards · %d books</span></h2>'
                     % (rcount, len(recent_books)))
     for b in recent_books:
         sections.append(book_block(b))
@@ -412,6 +412,10 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .print-title{display:none}
 .mast-sub{margin:var(--space-sm) 0 0;font-family:var(--font-mono);font-size:var(--fs-xs);font-weight:400;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-frame)}
 .mast-meta{margin:var(--space-2xs) 0 0;font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--ink-structure-frame)}
+.mast-inner{position:relative}
+.rip-request{position:absolute;top:var(--space-md);right:var(--page-gutter);font-family:var(--font-mono);font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-frame);border:1px solid var(--ink-frame);border-radius:999px;padding:.5em 1.1em;text-decoration:none;white-space:nowrap}
+.rip-request:hover{background:var(--ink-frame);color:var(--surface-frame)}
+@media (max-width:560px){.rip-request{font-size:11px;padding:.4em .8em}}
 /* ---------- frame: controls ---------- */
 .controls{position:sticky;top:0;z-index:20;background:var(--surface-frame);border-bottom:1px solid var(--line-frame);padding:var(--space-sm) 0}
 .controls .inner{max-width:var(--page-max);margin:0 auto;padding:0 var(--page-gutter);display:flex;gap:var(--space-xs);flex-wrap:wrap;align-items:center}
@@ -910,6 +914,7 @@ page = """<!DOCTYPE html>
 <p class="print-title">Idea Ripper \u2014 the idea-hunting library</p>
 <p class="mast-sub">the idea-hunting library</p>
 <p class="mast-meta">%d rips &middot; %d books &middot; %d theses &middot; curated %s</p>
+<a class="rip-request" href="mailto:billysnider@gmail.com?subject=Rip%%20request&body=Book%%20title%%20and%%20author%%3A%%0A%%0AWhy%%20it%%27s%%20worth%%20ripping%%3A">Request a rip</a>
 </div></header>
 <section id="intro">
 <p><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>

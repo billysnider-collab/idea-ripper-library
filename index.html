@@ -91,6 +91,10 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .print-title{display:none}
 .mast-sub{margin:var(--space-sm) 0 0;font-family:var(--font-mono);font-size:var(--fs-xs);font-weight:400;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-frame)}
 .mast-meta{margin:var(--space-2xs) 0 0;font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--ink-structure-frame)}
+.mast-inner{position:relative}
+.rip-request{position:absolute;top:var(--space-md);right:var(--page-gutter);font-family:var(--font-mono);font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-frame);border:1px solid var(--ink-frame);border-radius:999px;padding:.5em 1.1em;text-decoration:none;white-space:nowrap}
+.rip-request:hover{background:var(--ink-frame);color:var(--surface-frame)}
+@media (max-width:560px){.rip-request{font-size:11px;padding:.4em .8em}}
 /* ---------- frame: controls ---------- */
 .controls{position:sticky;top:0;z-index:20;background:var(--surface-frame);border-bottom:1px solid var(--line-frame);padding:var(--space-sm) 0}
 .controls .inner{max-width:var(--page-max);margin:0 auto;padding:0 var(--page-gutter);display:flex;gap:var(--space-xs);flex-wrap:wrap;align-items:center}
@@ -298,6 +302,7 @@ main{max-width:var(--page-max)}
 <p class="print-title">Idea Ripper — the idea-hunting library</p>
 <p class="mast-sub">the idea-hunting library</p>
 <p class="mast-meta">612 rips &middot; 69 books &middot; 60 theses &middot; curated 2026-09-26</p>
+<a class="rip-request" href="mailto:billysnider@gmail.com?subject=Rip%20request&body=Book%20title%20and%20author%3A%0A%0AWhy%20it%27s%20worth%20ripping%3A">Request a rip</a>
 </div></header>
 <section id="intro">
 <p><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>
@@ -489,7 +494,7 @@ main{max-width:var(--page-max)}
 <a class="bchip" href="#b-urban-green-spaces-and-its-impact-on-quality-of-life-a-case-in-chandrapur-mahi-gajbhiye" data-genre="Thesis" title="Urban Green Spaces and its Impact on Quality of Life: A Case in Chandrapur — Mahi Gajbhiye">Urban Green Spaces and its Impact on Quality of Life: A Case in Chandrapur — Mahi Gajbhiye</a>
 <a class="bchip" href="#b-a-multi-armed-bandit-approach-to-following-a-markov-chain-ezra-w-akin" data-genre="Thesis" title="A multi-armed bandit approach to following a Markov Chain — Ezra W. Akin">A multi-armed bandit approach to following a Markov Chain — Ezra W. Akin</a></span></nav>
 <main>
-<h2 class="genre" data-genre="Recently updated" id="g-recently-updated">Recently updated <span class="gcount">61 cards · 5 books</span></h2>
+<h2 class="genre" data-genre="Recently ripped" id="g-recently-ripped">Recently ripped <span class="gcount">61 cards · 5 books</span></h2>
 
 <section class="book collapsed" id="b-crime-and-punishment-fyodor-dostoevsky" data-book="Crime and Punishment — Fyodor Dostoevsky" data-genre="Literary Fiction">
 <h2 class="bh"><button type="button" class="bookhead" aria-expanded="false"><span class="chip" style="background:hsl(280,45%,55%)"></span><span class="bmain"><span class="btitle"><span class="bttext" title="Crime and Punishment — Fyodor Dostoevsky">Crime and Punishment</span> <span class="bcount">9 rips</span></span><span class="bauthor">Fyodor Dostoevsky</span><span class="bookline">Raskolnikov's airtight theory meets the body that cannot stand it: nine rips on ideology, guilt, and the person who answers both.</span><span class="bsamples">“Grand transgressive theories are symptoms, not philosophies” · “Petersburg as antagonist: the city produces the crime”</span></span><span class="bchev">▾</span></button></h2>
