@@ -957,6 +957,24 @@ books:
   - book
   - genre
   - bookline
+- key: the-taittiriya-brahmana
+  genre: Myth & Epic
+  bookline: 'Vedic cosmology: how reality gets made. Tapas, desire-to-form, name-and-form,
+    and the fleeing sacrifice - from a text with no complete English translation found
+    in the checked inventory.'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-hiranyakeshi-shrauta-sutra
+  genre: Myth & Epic
+  bookline: 'The Vedic ritual runbook: 3,000-year-old procedures for fire rites -
+    spill repairs, resurrection rites, absence protocols, declared desire. No complete
+    English translation found in the checked inventory.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1534,3 +1552,23 @@ card_order:
 - 579
 - 580
 - 581
+- 582
+- 583
+- 584
+- 585
+- 586
+- 587
+- 588
+- 589
+- 590
+- 591
+- 592
+- 593
+- 594
+- 595
+- 596
+- 597
+- 598
+- 599
+- 600
+- 601
