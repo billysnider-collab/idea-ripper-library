@@ -975,6 +975,15 @@ books:
   - book
   - genre
   - bookline
+- key: svanastavakavyam-jnanesvara-of-davuldena
+  genre: Myth & Epic
+  bookline: 'Buddhist Sanskrit praise-poem in 55 verses: a dog as the supreme model
+    of gratitude, and a sermon against ingratitude. No published English translation
+    - rendered from the DSBC Sanskrit e-text, authorship per the colophon.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1572,3 +1581,10 @@ card_order:
 - 599
 - 600
 - 601
+- 602
+- 603
+- 604
+- 605
+- 606
+- 607
+- 608
