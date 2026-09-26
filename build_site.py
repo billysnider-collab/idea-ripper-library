@@ -73,7 +73,7 @@ assert len(_ids) == len(set(_ids)) == len(cards), "card ids must be unique perma
 
 def book_block(b):
     gh = ghue[b["genre"]]
-    slug = slugify(b["book"])
+    slug = book_slug(b)
     bcards = [c for c in cards if c["book"] == b["book"]]
     _bt, _ba = b["book"].rsplit(" — ", 1) if " — " in b["book"] else (b["book"], "")
     _bauthor = '<span class="bauthor">%s</span>' % esc(_ba) if _ba else ""
@@ -270,6 +270,11 @@ import re
 def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
+
+def book_slug(b):
+    # per-book anchor override; falls back to slugified title (legacy behavior)
+    return b.get("anchor") or slugify(b["book"])
+
 genre_of = {b["book"]: b["genre"] for b in books}
 sections = []
 for g in genre_order:
@@ -302,7 +307,7 @@ def _maxid(b):
 scents = sorted(books, key=_maxid, reverse=True)[:12]
 chips = "\n".join(
     '<a class="bchip" href="#b-%s" data-genre="%s" title="%s">%s</a>'
-    % (slugify(b["book"]), esca(b["genre"]), esca(b["book"]), esc(b["book"]))
+    % (book_slug(b), esca(b["genre"]), esca(b["book"]), esc(b["book"]))
     for b in scents)
 
 genre_opts = "\n".join('<option value="%s">%s</option>' % (esca(g), esc(g)) for g in genre_order)

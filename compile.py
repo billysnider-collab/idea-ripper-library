@@ -94,7 +94,8 @@ def emit_card_block(fm, sections):
 
 def emit_book_file(book_fm, cards):
     lines = ["---"]
-    for k in ("book", "genre", "bookline"):
+    bkeys = ["book", "genre", "bookline"] + (["anchor"] if "anchor" in book_fm else [])
+    for k in bkeys:
         lines.append("%s: %s" % (k, jval(book_fm[k])))
     lines.append("---")
     lines.append("")
@@ -222,7 +223,9 @@ def run():
         fo = e.get("field_order") or ["book", "genre", "bookline"]
         bvals = {"book": book_fm["book"], "genre": book_fm["genre"],
                  "bookline": book_fm["bookline"]}
-        books_out.append({k: bvals[k] for k in fo})
+        if book_fm.get("anchor"):
+            bvals["anchor"] = book_fm["anchor"]
+        books_out.append({k: bvals[k] for k in fo if k in bvals})
     by_id = {}
     for key, (_, cards) in parsed.items():
         for fm, sections in cards:
