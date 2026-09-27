@@ -1104,7 +1104,7 @@ function stripPrefix(t,lab){return t.indexOf(lab)===0?t.slice(lab.length).trim()
 function bookAuthor(bk){var p=(bk||'').split(' \u2014 ');if(p.length<2)return{b:bk,a:''};var a=p.pop();return{b:p.join(' \u2014 '),a:a};}
 function openRip(id){
   var c=mainCard(id);if(!c)return false;
-  var b=c.closest('.book');if(b&&b.classList.contains('collapsed'))setBook(b,true);
+  var b=c.closest('.book');if(b&&b.classList.contains('collapsed')){setBook(b,true);accordionize(b);}
   c.classList.add('open');var h=c.querySelector('.cardhead');if(h)h.setAttribute('aria-expanded','true');
   if(b)syncXall(b);
   setTimeout(function(){c.scrollIntoView({behavior:RM?'auto':'smooth',block:'center'});},60);
@@ -1204,6 +1204,21 @@ page = """<!DOCTYPE html>
 <link rel="icon" type="image/svg+xml" href="brand/r-mark.svg"/>
 <link rel="icon" type="image/png" sizes="32x32" href="brand/r-mark-32.png"/>
 <link rel="apple-touch-icon" href="brand/apple-touch-icon.png"/>
+<meta name="description" content="a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism \u2014 the exact lines worth keeping, plus when to use them."/>
+<meta name="theme-color" content="#100C09"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Idea Ripper"/>
+<meta property="og:title" content="Idea Ripper \u2014 the idea-hunting library"/>
+<meta property="og:description" content="a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism \u2014 the exact lines worth keeping, plus when to use them."/>
+<meta property="og:url" content="https://idearipper.com/"/>
+<meta property="og:image" content="https://idearipper.com/brand/og-card.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Idea Ripper \u2014 a hunting library of ideas ripped by hand from books worth stealing from."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Idea Ripper \u2014 the idea-hunting library"/>
+<meta name="twitter:description" content="a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism \u2014 the exact lines worth keeping, plus when to use them."/>
+<meta name="twitter:image" content="https://idearipper.com/brand/og-card.png"/>
 <style>%s</style><noscript><style>.book.collapsed .cards,.fbook.collapsed .fbookbody{display:block!important}.cardbody{display:block!important}</style></noscript>
 </head>
 <body>
