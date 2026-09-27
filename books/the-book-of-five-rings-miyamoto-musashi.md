@@ -7,11 +7,12 @@ bookline: "Musashi's strategy classic ripped relationally against The Art of War
 --- card
 id: 656
 title: "Speed is not the Way — rhythm is"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "contradiction"
 source_locator: "Wind Book (ch. 4)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [478]
 ---
 ## Steal
 
@@ -28,11 +29,12 @@ Use when you're rushing to look productive, or when someone's 'fast' work keeps 
 --- card
 id: 657
 title: "The Void — a dimension Sun Tzu's system has no name for"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "contradiction"
 source_locator: "The Book of the Void (ch. 5)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [472]
 ---
 ## Steal
 
@@ -49,11 +51,12 @@ Use when strategy becomes a checklist of techniques and you've lost the empty, u
 --- card
 id: 658
 title: "The warrior's Way begins in accepting death — not avoiding it"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "contradiction"
 source_locator: "Ground Book (ch. 1)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [471]
 ---
 ## Steal
 
@@ -70,11 +73,12 @@ Use when fear of loss is making you timid — the source of hesitation is usuall
 --- card
 id: 659
 title: "Do not think dishonestly — self-deception, not enemy-deception, is the first threat"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "concept"
 source_locator: "Ground Book (ch. 1) / Wind Book (ch. 4)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [470]
 ---
 ## Steal
 
@@ -91,11 +95,12 @@ Use when assessing your own or a team's actual position — strip the self-flatt
 --- card
 id: 660
 title: "Victory over yourself comes before victory over the enemy"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "concept"
 source_locator: "Water Book (ch. 2)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [472]
 ---
 ## Steal
 
@@ -112,11 +117,12 @@ Use to re-prioritize: before attacking a hard problem, ask what about your own l
 --- card
 id: 661
 title: "Become the enemy — identification, not just knowledge"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "mechanism"
 source_locator: "Fire Book (ch. 3)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [472]
 ---
 ## Steal
 
@@ -133,11 +139,12 @@ Use in any contest (negotiation, market, rival) where you keep being surprised �
 --- card
 id: 662
 title: "Timing in the Void — a personal rhythm, not a strategic position"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "concept"
 source_locator: "Ground Book (ch. 1)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [478]
 ---
 ## Steal
 
@@ -154,11 +161,12 @@ Use when you're trying to time the market, the conversation, or the move as if i
 --- card
 id: 663
 title: "Perception over sight — the two-fold gaze"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "mechanism"
 source_locator: "Water Book (ch. 2)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [472]
 ---
 ## Steal
 
@@ -175,11 +183,12 @@ Use when you're drowning in surface data (the enemy's visible moves) — step ba
 --- card
 id: 664
 title: "Water is the master metaphor — formlessness as the shared secret"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "concept"
 source_locator: "Water Book (ch. 2)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [475]
 ---
 ## Steal
 
@@ -196,11 +205,12 @@ Use when you've built a fixed method, stance, or plan and it's gone rigid — re
 --- card
 id: 665
 title: "Injure the corners — attack weakness, not strength"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "mechanism"
 source_locator: "Fire Book (ch. 3)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [475, 476]
 ---
 ## Steal
 
@@ -217,11 +227,12 @@ Use when a problem looks monolithic and unassailable — stop pushing the center
 --- card
 id: 666
 title: "Do nothing which is of no use — the economy of the individual"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "concept"
 source_locator: "Ground Book (ch. 1)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [474]
 ---
 ## Steal
 
@@ -238,11 +249,12 @@ Use to audit a plan or a day: which actions are of no use, and what do they cost
 --- card
 id: 667
 title: "Mountain-Sea — never repeat; if he thinks mountain, strike as sea"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "mechanism"
 source_locator: "Fire Book (ch. 3)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [475]
 ---
 ## Steal
 
@@ -259,11 +271,12 @@ Use when a tactic that worked once stops working — the fix is rarely 'try it a
 --- card
 id: 668
 title: "One man, ten thousand — scaling by craft, not by organization"
-field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents", "related_ids"]
 type: "concept"
 source_locator: "Ground Book (ch. 1) / Fire Book (ch. 3)"
 ripped_at: "2026-09-27"
 intents: []
+related_ids: [476]
 ---
 ## Steal
 

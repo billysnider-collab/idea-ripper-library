@@ -8330,7 +8330,10 @@
    "id": 656,
    "source_locator": "Wind Book (ch. 4)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    478
+   ]
   },
   {
    "title": "The Void — a dimension Sun Tzu's system has no name for",
@@ -8342,7 +8345,10 @@
    "id": 657,
    "source_locator": "The Book of the Void (ch. 5)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    472
+   ]
   },
   {
    "title": "The warrior's Way begins in accepting death — not avoiding it",
@@ -8354,7 +8360,10 @@
    "id": 658,
    "source_locator": "Ground Book (ch. 1)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    471
+   ]
   },
   {
    "title": "Do not think dishonestly — self-deception, not enemy-deception, is the first threat",
@@ -8366,7 +8375,10 @@
    "id": 659,
    "source_locator": "Ground Book (ch. 1) / Wind Book (ch. 4)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    470
+   ]
   },
   {
    "title": "Victory over yourself comes before victory over the enemy",
@@ -8378,7 +8390,10 @@
    "id": 660,
    "source_locator": "Water Book (ch. 2)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    472
+   ]
   },
   {
    "title": "Become the enemy — identification, not just knowledge",
@@ -8390,7 +8405,10 @@
    "id": 661,
    "source_locator": "Fire Book (ch. 3)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    472
+   ]
   },
   {
    "title": "Timing in the Void — a personal rhythm, not a strategic position",
@@ -8402,7 +8420,10 @@
    "id": 662,
    "source_locator": "Ground Book (ch. 1)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    478
+   ]
   },
   {
    "title": "Perception over sight — the two-fold gaze",
@@ -8414,7 +8435,10 @@
    "id": 663,
    "source_locator": "Water Book (ch. 2)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    472
+   ]
   },
   {
    "title": "Water is the master metaphor — formlessness as the shared secret",
@@ -8426,7 +8450,10 @@
    "id": 664,
    "source_locator": "Water Book (ch. 2)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    475
+   ]
   },
   {
    "title": "Injure the corners — attack weakness, not strength",
@@ -8438,7 +8465,11 @@
    "id": 665,
    "source_locator": "Fire Book (ch. 3)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    475,
+    476
+   ]
   },
   {
    "title": "Do nothing which is of no use — the economy of the individual",
@@ -8450,7 +8481,10 @@
    "id": 666,
    "source_locator": "Ground Book (ch. 1)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    474
+   ]
   },
   {
    "title": "Mountain-Sea — never repeat; if he thinks mountain, strike as sea",
@@ -8462,7 +8496,10 @@
    "id": 667,
    "source_locator": "Fire Book (ch. 3)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    475
+   ]
   },
   {
    "title": "One man, ten thousand — scaling by craft, not by organization",
@@ -8474,7 +8511,10 @@
    "id": 668,
    "source_locator": "Ground Book (ch. 1) / Fire Book (ch. 3)",
    "ripped_at": "2026-09-27",
-   "intents": []
+   "intents": [],
+   "related_ids": [
+    476
+   ]
   },
   {
    "title": "The hunter is the alert man — universal attention",
