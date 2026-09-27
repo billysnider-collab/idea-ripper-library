@@ -70,6 +70,7 @@ for _g in genre_order:
 assert len(_ordered) == len(cards), "render walk missed cards"
 _ids = [c["id"] for c in cards]
 assert len(_ids) == len(set(_ids)) == len(cards), "card ids must be unique permanent ints"
+_byid = {c["id"]: c for c in cards}  # phase 5: related-rip title lookup
 
 def book_block(b):
     gh = ghue[b["genre"]]
@@ -100,6 +101,9 @@ def book_block(b):
             pv = pv[:90].rsplit(" ", 1)[0] + "\u2026"
         kicker_rip = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Ripped from</span></div>'
         kicker_use = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Use when</span></div>'
+        _rel = c.get("related_ids") or []
+        _rell = ['<a href="#c%d">%s</a>' % (_byid[r]["id"], esc(_byid[r]["title"])) for r in _rel if r in _byid]
+        relhtml = ('<p class="rel"><span class="rk">Related rips:</span> ' + " \u00b7 ".join(_rell) + "</p>") if _rell else "" 
         parts.append(
             '<article class="card%s" id="c%d" data-n="%d" '
             'data-book="%s" data-genre="%s" data-type="%s" data-status="%s" data-search="%s">'
@@ -113,14 +117,16 @@ def book_block(b):
             '<p class="why"><span class="k">Why it matters:</span> %s</p>'
             '%s'
             '<p class="uw">%s</p>'
+            '%s'
             '<div class="actions"><button type="button" data-copy="steal">Copy steal</button>'
             '<button type="button" data-copy="uw">Copy use-when</button>'
-            '<button type="button" data-copy="link">Copy link</button></div>'
+            '<button type="button" data-copy="link">Copy link</button>'
+            '<button type="button" data-save="%d" aria-pressed="false">Save</button></div>'
             '</div></article>'
             % (" open" if thesis_open else "", n_, n_, esca(c["book"]), esca(b["genre"]), esca(c["type"]), c.get("status", "keeper"), esca(search),
                "true" if thesis_open else "false",
                n_, esc(c["title"]), esc(pv), esca(c["type"]), esc(c["type"]),
-               kicker_rip, esc(c["steal"]), esc(c["why"]), kicker_use, esc(c["uw"])))
+               kicker_rip, esc(c["steal"]), esc(c["why"]), kicker_use, esc(c["uw"]), relhtml, n_))
     parts.append('</div></section>')
     return "\n".join(parts)
 
@@ -349,6 +355,8 @@ gindex = "\n".join(
     '<a class="gix" href="#g-%s" data-genre="%s" style="border-top-color:hsl(%d,45%%,55%%)"><span class="gdot" style="background:hsl(%d,45%%,55%%)"></span>%s <span class="gixc">%d</span></a>'
     % (slugify(g), esca(g), ghue[g], ghue[g], esc(g), _gcounts[g])
     for g in genre_order if _gcounts[g])
+# phase 5: saved-rips chip (count filled by JS)
+gindex = ('<a class="gix" id="savedchip" href="#saved" style="border-top-color:var(--accent-rust)"><span class="gdot" style="background:var(--accent-rust)"></span>\u2605 Saved (0)</a>\n' + gindex)
 # jump scents: the 12 most recently added books (highest max card id)
 def _maxid(b):
     return max(c["id"] for c in cards if c["book"] == b["book"])
@@ -671,6 +679,24 @@ main{max-width:var(--page-max)}
 .fbook:not(.collapsed) .fbcards{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-sm);align-items:start}
 .fbook:not(.collapsed) .fbcards .card{margin:0}
 }
+/* phase 5: saved shelf + related rips */
+.savedshelf{margin:var(--space-xl) 0}
+.savehead{font-family:var(--font-read);font-weight:600;font-size:var(--fs-xl);color:var(--ink-body);border-bottom:2px solid var(--accent-rust);padding-bottom:var(--space-2xs);margin:0 0 var(--space-sm)}
+.savenote{color:var(--ink-structure);font-size:var(--fs-sm);margin:var(--space-2xs) 0}
+.savedlist{display:grid;gap:var(--space-2xs);margin:var(--space-sm) 0}
+.sitem{display:flex;gap:var(--space-sm);align-items:baseline;flex-wrap:wrap;background:var(--surface-raised);border:1px solid var(--line-card);border-radius:var(--radius-md);padding:var(--space-2xs) var(--space-sm)}
+.sitem a{color:var(--link);font-weight:600;text-decoration:none}
+.sitem a:hover{text-decoration:underline}
+.sitem .smeta{color:var(--ink-structure);font-size:var(--fs-xs);font-family:var(--font-mono)}
+.savedactions{display:flex;gap:var(--space-sm);margin-top:var(--space-sm);flex-wrap:wrap}
+.savedactions button{font-family:var(--font-mono);font-size:var(--fs-sm);background:var(--surface-frame-raised);border:1px solid var(--line-frame);color:var(--ink-frame);border-radius:var(--radius-md);padding:var(--space-2xs) var(--space-md);min-height:44px;cursor:pointer}
+.savedactions button:hover:not(:disabled){border-color:var(--accent-rust);color:var(--accent-rust-hover)}
+.savedactions button:disabled{opacity:.4;cursor:default}
+.actions button[aria-pressed="true"]{color:var(--accent-rust);border-color:var(--accent-rust)}
+.rel{margin:var(--space-sm) 0 0;font-size:var(--fs-sm);color:var(--ink-structure)}
+.rel .rk{font-family:var(--font-mono);font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:.08em}
+.rel a{color:var(--link);text-decoration:none}
+.rel a:hover{text-decoration:underline}
 @media(max-width:700px){
 .bsamples{display:none}
 .controls input[type=search]{flex:1 1 100%}
@@ -693,7 +719,7 @@ main{max-width:var(--page-max)}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 /* ---------- print: no frame, no red, black on white ---------- */
 @media print{
-  .controls,.jumpchips,.gindex,#toast,.actions,.noresults button{display:none!important}
+  .controls,.jumpchips,.gindex,#toast,.actions,.savedactions,.noresults button{display:none!important}
   body{background:var(--print-paper);color:var(--print-ink)}
   header.masthead{background:var(--print-paper);border-bottom:2px solid var(--print-ink)}
   .mast-inner{padding:var(--space-sm) 0}
@@ -1068,6 +1094,91 @@ var restoredQ=q.value.trim()!=='';
 apply(restoredQ);
 openHash();
 updateCrumbs();
+/* phase 5: saved rips (localStorage), export, random rip, related/saved link opens */
+var SVKEY='idearipper.saved.v1';
+function getSaved(){try{var v=JSON.parse(localStorage.getItem(SVKEY)||'[]');if(!Array.isArray(v))return[];var out=[],seen={},i,id;for(i=0;i<v.length;i++){id=+v[i];if(id&&!seen[id]){seen[id]=1;out.push(id);}}return out;}catch(_){return[];}}
+function setSaved(a){try{localStorage.setItem(SVKEY,JSON.stringify(a));}catch(_){}}
+function mainCard(id){return document.querySelector('.card:not([data-fb])#c'+id);}
+function cleanTitle(t){return t.replace(/^\d+\s*/,'').trim();}
+function stripPrefix(t,lab){return t.indexOf(lab)===0?t.slice(lab.length).trim():t;}
+function bookAuthor(bk){var p=(bk||'').split(' \u2014 ');if(p.length<2)return{b:bk,a:''};var a=p.pop();return{b:p.join(' \u2014 '),a:a};}
+function openRip(id){
+  var c=mainCard(id);if(!c)return false;
+  var b=c.closest('.book');if(b&&b.classList.contains('collapsed'))setBook(b,true);
+  c.classList.add('open');var h=c.querySelector('.cardhead');if(h)h.setAttribute('aria-expanded','true');
+  if(b)syncXall(b);
+  setTimeout(function(){c.scrollIntoView({behavior:RM?'auto':'smooth',block:'center'});},60);
+  if(c.dataset.n)setHash('#c'+c.dataset.n);
+  return true;
+}
+function renderSaved(){
+  var s=getSaved(),list=document.getElementById('savedlist'),note=document.getElementById('savenote'),i,id,c,t,bk;
+  if(!list)return;
+  list.innerHTML='';
+  if(note)note.hidden=s.length>0;
+  for(i=0;i<s.length;i++){id=s[i];c=mainCard(id);if(!c)continue;
+    t=c.querySelector('.ctitle');bk=c.getAttribute('data-book')||'';
+    var d=document.createElement('div');d.className='sitem';
+    var a=document.createElement('a');a.href='#c'+id;a.textContent=cleanTitle(t?t.textContent:('Rip #'+id));
+    var m=document.createElement('span');m.className='smeta';m.textContent=bk+' \u00b7 '+(c.getAttribute('data-type')||'');
+    d.appendChild(a);d.appendChild(m);list.appendChild(d);}
+  var ex=document.getElementById('exportSaved');if(ex)ex.disabled=!s.length;
+  var sc=document.getElementById('savedcount');if(sc)sc.textContent=s.length;
+  var chip=document.getElementById('savedchip');if(chip)chip.textContent='\u2605 Saved ('+s.length+')';
+}
+function syncSaveButtons(){
+  var s=getSaved(),has={},i;for(i=0;i<s.length;i++)has[s[i]]=1;
+  document.querySelectorAll('[data-save]').forEach(function(b){
+    var on=!!has[+b.getAttribute('data-save')];
+    b.setAttribute('aria-pressed',on?'true':'false');
+    b.textContent=on?'Saved \u2713':'Save';
+  });
+}
+document.querySelectorAll('[data-save]').forEach(function(b){
+  b.addEventListener('click',function(e){
+    e.stopPropagation();
+    var id=+b.getAttribute('data-save'),s=getSaved(),i=s.indexOf(id);
+    if(i>=0){s.splice(i,1);toast('Removed from saved');}else{s.push(id);toast('Saved');}
+    setSaved(s);syncSaveButtons();renderSaved();
+  });
+});
+document.querySelectorAll('.rel a').forEach(function(a){
+  a.addEventListener('click',function(e){e.preventDefault();openRip(+a.getAttribute('href').slice(2));});
+});
+var _slist=document.getElementById('savedlist');
+if(_slist)_slist.addEventListener('click',function(e){
+  var a=e.target.closest('a');if(!a)return;e.preventDefault();openRip(+a.getAttribute('href').slice(2));
+});
+var _ex=document.getElementById('exportSaved');
+if(_ex)_ex.addEventListener('click',function(){
+  var s=getSaved();if(!s.length)return;
+  var out=['# Saved rips \u2014 Idea Ripper',''],i,id,c,t,st,wh,uw,ba;
+  for(i=0;i<s.length;i++){id=s[i];c=mainCard(id);if(!c)continue;
+    t=c.querySelector('.ctitle');st=c.querySelector('.steal');wh=c.querySelector('.why');uw=c.querySelector('.uw');
+    ba=bookAuthor(c.getAttribute('data-book'));
+    out.push('## '+cleanTitle(t?t.textContent:('Rip #'+id)));
+    out.push('_'+ba.b+(ba.a?' \u2014 '+ba.a:'')+'_ \u00b7 #c'+id);
+    out.push('');
+    if(st){out.push('**Steal:** '+st.textContent.trim());out.push('');}
+    if(wh){out.push('**Why it matters:** '+stripPrefix(wh.textContent.trim(),'Why it matters:'));out.push('');}
+    if(uw){out.push('**Use when:** '+stripPrefix(uw.textContent.trim(),'Use when:'));out.push('');}
+    out.push('---');out.push('');}
+  var blob=new Blob([out.join('\n')],{type:'text/markdown'});
+  var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='idea-ripper-saved.md';
+  document.body.appendChild(a);a.click();
+  setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},800);
+  toast('Exported '+s.length+' saved rips');
+});
+var _cs=document.getElementById('clearSaved');
+if(_cs)_cs.addEventListener('click',function(){setSaved([]);syncSaveButtons();renderSaved();toast('Saved rips cleared');});
+var _rr=document.getElementById('randomrip');
+if(_rr)_rr.addEventListener('click',function(){
+  var pool=[],i,cs=document.querySelectorAll('.card:not([data-fb]):not(.hidden)');
+  for(i=0;i<cs.length;i++)pool.push(cs[i]);
+  if(!pool.length){toast('No rips visible \u2014 clear search first');return;}
+  openRip(+pool[Math.floor(Math.random()*pool.length)].dataset.n);
+});
+syncSaveButtons();renderSaved();
 })();
 
 """
@@ -1125,6 +1236,7 @@ page = """<!DOCTYPE html>
 </details>
 <button type="button" id="expand">Expand all</button>
 <button type="button" id="collapse">Collapse all</button>
+<button type="button" id="randomrip">Random rip</button>
 <span class="count" id="count"></span><span id="countlive" class="sr-only" aria-live="polite"></span>
 </div></div>
 <nav class="jumpchips" id="jumpchips" aria-label="Jump to a genre or book"><span class="gindex">%s</span><span class="scents">%s</span></nav>
@@ -1133,6 +1245,12 @@ page = """<!DOCTYPE html>
 <div class="blist">
 %s
 </div></details>
+<section class="savedshelf" id="saved" aria-label="Saved rips">
+<h2 class="savehead">Saved rips <span class="gcount"><span id="savedcount">0</span> saved</span></h2>
+<p class="savenote" id="savenote">Nothing saved yet \u2014 tap <b>Save</b> on any rip and it will wait for you here.</p>
+<div class="savedlist" id="savedlist"></div>
+<div class="savedactions"><button type="button" id="exportSaved">Export saved</button><button type="button" id="clearSaved">Clear saved</button></div>
+</section>
 <nav class="crumbs" id="crumbs" aria-label="Breadcrumb"><a href="#" data-crumb="root">All books</a></nav>
 <main>
 %s
