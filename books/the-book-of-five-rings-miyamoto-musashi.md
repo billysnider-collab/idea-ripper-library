@@ -1,0 +1,278 @@
+---
+book: "The Book of Five Rings — Miyamoto Musashi"
+genre: "Nonfiction"
+bookline: "Musashi's strategy classic ripped relationally against The Art of War -- each maxim tagged agree, extend, or contradict."
+---
+
+--- card
+id: 656
+title: "Speed is not the Way — rhythm is"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "contradiction"
+source_locator: "Wind Book (ch. 4)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+Musashi: 'Speed is not part of the true Way of Strategy... the master of strategy does not appear fast.' Speed is a beginner's illusion — things only SEEM fast or slow depending on whether they're in rhythm. Mastery is rhythm, not haste. The person who looks fast is almost always out of time.
+
+## Why it matters
+
+The single cleanest contradiction in the whole comparison. Sun Tzu says 'rapidity is the essence of war.' Musashi says speed is not even part of the Way — it's a symptom of broken rhythm. Two masters of combat land on opposite verdicts about the same variable.
+
+## Use when
+
+Use when you're rushing to look productive, or when someone's 'fast' work keeps producing errors. Use to audit whether you're in rhythm or merely moving quickly.
+
+--- card
+id: 657
+title: "The Void — a dimension Sun Tzu's system has no name for"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "contradiction"
+source_locator: "The Book of the Void (ch. 5)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+'What is called the spirit of the void is where there is nothing... By knowing things that exist, you can know that which does not exist. That is the void.' The highest principle of Musashi's strategy is emptiness itself — a mind not fixed, not clouded, not presuming. It is not a technique among techniques; it is the ground from which all technique moves.
+
+## Why it matters
+
+This is the structural difference the user flagged. Sun Tzu's world is entirely concrete — terrain, numbers, spies, supply, fire. Musashi adds a metaphysical/spiritual term (the Zen 'void') that Sun Tzu's system simply has no slot for. Where Sun Tzu's ideal is perfect knowledge, Musashi's is perfect emptiness.
+
+## Use when
+
+Use when strategy becomes a checklist of techniques and you've lost the empty, undecided mind that actually reads the moment. Use to distinguish 'not knowing' (bewilderment) from the trained void.
+
+--- card
+id: 658
+title: "The warrior's Way begins in accepting death — not avoiding it"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "contradiction"
+source_locator: "Ground Book (ch. 1)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+'Generally speaking, the Way of the warrior is resolute acceptance of death.' Musashi founds strategy on the individual's willingness to die. It is the opposite of a cost-minimization: the warrior is defined by the death he has already accepted, and freedom of action flows from that acceptance.
+
+## Why it matters
+
+The deepest philosophical split. Sun Tzu's crown jewel is winning without fighting — 'to break the enemy's resistance without fighting' — i.e., avoid the cost of battle. Musashi's first move is to accept the ultimate cost, death, as the ground of the whole art.
+
+## Use when
+
+Use when fear of loss is making you timid — the source of hesitation is usually an un-accepted worst case. Use to contrast 'win without fighting' (systems, negotiation) with 'accept the worst and move' (personal stakes).
+
+--- card
+id: 659
+title: "Do not think dishonestly — self-deception, not enemy-deception, is the first threat"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "concept"
+source_locator: "Ground Book (ch. 1) / Wind Book (ch. 4)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+Musashi's first of nine precepts is 'Do not think dishonestly.' Sun Tzu's first principle is 'all warfare is based on deception.' Read together: Sun Tzu systematizes deceiving the enemy; Musashi adds the missing half — never deceive yourself. The first lie to root out is the one you tell yourself about your own position.
+
+## Why it matters
+
+This looks like a contradiction but is actually an extension on a different axis. Sun Tzu's deception is outward (mislead the enemy). Musashi's honesty is inward (don't flatter yourself, don't rationalize). A strategist who deceives the enemy brilliantly but lies to himself about his own strength is the exact failure both books, together, name.
+
+## Use when
+
+Use when assessing your own or a team's actual position — strip the self-flattery first, THEN plan. Use when someone's strategy is sophisticated about the enemy but naive about themselves.
+
+--- card
+id: 660
+title: "Victory over yourself comes before victory over the enemy"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "concept"
+source_locator: "Water Book (ch. 2)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+'Today is victory over yourself of yesterday; tomorrow is your victory over lesser men.' Musashi SEQUENCES the two knowledges Sun Tzu holds in parallel: first conquer yesterday's you, then the enemy. Self-mastery is not one item on a checklist next to knowing the enemy — it is the first, prerequisite victory.
+
+## Why it matters
+
+Sun Tzu's famous formula is 'know the enemy and know yourself' — a conjunction, self and enemy side by side. Musashi reorders it into a sequence: self first, enemy second, and frames it as daily competition against your own past self. It's the same insight with a different center of gravity — the individual's craft, not the general's intelligence.
+
+## Use when
+
+Use to re-prioritize: before attacking a hard problem, ask what about your own last attempt was the real obstacle. Use when 'know thyself' is treated as optional alongside 'know the market' — Musashi says it comes first.
+
+--- card
+id: 661
+title: "Become the enemy — identification, not just knowledge"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "mechanism"
+source_locator: "Fire Book (ch. 3)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+'To become the enemy means to think yourself in the enemy's position.' Musashi goes further than Sun Tzu's 'know the enemy': he says BECOME the enemy — feel the world from inside his situation. 'He who is shut inside is a pheasant. He who enters to arrest is a hawk.' The trap looks like a fortress from inside and a cage from outside; adopt the enemy's eye and the advantage appears.
+
+## Why it matters
+
+'Know the enemy' is external (intelligence, spies, reading signs). 'Become the enemy' is internal — a discipline of identifying with the opponent's position, constraints, and fears. Musashi's hawk/pheasant example shows the payoff: the same situation reads completely differently depending on whose eyes you use.
+
+## Use when
+
+Use in any contest (negotiation, market, rival) where you keep being surprised — sit in the enemy's seat and read the board with his constraints. Use to counter fear of an opponent you've inflated into a fortress.
+
+--- card
+id: 662
+title: "Timing in the Void — a personal rhythm, not a strategic position"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "concept"
+source_locator: "Ground Book (ch. 1)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+'There is timing in everything. Timing in strategy cannot be mastered without a great deal of practice.' Musashi's timing is an embodied rhythm you train until it lives in the body — 'the timing in the Void' — not a position you occupy. You win by knowing the enemy's timing and using a timing he does not expect.
+
+## Why it matters
+
+Sun Tzu's timing is positional: arrive first, attack the unprepared, be 'first in the field.' Musashi's is a cultivated inner rhythm — 'there is timing in the whole life of the warrior, in his thriving and declining.' Sun Tzu seizes the moment; Musashi trains himself to BECOME the moment.
+
+## Use when
+
+Use when you're trying to time the market, the conversation, or the move as if it were a position to occupy — Musashi says timing is a skill you train, not a spot you find.
+
+--- card
+id: 663
+title: "Perception over sight — the two-fold gaze"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "mechanism"
+source_locator: "Water Book (ch. 2)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+'The gaze should be large and broad. This is the twofold gaze: Perception and Sight. Perception is strong and sight weak.' See distant things as if close, and take a distanced view of close things. The trained eye reads essence (spirit, intention) rather than surface detail — and that is the instrument of strategy.
+
+## Why it matters
+
+Sun Tzu outsources knowledge to spies and reconnaissance — foreknowledge gathered from outside. Musashi internalizes it as the individual's twofold gaze: perception (strong, reads spirit) over sight (weak, reads surface). Same goal — knowing the enemy — opposite instrument: the spy network vs the trained eye.
+
+## Use when
+
+Use when you're drowning in surface data (the enemy's visible moves) — step back to the distanced view and read the spirit behind them. Use to distinguish 'watching details' from 'seeing intention.'
+
+--- card
+id: 664
+title: "Water is the master metaphor — formlessness as the shared secret"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "concept"
+source_locator: "Water Book (ch. 2)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+'I dislike fixedness in both long swords and hands. Fixedness means a dead hand. Pliability is a living hand.' Musashi names his whole second book the Water Book — 'water adopts the shape of its receptacle.' Sun Tzu says the same thing about armies: 'water retains no constant shape.' Two masters, one metaphor.
+
+## Why it matters
+
+The most striking agreement in the whole comparison. Both independently reach for WATER as the image of perfect adaptability — Sun Tzu for an army's dispositions ('just as water retains no constant shape, so in warfare there are no constant conditions'), Musashi for a swordsman's body. Formlessness is the shared core, arrived at from opposite scales.
+
+## Use when
+
+Use when you've built a fixed method, stance, or plan and it's gone rigid — return to water: keep the intent, release the fixed form. Use to notice when 'discipline' has hardened into a dead hand.
+
+--- card
+id: 665
+title: "Injure the corners — attack weakness, not strength"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "mechanism"
+source_locator: "Fire Book (ch. 3)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+It is difficult to move strong things by pushing directly, so you should injure the corners.' Don't strike the enemy's strength head-on; strike the corners — the weak points — and the whole structure falls. 'If the corners are overthrown, the spirit of the whole body will be overthrown.
+
+## Why it matters
+
+A clean agreement with Sun Tzu's 'attack him where he is unprepared' and 'attack places which are undefended.' Both see that a strong whole is moved through its weak parts, never through its strong center. Musashi states it for the body; Sun Tzu for the battlefield.
+
+## Use when
+
+Use when a problem looks monolithic and unassailable — stop pushing the center, find the corners (the assumptions, the dependencies, the edge cases) and break those first.
+
+--- card
+id: 666
+title: "Do nothing which is of no use — the economy of the individual"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "concept"
+source_locator: "Ground Book (ch. 1)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+Musashi's ninth precept: 'Do nothing which is of no use.' The individual's version of Sun Tzu's cost-awareness: strip every action that doesn't serve the fight. Economy is not stinginess — it is the discipline of keeping the spirit uncluttered and the effort undivided.
+
+## Why it matters
+
+Sun Tzu's ch. 2 is a sustained argument against waste — 'there is no instance of a country having benefited from prolonged warfare,' forage the enemy, use captured chariots. Musashi compresses the same principle into one line for one person. The agree shows economy scales from the state down to the single swordsman.
+
+## Use when
+
+Use to audit a plan or a day: which actions are of no use, and what do they cost in attention even when they cost nothing in money?
+
+--- card
+id: 667
+title: "Mountain-Sea — never repeat; if he thinks mountain, strike as sea"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "mechanism"
+source_locator: "Fire Book (ch. 3)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+'The mountain-sea spirit means that it is bad to repeat the same thing several times when fighting the enemy... If the enemy thinks of the mountains, attack like the sea; and if he thinks of the sea, attack like the mountains.' A failed approach must not be retried unchanged; meet the enemy's expectation with its opposite.
+
+## Why it matters
+
+Agrees with Sun Tzu's doctrine of variation: 'in battle there are not more than two methods — the direct and the indirect — yet these two in combination give rise to an endless series.' Finite elements, infinite combination, and a refusal to repeat a move the enemy has already read.
+
+## Use when
+
+Use when a tactic that worked once stops working — the fix is rarely 'try it again harder,' it's 'do the opposite of what the enemy now expects.'
+
+--- card
+id: 668
+title: "One man, ten thousand — scaling by craft, not by organization"
+field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator", "ripped_at", "intents"]
+type: "concept"
+source_locator: "Ground Book (ch. 1) / Fire Book (ch. 3)"
+ripped_at: "2026-09-27"
+intents: []
+---
+## Steal
+
+'The spirit of defeating a man is the same for ten million men.' Musashi's scaling claim: 'one man can beat ten, so a thousand men can beat ten thousand' — and the way to reach ten thousand is to 'become a master of strategy by training alone with a sword.' The individual's craft is the seed of the army's victory.
+
+## Why it matters
+
+Sun Tzu states the same isomorphism — 'the control of a large force is the same principle as the control of a few men: it is merely a question of dividing up their numbers.' But Sun Tzu scales by ORGANIZATION (dividing numbers, combined energy); Musashi scales by CRAFT (train alone until you understand ten thousand). Same map, opposite root.
+
+## Use when
+
+Use when you think you need scale (team, capital, army) before you can win — Musashi says master the single unit and the scale follows; Sun Tzu says organize the scale. The two together are the full answer.

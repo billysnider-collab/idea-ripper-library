@@ -1039,6 +1039,55 @@ books:
   - book
   - genre
   - bookline
+- key: the-cloud-of-unknowing-anonymous
+  genre: Myth & Epic
+  bookline: 14th-century contemplative manual -- practical attention instructions
+    ('lift up your heart,' 'fasten one short word'), de-Christianized into focus techniques.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: structure-of-scientific-revolutions-thomas-kuhn
+  genre: Nonfiction
+  bookline: Thomas Kuhn's account of how science actually changes -- paradigm, normal
+    science, anomaly, crisis -- each mechanism with a deliberately non-scientific
+    'use when.'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: bullshit-jobs-david-graeber
+  genre: Nonfiction
+  bookline: David Graeber's taxonomy of pointless work -- flunkies, goons, duct tapers,
+    box tickers, taskmasters -- plus the core definition.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-book-of-five-rings-miyamoto-musashi
+  genre: Nonfiction
+  bookline: Musashi's strategy classic ripped relationally against The Art of War
+    -- each maxim tagged agree, extend, or contradict.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: meditations-on-hunting-jose-ortega-y-gasset
+  genre: Nonfiction
+  bookline: Ortega y Gasset's hunting philosophy inverted -- every hunting claim turned
+    into an attention and presence claim.
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-denial-of-death-ernest-becker
+  genre: Nonfiction
+  bookline: Ernest Becker's terror-management theory as diagnostic tests -- how to
+    tell ambition, romance, loyalty, and disgust are death-denial in disguise.
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1655,3 +1704,69 @@ card_order:
 - 627
 - 628
 - 629
+- 630
+- 631
+- 632
+- 633
+- 634
+- 635
+- 636
+- 637
+- 638
+- 639
+- 640
+- 641
+- 642
+- 643
+- 644
+- 645
+- 646
+- 647
+- 648
+- 649
+- 650
+- 651
+- 652
+- 653
+- 654
+- 655
+- 656
+- 657
+- 658
+- 659
+- 660
+- 661
+- 662
+- 663
+- 664
+- 665
+- 666
+- 667
+- 668
+- 669
+- 670
+- 671
+- 672
+- 673
+- 674
+- 675
+- 676
+- 677
+- 678
+- 679
+- 680
+- 681
+- 682
+- 683
+- 684
+- 685
+- 686
+- 687
+- 688
+- 689
+- 690
+- 691
+- 692
+- 693
+- 694
+- 695
