@@ -658,6 +658,36 @@
    "book": "Crime and Punishment — Fyodor Dostoevsky",
    "genre": "Literary Fiction",
    "bookline": "The 'extraordinary man' theory as self-destruction: six interlocked rips on the rationalization that destroys its author. Built on the public-domain Garnett translation."
+  },
+  {
+   "book": "Virtual military markets — Angela J. Burth",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2005. Full text: https://archive.org/details/virtualmilitarym109452000"
+  },
+  {
+   "book": "Economic preparation of the environment: A selective empirical analysis of Chinese investment in the Philippines — Tanner N. Fleck and Jonathan G. Wissler",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/DTIC_AD1046364"
+  },
+  {
+   "book": "The Learning Curve: MACV's Grasp of Intelligence, PSYOP, and Their Coordination, 1965-1971 — Andrew D. Whiskeyman",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Air University, 2015. Full text: https://archive.org/details/DTIC_AD1015736"
+  },
+  {
+   "book": "Extended stay: Factors contributing to success or failure when African presidents attempt to amend constitutions to hold on to power — Brent H. Oglesby",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/extendedstayfact1094555510"
+  },
+  {
+   "book": "Ancilla Assisted Quantum Information Processing — Abhishek Shukla",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Indian Institute of Science Education and Research Pune, 2016. Full text: https://archive.org/details/arxiv-1601.00234"
+  },
+  {
+   "book": "Verifying the Representation of Tropical Easterly Waves in Community Climate Model Version 4 — Wesley J. Davis",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2019. Full text: https://archive.org/details/verifyingtherepr1094564132"
   }
  ],
  "cards": [
@@ -7893,6 +7923,60 @@
    "id": 623,
    "source_locator": "Part V, ch 4; Part III, ch 6",
    "ripped_at": "2026-09-27"
+  },
+  {
+   "title": "Virtual military markets",
+   "book": "Virtual military markets — Angela J. Burth",
+   "type": "argument",
+   "steal": "The Pentagon should run an internal \"eBay-style\" market for command, control, communications and collaboration — intel and operational tasks posted, bid on, and priced by cost and performance — to fix the shortfalls in C4 systems flagged by the Defense Science Board, the Office of Force Transformation, and the Command and Control Research Program; the thesis builds a testable model and walks through an intelligence use case with testable hypotheses.",
+   "why": "It reframes intelligence production as a market-design problem — price signals and competition instead of more bureaucracy — an idea now living in prediction markets and AI-era information operations.",
+   "uw": "Markets are coordination machines — put bidding and pricing on any system where information gets hoarded, and hoarding gets priced out.",
+   "id": 624
+  },
+  {
+   "title": "Economic preparation of the environment: A selective empirical analysis of Chinese investment in the Philippines",
+   "book": "Economic preparation of the environment: A selective empirical analysis of Chinese investment in the Philippines — Tanner N. Fleck and Jonathan G. Wissler",
+   "type": "argument",
+   "steal": "China has used foreign direct investment and development aid in the Philippines as economic statecraft aimed at countering U.S. presence and influence in the Asia-Pacific; the thesis tests this by applying geospatial, link, and social-network analysis to a dataset of Chinese investments in the Philippines from 2006 to 2016.",
+   "why": "It turns \"economic statecraft\" from a buzzword into a measurable claim — investment flows, mapped as networks, either show strategic design or they don't.",
+   "uw": "Money leaves a map — run investment flows through network analysis and grand strategy stops being a theory and becomes a diagram.",
+   "id": 625
+  },
+  {
+   "title": "The Learning Curve: MACV's Grasp of Intelligence, PSYOP, and Their Coordination, 1965-1971",
+   "book": "The Learning Curve: MACV's Grasp of Intelligence, PSYOP, and Their Coordination, 1965-1971 — Andrew D. Whiskeyman",
+   "type": "argument",
+   "steal": "Even while losing the Vietnam War, MACV demonstrated measurable learning-organization traits in how it coordinated military intelligence and psychological operations across three phases (1965–67 buildup, 1968–69 Tet/peak, 1970–71 Vietnamization) — judged by refining Harvard's David Garvin's learning criteria into a scored scale and applying it to MACV records from the National Archives and the Army Heritage Education Center.",
+   "why": "It separates adaptation from victory — an organization can be learning and still lose, which is the question facing every military in an information fight today.",
+   "uw": "Losing organizations can still learn — judge adaptation by process, not by the final scoreboard.",
+   "id": 626
+  },
+  {
+   "title": "Extended stay: Factors contributing to success or failure when African presidents attempt to amend constitutions to hold on to power",
+   "book": "Extended stay: Factors contributing to success or failure when African presidents attempt to amend constitutions to hold on to power — Brent H. Oglesby",
+   "type": "argument",
+   "steal": "African presidents' bids to extend their rule by amending constitutions succeed or fail on the strength of civil-society opposition — e.g., Burkina Faso's Blaise Compaoré was blocked in 2014 because pro-democracy groups (Balai Citoyen and others) mobilized urban youth with civic education on term limits, shifting the balance of social opposition from trade unions to the pro-democracy movement.",
+   "why": "It's the mechanism behind every term-limit showdown — constitutions don't defend themselves; organized, educated citizens do.",
+   "uw": "Term limits survive only where someone defends them — civic education aimed at newly urban youth turned constitutional clauses into street power.",
+   "id": 627
+  },
+  {
+   "title": "Ancilla Assisted Quantum Information Processing",
+   "book": "Ancilla Assisted Quantum Information Processing — Abhishek Shukla",
+   "type": "argument",
+   "steal": "Extra \"ancilla\" qubits can be exploited to completely characterize a general quantum state — and even general quantum dynamics — in a single measurement (ancilla-assisted quantum state tomography), drastically reducing the number of independent measurements versus standard tomography; also enables the noninvasive quantum measurements needed for quantum-physics experiments. Demonstrated experimentally in nuclear magnetic resonance (NMR) systems.",
+   "why": "Quantum computers are only useful if you can verify what they're doing — one-shot state characterization attacks the calibration bottleneck behind qubit-scaling claims.",
+   "uw": "Spare capacity is a tool — add well-placed auxiliary resources and a hard measurement problem collapses into one shot.",
+   "id": 628
+  },
+  {
+   "title": "Verifying the Representation of Tropical Easterly Waves in Community Climate Model Version 4",
+   "book": "Verifying the Representation of Tropical Easterly Waves in Community Climate Model Version 4 — Wesley J. Davis",
+   "type": "argument",
+   "steal": "The Community Climate System Model version 4 (CCSM4) simulates African easterly waves at realistic frequencies versus reanalysis data (1979–2005), as measured by an algorithm detecting 5-knot northerly-to-southerly meridional wind shifts over two days at 700 hPa in the 7–15°N, 20°W–25°W box.",
+   "why": "African easterly waves seed Atlantic hurricanes — if the model can't reproduce them at realistic rates, its cyclone forecasts aren't worth much; it can, which is a concrete credibility data point for the model.",
+   "uw": "Trust, but verify the weather machine — a model is only as good as its ability to reproduce the phenomena you can already observe.",
+   "id": 629
   }
  ]
 }
