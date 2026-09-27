@@ -87,7 +87,7 @@ def book_block(b):
         '%s'
         '<span class="bookline">%s</span>'
         '<span class="bsamples">%s</span></span>'
-        '<span class="bchev">\u25be</span></button></h2>'
+        '<span class="bchev">\u25be</span></button><button type="button" class="xall" aria-expanded="false" aria-label="Expand or collapse all rips in this book">Expand all</button></h2>'
         % (gh, esca(b["book"]), esc(_bt), len(bcards), "" if len(bcards) == 1 else "s",
            _bauthor, esc(b["bookline"]), esc(samples)))
     parts.append('<div class="cards">')
@@ -557,6 +557,10 @@ button::-moz-focus-inner{border:0;padding:0}
 .book.collapsed .bchev{transform:rotate(-90deg)}
 .book .cards{margin-top:var(--space-xs)}
 .book.collapsed .cards{display:none}
+.bh{display:flex;align-items:center;gap:var(--space-sm)}
+.bh .bookhead{flex:1;min-width:0;width:auto}
+.xall{flex:none;font-family:var(--font-mono);font-size:.75rem;line-height:1;color:var(--ink-structure);background:transparent;border:1px solid var(--line-structure);border-radius:var(--radius-sm);padding:0 var(--space-sm);min-height:44px;cursor:pointer;white-space:nowrap}
+.xall:hover{color:var(--ink-body);border-color:var(--ink-body)}
 /* ---------- cards (repainted for paper, option A) ---------- */
 .card{background:var(--surface-paper);border:1px solid var(--line-card);border-left:3px solid var(--accent-mechanism-line);border-radius:var(--radius-lg);padding:var(--space-sm) var(--space-md);margin:var(--space-xs) 0;position:relative}
 .cardhead{display:flex;align-items:baseline;gap:var(--space-sm)}
@@ -660,7 +664,7 @@ main{max-width:var(--page-max)}
   #intro strong{color:var(--print-ink)}
   .genre{color:var(--print-ink);border-bottom:2px solid var(--print-ink)}
   .gcount{color:var(--print-ink)}
-  .chip,.bchev,.pv,.tcount{display:none!important}
+  .chip,.bchev,.pv,.tcount,.xall{display:none!important}
   .bookhead,.fbookhead,.cardhead{cursor:default;color:var(--print-ink)}
   .bh,.ch,.btitle{font-weight:700;color:var(--print-ink)}
   .btitle .bcount,.bookline,.bsamples{color:var(--print-ink)}
@@ -763,6 +767,7 @@ function apply(fromInput){
       else{b.classList.toggle('collapsed',!manual[b.id]);}
       var hd=b.querySelector('.bookhead');
       if(hd)hd.setAttribute('aria-expanded',b.classList.contains('collapsed')?'false':'true');
+      syncXall(b);
     }
   });
   /* full-book deep dives stand alone: the rip hunt box hides the shelf */
@@ -884,6 +889,28 @@ document.querySelectorAll('.cardhead').forEach(function(h){
 document.querySelectorAll('.bookhead').forEach(function(h){
   function t(){var b=h.closest('section');setBook(b,b.classList.contains('collapsed'));}
   h.addEventListener('click',t);
+});
+function syncXall(b){
+  var x=b.querySelector('.xall');if(!x)return;
+  var cards=b.querySelectorAll('.card:not(.hidden)'),anyClosed=false,i;
+  for(i=0;i<cards.length;i++)if(!cards[i].classList.contains('open')){anyClosed=true;break;}
+  x.setAttribute('aria-expanded',anyClosed?'false':'true');
+  x.textContent=anyClosed?'Expand all':'Collapse all';
+}
+document.querySelectorAll('.xall').forEach(function(x){
+  x.addEventListener('click',function(e){
+    e.stopPropagation();
+    var b=x.closest('section.book');if(!b)return;
+    if(b.classList.contains('collapsed'))setBook(b,true);
+    var cards=b.querySelectorAll('.card:not(.hidden)'),anyClosed=false,i;
+    for(i=0;i<cards.length;i++)if(!cards[i].classList.contains('open')){anyClosed=true;break;}
+    for(i=0;i<cards.length;i++){
+      cards[i].classList.toggle('open',anyClosed);
+      var h=cards[i].querySelector('.cardhead');
+      if(h)h.setAttribute('aria-expanded',anyClosed?'true':'false');
+    }
+    syncXall(b);
+  });
 });
 /* full-book shelf: own toggle, outside rip expand/collapse-all */
 document.querySelectorAll('.fbookhead').forEach(function(h){
