@@ -1409,6 +1409,7 @@ page = """<!DOCTYPE html>
 <footer><p class="fmeta">Last curated %s &middot; %d books &middot; %d theses &middot; %d rips%s &middot; ripped with the Idea Ripper pipeline</p></footer>
 <script>%s</script>
 <div id="toast" role="status"></div>
+<script>try{if(!sessionStorage.getItem("ir_c")){sessionStorage.setItem("ir_c","1");fetch("https://countapi.mileshilliard.com/api/v1/hit/idearipper-com",{mode:"no-cors",keepalive:true}).catch(function(){})}}catch(e){}</script>
 </body>
 </html>""" % (CSS, WORDMARK_SVG, n, n_books, n_theses, curated, fb_intro, genre_opts, book_opts, type_checks, gindex, chips, n_btotal, blist,
               "\n\n".join(sections), curated_long, n_books, n_theses, n, fb_footer, JS)
