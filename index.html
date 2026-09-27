@@ -136,11 +136,32 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .jumpchips a{flex:none;max-width:var(--chip-max);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--surface-frame-raised);border:1px solid var(--line-frame);color:var(--ink-frame);border-radius:var(--radius-pill);padding:var(--space-2xs) var(--space-sm);font-size:var(--fs-xs);font-family:var(--font-mono);cursor:pointer;text-decoration:none}
 .jumpchips a:hover{border-color:var(--accent-rip)}
 .jumpchips{align-items:center}
-.gindex{flex:none;display:flex;flex-wrap:wrap;gap:var(--space-3xs) var(--space-sm);align-items:center;padding:var(--space-3xs) var(--space-sm) var(--space-3xs) 0;border-right:1px solid var(--line-frame);margin-right:var(--space-2xs)}
-.gindex a{flex:none;max-width:none;background:none;border:0;border-radius:0;padding:0;font-family:var(--font-mono);font-size:.75rem;color:var(--ink-structure-frame);white-space:nowrap}
-.gindex a:hover{color:var(--ink-frame);border-color:transparent}
-.gindex .gixc{font-variant-numeric:tabular-nums}
+/* phase 2: genre tiles */
+.gindex{flex:none;display:flex;flex-wrap:wrap;gap:var(--space-2xs);align-items:stretch;padding:var(--space-3xs) var(--space-sm) var(--space-3xs) 0;border-right:1px solid var(--line-frame);margin-right:var(--space-2xs)}
+.gix{flex:none;display:flex;align-items:center;gap:var(--space-2xs);background:var(--surface-frame-raised);border:1px solid var(--line-frame);color:var(--ink-frame);border-radius:var(--radius-md);padding:var(--space-2xs) var(--space-sm);font-family:var(--font-mono);font-size:var(--fs-sm);white-space:nowrap;min-height:44px;text-decoration:none}
+.gix:hover{border-color:var(--accent-rip)}
+.gix .gdot{width:.7em;height:.7em;border-radius:50%;flex:none}
+.gix .gixc{color:var(--ink-structure-frame);font-variant-numeric:tabular-nums}
 .scents{flex:1;min-width:0;display:flex;gap:var(--space-2xs);overflow-x:auto;scrollbar-width:thin;padding:var(--space-3xs) 0}
+/* ---------- phase 2: browse-all-books + crumbs ---------- */
+.bookbrowser{max-width:var(--page-max);margin:0 auto;padding:var(--space-xs) var(--page-gutter) 0}
+.bookbrowser summary{cursor:pointer;font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--ink-body);padding:var(--space-2xs) 0;list-style:none;min-height:44px;display:flex;align-items:center}
+.bookbrowser summary::-webkit-details-marker{display:none}
+.bookbrowser summary::before{content:"▸";color:var(--accent-rip);margin-right:var(--space-2xs)}
+.bookbrowser[open] summary::before{content:"▾"}
+.bookbrowser .btotal{color:var(--ink-structure)}
+.blist-filter{width:100%;max-width:var(--measure);margin:var(--space-2xs) 0 var(--space-xs);padding:var(--space-2xs) var(--space-sm);font-family:var(--font-mono);font-size:var(--fs-sm);border:1px solid var(--line-card);border-radius:var(--radius-md);background:var(--surface-paper);color:var(--ink-body)}
+.blist{display:grid;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));gap:var(--space-3xs) var(--space-sm);padding-bottom:var(--space-md)}
+.blist-item{display:flex;justify-content:space-between;align-items:center;gap:var(--space-sm);padding:var(--space-2xs) var(--space-xs);border-radius:var(--radius-sm);text-decoration:none;color:var(--ink-body);font-size:var(--fs-sm);min-height:44px}
+.blist-item:hover{background:var(--surface-frame-raised);color:var(--ink-frame)}
+.blist-item:hover .bc{color:var(--ink-frame)}
+.blist-item .bt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.blist-item .bc{flex:none;font-family:var(--font-mono);font-size:var(--fs-xs);color:var(--ink-structure)}
+.crumbs{max-width:var(--page-max);margin:0 auto;padding:var(--space-xs) var(--page-gutter) 0;font-family:var(--font-mono);font-size:var(--fs-xs);color:var(--ink-structure);display:flex;align-items:center;flex-wrap:wrap;gap:var(--space-2xs)}
+.crumbs a{color:var(--link);text-decoration:none}
+.crumbs a:hover{text-decoration:underline}
+.csep{color:var(--ink-structure)}
+.ccur{color:var(--ink-body)}
 /* ---------- frame: footer ---------- */
 footer{background:var(--surface-frame);color:var(--ink-frame);font-family:var(--font-mono);font-size:var(--fs-sm);padding:var(--space-xl) var(--page-gutter);border-top:3px solid var(--accent-rip);text-align:center}
 footer .fmeta{margin:0;color:var(--ink-structure-frame)}
@@ -335,7 +356,7 @@ main{max-width:var(--page-max)}
 <option value="Crime &amp; Mystery">Crime &amp; Mystery</option>
 <option value="Literary Fiction">Literary Fiction</option>
 <option value="Thesis">Thesis</option></select>
-<select id="fbook" aria-label="Filter by book"><option value="">All books</option>
+<select id="fbook" hidden aria-hidden="true" tabindex="-1" aria-label="Filter by book"><option value="">All books</option>
 <option value="Shinto: The Ancient Religion of Japan — William George Aston">Shinto: The Ancient Religion of Japan — William George Aston</option>
 <option value="Meditations — Marcus Aurelius">Meditations — Marcus Aurelius</option>
 <option value="The Importance of Living — Lin Yutang">The Importance of Living — Lin Yutang</option>
@@ -491,15 +512,15 @@ main{max-width:var(--page-max)}
 <button type="button" id="collapse">Collapse all</button>
 <span class="count" id="count"></span><span id="countlive" class="sr-only" aria-live="polite"></span>
 </div></div>
-<nav class="jumpchips" id="jumpchips" aria-label="Jump to a genre or book"><span class="gindex"><a class="gix" href="#g-nonfiction" data-genre="Nonfiction">Nonfiction · <span class="gixc">313</span></a>
-<a class="gix" href="#g-science-fiction" data-genre="Science Fiction">Science Fiction · <span class="gixc">59</span></a>
-<a class="gix" href="#g-fantasy" data-genre="Fantasy">Fantasy · <span class="gixc">10</span></a>
-<a class="gix" href="#g-myth-epic" data-genre="Myth &amp; Epic">Myth &amp; Epic · <span class="gixc">37</span></a>
-<a class="gix" href="#g-hermetica" data-genre="Hermetica">Hermetica · <span class="gixc">65</span></a>
-<a class="gix" href="#g-horror-weird" data-genre="Horror &amp; Weird">Horror &amp; Weird · <span class="gixc">5</span></a>
-<a class="gix" href="#g-crime-mystery" data-genre="Crime &amp; Mystery">Crime &amp; Mystery · <span class="gixc">7</span></a>
-<a class="gix" href="#g-literary-fiction" data-genre="Literary Fiction">Literary Fiction · <span class="gixc">53</span></a>
-<a class="gix" href="#g-thesis" data-genre="Thesis">Thesis · <span class="gixc">66</span></a></span><span class="scents"><a class="bchip" href="#b-verifying-the-representation-of-tropical-easterly-waves-in-community-climate-model-version-4-wesley-j-davis" data-genre="Thesis" title="Verifying the Representation of Tropical Easterly Waves in Community Climate Model Version 4 — Wesley J. Davis">Verifying the Representation of Tropical Easterly Waves in Community Climate Model Version 4 — Wesley J. Davis</a>
+<nav class="jumpchips" id="jumpchips" aria-label="Jump to a genre or book"><span class="gindex"><a class="gix" href="#g-nonfiction" data-genre="Nonfiction"><span class="gdot" style="background:hsl(0,45%,55%)"></span>Nonfiction <span class="gixc">313</span></a>
+<a class="gix" href="#g-science-fiction" data-genre="Science Fiction"><span class="gdot" style="background:hsl(40,45%,55%)"></span>Science Fiction <span class="gixc">59</span></a>
+<a class="gix" href="#g-fantasy" data-genre="Fantasy"><span class="gdot" style="background:hsl(80,45%,55%)"></span>Fantasy <span class="gixc">10</span></a>
+<a class="gix" href="#g-myth-epic" data-genre="Myth &amp; Epic"><span class="gdot" style="background:hsl(120,45%,55%)"></span>Myth &amp; Epic <span class="gixc">37</span></a>
+<a class="gix" href="#g-hermetica" data-genre="Hermetica"><span class="gdot" style="background:hsl(160,45%,55%)"></span>Hermetica <span class="gixc">65</span></a>
+<a class="gix" href="#g-horror-weird" data-genre="Horror &amp; Weird"><span class="gdot" style="background:hsl(200,45%,55%)"></span>Horror &amp; Weird <span class="gixc">5</span></a>
+<a class="gix" href="#g-crime-mystery" data-genre="Crime &amp; Mystery"><span class="gdot" style="background:hsl(240,45%,55%)"></span>Crime &amp; Mystery <span class="gixc">7</span></a>
+<a class="gix" href="#g-literary-fiction" data-genre="Literary Fiction"><span class="gdot" style="background:hsl(280,45%,55%)"></span>Literary Fiction <span class="gixc">53</span></a>
+<a class="gix" href="#g-thesis" data-genre="Thesis"><span class="gdot" style="background:hsl(320,45%,55%)"></span>Thesis <span class="gixc">66</span></a></span><span class="scents"><a class="bchip" href="#b-verifying-the-representation-of-tropical-easterly-waves-in-community-climate-model-version-4-wesley-j-davis" data-genre="Thesis" title="Verifying the Representation of Tropical Easterly Waves in Community Climate Model Version 4 — Wesley J. Davis">Verifying the Representation of Tropical Easterly Waves in Community Climate Model Version 4 — Wesley J. Davis</a>
 <a class="bchip" href="#b-ancilla-assisted-quantum-information-processing-abhishek-shukla" data-genre="Thesis" title="Ancilla Assisted Quantum Information Processing — Abhishek Shukla">Ancilla Assisted Quantum Information Processing — Abhishek Shukla</a>
 <a class="bchip" href="#b-extended-stay-factors-contributing-to-success-or-failure-when-african-presidents-attempt-to-amend-constitutions-to-hold-on-to-power-brent-h-oglesby" data-genre="Thesis" title="Extended stay: Factors contributing to success or failure when African presidents attempt to amend constitutions to hold on to power — Brent H. Oglesby">Extended stay: Factors contributing to success or failure when African presidents attempt to amend constitutions to hold on to power — Brent H. Oglesby</a>
 <a class="bchip" href="#b-the-learning-curve-macv-s-grasp-of-intelligence-psyop-and-their-coordination-1965-1971-andrew-d-whiskeyman" data-genre="Thesis" title="The Learning Curve: MACV&#x27;s Grasp of Intelligence, PSYOP, and Their Coordination, 1965-1971 — Andrew D. Whiskeyman">The Learning Curve: MACV's Grasp of Intelligence, PSYOP, and Their Coordination, 1965-1971 — Andrew D. Whiskeyman</a>
@@ -511,6 +532,80 @@ main{max-width:var(--page-max)}
 <a class="bchip" href="#b-the-taittiriya-brahmana-vedic-tradition" data-genre="Myth &amp; Epic" title="The Taittiriya Brahmana — Vedic tradition">The Taittiriya Brahmana — Vedic tradition</a>
 <a class="bchip" href="#b-the-nag-hammadi-library" data-genre="Hermetica" title="The Nag Hammadi Library">The Nag Hammadi Library</a>
 <a class="bchip" href="#b-the-island-that-broke-the-ocean-s-surface-and-what-it-left-behind-gendra-lacle" data-genre="Thesis" title="The Island that broke the ocean&#x27;s surface and what it left behind — Gendra Lacle">The Island that broke the ocean's surface and what it left behind — Gendra Lacle</a></span></nav>
+<details class="bookbrowser" id="bookbrowser"><summary>Browse all books <span class="btotal">69</span></summary>
+<input type="search" class="blist-filter" placeholder="Filter the book list&hellip;" aria-label="Filter the book list"/>
+<div class="blist">
+<a class="blist-item" href="#b-shinto-the-ancient-religion-of-japan-william-george-aston" data-book="Shinto: The Ancient Religion of Japan — William George Aston"><span class="bt">Shinto: The Ancient Religion of Japan — William George Aston</span><span class="bc">15</span></a>
+<a class="blist-item" href="#b-meditations-marcus-aurelius" data-book="Meditations — Marcus Aurelius"><span class="bt">Meditations — Marcus Aurelius</span><span class="bc">8</span></a>
+<a class="blist-item" href="#b-the-importance-of-living-lin-yutang" data-book="The Importance of Living — Lin Yutang"><span class="bt">The Importance of Living — Lin Yutang</span><span class="bc">10</span></a>
+<a class="blist-item" href="#b-a-marriage-at-sea-sophie-elmhirst" data-book="A Marriage at Sea — Sophie Elmhirst"><span class="bt">A Marriage at Sea — Sophie Elmhirst</span><span class="bc">3</span></a>
+<a class="blist-item" href="#b-when-the-going-was-good-graydon-carter" data-book="When the Going Was Good — Graydon Carter"><span class="bt">When the Going Was Good — Graydon Carter</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-no-more-tears-gardiner-harris" data-book="No More Tears — Gardiner Harris"><span class="bt">No More Tears — Gardiner Harris</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-london-falling-patrick-radden-keefe" data-book="London Falling — Patrick Radden Keefe"><span class="bt">London Falling — Patrick Radden Keefe</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-the-traitors-circle-jonathan-freedland" data-book="The Traitors Circle — Jonathan Freedland"><span class="bt">The Traitors Circle — Jonathan Freedland</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-bad-law-elie-mystal" data-book="Bad Law — Elie Mystal"><span class="bt">Bad Law — Elie Mystal</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-democracy-in-america-alexis-de-tocqueville" data-book="Democracy in America — Alexis de Tocqueville"><span class="bt">Democracy in America — Alexis de Tocqueville</span><span class="bc">9</span></a>
+<a class="blist-item" href="#b-manufacturing-consent-noam-chomsky-edward-s-herman" data-book="Manufacturing Consent — Noam Chomsky &amp; Edward S. Herman"><span class="bt">Manufacturing Consent — Noam Chomsky &amp; Edward S. Herman</span><span class="bc">15</span></a>
+<a class="blist-item" href="#b-propaganda-edward-l-bernays" data-book="Propaganda — Edward L. Bernays"><span class="bt">Propaganda — Edward L. Bernays</span><span class="bc">8</span></a>
+<a class="blist-item" href="#b-rules-for-radicals-saul-d-alinsky" data-book="Rules for Radicals — Saul D. Alinsky"><span class="bt">Rules for Radicals — Saul D. Alinsky</span><span class="bc">17</span></a>
+<a class="blist-item" href="#b-the-prince-niccol-machiavelli" data-book="The Prince — Niccolò Machiavelli"><span class="bt">The Prince — Niccolò Machiavelli</span><span class="bc">8</span></a>
+<a class="blist-item" href="#b-how-to-win-friends-and-influence-people-dale-carnegie" data-book="How to Win Friends and Influence People — Dale Carnegie"><span class="bt">How to Win Friends and Influence People — Dale Carnegie</span><span class="bc">10</span></a>
+<a class="blist-item" href="#b-declaration-of-independence-thomas-jefferson" data-book="Declaration of Independence — Thomas Jefferson"><span class="bt">Declaration of Independence — Thomas Jefferson</span><span class="bc">8</span></a>
+<a class="blist-item" href="#b-every-molecule-matters-simon-cotton" data-book="Every Molecule Matters — Simon Cotton"><span class="bt">Every Molecule Matters — Simon Cotton</span><span class="bc">8</span></a>
+<a class="blist-item" href="#b-brain-networks-m-hassan-ed-contrib-volume" data-book="Brain Networks — M. Hassan (ed./contrib. volume)"><span class="bt">Brain Networks — M. Hassan (ed./contrib. volume)</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-accessing-the-healing-power-of-the-vagus-nerve-stanley-rosenberg" data-book="Accessing the Healing Power of the Vagus Nerve — Stanley Rosenberg"><span class="bt">Accessing the Healing Power of the Vagus Nerve — Stanley Rosenberg</span><span class="bc">11</span></a>
+<a class="blist-item" href="#b-the-power-of-your-subconscious-mind-joseph-murphy" data-book="The Power of Your Subconscious Mind — Joseph Murphy"><span class="bt">The Power of Your Subconscious Mind — Joseph Murphy</span><span class="bc">10</span></a>
+<a class="blist-item" href="#b-quantum-computing-s-herbert" data-book="Quantum Computing — S. Herbert"><span class="bt">Quantum Computing — S. Herbert</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-reverse-engineering-r-messler" data-book="Reverse Engineering — R. Messler"><span class="bt">Reverse Engineering — R. Messler</span><span class="bc">8</span></a>
+<a class="blist-item" href="#b-analysis-and-design-of-delayed-neural-networks-xin-wang" data-book="Analysis and Design of Delayed Neural Networks — Xin Wang"><span class="bt">Analysis and Design of Delayed Neural Networks — Xin Wang</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-tiny-machine-learning-quickstart-simone-salerno" data-book="Tiny Machine Learning QuickStart — Simone Salerno"><span class="bt">Tiny Machine Learning QuickStart — Simone Salerno</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-8051-microcontroller-notes" data-book="8051 Microcontroller Notes"><span class="bt">8051 Microcontroller Notes</span><span class="bc">8</span></a>
+<a class="blist-item" href="#b-the-second-machine-age-erik-brynjolfsson-andrew-mcafee" data-book="The Second Machine Age — Erik Brynjolfsson &amp; Andrew McAfee"><span class="bt">The Second Machine Age — Erik Brynjolfsson &amp; Andrew McAfee</span><span class="bc">14</span></a>
+<a class="blist-item" href="#b-machine-platform-crowd-andrew-mcafee-erik-brynjolfsson" data-book="Machine, Platform, Crowd — Andrew McAfee &amp; Erik Brynjolfsson"><span class="bt">Machine, Platform, Crowd — Andrew McAfee &amp; Erik Brynjolfsson</span><span class="bc">16</span></a>
+<a class="blist-item" href="#b-zero-to-one-peter-thiel-with-blake-masters" data-book="Zero to One — Peter Thiel with Blake Masters"><span class="bt">Zero to One — Peter Thiel with Blake Masters</span><span class="bc">11</span></a>
+<a class="blist-item" href="#b-tragedy-and-hope-carroll-quigley" data-book="Tragedy and Hope — Carroll Quigley"><span class="bt">Tragedy and Hope — Carroll Quigley</span><span class="bc">17</span></a>
+<a class="blist-item" href="#b-the-history-of-money-david-mcwilliams" data-book="The History of Money — David McWilliams"><span class="bt">The History of Money — David McWilliams</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-large-language-models-in-finance-miquel-noguer-i-alonso" data-book="Large Language Models in Finance — Miquel Noguer i Alonso"><span class="bt">Large Language Models in Finance — Miquel Noguer i Alonso</span><span class="bc">15</span></a>
+<a class="blist-item" href="#b-tradebook-how-to-build-a-complete-trading-system-stock-market-trading-and-investing-crede-sheehy-kelly-andrew-aziz" data-book="TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly &amp; Andrew Aziz"><span class="bt">TradeBook: How to Build a Complete Trading System (Stock Market Trading and Investing) — Crede Sheehy-Kelly &amp; Andrew Aziz</span><span class="bc">12</span></a>
+<a class="blist-item" href="#b-simultaneous-eric-heisserer" data-book="Simultaneous — Eric Heisserer"><span class="bt">Simultaneous — Eric Heisserer</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-the-scar-china-mieville" data-book="The Scar — China Mieville"><span class="bt">The Scar — China Mieville</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-dungeon-crawler-carl-matt-dinniman" data-book="Dungeon Crawler Carl — Matt Dinniman"><span class="bt">Dungeon Crawler Carl — Matt Dinniman</span><span class="bc">6</span></a>
+<a class="blist-item" href="#b-where-the-axe-is-buried-ray-nayler" data-book="Where the Axe Is Buried — Ray Nayler"><span class="bt">Where the Axe Is Buried — Ray Nayler</span><span class="bc">9</span></a>
+<a class="blist-item" href="#b-the-collected-stories-of-arthur-c-clarke-arthur-c-clarke" data-book="The Collected Stories of Arthur C. Clarke — Arthur C. Clarke"><span class="bt">The Collected Stories of Arthur C. Clarke — Arthur C. Clarke</span><span class="bc">6</span></a>
+<a class="blist-item" href="#b-project-hail-mary-andy-weir" data-book="Project Hail Mary — Andy Weir"><span class="bt">Project Hail Mary — Andy Weir</span><span class="bc">6</span></a>
+<a class="blist-item" href="#b-new-spring-robert-jordan" data-book="New Spring — Robert Jordan"><span class="bt">New Spring — Robert Jordan</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-the-eye-of-the-world-robert-jordan" data-book="The Eye of the World — Robert Jordan"><span class="bt">The Eye of the World — Robert Jordan</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-myths-from-mesopotamia-stephanie-dalley" data-book="Myths from Mesopotamia — Stephanie Dalley"><span class="bt">Myths from Mesopotamia — Stephanie Dalley</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-gilgamesh-tr-sophus-helle" data-book="Gilgamesh (tr. Sophus Helle)"><span class="bt">Gilgamesh (tr. Sophus Helle)</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-euphrates-or-the-waters-of-the-east-thomas-vaughan-vol-vii" data-book="Euphrates, or the Waters of the East — Thomas Vaughan (Vol. VII)"><span class="bt">Euphrates, or the Waters of the East — Thomas Vaughan (Vol. VII)</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-a-short-enquiry-concerning-the-hermetic-art-a-lover-of-philalethes-vol-iii" data-book="A Short Enquiry concerning the Hermetic Art — A Lover of Philalethes (Vol. III)"><span class="bt">A Short Enquiry concerning the Hermetic Art — A Lover of Philalethes (Vol. III)</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-hermetic-arcanum-jean-d-espagnet-collectanea-hermetica-vol-i" data-book="Hermetic Arcanum — Jean d&#x27;Espagnet (Collectanea Hermetica Vol. I)"><span class="bt">Hermetic Arcanum — Jean d'Espagnet (Collectanea Hermetica Vol. I)</span><span class="bc">8</span></a>
+<a class="blist-item" href="#b-somnium-scipionis-cicero-vol-v-with-l-o-essay" data-book="Somnium Scipionis — Cicero (Vol. V, with L.O. essay)"><span class="bt">Somnium Scipionis — Cicero (Vol. V, with L.O. essay)</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-the-chaldean-oracles-attributed-to-zoroaster-westcott-sapere-aude" data-book="The Chaldean Oracles — attributed to Zoroaster (Westcott / Sapere Aude)"><span class="bt">The Chaldean Oracles — attributed to Zoroaster (Westcott / Sapere Aude)</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-the-divine-pymander-hermes-trismegistus-tr-everard" data-book="The Divine Pymander — Hermes Trismegistus (tr. Everard)"><span class="bt">The Divine Pymander — Hermes Trismegistus (tr. Everard)</span><span class="bc">12</span></a>
+<a class="blist-item" href="#b-the-king-in-yellow-robert-w-chambers" data-book="The King in Yellow — Robert W. Chambers"><span class="bt">The King in Yellow — Robert W. Chambers</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-cool-machine-crook-manifesto-lane-colson-whitehead" data-book="Cool Machine / Crook Manifesto lane — Colson Whitehead"><span class="bt">Cool Machine / Crook Manifesto lane — Colson Whitehead</span><span class="bc">7</span></a>
+<a class="blist-item" href="#b-motherclown-harriet-alida-lye" data-book="Motherclown — Harriet Alida Lye"><span class="bt">Motherclown — Harriet Alida Lye</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-twist-colum-mccann" data-book="Twist — Colum McCann"><span class="bt">Twist — Colum McCann</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-tilt-emma-pattee" data-book="Tilt — Emma Pattee"><span class="bt">Tilt — Emma Pattee</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-the-eleventh-hour-salman-rushdie" data-book="The Eleventh Hour — Salman Rushdie"><span class="bt">The Eleventh Hour — Salman Rushdie</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-collected-fictions-jorge-luis-borges" data-book="Collected Fictions — Jorge Luis Borges"><span class="bt">Collected Fictions — Jorge Luis Borges</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-the-master-and-margarita-mikhail-bulgakov" data-book="The Master and Margarita — Mikhail Bulgakov"><span class="bt">The Master and Margarita — Mikhail Bulgakov</span><span class="bc">5</span></a>
+<a class="blist-item" href="#b-the-book-of-the-new-sun-gene-wolfe" data-book="The Book of the New Sun — Gene Wolfe"><span class="bt">The Book of the New Sun — Gene Wolfe</span><span class="bc">9</span></a>
+<a class="blist-item" href="#b-critique-of-violence-walter-benjamin" data-book="Critique of Violence — Walter Benjamin"><span class="bt">Critique of Violence — Walter Benjamin</span><span class="bc">6</span></a>
+<a class="blist-item" href="#b-stranger-in-a-strange-land-robert-a-heinlein" data-book="Stranger in a Strange Land — Robert A. Heinlein"><span class="bt">Stranger in a Strange Land — Robert A. Heinlein</span><span class="bc">7</span></a>
+<a class="blist-item" href="#b-valis-philip-k-dick" data-book="VALIS — Philip K. Dick"><span class="bt">VALIS — Philip K. Dick</span><span class="bc">6</span></a>
+<a class="blist-item" href="#b-the-third-policeman-flann-o-brien" data-book="The Third Policeman — Flann O&#x27;Brien"><span class="bt">The Third Policeman — Flann O'Brien</span><span class="bc">9</span></a>
+<a class="blist-item" href="#b-piranesi-susanna-clarke" data-book="Piranesi — Susanna Clarke"><span class="bt">Piranesi — Susanna Clarke</span><span class="bc">8</span></a>
+<a class="blist-item" href="#b-xyeval-agents-say-yes-to-bad-advice-zhengxuan-wu-yuxuan-li-oyvind-tafjord-been-kim-google-deepmind" data-book="XYEval: Agents Say Yes to Bad Advice — Zhengxuan Wu, Yuxuan Li, Oyvind Tafjord, Been Kim (Google DeepMind)"><span class="bt">XYEval: Agents Say Yes to Bad Advice — Zhengxuan Wu, Yuxuan Li, Oyvind Tafjord, Been Kim (Google DeepMind)</span><span class="bc">6</span></a>
+<a class="blist-item" href="#b-the-art-of-war-sun-tzu" data-book="The Art of War — Sun Tzu"><span class="bt">The Art of War — Sun Tzu</span><span class="bc">10</span></a>
+<a class="blist-item" href="#b-the-nag-hammadi-library" data-book="The Nag Hammadi Library"><span class="bt">The Nag Hammadi Library</span><span class="bc">25</span></a>
+<a class="blist-item" href="#b-the-taittiriya-brahmana-vedic-tradition" data-book="The Taittiriya Brahmana — Vedic tradition"><span class="bt">The Taittiriya Brahmana — Vedic tradition</span><span class="bc">10</span></a>
+<a class="blist-item" href="#b-the-hiranyakeshi-shrauta-sutra-vedic-tradition" data-book="The Hiranyakeshi Shrauta Sutra — Vedic tradition"><span class="bt">The Hiranyakeshi Shrauta Sutra — Vedic tradition</span><span class="bc">10</span></a>
+<a class="blist-item" href="#b-svanastavakavyam-the-dog-praise-poem-jnanesvara-of-davuldena" data-book="Śvānastavakāvyam (The Dog-Praise Poem) — Jñāneśvara of Davuldeṇa"><span class="bt">Śvānastavakāvyam (The Dog-Praise Poem) — Jñāneśvara of Davuldeṇa</span><span class="bc">7</span></a>
+<a class="blist-item" href="#b-crime-and-punishment-fyodor-dostoevsky" data-book="Crime and Punishment — Fyodor Dostoevsky"><span class="bt">Crime and Punishment — Fyodor Dostoevsky</span><span class="bc">6</span></a>
+</div></details>
+<nav class="crumbs" id="crumbs" aria-label="Breadcrumb"><a href="#" data-crumb="root">All books</a></nav>
 <main>
 <h2 class="genre" data-genre="Start here" id="g-start-here">Start here <span class="gcount">5 rips, hand-picked</span></h2>
 <section class="start-here" aria-label="Start here: five featured rips">
@@ -2546,11 +2641,26 @@ function toast(msg,ms){
   clearTimeout(toastT);toastT=setTimeout(function(){toastEl.classList.remove('show');},ms||1500);
 }
 function jesc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+var crumbs=document.getElementById('crumbs');
+function updateCrumbs(){
+  var open=document.querySelectorAll('.book:not(.collapsed):not(.hidden)'),b=open.length?open[open.length-1]:null;
+  var h='<a href="#" data-crumb="root">All books</a>';
+  if(b){
+    var g=b.getAttribute('data-genre'),gh=document.querySelector('h2.genre[data-genre="'+g+'"]');
+    h+='<span class="csep"> \u203a </span>'+(gh?'<a href="#'+gh.id+'">'+jesc(g)+'</a>':jesc(g))+'<span class="csep"> \u203a </span><span class="ccur">'+jesc(b.getAttribute('data-book'))+'</span>';
+  }
+  crumbs.innerHTML=h;
+}
+crumbs.addEventListener('click',function(e){
+  var r=e.target.closest('[data-crumb="root"]');
+  if(r){e.preventDefault();window.scrollTo({top:0,behavior:RM?'auto':'smooth'});}
+});
 function setBook(book,expand){
   book.classList.toggle('collapsed',!expand);
   manual[book.id]=expand;
   var hd=book.querySelector('.bookhead');
   if(hd)hd.setAttribute('aria-expanded',expand?'true':'false');
+  updateCrumbs();
 }
 function checkedTypes(){
   var v=[];
@@ -2763,6 +2873,26 @@ document.querySelectorAll('#jumpchips a').forEach(function(ch){
       setHash(ch.getAttribute('href'));}
   });
 });
+/* phase 2: browse-all-books expander */
+(function(){
+  var bb=document.getElementById('bookbrowser');if(!bb)return;
+  var bf=bb.querySelector('.blist-filter');
+  bf.addEventListener('input',function(){
+    var t=bf.value.toLowerCase();
+    bb.querySelectorAll('.blist-item').forEach(function(a){
+      a.classList.toggle('hidden',!!t&&a.textContent.toLowerCase().indexOf(t)<0);
+    });
+  });
+  bb.querySelectorAll('.blist-item').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      bs.value=a.getAttribute('data-book');apply(true);announceLive();
+      var sec=document.getElementById(a.getAttribute('href').slice(1));
+      if(sec){setBook(sec,true);sec.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});setHash(a.getAttribute('href'));}
+      bb.open=false;bf.value='';bf.dispatchEvent(new Event('input'));
+    });
+  });
+})();
 function openHash(){
   var m=/^#c(\d+)$/.exec(location.hash),c;
   if(m&&(c=document.getElementById('c'+m[1]))){
@@ -2805,6 +2935,7 @@ deepLink();
 var restoredQ=q.value.trim()!=='';
 apply(restoredQ);
 openHash();
+updateCrumbs();
 })();
 
 </script>

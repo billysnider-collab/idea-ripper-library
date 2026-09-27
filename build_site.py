@@ -345,8 +345,8 @@ if fbooks:
 # genre index: one compact link per genre (label + mono card count)
 _gcounts = {g: sum(1 for c in cards if genre_of[c["book"]] == g) for g in genre_order}
 gindex = "\n".join(
-    '<a class="gix" href="#g-%s" data-genre="%s">%s · <span class="gixc">%d</span></a>'
-    % (slugify(g), esca(g), esc(g), _gcounts[g])
+    '<a class="gix" href="#g-%s" data-genre="%s"><span class="gdot" style="background:hsl(%d,45%%,55%%)"></span>%s <span class="gixc">%d</span></a>'
+    % (slugify(g), esca(g), ghue[g], esc(g), _gcounts[g])
     for g in genre_order if _gcounts[g])
 # jump scents: the 12 most recently added books (highest max card id)
 def _maxid(b):
@@ -356,6 +356,14 @@ chips = "\n".join(
     '<a class="bchip" href="#b-%s" data-genre="%s" title="%s">%s</a>'
     % (book_slug(b), esca(b["genre"]), esca(b["book"]), esc(b["book"]))
     for b in scents)
+# phase 2: browse-all-books expander list (theses excluded: ideas, not books)
+_bbrowse = [b for b in books if b["genre"] != "Thesis"]
+n_btotal = len(_bbrowse)
+blist = "\n".join(
+    '<a class="blist-item" href="#b-%s" data-book="%s"><span class="bt">%s</span><span class="bc">%d</span></a>'
+    % (book_slug(b), esca(b["book"]), esc(b["book"]),
+       sum(1 for c in cards if c["book"] == b["book"]))
+    for b in _bbrowse)
 
 genre_opts = "\n".join('<option value="%s">%s</option>' % (esca(g), esc(g)) for g in genre_order)
 book_opts = "\n".join('<option value="%s">%s</option>' % (esca(b["book"]), esc(b["book"])) for b in books)
@@ -489,11 +497,32 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .jumpchips a{flex:none;max-width:var(--chip-max);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--surface-frame-raised);border:1px solid var(--line-frame);color:var(--ink-frame);border-radius:var(--radius-pill);padding:var(--space-2xs) var(--space-sm);font-size:var(--fs-xs);font-family:var(--font-mono);cursor:pointer;text-decoration:none}
 .jumpchips a:hover{border-color:var(--accent-rip)}
 .jumpchips{align-items:center}
-.gindex{flex:none;display:flex;flex-wrap:wrap;gap:var(--space-3xs) var(--space-sm);align-items:center;padding:var(--space-3xs) var(--space-sm) var(--space-3xs) 0;border-right:1px solid var(--line-frame);margin-right:var(--space-2xs)}
-.gindex a{flex:none;max-width:none;background:none;border:0;border-radius:0;padding:0;font-family:var(--font-mono);font-size:.75rem;color:var(--ink-structure-frame);white-space:nowrap}
-.gindex a:hover{color:var(--ink-frame);border-color:transparent}
-.gindex .gixc{font-variant-numeric:tabular-nums}
+/* phase 2: genre tiles */
+.gindex{flex:none;display:flex;flex-wrap:wrap;gap:var(--space-2xs);align-items:stretch;padding:var(--space-3xs) var(--space-sm) var(--space-3xs) 0;border-right:1px solid var(--line-frame);margin-right:var(--space-2xs)}
+.gix{flex:none;display:flex;align-items:center;gap:var(--space-2xs);background:var(--surface-frame-raised);border:1px solid var(--line-frame);color:var(--ink-frame);border-radius:var(--radius-md);padding:var(--space-2xs) var(--space-sm);font-family:var(--font-mono);font-size:var(--fs-sm);white-space:nowrap;min-height:44px;text-decoration:none}
+.gix:hover{border-color:var(--accent-rip)}
+.gix .gdot{width:.7em;height:.7em;border-radius:50%;flex:none}
+.gix .gixc{color:var(--ink-structure-frame);font-variant-numeric:tabular-nums}
 .scents{flex:1;min-width:0;display:flex;gap:var(--space-2xs);overflow-x:auto;scrollbar-width:thin;padding:var(--space-3xs) 0}
+/* ---------- phase 2: browse-all-books + crumbs ---------- */
+.bookbrowser{max-width:var(--page-max);margin:0 auto;padding:var(--space-xs) var(--page-gutter) 0}
+.bookbrowser summary{cursor:pointer;font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--ink-body);padding:var(--space-2xs) 0;list-style:none;min-height:44px;display:flex;align-items:center}
+.bookbrowser summary::-webkit-details-marker{display:none}
+.bookbrowser summary::before{content:"\u25b8";color:var(--accent-rip);margin-right:var(--space-2xs)}
+.bookbrowser[open] summary::before{content:"\u25be"}
+.bookbrowser .btotal{color:var(--ink-structure)}
+.blist-filter{width:100%;max-width:var(--measure);margin:var(--space-2xs) 0 var(--space-xs);padding:var(--space-2xs) var(--space-sm);font-family:var(--font-mono);font-size:var(--fs-sm);border:1px solid var(--line-card);border-radius:var(--radius-md);background:var(--surface-paper);color:var(--ink-body)}
+.blist{display:grid;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));gap:var(--space-3xs) var(--space-sm);padding-bottom:var(--space-md)}
+.blist-item{display:flex;justify-content:space-between;align-items:center;gap:var(--space-sm);padding:var(--space-2xs) var(--space-xs);border-radius:var(--radius-sm);text-decoration:none;color:var(--ink-body);font-size:var(--fs-sm);min-height:44px}
+.blist-item:hover{background:var(--surface-frame-raised);color:var(--ink-frame)}
+.blist-item:hover .bc{color:var(--ink-frame)}
+.blist-item .bt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.blist-item .bc{flex:none;font-family:var(--font-mono);font-size:var(--fs-xs);color:var(--ink-structure)}
+.crumbs{max-width:var(--page-max);margin:0 auto;padding:var(--space-xs) var(--page-gutter) 0;font-family:var(--font-mono);font-size:var(--fs-xs);color:var(--ink-structure);display:flex;align-items:center;flex-wrap:wrap;gap:var(--space-2xs)}
+.crumbs a{color:var(--link);text-decoration:none}
+.crumbs a:hover{text-decoration:underline}
+.csep{color:var(--ink-structure)}
+.ccur{color:var(--ink-body)}
 /* ---------- frame: footer ---------- */
 footer{background:var(--surface-frame);color:var(--ink-frame);font-family:var(--font-mono);font-size:var(--fs-sm);padding:var(--space-xl) var(--page-gutter);border-top:3px solid var(--accent-rip);text-align:center}
 footer .fmeta{margin:0;color:var(--ink-structure-frame)}
@@ -668,11 +697,26 @@ function toast(msg,ms){
   clearTimeout(toastT);toastT=setTimeout(function(){toastEl.classList.remove('show');},ms||1500);
 }
 function jesc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+var crumbs=document.getElementById('crumbs');
+function updateCrumbs(){
+  var open=document.querySelectorAll('.book:not(.collapsed):not(.hidden)'),b=open.length?open[open.length-1]:null;
+  var h='<a href="#" data-crumb="root">All books</a>';
+  if(b){
+    var g=b.getAttribute('data-genre'),gh=document.querySelector('h2.genre[data-genre="'+g+'"]');
+    h+='<span class="csep"> \u203a </span>'+(gh?'<a href="#'+gh.id+'">'+jesc(g)+'</a>':jesc(g))+'<span class="csep"> \u203a </span><span class="ccur">'+jesc(b.getAttribute('data-book'))+'</span>';
+  }
+  crumbs.innerHTML=h;
+}
+crumbs.addEventListener('click',function(e){
+  var r=e.target.closest('[data-crumb="root"]');
+  if(r){e.preventDefault();window.scrollTo({top:0,behavior:RM?'auto':'smooth'});}
+});
 function setBook(book,expand){
   book.classList.toggle('collapsed',!expand);
   manual[book.id]=expand;
   var hd=book.querySelector('.bookhead');
   if(hd)hd.setAttribute('aria-expanded',expand?'true':'false');
+  updateCrumbs();
 }
 function checkedTypes(){
   var v=[];
@@ -885,6 +929,26 @@ document.querySelectorAll('#jumpchips a').forEach(function(ch){
       setHash(ch.getAttribute('href'));}
   });
 });
+/* phase 2: browse-all-books expander */
+(function(){
+  var bb=document.getElementById('bookbrowser');if(!bb)return;
+  var bf=bb.querySelector('.blist-filter');
+  bf.addEventListener('input',function(){
+    var t=bf.value.toLowerCase();
+    bb.querySelectorAll('.blist-item').forEach(function(a){
+      a.classList.toggle('hidden',!!t&&a.textContent.toLowerCase().indexOf(t)<0);
+    });
+  });
+  bb.querySelectorAll('.blist-item').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      bs.value=a.getAttribute('data-book');apply(true);announceLive();
+      var sec=document.getElementById(a.getAttribute('href').slice(1));
+      if(sec){setBook(sec,true);sec.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});setHash(a.getAttribute('href'));}
+      bb.open=false;bf.value='';bf.dispatchEvent(new Event('input'));
+    });
+  });
+})();
 function openHash(){
   var m=/^#c(\d+)$/.exec(location.hash),c;
   if(m&&(c=document.getElementById('c'+m[1]))){
@@ -927,6 +991,7 @@ deepLink();
 var restoredQ=q.value.trim()!=='';
 apply(restoredQ);
 openHash();
+updateCrumbs();
 })();
 
 """
@@ -971,7 +1036,7 @@ page = """<!DOCTYPE html>
 <input type="search" id="q" placeholder="Search titles, steals, use-when&hellip;" aria-label="Search cards"/>
 <select id="fgenre" aria-label="Filter by genre"><option value="">All genres</option>
 %s</select>
-<select id="fbook" aria-label="Filter by book"><option value="">All books</option>
+<select id="fbook" hidden aria-hidden="true" tabindex="-1" aria-label="Filter by book"><option value="">All books</option>
 %s</select>
 <details class="typefilter" id="typefilter">
 <summary>Filter by type <span class="tcount" id="tcount" hidden></span></summary>
@@ -986,6 +1051,12 @@ page = """<!DOCTYPE html>
 <span class="count" id="count"></span><span id="countlive" class="sr-only" aria-live="polite"></span>
 </div></div>
 <nav class="jumpchips" id="jumpchips" aria-label="Jump to a genre or book"><span class="gindex">%s</span><span class="scents">%s</span></nav>
+<details class="bookbrowser" id="bookbrowser"><summary>Browse all books <span class="btotal">%d</span></summary>
+<input type="search" class="blist-filter" placeholder="Filter the book list&hellip;" aria-label="Filter the book list"/>
+<div class="blist">
+%s
+</div></details>
+<nav class="crumbs" id="crumbs" aria-label="Breadcrumb"><a href="#" data-crumb="root">All books</a></nav>
 <main>
 %s
 <p class="noresults" id="noresults" hidden>No rips match — try a mechanism word (interlock, delay, patronage).</p>
@@ -994,7 +1065,7 @@ page = """<!DOCTYPE html>
 <script>%s</script>
 <div id="toast" role="status"></div>
 </body>
-</html>""" % (CSS, WORDMARK_SVG, n, n_books, n_theses, curated, fb_intro, genre_opts, book_opts, type_checks, gindex, chips,
+</html>""" % (CSS, WORDMARK_SVG, n, n_books, n_theses, curated, fb_intro, genre_opts, book_opts, type_checks, gindex, chips, n_btotal, blist,
               "\n\n".join(sections), curated_long, n_books, n_theses, n, fb_footer, JS)
 
 open(os.path.join(BASE, "index.html"), "w", encoding="utf-8").write(page)
