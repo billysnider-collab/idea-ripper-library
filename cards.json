@@ -1,5 +1,5 @@
 {
- "curated": "2026-09-26",
+ "curated": "2026-09-27",
  "genre_order": [
   "Nonfiction",
   "Science Fiction",
@@ -657,7 +657,7 @@
   {
    "book": "Crime and Punishment — Fyodor Dostoevsky",
    "genre": "Literary Fiction",
-   "bookline": "Raskolnikov's airtight theory meets the body that cannot stand it: nine rips on ideology, guilt, and the person who answers both."
+   "bookline": "The 'extraordinary man' theory as self-destruction: six interlocked rips on the rationalization that destroys its author. Built on the public-domain Garnett translation."
   }
  ],
  "cards": [
@@ -7829,103 +7829,70 @@
    "id": 608
   },
   {
-   "title": "Grand transgressive theories are symptoms, not philosophies",
+   "title": "The doctrine: 'ordinary' vs 'extraordinary' men",
+   "book": "Crime and Punishment — Fyodor Dostoevsky",
+   "type": "definition",
+   "steal": "Before you trust or fight a rationalization, name it as a doctrine. Raskolnikov's is this: humanity splits into 'ordinary' men, who must obey the law, and 'extraordinary' men, who hold an inner right to overstep any obstacle their idea requires. It is the cleanest statement of 'the rules apply to other people, not to me, because I'm special' — the exact shape that reappears in every justification of a transgression, from the boardroom to the revolution. Learn to hear the doctrine beneath the rhetoric.",
+   "why": "Every self-justifying ideology can be reduced to a version of this two-tier move: an in-group with rights, an out-group with duties. Dostoevsky states it so plainly that it becomes a template you can recognize instantly elsewhere. Once you can name the doctrine, you can stop being moved by its language and start asking what it is licensing.",
+   "uw": "Use when you hear someone invoke a special class of people who may break rules the rest must keep. Use when reading a manifesto, a founder's letter, or a pitch that quietly sorts humanity into those-with-rights and those-without. Use when auditing your own excuses for why a rule doesn't apply to you.",
+   "id": 618,
+   "source_locator": "Part III, ch 5",
+   "ripped_at": "2026-09-27"
+  },
+  {
+   "title": "The motive runs in reverse: the conclusion comes first",
    "book": "Crime and Punishment — Fyodor Dostoevsky",
    "type": "argument",
-   "steal": "When someone brandishes an elaborate theory justifying a transgressive act, resist arguing the theory itself. Look instead at the person's material state — isolation, deprivation, fever, exhaustion. A grand rationalization is usually a symptom of a desperate condition wearing a philosopher's clothes, not a real philosophy. The theory doesn't power the act; the breakdown does. Test any such theory by asking whether its author could actually 'stand it' — whether the logic survives contact with the body and circumstances that produced it. Airtight reasoning that its own author is too feverish to act on is a confession, not an argument.",
-   "why": "Dostoevsky structures the novel so the 'extraordinary man' theory is never refuted by debate — Porfiry doesn't argue Raskolnikov out of it; it is simply outlived. The theory is airtight ('clear as day, true as arithmetic'), yet Raskolnikov 'couldn't stand it,' and after the murder he concedes he didn't overstep. This matters because debating a feverish, half-starved, isolated person's theory treats the symptom as if it were the disease. The leverage is in the material condition, not the logic.",
-   "uw": "Use when a colleague or public figure justifies a harmful plan with an internally consistent theory — pause before debating the logic and ask what state produced it. Use when reading a radical manifesto where the author's deprivation is evident but the argument looks 'rational.' Use when mediating a conflict where one side escalates an airtight-sounding justification despite visible breakdown.",
-   "id": 609,
-   "source_locator": "Part One, ch 1 & 5; Part Three, ch 5",
-   "ripped_at": "2026-09-26"
+   "steal": "A theory that only ever points toward the act you already want is permission, not reason. Raskolnikov builds an airtight doctrine, then confesses the truth of its engine: the desire came first, the argument after. 'I did the murder for myself, for myself alone.' The test is simple: strip every noble justification away, and if you would still do the deed, the theory was never the motive — it was a permit you issued yourself in advance.",
+   "why": "This is the novel's sharpest warning: moral reasoning can run backwards. The conclusion ('I may act') is fixed first, and the casuistry is built afterward to justify it — which is why the theory survives every intellectual test while remaining a lie. It names a failure mode in any person who argues brilliantly toward a conclusion they already hold.",
+   "uw": "Use when you (or someone else) invoke a grand principle to justify a specific act you already want. Use when a plan's morality rests entirely on a theory of who 'deserves' or is 'entitled.' Use when deciding whether a justification is a reason or an excuse.",
+   "id": 619,
+   "source_locator": "Part V, ch 4",
+   "ripped_at": "2026-09-27"
   },
   {
-   "title": "Petersburg as antagonist: the city produces the crime",
+   "title": "The theory is a symptom of the garret, not a philosophy",
    "book": "Crime and Punishment — Fyodor Dostoevsky",
    "type": "argument",
-   "steal": "Treat environment as a causal actor, not a backdrop. When you diagnose a bad decision — in fiction or in life — inventory the physical and social conditions (heat, crowding, debt, squalor, stench, noise) as active pressures on the person, placed alongside their free choice, never beneath it. A decision read only as individual will is incomplete: ask what the place did to the person before asking what the person did. Make heat, the room, the debt co-authors of the act, so the turning point reads as pressure meeting weakness, not weakness alone.",
-   "why": "Dostoevsky stacks the opening pages with conditions — an 'exceptionally hot' July evening, the 'special Petersburg stench,' the dust and scaffolding, the cupboard-like room, the hopeless debt — and narrates them as directly 'working painfully upon' Raskolnikov's 'already overwrought nerves.' The murder doesn't arrive as clean free choice: he moves through the city as though pulled by a machine, and even pauses to note that men in great towns are 'driven' to live amid 'filth and stench.' Heat, crowding and poverty are active agents that produce the act — a genuinely stealable diagnostic frame.",
-   "uw": "Use when analyzing a bad decision and the instinct is to blame individual will alone. Use when writing a scene or setting that must drive behavior rather than decorate it. Use when diagnosing real failures — crime, burnout, collapse — where heat, crowding, debt and squalor are treated as incidental color instead of causes.",
-   "id": 610,
-   "source_locator": "Part One, ch 1 & 6",
-   "ripped_at": "2026-09-26"
+   "steal": "When someone brandishes an elaborate theory, resist debating the theory — look at the material state that produced it. Raskolnikov's doctrine grew in a room he calls a den, in isolation, starvation, and days of doing nothing but lying in the dark. The theory is not philosophy; it is what a cramped, starving, solitary mind secretes. Diagnose the garret before you dignify the doctrine with an argument.",
+   "why": "Dostoevsky has Raskolnikov himself trace the theory back to his conditions: 'low ceilings and tiny rooms cramp the soul and the mind.' The point is causal — deprivation and isolation manufacture grand rationalizations the way fever manufactures delirium. It reframes how to handle dangerous ideas: treat the state, not the syllogism, because the syllogism is downstream of the state.",
+   "uw": "Use when a colleague, student, or public figure justifies a harmful plan with an internally consistent theory — ask what room they've been sitting in. Use when reading a radical manifesto whose author's isolation is evident but the argument looks rational. Use when mediating a conflict where one side escalates an airtight justification despite visible breakdown.",
+   "id": 620,
+   "source_locator": "Part V, ch 4",
+   "ripped_at": "2026-09-27"
   },
   {
-   "title": "The real answer to an ideology is a person",
+   "title": "The self-test is rigged: asking 'am I a Napoleon?' is the proof you aren't",
    "book": "Crime and Punishment — Fyodor Dostoevsky",
    "type": "argument",
-   "steal": "To refute a seductive rationalist theory, don't argue against it — embody the alternative. Present a person whose freely chosen suffering, humility, and self-sacrifice perform a claim the theory has no category for, because a theory reasons about lives while a life simply is one. The counter-argument isn't a rebuttal; it's a presence that makes the theory's terms feel small.",
-   "why": "Dostoevsky gives the extraordinary-man theory its fullest, most articulate voice, then answers it not with a syllogism but with Sonya. She offers no rebuttal — only her faith ('What would I be without God?'), her prescription that suffering be borne as atonement ('Suffer and atone for your sin by it'), and her pledge to share his cross. Her self-abasement is not passive defeat but an agency the theory cannot see: where the theory asks who has the right to kill, she asks who has the right to judge, and answers by giving herself away. She is the argument, staged as a life rather than stated as a proposition.",
-   "uw": "Use when writing a character who champions a cold, self-justifying ideology and needs a counterforce that isn't a debate opponent but a living refutation. Use when building a scene where two worldviews collide and the winner is decided by who suffers willingly, not who argues better. Use when designing a character whose humility and self-sacrifice are their actual power.",
-   "id": 611,
-   "source_locator": "Part Four, ch 4; Part Five, ch 4",
-   "ripped_at": "2026-09-26"
+   "steal": "A doctrine that requires you to prove you are the exception disproves itself the moment you start doubting. Raskolnikov's whole crime was an experiment — 'whether I was a louse like everybody else or a man' — and the experiment's result was built into its design: 'if I asked myself whether a human being is a louse it proved that it wasn't so for me.' The very act of asking whether you are beyond the rules is the answer: the truly extraordinary do not stop to check. If you have to ask, you aren't.",
+   "why": "This is the elegant self-contradiction at the center of the novel. The Napoleon-type acts without self-interrogation; therefore self-interrogation is itself the disqualifying trait. It is a portable test for impostor-ideologies: any identity that has to be repeatedly self-asserted and self-tested is not being lived — it is being performed, and performance is the tell.",
+   "uw": "Use when you catch yourself asking whether you're 'the exception' who can skip the rules — the asking is the answer. Use when evaluating someone whose grand self-image requires constant self-reassurance. Use when distinguishing real confidence from a doctrine held together by doubt.",
+   "id": 621,
+   "source_locator": "Part V, ch 4",
+   "ripped_at": "2026-09-27"
   },
   {
-   "title": "Porfiry's Socratic interrogation: conviction without evidence",
-   "book": "Crime and Punishment — Fyodor Dostoevsky",
-   "type": "argument",
-   "steal": "You do not need evidence to dismantle a false belief — ask questions until the person convicts themselves. Build no case and make no accusation; instead, feed the other person's rationalization back to them in its most radical form and let them defend, refine, and finally expose its contradiction on their own. The goal is the collapse of the rationalization, not proof of guilt. Pressure is pure attention — signal that you already understand everything, and the person's own unease will drive them to fill the silence.",
-   "why": "Porfiry never presents a fact that could stand in court; his 'little fact' stays secret even at the end. He treats Raskolnikov not as a suspect to prosecute but as the author of a theory — the article on 'extraordinary' men — and his interrogation gets that theory to say out loud what it implies. He disclaims formality ('what's the use of formality?'), refuses to arrest even after declaring 'you are the murderer,' and says confession is 'nothing to me now' because he is 'convinced without it.' His real object is the inner collapse of the Napoleonic worldview. The cat-and-mouse is closer to a Socratic elenchus than a police procedure.",
-   "uw": "Use when someone clings to a self-justifying belief and facts only make them dig in — stop proving, start asking. Use when arguing against an ideology whose real weakness is an internal contradiction rather than missing data. Use when confronting a person whose rationalization is the actual obstacle, so surfacing and gently inflating it is more effective than refuting it.",
-   "id": 612,
-   "source_locator": "Part Three, ch 5; Part Four, ch 5; Part Six, ch 2",
-   "ripped_at": "2026-09-26"
-  },
-  {
-   "title": "Siberia is the real climax: confession isn't conversion",
-   "book": "Crime and Punishment — Fyodor Dostoevsky",
-   "type": "argument",
-   "steal": "Confession is not conversion. A stated admission changes nothing; the old ideology must actually die before a new self can emerge — and that death is a long, unglamorous afterward, not a single event. Don't mistake the moment of confession for the moment of change: transformation, if it comes at all, begins only once the ideology is truly dead, and it announces itself not in words but in the first ordinary act done differently.",
-   "why": "Raskolnikov confesses fully and truthfully, yet in Siberia he is sick with wounded pride, not repentance — he still defends his theory and 'does not repent of his crime.' His fever dream of a world where 'each thought that he alone had the truth' is his own ideology externalized as plague. Only when he is flung at Sonya's feet and 'life has stepped into the place of theory' does anything genuinely change, and even then Dostoevsky insists it is only 'the beginning of a new story.' The novel runs backward from this point: punishment was never the destination, it is where real change finally becomes possible.",
-   "uw": "Use when writing a character who confesses or hits 'rock bottom' and is expected to be changed by it — show that the admission is not the transformation. Use when structuring a story where the apparent ending (verdict, confession) must actually pivot into the real, harder second movement.",
-   "id": 613,
-   "source_locator": "Epilogue",
-   "ripped_at": "2026-09-26"
-  },
-  {
-   "title": "The 'extraordinary man' theory is a lie you tell yourself",
-   "book": "Crime and Punishment — Fyodor Dostoevsky",
-   "type": "argument",
-   "steal": "Before you commit to any ends-justify-the-means plan, check whether your grand theory is doing the real work or just licensing a forbidden act you already want. Raskolnikov builds an elaborate doctrine — the world split into 'ordinary' and 'extraordinary' men, the extraordinary holding an inner right to 'overstep' — and only later admits the theory was a costume: he killed not for his mother or humanity but to test whether he was a Napoleon. The test is disarmingly simple: if you would still do the deed once every 'noble' justification is stripped away, the theory was never the motive — it was permission you granted yourself in advance.",
-   "why": "The book's core warning is that moral reasoning can run in reverse: the conclusion ('I may act') is fixed first, and the argument is built afterward to justify it. Raskolnikov's razor-sharp casuistry is exactly what makes him dangerous to himself. The theory survives every intellectual test because it was never meant to be tested; it was meant to permit. A theory that only ever points toward the action you secretly crave is a red flag, not a proof.",
-   "uw": "Use when you hear yourself (or someone else) invoking a grand principle to justify a specific forbidden act. Use when a plan's morality rests entirely on a theory of who 'deserves' or is 'entitled' to break rules. Use when you want to know whether a justification is a reason or an excuse.",
-   "id": 614,
-   "source_locator": "Part Three, ch 5; Part Five, ch 4",
-   "ripped_at": "2026-09-26"
-  },
-  {
-   "title": "Guilt announces itself in the body before anyone suspects",
-   "book": "Crime and Punishment — Fyodor Dostoevsky",
-   "type": "evidence",
-   "steal": "Treat sudden, inexplicable physical collapse — fever, shivering, fainting, broken sleep, an inability to think straight — as diagnostic. Dostoevsky's claim, put in Raskolnikov's own article and confirmed by his own body, is that crime 'is always accompanied by illness': a criminal's reason and will fail like a disease that peaks just before, during, and after the act, then passes off 'like any other disease.' The body betrays the secret before any detective arrives. If you are hiding something heavy, watch what your health is telling you; a conscience under load often presents first as a physical symptom, not a moral thought.",
-   "why": "This inverts the usual order — we think guilt is a feeling that follows discovery, but here guilt precedes and even causes discovery. Raskolnikov collapses into fever and delirium the day after the murder, long before Porfiry has evidence; his illness is the tell. It is a portable insight about the nervous system: repressed knowledge of wrongdoing taxes the body, and that tax shows up as illness. People under concealed moral strain look sick, not merely anxious.",
-   "uw": "Use when trying to read whether someone is concealing wrongdoing — watch the body, not the story. Use when you feel strangely ill after an act you're hiding and want to understand why. Use when analyzing why criminals get caught — the leak is internal before it is external.",
-   "id": 615,
-   "source_locator": "Part One, ch 6; Part Three, ch 5",
-   "ripped_at": "2026-09-26"
-  },
-  {
-   "title": "Confession is agency: disclosure converts guilt into relief",
-   "book": "Crime and Punishment — Fyodor Dostoevsky",
-   "type": "concept",
-   "steal": "If a secret is destroying you, the way out is not more concealment but disclosure — and disclosure works because it hands you back your agency. Raskolnikov is paralyzed for the whole novel; the moment he acts on the confession impulse, it lands on him 'like a fit . . . like a single spark kindled in his soul and spreading fire through him. Everything in him softened at once and the tears started into his eyes.' The relief is physical and immediate, before any punishment. Carrying an undisclosed burden is a heavier sentence than any external consequence, and telling the truth to even one other person is the first move toward recovering control over your own story.",
-   "why": "Dostoevsky makes the point both ways — Raskolnikov cynically confesses to 'throw his burden on another' and 'feel better,' yet the book still treats confession as the only path back to life. Even a self-serving confession restores agency and ends the corrosive isolation of the secret. It is a durable psychological truth: named sins lose power, unnamed ones run you. The scene where he finally says 'It was I who killed . . .' is not his defeat but his first free act in months.",
-   "uw": "Use when carrying a secret that costs more energy than keeping it saves. Use when you feel stuck and need a first move that breaks paralysis. Use when you want to understand why confession or truth-telling reliably produces relief even when it leads to punishment.",
-   "id": 616,
-   "source_locator": "Part Five, ch 4; Part Six, ch 8",
-   "ripped_at": "2026-09-26"
-  },
-  {
-   "title": "Distinguish the deed from its true target: 'I murdered myself, not her'",
+   "title": "The theory collapses at the moment of action",
    "book": "Crime and Punishment — Fyodor Dostoevsky",
    "type": "contradiction",
-   "steal": "When you condemn yourself (or someone else) for an act, separate the literal deed from what it actually destroyed. Raskolnikov insists, 'Did I murder the old woman? I murdered myself, not her! I crushed myself once and for all, forever.' The physical victim is almost incidental; the real casualty is the self. Use this as a two-way lens: the moral weight of an act may fall on the actor's own life, not just the ostensible target, and a defense that 'I only hurt a nobody / it's no real crime' is usually the exact point where self-deception is loudest.",
-   "why": "This is the book's sharpest contradiction, and why the 'killed a principle, not a person' reading is a trap. Raskolnikov genuinely believes the old woman is worthless ('Killing her was an atonement for forty sins'), yet the same man knows 'it wasn't a louse.' The contradiction — dehumanizing the victim while secretly knowing the act destroyed himself — is the mechanism of his ruin. Whenever a justification leans on the target's worthlessness, look at what the act does to the doer, because that is usually the real cost.",
+   "steal": "A rationalization can survive any amount of thinking and still fail the one test that matters: doing it. Raskolnikov's theory was flawless on paper, but the act exposed it — he didn't 'overstep,' he only killed. 'I didn't kill a human being, but a principle! I killed the principle, but I didn't overstep, I stopped on this side.... I was only capable of killing.' The ideology promised transcendence and delivered only a crime. Judge any doctrine not by its argument but by what it actually makes you capable of doing.",
+   "why": "This is the theory collapsing under its own psychological weight — exactly what the novel is built to show. The distance between the idea ('overstep, become Napoleon') and the deed ('I was only capable of killing') is the whole tragedy. It teaches that the real test of a worldview is execution, not articulation: a theory you can state but not live is already dead.",
+   "uw": "Use when deciding whether to trust an ideology — ask what its believers actually do, not what they say. Use when you notice a gap between a plan's grand rationale and the small, sordid act it actually produces. Use when auditing yourself: does the deed match the doctrine, or only the crime?",
+   "id": 622,
+   "source_locator": "Part III, ch 6",
+   "ripped_at": "2026-09-27"
+  },
+  {
+   "title": "The theory's real victim is its author",
+   "book": "Crime and Punishment — Fyodor Dostoevsky",
+   "type": "contradiction",
+   "steal": "Assess any transgressive act by what it does to the doer, not the ostensible target. Raskolnikov's victim was incidental; the actual casualty was himself: 'Did I murder the old woman? I murdered myself, not her!' And the self-deception is audible in the dehumanizing: 'I've only killed a louse' — the moment a justification leans on the target's worthlessness, the real damage is being done to the doer. When you judge an act, ask who actually got destroyed.",
+   "why": "This is the novel's deepest contradiction and its moral core. Raskolnikov insists the old woman was 'a louse,' yet he also knows 'I am perhaps viler and more loathsome than the louse I killed.' The theory was supposed to elevate him above ordinary morality; instead it crushed his own soul before any court could. It is a permanent corrective to the 'no real harm done' defense.",
    "uw": "Use when assessing the real cost of an action and tempted to focus only on the literal target. Use when a justification depends on dehumanizing the victim ('no real person was hurt'). Use when you want to see through self-deception by asking what the deed did to the doer.",
-   "id": 617,
-   "source_locator": "Part Five, ch 4; Part Six, ch 7",
-   "ripped_at": "2026-09-26"
+   "id": 623,
+   "source_locator": "Part V, ch 4; Part III, ch 6",
+   "ripped_at": "2026-09-27"
   }
  ]
 }

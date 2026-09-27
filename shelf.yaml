@@ -1,4 +1,4 @@
-curated: '2026-09-26'
+curated: '2026-09-27'
 recent_first: 5
 genre_order:
 - Nonfiction
@@ -987,10 +987,11 @@ books:
   - genre
   - bookline
   - anchor
-- key: crime-and-punishment-fyodor-dostoevsky
+- key: crime-and-punishment-garnett-theory
   genre: Literary Fiction
-  bookline: 'Raskolnikov''s airtight theory meets the body that cannot stand it: nine
-    rips on ideology, guilt, and the person who answers both.'
+  bookline: 'The ''extraordinary man'' theory as self-destruction: six interlocked
+    rips on the rationalization that destroys its author. Built on the public-domain
+    Garnett translation.'
   field_order:
   - book
   - genre
@@ -1599,12 +1600,9 @@ card_order:
 - 606
 - 607
 - 608
-- 609
-- 610
-- 611
-- 612
-- 613
-- 614
-- 615
-- 616
-- 617
+- 618
+- 619
+- 620
+- 621
+- 622
+- 623
