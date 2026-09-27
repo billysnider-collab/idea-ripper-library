@@ -1206,6 +1206,13 @@ document.querySelectorAll('[data-save]').forEach(function(b){
 document.querySelectorAll('.rel a').forEach(function(a){
   a.addEventListener('click',function(e){e.preventDefault();openRip(+a.getAttribute('href').slice(2));});
 });
+/* "Find it on the shelf" links (featured shelves + collide clones): open the
+   canonical shelf card instead of a bare hash jump. Delegated so dynamically
+   added collide clones are covered too. */
+document.addEventListener('click',function(e){
+  var a=e.target&&e.target.closest?e.target.closest('.fcard .fmore a[href^="#c"]'):null;
+  if(!a)return;e.preventDefault();openRip(+a.getAttribute('href').slice(2));
+});
 var _slist=document.getElementById('savedlist');
 if(_slist)_slist.addEventListener('click',function(e){
   var a=e.target.closest('a');if(!a)return;e.preventDefault();openRip(+a.getAttribute('href').slice(2));
@@ -1273,7 +1280,6 @@ function collideCard(c){
   u.textContent=tx('.uw').replace(/^Use when:\s*/i,'');art.appendChild(u);
   var fm=document.createElement('p');fm.className='fmore';
   var a=document.createElement('a');a.href='#c'+c.dataset.n;a.textContent='Find it on the shelf \u2193';
-  (function(id){a.addEventListener('click',function(e){e.preventDefault();openRip(id);});})(+c.dataset.n);
   fm.appendChild(a);art.appendChild(fm);
   return art;
 }
