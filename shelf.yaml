@@ -1088,6 +1088,15 @@ books:
   - book
   - genre
   - bookline
+- key: elon-musk-walter-isaacson
+  genre: Nonfiction
+  bookline: 'Isaacson''s in-the-room biography of Musk -- SpaceX, Tesla, Twitter --
+    and the operating system inside his head: the algorithm, the idiot index, demon
+    mode.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1770,6 +1779,13 @@ card_order:
 - 693
 - 694
 - 695
+- 696
+- 697
+- 698
+- 699
+- 700
+- 701
+- 702
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
