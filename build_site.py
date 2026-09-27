@@ -161,6 +161,41 @@ def featured_block():
     parts.append('</section>')
     return "\n".join(parts)
 
+# Rip of the week (2026-09-27): one hand-picked card rendered as a hero above
+# the Start-here shelf. Config lives in shelf.yaml as rip_of_the_week:
+# {id: <card id>, week: "Sep 27 - Oct 4, 2026", note: "one-line editor note"}.
+# Rendered as article.fcard (NOT article.card, no span.num) so the build_index
+# gates keep counting library cards only. Rotate by changing the shelf entry.
+def rotw_block():
+    rotw = ds.get("rip_of_the_week") or {}
+    rid = rotw.get("id")
+    matches = [c for c in cards if c["id"] == rid]
+    assert matches, "rip_of_the_week id %r not in cards" % (rid,)
+    c = matches[0]
+    fk = '<p class="fkicker">' + RIP_SVG + '<span class="ktext">Rip of the week</span></p>'
+    kr = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Ripped from</span></div>'
+    ku = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Use when</span></div>'
+    parts = ['<section class="rotw" aria-label="Rip of the week">',
+             '<article class="fcard rotw-card">',
+             fk,
+             '<h3 class="ftitle">%s</h3>' % esc(c["title"]),
+             '<p class="fbook">%s &middot; <span class="pill %s">%s</span></p>'
+             % (esc(c["book"]), esca(c["type"]), esc(c["type"])),
+             kr,
+             '<p class="steal">%s</p>' % esc(c["steal"]),
+             '<p class="why"><span class="k">Why it matters:</span> %s</p>' % esc(c["why"]),
+             ku,
+             '<p class="uw">%s</p>' % esc(c["uw"])]
+    week = rotw.get("week") or ""
+    note = rotw.get("note") or ""
+    if week or note:
+        parts.append('<p class="rotw-meta">%s%s%s</p>'
+                     % (esc(week), " &mdash; " if week and note else "", esc(note)))
+    parts.append('<p class="fmore"><a href="#c%d">Find it on the shelf \u2193</a></p>' % c["id"])
+    parts.append('</article>')
+    parts.append('</section>')
+    return "\n".join(parts)
+
 def fb_chapter_detail(ch):
     """Rich chapter section: thesis, key events, causes/consequences, evidence,
     the author's reading. Falls back to the old one-line layout for chapters
@@ -317,6 +352,7 @@ sections = []
 # recently ripped shelf: the N books with the highest max card id (theses excluded:
 # theses are ideas, not books). Rendered first, above the genre sections, and excluded
 # from their genre sections below so every card still renders exactly once.
+sections.append(rotw_block())
 sections.append(featured_block())
 RECENT_N = ds.get("recent_first", 5)
 def _book_maxid(bname):
@@ -495,6 +531,11 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .fmore{margin:var(--space-sm) 0 0;font-family:var(--font-mono);font-size:var(--fs-xs)}
 .fmore a{color:var(--link)}
 @media(min-width:900px){.start-here{grid-template-columns:1fr 1fr}.fcard:first-child{grid-column:1/-1}}
+
+/* ---------- rip of the week (2026-09-27) ---------- */
+.rotw{margin:0 0 var(--space-xl)}
+.rotw-card{border:2px solid var(--accent-rip)}
+.rotw-meta{margin:var(--space-sm) 0 0;font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--ink-structure)}
 
 /* ---------- frame: controls ---------- */
 .controls{position:sticky;top:0;z-index:20;background:var(--surface-frame);border-bottom:1px solid var(--line-frame);padding:var(--space-sm) 0}

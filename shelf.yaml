@@ -1770,3 +1770,8 @@ card_order:
 - 693
 - 694
 - 695
+rip_of_the_week:
+  id: 630
+  week: Sep 27 - Oct 4, 2026
+  note: 'Six hundred years before productivity apps, an English monk wrote the whole
+    technique in one sentence: refuse everything else.'
