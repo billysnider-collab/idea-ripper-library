@@ -147,6 +147,15 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .rotw-card{border:2px solid var(--accent-rip)}
 .rotw-meta{margin:var(--space-sm) 0 0;font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--ink-structure)}
 
+/* ---------- collide (2026-09-27) ---------- */
+.collideshelf{margin:0 0 var(--space-xl);scroll-margin-top:var(--scroll-mt)}
+.collidehead{margin:0 0 var(--space-2xs);font-size:1.4rem;font-weight:400;color:var(--ink-body);border-bottom:2px solid var(--accent-rip);padding-bottom:var(--space-2xs);line-height:var(--lh-tight)}
+.collidehead .gcount{color:var(--ink-structure);font-size:var(--fs-sm);font-weight:400;font-family:var(--font-mono)}
+.collideframe{margin:var(--space-xs) 0 var(--space-md);font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--ink-structure)}
+.collidepair{display:grid;gap:var(--space-md);margin:0 0 var(--space-md)}
+@media(min-width:900px){.collidepair{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.collideshelf{scroll-margin-top:var(--scroll-mt-mobile)}}
+
 /* ---------- frame: controls ---------- */
 .controls{position:sticky;top:0;z-index:20;background:var(--surface-frame);border-bottom:1px solid var(--line-frame);padding:var(--space-sm) 0}
 .controls .inner{max-width:var(--page-max);margin:0 auto;padding:0 var(--page-gutter);display:flex;gap:var(--space-xs);flex-wrap:wrap;align-items:center}
@@ -370,7 +379,7 @@ main{max-width:var(--page-max)}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 /* ---------- print: no frame, no red, black on white ---------- */
 @media print{
-  .controls,.jumpchips,.gindex,#toast,.actions,.savedactions,.noresults button{display:none!important}
+  .controls,.jumpchips,.gindex,#toast,.actions,.savedactions,.collideshelf,.noresults button{display:none!important}
   body{background:var(--print-paper);color:var(--print-ink)}
   header.masthead{background:var(--print-paper);border-bottom:2px solid var(--print-ink)}
   .mast-inner{padding:var(--space-sm) 0}
@@ -600,6 +609,7 @@ main{max-width:var(--page-max)}
 <button type="button" id="expand">Expand all</button>
 <button type="button" id="collapse">Collapse all</button>
 <button type="button" id="randomrip">Random rip</button>
+<button type="button" id="colliderip">Collide</button>
 <span class="count" id="count"></span><span id="countlive" class="sr-only" aria-live="polite"></span>
 </div></div>
 <nav class="jumpchips" id="jumpchips" aria-label="Jump to a genre or book"><span class="gindex"><a class="gix" id="savedchip" href="#saved" style="border-top-color:var(--accent-rust)"><span class="gdot" style="background:var(--accent-rust)"></span>★ Saved (0)</a>
@@ -710,6 +720,8 @@ main{max-width:var(--page-max)}
 </section>
 <nav class="crumbs" id="crumbs" aria-label="Breadcrumb"><a href="#" data-crumb="root">All books</a></nav>
 <main>
+<section class="collideshelf" id="collide" aria-label="Collide" hidden><h2 class="collidehead">Collide <span class="gcount">two rips, different worlds</span></h2><p class="collideframe">Two rips from different worlds. The collision is the point &mdash; your move.</p><div class="collidepair" id="collidepair"></div><div class="savedactions"><button type="button" id="collideagain">Collide again</button></div></section>
+
 <section class="rotw" aria-label="Rip of the week">
 <article class="fcard rotw-card">
 <p class="fkicker"><svg class="ripmark" viewBox="0 0 20 8" aria-hidden="true"><polyline points="1,4.5 5,2 9,5.5 13,2 17,5 19,3" fill="none" stroke-width="2"/></svg><span class="ktext">Rip of the week</span></p>
@@ -3266,6 +3278,73 @@ if(_rr)_rr.addEventListener('click',function(){
   if(!pool.length){toast('No rips visible \u2014 clear search first');return;}
   openRip(+pool[Math.floor(Math.random()*pool.length)].dataset.n);
 });
+/* collide (phase 1, 2026-09-27): two rips from different worlds, side by
+   side. Deliberately no machine-written synthesis: the collision is the
+   product, the user's brain writes the synthesis. */
+var _cb=document.getElementById('colliderip'),_csec=document.getElementById('collide'),
+    _cpair=document.getElementById('collidepair'),_cagain=document.getElementById('collideagain'),
+    _lastPair='';
+function collideKicker(label){
+  var p=document.createElement('p');p.className='fkicker';
+  var src=document.querySelector('.fkicker .ripmark');
+  if(src)p.appendChild(src.cloneNode(true));
+  var s=document.createElement('span');s.className='ktext';s.textContent=label;
+  p.appendChild(s);return p;
+}
+function collideCard(c){
+  function tx(sel){var el=c.querySelector(sel);return el?el.textContent.trim():'';}
+  var art=document.createElement('article');art.className='fcard';
+  art.appendChild(collideKicker('Collision rip'));
+  var h=document.createElement('h3');h.className='ftitle';h.textContent=tx('.ctitle');art.appendChild(h);
+  var fb=document.createElement('p');fb.className='fbook';
+  fb.textContent=(c.getAttribute('data-book')||'')+' \u00b7 ';
+  var pill=document.createElement('span');pill.className='pill '+(c.getAttribute('data-type')||'');
+  pill.textContent=c.getAttribute('data-type')||'';fb.appendChild(pill);art.appendChild(fb);
+  art.appendChild(collideKicker('Ripped from'));
+  var st=document.createElement('p');st.className='steal';st.textContent=tx('.steal');art.appendChild(st);
+  var wy=document.createElement('p');wy.className='why';
+  var k=document.createElement('span');k.className='k';k.textContent='Why it matters:';
+  wy.appendChild(k);
+  wy.appendChild(document.createTextNode(' '+tx('.why').replace(/^Why it matters:\s*/i,'')));
+  art.appendChild(wy);
+  art.appendChild(collideKicker('Use when'));
+  var u=document.createElement('p');u.className='uw';
+  u.textContent=tx('.uw').replace(/^Use when:\s*/i,'');art.appendChild(u);
+  var fm=document.createElement('p');fm.className='fmore';
+  var a=document.createElement('a');a.href='#c'+c.dataset.n;a.textContent='Find it on the shelf \u2193';
+  (function(id){a.addEventListener('click',function(e){e.preventDefault();openRip(id);});})(+c.dataset.n);
+  fm.appendChild(a);art.appendChild(fm);
+  return art;
+}
+function pickTwo(){
+  var pool=[],i,cs=document.querySelectorAll('.card:not([data-fb])');
+  for(i=0;i<cs.length;i++)pool.push(cs[i]);
+  if(pool.length<2)return null;
+  var a=null,b=null,tries,cand,key,rkey,att;
+  for(att=0;att<3;att++){
+    a=pool[(Math.random()*pool.length)|0];b=null;tries=0;
+    while(tries<60){
+      cand=pool[(Math.random()*pool.length)|0];tries++;
+      if(cand===a||cand.getAttribute('data-book')===a.getAttribute('data-book'))continue;
+      if(cand.getAttribute('data-genre')!==a.getAttribute('data-genre')||tries>20){b=cand;break;}
+    }
+    if(!b)continue;
+    key=a.dataset.n+'|'+b.dataset.n;rkey=b.dataset.n+'|'+a.dataset.n;
+    if(key!==_lastPair&&rkey!==_lastPair){_lastPair=key;return[a,b];}
+  }
+  return b?[a,b]:null;
+}
+function doCollide(){
+  var pair=pickTwo();
+  if(!pair){toast('Not enough rips to collide');return;}
+  _cpair.innerHTML='';
+  _cpair.appendChild(collideCard(pair[0]));
+  _cpair.appendChild(collideCard(pair[1]));
+  _csec.hidden=false;
+  setTimeout(function(){_csec.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});},60);
+}
+if(_cb)_cb.addEventListener('click',doCollide);
+if(_cagain)_cagain.addEventListener('click',doCollide);
 syncSaveButtons();renderSaved();
 })();
 
