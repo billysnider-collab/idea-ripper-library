@@ -996,6 +996,49 @@ books:
   - book
   - genre
   - bookline
+- key: virtual-military-markets-angela-j-burth
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2005. Full text: https://archive.org/details/virtualmilitarym109452000'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: economic-preparation-of-the-environment-a-selective-empirical-analysis-of-chinese-investment-in-the-philippines-tanner-n-fleck-and-jonathan-g-wissler
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/DTIC_AD1046364'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-learning-curve-macv-s-grasp-of-intelligence-psyop-and-their-coordination-1965-1971-andrew-d-whiskeyman
+  genre: Thesis
+  bookline: 'PhD thesis — Air University, 2015. Full text: https://archive.org/details/DTIC_AD1015736'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: extended-stay-factors-contributing-to-success-or-failure-when-african-presidents-attempt-to-amend-constitutions-to-hold-on-to-power-brent-h-oglesby
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/extendedstayfact1094555510'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: ancilla-assisted-quantum-information-processing-abhishek-shukla
+  genre: Thesis
+  bookline: 'PhD thesis — Indian Institute of Science Education and Research Pune,
+    2016. Full text: https://archive.org/details/arxiv-1601.00234'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: verifying-the-representation-of-tropical-easterly-waves-in-community-climate-model-version-4-wesley-j-davis
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2019. Full text: https://archive.org/details/verifyingtherepr1094564132'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1606,3 +1649,9 @@ card_order:
 - 621
 - 622
 - 623
+- 624
+- 625
+- 626
+- 627
+- 628
+- 629

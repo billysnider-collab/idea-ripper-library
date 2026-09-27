@@ -124,6 +124,37 @@ def book_block(b):
     parts.append('</div></section>')
     return "\n".join(parts)
 
+# Phase 1 landing (2026-09-27): Start-here shelf - 5 hand-picked rips rendered
+# in full above the library. Rendered as article.fcard (NOT article.card, and
+# no span.num) so the build_index card-count/numbering gates keep counting
+# library cards only. Each links down to its canonical #c<id> shelf card.
+FEATURED_IDS = [623, 117, 470, 500, 149]
+def featured_block():
+    feats = [c for _fid in FEATURED_IDS for c in cards if c["id"] == _fid]
+    assert len(feats) == len(FEATURED_IDS), "featured id missing from cards"
+    fk = '<p class="fkicker">' + RIP_SVG + '<span class="ktext">Featured rip</span></p>'
+    kr = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Ripped from</span></div>'
+    ku = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Use when</span></div>'
+    parts = ['<h2 class="genre" data-genre="Start here" id="g-start-here">Start here <span class="gcount">5 rips, hand-picked</span></h2>',
+             '<section class="start-here" aria-label="Start here: five featured rips">']
+    for c in feats:
+        parts.append(
+            '<article class="fcard">'
+            '%s'
+            '<h3 class="ftitle">%s</h3>'
+            '<p class="fbook">%s &middot; <span class="pill %s">%s</span></p>'
+            '%s'
+            '<p class="steal">%s</p>'
+            '<p class="why"><span class="k">Why it matters:</span> %s</p>'
+            '%s'
+            '<p class="uw">%s</p>'
+            '<p class="fmore"><a href="#c%d">Find it on the shelf \u2193</a></p>'
+            '</article>'
+            % (fk, esc(c["title"]), esc(c["book"]), esca(c["type"]), esc(c["type"]),
+               kr, esc(c["steal"]), esc(c["why"]), ku, esc(c["uw"]), c["id"]))
+    parts.append('</section>')
+    return "\n".join(parts)
+
 def fb_chapter_detail(ch):
     """Rich chapter section: thesis, key events, causes/consequences, evidence,
     the author's reading. Falls back to the old one-line layout for chapters
@@ -280,6 +311,7 @@ sections = []
 # recently ripped shelf: the N books with the highest max card id (theses excluded:
 # theses are ideas, not books). Rendered first, above the genre sections, and excluded
 # from their genre sections below so every card still renders exactly once.
+sections.append(featured_block())
 RECENT_N = ds.get("recent_first", 5)
 def _book_maxid(bname):
     return max(c["id"] for c in cards if c["book"] == bname)
@@ -416,6 +448,20 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .rip-request{position:absolute;top:var(--space-md);right:var(--page-gutter);font-family:var(--font-mono);font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-frame);border:1px solid var(--ink-frame);border-radius:999px;padding:.5em 1.1em;text-decoration:none;white-space:nowrap}
 .rip-request:hover{background:var(--ink-frame);color:var(--surface-frame)}
 @media (max-width:560px){.rip-request{position:static;display:inline-block;margin-top:var(--space-sm);font-size:11px;padding:.45em .9em}}
+/* ---------- start-here shelf (phase 1, 2026-09-27) ---------- */
+.start-here{display:grid;gap:var(--space-md);margin:0 0 var(--space-xl)}
+.fcard{background:var(--surface-paper);border:1px solid var(--line-card);border-left:3px solid var(--accent-mechanism-line);border-radius:var(--radius-lg);padding:var(--space-md) var(--space-lg);position:relative}
+.fkicker{display:flex;align-items:center;gap:var(--space-xs);margin:0 0 var(--space-xs);font-family:var(--font-mono);font-size:var(--fs-xs);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-structure)}
+.fkicker .ripmark{width:var(--space-lg);height:auto;flex:none}
+.fkicker .ripmark polyline{stroke:var(--accent-rip)}
+.fkicker .ktext{border-bottom:2px solid var(--accent-rip);padding-bottom:var(--space-3xs)}
+.ftitle{margin:0 0 var(--space-2xs);font-size:var(--fs-xl);line-height:var(--lh-tight);color:var(--ink-body)}
+.fbook{margin:0 0 var(--space-sm);font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--ink-structure)}
+.fcard .steal{font-size:var(--fs-lg)}
+.fmore{margin:var(--space-sm) 0 0;font-family:var(--font-mono);font-size:var(--fs-xs)}
+.fmore a{color:var(--link)}
+@media(min-width:900px){.start-here{grid-template-columns:1fr 1fr}.fcard:first-child{grid-column:1/-1}}
+
 /* ---------- frame: controls ---------- */
 .controls{position:sticky;top:0;z-index:20;background:var(--surface-frame);border-bottom:1px solid var(--line-frame);padding:var(--space-sm) 0}
 .controls .inner{max-width:var(--page-max);margin:0 auto;padding:0 var(--page-gutter);display:flex;gap:var(--space-xs);flex-wrap:wrap;align-items:center}
@@ -917,11 +963,9 @@ page = """<!DOCTYPE html>
 <a class="rip-request" href="mailto:billysnider@gmail.com?subject=Rip%%20request&body=Book%%20title%%20and%%20author%%3A%%0A%%0AWhy%%20it%%27s%%20worth%%20ripping%%3A">Request a rip</a>
 </div></header>
 <section id="intro">
-<p><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>
-<details class="intromore"><summary>How to hunt</summary>
-<p><strong>How to hunt:</strong> tap a book to open its rips, tap a card for the full steal, copy anything you want. Search hunts titles, steals, and use-whens all at once.</p>
+<p class="lede"><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>
+<p class="howto"><strong>How to hunt:</strong> start with the five featured rips below, shown in full. Then tap a book to open its rips, tap a card for the full steal, copy anything you want. Search hunts titles, steals, and use-whens all at once.</p>
 %s
-</details>
 </section>
 <div class="controls"><div class="inner">
 <input type="search" id="q" placeholder="Search titles, steals, use-when&hellip;" aria-label="Search cards"/>
