@@ -1097,6 +1097,14 @@ books:
   - book
   - genre
   - bookline
+- key: gravity-s-rainbow-thomas-pynchon
+  genre: Literary Fiction
+  bookline: 'Pynchon''s 1973 postmodern epic of paranoia and control: the Proverbs
+    for Paranoids, the war as business, the screaming across the sky.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1786,6 +1794,13 @@ card_order:
 - 700
 - 701
 - 702
+- 703
+- 704
+- 705
+- 706
+- 707
+- 708
+- 709
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
