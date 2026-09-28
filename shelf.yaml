@@ -1105,6 +1105,16 @@ books:
   - book
   - genre
   - bookline
+- key: driven-by-compression-progress-j-rgen-schmidhuber-j-rgen-schmidhuber
+  genre: Nonfiction
+  bookline: 'Jürgen Schmidhuber, TU Munich & IDSIA — 2008/2009 paper (arXiv:0812.4360):
+    one principle — the drive for compression progress — explains subjective beauty,
+    novelty, surprise, interestingness, attention, curiosity, creativity, art, science,
+    music, and jokes.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1809,6 +1819,21 @@ card_order:
 - 715
 - 716
 - 717
+- 718
+- 719
+- 720
+- 721
+- 722
+- 723
+- 724
+- 725
+- 726
+- 727
+- 728
+- 729
+- 730
+- 731
+- 732
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
