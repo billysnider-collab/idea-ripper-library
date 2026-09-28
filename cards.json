@@ -768,6 +768,26 @@
    "book": "Neuromancer — William Gibson",
    "genre": "Science Fiction",
    "bookline": "William Gibson, 1984"
+  },
+  {
+   "book": "Special Forces Operational Detachment-A In 2035 — Eric S. Mann & Maximilian L. Soto",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2019. Full text: https://archive.org/details/specialforcesope1094564016"
+  },
+  {
+   "book": "Coordinated Guidance Strategy for Multiple USVs During Maritime Interdiction Operations — Hongze Alex See",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/DTIC_AD1046921"
+  },
+  {
+   "book": "Studies on the potential association of GRIN2B and DRD4 variants with cognitive scores of Wilson disease patients — Prakriti Jana",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Sister Nivedita University, 2025. Full text: https://archive.org/details/sgng.20656-studies-on-the-potential-association-of-grin2b-and-drd4-variants-"
+  },
+  {
+   "book": "Local Communities of the Bothnian Arc in a Prehistoric World — Aki Hakonen",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — University of Oulu, 2021. Full text: https://archive.org/details/isbn978-952-62-2938-6"
   }
  ],
  "cards": [
@@ -10058,6 +10078,42 @@
    "why": "After everything, the partnership dissolves in one flat sentence. No farewell scene, no closure. The human story ends the way the Sprawl ends everything: people just stop being in the same place.",
    "uw": "Use when ending a partnership. Deny the farewell and the absence lands harder.",
    "id": 820
+  },
+  {
+   "title": "Special Forces Operational Detachment-A In 2035",
+   "book": "Special Forces Operational Detachment-A In 2035 — Eric S. Mann & Maximilian L. Soto",
+   "type": "argument",
+   "steal": "Tracing three eras of SFOD-A history, the authors find capability adaptation has always been driven by political, economic, societal, and technological environmental change — never technology alone — and recommend adding an information warfare specialist to the SFOD-A to keep it relevant in great power competition.",
+   "why": "It reframes special-forces relevance around influence rather than firepower — an institutional prescription that reads like the playbook for today's gray-zone competition.",
+   "uw": "The center of gravity in modern conflict is the mind of the population, not the weapons inventory.",
+   "id": 821
+  },
+  {
+   "title": "Coordinated Guidance Strategy for Multiple USVs During Maritime Interdiction Operations",
+   "book": "Coordinated Guidance Strategy for Multiple USVs During Maritime Interdiction Operations — Hongze Alex See",
+   "type": "argument",
+   "steal": "A swarm of unmanned surface vehicles, coordinated by intercept-time and terminal-angle guidance to surround and contain a target, is a viable alternative or complement to manned vessels in maritime interdiction.",
+   "why": "It treats interdiction as a coordination problem rather than a hull-count problem — the same logic now scaling into every drone swarm program, at sea as in the air.",
+   "uw": "Coordination is a force multiplier — swarms win by geometry and timing, not by adding more ships.",
+   "id": 822
+  },
+  {
+   "title": "Studies on the potential association of GRIN2B and DRD4 variants with cognitive scores of Wilson disease patients",
+   "book": "Studies on the potential association of GRIN2B and DRD4 variants with cognitive scores of Wilson disease patients — Prakriti Jana",
+   "type": "argument",
+   "steal": "In Indian Wilson disease patients, GRIN2B and DRD4 polymorphisms act as cognitive modifier genes — the GRIN2B T/T genotype predicts poorer immediate recall and conflict resolution but protects verbal fluency, while the DRD4 C allele protects executive and spatial function yet risks delayed recall when homozygous. Allele effects are domain-specific, never uniformly good or bad.",
+   "why": "A clean demonstration that a single allele can be protective and risky at once depending on the cognitive domain — the reason gene-phenotype findings resist headline simplification.",
+   "uw": "Genes don't confer \"better\" or \"worse\" cognition — effects are domain-specific; the same allele can protect one faculty while eroding another.",
+   "id": 823
+  },
+  {
+   "title": "Local Communities of the Bothnian Arc in a Prehistoric World",
+   "book": "Local Communities of the Bothnian Arc in a Prehistoric World — Aki Hakonen",
+   "type": "argument",
+   "steal": "A forager–farmer frontier on the Bothnian Arc persisted for over four millennia after agriculture arrived in the 4th–3rd millennia BCE, with subsistence ideologies — not geography alone — dividing communities; post-glacial land uplift was itself an active agent shaping how people mapped their world.",
+   "why": "Four thousand years of neighbors living differently side by side undercuts the assumption that new technologies inevitably displace old ways of life — transitions can stay stubbornly plural.",
+   "uw": "A better technology doesn't automatically win — ideologies of subsistence can hold a frontier open for millennia.",
+   "id": 824
   }
  ]
 }

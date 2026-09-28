@@ -1157,6 +1157,34 @@ books:
   - book
   - genre
   - bookline
+- key: special-forces-operational-detachment-a-in-2035-eric-s-mann-maximilian-l-soto
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2019. Full text: https://archive.org/details/specialforcesope1094564016'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: coordinated-guidance-strategy-for-multiple-usvs-during-maritime-interdiction-operations-hongze-alex-see
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/DTIC_AD1046921'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: studies-on-the-potential-association-of-grin2b-and-drd4-variants-with-cognitive-scores-of-wilson-disease-patients-prakriti-jana
+  genre: Thesis
+  bookline: 'Masters thesis — Sister Nivedita University, 2025. Full text: https://archive.org/details/sgng.20656-studies-on-the-potential-association-of-grin2b-and-drd4-variants-'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: local-communities-of-the-bothnian-arc-in-a-prehistoric-world-aki-hakonen
+  genre: Thesis
+  bookline: 'PhD thesis — University of Oulu, 2021. Full text: https://archive.org/details/isbn978-952-62-2938-6'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1964,6 +1992,10 @@ card_order:
 - 818
 - 819
 - 820
+- 821
+- 822
+- 823
+- 824
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
