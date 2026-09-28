@@ -1115,6 +1115,13 @@ books:
   - book
   - genre
   - bookline
+- key: northanger-abbey-jane-austen
+  genre: Literary Fiction
+  bookline: Jane Austen, 1817 (written 1798-1799), Project Gutenberg ebook 121
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1834,6 +1841,19 @@ card_order:
 - 730
 - 731
 - 732
+- 733
+- 734
+- 735
+- 736
+- 737
+- 738
+- 739
+- 740
+- 741
+- 742
+- 743
+- 744
+- 745
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
