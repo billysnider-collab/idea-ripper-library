@@ -1122,6 +1122,34 @@ books:
   - book
   - genre
   - bookline
+- key: white-noise-don-delillo
+  genre: Literary Fiction
+  bookline: Don DeLillo, 1985
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: foucault-s-pendulum-umberto-eco
+  genre: Literary Fiction
+  bookline: Umberto Eco, 1988
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-stars-my-destination-alfred-bester
+  genre: Science Fiction
+  bookline: Alfred Bester, 1956
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: service-model-adrian-tchaikovsky
+  genre: Science Fiction
+  bookline: Adrian Tchaikovsky, 2025
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1854,6 +1882,66 @@ card_order:
 - 743
 - 744
 - 745
+- 746
+- 747
+- 748
+- 749
+- 750
+- 751
+- 752
+- 753
+- 754
+- 755
+- 756
+- 757
+- 758
+- 759
+- 760
+- 761
+- 762
+- 763
+- 764
+- 765
+- 766
+- 767
+- 768
+- 769
+- 770
+- 771
+- 772
+- 773
+- 774
+- 775
+- 776
+- 777
+- 778
+- 779
+- 780
+- 781
+- 782
+- 783
+- 784
+- 785
+- 786
+- 787
+- 788
+- 789
+- 790
+- 791
+- 792
+- 793
+- 794
+- 795
+- 796
+- 797
+- 798
+- 799
+- 800
+- 801
+- 802
+- 803
+- 804
+- 805
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
