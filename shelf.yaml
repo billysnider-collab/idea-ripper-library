@@ -1150,6 +1150,13 @@ books:
   - book
   - genre
   - bookline
+- key: neuromancer-william-gibson
+  genre: Science Fiction
+  bookline: William Gibson, 1984
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1942,6 +1949,21 @@ card_order:
 - 803
 - 804
 - 805
+- 806
+- 807
+- 808
+- 809
+- 810
+- 811
+- 812
+- 813
+- 814
+- 815
+- 816
+- 817
+- 818
+- 819
+- 820
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
