@@ -1210,6 +1210,14 @@ books:
   - book
   - genre
   - bookline
+- key: algorithms-every-programmer-should-know-meap
+  genre: Nonfiction
+  bookline: 'Manning MEAP early access (6 of 14 chapters): algorithms as plain-language
+    thinking tools for matching, searching, and deciding.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2054,6 +2062,18 @@ card_order:
 - 855
 - 856
 - 857
+- 858
+- 859
+- 860
+- 861
+- 862
+- 863
+- 864
+- 865
+- 866
+- 867
+- 868
+- 869
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
