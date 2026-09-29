@@ -1255,6 +1255,15 @@ books:
   - book
   - genre
   - bookline
+- key: thus-spoke-zarathustra-friedrich-nietzsche
+  genre: Nonfiction
+  bookline: 'Nietzsche''s 1883 prophet''s handbook: the Superman, the Last Man, eternal
+    recurrence, and the will to power — the operator''s edition, ripped from the public-domain
+    Thomas Common translation.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2121,6 +2130,16 @@ card_order:
 - 877
 - 878
 - 879
+- 880
+- 881
+- 882
+- 883
+- 884
+- 885
+- 886
+- 887
+- 888
+- 889
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
