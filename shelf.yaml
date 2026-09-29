@@ -1227,6 +1227,34 @@ books:
   - book
   - genre
   - bookline
+- key: putting-the-critical-back-in-critical-infrastructure-bradford-c-mason
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/puttingcriticalb1094547816'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: the-use-of-autonomous-systems-in-emergency-medical-services-bridging-human-intelligence-and-technology-josh-a-davies
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632181'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: price-and-income-dynamics-in-the-agri-food-system-a-disaggregate-perspective-joseph-baines
+  genre: Thesis
+  bookline: 'PhD thesis — York University, 2015. Full text: https://archive.org/details/bnarchives_0437'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: border-security-infrastructure-projects-space-access-and-mobility-in-the-san-diego-tijuana-transborder-region-manuel-guadalupe-galaviz
+  genre: Thesis
+  bookline: 'PhD thesis — The University of Texas at Austin, 2020. Full text: https://archive.org/details/bordersecurity'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2089,6 +2117,10 @@ card_order:
 - 873
 - 874
 - 875
+- 876
+- 877
+- 878
+- 879
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026

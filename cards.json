@@ -813,6 +813,26 @@
    "book": "Don Quixote — Miguel de Cervantes Saavedra",
    "genre": "Literary Fiction",
    "bookline": "Cervantes, 1605/1615 (Ormsby 1885 translation, public domain): the reality-proof mind. How a story survives every collision with fact, and how it becomes real once other people start investing in it."
+  },
+  {
+   "book": "Putting the critical back in critical infrastructure — Bradford C. Mason",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/puttingcriticalb1094547816"
+  },
+  {
+   "book": "The Use of Autonomous Systems in Emergency Medical Services: Bridging Human Intelligence and Technology — Josh A. Davies",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632181"
+  },
+  {
+   "book": "Price and Income Dynamics in the Agri-Food System: A Disaggregate Perspective — Joseph Baines",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — York University, 2015. Full text: https://archive.org/details/bnarchives_0437"
+  },
+  {
+   "book": "Border Security Infrastructure Projects: Space, Access, and Mobility in the San Diego-Tijuana Transborder Region — Manuel Guadalupe Galaviz",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — The University of Texas at Austin, 2020. Full text: https://archive.org/details/bordersecurity"
   }
  ],
  "cards": [
@@ -10598,6 +10618,42 @@
    "why": "A story that has gone social no longer belongs to its teller. The community has invested in it, built rituals around it, and made it load-bearing for their own identities. Renunciation then reads as betrayal, not honesty. Founders, prophets, and public figures all discover this: you can stop believing, but you cannot unilaterally end a story other people live inside.",
    "uw": "Someone tries to walk back a public story and the crowd revolts. Understand: they are not defending the teller, they are defending their own investment. Plan the exit knowing the story has shareholders now.",
    "id": 875
+  },
+  {
+   "title": "Putting the critical back in critical infrastructure",
+   "book": "Putting the critical back in critical infrastructure — Bradford C. Mason",
+   "type": "argument",
+   "steal": "Critical infrastructure security in the U.S. is implemented fifty different ways — each state and locality has \"unilaterally interpreted their roles and priorities,\" so the national mission is \"highly adapted locally and is not clearly and/or consistently interpreted, understood, applied, or implemented across the nation\" despite national doctrine demanding uniformity.",
+   "why": "The paradox — operational competence on top of a missing managerial core — reads as the diagnosis behind today's critical-infrastructure-attack debates: America defends its grid, pipelines, and water as fifty experiments, not one program.",
+   "uw": "A national mission run as fifty local interpretations isn't one mission — it's fifty, sharing a name and the same vulnerability.",
+   "id": 876
+  },
+  {
+   "title": "The Use of Autonomous Systems in Emergency Medical Services: Bridging Human Intelligence and Technology",
+   "book": "The Use of Autonomous Systems in Emergency Medical Services: Bridging Human Intelligence and Technology — Josh A. Davies",
+   "type": "argument",
+   "steal": "EMS organizations must prepare twice for autonomous systems — response protocols for when responders encounter them on-scene, and active adoption to improve service — and the SWOT of ignoring them found weaknesses in efficiency and safety rated high while strengths were \"nonexistent.\"",
+   "why": "A 2015 thesis predicted the exact moment we're in — responders now routinely working around driverless cars, delivery robots, and autonomous trucks — and said preparation, not resistance, is the only move.",
+   "uw": "You don't get to opt out of a technology by ignoring it — you only forfeit your say in how it changes your work.",
+   "id": 877
+  },
+  {
+   "title": "Price and Income Dynamics in the Agri-Food System: A Disaggregate Perspective",
+   "book": "Price and Income Dynamics in the Agri-Food System: A Disaggregate Perspective — Joseph Baines",
+   "type": "argument",
+   "steal": "High and volatile food prices since 2000 have been a redistributional battle, not a neutral market event — some agribusiness groups are \"price-shapers\" that actively restructure markets and regulation (ethanol mandates, derivatives exemptions) to make profitable price developments more likely, while farmers and others absorb the losses.",
+   "why": "It names the mechanism behind every food-price crisis — volatility is someone's business model, and the winners lobby the rules that produce it.",
+   "uw": "When prices swing, don't ask only who is hurt — ask who wrote the swing into the rules.",
+   "id": 878
+  },
+  {
+   "title": "Border Security Infrastructure Projects: Space, Access, and Mobility in the San Diego-Tijuana Transborder Region",
+   "book": "Border Security Infrastructure Projects: Space, Access, and Mobility in the San Diego-Tijuana Transborder Region — Manuel Guadalupe Galaviz",
+   "type": "argument",
+   "steal": "Border security infrastructure doesn't just stop crossings — it redraws who can use public space: a 15-month ethnography found the built security apparatus (fencing, checkpoints) produces social and legal processes that bar Latinx residents from parks, roads, and freeways \"free of harassment or fear of deportation\" through ethnic profiling.",
+   "why": "Infrastructure is policy made permanent — a checkpoint reshapes daily life for millions of legal residents long after the headline bill passes.",
+   "uw": "Build something and you've made a decision that outlives the debate — the fence keeps governing after the vote is forgotten.",
+   "id": 879
   }
  ]
 }
