@@ -15,10 +15,10 @@ from matplotlib.patches import Polygon
 from matplotlib.font_manager import FontProperties
 from matplotlib.text import TextPath
 
-INK = "#14110c"
-PAPER = "#f2e8d5"
+INK = "#1D1913"
+PAPER = "#F5EFE3"
 YELLOW = "#ffd21f"
-RED = "#d92b1f"
+RED = "#A03B2A"   # oxblood on paper (Billy palette, 2026-09-29)
 FONT = "/usr/share/fonts/truetype/noto/NotoSans-CondensedBlack.ttf"
 FP = FontProperties(fname=FONT)
 
