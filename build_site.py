@@ -83,7 +83,7 @@ def book_block(b):
              % (slug, esca(b["book"]), esca(b["genre"]))]
     parts.append(
         '<h2 class="bh"><button type="button" class="bookhead" aria-expanded="false">'
-        '<span class="chip" style="background:hsl(%d,45%%,55%%)"></span>'
+        '<span class="chip" data-hue="%d"></span>'
         '<span class="bmain"><span class="btitle"><span class="bttext" title="%s">%s</span> <span class="bcount">%d rip%s</span></span>'
         '%s'
         '<span class="bookline">%s</span>'
@@ -249,7 +249,7 @@ def fullbook_block(fb):
         blurb += " \u2014 " + fb["lens"]
     parts.append(
         '<h2 class="bh"><button type="button" class="fbookhead" aria-expanded="false">'
-        '<span class="chip" style="background:var(--amber)"></span>'
+        '<span class="chip chip-fb"></span>'
         '<span class="bmain"><span class="btitle">%s <span class="bcount">full-book brief \u00b7 %d cards</span></span>'
         '<span class="bookline">%s</span></span>'
         '<span class="bchev">\u25be</span></button></h2>'
@@ -399,11 +399,11 @@ sections.insert(0, collide_section)
 # genre index: one compact link per genre (label + mono card count)
 _gcounts = {g: sum(1 for c in cards if genre_of[c["book"]] == g) for g in genre_order}
 gindex = "\n".join(
-    '<a class="gix" href="#g-%s" data-genre="%s" style="border-top-color:hsl(%d,45%%,55%%)"><span class="gdot" style="background:hsl(%d,45%%,55%%)"></span>%s <span class="gixc">%d</span></a>'
-    % (slugify(g), esca(g), ghue[g], ghue[g], esc(g), _gcounts[g])
+    '<a class="gix" href="#g-%s" data-genre="%s"><span class="gdot"></span>%s <span class="gixc">%d</span></a>'
+    % (slugify(g), esca(g), esc(g), _gcounts[g])
     for g in genre_order if _gcounts[g])
 # phase 5: saved-rips chip (count filled by JS)
-gindex = ('<a class="gix" id="savedchip" href="#saved" style="border-top-color:var(--accent-rust)"><span class="gdot" style="background:var(--accent-rust)"></span>\u2605 Saved (0)</a>\n' + gindex)
+gindex = ('<a class="gix" id="savedchip" href="#saved"><span class="gdot"></span>\u2605 Saved (0)</a>\n' + gindex)
 # jump scents: the 12 most recently added books (highest max card id)
 def _maxid(b):
     return max(c["id"] for c in cards if c["book"] == b["book"])
@@ -437,42 +437,56 @@ CSS = """
    except 0/auto keywords and the two wordmark attribute selectors (which must
    match the original SVG's own attributes to recolor it). */
 :root{
-  /* identity tokens (required) */
-  color-scheme:dark; /* one deliberate palette: the OS never re-themes this page */
-  --surface-frame:#100C09;   /* deepest espresso: masthead, controls, footer */
-  --surface-base:#14100C;    /* reading-zone ground */
-  --surface-paper:#1E1712;   /* index cards + raised panels */
-  --ink-frame:#F2EDE2;
-  --accent-rip:#E5322A;      /* rip mark only, never chrome */
-  --ink-body:#ECE3D0;        /* warm paper text */
-  --ink-structure:#A79A80;   /* secondary text on the base */
-  --mark-highlight:#54430F;  /* search-hit ground on dark */
-  --link:#D08A4E;            /* rust links, never default blue */
-  /* derived tokens (all still :root properties) */
-  --surface-frame-raised:#251E17;  /* inputs, chips, toast on the frame */
-  --ink-structure-frame:#9C8F76;   /* secondary text on the frame */
-  --line-frame:#3A3128;            /* borders on the frame */
-  --line-structure:#6E6250;        /* dividers on the base (decorative) */
-  --line-card:#40382C;             /* card hairlines */
-  --accent-mechanism:#D9A93B;      /* mechanism pill on dark */
-  --accent-mechanism-line:#6E5A24; /* mechanism border on dark */
-  --accent-rust:#B85C33;           /* rust: title rules + interactive chrome */
-  --accent-rust-hi:#E5A566;        /* rust hover */
-  --amber:#D9A93B;                 /* full-book chip (was an undefined token) */
-  --type-mechanism:#D9A93B;        /* type inks: muted book-spine tones */
-  --type-argument:#C08E85;
-  --type-concept:#7FA3A0;
-  --type-passage:#8FA0B8;
-  --type-definition:#9AA27A;
-  --type-evidence:#B4764A;
-  --type-contradiction:#BC6650;
-  --type-question:#A68BA0;
-  --type-prediction:#6E8E96;
+  /* "Oxblood on paper" (Billy lock 2026-09-29). Light only, no dark mode.
+     The accent is the ONLY saturated color: Copy buttons, links, and the
+     keep marker (Save / Saved). Everything else is ink, muted, or line. */
+  color-scheme:light; /* one deliberate palette: the OS never re-themes this page */
+  --paper:#F5EFE3;           /* bg: cream paper */
+  --surface:#FCFAF4;         /* cards */
+  --ink:#1D1913;             /* text: 16.8:1 on surface */
+  --ink-muted:#6C6355;       /* secondary text: 5.2:1 on paper, 5.7:1 on surface */
+  --line:#E4DCC9;            /* hairline borders */
+  --line-strong:#CFC4AE;     /* neutral outline / hover rule (no hue) */
+  --accent:#A03B2A;          /* oxblood */
+  --accent-deep:#7E2E20;     /* oxblood hover / pressed */
+  /* legacy token names, remapped onto the paper palette */
+  --surface-frame:var(--paper);
+  --surface-base:var(--paper);
+  --surface-paper:var(--surface);
+  --surface-raised:var(--surface);
+  --ink-frame:var(--ink);
+  --accent-rip:var(--ink);   /* rules + rip marks are ink now, not red */
+  --ink-body:var(--ink);
+  --ink-structure:var(--ink-muted);
+  --mark-highlight:#E9DDC0;  /* search-hit ground: darker paper, no hue */
+  --link:var(--accent);
+  --surface-frame-raised:var(--surface);
+  --ink-structure-frame:var(--ink-muted);
+  --line-frame:var(--line);
+  --line-structure:var(--line-strong);
+  --line-card:var(--line);
+  --accent-mechanism:var(--ink-muted);
+  --accent-mechanism-line:var(--line-strong);
+  --accent-rust:var(--line-strong); /* title rules + chrome hover: neutral */
+  --accent-rust-hi:var(--accent-deep); /* link hover */
+  --accent-rust-hover:var(--ink);
+  --amber:var(--ink-muted);
+  --type-mechanism:var(--ink);      /* type pills: ink/muted outlines, told apart by label + weight */
+  --type-argument:var(--ink-muted);
+  --type-concept:var(--ink-muted);
+  --type-passage:var(--ink-muted);
+  --type-definition:var(--ink-muted);
+  --type-evidence:var(--ink-muted);
+  --type-contradiction:var(--ink);
+  --type-question:var(--ink-muted);
+  --type-prediction:var(--ink-muted);
   --print-ink:#000;                /* print only: black text on white */
   --print-paper:#fff;              /* print only */
   /* type */
-  --font-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-  --font-serif:"Spectral",Georgia,"Iowan Old Style","Source Serif 4",serif;
+  --font-mono:ui-monospace,SFMono-Regular,"Cascadia Code",Menlo,Consolas,monospace;
+  --font-serif:"Iowan Old Style","Source Serif 4","Source Serif Pro",Georgia,"Times New Roman",serif;
+  --font-sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-read:var(--font-serif);
   --fs-xs:.72rem;
   --fs-sm:.8rem;
   --fs-md:.9rem;
@@ -510,11 +524,11 @@ CSS = """
 }
 *{box-sizing:border-box}
 html{font-size:100%}
-body{margin:0;font-family:var(--font-serif);font-size:var(--fs-base);line-height:var(--lh-body);background:var(--surface-base);color:var(--ink-body)}
+body{margin:0;font-family:var(--font-sans);font-size:var(--fs-base);line-height:var(--lh-body);background:var(--surface-base);color:var(--ink-body)}
 :focus-visible{outline:2px solid var(--accent-rust);outline-offset:2px}
 body::before{content:"";position:fixed;inset:0;z-index:100;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
 /* ---------- frame: masthead ---------- */
-header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:var(--ink-frame);border-bottom:3px solid var(--accent-rip)}
+header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:var(--ink-frame);border-bottom:2px solid var(--ink)}
 .mast-inner{max-width:var(--page-max);margin:0 auto;padding:var(--space-md) var(--page-gutter) var(--space-md)}
 .wordmark{max-width:var(--wordmark-max);margin:0}
 .wordmark svg{display:block;width:100%;height:auto}
@@ -612,7 +626,7 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .csep{color:var(--ink-structure)}
 .ccur{color:var(--ink-body)}
 /* ---------- frame: footer ---------- */
-footer{background:var(--surface-frame);color:var(--ink-frame);font-family:var(--font-mono);font-size:var(--fs-sm);padding:var(--space-xl) var(--page-gutter);border-top:3px solid var(--accent-rip);text-align:center}
+footer{background:var(--surface-frame);color:var(--ink-frame);font-family:var(--font-mono);font-size:var(--fs-sm);padding:var(--space-xl) var(--page-gutter);border-top:2px solid var(--ink);text-align:center}
 footer .fmeta{margin:0;color:var(--ink-structure-frame)}
 /* ---------- reading zone ---------- */
 #intro{max-width:var(--page-narrow);margin:0 auto;padding:var(--space-md) var(--page-gutter) 0;color:var(--ink-body);font-size:var(--fs-base)}
@@ -735,9 +749,9 @@ mark{background:var(--mark-highlight);color:var(--ink-body);font-weight:400;bord
 @media(min-width:1000px){
 main{max-width:var(--page-max)}
 .controls .inner,#intro{max-width:var(--page-max)}
-.book:not(.collapsed) .cards{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-sm);align-items:start}
+.book:not(.collapsed) .cards{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--space-sm);align-items:start}
 .book:not(.collapsed) .card{margin:0}
-.fbook:not(.collapsed) .fbcards{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-sm);align-items:start}
+.fbook:not(.collapsed) .fbcards{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--space-sm);align-items:start}
 .fbook:not(.collapsed) .fbcards .card{margin:0}
 }
 /* phase 5: saved shelf + related rips */
@@ -812,6 +826,32 @@ main{max-width:var(--page-max)}
   .amstep,.fbchap{background:var(--print-paper);border-color:var(--print-ink)}
   *{box-shadow:none!important;text-shadow:none!important}
 }
+/* ---------- oxblood on paper (2026-09-29): headline serif, quiet rules, accent only where it earns it ---------- */
+.genre,.collidehead,.btitle,.ctitle,.ftitle,.fbsub,.savehead,.print-title{font-family:var(--font-serif)}
+.genre,.collidehead{font-weight:600}
+.ctitle,.ftitle{border-bottom:1px solid var(--line);font-weight:600}
+.btitle{font-weight:600}
+.card .steal{font-family:var(--font-serif)}
+.chip{background:var(--line-strong)}
+.chip.chip-fb{background:transparent;box-shadow:inset 0 0 0 2px var(--ink)}
+.gix,.gix:hover{border-top-color:var(--ink-muted)}
+.gix .gdot{background:var(--ink-muted)}
+.pill.mechanism,.pill.contradiction{font-weight:700}
+.pill.question,.pill.prediction{border-style:dashed}
+.rotw-card{border:2px solid var(--ink)}
+.controls{border-bottom:1px solid var(--line-strong)}
+.rip-request:hover{border-color:var(--ink);color:var(--ink);background:var(--surface)}
+/* Copy buttons: oxblood outline */
+.actions button[data-copy]{color:var(--accent);border-color:var(--accent)}
+.actions button[data-copy]:hover{color:var(--surface);background:var(--accent);border-color:var(--accent)}
+/* keep marker: Save / Saved */
+.actions button[aria-pressed="true"]{color:var(--surface);background:var(--accent);border-color:var(--accent)}
+#savedchip{border-top-color:var(--accent)}
+#savedchip .gdot{background:var(--accent)}
+.savehead{border-bottom:2px solid var(--accent)}
+.tcheck input,.blist-filter{accent-color:var(--ink)}
+#toast{border-color:var(--ink)}
+
 """
 
 JS = r"""
@@ -824,6 +864,8 @@ var q=document.getElementById('q'),gs=document.getElementById('fgenre'),
     total=document.querySelectorAll('.card:not([data-fb])').length,
     manual={},toastT=null,RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 function toast(msg,ms){
+  /* #toast is rendered after this script: look it up lazily (was null -> Save threw) */
+  toastEl=toastEl||document.getElementById('toast');if(!toastEl)return;
   toastEl.textContent=msg;toastEl.classList.add('show');
   clearTimeout(toastT);toastT=setTimeout(function(){toastEl.classList.remove('show');},ms||1500);
 }
@@ -1329,17 +1371,13 @@ page = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="color-scheme" content="dark"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Spectral:ital,wght@0,400;1,400&display=swap"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Spectral:ital,wght@0,400;1,400&display=swap"/>
+<meta name="color-scheme" content="light"/>
 <title>Idea Ripper - the idea-hunting library</title>
 <link rel="icon" type="image/svg+xml" href="brand/r-mark.svg"/>
 <link rel="icon" type="image/png" sizes="32x32" href="brand/r-mark-32.png"/>
 <link rel="apple-touch-icon" href="brand/apple-touch-icon.png"/>
 <meta name="description" content="a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism \u2014 the exact lines worth keeping, plus when to use them."/>
-<meta name="theme-color" content="#100C09"/>
+<meta name="theme-color" content="#F5EFE3"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Idea Ripper"/>
 <meta property="og:title" content="Idea Ripper \u2014 the idea-hunting library"/>
