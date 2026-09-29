@@ -1185,6 +1185,14 @@ books:
   - book
   - genre
   - bookline
+- key: the-patristical-idea-of-antichrist-st-john-henry-newman
+  genre: Hermetica
+  bookline: 'Four lectures, 1838 — Newman''s patristic survey of Antichrist from the
+    Tracts for the Times: his times, his religion, his city, his persecution.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -1996,6 +2004,16 @@ card_order:
 - 822
 - 823
 - 824
+- 825
+- 826
+- 827
+- 828
+- 829
+- 830
+- 831
+- 832
+- 833
+- 834
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
