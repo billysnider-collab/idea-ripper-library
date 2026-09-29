@@ -1202,6 +1202,14 @@ books:
   - book
   - genre
   - bookline
+- key: divine-comedy-dante-alighieri
+  genre: Myth & Epic
+  bookline: 'Dante''s 1308-1320 pilgrimage through Hell, Purgatory, and Paradise (Longfellow
+    translation) — ripped for contrapasso: the punishment is the sin made visible.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2036,6 +2044,16 @@ card_order:
 - 845
 - 846
 - 847
+- 848
+- 849
+- 850
+- 851
+- 852
+- 853
+- 854
+- 855
+- 856
+- 857
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
