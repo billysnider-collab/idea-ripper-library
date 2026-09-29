@@ -1193,6 +1193,15 @@ books:
   - book
   - genre
   - bookline
+- key: paradise-lost-john-milton
+  genre: Myth & Epic
+  bookline: 'Milton''s 1667 epic (12-book text, 1674) — ripped as a persuasion and
+    self-deception manual: the Pandemonium council''s steering playbook (Book II)
+    and Satan''s rationalization arc (Books I and IV).'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2014,6 +2023,19 @@ card_order:
 - 832
 - 833
 - 834
+- 835
+- 836
+- 837
+- 838
+- 839
+- 840
+- 841
+- 842
+- 843
+- 844
+- 845
+- 846
+- 847
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
