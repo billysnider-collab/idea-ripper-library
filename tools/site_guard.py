@@ -72,6 +72,7 @@ GUARDS += [
     ("perf: no duplicated data-search text", lambda s, h, t: "data-search=" not in h and "var _stext={}" in s),
     ("perf: external hashed CSS/JS", lambda s, h, t: bool(re.search(r'href="assets/site\.[0-9a-f]{10}\.css"', h)) and bool(re.search(r'src="assets/app\.[0-9a-f]{10}\.js"', h))),
     ("perf: per-card labels via CSS, actions cloned on open", lambda s, h, t: 'id="cardactions"' in h and "function ensureActions(c)" in s),
+    ("deep link: single scroll after load, no setInterval", lambda s, h, t: "function flushInitialScroll()" in s and "setInterval(" not in s),
     ("Save persists before toast", lambda s, h, t: "setSaved(s);syncSaveButtons();renderSaved();\n    toast(" in s),
 ]
 

@@ -254,8 +254,11 @@ function toggleCard(card,open){
   if(chd)chd.setAttribute('aria-expanded',will?'true':'false');
   if(will&&card.dataset.n)setHash('#c'+card.dataset.n);
 }
-document.querySelectorAll('.cardhead').forEach(function(h){
-  h.addEventListener('click',function(){toggleCard(h.closest('.card'));});
+/* delegated (2026-09-30): card heads, Copy and Save buttons are handled at the
+   document, so buttons cloned into cards later work without re-binding */
+document.addEventListener('click',function(e){
+  var h=e.target&&e.target.closest?e.target.closest('.cardhead'):null;
+  if(h)toggleCard(h.closest('.card'));
 });
 document.querySelectorAll('.bookhead').forEach(function(h){
   function t(){var b=h.closest('section'),exp=b.classList.contains('collapsed');setBook(b,exp);if(exp)accordionize(b);}
@@ -302,10 +305,9 @@ document.getElementById('collapse').addEventListener('click',function(){
     b.querySelectorAll('.card.open').forEach(function(c){c.classList.remove('open');});
   });
 });
-document.querySelectorAll('[data-copy]').forEach(function(btn){
-  btn.addEventListener('click',function(e){
-    e.stopPropagation();
-    var card=btn.closest('.card'),kind=btn.dataset.copy,txt;
+document.addEventListener('click',function(e){
+    var btn=e.target&&e.target.closest?e.target.closest('[data-copy]'):null;if(!btn)return;
+    var card=btn.closest('.card'),kind=btn.dataset.copy,txt;if(!card)return;
     if(kind==='steal')txt=card.querySelector('.steal').textContent;
     else if(kind==='uw')txt=card.querySelector('.uw').textContent;
     else txt=location.origin+location.pathname+'#c'+card.dataset.n;
@@ -317,7 +319,6 @@ document.querySelectorAll('[data-copy]').forEach(function(btn){
     }
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){done(true);},function(){done(false);});}
     else{var ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done(true);}catch(_){done(false);}document.body.removeChild(ta);}
-  });
 });
 document.querySelectorAll('#jumpchips a').forEach(function(ch){
   ch.addEventListener('click',function(e){
@@ -353,28 +354,44 @@ function openHash(){
     var b=c.closest('.book');setBook(b,true);accordionize(b);c.classList.add('open');c.classList.add('deeplink');
     var oh=c.querySelector('.cardhead');
     if(oh){oh.setAttribute('aria-expanded','true');try{oh.focus({preventScroll:true});}catch(_){}}
-    setTimeout(function(){c.scrollIntoView({behavior:RM?'auto':'smooth',block:'center'});},60);return true;
+    scrollTarget(c,'center');return true;
   }
   m=/^#b-([a-z0-9-]+)$/.exec(location.hash);
   if(m){var bk=document.getElementById('b-'+m[1]);
-    if(bk){setBook(bk,true);accordionize(bk);setTimeout(function(){bk.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});},60);return true;}}
+    if(bk){setBook(bk,true);accordionize(bk);scrollTarget(bk,'start');return true;}}
   m=/^#g-([a-z0-9-]+)$/.exec(location.hash);
   if(m){var gn=document.getElementById('g-'+m[1]);
-    if(gn){setTimeout(function(){gn.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});},60);return true;}}
+    if(gn){scrollTarget(gn,'start');return true;}}
   return false;
 }
-var _dlTakeover=false;
+/* deep links (2026-09-30): open the target right away, but scroll exactly once,
+   after the load event, with no smooth scrolling and no setInterval re-scrolls
+   (those fought layout and made shared links jump: CLS 1.0 on mobile). The
+   sticky controls' real height feeds scroll-margin-top so the target isn't
+   hidden under them. */
+var _dlTakeover=false,_initialScroll=true,_pendingScroll=null;
 ["touchstart","wheel","keydown"].forEach(function(ev){window.addEventListener(ev,function(){_dlTakeover=true;},{once:true,passive:true});});
-function deepLink(){
-  var h=location.hash;
-  if(!openHash())return;
-  var n=0;
-  var iv=setInterval(function(){
-    if(_dlTakeover||location.hash!==h||++n>3){clearInterval(iv);return;}
-    openHash();
-  },800);
+function syncScrollMargin(){
+  var ctl=document.querySelector('.controls');if(!ctl)return;
+  var px=Math.ceil(ctl.getBoundingClientRect().height)+8+'px',st=document.documentElement.style;
+  st.setProperty('--scroll-mt',px);st.setProperty('--scroll-mt-mobile',px);
 }
-deepLink();
+syncScrollMargin();
+window.addEventListener('resize',syncScrollMargin,{passive:true});
+function scrollTarget(el,block){
+  if(_initialScroll){_pendingScroll=[el,block];return;}
+  setTimeout(function(){el.scrollIntoView({behavior:RM?'auto':'smooth',block:block});},60);
+}
+function flushInitialScroll(){
+  _initialScroll=false;
+  var p=_pendingScroll;_pendingScroll=null;
+  if(!p||_dlTakeover)return;
+  syncScrollMargin();
+  p[0].scrollIntoView({behavior:'auto',block:p[1]});
+}
+if(document.readyState==='complete')setTimeout(flushInitialScroll,0);
+else window.addEventListener('load',flushInitialScroll,{once:true});
+openHash();
 (function restoreURL(){
   var p,qq,tt,gg,bb,want,i;
   try{p=new URLSearchParams(location.search);}catch(_){return;}
@@ -430,15 +447,13 @@ function syncSaveButtons(){
     b.textContent=on?'Saved \u2713':'Save';
   });
 }
-document.querySelectorAll('[data-save]').forEach(function(b){
-  b.addEventListener('click',function(e){
-    e.stopPropagation();
+document.addEventListener('click',function(e){
+    var b=e.target&&e.target.closest?e.target.closest('[data-save]'):null;if(!b)return;
     var id=+b.getAttribute('data-save'),s=getSaved(),i=s.indexOf(id);
     /* persist first, then update UI, then toast: a toast problem can never lose a save */
     var was=i>=0;if(was)s.splice(i,1);else s.push(id);
     setSaved(s);syncSaveButtons();renderSaved();
     toast(was?'Removed from saved':'Saved');
-  });
 });
 document.querySelectorAll('.rel a').forEach(function(a){
   a.addEventListener('click',function(e){e.preventDefault();openRip(+a.getAttribute('href').slice(2));});
@@ -547,6 +562,22 @@ function doCollide(){
 }
 if(_cb)_cb.addEventListener('click',doCollide);
 if(_cagain)_cagain.addEventListener('click',doCollide);
+/* card actions (2026-09-30): one <template id="cardactions">, cloned into a
+   library card the first time it is open (any code path: click, expand all,
+   search, deep link, random) */
+var ACT=document.getElementById('cardactions');
+function ensureActions(c){
+  if(!ACT||c.hasAttribute('data-fb')||!c.classList.contains('open'))return;
+  var body=c.querySelector('.cardbody');if(!body||body.querySelector('.actions'))return;
+  var frag=ACT.content.cloneNode(true),sb=frag.querySelector('[data-save]'),id=+c.dataset.n,on=getSaved().indexOf(id)>=0;
+  sb.setAttribute('data-save',id);sb.setAttribute('aria-pressed',on?'true':'false');sb.textContent=on?'Saved \u2713':'Save';
+  body.appendChild(frag);
+}
+var _main=document.querySelector('main');
+if(_main&&window.MutationObserver)new MutationObserver(function(ms){
+  for(var i=0;i<ms.length;i++){var t=ms[i].target;if(t.classList&&t.classList.contains('card')&&t.classList.contains('open'))ensureActions(t);}
+}).observe(_main,{subtree:true,attributes:true,attributeFilter:['class']});
+document.querySelectorAll('main .card.open').forEach(ensureActions);
 syncSaveButtons();renderSaved();
 })();
 

@@ -666,6 +666,7 @@ main a:hover,.fmore a:hover{color:var(--accent-rust-hi)}
 .genre{margin:var(--space-xl) 0 var(--space-sm);font-size:1.4rem;font-weight:400;color:var(--ink-body);border-bottom:2px solid var(--accent-rip);padding-bottom:var(--space-2xs);line-height:var(--lh-tight)}
 .gcount{color:var(--ink-structure);font-size:var(--fs-sm);font-weight:400;font-family:var(--font-mono)}
 .book,.fbook{margin-bottom:var(--space-lg);scroll-margin-top:var(--scroll-mt)}
+.genre{scroll-margin-top:var(--scroll-mt)}
 /* perf (2026-09-30): skip style/layout/paint for off-screen shelves; sizes are
    the measured collapsed-book heights (desktop ~114px, phone ~180px) and
    "auto" remembers the real size once a section has rendered */
@@ -1250,28 +1251,44 @@ function openHash(){
     var b=c.closest('.book');setBook(b,true);accordionize(b);c.classList.add('open');c.classList.add('deeplink');
     var oh=c.querySelector('.cardhead');
     if(oh){oh.setAttribute('aria-expanded','true');try{oh.focus({preventScroll:true});}catch(_){}}
-    setTimeout(function(){c.scrollIntoView({behavior:RM?'auto':'smooth',block:'center'});},60);return true;
+    scrollTarget(c,'center');return true;
   }
   m=/^#b-([a-z0-9-]+)$/.exec(location.hash);
   if(m){var bk=document.getElementById('b-'+m[1]);
-    if(bk){setBook(bk,true);accordionize(bk);setTimeout(function(){bk.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});},60);return true;}}
+    if(bk){setBook(bk,true);accordionize(bk);scrollTarget(bk,'start');return true;}}
   m=/^#g-([a-z0-9-]+)$/.exec(location.hash);
   if(m){var gn=document.getElementById('g-'+m[1]);
-    if(gn){setTimeout(function(){gn.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});},60);return true;}}
+    if(gn){scrollTarget(gn,'start');return true;}}
   return false;
 }
-var _dlTakeover=false;
+/* deep links (2026-09-30): open the target right away, but scroll exactly once,
+   after the load event, with no smooth scrolling and no setInterval re-scrolls
+   (those fought layout and made shared links jump: CLS 1.0 on mobile). The
+   sticky controls' real height feeds scroll-margin-top so the target isn't
+   hidden under them. */
+var _dlTakeover=false,_initialScroll=true,_pendingScroll=null;
 ["touchstart","wheel","keydown"].forEach(function(ev){window.addEventListener(ev,function(){_dlTakeover=true;},{once:true,passive:true});});
-function deepLink(){
-  var h=location.hash;
-  if(!openHash())return;
-  var n=0;
-  var iv=setInterval(function(){
-    if(_dlTakeover||location.hash!==h||++n>3){clearInterval(iv);return;}
-    openHash();
-  },800);
+function syncScrollMargin(){
+  var ctl=document.querySelector('.controls');if(!ctl)return;
+  var px=Math.ceil(ctl.getBoundingClientRect().height)+8+'px',st=document.documentElement.style;
+  st.setProperty('--scroll-mt',px);st.setProperty('--scroll-mt-mobile',px);
 }
-deepLink();
+syncScrollMargin();
+window.addEventListener('resize',syncScrollMargin,{passive:true});
+function scrollTarget(el,block){
+  if(_initialScroll){_pendingScroll=[el,block];return;}
+  setTimeout(function(){el.scrollIntoView({behavior:RM?'auto':'smooth',block:block});},60);
+}
+function flushInitialScroll(){
+  _initialScroll=false;
+  var p=_pendingScroll;_pendingScroll=null;
+  if(!p||_dlTakeover)return;
+  syncScrollMargin();
+  p[0].scrollIntoView({behavior:'auto',block:p[1]});
+}
+if(document.readyState==='complete')setTimeout(flushInitialScroll,0);
+else window.addEventListener('load',flushInitialScroll,{once:true});
+openHash();
 (function restoreURL(){
   var p,qq,tt,gg,bb,want,i;
   try{p=new URLSearchParams(location.search);}catch(_){return;}
