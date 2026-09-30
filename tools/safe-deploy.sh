@@ -17,15 +17,18 @@ flock -n 9 || { echo "ABORT: another rip deploy is running"; exit 3; }
 
 TEMPLATE="build_site.py 404.html _config.yml tools .github"
 git fetch --quiet origin main
-# template files must never carry local edits into a deploy
-if ! git diff --quiet origin/main -- $TEMPLATE || ! git diff --cached --quiet origin/main -- $TEMPLATE; then
-  echo "ABORT: local template files differ from origin/main:"; git diff --stat origin/main -- $TEMPLATE
-  echo "Fix: git checkout origin/main -- $TEMPLATE   (edit the template in the repo, not in a cache)"; exit 4
-fi
-# bring HEAD to origin/main, keeping the new content as uncommitted changes
+# bring HEAD to origin/main first, keeping new data as uncommitted changes;
+# upstream template updates are pulled in (we build from origin/main's code)
 git pull --ff-only --autostash --quiet origin main || { echo "ABORT: HEAD cannot fast-forward to origin/main"; exit 5; }
 BEHIND=$(git rev-list --count HEAD..origin/main)
 [ "$BEHIND" = 0 ] || { echo "ABORT: HEAD is $BEHIND commits behind origin/main"; exit 5; }
+# template files must never carry LOCAL edits into a deploy (checked post-pull
+# against HEAD, so genuine upstream template updates don't trip the guard)
+if ! git diff --quiet HEAD -- $TEMPLATE || ! git diff --cached --quiet HEAD -- $TEMPLATE; then
+  echo "ABORT: local template files differ from HEAD:"
+  git diff --stat HEAD -- $TEMPLATE
+  echo "Fix: git checkout HEAD -- $TEMPLATE   (edit the template in the repo, not in a cache)"; exit 4
+fi
 LOCAL=$(sha256sum build_site.py | cut -c1-64)
 REMOTE=$(git show origin/main:build_site.py | sha256sum | cut -c1-64)
 [ "$LOCAL" = "$REMOTE" ] || { echo "ABORT: build_site.py hash $LOCAL != origin/main $REMOTE"; exit 6; }

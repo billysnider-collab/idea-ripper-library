@@ -132,6 +132,24 @@ def main():
           % (commit["sha"][:8], len(files), len(deleted)))
     print("SHA: %s" % commit["sha"])
 
+    # Realign the local clone with the server-created commit object (it has a
+    # different SHA than any local commit). Without this, the next
+    # `git pull --ff-only` would fail on the diverged local commit.
+    # Safe: only tracked files are reset, and only when the tracked tree is
+    # clean (the deploy flow commits everything before pushing).
+    sh("git", "fetch", "--quiet", "origin", "main")
+    tracked_dirty = subprocess.run(
+        ["git", "diff", "--quiet"], capture_output=True).returncode != 0
+    staged_dirty = subprocess.run(
+        ["git", "diff", "--cached", "--quiet"], capture_output=True).returncode != 0
+    if tracked_dirty or staged_dirty:
+        print("warning: working tree has uncommitted tracked changes; "
+              "leaving local HEAD as-is (run `git reset --hard origin/main` "
+              "manually once they are safe)", file=sys.stderr)
+    else:
+        sh("git", "reset", "--hard", "--quiet", "origin/main")
+        print("local HEAD realigned to origin/main")
+
 
 if __name__ == "__main__":
     main()
