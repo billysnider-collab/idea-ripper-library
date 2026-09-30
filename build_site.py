@@ -1404,20 +1404,20 @@ page = """<!DOCTYPE html>
 <link rel="icon" type="image/svg+xml" href="brand/r-mark.svg"/>
 <link rel="icon" type="image/png" sizes="32x32" href="brand/r-mark-32.png"/>
 <link rel="apple-touch-icon" href="brand/apple-touch-icon.png"/>
-<meta name="description" content="a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism \u2014 the exact lines worth keeping, plus when to use them."/>
+<meta name="description" content="a hunting library of machine-assisted, hand-curated ideas from books worth stealing from. Every rip is one usable idea \u2014 the exact lines worth keeping, plus when to use them."/>
 <meta name="theme-color" content="#F5EFE3"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Idea Ripper"/>
 <meta property="og:title" content="Idea Ripper \u2014 the idea-hunting library"/>
-<meta property="og:description" content="a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism \u2014 the exact lines worth keeping, plus when to use them."/>
+<meta property="og:description" content="a hunting library of machine-assisted, hand-curated ideas from books worth stealing from. Every rip is one usable idea \u2014 the exact lines worth keeping, plus when to use them."/>
 <meta property="og:url" content="https://idearipper.com/"/>
 <meta property="og:image" content="https://idearipper.com/brand/og-card.png"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
-<meta property="og:image:alt" content="Idea Ripper \u2014 a hunting library of ideas ripped by hand from books worth stealing from."/>
+<meta property="og:image:alt" content="Idea Ripper \u2014 a hunting library of machine-assisted, hand-curated ideas from books worth stealing from."/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Idea Ripper \u2014 the idea-hunting library"/>
-<meta name="twitter:description" content="a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism \u2014 the exact lines worth keeping, plus when to use them."/>
+<meta name="twitter:description" content="a hunting library of machine-assisted, hand-curated ideas from books worth stealing from. Every rip is one usable idea \u2014 the exact lines worth keeping, plus when to use them."/>
 <meta name="twitter:image" content="https://idearipper.com/brand/og-card.png"/>
 <link rel="canonical" href="https://idearipper.com/"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Idea Ripper","alternateName":"Idea Ripper \u2014 the idea-hunting library","url":"https://idearipper.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://idearipper.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
@@ -1433,8 +1433,8 @@ page = """<!DOCTYPE html>
 <a class="rip-request" href="mailto:billysnider@gmail.com?subject=Rip%%20request&body=Book%%20title%%20and%%20author%%3A%%0A%%0AWhy%%20it%%27s%%20worth%%20ripping%%3A">Request a rip</a>
 </div></header>
 <section id="intro">
-<p class="lede"><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>
-<p class="value"><strong>Why it matters to you:</strong> farmer or professor, you came with a problem. Search it. Every rip is one usable mechanism from a book that solved a version of it, with the exact lines and when to use them.</p>\n<p class="howto"><strong>How to hunt:</strong> start from your problem &mdash; a negotiation, a hire, a stuck project &mdash; and search it. Tap a book to open its rips, tap a card for the full steal, copy anything you want.</p>
+<p class="lede"><strong>What this is:</strong> a hunting library of machine-assisted, hand-curated ideas from books worth stealing from. Every rip is one usable idea — the exact lines worth keeping, plus when to use them.</p>
+<p class="value"><strong>Why it matters to you:</strong> farmer or professor, you came with a problem. Search it. Every rip is one usable idea from a book that solved a version of it, with the exact lines and when to use them.</p>\n<p class="howto"><strong>How to hunt:</strong> start from your problem &mdash; a negotiation, a hire, a stuck project &mdash; and search it. Tap a book to open its rips, tap a card for the full steal, copy anything you want.</p>
 %s
 </section>
 <div class="controls"><div class="inner">
@@ -1474,7 +1474,7 @@ page = """<!DOCTYPE html>
 %s
 <p class="noresults" id="noresults" hidden>No rips match — try a mechanism word (interlock, delay, patronage).</p>
 </main>
-<footer><p class="fmeta">Last curated %s &middot; %d books &middot; %d theses &middot; %d rips%s &middot; ripped with the Idea Ripper pipeline</p></footer>
+<footer><p class="fmeta">Last curated %s &middot; %d books &middot; %d theses &middot; %d rips%s &middot; machine-assisted, hand-curated with the Idea Ripper pipeline</p></footer>
 <script>%s</script>
 <div id="toast" role="status"></div>
 <script>try{if(!sessionStorage.getItem("ir_c")){sessionStorage.setItem("ir_c","1");fetch("https://countapi.mileshilliard.com/api/v1/hit/idearipper-com",{mode:"no-cors",keepalive:true}).catch(function(){})}}catch(e){}</script>
