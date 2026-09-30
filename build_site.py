@@ -136,30 +136,20 @@ def book_block(b):
 # library cards only. Each links down to its canonical #c<id> shelf card.
 FEATURED_IDS = [623, 117, 470, 500, 149]
 def featured_block():
+    # 2026-09-30 (Billy): intro trim - the five hand-picked rips render as ONE
+    # compact link card, not five full cards. Full cards live on the shelf.
     feats = [c for _fid in FEATURED_IDS for c in cards if c["id"] == _fid]
     assert len(feats) == len(FEATURED_IDS), "featured id missing from cards"
-    fk = '<p class="fkicker">' + RIP_SVG + '<span class="ktext">Featured rip</span></p>'
-    kr = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Ripped from</span></div>'
-    ku = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Use when</span></div>'
+    fk = '<p class="fkicker">' + RIP_SVG + '<span class="ktext">Start here</span></p>'
+    items = "".join(
+        '<li><a href="#c%d"><span class="sht">%s</span> <span class="shb">%s</span></a></li>'
+        % (c["id"], esc(c["title"]), esc(c["book"])) for c in feats)
     parts = ['<h2 class="genre" data-genre="Start here" id="g-start-here">Start here <span class="gcount">5 rips, hand-picked</span></h2>',
-             '<section class="start-here" aria-label="Start here: five featured rips">']
-    for c in feats:
-        parts.append(
-            '<article class="fcard">'
-            '%s'
-            '<h3 class="ftitle">%s</h3>'
-            '<p class="fbook">%s &middot; <span class="pill %s">%s</span></p>'
-            '%s'
-            '<p class="steal">%s</p>'
-            '<p class="why"><span class="k">Why it matters:</span> %s</p>'
-            '%s'
-            '<p class="uw">%s</p>'
-            '<p class="fmore"><a href="#c%d">Find it on the shelf \u2193</a></p>'
-            '</article>'
-            % (fk, esc(c["title"]), esc(c["book"]), esca(c["type"]), esc(c["type"]),
-               kr, esc(c["steal"]), esc(c["why"]), ku, esc(c["uw"]), c["id"]))
-    parts.append('</section>')
+             '<section class="start-here-compact" aria-label="Start here: five featured rips">',
+             '<article class="fcard shcard">%s<ul class="shlist">%s</ul></article>' % (fk, items),
+             '</section>']
     return "\n".join(parts)
+
 
 # Rip of the week (2026-09-27): one hand-picked card rendered as a hero above
 # the Start-here shelf. Config lives in shelf.yaml as rip_of_the_week:
@@ -359,18 +349,20 @@ def _book_maxid(bname):
     return max(c["id"] for c in cards if c["book"] == bname)
 recent_books = sorted([b for b in books if b["genre"] != "Thesis"],
                       key=lambda b: _book_maxid(b["book"]), reverse=True)[:RECENT_N]
-recent_names = set(b["book"] for b in recent_books)
+# 2026-09-30 (Billy): intro trim - recent books render as one compact link strip,
+# not full book blocks. Each book still renders exactly once, in its genre shelf.
 if recent_books:
-    rcount = sum(1 for c in cards if c["book"] in recent_names)
-    sections.append('<h2 class="genre" data-genre="Recently ripped" id="g-recently-ripped">Recently ripped <span class="gcount">%d cards · %d books</span></h2>'
-                    % (rcount, len(recent_books)))
-    for b in recent_books:
-        sections.append(book_block(b))
+    rlinks = "".join(
+        '<a class="rchip" href="#b-%s">%s</a>' % (book_slug(b), esc(b["book"]))
+        for b in recent_books)
+    sections.append('<h2 class="genre" data-genre="Recently ripped" id="g-recently-ripped">Recently ripped <span class="gcount">%d books</span></h2>'
+                    % len(recent_books))
+    sections.append('<nav class="recent-strip" aria-label="Recently ripped books">%s</nav>' % rlinks)
 for g in genre_order:
     _gb_all = books_in_genre(g)
     if not _gb_all:
         continue
-    gbooks = [b for b in _gb_all if b["book"] not in recent_names]
+    gbooks = _gb_all
     gcount = sum(1 for c in cards if genre_of[c["book"]] == g)
     gunit = "theses" if g == "Thesis" else "books"
     sections.append('<h2 class="genre" data-genre="%s" id="g-%s">%s <span class="gcount">%d cards · %d %s</span></h2>'
@@ -547,6 +539,18 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .rotw{margin:0 0 var(--space-xl)}
 .rotw-card{border:2px solid var(--accent-rip)}
 .rotw-meta{margin:var(--space-sm) 0 0;font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--ink-structure)}
+/* ---------- intro trim (2026-09-30): one compact start-here card + recent strip ---------- */
+.start-here-compact{margin:0 0 var(--space-xl)}
+.shcard{padding:var(--space-md)}
+.shlist{list-style:none;margin:var(--space-sm) 0 0;padding:0;display:grid;gap:var(--space-2xs)}
+.shlist a{display:flex;justify-content:space-between;align-items:center;gap:var(--space-sm);text-decoration:none;color:var(--ink-body);padding:var(--space-2xs) var(--space-xs);border-radius:var(--radius-sm);min-height:44px}
+.shlist a:hover{background:var(--surface-frame-raised);color:var(--ink-frame)}
+.shlist .sht{font-weight:600}
+.shlist .shb{font-family:var(--font-mono);font-size:var(--fs-xs);color:var(--ink-structure);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:40%}
+.shlist a:hover .shb{color:var(--ink-frame)}
+.recent-strip{display:flex;flex-wrap:wrap;gap:var(--space-2xs);margin:0 0 var(--space-xl)}
+.rchip{display:inline-block;padding:var(--space-2xs) var(--space-sm);border:1px solid var(--line-card);border-radius:var(--radius-md);background:var(--surface-paper);color:var(--ink-body);text-decoration:none;font-size:var(--fs-sm);font-family:var(--font-mono)}
+.rchip:hover{background:var(--surface-frame-raised);color:var(--ink-frame);border-color:var(--surface-frame-raised)}
 
 /* ---------- collide (2026-09-27) ---------- */
 .collideshelf{margin:0 0 var(--space-xl);scroll-margin-top:var(--scroll-mt)}
@@ -1366,7 +1370,7 @@ page = """<!DOCTYPE html>
 </div></header>
 <section id="intro">
 <p class="lede"><strong>What this is:</strong> a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism — the exact lines worth keeping, plus when to use them.</p>
-<p class="howto"><strong>How to hunt:</strong> start with the five featured rips below, shown in full. Then tap a book to open its rips, tap a card for the full steal, copy anything you want. Search hunts titles, steals, and use-whens all at once.</p>
+<p class="howto"><strong>How to hunt:</strong> start with the rip of the week and the five hand-picked rips below. Then tap a book to open its rips, tap a card for the full steal, copy anything you want. Search hunts titles, steals, and use-whens all at once.</p>
 %s
 </section>
 <div class="controls"><div class="inner">
