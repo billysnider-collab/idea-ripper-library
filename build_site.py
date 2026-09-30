@@ -117,7 +117,6 @@ def book_block(b):
     thesis_open = b["genre"] == "Thesis"  # one book = one card: skip the second click
     for c in bcards:
         n_ = c["id"]  # permanent id, frozen 2026-09-24; display order never renumbers
-        search = " ".join([c["title"], c["steal"], c["why"], c["uw"]]).lower()
         pv = c["steal"]
         if len(pv) > 90:
             pv = pv[:90].rsplit(" ", 1)[0] + "\u2026"
@@ -128,7 +127,7 @@ def book_block(b):
         relhtml = ('<p class="rel"><span class="rk">Related rips:</span> ' + " \u00b7 ".join(_rell) + "</p>") if _rell else "" 
         parts.append(
             '<article class="card%s" id="c%d" data-n="%d" '
-            'data-book="%s" data-genre="%s" data-type="%s" data-status="%s" data-search="%s">'
+            'data-book="%s" data-genre="%s" data-type="%s" data-status="%s">'
             '<h3 class="ch"><button type="button" class="cardhead" aria-expanded="%s">'
             '<span class="num">%d</span>'
             '<span class="ctext"><span class="ctitle">%s</span><span class="pv">%s</span></span>'
@@ -145,7 +144,7 @@ def book_block(b):
             '<button type="button" data-copy="link">Copy link</button>'
             '<button type="button" data-save="%d" aria-pressed="false">Save</button></div>'
             '</div></article>'
-            % (" open" if thesis_open else "", n_, n_, esca(c["book"]), esca(b["genre"]), esca(c["type"]), c.get("status", "keeper"), esca(search),
+            % (" open" if thesis_open else "", n_, n_, esca(c["book"]), esca(b["genre"]), esca(c["type"]), c.get("status", "keeper"),
                "true" if thesis_open else "false",
                n_, esc(c["title"]), esc(pv), esca(c["type"]), esc(c["type"]),
                kicker_rip, esc(c["steal"]), esc(c["why"]), kicker_use, esc(c["uw"]), relhtml, n_))
@@ -982,7 +981,16 @@ function qStems(term){
 }
 function reEsc(x){return x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
 function stemRes(st){return st.map(function(x){return new RegExp('(?:^|[^\\p{L}\\p{N}])'+reEsc(x),'u');});}
-function cardText(c){return c.dataset.search;}
+/* perf (2026-09-30): the search index is built in JS from the card text on
+   first use, instead of shipping every card's text twice (data-search was
+   ~608 KB, 22% of the page). */
+var _stext={};
+function cardText(c){
+  var id=c.id,t=_stext[id];if(t!==undefined)return t;
+  function tx(sel){var el=c.querySelector(sel);return el?el.textContent:'';}
+  t=[tx('.ctitle'),tx('.steal'),tx('.why').replace(/^\s*Why it matters:\s*/,''),tx('.uw')].join(' ').toLowerCase();
+  _stext[id]=t;return t;
+}
 var searchMode='all';
 function apply(fromInput){
   var term=q.value.trim().toLowerCase(),
