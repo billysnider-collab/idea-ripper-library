@@ -56,9 +56,10 @@ curated_long = _curated_long(curated)
 wm_path = os.path.join(BASE, "brand", "wordmark-inline.svg")
 WORDMARK_SVG = open(wm_path, encoding="utf-8").read() if os.path.exists(wm_path) else "<strong>Idea Ripper</strong>"
 WORDMARK_SVG = WORDMARK_SVG.replace('role="img" aria-label="Idea Ripper"', 'aria-hidden="true"')
-RIP_SVG = ('<svg class="ripmark" viewBox="0 0 20 8" aria-hidden="true">'
-           '<polyline points="1,4.5 5,2 9,5.5 13,2 17,5 19,3" fill="none" stroke-width="2"/>'
-           '</svg>')
+# perf (2026-09-30): the rip mark is drawn by CSS (.kicker::before mask), not
+# 1,792 inline SVGs (~260 KB, 3,584 DOM nodes). Kept as an empty string so any
+# older patch script that concatenates RIP_SVG still works.
+RIP_SVG = ""
 
 # full-book deep dives: standalone briefs too rich to shred into rips
 fb_path = os.path.join(BASE, "fullbooks.json")
@@ -561,8 +562,7 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .fcard{background:var(--surface-paper);border:1px solid var(--line-card);border-radius:var(--radius-lg);padding:var(--space-md) var(--space-lg);position:relative}
 .fcard:hover{border-color:var(--line-structure)}
 .fkicker{display:flex;align-items:center;gap:var(--space-xs);margin:0 0 var(--space-xs);font-family:var(--font-mono);font-size:var(--fs-xs);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-structure)}
-.fkicker .ripmark{width:var(--space-lg);height:auto;flex:none}
-.fkicker .ripmark polyline{stroke:var(--accent-rip)}
+.kicker::before,.fkicker::before{content:"";flex:none;width:var(--space-lg);height:calc(var(--space-lg)*.4);background:var(--accent-rip);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 8'%3E%3Cpolyline points='1,4.5 5,2 9,5.5 13,2 17,5 19,3' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 8'%3E%3Cpolyline points='1,4.5 5,2 9,5.5 13,2 17,5 19,3' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E") center/contain no-repeat}
 .fkicker .ktext{border-bottom:2px solid var(--accent-rip);padding-bottom:var(--space-3xs)}
 .ftitle{margin:0 0 var(--space-2xs);font-size:var(--fs-xl);line-height:var(--lh-tight);color:var(--ink-body);border-bottom:2px solid var(--accent-rust);padding-bottom:var(--space-3xs)}
 .fbook{margin:0 0 var(--space-sm);font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--ink-structure)}
@@ -723,8 +723,6 @@ button::-moz-focus-inner{border:0;padding:0}
 .cardbody{display:none;padding-top:var(--space-2xs)}
 .card.open .cardbody{display:block}
 .kicker{display:flex;align-items:center;gap:var(--space-xs);margin:var(--space-sm) 0 var(--space-3xs);font-family:var(--font-mono);font-size:var(--fs-xs);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-structure)}
-.kicker .ripmark{width:var(--space-lg);height:auto;flex:none}
-.kicker .ripmark polyline{stroke:var(--accent-rip)}
 .kicker .ktext{border-bottom:2px solid var(--accent-rip);padding-bottom:var(--space-3xs)}
 .card .steal{margin:var(--space-xs) 0;font-style:italic;font-size:var(--fs-lg);line-height:var(--lh-body);color:var(--ink-body)}
 .why{margin:var(--space-xs) 0;font-size:var(--fs-base);line-height:var(--lh-body);color:var(--ink-body)}
@@ -854,7 +852,7 @@ main{max-width:var(--page-max)}
   .num,.kicker,.pill,.card .uw{color:var(--print-ink)}
   .pill{border-color:var(--print-ink)}
   .pill.mechanism{color:var(--print-ink);border-color:var(--print-ink)}
-  .kicker .ripmark{display:none}
+  .kicker::before{display:none}
   .kicker .ktext{border-bottom-color:var(--print-ink)}
   .card .steal,.why{color:var(--print-ink)}
   .why .k{color:var(--print-ink)}
@@ -1380,8 +1378,6 @@ var _cb=document.getElementById('colliderip'),_csec=document.getElementById('col
     _lastPair='';
 function collideKicker(label){
   var p=document.createElement('p');p.className='fkicker';
-  var src=document.querySelector('.fkicker .ripmark');
-  if(src)p.appendChild(src.cloneNode(true));
   var s=document.createElement('span');s.className='ktext';s.textContent=label;
   p.appendChild(s);return p;
 }

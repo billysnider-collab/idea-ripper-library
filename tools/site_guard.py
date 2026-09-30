@@ -68,6 +68,7 @@ GUARDS += [
     ("canonical + WebSite JSON-LD", lambda s, h, t: '<link rel="canonical" href="https://idearipper.com/"' in h and '"@type":"SearchAction"' in h),
     ("search: AND + stemmed prefix", lambda s, h, t: "function qStems(term)" in s and "searchMode='any'" in s),
     ("perf: content-visibility on .book", lambda s, h, t: ".book,.fbook{content-visibility:auto" in s),
+    ("perf: CSS rip mark (no inline SVGs)", lambda s, h, t: 'class="ripmark"' not in h and ".kicker::before,.fkicker::before" in s),
     ("Save persists before toast", lambda s, h, t: "setSaved(s);syncSaveButtons();renderSaved();\n    toast(" in s),
 ]
 
