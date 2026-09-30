@@ -1,0 +1,20 @@
+# GitHub Pages (Jekyll) publish list for idearipper.com (added 2026-09-30).
+# The repo root is the web root, so keep pipeline files, backups and the raw
+# book markdown (170 thin /books/*.html pages) off the public site.
+# Nothing on the live site loads these (checked: index.html, brand/index.html).
+exclude:
+  - books
+  - tools
+  - __pycache__
+  - "*.py"
+  - brand/make_mark.py
+  - cards.json
+  - "cards.json.pre-*"
+  - fullbooks.json
+  - "fullbooks.json.pre-*"
+  - shelf.yaml
+  - phase4.css
+  - export-manifest.json
+  - package.json
+  - package-lock.json
+  - node_modules
