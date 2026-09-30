@@ -64,6 +64,7 @@ GUARDS = [
 # Guards added with later fixes live in this list so a stale template trips them too.
 GUARDS += [
     ("oxblood paper tokens", lambda s, h, t: "--paper:#F5EFE3" in s and "--accent:#A03B2A" in s),
+    ("Save persists before toast", lambda s, h, t: "setSaved(s);syncSaveButtons();renderSaved();\n    toast(" in s),
 ]
 
 

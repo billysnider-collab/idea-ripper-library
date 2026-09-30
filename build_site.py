@@ -1249,8 +1249,10 @@ document.querySelectorAll('[data-save]').forEach(function(b){
   b.addEventListener('click',function(e){
     e.stopPropagation();
     var id=+b.getAttribute('data-save'),s=getSaved(),i=s.indexOf(id);
-    if(i>=0){s.splice(i,1);toast('Removed from saved');}else{s.push(id);toast('Saved');}
+    /* persist first, then update UI, then toast: a toast problem can never lose a save */
+    var was=i>=0;if(was)s.splice(i,1);else s.push(id);
     setSaved(s);syncSaveButtons();renderSaved();
+    toast(was?'Removed from saved':'Saved');
   });
 });
 document.querySelectorAll('.rel a').forEach(function(a){
