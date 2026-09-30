@@ -1419,6 +1419,8 @@ page = """<!DOCTYPE html>
 <meta name="twitter:title" content="Idea Ripper \u2014 the idea-hunting library"/>
 <meta name="twitter:description" content="a hunting library of ideas ripped by hand from books worth stealing from. Every rip is one stealable mechanism \u2014 the exact lines worth keeping, plus when to use them."/>
 <meta name="twitter:image" content="https://idearipper.com/brand/og-card.png"/>
+<link rel="canonical" href="https://idearipper.com/"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Idea Ripper","alternateName":"Idea Ripper \u2014 the idea-hunting library","url":"https://idearipper.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://idearipper.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 <style>%s</style><noscript><style>.book.collapsed .cards,.fbook.collapsed .fbookbody{display:block!important}.cardbody{display:block!important}</style></noscript>
 </head>
 <body>
@@ -1485,7 +1487,8 @@ open(os.path.join(BASE, "index.html"), "w", encoding="utf-8").write(page)
 # sitemap.xml — real URLs only (Google ignores #fragments); aids Search Console discovery
 from datetime import date as _date
 _today = _date.today().isoformat()
-_sm_urls = [("https://idearipper.com/", "daily", "1.0"), ("https://idearipper.com/brand/", "monthly", "0.5")]
+# /brand/ is an internal "visual lock" page: not in the sitemap (2026-09-30)
+_sm_urls = [("https://idearipper.com/", "daily", "1.0")]
 _sm_lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 for _loc, _freq, _pri in _sm_urls:

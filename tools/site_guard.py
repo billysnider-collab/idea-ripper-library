@@ -65,6 +65,7 @@ GUARDS = [
 GUARDS += [
     ("oxblood paper tokens", lambda s, h, t: "--paper:#F5EFE3" in s and "--accent:#A03B2A" in s),
     ("phone overflow: .shlist .sht min-width:0", lambda s, h, t: ".shlist .sht{font-weight:600;min-width:0" in s and ".bookline,.bauthor{overflow-wrap:anywhere}" in s),
+    ("canonical + WebSite JSON-LD", lambda s, h, t: '<link rel="canonical" href="https://idearipper.com/"' in h and '"@type":"SearchAction"' in h),
     ("Save persists before toast", lambda s, h, t: "setSaved(s);syncSaveButtons();renderSaved();\n    toast(" in s),
 ]
 
