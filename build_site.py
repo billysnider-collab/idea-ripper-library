@@ -30,7 +30,28 @@ n_books = len(books) - n_theses
 # display order: within each genre, most recently added books first
 def books_in_genre(g):
     return [b for b in books if b["genre"] == g][::-1]
-curated = ds.get("curated", "")
+# curated date (2026-09-30): derived at build time instead of the hand-set
+# shelf.yaml value, which went stale (said 09-27 while rips landed daily).
+# = newest of: shelf value, last commit touching cards.json, today if
+# cards.json has uncommitted changes (i.e. this build is a new rip deploy).
+def _derive_curated(shelf_value):
+    import subprocess
+    cands = [str(shelf_value or "")]
+    try:
+        g = ["git", "-C", BASE]
+        last = subprocess.run(g + ["log", "-1", "--format=%cs", "--", "cards.json"],
+                              capture_output=True, text=True, timeout=20).stdout.strip()
+        if last:
+            cands.append(last)
+        dirty = subprocess.run(g + ["status", "--porcelain", "--", "cards.json"],
+                               capture_output=True, text=True, timeout=20).stdout.strip()
+        if dirty:
+            cands.append(_dt.date.today().isoformat())
+    except Exception:
+        pass
+    cands = [c for c in cands if len(c) == 10 and c[4] == "-"]
+    return max(cands) if cands else str(shelf_value or "")
+curated = _derive_curated(ds.get("curated", ""))
 curated_long = _curated_long(curated)
 wm_path = os.path.join(BASE, "brand", "wordmark-inline.svg")
 WORDMARK_SVG = open(wm_path, encoding="utf-8").read() if os.path.exists(wm_path) else "<strong>Idea Ripper</strong>"
