@@ -1300,6 +1300,15 @@ books:
   - book
   - genre
   - bookline
+- key: superintelligence-nick-bostrom
+  genre: Nonfiction
+  bookline: '2014, Oxford University Press - the book that put AI existential risk
+    on the map: paths to superintelligence, the control problem, and why we get one
+    shot.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2181,6 +2190,20 @@ card_order:
 - 892
 - 893
 - 894
+- 895
+- 896
+- 897
+- 898
+- 899
+- 900
+- 901
+- 902
+- 903
+- 904
+- 905
+- 906
+- 907
+- 908
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
