@@ -40,7 +40,14 @@ set -- $N
 for f in cards.json shelf.yaml books fullbooks.json index.html sitemap.xml robots.txt assets data; do if [ -e "$f" ]; then git add -A -- "$f"; fi; done
 git diff --cached --quiet && { echo "nothing to deploy"; exit 0; }
 git commit -q -m "rip deploy: $1 rips, $2 books, $3 theses ($(date +%F))"
-git push origin HEAD:main            # plain push: rejected (not forced) if main moved
+if [ -n "${IRLIB_API_PUSH:-}" ]; then
+  # This box can't auth the git protocol (API-only credential), so push via
+  # the API with identical guarantees: base_tree=origin/main tree, only
+  # changed paths, parent=origin/main HEAD, abort if main moved. Never forced.
+  python3 tools/api_push.py "rip deploy: $1 rips, $2 books, $3 theses ($(date +%F))" || { echo "API PUSH FAILED"; exit 9; }
+else
+  git push origin HEAD:main            # plain push: rejected (not forced) if main moved
+fi
 MARK=$(grep -o '<meta name="build" content="[^"]*"' index.html | sed 's/.*content="\([^"]*\)".*/\1/')
 if [ -f tools/smoke.js ] && command -v node >/dev/null; then
   node tools/smoke.js https://idearipper.com/ --expect-build "$MARK" --wait 600 || { echo "SMOKE FAILED: roll back with git revert $(git rev-parse --short HEAD)"; exit 8; }
