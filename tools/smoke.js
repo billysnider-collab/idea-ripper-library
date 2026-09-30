@@ -127,6 +127,7 @@ async function deepLink(br) {
   for (const t of [300, 1200, 2500, 4000]) {
     await sleep(t - (samples.length ? [300, 1200, 2500, 4000][samples.length - 1] : 0));
     samples.push(await p.evaluate(b => ({ y: Math.round(scrollY), top: Math.round(document.getElementById(b).getBoundingClientRect().top),
+      ctl: Math.round((document.querySelector('.controls') || { getBoundingClientRect: () => ({ height: 0 }) }).getBoundingClientRect().height),
       open: !document.getElementById(b).classList.contains('collapsed') }), BOOK));
   }
   const cls = await p.evaluate(() => window.__cls);
@@ -135,7 +136,9 @@ async function deepLink(br) {
   const last = samples[samples.length - 1];
   const stable = samples.slice(1).every(s => Math.abs(s.top - last.top) <= 2);
   if (!last.open) fails.push('deeplink: book not open');
-  if (last.top < -5 || last.top > 200) fails.push(`deeplink: book top at ${last.top}px, not near the top`);
+  // the book should sit just below the sticky controls: not hidden under them, not far below
+  if (last.top < last.ctl - 2 || last.top > last.ctl + 60) fails.push(`deeplink: book top at ${last.top}px (sticky controls ${last.ctl}px)`);
+  if (!stable) fails.push('deeplink: position moved after load');
   if (errs.length) fails.push('deeplink JS errors: ' + errs.join(' | '));
   return { samples, cls: +cls.toFixed(4), stable, errors: errs };
 }
