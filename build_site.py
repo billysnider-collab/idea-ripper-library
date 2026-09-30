@@ -672,6 +672,11 @@ main a:hover,.fmore a:hover{color:var(--accent-rust-hi)}
 .genre{margin:var(--space-xl) 0 var(--space-sm);font-size:1.4rem;font-weight:400;color:var(--ink-body);border-bottom:2px solid var(--accent-rip);padding-bottom:var(--space-2xs);line-height:var(--lh-tight)}
 .gcount{color:var(--ink-structure);font-size:var(--fs-sm);font-weight:400;font-family:var(--font-mono)}
 .book,.fbook{margin-bottom:var(--space-lg);scroll-margin-top:var(--scroll-mt)}
+/* perf (2026-09-30): skip style/layout/paint for off-screen shelves; sizes are
+   the measured collapsed-book heights (desktop ~114px, phone ~180px) and
+   "auto" remembers the real size once a section has rendered */
+.book,.fbook{content-visibility:auto;contain-intrinsic-size:auto 114px}
+@media(max-width:700px){.book,.fbook{contain-intrinsic-size:auto 180px}}
 /* ---------- book strip ---------- */
 .bh,.ch{margin:0;font-size:var(--fs-base);font-weight:400}
 .bookhead,.fbookhead,.cardhead{font:inherit;color:inherit;background:none;border:0;padding:0;text-align:left;width:100%;cursor:pointer}
