@@ -838,6 +838,31 @@
    "book": "Thus Spoke Zarathustra — Friedrich Nietzsche",
    "genre": "Nonfiction",
    "bookline": "Nietzsche's 1883 prophet's handbook: the Superman, the Last Man, eternal recurrence, and the will to power — the operator's edition, ripped from the public-domain Thomas Common translation."
+  },
+  {
+   "book": "Explaining Sectarian Violence in the Middle East: A Comparative Study of Bahrain and Yemen — Breanna C. Strand",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1026830"
+  },
+  {
+   "book": "Coast Guard Maritime Security in the Underwater Domain — LCDR Peter M. Morisseau",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — USCG, Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA624450"
+  },
+  {
+   "book": "Analysis of the Global Maritime Transportation System and Its Resilience — Daniel Funk (Major",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — German Army), Naval Postgraduate School, 2017. Full text: https://archive.org/details/DTIC_AD1046371"
+  },
+  {
+   "book": "BUDDHIST MEDITATION AND TRAUMA THERAPY — John Brooks Freese",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Claremont School of Theology, 2022. Full text: https://archive.org/details/freese-2022"
+  },
+  {
+   "book": "Shifting Policy Postures of Indonesia and Thailand: Responding to the China Challenge — Anthony M. Wong",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632310"
   }
  ],
  "cards": [
@@ -10789,6 +10814,51 @@
     "protect the unplanned",
     "stay generative"
    ]
+  },
+  {
+   "title": "Explaining Sectarian Violence in the Middle East: A Comparative Study of Bahrain and Yemen",
+   "book": "Explaining Sectarian Violence in the Middle East: A Comparative Study of Bahrain and Yemen — Breanna C. Strand",
+   "type": "argument",
+   "steal": "Sectarian violence isn't ancient hatred erupting — it's produced by four variables: identity-group grievances, elite instrumentalization, the Saudi-Iran regional proxy war, and (decisively) state collapse. Bahrain and Yemen share the first three; only Yemen suffered state collapse, and only Yemen has escalating sectarian violence — the collapse is what turns tension into violence.",
+   "why": "It separates what makes sectarianism salient from what makes it violent — a failed state is the difference between tension and war.",
+   "uw": "Grievances don't explode on their own — they need the state to fail first.",
+   "id": 890
+  },
+  {
+   "title": "Coast Guard Maritime Security in the Underwater Domain",
+   "book": "Coast Guard Maritime Security in the Underwater Domain — LCDR Peter M. Morisseau",
+   "type": "argument",
+   "steal": "The Coast Guard runs maritime domain awareness for surface and air but has almost nothing for the underwater domain — a capability-gap analysis plus analysis of alternatives found the gap is real, the technology to close it has matured, and the moment to procure is now.",
+   "why": "Ports and waterways are guarded on the surface while the water column below goes unwatched — an early institutional argument for underwater domain awareness, now a live undersea-infrastructure concern.",
+   "uw": "Every perimeter has a third dimension nobody budgets for — name it before an adversary uses it.",
+   "id": 891
+  },
+  {
+   "title": "Analysis of the Global Maritime Transportation System and Its Resilience",
+   "book": "Analysis of the Global Maritime Transportation System and Its Resilience — Daniel Funk (Major",
+   "type": "argument",
+   "steal": "The global maritime transportation system carries more than 90% of the foreign trade of the U.S. and many other industrial nations — losing a port or having a canal blockaded causes serious economic consequences, so the operability of the global economy depends on the resilience of this system; the thesis models container ports, maritime chokepoints, and transportation routes as a network and applies network-science metrics to measure that resilience.",
+   "why": "Trade shocks are network shocks — the thesis quantifies exactly how much the world economy depends on a handful of chokepoints holding.",
+   "uw": "When 90% of trade rides one network, resilience is the economy — measure the chokepoints, not just the cargo.",
+   "id": 892
+  },
+  {
+   "title": "BUDDHIST MEDITATION AND TRAUMA THERAPY",
+   "book": "BUDDHIST MEDITATION AND TRAUMA THERAPY — John Brooks Freese",
+   "type": "argument",
+   "steal": "The U.S. scholarly dialogue between Buddhism and trauma therapy has run between Western Vipassana Movement teachers (IMS, Spirit Rock, MBSR, MBCT, Mindful Self Compassion) and trauma clinicians (Briere, Scott, Siegel, Levine) — and it has left out the Goenka Vipassana tradition; the dissertation mutually correlates the two fields and builds a prototypical Buddhist-counseling model using Acceptance and Commitment Therapy as its contemplative matrix.",
+   "why": "Trauma treatment is mainstream now, and this maps an underexplored bridge between contemplative practice and clinical trauma work — with practitioners on both sides.",
+   "uw": "Check who's not in the room — the dialogue everyone cites may be missing the tradition that matters most.",
+   "id": 893
+  },
+  {
+   "title": "Shifting Policy Postures of Indonesia and Thailand: Responding to the China Challenge",
+   "book": "Shifting Policy Postures of Indonesia and Thailand: Responding to the China Challenge — Anthony M. Wong",
+   "type": "argument",
+   "steal": "After China shifted to a more assertive posture in 2012, Indonesia moved toward balancing (military buildup, closer U.S. defense ties) while Thailand moved toward bandwagoning — and the difference wasn't the size of the China threat but how each ruling elite weighed economic benefits against security fears, with domestic politics intervening.",
+   "why": "Hedging isn't a mechanical response to power — it's a political calculation; the same rising China produces opposite strategies depending on what elites need at home.",
+   "uw": "States don't react to threats — they react to what their leaders think the threat is worth, and domestic politics sets the exchange rate.",
+   "id": 894
   }
  ]
 }

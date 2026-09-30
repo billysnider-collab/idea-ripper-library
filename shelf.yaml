@@ -1264,6 +1264,42 @@ books:
   - book
   - genre
   - bookline
+- key: explaining-sectarian-violence-in-the-middle-east-a-comparative-study-of-bahrain-and-yemen-breanna-c-strand
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1026830'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: coast-guard-maritime-security-in-the-underwater-domain-lcdr-peter-m-morisseau
+  genre: Thesis
+  bookline: 'Masters thesis — USCG, Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA624450'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: analysis-of-the-global-maritime-transportation-system-and-its-resilience-daniel-funk-major
+  genre: Thesis
+  bookline: 'Masters thesis — German Army), Naval Postgraduate School, 2017. Full
+    text: https://archive.org/details/DTIC_AD1046371'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: buddhist-meditation-and-trauma-therapy-john-brooks-freese
+  genre: Thesis
+  bookline: 'PhD thesis — Claremont School of Theology, 2022. Full text: https://archive.org/details/freese-2022'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: shifting-policy-postures-of-indonesia-and-thailand-responding-to-the-china-challenge-anthony-m-wong
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632310'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2140,6 +2176,11 @@ card_order:
 - 887
 - 888
 - 889
+- 890
+- 891
+- 892
+- 893
+- 894
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
