@@ -560,9 +560,15 @@ header.masthead{max-width:none;padding:0;background:var(--surface-frame);color:v
 .shlist{list-style:none;margin:var(--space-sm) 0 0;padding:0;display:grid;gap:var(--space-2xs)}
 .shlist a{display:flex;justify-content:space-between;align-items:center;gap:var(--space-sm);text-decoration:none;color:var(--ink-body);padding:var(--space-2xs) var(--space-xs);border-radius:var(--radius-sm);min-height:44px}
 .shlist a:hover{background:var(--surface-frame-raised);color:var(--ink-frame)}
-.shlist .sht{font-weight:600}
+.shlist .sht{font-weight:600;min-width:0;flex:1 1 auto;overflow-wrap:anywhere}
+.shlist{grid-template-columns:minmax(0,1fr)}
+.shlist li{min-width:0}
+.shlist .shb{min-width:0}
 .shlist .shb{font-family:var(--font-mono);font-size:var(--fs-xs);color:var(--ink-structure);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:40%}
 .shlist a:hover .shb{color:var(--ink-frame)}
+@media(max-width:480px){.shlist a{flex-wrap:wrap;justify-content:flex-start}.shlist .shb{max-width:100%}}
+/* thesis booklines carry long "Full text: https://..." URLs: let them break (phone overflow) */
+.bookline,.bauthor{overflow-wrap:anywhere}
 .recent-strip{display:flex;flex-wrap:wrap;gap:var(--space-2xs);margin:0 0 var(--space-xl)}
 .rchip{display:inline-block;padding:var(--space-2xs) var(--space-sm);border:1px solid var(--line-card);border-radius:var(--radius-md);background:var(--surface-paper);color:var(--ink-body);text-decoration:none;font-size:var(--fs-sm);font-family:var(--font-mono)}
 .rchip:hover{background:var(--surface-frame-raised);color:var(--ink-frame);border-color:var(--surface-frame-raised)}
