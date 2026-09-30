@@ -120,8 +120,9 @@ def book_block(b):
         pv = c["steal"]
         if len(pv) > 90:
             pv = pv[:90].rsplit(" ", 1)[0] + "\u2026"
-        kicker_rip = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Ripped from</span></div>'
-        kicker_use = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Use when</span></div>'
+        # perf (2026-09-30): kickers, the "Why it matters" label and the action
+        # buttons are no longer rendered per card (CSS ::before draws the labels;
+        # JS clones #cardactions into a card when it opens). ~10 fewer nodes/card.
         _rel = c.get("related_ids") or []
         _rell = ['<a href="#c%d">%s</a>' % (_byid[r]["id"], esc(_byid[r]["title"])) for r in _rel if r in _byid]
         relhtml = ('<p class="rel"><span class="rk">Related rips:</span> ' + " \u00b7 ".join(_rell) + "</p>") if _rell else "" 
@@ -133,21 +134,15 @@ def book_block(b):
             '<span class="ctext"><span class="ctitle">%s</span><span class="pv">%s</span></span>'
             '<span class="pill %s">%s</span></button></h3>'
             '<div class="cardbody">'
-            '%s'
             '<p class="steal">%s</p>'
-            '<p class="why"><span class="k">Why it matters:</span> %s</p>'
-            '%s'
+            '<p class="why">%s</p>'
             '<p class="uw">%s</p>'
             '%s'
-            '<div class="actions"><button type="button" data-copy="steal">Copy steal</button>'
-            '<button type="button" data-copy="uw">Copy use-when</button>'
-            '<button type="button" data-copy="link">Copy link</button>'
-            '<button type="button" data-save="%d" aria-pressed="false">Save</button></div>'
             '</div></article>'
             % (" open" if thesis_open else "", n_, n_, esca(c["book"]), esca(b["genre"]), esca(c["type"]), c.get("status", "keeper"),
                "true" if thesis_open else "false",
                n_, esc(c["title"]), esc(pv), esca(c["type"]), esc(c["type"]),
-               kicker_rip, esc(c["steal"]), esc(c["why"]), kicker_use, esc(c["uw"]), relhtml, n_))
+               esc(c["steal"]), esc(c["why"]), esc(c["uw"]), relhtml))
     parts.append('</div></section>')
     return "\n".join(parts)
 
@@ -723,6 +718,11 @@ button::-moz-focus-inner{border:0;padding:0}
 .card.open .cardbody{display:block}
 .kicker{display:flex;align-items:center;gap:var(--space-xs);margin:var(--space-sm) 0 var(--space-3xs);font-family:var(--font-mono);font-size:var(--fs-xs);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-structure)}
 .kicker .ktext{border-bottom:2px solid var(--accent-rip);padding-bottom:var(--space-3xs)}
+/* library cards (2026-09-30): kicker + label text drawn by CSS, not per-card markup */
+.card>.cardbody>.steal::before,.card>.cardbody>.uw::before{display:block;width:max-content;max-width:100%;margin:var(--space-sm) 0 var(--space-xs);padding-left:calc(var(--space-lg) + var(--space-xs));font-family:var(--font-mono);font-size:var(--fs-xs);font-weight:700;font-style:normal;line-height:1.6;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-structure);text-decoration:underline 2px var(--accent-rip);text-underline-offset:5px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 8'%3E%3Cpolyline points='1,4.5 5,2 9,5.5 13,2 17,5 19,3' fill='none' stroke='%231D1913' stroke-width='2'/%3E%3C/svg%3E") left center/var(--space-lg) auto no-repeat}
+.card>.cardbody>.steal::before{content:"Ripped from"}
+.card>.cardbody>.uw::before{content:"Use when"}
+.card>.cardbody>.why::before{content:"Why it matters:";display:block;font-family:var(--font-mono);font-size:var(--fs-xs);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-body);margin-bottom:var(--space-2xs)}
 .card .steal{margin:var(--space-xs) 0;font-style:italic;font-size:var(--fs-lg);line-height:var(--lh-body);color:var(--ink-body)}
 .why{margin:var(--space-xs) 0;font-size:var(--fs-base);line-height:var(--lh-body);color:var(--ink-body)}
 .why .k{display:block;font-family:var(--font-mono);font-size:var(--fs-xs);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-body);margin-bottom:var(--space-2xs)}
@@ -852,6 +852,7 @@ main{max-width:var(--page-max)}
   .pill{border-color:var(--print-ink)}
   .pill.mechanism{color:var(--print-ink);border-color:var(--print-ink)}
   .kicker::before{display:none}
+  .card>.cardbody>.steal::before,.card>.cardbody>.uw::before{background:none;padding-left:0;color:var(--print-ink)}
   .kicker .ktext{border-bottom-color:var(--print-ink)}
   .card .steal,.why{color:var(--print-ink)}
   .why .k{color:var(--print-ink)}
@@ -1149,8 +1150,11 @@ function toggleCard(card,open){
   if(chd)chd.setAttribute('aria-expanded',will?'true':'false');
   if(will&&card.dataset.n)setHash('#c'+card.dataset.n);
 }
-document.querySelectorAll('.cardhead').forEach(function(h){
-  h.addEventListener('click',function(){toggleCard(h.closest('.card'));});
+/* delegated (2026-09-30): card heads, Copy and Save buttons are handled at the
+   document, so buttons cloned into cards later work without re-binding */
+document.addEventListener('click',function(e){
+  var h=e.target&&e.target.closest?e.target.closest('.cardhead'):null;
+  if(h)toggleCard(h.closest('.card'));
 });
 document.querySelectorAll('.bookhead').forEach(function(h){
   function t(){var b=h.closest('section'),exp=b.classList.contains('collapsed');setBook(b,exp);if(exp)accordionize(b);}
@@ -1197,10 +1201,9 @@ document.getElementById('collapse').addEventListener('click',function(){
     b.querySelectorAll('.card.open').forEach(function(c){c.classList.remove('open');});
   });
 });
-document.querySelectorAll('[data-copy]').forEach(function(btn){
-  btn.addEventListener('click',function(e){
-    e.stopPropagation();
-    var card=btn.closest('.card'),kind=btn.dataset.copy,txt;
+document.addEventListener('click',function(e){
+    var btn=e.target&&e.target.closest?e.target.closest('[data-copy]'):null;if(!btn)return;
+    var card=btn.closest('.card'),kind=btn.dataset.copy,txt;if(!card)return;
     if(kind==='steal')txt=card.querySelector('.steal').textContent;
     else if(kind==='uw')txt=card.querySelector('.uw').textContent;
     else txt=location.origin+location.pathname+'#c'+card.dataset.n;
@@ -1212,7 +1215,6 @@ document.querySelectorAll('[data-copy]').forEach(function(btn){
     }
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){done(true);},function(){done(false);});}
     else{var ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done(true);}catch(_){done(false);}document.body.removeChild(ta);}
-  });
 });
 document.querySelectorAll('#jumpchips a').forEach(function(ch){
   ch.addEventListener('click',function(e){
@@ -1325,15 +1327,13 @@ function syncSaveButtons(){
     b.textContent=on?'Saved \u2713':'Save';
   });
 }
-document.querySelectorAll('[data-save]').forEach(function(b){
-  b.addEventListener('click',function(e){
-    e.stopPropagation();
+document.addEventListener('click',function(e){
+    var b=e.target&&e.target.closest?e.target.closest('[data-save]'):null;if(!b)return;
     var id=+b.getAttribute('data-save'),s=getSaved(),i=s.indexOf(id);
     /* persist first, then update UI, then toast: a toast problem can never lose a save */
     var was=i>=0;if(was)s.splice(i,1);else s.push(id);
     setSaved(s);syncSaveButtons();renderSaved();
     toast(was?'Removed from saved':'Saved');
-  });
 });
 document.querySelectorAll('.rel a').forEach(function(a){
   a.addEventListener('click',function(e){e.preventDefault();openRip(+a.getAttribute('href').slice(2));});
@@ -1442,6 +1442,22 @@ function doCollide(){
 }
 if(_cb)_cb.addEventListener('click',doCollide);
 if(_cagain)_cagain.addEventListener('click',doCollide);
+/* card actions (2026-09-30): one <template id="cardactions">, cloned into a
+   library card the first time it is open (any code path: click, expand all,
+   search, deep link, random) */
+var ACT=document.getElementById('cardactions');
+function ensureActions(c){
+  if(!ACT||c.hasAttribute('data-fb')||!c.classList.contains('open'))return;
+  var body=c.querySelector('.cardbody');if(!body||body.querySelector('.actions'))return;
+  var frag=ACT.content.cloneNode(true),sb=frag.querySelector('[data-save]'),id=+c.dataset.n,on=getSaved().indexOf(id)>=0;
+  sb.setAttribute('data-save',id);sb.setAttribute('aria-pressed',on?'true':'false');sb.textContent=on?'Saved \u2713':'Save';
+  body.appendChild(frag);
+}
+var _main=document.querySelector('main');
+if(_main&&window.MutationObserver)new MutationObserver(function(ms){
+  for(var i=0;i<ms.length;i++){var t=ms[i].target;if(t.classList&&t.classList.contains('card')&&t.classList.contains('open'))ensureActions(t);}
+}).observe(_main,{subtree:true,attributes:true,attributeFilter:['class']});
+document.querySelectorAll('main .card.open').forEach(ensureActions);
 syncSaveButtons();renderSaved();
 })();
 
@@ -1575,6 +1591,7 @@ page = """<!DOCTYPE html>
 </main>
 <footer><p class="fmeta">Last curated %s &middot; %d books &middot; %d theses &middot; %d rips%s &middot; machine-assisted, hand-curated with the Idea Ripper pipeline</p></footer>
 <div id="toast" role="status"></div>
+<template id="cardactions"><div class="actions"><button type="button" data-copy="steal">Copy steal</button><button type="button" data-copy="uw">Copy use-when</button><button type="button" data-copy="link">Copy link</button><button type="button" data-save="" aria-pressed="false">Save</button></div></template>
 <script src="%s"></script>
 <script>try{if(!sessionStorage.getItem("ir_c")){sessionStorage.setItem("ir_c","1");fetch("https://countapi.mileshilliard.com/api/v1/hit/idearipper-com",{mode:"no-cors",keepalive:true}).catch(function(){})}}catch(e){}</script>
 </body>
