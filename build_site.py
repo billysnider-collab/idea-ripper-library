@@ -792,7 +792,7 @@ main{max-width:var(--page-max)}
 .fbook:not(.collapsed) .fbcards .card{margin:0}
 }
 /* phase 5: saved shelf + related rips */
-.savedshelf{margin:var(--space-xl) 0}
+.savedshelf{max-width:var(--page-max);margin:var(--space-xl) auto;padding:0 var(--page-gutter)}
 .savehead{font-family:var(--font-read);font-weight:600;font-size:var(--fs-xl);color:var(--ink-body);border-bottom:2px solid var(--accent-rust);padding-bottom:var(--space-2xs);margin:0 0 var(--space-sm)}
 .savenote{color:var(--ink-structure);font-size:var(--fs-sm);margin:var(--space-2xs) 0}
 .savedlist{display:grid;gap:var(--space-2xs);margin:var(--space-sm) 0}
