@@ -70,6 +70,7 @@ GUARDS += [
     ("perf: content-visibility on .book", lambda s, h, t: ".book,.fbook{content-visibility:auto" in s),
     ("perf: CSS rip mark (no inline SVGs)", lambda s, h, t: 'class="ripmark"' not in h and ".kicker::before,.fkicker::before" in s),
     ("perf: no duplicated data-search text", lambda s, h, t: "data-search=" not in h and "var _stext={}" in s),
+    ("perf: external hashed CSS/JS", lambda s, h, t: bool(re.search(r'href="assets/site\.[0-9a-f]{10}\.css"', h)) and bool(re.search(r'src="assets/app\.[0-9a-f]{10}\.js"', h))),
     ("Save persists before toast", lambda s, h, t: "setSaved(s);syncSaveButtons();renderSaved();\n    toast(" in s),
 ]
 

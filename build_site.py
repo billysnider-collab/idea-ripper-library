@@ -1458,6 +1458,32 @@ def _h(path):
         return "none"
 BUILD_MARK = "tpl-%s data-%s" % (_h(os.path.abspath(__file__)), _h(os.path.join(BASE, "cards.json"))[:10])
 
+# perf (2026-09-30): CSS and JS ship as content-hashed files in assets/ so
+# browsers cache them across deploys (Pages TTL is a fixed 600s; the hash in
+# the filename is the cache buster). Old files are pruned, except the ones the
+# previously committed index.html uses (it can still be cached for 600s).
+def _write_asset(stem, ext, text):
+    import glob, subprocess
+    d = os.path.join(BASE, "assets")
+    os.makedirs(d, exist_ok=True)
+    data = text.encode("utf-8")
+    name = "%s.%s.%s" % (stem, _hl.sha256(data).hexdigest()[:10], ext)
+    with open(os.path.join(d, name), "wb") as f:
+        f.write(data)
+    keep = {name}
+    try:
+        prev = subprocess.run(["git", "-C", BASE, "show", "HEAD:index.html"],
+                              capture_output=True, text=True, timeout=20).stdout
+        keep |= set(re.findall(r'assets/(%s\.[0-9a-f]{10}\.%s)' % (stem, ext), prev))
+    except Exception:
+        pass
+    for old in glob.glob(os.path.join(d, "%s.*.%s" % (stem, ext))):
+        if os.path.basename(old) not in keep:
+            os.remove(old)
+    return "assets/" + name
+CSS_HREF = _write_asset("site", "css", CSS)
+JS_SRC = _write_asset("app", "js", JS)
+
 fb_intro = ""
 fb_footer = ""
 if fbooks:
@@ -1493,7 +1519,7 @@ page = """<!DOCTYPE html>
 <meta name="twitter:image" content="https://idearipper.com/brand/og-card.png"/>
 <link rel="canonical" href="https://idearipper.com/"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Idea Ripper","alternateName":"Idea Ripper \u2014 the idea-hunting library","url":"https://idearipper.com/","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://idearipper.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
-<style>%s</style><noscript><style>.book.collapsed .cards,.fbook.collapsed .fbookbody{display:block!important}.cardbody{display:block!important}</style></noscript>
+<link rel="stylesheet" href="%s"/><noscript><style>.book.collapsed .cards,.fbook.collapsed .fbookbody{display:block!important}.cardbody{display:block!important}</style></noscript>
 </head>
 <body>
 
@@ -1548,12 +1574,12 @@ page = """<!DOCTYPE html>
 <p class="noresults" id="noresults" hidden>No rips match — try a mechanism word (interlock, delay, patronage).</p>
 </main>
 <footer><p class="fmeta">Last curated %s &middot; %d books &middot; %d theses &middot; %d rips%s &middot; machine-assisted, hand-curated with the Idea Ripper pipeline</p></footer>
-<script>%s</script>
 <div id="toast" role="status"></div>
+<script src="%s"></script>
 <script>try{if(!sessionStorage.getItem("ir_c")){sessionStorage.setItem("ir_c","1");fetch("https://countapi.mileshilliard.com/api/v1/hit/idearipper-com",{mode:"no-cors",keepalive:true}).catch(function(){})}}catch(e){}</script>
 </body>
-</html>""" % (BUILD_MARK, CSS, WORDMARK_SVG, n, n_books, n_theses, curated, fb_intro, genre_opts, book_opts, type_checks, gindex, chips, n_btotal, blist,
-              "\n\n".join(sections), curated_long, n_books, n_theses, n, fb_footer, JS)
+</html>""" % (BUILD_MARK, CSS_HREF, WORDMARK_SVG, n, n_books, n_theses, curated, fb_intro, genre_opts, book_opts, type_checks, gindex, chips, n_btotal, blist,
+              "\n\n".join(sections), curated_long, n_books, n_theses, n, fb_footer, JS_SRC)
 
 open(os.path.join(BASE, "index.html"), "w", encoding="utf-8").write(page)
 
