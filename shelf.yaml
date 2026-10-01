@@ -1357,6 +1357,15 @@ books:
   - book
   - genre
   - bookline
+- key: the-sorrows-of-young-werther-goethe
+  genre: Literary Fiction
+  bookline: 'Goethe''s 1774 epistolary novel — the anatomy of a closed system: one
+    licensed object turns hours into days that count, every rival channel refiled
+    as a yoke.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2280,6 +2289,12 @@ card_order:
 - 934
 - 935
 - 936
+- 937
+- 938
+- 939
+- 940
+- 941
+- 942
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
