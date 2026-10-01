@@ -1366,6 +1366,14 @@ books:
   - book
   - genre
   - bookline
+- key: laurus-vodolazkin
+  genre: Literary Fiction
+  bookline: 'Vodolazkin''s 2013 novel — the un-lived life: when someone dies, their
+    un-lived life remains, and love''s answer is to walk it in their place.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2295,6 +2303,12 @@ card_order:
 - 940
 - 941
 - 942
+- 943
+- 944
+- 945
+- 946
+- 947
+- 948
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
