@@ -1319,6 +1319,15 @@ books:
   - book
   - genre
   - bookline
+- key: la-cryptographie-militaire-auguste-kerckhoffs-auguste-kerckhoffs
+  genre: Nonfiction
+  bookline: 'Military cryptography — the 1883 paper that founded modern cryptanalysis:
+    six desiderata for ciphers, the repeated-fragment key-length attack, and the maxim
+    that a cipher must baffle even its inventor.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2223,6 +2232,21 @@ card_order:
 - 915
 - 916
 - 917
+- 918
+- 919
+- 920
+- 921
+- 922
+- 923
+- 924
+- 925
+- 926
+- 927
+- 928
+- 929
+- 930
+- 931
+- 932
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
