@@ -1309,6 +1309,16 @@ books:
   - book
   - genre
   - bookline
+- key: an-inconvenient-truth-calcium-sensors-are-calcium-buffers-shane-m-mcmahon-meyer-b-jackson
+  genre: Nonfiction
+  bookline: 2018 opinion paper — McMahon SM, Jackson MB, Trends in Neurosciences 41(12):880-884,
+    2018, doi:10.1016/j.tins.2018.09.005. The glowing sensors scientists use to watch
+    brain cells also soak up the very signal they're watching. The thermometer that
+    cools the room.
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2204,6 +2214,15 @@ card_order:
 - 906
 - 907
 - 908
+- 909
+- 910
+- 911
+- 912
+- 913
+- 914
+- 915
+- 916
+- 917
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026

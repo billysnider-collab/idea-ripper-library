@@ -868,6 +868,11 @@
    "book": "Superintelligence — Nick Bostrom",
    "genre": "Nonfiction",
    "bookline": "2014, Oxford University Press - the book that put AI existential risk on the map: paths to superintelligence, the control problem, and why we get one shot."
+  },
+  {
+   "book": "An Inconvenient Truth: Calcium Sensors Are Calcium Buffers — Shane M. McMahon & Meyer B. Jackson",
+   "genre": "Nonfiction",
+   "bookline": "2018 opinion paper — McMahon SM, Jackson MB, Trends in Neurosciences 41(12):880-884, 2018, doi:10.1016/j.tins.2018.09.005. The glowing sensors scientists use to watch brain cells also soak up the very signal they're watching. The thermometer that cools the room."
   }
  ],
  "cards": [
@@ -11032,6 +11037,87 @@
    "intents": [
     "notice what others miss"
    ]
+  },
+  {
+   "title": "The thermometer that cools the room",
+   "book": "An Inconvenient Truth: Calcium Sensors Are Calcium Buffers — Shane M. McMahon & Meyer B. Jackson",
+   "type": "mechanism",
+   "steal": "To watch brain cells work, scientists fill them with tiny sensors that glow when they catch calcium, the cell's “go” signal. But catching means holding on. If there's enough sensor to see the glow, there's almost certainly enough to weaken the signal and slow it down. It's a thermometer that cools the room while it measures it.",
+   "why": "The paper's core warning: the tool doesn't just watch the cell, it changes it, often several times over. The picture can end up showing the sensor more than the cell.",
+   "uw": "When a measurement has to grab, hold, or touch the thing it's measuring. Ask how much the grip is changing what you see.",
+   "id": 909
+  },
+  {
+   "title": "Assume it's happening",
+   "book": "An Inconvenient Truth: Calcium Sensors Are Calcium Buffers — Shane M. McMahon & Meyer B. Jackson",
+   "type": "argument",
+   "steal": "Don't ask whether the sensor is changing the cell. If you can see it glowing, it is. Start from that and work out how much, instead of hoping the effect is too small to matter.",
+   "why": "Flips the burden of proof. The distortion isn't a rare glitch to rule out. It's the normal case, so the honest starting point is to expect it.",
+   "uw": "When you're tempted to trust a reading because the tool “shouldn't” affect anything.",
+   "id": 910
+  },
+  {
+   "title": "Use a lighter grip",
+   "book": "An Inconvenient Truth: Calcium Sensors Are Calcium Buffers — Shane M. McMahon & Meyer B. Jackson",
+   "type": "mechanism",
+   "steal": "Sensors that hold calcium loosely change the signal less. The catch: they also glow less, so they're harder to see. You're trading a clearer picture for a truer one, and no setting gets you both for free.",
+   "why": "Names the real trade-off instead of pretending there's a perfect tool. Every sensor sits somewhere between “easy to see” and “barely disturbs anything.” Pick the spot on purpose.",
+   "uw": "When choosing how hard to look: more sensitivity usually means more interference.",
+   "id": 911
+  },
+  {
+   "title": "Know how much watching you're doing",
+   "book": "An Inconvenient Truth: Calcium Sensors Are Calcium Buffers — Shane M. McMahon & Meyer B. Jackson",
+   "type": "mechanism",
+   "steal": "Before trusting the picture, estimate how much sensor is actually in the cell. The authors suggest checking the microscope against samples of known strength and correcting for the tissue's own faint glow. It's hard and the answer is rough, but a rough number beats assuming zero.",
+   "why": "How much the signal gets distorted depends on how much sensor is in there. Without even a ballpark figure, you can't tell a real result from a side effect of how heavily the cell was loaded.",
+   "uw": "When results from different cells, animals, or labs disagree. Check whether they were simply watched with different amounts of sensor.",
+   "id": 912
+  },
+  {
+   "title": "Timing is the tell",
+   "book": "An Inconvenient Truth: Calcium Sensors Are Calcium Buffers — Shane M. McMahon & Meyer B. Jackson",
+   "type": "evidence",
+   "steal": "Real calcium signals fade fast, in a fraction of a second. When a signal lingers for seconds, you're probably watching the sensor slowly let go, not the cell. The authors' test: measure the fade at a few known sensor amounts, then work backward to what it would be with none.",
+   "why": "A practical check anyone reading a study can use: compare how long the signal lasts with how long the real thing should last. Seconds where there should be a fraction of a second is a red flag.",
+   "uw": "When a recording looks smooth and slow. Ask whether the cell is slow or the sensor is.",
+   "id": 913
+  },
+  {
+   "title": "Brighter doesn't mean busier",
+   "book": "An Inconvenient Truth: Calcium Sensors Are Calcium Buffers — Shane M. McMahon & Meyer B. Jackson",
+   "type": "contradiction",
+   "steal": "A cell that glows brighter may look calmer, not busier, because more sensor soaks up more of its signal. The cells carrying the most sensor can be the ones whose activity looks most muted.",
+   "why": "It cuts against instinct. Brightness feels like proof of activity, but here it can mean the opposite, so ranking cells by glow alone can put them in backwards order.",
+   "uw": "When comparing how “active” different cells or brain areas look in a glowing image.",
+   "id": 914
+  },
+  {
+   "title": "When the sensor writes the story",
+   "book": "An Inconvenient Truth: Calcium Sensors Are Calcium Buffers — Shane M. McMahon & Meyer B. Jackson",
+   "type": "evidence",
+   "steal": "In the lab, slowing every signal down can blur their timing, so cells look like they fire together when they don't. In mice bred to carry a glowing sensor in their brains, the sensor itself probably caused seizure-like activity.",
+   "why": "The distortion isn't just a smaller number. It can create false findings and even change how the brain behaves. The mouse result comes from a 2017 study the authors cite (Steinmetz et al., eNeuro).",
+   "uw": "When a study's big finding is cells acting in sync, or odd brain activity in glowing mice. Check whether the sensor alone could produce it.",
+   "id": 915
+  },
+  {
+   "title": "Every gauge has a grip",
+   "book": "An Inconvenient Truth: Calcium Sensors Are Calcium Buffers — Shane M. McMahon & Meyer B. Jackson",
+   "type": "connection",
+   "steal": "Polls shape the opinions they measure. Workers chase whatever number gets counted. People act differently on camera. Creators post for the numbers instead of the work. Wherever watching takes hold of what it watches, the reading drifts toward the watcher.",
+   "why": "Our extrapolation, not the paper's. The paper is only about brain cells. But its fixes travel: assume the effect, estimate how much watching you're doing, and use the lightest touch that still works.",
+   "uw": "When a metric, survey, or camera starts to feel like the goal instead of the window.",
+   "id": 916
+  },
+  {
+   "title": "What is my watching changing?",
+   "book": "An Inconvenient Truth: Calcium Sensors Are Calcium Buffers — Shane M. McMahon & Meyer B. Jackson",
+   "type": "question",
+   "steal": "What am I watching that my watching is changing, and what would it look like if I looked less?",
+   "why": "Our extrapolation, not the paper's. It borrows the authors' move of working back to “zero sensor” and points it at everyday life.",
+   "uw": "Before you trust a number, a review, or a dashboard, or when a report on your own behavior looks a little too neat.",
+   "id": 917
   }
  ]
 }
