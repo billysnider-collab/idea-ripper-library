@@ -69,24 +69,24 @@ Use when you are becoming extremely good at something while the actual thing you
 
 --- card
 id: 946
-title: "Refusing time is grief's first honest act — but the answer is to collapse it, not to freeze in it"
+title: "Refuse the new day — then act inside it, don't sleep through it"
 field_order: ["title", "book", "type", "steal", "why", "uw", "id", "source_locator"]
 type: "argument"
 source_locator: "Ustina's death; the elder's speech"
 ---
 ## Steal
 
-After Ustina dies, Arseny cannot bear the morning: 'the coming of a new day without Ustina was unbearable to him,' so he sleeps, refusing the day — refusing the passage of time. The novel's answer is not 'accept time and move on'; the elder says where she is now 'there is no time, but there is the infinite mercy of God.' Time-collapse is the move: the dead are not in the past, they are present, so mourning never ends — it changes form. The mistake is not the refusal of time; it is staying frozen in the refusal instead of acting inside it.
+After Ustina dies, Arseny cannot bear the morning: 'the coming of a new day without Ustina was unbearable to him,' so he sleeps, refusing the day. That refusal is the first honest move grief makes — the day should not be allowed to come without her. The trap is freezing there: sleeping through the day instead of acting inside a present that still holds the dead. The elder's word is that where she is now 'there is no time, but there is the infinite mercy of God' — the dead are not in the past, they are present, so mourning never ends; it changes form. Refuse the new day, then act inside it. Don't sleep through it.
 
 Ripped from the novel (translated from the Russian by the cutter): «наступление нового дня без Устины было для него невыносимо» — "the coming of a new day without Ustina was unbearable to him." And: «И нет времени, а есть бесконечная милость Божия, на ню же уповаем.» — "And there is no time, but there is the infinite mercy of God, on which we rely."
 
 ## Why it matters
 
-This is the honest account of grief that most advice gets backwards. 'Time heals' is the lie; 'there is no time' is the truth the book offers. The dead do not recede — they remain. The question is only whether the refusal of time becomes a paralysis (sleep) or an engine (substitution).
+This is the honest account of grief's first move: refusing the day is legitimate, sleeping through it is the trap. The dead do not recede — they remain. The question is only whether the refusal becomes a paralysis (sleep) or an engine (acting inside the present that still holds them).
 
 ## Use when
 
-Use when you or someone else is stuck insisting 'I can't believe it happened' or sleeping through the new day. The refusal is legitimate; the paralysis is the trap.
+Use when you or someone else is stuck on 'I can't believe it happened,' or sleeping the day away. The refusal is legitimate; staying frozen is the trap.
 
 --- card
 id: 947
