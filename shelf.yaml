@@ -1374,6 +1374,15 @@ books:
   - book
   - genre
   - bookline
+- key: anathem-stephenson
+  genre: Science Fiction
+  bookline: 'Stephenson''s 2008 novel of cloistered scholar-monks: how to keep your
+    mind yours. Ration what comes in, filter it through people, question it with old
+    tools.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2309,6 +2318,12 @@ card_order:
 - 946
 - 947
 - 948
+- 949
+- 950
+- 951
+- 952
+- 953
+- 954
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
