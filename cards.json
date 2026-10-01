@@ -878,6 +878,26 @@
    "book": "La Cryptographie militaire — Auguste Kerckhoffs",
    "genre": "Nonfiction",
    "bookline": "Military cryptography — the 1883 paper that founded modern cryptanalysis: six desiderata for ciphers, the repeated-fragment key-length attack, and the maxim that a cipher must baffle even its inventor."
+  },
+  {
+   "book": "Short Term Cyber Attacks with Long Term Effects and Degradation of Supply Chain Capability — Jose M. Lamberty",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1029813"
+  },
+  {
+   "book": "Optimizing Utilization of Detectors — Crystal R. Warrene",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1027719"
+  },
+  {
+   "book": "Gaussian quantum metrology and space-time probes — Dominik Šafránek",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — University of Nottingham, 2016. Full text: https://archive.org/details/arxiv-1610.03538"
+  },
+  {
+   "book": "Urban development strategies for peripheral areas along metro extension towards Hingna — Shipra Gadge",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology (Nagpur), 2025. Full text: https://archive.org/details/sgng.19276-urban-development-strategies-for-peripheral-areas-along-metro-ext"
   }
  ],
  "cards": [
@@ -11333,6 +11353,42 @@
    ],
    "source_locator": "Part 2, §C (dictionnaires chiffrés; the Andrassy cable)",
    "ripped_at": "2026-10-01"
+  },
+  {
+   "title": "Short Term Cyber Attacks with Long Term Effects and Degradation of Supply Chain Capability",
+   "book": "Short Term Cyber Attacks with Long Term Effects and Degradation of Supply Chain Capability — Jose M. Lamberty",
+   "type": "argument",
+   "steal": "Short-term cyber-attacks on network supply chains can be camouflage — visible minor attacks may conceal a deliberate plan to destroy the supply chain's long-term ability to deliver goods during a crisis; using a life-cycle approach and quantifiable metrics, he compared short-term against long-term risk to establish that such \"black swan\" degradation events are real and analyzable.",
+   "why": "Incident responders who treat each breach as a one-off miss the campaign — the thesis gives a formal reason to assume repeated small hits are one operation until proven otherwise.",
+   "uw": "Short-term noise is how long-term degradation hides — always ask what the attacker gains from the pattern, not just the hit.",
+   "id": 933
+  },
+  {
+   "title": "Optimizing Utilization of Detectors",
+   "book": "Optimizing Utilization of Detectors — Crystal R. Warrene",
+   "type": "argument",
+   "steal": "The intelligence value collected from a shared asset is maximized by computing the optimal time allocation across its competing tasks — numerical integration over a joint probability density of task arrival rates, checked by Monte Carlo simulation, beats gut-feel scheduling under uncertainty.",
+   "why": "The same math governs how you point limited ISR assets — satellites, drones, analyst hours — at competing intelligence targets; intuition systematically underperforms when arrival rates are uncertain.",
+   "uw": "When one asset serves many tasks, optimize the schedule mathematically — under uncertainty, intuition leaves value on the table.",
+   "id": 934
+  },
+  {
+   "title": "Gaussian quantum metrology and space-time probes",
+   "book": "Gaussian quantum metrology and space-time probes — Dominik Šafránek",
+   "type": "argument",
+   "steal": "He derived new formulas for the optimal precision of estimating multiple parameters encoded in Gaussian quantum states, found the figure of merit (quantum Fisher information) can behave discontinuously, and showed that using a quantum reference frame counters the precision loss when two parties exchanging a state don't share a reference frame.",
+   "why": "This is the math that sets the ceiling for quantum sensors — gravimeters, magnetometers, clocks — before anyone builds hardware; precision estimation is the frontier of the quantum-sensing race.",
+   "uw": "Know the theoretical ceiling of your instrument before building it — the math of optimal probes comes first.",
+   "id": 935
+  },
+  {
+   "title": "Urban development strategies for peripheral areas along metro extension towards Hingna",
+   "book": "Urban development strategies for peripheral areas along metro extension towards Hingna — Shipra Gadge",
+   "type": "argument",
+   "steal": "A metro extension through unplanned peri-urban India only pays off with a full land-use plan attached — she proposes five integrated interventions: a Transit-Activated Corridor overlay zone with revised development norms, micro-level land pooling for small plots, vertical mixed-use at stations, multimodal interchange hubs, and a green-mobility public realm.",
+   "why": "Transit without land-use planning decays into speculation, congestion, and stranded investment — the thesis is a practical checklist for making transit money actually compound.",
+   "uw": "Infrastructure multiplies only when the land rules around it are written first — steel without zoning is a stranded asset.",
+   "id": 936
   }
  ]
 }

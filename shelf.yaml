@@ -1328,6 +1328,35 @@ books:
   - book
   - genre
   - bookline
+- key: short-term-cyber-attacks-with-long-term-effects-and-degradation-of-supply-chain-capability-jose-m-lamberty
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1029813'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: optimizing-utilization-of-detectors-crystal-r-warrene
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1027719'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: gaussian-quantum-metrology-and-space-time-probes-dominik-afr-nek
+  genre: Thesis
+  bookline: 'PhD thesis — University of Nottingham, 2016. Full text: https://archive.org/details/arxiv-1610.03538'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: urban-development-strategies-for-peripheral-areas-along-metro-extension-towards-hingna-shipra-gadge
+  genre: Thesis
+  bookline: 'Masters thesis — Visvesvaraya National Institute of Technology (Nagpur),
+    2025. Full text: https://archive.org/details/sgng.19276-urban-development-strategies-for-peripheral-areas-along-metro-ext'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2247,6 +2276,10 @@ card_order:
 - 930
 - 931
 - 932
+- 933
+- 934
+- 935
+- 936
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
