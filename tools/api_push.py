@@ -24,6 +24,9 @@ import subprocess
 import sys
 import tempfile
 import urllib.request
+import http.client
+import socket
+import time
 import urllib.error
 
 sys.path.insert(0, "/opt/hatch/skills/skill-creator/bin")
@@ -54,14 +57,20 @@ def api(method, path, body=None):
         headers["Content-Type"] = "application/json"
     req = urllib.request.Request(API + path, data=data, headers=headers,
                                  method=method)
-    try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            return json.load(resp)
-    except urllib.error.HTTPError as e:
-        print("API %s %s failed: %s\n%s" % (method, path, e,
-                                            e.read().decode()[:500]),
-              file=sys.stderr)
-        sys.exit(1)
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                return json.load(resp)
+        except urllib.error.HTTPError as e:
+            print("API %s %s failed: %s\n%s" % (method, path, e,
+                                                e.read().decode()[:500]),
+                  file=sys.stderr)
+            sys.exit(1)
+        except (http.client.RemoteDisconnected, http.client.IncompleteRead,
+                ConnectionResetError, TimeoutError, socket.timeout) as e:
+            time.sleep(2 * (attempt + 1))
+    print("API %s %s failed after retries" % (method, path), file=sys.stderr)
+    sys.exit(1)
 
 
 def resolve_email():
