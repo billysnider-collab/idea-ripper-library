@@ -41,7 +41,7 @@ def main():
     for b in books:
         assert t.count('data-book="%s"' % html.escape(b["book"], quote=True)) >= 1, "missing book block " + b["book"]
         assert html.escape(b["bookline"], quote=False) in t, "missing bookline " + b["book"]
-    for part in ('id="q"', 'id="fgenre"', 'id="fbook"', 'name="ftype"',
+    for part in ('id="fgenre"', 'id="fbook"', 'name="ftype"',
                  'id="typefilter"', 'id="expand"', 'id="collapse"', 'data-copy="steal"',
                  'data-copy="uw"', 'data-copy="link"', "Last curated",
                  'id="jumpchips"',

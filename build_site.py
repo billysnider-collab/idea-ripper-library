@@ -918,7 +918,9 @@ main{max-width:var(--page-max)}
 
 JS = r"""
 (function(){
-var q=document.getElementById('q'),gs=document.getElementById('fgenre'),
+/* search removed 2026-10-02 (Billy): q is a stub so filter logic keeps working
+   with an always-empty term; no search box is rendered. */
+var q={value:'',addEventListener:function(){},focus:function(){}},gs=document.getElementById('fgenre'),
     bs=document.getElementById('fbook'),
     tboxes=document.querySelectorAll('input[name=ftype]'),
     count=document.getElementById('count'),nores=document.getElementById('noresults'),
@@ -1324,6 +1326,9 @@ openHash();
 var restoredQ=q.value.trim()!=='';
 apply(restoredQ);
 openHash();
+/* 2026-10-02: chips are plain hash anchors; without this, tapping one on an
+   already-loaded page jumps but never expands the collapsed book. */
+window.addEventListener('hashchange',function(){openHash();});
 /* rotw weekly timer (2026-10-02): rotate the Rip of the week every 7 days.
    Pool comes from #rotw-pool JSON; START is the week-index of the deploy week,
    so pool[0] shows first. No rebuild needed. */
@@ -1613,11 +1618,10 @@ page = """<!DOCTYPE html>
 </div></header>
 <section id="intro">
 <p class="lede"><strong>What this is:</strong> a hunting library of machine-assisted, hand-curated ideas from books worth stealing from. Every rip is one usable idea — the exact lines worth keeping, plus when to use them.</p>
-<p class="value"><strong>Why it matters to you:</strong> farmer or professor, you came with a problem. Search it. Every rip is one usable idea from a book that solved a version of it, with the exact lines and when to use them.</p>\n<p class="howto"><strong>How to hunt:</strong> start from your problem &mdash; a negotiation, a hire, a stuck project &mdash; and search it. Tap a book to open its rips, tap a card for the full steal, copy anything you want.</p>
+<p class="value"><strong>Why it matters to you:</strong> farmer or professor, you came with a problem. Hunt it. Every rip is one usable idea from a book that solved a version of it, with the exact lines and when to use them.</p>\n<p class="howto"><strong>How to hunt:</strong> start from your problem &mdash; a negotiation, a hire, a stuck project &mdash; and hunt it. Tap a book to open its rips, tap a card for the full steal, copy anything you want.</p>
 %s
 </section>
 <div class="controls"><div class="inner">
-<input type="search" id="q" placeholder="Search titles, steals, use-when&hellip;" aria-label="Search cards"/>
 <select id="fgenre" aria-label="Filter by genre"><option value="">All genres</option>
 %s</select>
 <select id="fbook" hidden aria-hidden="true" tabindex="-1" aria-label="Filter by book"><option value="">All books</option>
