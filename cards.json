@@ -17,6 +17,40 @@
   "week": "Sep 27 - Oct 4, 2026",
   "note": "Ambition, heroism, the grind. Becker says trace any of them to its engine and you will find the terror of death."
  },
+ "rip_of_the_week_pool": [
+  {
+   "id": 956,
+   "note": "Trust what it does, not what it says."
+  },
+  {
+   "id": 955,
+   "note": "Debt, trust, reputation. You cannot turn a history like a dial."
+  },
+  {
+   "id": 957,
+   "note": "Same structure, same behavior, whatever the domain."
+  },
+  {
+   "id": 964,
+   "note": "Whoever sets the rules holds the real power."
+  },
+  {
+   "id": 963,
+   "note": "Everyone argues about the dials. The dials matter least."
+  },
+  {
+   "id": 681,
+   "note": "Ambition, heroism, the grind. Becker says trace any of them to its engine and you will find the terror of death."
+  },
+  {
+   "id": 696,
+   "note": "Question every requirement. Delete before you optimize."
+  },
+  {
+   "id": 697,
+   "note": "Price the raw materials. The process is the accusation."
+  }
+ ],
  "books": [
   {
    "book": "Shinto: The Ancient Religion of Japan — William George Aston",
