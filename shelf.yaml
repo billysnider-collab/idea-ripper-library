@@ -1383,6 +1383,14 @@ books:
   - book
   - genre
   - bookline
+- key: thinking-in-systems-donella-h-meadows
+  genre: Nonfiction
+  bookline: 'Systems thinking, the field manual: stocks, flows, feedback loops, delays,
+    and the few high-leverage places where small pushes change everything.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2324,6 +2332,16 @@ card_order:
 - 952
 - 953
 - 954
+- 955
+- 956
+- 957
+- 958
+- 959
+- 960
+- 961
+- 962
+- 963
+- 964
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
