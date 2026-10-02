@@ -1391,6 +1391,15 @@ books:
   - book
   - genre
   - bookline
+- key: the-man-in-the-iron-mask-alexandre-dumas
+  genre: Literary Fiction
+  bookline: 'The Iron Mask arc of Le Vicomte de Bragelonne (1847-1850): Aramis''s
+    conspiracy to replace Louis XIV with his secret twin Philippe, and what it reveals
+    about power, identity, and loyalty, ripped from Dumas''s original French.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2342,6 +2351,24 @@ card_order:
 - 962
 - 963
 - 964
+- 965
+- 966
+- 967
+- 968
+- 969
+- 970
+- 971
+- 972
+- 973
+- 974
+- 975
+- 976
+- 977
+- 978
+- 979
+- 980
+- 981
+- 982
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
