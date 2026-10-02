@@ -94,8 +94,13 @@ def main():
         out = sh("git", "diff", "--name-status", base, "HEAD")
         files, deleted = [], []
         for line in out.splitlines():
-            status, path = line.split("\t", 1)
-            (deleted if status.startswith("D") else files).append(path)
+            parts = line.split("\t")
+            status = parts[0]
+            if status.startswith("R"):
+                # rename: old path deleted, new path added
+                deleted.append(parts[1]); files.append(parts[2])
+            else:
+                (deleted if status.startswith("D") else files).append(parts[1])
 
     entries = []
     for path in files:
