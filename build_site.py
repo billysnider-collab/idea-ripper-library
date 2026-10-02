@@ -167,39 +167,60 @@ def featured_block():
     return "\n".join(parts)
 
 
-# Rip of the week (2026-09-27): one hand-picked card rendered as a hero above
-# the Start-here shelf. Config lives in shelf.yaml as rip_of_the_week:
-# {id: <card id>, week: "Sep 27 - Oct 4, 2026", note: "one-line editor note"}.
-# Rendered as article.fcard (NOT article.card, no span.num) so the build_index
-# gates keep counting library cards only. Rotate by changing the shelf entry.
+# Rip of the week (2026-09-27; weekly timer 2026-10-02): one hand-picked card
+# rendered as a hero above the Start-here shelf. The rotation pool lives in
+# shelf.yaml as rip_of_the_week_pool: [{id, note}]. The server renders pool[0]
+# as the no-JS fallback; client JS picks pool[(weekIndex - START) % len(pool)]
+# where weekIndex = floor(Date.now()/604800000), so the card advances every
+# seven days with no rebuild. Rendered as article.fcard (NOT article.card, no
+# span.num) so the build_index gates keep counting library cards only.
 def rotw_block():
+    import time as _time
     rotw = ds.get("rip_of_the_week") or {}
-    rid = rotw.get("id")
-    matches = [c for c in cards if c["id"] == rid]
-    assert matches, "rip_of_the_week id %r not in cards" % (rid,)
-    c = matches[0]
+    pool_cfg = ds.get("rip_of_the_week_pool")
+    if not pool_cfg:
+        pool_cfg = [{"id": rotw.get("id"), "note": rotw.get("note")}] if rotw.get("id") else []
+    assert pool_cfg, "rip_of_the_week_pool is empty and no rip_of_the_week fallback"
+    byid = {c["id"]: c for c in cards}
+    pool = []
+    for p in pool_cfg:
+        pid = p["id"] if isinstance(p, dict) else p
+        note = (p.get("note") or "") if isinstance(p, dict) else ""
+        assert pid in byid, "rip_of_the_week_pool id %r not in cards" % (pid,)
+        c = byid[pid]
+        pool.append({"id": c["id"], "title": esc(c["title"]), "book": esc(c["book"]),
+                     "type": esc(c["type"]), "steal": esc(c["steal"]),
+                     "why": esc(c["why"]), "uw": esc(c["uw"]), "note": esc(note)})
+    first = pool[0]
     fk = '<p class="fkicker">' + RIP_SVG + '<span class="ktext">Rip of the week</span></p>'
     kr = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Ripped from</span></div>'
     ku = '<div class="kicker">' + RIP_SVG + '<span class="ktext">Use when</span></div>'
-    parts = ['<section class="rotw" aria-label="Rip of the week">',
-             '<article class="fcard rotw-card">',
-             fk,
-             '<h3 class="ftitle">%s</h3>' % esc(c["title"]),
+    def card_inner(p, week_label):
+        h = [fk,
+             '<h3 class="ftitle">%s</h3>' % p["title"],
              '<p class="fbook">%s &middot; <span class="pill %s">%s</span></p>'
-             % (esc(c["book"]), esca(c["type"]), esc(c["type"])),
+             % (p["book"], p["type"], p["type"]),
              kr,
-             '<p class="steal">%s</p>' % esc(c["steal"]),
-             '<p class="why"><span class="k">Why it matters:</span> %s</p>' % esc(c["why"]),
+             '<p class="steal">%s</p>' % p["steal"],
+             '<p class="why"><span class="k">Why it matters:</span> %s</p>' % p["why"],
              ku,
-             '<p class="uw">%s</p>' % esc(c["uw"])]
-    week = rotw.get("week") or ""
-    note = rotw.get("note") or ""
-    if week or note:
-        parts.append('<p class="rotw-meta">%s%s%s</p>'
-                     % (esc(week), " &mdash; " if week and note else "", esc(note)))
-    parts.append('<p class="fmore"><a href="#c%d">Find it on the shelf \u2193</a></p>' % c["id"])
-    parts.append('</article>')
-    parts.append('</section>')
+             '<p class="uw">%s</p>' % p["uw"]]
+        meta = week_label
+        if p["note"]:
+            meta = (meta + " &mdash; " if meta else "") + p["note"]
+        if meta:
+            h.append('<p class="rotw-meta">%s</p>' % meta)
+        h.append('<p class="fmore"><a href="#c%d">Find it on the shelf \u2193</a></p>' % p["id"])
+        return "\n".join(h)
+    start_week = int(_time.time() // 604800)
+    pool_json = json.dumps(pool, ensure_ascii=False).replace("</", "<\/")
+    parts = ['<section class="rotw" id="rotw" aria-label="Rip of the week">',
+             '<script type="application/json" id="rotw-pool" data-start="%d">%s</script>'
+             % (start_week, pool_json),
+             '<article class="fcard rotw-card" id="rotw-card">',
+             card_inner(first, ""),
+             '</article>',
+             '</section>']
     return "\n".join(parts)
 
 def fb_chapter_detail(ch):
@@ -1303,6 +1324,33 @@ openHash();
 var restoredQ=q.value.trim()!=='';
 apply(restoredQ);
 openHash();
+/* rotw weekly timer (2026-10-02): rotate the Rip of the week every 7 days.
+   Pool comes from #rotw-pool JSON; START is the week-index of the deploy week,
+   so pool[0] shows first. No rebuild needed. */
+(function(){
+  var pel=document.getElementById('rotw-pool'),card=document.getElementById('rotw-card');
+  if(!pel||!card)return;
+  var pool;try{pool=JSON.parse(pel.textContent);}catch(_){return;}
+  if(!pool||!pool.length)return;
+  var START=parseInt(pel.getAttribute('data-start'),10)||0;
+  var wi=Math.floor(Date.now()/604800000);
+  var k=((wi-START)%pool.length+pool.length)%pool.length;
+  var p=pool[k];
+  var fk='<p class="fkicker"><span class="ktext">Rip of the week</span></p>';
+  var kr='<div class="kicker"><span class="ktext">Ripped from</span></div>';
+  var ku='<div class="kicker"><span class="ktext">Use when</span></div>';
+  var s=new Date((START+k)*604800000),e=new Date((START+k)*604800000+6*864e5);
+  var mo={month:'short',day:'numeric'};
+  var label=s.toLocaleDateString('en-US',mo)+' \u2013 '+e.toLocaleDateString('en-US',mo)+', '+e.getFullYear();
+  var meta=label+(p.note?' &mdash; '+p.note:'');
+  card.innerHTML=fk+'<h3 class="ftitle">'+p.title+'</h3>'
+    +'<p class="fbook">'+p.book+' &middot; <span class="pill '+p.type+'">'+p.type+'</span></p>'
+    +kr+'<p class="steal">'+p.steal+'</p>'
+    +'<p class="why"><span class="k">Why it matters:</span> '+p.why+'</p>'
+    +ku+'<p class="uw">'+p.uw+'</p>'
+    +'<p class="rotw-meta">'+meta+'</p>'
+    +'<p class="fmore"><a href="#c'+p.id+'">Find it on the shelf \u2193</a></p>';
+})();
 updateCrumbs();
 /* phase 5: saved rips (localStorage), export, random rip, related/saved link opens */
 var SVKEY='idearipper.saved.v1';

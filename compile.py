@@ -250,6 +250,7 @@ def run():
     ds = {"curated": shelf["curated"], "genre_order": shelf["genre_order"],
           "recent_first": shelf.get("recent_first", 5),
           "rip_of_the_week": shelf.get("rip_of_the_week"),
+          "rip_of_the_week_pool": shelf.get("rip_of_the_week_pool"),
           "books": books_out, "cards": cards_out}
     with open(CARDS_JSON, "w", encoding="utf-8") as fh:
         json.dump(ds, fh, indent=1, ensure_ascii=False)
