@@ -2,6 +2,12 @@
 # The repo root is the web root, so keep pipeline files, backups and the raw
 # book markdown (170 thin /books/*.html pages) off the public site.
 # Nothing on the live site loads these (checked: index.html, brand/index.html).
+#
+# include: [_next] (added 2026-10-02) — Jekyll ignores underscore-prefixed
+# dirs by default, which 404'd every Next.js CSS/JS asset and left the whole
+# site unstyled. This forces the Next.js static assets through.
+include:
+  - _next
 exclude:
   - books/*.md
   - tools
