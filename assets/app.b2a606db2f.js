@@ -1,6 +1,8 @@
 
 (function(){
-var q=document.getElementById('q'),gs=document.getElementById('fgenre'),
+/* search removed 2026-10-02 (Billy): q is a stub so filter logic keeps working
+   with an always-empty term; no search box is rendered. */
+var q={value:'',addEventListener:function(){},focus:function(){}},gs=document.getElementById('fgenre'),
     bs=document.getElementById('fbook'),
     tboxes=document.querySelectorAll('input[name=ftype]'),
     count=document.getElementById('count'),nores=document.getElementById('noresults'),
@@ -406,6 +408,36 @@ openHash();
 var restoredQ=q.value.trim()!=='';
 apply(restoredQ);
 openHash();
+/* 2026-10-02: chips are plain hash anchors; without this, tapping one on an
+   already-loaded page jumps but never expands the collapsed book. */
+window.addEventListener('hashchange',function(){openHash();});
+/* rotw weekly timer (2026-10-02): rotate the Rip of the week every 7 days.
+   Pool comes from #rotw-pool JSON; START is the week-index of the deploy week,
+   so pool[0] shows first. No rebuild needed. */
+(function(){
+  var pel=document.getElementById('rotw-pool'),card=document.getElementById('rotw-card');
+  if(!pel||!card)return;
+  var pool;try{pool=JSON.parse(pel.textContent);}catch(_){return;}
+  if(!pool||!pool.length)return;
+  var START=parseInt(pel.getAttribute('data-start'),10)||0;
+  var wi=Math.floor(Date.now()/604800000);
+  var k=((wi-START)%pool.length+pool.length)%pool.length;
+  var p=pool[k];
+  var fk='<p class="fkicker"><span class="ktext">Rip of the week</span></p>';
+  var kr='<div class="kicker"><span class="ktext">Ripped from</span></div>';
+  var ku='<div class="kicker"><span class="ktext">Use when</span></div>';
+  var s=new Date((START+k)*604800000),e=new Date((START+k)*604800000+6*864e5);
+  var mo={month:'short',day:'numeric'};
+  var label=s.toLocaleDateString('en-US',mo)+' \u2013 '+e.toLocaleDateString('en-US',mo)+', '+e.getFullYear();
+  var meta=label+(p.note?' &mdash; '+p.note:'');
+  card.innerHTML=fk+'<h3 class="ftitle">'+p.title+'</h3>'
+    +'<p class="fbook">'+p.book+' &middot; <span class="pill '+p.type+'">'+p.type+'</span></p>'
+    +kr+'<p class="steal">'+p.steal+'</p>'
+    +'<p class="why"><span class="k">Why it matters:</span> '+p.why+'</p>'
+    +ku+'<p class="uw">'+p.uw+'</p>'
+    +'<p class="rotw-meta">'+meta+'</p>'
+    +'<p class="fmore"><a href="#c'+p.id+'">Find it on the shelf \u2193</a></p>';
+})();
 updateCrumbs();
 /* phase 5: saved rips (localStorage), export, random rip, related/saved link opens */
 var SVKEY='idearipper.saved.v1';
