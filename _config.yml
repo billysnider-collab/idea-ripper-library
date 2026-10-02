@@ -3,7 +3,7 @@
 # book markdown (170 thin /books/*.html pages) off the public site.
 # Nothing on the live site loads these (checked: index.html, brand/index.html).
 exclude:
-  - books
+  - books/*.md
   - tools
   - __pycache__
   - "*.py"
