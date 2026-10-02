@@ -1400,6 +1400,29 @@ books:
   - book
   - genre
   - bookline
+- key: the-communist-state-of-north-korea-a-capitalist-society-jonathan-k-wev
+  genre: Thesis
+  bookline: 'Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/thecommuniststat1094566742'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: preserving-freedom-of-navigation-in-the-south-china-sea-and-the-strategic-significance-of-the-philippines-to-u-s-maritime-strategy-sainath-patrick-panjeti
+  genre: Thesis
+  bookline: 'Masters thesis — U.S. Army Command and General Staff College, 2016. Full
+    text: https://archive.org/details/DTIC_AD1020341'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: role-of-serum-albumin-as-a-prognostic-marker-of-outcome-in-patients-with-severe-traumatic-brain-injury-vikram-chaudhary
+  genre: Thesis
+  bookline: 'Masters thesis — Baba Farid University of Health Sciences, 2020. Full
+    text: https://archive.org/details/sgng.17465-role-of-serum-albumin-as-a-prognostic-marker-of-outcome-in-patien'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2369,6 +2392,9 @@ card_order:
 - 980
 - 981
 - 982
+- 983
+- 984
+- 985
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026

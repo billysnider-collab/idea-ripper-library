@@ -26,6 +26,7 @@ import tempfile
 import urllib.request
 import http.client
 import socket
+import ssl
 import time
 import urllib.error
 
@@ -67,7 +68,8 @@ def api(method, path, body=None):
                   file=sys.stderr)
             sys.exit(1)
         except (http.client.RemoteDisconnected, http.client.IncompleteRead,
-                ConnectionResetError, TimeoutError, socket.timeout) as e:
+                ConnectionResetError, TimeoutError, socket.timeout,
+                ssl.SSLEOFError, urllib.error.URLError) as e:
             time.sleep(2 * (attempt + 1))
     print("API %s %s failed after retries" % (method, path), file=sys.stderr)
     sys.exit(1)

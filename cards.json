@@ -957,6 +957,21 @@
    "book": "The Man in the Iron Mask — Alexandre Dumas",
    "genre": "Literary Fiction",
    "bookline": "The Iron Mask arc of Le Vicomte de Bragelonne (1847-1850): Aramis's conspiracy to replace Louis XIV with his secret twin Philippe, and what it reveals about power, identity, and loyalty, ripped from Dumas's original French."
+  },
+  {
+   "book": "The Communist State of North Korea: A Capitalist Society — Jonathan K. Wev",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2020. Full text: https://archive.org/details/thecommuniststat1094566742"
+  },
+  {
+   "book": "Preserving Freedom of Navigation in the South China Sea and the Strategic Significance of the Philippines to U.S. Maritime Strategy — Sainath Patrick Panjeti",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — U.S. Army Command and General Staff College, 2016. Full text: https://archive.org/details/DTIC_AD1020341"
+  },
+  {
+   "book": "Role of Serum Albumin as a Prognostic Marker of Outcome in Patients with Severe Traumatic Brain Injury — Vikram Chaudhary",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Baba Farid University of Health Sciences, 2020. Full text: https://archive.org/details/sgng.17465-role-of-serum-albumin-as-a-prognostic-marker-of-outcome-in-patien"
   }
  ],
  "cards": [
@@ -11969,6 +11984,33 @@
     "make a decision",
     "avoid a trap"
    ]
+  },
+  {
+   "title": "The Communist State of North Korea: A Capitalist Society",
+   "book": "The Communist State of North Korea: A Capitalist Society — Jonathan K. Wev",
+   "type": "argument",
+   "steal": "North Korea runs three economies, not one — the official command economy plus two parallel capitalist economies, the jangmadang (market ground) economy and an elite economy, that emerged when the 1990s famine broke the state's distribution system.",
+   "why": "Sanctions and negotiations target the official economy, but daily life runs on markets the state doesn't control — pressure aimed at the command economy keeps missing where the real economy lives.",
+   "uw": "When the official system fails, people build a parallel one — and the parallel economy, not the official one, is where the leverage sits.",
+   "id": 983
+  },
+  {
+   "title": "Preserving Freedom of Navigation in the South China Sea and the Strategic Significance of the Philippines to U.S. Maritime Strategy",
+   "book": "Preserving Freedom of Navigation in the South China Sea and the Strategic Significance of the Philippines to U.S. Maritime Strategy — Sainath Patrick Panjeti",
+   "type": "argument",
+   "steal": "The Philippines is the linchpin of U.S. freedom-of-navigation strategy in the South China Sea — Manila is instrumental to phase-shaping, deterrence, and Seventh Fleet support in a contingency, because China's nine-dash-line incrementalism can't be answered by patrols alone.",
+   "why": "A decade on, the Philippines is again the front line of the South China Sea standoff — the thesis's partnership-building prescription is being tested in real time.",
+   "uw": "Against salami-slicing, the counter is local partnership, not just presence — geography with an ally beats patrols alone.",
+   "id": 984
+  },
+  {
+   "title": "Role of Serum Albumin as a Prognostic Marker of Outcome in Patients with Severe Traumatic Brain Injury",
+   "book": "Role of Serum Albumin as a Prognostic Marker of Outcome in Patients with Severe Traumatic Brain Injury — Vikram Chaudhary",
+   "type": "argument",
+   "steal": "In severe traumatic brain injury, a cheap blood test predicts the outcome — patients with higher serum albumin on admission had significantly better outcomes, while age, gender, mode of injury, and diagnosis had no predictive power at all.",
+   "why": "ERs get a fast, cheap prognostic signal from a routine lab draw — no scanner required — for early family conversations and ICU resource calls.",
+   "uw": "The best predictor is often the cheapest measurement — look for the simple variable before the expensive one.",
+   "id": 985
   }
  ]
 }
