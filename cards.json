@@ -1007,6 +1007,31 @@
    "book": "The Autobiography of Benjamin Franklin — Benjamin Franklin",
    "genre": "Nonfiction",
    "bookline": "Self-improvement — Franklin's own account of how he taught himself to write and argue, ran a moral experiment on himself, and built Philadelphia's institutions out of a club of tradesmen."
+  },
+  {
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "genre": "Nonfiction",
+   "bookline": "Worldly strategy — Gracián's 300 maxims on getting your way at court without making enemies, in Joseph Jacobs's 1892 translation."
+  },
+  {
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "genre": "Nonfiction",
+   "bookline": "Public speaking — the 1915 textbook Carnegie co-wrote before How to Win Friends: stage fright, emphasis, pauses, notes, suggestion and moving a crowd."
+  },
+  {
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "genre": "Nonfiction",
+   "bookline": "Management — Taylor's 1911 case for studying work like a science: time studies, planned tasks, rest schedules and pay tied to output, from pig iron to bicycle-ball inspection."
+  },
+  {
+   "book": "Cyropaedia — Xenophon",
+   "genre": "Nonfiction",
+   "bookline": "Leadership — Xenophon's idealized education of Cyrus the Great, in Henry Dakyns's translation: a father's leadership lessons, then Cyrus building an army and an empire."
+  },
+  {
+   "book": "Self-Help — Samuel Smiles",
+   "genre": "Nonfiction",
+   "bookline": "Self-improvement — Smiles's 1859 casebook of inventors, potters, artists and engineers who made their own way, told as short working biographies."
   }
  ],
  "cards": [
@@ -12973,6 +12998,1833 @@
    "id": 1062,
    "tag": "FRANKLIN'S ACCOUNT",
    "source_locator": "ch. IX",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Hand the boss advice as something he forgot",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"They will allow a man to help them but not to surpass them, and will have any advice tendered them appear like a recollection of something they have forgotten rather than as a guide to something they cannot find.\"",
+   "why": "Gracián says superiors will concede you luck or temper but never better judgment. Framing a correction as a reminder lets the superior keep ownership of the good sense while still taking the advice.",
+   "uw": "You have to correct someone above you who is proud of their judgment.",
+   "id": 1063,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading",
+    "Negotiating"
+   ],
+   "source_locator": "maxim VII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Find the idol, then say the one word",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"All men are idolaters, some of fame, others of self-interest, most of pleasure. Skill consists in knowing these idols in order to bring them into play.\"\n\n\"First guess a man's ruling passion, appeal to it by a word, set it in motion by temptation\"",
+   "why": "The maxim is a three-step sequence: diagnose the dominant motive, name it briefly, then offer something that feeds it. He adds that the working motive is more often the lowest part of a person's nature than the highest.",
+   "uw": "Your good arguments keep failing on someone and you have not asked what they actually want.",
+   "id": 1064,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading",
+    "Negotiating"
+   ],
+   "source_locator": "maxim XXVI",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Hold the dissent, say it later to a few",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "argument",
+   "steal": "\"To dissent from others' views is regarded as an insult, because it is their condemnation. Disgust is doubled on account of the thing blamed and of the person who praised it.\"",
+   "why": "Disagreeing in public offends twice: once for the thing blamed and once for the person who praised it. Gracián keeps the private judgment and voices it \"before few and fit persons.\"",
+   "uw": "You think a popular plan is wrong and are tempted to say so in the all-hands.",
+   "id": 1065,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading",
+    "Negotiating"
+   ],
+   "source_locator": "maxim XLIII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Time and I against any two",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "concept",
+   "steal": "\"You must pass through the circumference of time before arriving at the centre of opportunity.\"\n\n\"Time's crutch effects more than the iron club of Hercules.\"",
+   "why": "Gracián quotes the saying \"Time and I against any two.\" The side without a deadline can let the side with one make the concessions.",
+   "uw": "The other side needs the deal closed this quarter and you do not.",
+   "id": 1066,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim LV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Show one purpose, strike with the other",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"It lets a purpose appear in order to attract the opponent's attention, but then turns round and conquers by the unexpected.\"\n\n\"It lets the first impulse pass by and waits for the second, or even the third.\"",
+   "why": "The maxim covers both sides of a feint. The attacker shows a decoy aim. The defender treats the first move as probably false and waits for the second or third before reacting.",
+   "uw": "An opening demand looks too obvious, or you are about to react to the other side's first move.",
+   "id": 1067,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim XIII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Don't let them learn your tastes",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"He that plays with cards exposed runs a risk of losing the stakes.\"\n\n\"Do not even let your tastes be known, lest others utilise them either by running counter to them or by flattering them.\"",
+   "why": "Gracián extends secrecy from plans to tastes. A known preference gives the other side two levers: block what you like, or flatter it to soften you.",
+   "uw": "You are about to tell a counterpart which option you love before the terms are set.",
+   "id": 1068,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim XCVIII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "When they grab the right side, take it anyway",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"Thus the only way to drive him from the better course is to take it yourself, for his folly will cause him to desert it\"",
+   "why": "Gracián says arguing the worse side out of pride means \"you begin the fight already beaten.\" Take the better course yourself, and an obstinate opponent will often desert it to keep disagreeing.",
+   "uw": "Your rival staked out the sensible position first and you feel pressure to oppose it.",
+   "id": 1069,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim CXLII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Lead with their business to get to yours",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"His affair seems to be in train when it is really only leading the way for another's.\"\n\n\"Likewise with persons who always say No at first, it is useful to ward off this blow\"",
+   "why": "Opening on the other person's interest gets them moving before your request arrives. Gracián recommends it most for people whose reflex answer is no.",
+   "uw": "Your contact refuses any request that opens with what you need.",
+   "id": 1070,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading",
+    "Negotiating"
+   ],
+   "source_locator": "maxim CXLIV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Sell it as for connoisseurs, never as easy",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"it is generally an inducement to profess to supply only connoisseurs, for all think themselves such, and if not, the sense of want arouses the desire.\"\n\n\"Never call things easy or common: that makes them depreciated rather than made accessible.\"",
+   "why": "Gracián's levers on price are praise, a striking name, and a claim to serve connoisseurs. Calling a thing easy or common makes it \"depreciated rather than made accessible.\"",
+   "uw": "You are writing a launch page and reaching for \"simple\" and \"for everyone.\"",
+   "id": 1071,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading",
+    "Negotiating"
+   ],
+   "source_locator": "maxim CL",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Float it first so you can still withdraw",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"Throw Straws in the Air, to find how things will be received, especially those whose reception or success is doubtful.\"\n\n\"an opportunity is afforded for going on in earnest or withdrawing entirely.\"",
+   "why": "A trial balloon tells you how the proposal lands while you can still deny you meant it. He calls it the rule \"in asking, in desiring, and in ruling.\"",
+   "uw": "You want to know if a big ask will fly before you make it on the record.",
+   "id": 1072,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim CLXIV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Talk about today's mistake as if it were long past",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"A pleasant manner has here an opportunity for a display of skill: with the same truth it can flatter one and fell another to the ground. Matters of to-day should be treated as if they were long past.\"",
+   "why": "Gracián's technique for bitter truths is distance in time. Discussing a live error as old history lets the person agree without having to defend their present self.",
+   "uw": "You need to tell someone their current project is failing.",
+   "id": 1073,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading",
+    "Negotiating"
+   ],
+   "source_locator": "maxim CCX",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Satisfy the want, keep the dependence",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"The wise man would rather see men needing him than thanking him. To keep them on the threshold of hope is diplomatic, to trust to their gratitude boorish ; hope has a good memory, gratitude a bad one.\"\n\n\"It is a subtle point to satisfy the desire and yet preserve the dependence.\"",
+   "why": "Gracián would rather see men needing him than thanking him. Deliver enough to keep them engaged and hold back the part that ends their need.",
+   "uw": "You are about to give the client everything up front and lose your leverage for phase two.",
+   "id": 1074,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim V; maxim CLXXXIX",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Watch the man who comes second on purpose",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"they dissemble their desire so as to attain it. They put themselves second so as to come out first in the final spurt.\"",
+   "why": "A counterpart who seems indifferent may be hiding how badly they want the outcome. Gracián says such men put themselves second to come out first.",
+   "uw": "Someone is a little too relaxed about a deal they started.",
+   "id": 1075,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim CCXV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Doubt the secret out of them",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"Tepid incredulity acts as an emetic on secrets.\"\n\n\"A sly depreciation of another's mysterious word scents out the profoundest secrets\"",
+   "why": "Gracián's move: meet a hinted secret with mild disbelief. To prove it, the speaker has to tell it.",
+   "uw": "Someone hints they have a better offer and won't say what it is.",
+   "id": 1076,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim CCXIII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Ask after the meal, never after a refusal",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"Surprise them when in a pleasant mood, when a repast of body or soul has just left them refreshed\"\n\n\"It is no use applying when another has been refused, since the objection to a No has just been overcome.\"",
+   "why": "Timing gets three rules: ask when the person is in a good mood, avoid asking just after they refused someone else, and avoid asking after a loss. Having just said no once, they find the next no easy.",
+   "uw": "You need a yes from someone and can pick the moment to ask.",
+   "id": 1077,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading",
+    "Negotiating"
+   ],
+   "source_locator": "maxim CCXXXV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Pay the reward before it's earned",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"the same gift which would afterwards be merely a reward is beforehand an obligation.\"\n\n\"with men of lower stamp the honorarium paid beforehand acts rather as a bit than as a spur.\"",
+   "why": "The same favor changes meaning with timing. Given afterward it settles a debt; given in advance it creates one. Gracián limits it to people who feel obligation.",
+   "uw": "You plan to reward a partner after delivery and wonder whether to give it now instead.",
+   "id": 1078,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim CCXXXVI",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Call the break a cooling, never a fight",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"Every one may be of importance as an enemy if not as a friend. Few can do us good, almost any can do us harm.\"\n\n\"If, however, a breach is inevitable, let it be rather excused as a slackening of friendship than by an outburst of wrath\"",
+   "why": "A loud rupture invites hidden enemies to use your declared one against you. Letting a relationship fade without a scene closes the door with fewer enemies made.",
+   "uw": "A partnership has to end and you want to say what you really think on the way out.",
+   "id": 1079,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim CCLVII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Turn the attacker into a confidant",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"It is an uncommon piece of shrewdness to change a rival into a confidant\"\n\n\"he leaves no time for injuries that fills it up with gratitude.\"",
+   "why": "Gracián prefers preventing an injury to avenging it. Bringing a rival inside, with favors and confidence, fills their time with obligations to you.",
+   "uw": "Someone has started to undermine you and retaliation is the first idea you have.",
+   "id": 1080,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim CCLIX",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Announce the decision after, never before",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"A resolution declared is never highly thought of; it only leaves room for criticism. And if it happens to fail, you are doubly unfortunate.\"",
+   "why": "Announcing a plan early gives critics a target and doubles the cost of failure, once for failing and once for having said you would succeed.",
+   "uw": "You want to tell everyone what you are about to try.",
+   "id": 1081,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading",
+    "Negotiating"
+   ],
+   "source_locator": "maxim III",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Don't show the sore point",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"nor complain about it, for malice always aims where weakness can be injured.\"\n\n\"The wise never own to being hit, or disclose any evil, whether personal or hereditary.\"",
+   "why": "Gracián says a known sore spot becomes the place everything knocks against, and complaining about it marks the target. In a negotiation that means keeping quiet about the term you can least afford to lose.",
+   "uw": "You're tempted to tell the other side which concession would hurt you most.",
+   "id": 1082,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim CXLV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Show your teeth at the first encroachment",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"Give way to the first and you must yield to the second, and so on till the last, and to gain your point at last costs as much trouble as would have gained much more at first.\"",
+   "why": "Gracián prices concessions as a chain: each one you grant makes the next harder to refuse. Pushing back at the first costs less than recovering ground after several.",
+   "uw": "A counterpart has just asked for a small extra that wasn't in the deal.",
+   "id": 1083,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim LIV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Give a gilded No",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"Some men's No is thought more of than the Yes of others : for a gilded No is more satisfactory than a dry Yes.\"\n\n\"Your refusal need not be point-blank : let the disappointment come by degrees. Nor let the refusal be final\"",
+   "why": "Gracián's refusal has a method: let the disappointment arrive in stages, leave some hope in place, and cover the gap with courtesy. He warns that people who lead with No get no credit even when they later give way.",
+   "uw": "You have to turn down a request from someone you'll need again.",
+   "id": 1084,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim LXX",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Never fight someone with nothing to lose",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"The other enters without anxiety ; having lost everything, including shame, he has no further loss to fear.\"\n\n\"For even by victory he cannot gain what he has lost by exposing himself to the chances of loss.\"",
+   "why": "The contest is unequal because only one side has a reputation at stake. Gracián says even winning doesn't repay what you risked by stepping in.",
+   "uw": "Someone with no standing to protect is baiting you into a public dispute.",
+   "id": 1085,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim CLXXII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Arrive underbilled",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"Hope is a great falsifier of truth ; let skill guard against this by ensuring that fruition exceeds desire.\"\n\n\"A few creditable attempts at the beginning are sufficient to arouse curiosity without pledging one to the final object.\"",
+   "why": "Gracián says the real can never match the imagined, and disappointed people turn critical. His fix is to let early results build curiosity without promising the finished thing.",
+   "uw": "You're about to announce a launch, a hire or a product with big claims attached.",
+   "id": 1086,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading",
+    "Negotiating"
+   ],
+   "source_locator": "maxim XIX",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Get it by seeming not to want it",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
+   "type": "mechanism",
+   "steal": "\"generally they are not to be had when sought for, but fall into one's hands when one is not looking for them.\"",
+   "why": "Gracián opens the maxim on getting things \"by affecting to depreciate them.\" He says wanted things flee whoever chases them and follow whoever walks away.",
+   "uw": "You badly want the deal and the other side can tell.",
+   "id": 1087,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Negotiating",
+    "Persuading"
+   ],
+   "source_locator": "maxim CCV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Pasture the horse beside the tracks",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"How would you cure a horse that is afraid of cars—graze him in a back-woods lot where he would never see steam-engines or automobiles, or drive or pasture him where he would frequently see the machines?\"\n\n\"You must learn to speak by speaking.\"",
+   "why": "The opening chapter's cure for stage fright is repeated exposure. Books can coach you, but in their words \"no one ever learns to swim\" in a wetless bathing suit.",
+   "uw": "You've been reading about public speaking instead of booking a talk.",
+   "id": 1088,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. I",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Pour water in the glass to get the air out",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"One way to get air out of a glass is to pour in water.\"\n\n\"fill your mind with your speech-material and, like the infilling water in the glass, it will drive out your unsubstantial fears.\"",
+   "why": "A mind packed with the material has no room left for \"How does my hair look?\" The blacksmith's rope on the horse's nose is the same trick, distraction by something stronger.",
+   "uw": "You're backstage replaying everything that could go wrong.",
+   "id": 1089,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. I",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Script the first few sentences word for word",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Have the first few sentences worked out completely so that you may not be troubled in the beginning to find words. Know your subject better than your hearers know it, and you have nothing to fear.\"",
+   "why": "The authors want the opening fixed so you are not hunting for words at the start. Knowing the subject better than your hearers is their other cure.",
+   "uw": "You're preparing a talk and plan to improvise the opening.",
+   "id": 1090,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. I",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Whisper the word that matters",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"To make a word emphatic, deliver it differently from the manner in which the words surrounding it are delivered. If you have been talking loudly, utter the emphatic word in a concentrated whisper—and you have intense emphasis.\"",
+   "why": "Emphasis comes from contrast. A Fifth Avenue bus turns heads in a farm town and an ox team turns heads on Fifth Avenue, so whatever you've been doing, change it on the key word.",
+   "uw": "You've been raising your voice to stress points and the room has tuned out.",
+   "id": 1091,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. III",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Stress the man who bit the dog",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"'But,' said Mr. Dana, 'if you see a man bite a dog, hurry back to the office and write the story.'\"\n\n\"'New stars and suns' are hardly as emphatic as the word 'larger.' Why? Because we expect an astronomer to discover heavenly bodies rather than cooking recipes.\"",
+   "why": "Words the audience already expects don't need stress. Save emphasis for the new or surprising word, the part that is news. The authors treat the average sentence as \"just one big word, with the important word as the accented syllable,\" the way nobody stresses every syllable of \"Massachusetts.\"",
+   "uw": "You're marking up a script and stressing the obvious nouns.",
+   "id": 1092,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. III",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Stress one word and they hear its opposite",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"If you say, 'My horse is not black,' what color immediately comes into mind? White, naturally, for that is the opposite of black.\"\n\n\"Strongly emphasizing a single word has a tendency to suggest its antithesis.\"",
+   "why": "Heavy stress implies a contrast. Leaning on \"chance\" in \"Destiny is not a matter of chance\" sets up \"choice\" before you say it.",
+   "uw": "You want the audience to arrive at your point a beat before you state it.",
+   "id": 1093,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. III",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Pause on both sides of the big phrase",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"one of the most important means of developing power in public speaking is to pause either before or after, or both before and after, an important word or phrase.\"",
+   "why": "The authors separate this from stumbling with \"uh\" and \"er.\" A deliberate pause makes the audience wait and makes the phrase land. They say it is hard to grasp until you notice good speakers doing it.",
+   "uw": "Your key line goes by before anyone registers it.",
+   "id": 1094,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. VI",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Circle the pivot, box the anecdote",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"he may underscore a catch-word heavily, draw a red circle around a pivotal idea, enclose the key-word of an anecdote in a wavy-lined box\"\n\n\"nothing so eludes the swift-glancing eye of the speaker as the sameness of typewriting\"",
+   "why": "Uniform text is hard to find with a half-second glance. Visual marks act as handles, and the authors say even an accidental blot can help you recall a point.",
+   "uw": "You lose your place in your notes mid-talk.",
+   "id": 1095,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XVI",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Memorize the joints, improvise the rest",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Others again write and commit a few important parts of the address—the introduction, the conclusion, some vital argument, some pat illustration—and depend on the hour for the language of the rest.\"",
+   "why": "Write and memorize the introduction, the conclusion and the key argument, and speak the rest. Fully memorized lines, the authors warn, usually \"sound like memorized words, and repel.\"",
+   "uw": "You're choosing between reading a script and winging it.",
+   "id": 1096,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XVI",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Tell the joke that fits, skip the one that's funnier",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"An anecdote without bearing may be funny but one less funny that fits theme and occasion is far preferable.\"\n\n\"humor alone rarely scores so heavily as the two combined, while the utterly grave speech never does on such occasions.\"",
+   "why": "At banquets and occasions the authors want humor mixed with substance. A string of unrelated jokes joined by \"And that reminds me\" wastes the chance.",
+   "uw": "You've got a great joke for a toast and it has nothing to do with the occasion.",
+   "id": 1097,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XXX",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Ask who else is speaking and whether there's a desk",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Who else will speak? Do I speak first, last, or where, on the program? What are the other speakers going to talk about? What is the nature of the auditorium? Is there a desk?\"",
+   "why": "The checklist covers the audience, their likely attitude, the program order, the room and the exact time. The authors put most speech misfits down to never asking.",
+   "uw": "You've been invited to speak and know only the topic.",
+   "id": 1098,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XVIII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Ten minutes means neither nine nor eleven",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Let ten minutes mean neither nine nor eleven—though better nine than eleven, at all events.\"\n\n\"Blessed is the man that maketh short speeches, for he shall be invited to speak again.\"",
+   "why": "Running over takes time from the next speaker and the audience. The fix is planning: give each point its share of time and decide in advance where the main section sits.",
+   "uw": "Your talks keep running long.",
+   "id": 1099,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XVIII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Count the rolls yourself",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Your words come with the weight of authority when you can say, 'I have examined the employment rolls of every mill in this district and find that thirty-two per cent of the children employed are under the legal age.' No citation of authorities can equal that.\"",
+   "why": "A first-hand fact can't be waved off as hearsay, and the authors add that seeing the facts yourself changes how you deliver them.",
+   "uw": "Your argument rests on numbers you've only read secondhand.",
+   "id": 1100,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XVIII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Close while their last thought is yours",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Most of us are captured by the latest strong attack, and if we can be induced to act while under the stress of that last insistent thought, we lose sight of counter influences.\"\n\n\"ninety per cent of the people who bought books by subscription never read them.\"",
+   "why": "The authors quote a publisher: subscription buyers acted while the salesman's picture filled their minds and every objection was crowded out.",
+   "uw": "You're about to sign something while the pitch is still ringing in your ears.",
+   "id": 1101,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XXII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Don't tell them not to put beans up their noses",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "argument",
+   "steal": "\"To warn children that they should not put beans up their noses is the surest method of getting them to do it.\"\n\n\"Every thought called up in the mind of your audience will work either for or against you.\"",
+   "why": "Naming an action plants it, even inside a prohibition. The authors say a speaker should avoid calling up the very thoughts that work against the goal.",
+   "uw": "Your warning slide lists the exact mistakes you don't want people to make.",
+   "id": 1102,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XXII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Suggest their minds are already changing",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Suggest to a man that it is impossible to change his mind and in most cases it becomes more difficult to do so\"\n\n\"Suggest subtly and persistently that the opinions of those in the audience who are opposed to your views are changing\"",
+   "why": "The authors say feelings, thoughts and wills \"tend to follow the line of least resistance.\" Telling people they are dug in digs them in; suggesting that opinion is already shifting makes holding out the effort. They note the born contrarian needs the reverse.",
+   "uw": "You're addressing people who are against you and about to call them stubborn.",
+   "id": 1103,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XXII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Call the half-empty room a great gathering",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"A gloomy day, in a drab room, sparsely tenanted by listeners, invites platform disaster. Everyone feels it in the air.\"\n\n\"let the speaker walk squarely up to the issue and suggest by all his feeling, manner and words that this is going to be a great gathering in every vital sense\"",
+   "why": "The setting suggests a flop unless something stronger suggests otherwise. Here the stronger signal is the speaker's own manner, set against the room.",
+   "uw": "Turnout is thin and you're tempted to apologize for it.",
+   "id": 1104,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XXII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Lead with the cities that already adopted it",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"The advocates of the commission-form of government of cities, the champions of votes for women, reserve as their strongest arguments the fact that a number of cities and states have already successfully accepted their plans.\"",
+   "why": "The authors note that reformers save as their strongest argument the places that have already adopted the plan. It answers \"has it worked?\" and \"am I alone?\" at once.",
+   "uw": "You're proposing a change to a cautious group.",
+   "id": 1105,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XXII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Imply it so nobody can dispute it",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Figurative and indirect language has suggestive force, because it does not make statements that can be directly disputed.\"\n\n\"When immediate action or persuasion is desired, suggestion is more efficacious than argument—when both are judiciously mixed, the effect is irresistible.\"",
+   "why": "The authors say indirect language persuades because it \"does not make statements that can be directly disputed.\" They still want a logical base under it.",
+   "uw": "Every direct statement you make draws a rebuttal.",
+   "id": 1106,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XXII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Start with their pains",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Patent medicine advertisement usually begins by talking about your pains—they begin on your interests.\"\n\n\"Recently a book-salesman entered an attorney's office in New York and inquired: 'Do you want to buy a book?' Had the lawyer wanted a book he would probably have bought one without waiting for a book-salesman to call.\"",
+   "why": "Advertising that opened with the firm's size or the remedy's strength went unread. Opening with the reader's problem made them ask for the solution. The authors set it against a book salesman whose opening, \"Do you want to buy a book?\", talked only in terms of his own interest.",
+   "uw": "Your pitch opens with your company's history.",
+   "id": 1107,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XXIV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Pack them into the front pews",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"It is as hard to kindle enthusiasm in a scattered audience as to build a fire with scattered sticks.\"\n\n\"Have your audience seated compactly.\"",
+   "why": "The authors say feeling catches across a packed crowd and dies across empty benches, and point out that St. Peter's moves ordinary services into side chapels.",
+   "uw": "Forty people are scattered across a room for three hundred.",
+   "id": 1108,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XXV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Repeat their claim while your facts take it apart",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"For Brutus is an honorable man, So are they all, all honorable men\"\n\n\"He hath brought many captives home to Rome, Whose ransoms did the general coffers fill: Did this in Caesar seem ambitious?\"",
+   "why": "The authors print Antony's oration as their model of turning listeners into a crowd. Antony never attacks Brutus's claim head-on. He repeats it after each fact (the ransoms, the refused crown, the tears for the poor) until the refrain itself sounds like an accusation.",
+   "uw": "You have to answer a respected opponent without attacking them by name.",
+   "id": 1109,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading",
+    "Negotiating"
+   ],
+   "source_locator": "ch. XXV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Show the prize, then refuse to read it",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Let but the commons hear this testament-- Which, pardon me, I do not mean to read--\"\n\n\"You will compel me then to read the will?\"",
+   "why": "Antony holds up Caesar's will and declines to read it, so the crowd demands it. By the time he gives in, they are asking for the argument he came to make.",
+   "uw": "You have a strong document or number and want the room to ask for it.",
+   "id": 1110,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XXV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Start on the motive they have, end on the highest",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Notice how at the last the pleader sweeps on to the highest ground he can take.\"\n\n\"This is a notable example of progressive appeal, beginning with a low motive and ending with a high one in such a way as to carry all the force of prejudice yet gain all the value of patriotic fervor.\"",
+   "why": "The authors use a Kipling war speech that opens on self-interest and ends on patriotism. They call the appeal to prejudice rarely justifiable and still show the sequence: meet people at the motive they already feel, then climb.",
+   "uw": "Your audience cares about their own costs and you need them to care about the larger cause.",
+   "id": 1111,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XXIV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Carry your license",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
+   "type": "mechanism",
+   "steal": "\"Ignorance and credulity will remain unchanged unless the suggestion of authority be followed promptly by facts.\"\n\n\"Don't claim authority unless you carry your license in your pocket. Let reason support the position that suggestion has assumed.\"",
+   "why": "Reputation gets a hearing, and the authors say facts have to follow fast. They cite Bryan, whose fame filled halls, and add that \"back of it all, he is a great speaker.\"",
+   "uw": "Your title or credentials got you the invitation and you're tempted to coast on them.",
+   "id": 1112,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. XXII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Workers slow down to keep the record secret",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"The greater part of the systematic soldiering, however, is done by the men with the deliberate object of keeping their employers ignorant of how fast work can be done.\"",
+   "why": "Taylor quotes his own earlier paper: the employer rarely forces a faster pace without \"an actual record proving conclusively how fast the work can be done.\" So the crew's main interest is making sure no such record ever exists.",
+   "uw": "Your team's estimates never get shorter no matter how familiar the work becomes.",
+   "id": 1113,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. I",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Cut the rate twice and you've trained them to hold back",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"…after a workman has had the price per piece of the work he is doing lowered two or three times as a result of his having worked harder and increased his output, he is likely entirely to lose sight of his employer's side of the case…\"",
+   "why": "Each rate cut punished the extra output that triggered it. Taylor says the result is a \"grim determination to have no more cuts\" and suspicion of any proposal, however reasonable.",
+   "uw": "You are tempted to raise a quota because someone beat it.",
+   "id": 1114,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. I",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "The twelve-year-old caddy's pay lesson",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "evidence",
+   "steal": "\"…since they were paid by the hour, the faster they went the less money they got, and finally telling him that if he went too fast the other boys would give him a licking.\"",
+   "why": "A twelve-year-old had worked out the incentive and the enforcement on his own. Hourly pay rewarded slowness, and the group policed anyone who went faster.",
+   "uw": "You are setting up pay for work where you can't easily see the pace.",
+   "id": 1115,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. I",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Fifty ways to do a task, one is fastest",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "concept",
+   "steal": "\"…there are many different ways in common use for doing the same thing, perhaps forty, fifty, or a hundred ways of doing each act in each trade…\"\n\n\"…among the various methods and implements used in each element of each trade there is always one method and one implement which is quicker and better than any of the rest.\"",
+   "why": "Skills passed on by watching the person at the next bench produce dozens of local variants. Taylor's claim is that comparing them element by element turns up a best one that can be taught.",
+   "uw": "Every person on the team does the same recurring task differently.",
+   "id": 1116,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. I",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Stop hunting for the ready-made hire",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "argument",
+   "steal": "\"What we are all looking for, however, is the readymade, competent man; the man whom some one else has trained.\"",
+   "why": "Taylor says demand for competent people always runs ahead of supply because everyone is shopping for the finished product. His alternative is to systematically train the competent hire yourself.",
+   "uw": "A role has been open for months because nobody fully qualified applies.",
+   "id": 1117,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "Introduction",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Replace the one foreman with eight specialists",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"Under functional management, the old-fashioned single foreman is superseded by eight different men, each one of whom has his own special duties…\"\n\n\"…they are able not only to tell the workman what he should do, but in case of necessity they do the work themselves in the presence of the workman, so as to show him not only the best but also the quickest methods.\"",
+   "why": "Taylor splits the foreman's job by function: one teacher for drawings and quality, others for speeds, motions and timing, each acting for the planning department. Each is picked for skill in one specialty and can demonstrate the work, which one generalist foreman can't do across every area.",
+   "uw": "One supervisor is expected to coach quality, speed, scheduling and discipline all at once.",
+   "id": 1118,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Put the planning on a desk, away from the machine",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"…it would be physically impossible for him to work at his machine and at a desk at the same time.\"\n\n\"…under scientific management fully one-half of the problem is 'up to the management.'\"",
+   "why": "Under the old system the worker did the planning in his head while running the machine. Taylor moves it to a planning room and says the work splits better when \"one type of man is needed to plan ahead and an entirely different type to execute the work.\"",
+   "uw": "Your best makers are also doing all the scheduling and tooling decisions in their heads.",
+   "id": 1119,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Hand out the task with the how and the time attached",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"This task specifies not only what is to be done but how it is to be done and the exact time allowed for doing it.\"",
+   "why": "Taylor's task card was planned a day ahead and came with written method and a time limit, plus a 30 to 100 per cent bonus for hitting it. He insists the pace must be one a suited worker can sustain for years.",
+   "uw": "Assignments go out as a goal with no method and no time estimate.",
+   "id": 1120,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Rest 57 per cent of the day and carry more",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "evidence",
+   "steal": "\"…when pig iron is being handled (each pig weighing 92 pounds), a first-class workman can only be under load 43 per cent of the day. He must be entirely free from load during 57 per cent of the day.\"",
+   "why": "Carl Barth plotted the data and found that how heavy the load was set how much of the day a man could be under it. Scheduled rest was what made the higher daily tonnage possible.",
+   "uw": "People are grinding without breaks on heavy work and output is falling.",
+   "id": 1121,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Size the shovel to the material, aim for 21 pounds",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "evidence",
+   "steal": "\"…it was found that a first-class man would do his biggest day's work with a shovel load of about 21 pounds.\"\n\n\"…he would frequently go from shoveling ore, with a load of about 30 pounds per shovel, to handling rice coal, with a load on the same shovel of less than 4 pounds.\"",
+   "why": "One shovel per man meant he was overloaded on ore and nearly idle on coal. Bethlehem stocked 8 to 10 shovel types so every material came out near the same optimal load.",
+   "uw": "Everyone uses the same tool for every job because that's the tool they own.",
+   "id": 1122,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "White slip, yellow slip",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"…yellow paper showed the man that he had failed to do his full task the day before…\"\n\n\"…whenever the men received white slips they knew that everything was all right, and whenever they received yellow slips they realized that they must do better…\"",
+   "why": "Each morning every laborer got yesterday's result on a colored slip. Many couldn't read, and the color carried the message anyway. Daily, individual feedback replaced a foreman's general impression.",
+   "uw": "People find out how they're doing only at an annual review.",
+   "id": 1123,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Send a teacher before you fire",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"…if the workman fails to do his task, some competent teacher should be sent to show him exactly how his work can best be done, to guide, help, and encourage him, and, at the same time, to study his possibilities as a workman.\"",
+   "why": "The first response to a miss was instruction. If that failed the man was moved to work he was better suited to, \"instead of brutally discharging the man or lowering his wages.\"",
+   "uw": "Someone misses targets in their first month and the reflex is to let them go.",
+   "id": 1124,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Gangs sink to the worst man in them",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"…when men work in gangs, their individual efficiency falls almost invariably down to or below the level of the worst man in the gang…\"\n\n\"…not more than four men were to be allowed to work in a labor gang without a special permit, signed by the General Superintendent…\"",
+   "why": "Bethlehem made big gangs a paperwork burden. The superintendent ran 5000 men and had little time to sign permits, so work got split into individual tasks with individual pay.",
+   "uw": "Output from a team effort is lower than its members manage alone.",
+   "id": 1125,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Wish them well at the higher rate and leave the door open",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "evidence",
+   "steal": "\"Just remember, however, that at any time in the future, when you get out of a job, you can always come right back to us.\"\n\n\"Now, Jimmy, you and I will throw a shovel full whenever this little devil throws one, and not another shovel full.\"",
+   "why": "Bethlehem urged its best shovelers to take a higher per-ton offer in Pittsburgh. Most came back within six weeks to the lower rate, because the Pittsburgh gang pace had cut their real earnings.",
+   "uw": "A competitor is offering your people a better headline rate.",
+   "id": 1126,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Bring the bricks up to the bricklayer",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "evidence",
+   "steal": "\"…each bricklayer lowering his body, weighing, say, 150 pounds, down two feet and raising it up again every time a brick (weighing about 5 pounds) is laid in the wall! And this each bricklayer did about one thousand times a day.\"\n\n\"…Mr. Gilbreth has reduced his movements from eighteen motions per brick to five…\"",
+   "why": "Frank Gilbreth raised the scaffold, pre-sorted bricks into packs and tempered the mortar so bricks needed no tapping. Taylor reports 350 bricks per man per hour against a local average of 120.",
+   "uw": "A skilled job still has the same physical setup it had decades ago.",
+   "id": 1127,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "The vote said no, the shorter day raised output",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "evidence",
+   "steal": "\"…when the vote was taken the girls were unanimous that 10 1/2 hours was good enough for them and they wanted no innovation of any kind.\"\n\n\"…with each shortening of the working day the output increased instead of diminishing.\"",
+   "why": "Individually the inspectors agreed ten hours would do. As a group they voted it down. Months later Taylor cut hours in steps to 8 1/2 at the same pay and output rose each time. He calls the vote a lapse into tact he regretted.",
+   "uw": "You plan to put a change to a group vote that people agreed to one by one.",
+   "id": 1128,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Lock quality before you pay for quantity",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"It is necessary in almost all cases, therefore, to take definite steps to insure against any falling off in quality before moving in any way towards an increase in quantity.\"",
+   "why": "At the bicycle ball plant, over-inspection came first: trusted inspectors re-checked anonymous lots from the day before. Only after that did output pay begin.",
+   "uw": "You're about to start paying or ranking people on volume.",
+   "id": 1129,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Salt the batch with known defects",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"Every two or three days a lot of balls was especially prepared by the foreman, who counted out a definite number of perfect balls, and added a recorded number of defective balls of each kind.\"",
+   "why": "Neither inspectors nor over-inspectors could tell the seeded lot from real ones, so each count could be scored against a known answer. Taylor says this removed \"all temptation to slight their work or make false returns.\"",
+   "uw": "You rely on reviewers or QA and have no way to measure what they miss.",
+   "id": 1130,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Stop them at an hour and a quarter",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"…after about an hour and one-half of consecutive work they began to get nervous.\"\n\n\"It is wise to stop short of the point at which overstrain begins, so we arranged for them to have a ten minutes period for recreation at the end of each hour and one quarter.\"",
+   "why": "The breaks were scheduled just before observed fatigue set in, and the inspectors were required to get up and walk around. Taylor reports the same group earlier lost much of a long day to half-working.",
+   "uw": "Detail work like reviewing, proofreading or inspection drifts in quality late in the day.",
+   "id": 1131,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Select for the one trait the job turns on",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"Mr. Thompson soon recognized that the quality most needed for bicycle ball inspectors was a low personal coefficient.\"\n\n\"…this involved laying off many of the most intelligent, hardest working, and most trustworthy girls merely because they did not possess the quality of quick perception followed by quick action.\"",
+   "why": "Reaction time, measured as in a psychology lab, decided who stayed. Taylor admits the cost plainly: good workers lost the job over a trait unrelated to effort or honesty.",
+   "uw": "You are hiring on general merit for a job that depends on one measurable ability.",
+   "id": 1132,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "A stranger with a slide rule beat the twelve-year veteran",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "evidence",
+   "steal": "\"…the gain in time made through running the machine according to scientific principles ranged from two and one-half times the speed in the slowest instance to nine times the speed in the highest.\"",
+   "why": "The lathe had been run for ten to twelve years by a first-class mechanic. A man who had never seen the jobs, using slide rules built from years of metal-cutting experiments, set speeds and feeds that beat him on every part.",
+   "uw": "You assume long experience on a machine means the settings are already optimal.",
+   "id": 1133,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Test the worker's idea and pay for it",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"…whenever the new method is found to be markedly superior to the old, it should be adopted as the standard for the whole establishment. The workman should be given the full credit for the improvement, and should be paid a cash premium as a reward for his ingenuity.\"",
+   "why": "Suggestions get a formal experiment against the current standard, and the winner becomes the new standard with credit and cash to its author.",
+   "uw": "You have standardized a process and need a way to keep improving it.",
+   "id": 1134,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Copying the tools without the philosophy breaks things",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "argument",
+   "steal": "\"The mechanism of management must not be mistaken for its essence, or underlying philosophy. Precisely the same mechanism will in one case produce disastrous results and in another the most beneficent.\"",
+   "why": "Taylor lists his own tools, including time study, instruction cards, slide rules and the planning room, and warns they fail when used without real cooperation with the workers. He says rushed adoptions have ended in strikes.",
+   "uw": "You are adopting another company's process tools as a quick fix.",
+   "id": 1135,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Convert one worker, then wait for a quarter to tip",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "mechanism",
+   "steal": "\"…only one workman at a time should be dealt with at the start. Until this single man has been thoroughly convinced that a great gain has come to him from the new method, no further change should be made.\"\n\n\"…very rapid progress can be made, because at about this time there is, generally, a complete revolution in the public opinion of the whole establishment…\"",
+   "why": "Taylor put a full changeover at two to three years and sometimes four to five. It starts with one convinced worker, and once a quarter to a third of the workforce has switched, opinion turns and the rest ask to join.",
+   "uw": "You are rolling out a new way of working and want to announce it to everyone on day one.",
+   "id": 1136,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Are you a high-priced man?",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
+   "type": "evidence",
+   "steal": "\"Schmidt, are you a high-priced man?\"\n\n\"He worked when he was told to work, and rested when he was told to rest, and at half-past five in the afternoon had his 47 and a half tons loaded on the car.\"",
+   "why": "Taylor tied the job to a wage the man wanted ($1.85 against $1.15) and to doing exactly what a man with a stopwatch said, including when to rest. He says the pitch kept Schmidt's attention \"on the high wages which he wants.\" This is Taylor's account; it has not been checked against outside sources.",
+   "uw": "You are offering more pay in exchange for following a prescribed method exactly.",
+   "id": 1137,
+   "tag": "TAYLOR'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Don't plan on supplies you haven't counted",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"you are prepared to rely on what you do not know? Do you forget that the needs of the morrow must be high, not to speak of the outlay for the day?\"",
+   "why": "Cyrus is counting on an ally to feed his whole army and has never asked how much the ally can give. Three questions from his father expose the gap: the amount, the cost of tomorrow, and what happens if the ally can't or won't deliver.",
+   "uw": "Your plan depends on a partner's resources you have never actually seen.",
+   "id": 1138,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Raise the money while you're flush",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"never put off the collecting of supplies until the day of need, make the season of your abundance provide against the time of dearth. You will gain better terms from those on whom you must depend if you are not thought to be in straits\"",
+   "why": "Cambyses ties reserves to bargaining power and authority. A leader who isn't visibly short gets better terms from suppliers and more willing followers.",
+   "uw": "You plan to start fundraising when the runway gets short.",
+   "id": 1139,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Negotiating"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Pay above the promise and it lands as a gift",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"They are well aware of the terms Cyaxares has offered for their help: but whatever they get over and above the covenanted amount they will look upon as a free gift, and for that they will, in all likelihood, feel most gratitude to the giver.\"",
+   "why": "Cyrus reasons that promised pay is owed, so the thanks go to whoever promised it. Only what comes above the agreed amount reads as a gift from him.",
+   "uw": "You're deciding whether a bonus should be built into the contract or given on top.",
+   "id": 1140,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "The general's teacher only taught tactics",
+   "book": "Cyropaedia — Xenophon",
+   "type": "evidence",
+   "steal": "\"'He taught me tactics.'\"\n\n\"'And pray what will be the use of tactics to an army without supplies, without health, without discipline, without knowledge of those arts and inventions that are of use in war?'\"",
+   "why": "Cambyses quizzes Cyrus on whether his paid instructor covered economy, health, morale or obedience. The answer each time is no. Cambyses runs through supplies, health, discipline and morale, and the teacher covered none of them.",
+   "uw": "You're hiring or training a manager on technical skill alone.",
+   "id": 1141,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Doctors patch, leaders prevent",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"these excellent men are, after all, much the same as the tailors who patch torn garments. When folk are ill, your doctors can patch them up, but your own care for their health ought to go far deeper than that: your prime object should be to save your men from falling ill at all.\"",
+   "why": "Cyrus is proud of the medical staff he hired. His father says that is repair and puts prevention on the leader: a healthy camp site, controlled diet, steady exercise.",
+   "uw": "You're proud of your support function and it's mostly cleaning up avoidable problems.",
+   "id": 1142,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "An idle army eats itself",
+   "book": "Cyropaedia — Xenophon",
+   "type": "argument",
+   "steal": "\"A single man is hard enough to support in idleness, a household is harder still, an army hardest of all. There are more mouths to be filled, less wealth to start with, and greater waste; and therefore an army should never be unemployed.\"",
+   "why": "Cambyses reasons from cost: a large group consumes more and wastes more, so it must always be either gaining ground or improving itself.",
+   "uw": "Your team is between projects and you're letting the gap drift.",
+   "id": 1143,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Set competitions with prizes",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"Let him propose competitions of every kind and offer prizes; the standard of skill will rise, and he will soon have a body of troops ready to his hand for any service he requires.\"",
+   "why": "Cyrus's own idea, and his father approves. Contests make practice voluntary and visible, and later chapters show Cyrus running them across every skill.",
+   "uw": "Training feels like a chore and nobody practises unless forced.",
+   "id": 1144,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Don't cry the view-halloo too often",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"Let a man rouse false expectations often enough, and in the end, even when hope is at the door, he may cry the good news in vain.\"\n\n\"his agents may step in and do it in his place; but he should reserve his own appeal for the supreme crises of supreme danger, and not dissipate his credit.\"",
+   "why": "Hounds stop answering a huntsman who has called false sightings. Cambyses' fix is to let subordinates do the routine encouragement and save the leader's own promise for the moment it must be believed.",
+   "uw": "You're about to tell the team, again, that this quarter will turn things around.",
+   "id": 1145,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Be greedy for your share of the cold",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"I hold that the ruler should be marked out from other men, not by taking life easily, but by his forethought and his wisdom and his eagerness for work.\"\n\n\"if the campaign is in summer the general must show himself greedy for his share of the sun and the heat, and in winter for the cold and the frost, and in all labours for toil and fatigue.\"",
+   "why": "Cyrus wants the ruler set apart by forethought and work. Cambyses says a leader can't always do people good, but can always share their hardship and look ahead for them. He also notes the leader's pain is lighter because he works in public view.",
+   "uw": "Your team is pulling a hard stretch and you're working from somewhere comfortable.",
+   "id": 1146,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "The surer you feel, the more you guard",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"the more I felt persuaded of my own superiority and the power of my troops, the more I should be inclined to stand on my guard, just as we put our greatest treasures in the safest place we have.\"",
+   "why": "Cyrus asks whether a well-prepared army should attack at once. His father says only if it gains something, and treats a strong force like a treasure: the thing you keep safest.",
+   "uw": "Your position is strong and you feel the urge to press it just because you can.",
+   "id": 1147,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Strategy and competition"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Both sides have to eat and sleep",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"both of you must take your meals sometime; both of you must sleep; your men must scatter in the morning to satisfy the needs of nature\"\n\n\"wherever you are weaker, there you must be most on your guard, and wherever your foe is most assailable, there you must press the attack.\"",
+   "why": "Cambyses points to the routines neither side can skip: meals, sleep, the morning scatter. Guard your side where you are weakest at those moments and press theirs.",
+   "uw": "You're planning a competitive move and looking only at the other side's strengths.",
+   "id": 1148,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Strategy and competition"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "If it's night, plan the day",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"if you wish your men to follow you, remember that they expect you to plan for them.\"\n\n\"if it be night, you must consider what your troops shall do when it is day; if day, how the night had best be spent.\"",
+   "why": "Cambyses names the deal followers expect: they give obedience and you give a plan for the next stretch. He says a leader can never afford a careless mood.",
+   "uw": "Your team keeps arriving in the morning to find nobody has decided the day's priorities.",
+   "id": 1149,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Put merit pay to a vote you expect to win",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"I cannot help seeing that within our ranks are men of every kind, some better and some worse, and yet if anything is won every man will claim an equal share.\"\n\n\"it would seem too base to deny that he who works the hardest and does most for the common good deserves the highest recompense.\"",
+   "why": "Cyrus could have decreed it. He puts it to the army because the spoils feel like common property, and he expects few will say aloud that the hardest worker deserves less. The commoner Pheraulas then carried the vote.",
+   "uw": "You're switching from equal splits to performance-based rewards.",
+   "id": 1150,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. II, ch. 2",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Clubs against clods",
+   "book": "Cyropaedia — Xenophon",
+   "type": "evidence",
+   "steal": "\"half were equipped with stout staves of fennel, and half were ordered to snatch up clods of earth and do what they could with these.\"\n\n\"on the next day the whole plain was studded with combats of this type, and whenever the army had nothing more serious in hand, this sport was their delight.\"",
+   "why": "A brigadier ran a rough mock battle showing that close fighting beats missiles. Cyrus asked about the bandages at dinner, the story spread, and the whole army copied the drill unasked.",
+   "uw": "You want a lesson to spread through a team without issuing a directive.",
+   "id": 1151,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. II, ch. 3",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Tens, hundreds, thousands, and one order",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"He remembered how the captains of ten supervised the squads of ten, and were supervised themselves by the company-captains, and they by the captains of the thousands, and these by the captains of ten thousand, and thus even with hundreds of thousands not a man was left without supervision\"\n\n\"by conferring with a few officers he could keep the whole system under his control, and actually have more leisure for himself than the manager of a single household or the master of a single ship.\"",
+   "why": "Cyrus took the army's span of control and applied it to the finances and departments of an empire. The structure handed him back his time, and he spent it training his deputies.",
+   "uw": "You're the bottleneck for every decision in a growing organization.",
+   "id": 1152,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. VIII, ch. 1",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Have a friend claim the truant's estate",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"He would go to one of his most intimate friends and bid him lay hands on the property of the offender, asserting that it was his own. Then of course the truants would appear at once crying out that they had been robbed.\"",
+   "why": "Nobles who skipped court came running once their property was at stake. Cyrus then delayed hearing them for days, gave the best tasks to people who turned up on time, and in the end handed a persistent truant's holdings to someone who came when called.",
+   "uw": "Key people keep skipping the meetings where decisions get made.",
+   "id": 1153,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. VIII, ch. 1",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "My friends are my treasury",
+   "book": "Cyropaedia — Xenophon",
+   "type": "evidence",
+   "steal": "\"There, Croesus, that is treasure number one; and now run through the rest, and count what sums I have in hand, in case I need them.\"\n\n\"But I hold to it that if I make my friends rich they will be my treasures themselves\"",
+   "why": "Croesus warned that Cyrus's gifts would ruin him. Cyrus sent a request round his friends, and the pledges came to more than a hoard would have held, with no envy and no hired guards attached.",
+   "uw": "You're weighing whether to keep the surplus or spread it among your key people.",
+   "id": 1154,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. VIII, ch. 2",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Many king's eyes, never one",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"It is little that one man can see or one man hear, and to hand over the office to one single person would be to bid all others go to sleep.\"\n\n\"Cyrus' munificence toward all who told him what it was well for him to know set countless people listening with all their ears and watching with all their eyes\"",
+   "why": "Rewarding anyone who brought useful news gave Cyrus an information network with no single informant to dodge. Xenophon adds that one known \"eye\" would make everyone guarded around that person.",
+   "uw": "You rely on a single trusted source to tell you what's really happening.",
+   "id": 1155,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. VIII, ch. 2",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Don't quarrel with all your people at once",
+   "book": "Cyropaedia — Xenophon",
+   "type": "argument",
+   "steal": "\"it seems to me a grievous error in a ruler to quarrel with all his subjects at once. Widespread terror must needs be followed by widespread hate: anger with all creates unity among all.\"",
+   "why": "Cyaxares was furious that his Medes had followed Cyrus. Cyrus's answer is that collective punishment unites the punished against the one doing the punishing.",
+   "uw": "A whole team let you down and you're about to come down on all of them together.",
+   "id": 1156,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. V, ch. 5",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Make the new standard a point of honor",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"suppose we make it a rule that every one who receives a horse from me shall be considered to disgrace himself if he is seen trudging afoot, be his journey long or short?\"",
+   "why": "Cyrus was building a Persian cavalry from foot soldiers. Tying status to the new skill made riding a matter of pride, and Xenophon says Persian gentlemen still avoided being seen on foot in his day.",
+   "uw": "You're introducing a new tool or skill and people keep slipping back to the old way.",
+   "id": 1157,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. IV, ch. 3",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Feed the camp servants like soldiers",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"he always insisted that the army servants should share and share alike with the soldiers in everything, for he held that those who did such service for the army were as much to be honoured as heralds or ambassadors.\"",
+   "why": "Cyrus expected support staff to be loyal, quick and calm and to treat any order as within their dignity, so he gave them the soldiers' share.",
+   "uw": "Your support staff are held to high standards and rewarded like an afterthought.",
+   "id": 1158,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. II, ch. 1",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Pray only for what you've trained for",
+   "book": "Cyropaedia — Xenophon",
+   "type": "argument",
+   "steal": "\"a man had no right to pray he might win a cavalry charge if he had never learnt how to ride, or triumph over master-bowmen if he could not draw a bow, or bring a ship safe home to harbour if he did not know how to steer\"",
+   "why": "Cyrus recalls his father's rule that some outcomes are earned through learning and training, and that asking for luck without that work is asking for something forbidden.",
+   "uw": "Your plan for a hard outcome leans on luck in places where training would do.",
+   "id": 1159,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Deciding under uncertainty"
+   ],
+   "source_locator": "bk. I, ch. 6",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Seat people by merit and let the seating move",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"where the world believes merit will win no crown and receive no proclamation, there the spirit of emulation dies, but if all see that the best man gains most, then the rivalry grows keen.\"\n\n\"he made it a law that by good deeds a man might rise into a higher seat or through sloth descend into a lower\"",
+   "why": "Cyrus made rank visible at his table and kept it moving: good work raised a guest's seat, slack work lowered it. He also made sure the most honored guest was seen to get the most favors, so the seating meant something.",
+   "uw": "Your team can't tell who is doing well or what doing well earns.",
+   "id": 1160,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. VIII, ch. 4",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Send the dish to the absent friend",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"all that was set before him, after he and his guests had dined, he would send out to his absent friends, in token of affection and remembrance.\"\n\n\"He would include those who had won his approval by their work on guard, or in attendance on himself, or in any other service, letting them see that no desire to please him could ever escape his eyes.\"",
+   "why": "Cyrus turned his own table into a running record of who had done good work, including guards and servants who were never at dinner. Xenophon adds that people then courted whoever received the king's dishes, so a gift also told everyone else who was in favor.",
+   "uw": "Good work happens out of your sight and you want people to know you noticed.",
+   "id": 1161,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "bk. VIII, ch. 2",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Have them rule on the case before you name the defendant",
+   "book": "Cyropaedia — Xenophon",
+   "type": "mechanism",
+   "steal": "\"If you have an officer and he does wrong, do you suffer him to remain in office, or do you set up another in his stead?\"\n\n\"Son of Armenia, we have heard your own judgment in this case, and now tell us, what ought we to do?\"",
+   "why": "Cyrus puts the rebel Armenian king through questions about how he treats his own disloyal officers, one point at a time, then hands the answers back to him. Xenophon has Cyrus use the same method on his grandfather as a boy, asking what he'd do to a runaway slave before announcing his own plan to run off hunting.",
+   "uw": "You need someone to accept a consequence they will resist once they see it applies to them.",
+   "id": 1162,
+   "tag": "XENOPHON'S ACCOUNT",
+   "situations": [
+    "Persuading",
+    "Negotiating"
+   ],
+   "source_locator": "bk. III, ch. 1",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Break three dozen pots into test tiles",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"He began by breaking three dozen new earthen pots, the pieces of which he covered with different materials which he had compounded, and then took them to a neighbouring glass-furnace to be baked.\"",
+   "why": "Palissy could not afford to fire whole pieces for every guess at the white enamel. Shards let him test many compounds in one firing, and the hotter glass furnace gave him \"a glimmer of hope.\"",
+   "uw": "Each full test of an idea is expensive and you are testing one variable at a time.",
+   "id": 1163,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. III",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Notice what turns white in the fire",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"he noticed that a certain earth containing silica, which was black before calcination, became white after exposure to the heat of a furnace.\"",
+   "why": "Wedgwood studied chemistry in his spare hours and caught one small change in color. Mixing silica into the local red clay gave him the white body behind English earthenware.",
+   "uw": "You keep seeing a small anomaly in your materials and haven't asked what it would let you make.",
+   "id": 1164,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. III",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Drop the product before you cheapen it",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "concept",
+   "steal": "\"He aimed throughout at the highest excellence, declaring his determination 'to give over manufacturing any article, whatsoever it might be, rather than to degrade it.'\"",
+   "why": "Wedgwood made the line explicit: when quality couldn't be held, the article stopped. Smiles credits the standard with lifting the whole Staffordshire district.",
+   "uw": "Margins are squeezed and the easy fix is a cheaper version under the same name.",
+   "id": 1165,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. III",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Learn the hand craft before you build the machine",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"He first studied the art of making the Buckingham or pillow-lace by hand, with the object of effecting the same motions by mechanical means.\"",
+   "why": "Heathcoat mastered the motions himself before trying to mechanize them. His master called him \"undaunted by failures and mistakes,\" and the result was the bobbin-net machine.",
+   "uw": "You are automating a process you have never done by hand.",
+   "id": 1166,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Watch your daughters comb their hair",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "evidence",
+   "steal": "\"he found himself almost unconsciously watching his daughters coming their long hair and drawing it out at full length between their fingers.\"\n\n\"if he could successfully imitate in a machine the process of combing out the longest hair and forcing back the short by reversing the action of the comb, it might serve to extricate him from his difficulty.\"",
+   "why": "Heilmann had a professionally built model and still couldn't make it work. The answer came from an ordinary motion at home, which he copied into the combing machine. (\"coming\" is the Gutenberg text's misprint for \"combing\".)",
+   "uw": "You've been stuck on a mechanism for months and have only looked at other machines.",
+   "id": 1167,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. II",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "The spider's net, the lobster shell, the shipworm",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"he saw a tiny spider's net suspended across his path. The idea immediately occurred to him, that a bridge of iron ropes or chains might be constructed in like manner\"\n\n\"Sir Isambert Brunel took his first lessons in forming the Thames Tunnel from the tiny shipworm\"",
+   "why": "Three engineers, three borrowed designs: Brown's suspension bridge from a web, Watt's jointed river pipe from a lobster shell, Brunel's tunneling shield from a boring worm. Each was already studying the problem when he saw the model.",
+   "uw": "You are designing a structure and haven't asked what in nature already solves it.",
+   "id": 1168,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. V",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Trifles make perfection",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "passage",
+   "steal": "\"'I have retouched this part—polished that—softened this feature—brought out that muscle—given some expression to this lip, and more energy to that limb.' 'But these are trifles,' remarked the visitor. 'It may be so,' replied the sculptor, 'but recollect that trifles make perfection, and perfection is no trifle.'\"",
+   "why": "The visitor saw no change; Michelangelo listed six. Smiles pairs it with Poussin's answer on his reputation: \"Because I have neglected nothing.\"",
+   "uw": "Someone asks why the last 5 per cent is taking so long.",
+   "id": 1169,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. V",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Keep the subject before you until it dawns",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"'I keep the subject continually before me, and wait till the first dawnings open slowly by little and little into a full and clear light.'\"",
+   "why": "Asked how he made his discoveries, Newton said \"By always thinking unto them.\" His rest was switching subjects, which kept the main problem in view without forcing it.",
+   "uw": "A hard problem needs sustained attention and you keep starting fresh on it each week.",
+   "id": 1170,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. IV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Make him repeat the sermon at lunch",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"his father was accustomed to set him up at table to practise speaking extempore; and he early accustomed him to repeat as much of the Sunday's sermon as he could remember.\"",
+   "why": "Smiles calls Peel's natural powers \"mediocre.\" The weekly drill built the recall he later used to answer opponents point by point in Parliament.",
+   "uw": "You want to build a skill like recall or quick replies and are waiting for talent to show up.",
+   "id": 1171,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. IV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Rats ate the drawings, so draw better ones",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "evidence",
+   "steal": "\"a pair of Norway rats had taken possession of the whole, and reared a young family among the gnawed bits of paper\"\n\n\"I felt pleased that I might now make better drawings than before; and, ere a period not exceeding three years had elapsed, my portfolio was again filled.\"\n\n\"He had no draft, and was compelled to rake up from his memory facts, ideas, and expressions, which had been long since dismissed.\"",
+   "why": "Audubon lost two hundred original drawings. In his own account he was flattened for days, then treated the redo as a chance to improve, and refilled the portfolio in under three years. Smiles pairs it with Carlyle, whose lent manuscript of the first French Revolution volume was burned as waste paper and rewritten from memory.",
+   "uw": "Months of work are gone and you can't face starting again.",
+   "id": 1172,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Stuck or burned out"
+   ],
+   "source_locator": "ch. IV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Pay someone a crown to drag you out of bed",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"He then called his servant, Joseph, to his help, and promised him the reward of a crown every time that he succeeded in getting him up before six.\"\n\n\"he was accustomed to say that he owed to Joseph three or four volumes of his Natural History.\"",
+   "why": "Willpower alone failed. Buffon paid for each success, and Joseph earned his pay by ignoring protests and threats, once with a basin of ice water. The precommitment worked where resolutions hadn't.",
+   "uw": "You keep breaking a resolution you've made to yourself many times.",
+   "id": 1173,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Stuck or burned out"
+   ],
+   "source_locator": "ch. IV",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Pack the box, one thing at once",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"'Method,' said the Reverend Richard Cecil, 'is like packing things in a box; a good packer will get in half as much again as a bad one.'\"\n\n\"'The shortest way to do many things is to do only one thing at once;'\"",
+   "why": "Cecil never left a task half done to return to later. De Witt's version was \"One thing at a time\": think of nothing else until the current dispatch is finished.",
+   "uw": "You have ten things open and none of them is getting done.",
+   "id": 1174,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. IX",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "When the front stalls, the rear piles up",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"Do instantly whatever is to be done, and take the hours of recreation after business, never before it. When a regiment is under march, the rear is often thrown into confusion because the front do not move steadily and without interruption.\"",
+   "why": "Walter Scott's advice to a young clerk names the problem as dawdling and the cost as a backlog where \"affairs begin to press all at once.\" Clearing the first item keeps everything behind it moving.",
+   "uw": "Small tasks are stacking up behind one you keep putting off.",
+   "id": 1175,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Stuck or burned out"
+   ],
+   "source_locator": "ch. IX",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Too much fame too early",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "argument",
+   "steal": "\"West might have been a greater painter, had he not been injured by too early success: his fame, though great, was not purchased by study, trials, and difficulties, and it has not been enduring.\"",
+   "why": "This is Smiles's verdict on Benjamin West, a child prodigy. He makes the same point about Rossini through Beethoven: facility that comes too easily can stop the hard practice.",
+   "uw": "Early praise is arriving faster than your skill is growing.",
+   "id": 1176,
+   "tag": "AUTHOR'S CASE",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. VI",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Ask for a book of blots",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"John Hunter used to remark that the art of surgery would not advance until professional men had the courage to publish their failures as well as their successes.\"\n\n\"Watt the engineer said, of all things most wanted in mechanical engineering was a history of failures: 'We want,' he said, 'a book of blots.'\"\n\n\"I thank God I was not made a dexterous manipulator, for the most important of my discoveries have been suggested to me by failures.\"",
+   "why": "John Hunter wanted surgeons to publish failures as well as successes, and Watt asked for \"a book of blots.\" Davy said his most important discoveries came from failures.",
+   "uw": "Your team writes up wins and quietly forgets what didn't work.",
+   "id": 1177,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. XI",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Four years dinning the project into ears",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "evidence",
+   "steal": "\"At first he was laughed at; but his ceaseless importunity at length prevailed, and after four years' dinning of his project into the ears of the great and influential—during which time he lived in poverty—he at length succeeded.\"\n\n\"a diver came up with a solid bar of silver in his arms.\"",
+   "why": "After a failed first voyage the Admiralty refused Phipps another ship. He raised the money privately through a twenty-share company and found the Spanish wreck when a sailor sent a diver after a sea plant.",
+   "uw": "Your first attempt failed in public and the original backer won't fund a second.",
+   "id": 1178,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Starting something"
+   ],
+   "source_locator": "ch. VII",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Brushes from the cat's tail",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "evidence",
+   "steal": "\"Benjamin West made his first brushes out of the cat's tail.\"\n\n\"Watt made his first model of the condensing steam-engine out of an old anatomist's syringe\"",
+   "why": "Smiles lists a run of first instruments: Wilkie's burnt stick, Ferguson's bead-and-thread star map, Franklin's silk kite, Rittenhouse's plough handle. None waited for proper tools.",
+   "uw": "You're holding off on starting until you have the right equipment.",
+   "id": 1179,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Starting something"
+   ],
+   "source_locator": "ch. V",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "The ifs and the buts are out of season",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"'The ifs and the buts,' said he, 'are at present out of season, and above all it must be done with speed.'\"\n\n\"To Massena he writes, 'Let me know if your biscuit and bread arrangements are yet completed.'\"",
+   "why": "From a small chateau in Poland, Napoleon chased muskets, shirts, sabres and biscuit by letter. Smiles says he chose agents well and still checked the details where results depended on them.",
+   "uw": "A big operation depends on supplies you've delegated and never verified.",
+   "id": 1180,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. IX",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Pay your own bills",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"'I make a point,' said he to Mr. Gleig, 'of paying my own bills, and I advise every one to do the same; formerly I used to trust a confidential servant to pay them, but I was cured of that folly by receiving one morning, to my great surprise, duns of a year or two's standing.\"",
+   "why": "Wellington's servant had speculated with the money and left the bills unpaid. Keeping \"an accurate detailed account of all the moneys received and expended\" was the fix.",
+   "uw": "Someone else handles your money and you haven't looked at the accounts in months.",
+   "id": 1181,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Starting something"
+   ],
+   "source_locator": "ch. X",
+   "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Set down sudden thoughts for use",
+   "book": "Self-Help — Samuel Smiles",
+   "type": "mechanism",
+   "steal": "\"Lord Bacon left behind him many manuscripts entitled 'Sudden thoughts set down for use.'\"\n\n\"These note-books afterwards proved, like Richter's 'quarries,' the great storehouse from which he drew his illustrations.\"",
+   "why": "Bacon, Eldon, Pye Smith and John Hunter all kept running notes, and the habit gave them stock to draw on later. Pye Smith's biographer called him \"always at work, always in advance, always accumulating.\"",
+   "uw": "Good ideas show up when you aren't working and are gone by the time you are.",
+   "id": 1182,
+   "tag": "SMILES'S ACCOUNT",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. V",
    "ripped_at": "2026-10-03"
   }
  ]
