@@ -1423,6 +1423,15 @@ books:
   - book
   - genre
   - bookline
+- key: the-devils-chessboard-david-talbot
+  genre: Nonfiction
+  bookline: David Talbot's history of Allen Dulles and the CIA — 23 hand-ripped mechanisms
+    of power, each with its price tag. Verified against the text; 20 documented, 3
+    marked as Talbot's case.
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -2395,6 +2404,29 @@ card_order:
 - 983
 - 984
 - 985
+- 986
+- 987
+- 988
+- 989
+- 990
+- 991
+- 992
+- 993
+- 994
+- 995
+- 996
+- 997
+- 998
+- 999
+- 1000
+- 1001
+- 1002
+- 1003
+- 1004
+- 1005
+- 1006
+- 1007
+- 1008
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
