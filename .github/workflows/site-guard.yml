@@ -1,0 +1,72 @@
+name: site-guard
+# Tripwire for idearipper.com (added 2026-09-30). An automated "rip deploy" job has
+# pushed stale copies of build_site.py (164ec42 reverted the 5d35385 reskin + fixes).
+# 1) guard: fail if index.html loads Google Fonts, lacks color-scheme light, lacks the
+#    lazy #toast fix, or wasn't built from the committed build_site.py (build marker).
+#    If the failing push is an automated "rip deploy", restore the template from the
+#    newest passing commit, rebuild with the new content, and push (self-heal).
+# 2) smoke: wait for GitHub Pages to serve the new build marker, then run a
+#    puppeteer smoke test at 390 and 1366 (JS errors, overflow, Save, Copy).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: site-guard-main
+      cancel-in-progress: false
+    outputs:
+      healed: ${{ steps.heal.outputs.healed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 100
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Guard index.html + build_site.py
+        id: guard
+        continue-on-error: true
+        run: python3 tools/site_guard.py check
+      - name: Self-heal (automated rip deploy pushed a stale template)
+        id: heal
+        if: steps.guard.outcome == 'failure' && startsWith(github.event.head_commit.message, 'rip deploy')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash tools/self_heal.sh
+      - name: Fail when the guard failed and nothing was healed
+        if: steps.guard.outcome == 'failure' && steps.heal.outputs.healed != 'true'
+        run: |
+          echo "::error::site_guard failed on ${GITHUB_SHA::7}. See the Guard step. Rollback: git revert <sha>"
+          exit 1
+  smoke:
+    needs: guard
+    runs-on: ubuntu-latest
+    concurrency:
+      group: site-smoke-main
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install puppeteer-core
+        run: npm i --no-save --no-audit --no-fund puppeteer-core@23
+      - name: Post-deploy smoke (waits up to 10 min for Pages)
+        run: |
+          MARK=$(grep -o '<meta name="build" content="[^"]*"' index.html | sed 's/.*content="\([^"]*\)".*/\1/')
+          echo "expecting live build marker: $MARK"
+          CHROME_PATH=$(which google-chrome || which chromium) node tools/smoke.js https://idearipper.com/ --expect-build "$MARK" --wait 600 --json smoke.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: smoke
+          path: smoke.json
+          if-no-files-found: ignore
