@@ -1032,6 +1032,11 @@
    "book": "Self-Help — Samuel Smiles",
    "genre": "Nonfiction",
    "bookline": "Self-improvement — Smiles's 1859 casebook of inventors, potters, artists and engineers who made their own way, told as short working biographies."
+  },
+  {
+   "book": "Carthage: A New History — Eve MacDonald",
+   "genre": "Nonfiction",
+   "bookline": "Ancient history — Eve MacDonald's 2025 history of Carthage, read for the people who lived there before Rome: how they traded, governed, worshipped and sailed."
   }
  ],
  "cards": [
@@ -14826,6 +14831,382 @@
    ],
    "source_locator": "ch. V",
    "ripped_at": "2026-10-03"
+  },
+  {
+   "title": "Silent trade: lay it out, step back, wait",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"they [Carthaginians] come here and unload their cargo; then, having laid it out along the beach, they go back aboard their ships and light a smoking fire.\"\n\n\"if it seems to them a fair price for their cargo, they take it and go away; but if not, they go back aboard and wait, and the people come back and add more gold until the sailors are satisfied.\"",
+   "why": "Herodotus describes Carthaginian traders dealing with a people whose language they didn't share. Each side set down its offer and withdrew. Nobody touched the other side's goods until one side accepted, so the turns did the negotiating.",
+   "uw": "You have to strike a deal with no common language and no trust.",
+   "id": 1183,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Negotiating"
+   ],
+   "source_locator": "ch. 3",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Cut the oxhide into strips",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"‘as much land as could be covered by a single hide of an ox’\"\n\n\"Then, she secretly has the oxhide cut into the thinnest possible strips.\"",
+   "why": "In Justin's telling, Dido asked a local king for one oxhide of land, then cut the hide into a thread long enough to circle the hill that became the Byrsa citadel. The price was agreed. She changed the unit. MacDonald notes the story fed the Roman picture of the tricky Carthaginian.",
+   "uw": "Someone asks you for 'just one' of something and nobody has said how it is measured.",
+   "id": 1184,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Negotiating"
+   ],
+   "source_locator": "ch. 1",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Pack the god and the brides",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"Elissa and her group of rebels fled the city by night, taking sacred artefacts that belonged to the god Melqart with them.\"\n\n\"The rebels’ first stop was the island of Cyprus, where they collected young women to join their party as brides.\"",
+   "why": "The founders took the sacred objects of Tyre's patron god and stopped on Cyprus to collect young women as brides. MacDonald reads the legend as a planned colony. They carried the two things a new city can't make for itself: its god and its families.",
+   "uw": "You are founding something far from home and it has to outlast the founders.",
+   "id": 1185,
+   "tag": "AUTHORS' READ",
+   "situations": [
+    "Starting something"
+   ],
+   "source_locator": "ch. 1",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Send families, not just crews",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"He set sail with sixty fifty-oared ships, about thirty thousand men and women, food and other equipment.\"",
+   "why": "Carthage ordered Hanno to sail past the Pillars of Herakles and found cities on the Atlantic coast of Africa. MacDonald calls the numbers exaggerated. The roster still shows the intent: women as well as men, and supplies for settlers who would stay.",
+   "uw": "You are opening a new location and need it to put down roots.",
+   "id": 1186,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Starting something"
+   ],
+   "source_locator": "ch. 3",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Sail around the middlemen",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"Their expedition may well have been an attempt to cut out the desert middlemen by establishing direct links themselves, travelling by sea and setting up a network of contacts and colonies to facilitate this trade.\"",
+   "why": "Carthage bought West African gold through traders at the Saharan oases. MacDonald reads Hanno's voyage as a try for the same gold by sea, with the margin kept at home. She also calls it the oldest move colonisers have.",
+   "uw": "A middleman controls the only route to your supply.",
+   "id": 1187,
+   "tag": "AUTHORS' READ",
+   "situations": [
+    "Strategy and competition"
+   ],
+   "source_locator": "ch. 3",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Nail the logbook to the temple wall",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"The original document, we believe, was written down and fixed to a temple wall in Carthage not long after the voyage took place.\"\n\n\"The skins were hung in the temple of Ba‘al Hammon on the return of the voyagers.\"",
+   "why": "Hanno's account of the voyage went up on a temple wall, and the skins of the two 'gorillas' his crew killed went up in the temple of Ba'al Hammon. Sailors copied the posted log as a guide for centuries, and it survives in Greek manuscripts.",
+   "uw": "A team has come back from new ground and the route should outlive the crew.",
+   "id": 1188,
+   "tag": "AUTHORS' READ",
+   "situations": [
+    "Starting something"
+   ],
+   "source_locator": "ch. 3",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Carry half the token",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"Inscribed on a wild boar-shaped ivory card were the words ‘I am Puinel from Carthage’, in the Etruscan language.\"\n\n\"A merchant in Carthage or an Etruscan city would send one half of the card with an associate who travelled to different ports and negotiated deals.\"",
+   "why": "The token was found in a tomb at Carthage, written in the trading partner's language. MacDonald reconstructs how such guest cards worked: the agent carried one half, and the matching half travelled with the goods as the guarantee. Its owner was buried with it.",
+   "uw": "You need a stranger in another port to trust your agent or your shipment.",
+   "id": 1189,
+   "tag": "ARCHAEOLOGY",
+   "situations": [
+    "Negotiating"
+   ],
+   "source_locator": "ch. 3",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Write the report under the wax",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"informing it of Alexander’s plans using hidden texts, written on wooden tablets and then covered with wax.\"\n\n\"he was executed for treason ‘on the grounds that he had tried to sell Carthage to the [Macedonian] king’.\"",
+   "why": "Carthage's envoy Hamilcar the Rhodian got into Alexander's circle by claiming to defect, and sent reports home hidden under the wax of writing tablets. When he came back after Alexander died, Carthage executed him. His cover had convinced his own city too.",
+   "uw": "You are placing someone inside a rival's camp and your own side needs to know the defection is staged.",
+   "id": 1190,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Understanding power"
+   ],
+   "source_locator": "ch. 5",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Pay off the army in stages, in sight",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"Polybius records that Gisgo wanted to demobilise the Sicilian army in stages with each group being paid as they arrived in Carthage and then disbanded.\"\n\n\"Removing the soldiers to Sicca was not a strategically sound decision.\"",
+   "why": "Gisgo planned to bring the Sicilian army home in groups, paying each group off on arrival. The government let the men pile up unpaid in the city instead, then sent them to wait at Sicca, a region taxed and conscripted for 23 years. The soldiers asked where the generals who had made them promises were. The Mercenary War followed.",
+   "uw": "You owe a large group money you can't pay all at once.",
+   "id": 1191,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. 7",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Full authority in the field, full liability at home",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"The Carthaginian commander in the field oversaw negotiating treaties, making decisions on settlements, judicial matters in camp and minting coinage.\"\n\n\"The appointment to general was a whole project at which the commander either succeeded or failed.\"",
+   "why": "A Carthaginian general made treaties, settled land, judged cases and struck coins without referring home, for as long as his war lasted. Then he answered for the result in person before a council of 104. Failure meant exile or crucifixion. Malchus, the first general on record, was prosecuted for treason.",
+   "uw": "You are handing someone a large project far from oversight.",
+   "id": 1192,
+   "tag": "AUTHORS' READ",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. 2",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Choose for merit and for means",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"‘for the Carthaginians choose their magistrates, and particularly the highest of them – their kings [sufetes] and generals – with an eye both to merit and to wealth.’\"\n\n\"Even more interesting is Herodotus’ description of Hamilcar as Carthaginian on his father’s side and Syracusan on his mother’s side, and that he had become leader at Carthage on ‘merit’.\"",
+   "why": "Aristotle, who rated Carthage's government 'excellent', says it chose sufetes and generals on two tests at once: ability and wealth. Herodotus's Hamilcar, the commander at Himera, had a Syracusan mother and rose on merit.",
+   "uw": "You are filling a role where talent matters and so does having something to lose.",
+   "id": 1193,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. 2; ch. 4",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Marry into the neighbours",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"Success for the population at Carthage was largely dependent on the goodwill of the city’s neighbours for the first few centuries of its existence.\"\n\n\"Hamilcar gave his daughter in marriage to Naravas, sealing the bond between the two men.\"",
+   "why": "For centuries Carthage ate mostly locally grown food and depended on the Libyans whose land it had settled. MacDonald credits intermarriage: the mixed rural families, the Libyphoenicians, farmed and fought for the city. The habit reached the top when Hamilcar married his daughter to the Numidian prince Naravas, who arrived with 2,000 cavalry.",
+   "uw": "You have moved into someone else's territory and depend on them for the basics.",
+   "id": 1194,
+   "tag": "AUTHORS' READ",
+   "situations": [
+    "Starting something",
+    "Strategy and competition"
+   ],
+   "source_locator": "ch. 2; ch. 7",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Build the new base instead of patching the old",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"Founded as a modern Mediterranean city, Lilybaeum grew easily and quickly into a thriving port with up-to-date facilities and easy access to Carthage south across the sea.\"\n\n\"By far the longest-lasting imprint of the Carthaginians in the Iberian Peninsula took place under the command of Hasdrubal when he founded a new city on the southeastern coast.\"",
+   "why": "After Motya fell, Carthage built Lilybaeum on the Sicilian mainland nearby, and trade left the old island town. In Iberia, Hasdrubal founded New Carthage on the coast. New Carthage took the mother city's own name, Qart Hadasht, which means New City.",
+   "uw": "Restoring a damaged site would cost more than building a better one nearby.",
+   "id": 1195,
+   "tag": "AUTHORS' READ",
+   "situations": [
+    "Starting something"
+   ],
+   "source_locator": "ch. 4; ch. 8",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Post the price list",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"‘for each sacrifice which a person poor in cattle or in birds sacrifices the priests shall not receive [a thing]’\"\n\n\"‘any priest who takes a fee against what is set in this tablet shall be fined.’\"",
+   "why": "A tariff from the Temple of Ba'al Saphon, set by thirty men in charge of fees and dated by the sitting sufet, priced every offering from an ox down to flour and oil, in silver shekels. Clans, guilds and drinking clubs paid by the same list. The poor paid the priests nothing, and a priest who charged off the list was fined.",
+   "uw": "You run something where insiders set the price and outsiders can't check it.",
+   "id": 1196,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. 2",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Atone in their rite",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"They [the magistrates of Carthage] unanimously decided to appease the offended gods by all possible means.\"\n\n\"they selected their most esteemed citizens as priests for these goddesses and with great solemnity, they consecrated statues of Kore and Demeter and performed rituals in accordance with Greek customs.\"",
+   "why": "A Carthaginian army sacked a temple of Demeter and Kore outside Syracuse. Diodorus says the magistrates brought the two goddesses' cult into Carthage, made leading citizens their priests, held the rites by Greek custom and appointed distinguished Greek residents to serve.",
+   "uw": "Your side has wronged another community and an apology won't cover it.",
+   "id": 1197,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. 2",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Back the visiting trader's debts",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"the Romans may come for trading purposes, and the Carthaginian state engages to secure payment of their just debts.\"\n\n\"‘[the] Romans may not make either marauding expeditions, or trade, or found cities’\"",
+   "why": "In Carthage's first treaty with Rome, as Polybius copied it, the Carthaginian state undertook that Roman traders would be paid what they were owed in its ports. The same text listed what Romans could not do in Carthaginian territory, and one headland, the Fair Promontory, marked where they could not sail.",
+   "uw": "You want outside traders in your market and need them to trust it.",
+   "id": 1198,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Negotiating"
+   ],
+   "source_locator": "ch. 3",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Hop port to port with land in sight",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"The way it worked is that a ship would move from port to port, region to region, dropping off and picking up goods along the way, never straying far from land.\"\n\n\"This shows a circular, counterclockwise navigation of the sea that accommodated winds and currents\"",
+   "why": "The Phoenician traders Carthage came from didn't cross open water in one run. They worked the coast in a loop that went with the winds and currents, selling and buying at every stop. Each leg was short, and each port was a market.",
+   "uw": "You are planning a long push into new ground and want every step to pay for itself.",
+   "id": 1199,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Starting something"
+   ],
+   "source_locator": "ch. 1",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Two kings, one year",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"‘in the twentieth year of the rule of the sufetes in Carthage’\"\n\n\"These magistrates held the power of a king, but for a limited time.\"",
+   "why": "Carthage replaced its kings with two sufetes, elected each year from the aristocratic council, and an inscription dates itself by the new system. The office kept a king's power, split it between two people and put it on a clock.",
+   "uw": "You are designing the top job for a group that doesn't want a strongman.",
+   "id": 1200,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Understanding power"
+   ],
+   "source_locator": "ch. 2",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "No wine at the helm or on the bench",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"At Carthage, drinking alcohol was banned if you were working on pilot boats in the ports, if you were sitting as a judge and if you were trying to conceive a child\"",
+   "why": "The city imported Rhodian wine by the amphora and banned drinking in three places: on the harbour pilot boats, on the judge's bench and when a couple was trying for a child. The ancient source for the rule is Plato's Laws, Book II, which gives it as Carthaginian law.",
+   "uw": "You need a sobriety rule people will actually keep.",
+   "id": 1201,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. 2",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "A harbour that shows visitors nothing",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"‘for a double wall enclosed them, and there were gates by which merchant ships could pass from the first port to the city without traversing the dockyards’\"\n\n\"It was built up to a height that allowed the admiral to observe what was going on out at sea, but anyone approaching by water did not have a clear view of the inside of the port.\"",
+   "why": "Appian describes two harbours sharing one entrance closed with iron chains. Merchant ships used the rectangular port and passed into the city through gates. Warships sat in the circular port behind a double wall, 220 berths round an island, and the admiral's house on the island watched the sea while arriving ships saw nothing of the docks.",
+   "uw": "One site has to host visitors and keep sensitive work private.",
+   "id": 1202,
+   "tag": "DOCUMENTED",
+   "situations": [
+    "Strategy and competition"
+   ],
+   "source_locator": "ch. 11",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Build up when you can't build out",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"The African style of building was a very stable construction method and was innovative as it allowed for walls that could bear a substantial load, and for the buildings to be built higher.\"\n\n\"Carthage’s growth was constrained by geographical factors: the sea lay to the east, cemeteries to the north and southwest, and to the south, the Tophet.\"",
+   "why": "Hemmed in on every side, Carthage went up. Its builders set upright stone blocks at intervals and filled between them with rubble or mud brick, which carried several storeys. The Romans admired the method and called it 'African style'.",
+   "uw": "Your footprint is fixed and demand keeps growing.",
+   "id": 1203,
+   "tag": "ARCHAEOLOGY",
+   "situations": [
+    "Making things"
+   ],
+   "source_locator": "ch. 2",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Keep paying the mother temple",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"The fact that Carthage would continue to pay tribute to the temple of the god Melqart at Tyre throughout its 600-year existence makes it clear that this was a move with colonial intentions; an annual tithe points to a close and very specific relationship with the mother city.\"\n\n\"The young man had been on a mission to Tyre where he had taken the tribute to the great temple of Melqart from the wars in Sicily.\"",
+   "why": "Carthage sent an annual tithe to Melqart's temple at Tyre for six centuries, long after it outgrew Tyre. Malchus's son carried Sicilian war tribute there and finished the mission while his father was besieging Carthage.",
+   "uw": "An offshoot has outgrown its parent and wants to keep the tie on its own terms.",
+   "id": 1204,
+   "tag": "AUTHORS' READ",
+   "situations": [
+    "Starting something"
+   ],
+   "source_locator": "ch. 1; ch. 2",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Same goddess, two languages",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"Worshipped at this temple was a goddess presented in the inscription as both the Phoenician Astarte and the Etruscan Uni.\"\n\n\"The Etruscan texts are longer and the Phoenician translation is not literal but seems to convey the same meaning.\"",
+   "why": "Gold sheets nailed up at Pyrgi, the port of the Etruscan city of Caere, dedicate one temple to one goddess, called Astarte in Phoenician and Uni in Etruscan. The translation follows the meaning. Carthaginian merchants had a shrine of their own in an allied port.",
+   "uw": "You are building a partnership across languages and customs.",
+   "id": 1205,
+   "tag": "ARCHAEOLOGY",
+   "situations": [
+    "Persuading"
+   ],
+   "source_locator": "ch. 3",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Check the enemy's story against the ground",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"we know this act of mass sacrifice never appears in any of the physical evidence discovered to date – the infant cremations there are individual burials, not mass graves.\"\n\n\"This kind of mass sacrifice would also have caused a massive rupture in natural population growth that would have ultimately destroyed the city.\"",
+   "why": "Diodorus has 200 noble children thrown into a fire in a single day of panic. MacDonald runs two tests. The excavated Tophet holds individual burials only, and a city that did that would have wrecked its own birth rate.",
+   "uw": "The only account of a group comes from its enemies.",
+   "id": 1206,
+   "tag": "AUTHORS' READ",
+   "situations": [
+    "Seeing clearly"
+   ],
+   "source_locator": "ch. 5",
+   "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "Pick the general for war, the magistrate for office",
+   "book": "Carthage: A New History — Eve MacDonald",
+   "type": "mechanism",
+   "steal": "\"Here we can see that military duties were separated from the civic magistracies, which is unlike Rome where military leadership was predicated on holding a civil magistracy.\"\n\n\"A military commander could go into the civic magistracies but did not necessarily evolve out of them.\"",
+   "why": "In Rome you had to hold civil office before you could command an army. Carthage split the two tracks over time. Its general, the rab mahanet or head of the camp, was chosen for the war in front of him and held the job for that war, whatever his political career looked like.",
+   "uw": "Everyone assumes the person who runs the place should also lead the hard project.",
+   "id": 1207,
+   "tag": "AUTHORS' READ",
+   "situations": [
+    "Hiring and leading"
+   ],
+   "source_locator": "ch. 2",
+   "ripped_at": "2026-10-04"
   }
  ]
 }
