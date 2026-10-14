@@ -1,5 +1,5 @@
 ---
-book: "Fearful Pleasures"
+book: "Fearful Pleasures — A. E. Coppard"
 genre: "Horror & Weird"
 bookline: "Coppard's 1946 weird tales: doubling, disembodiment, and desire turned into mechanisms — what the mind does when it watches itself from outside."
 ---

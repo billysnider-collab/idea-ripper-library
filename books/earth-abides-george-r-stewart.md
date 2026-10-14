@@ -1,5 +1,5 @@
 ---
-book: "Earth Abides"
+book: "Earth Abides — George R. Stewart"
 genre: "Science Fiction"
 bookline: "Post-plague America through Ish's lifetime: what survives the end of the world isn't what you preserve, it's what the next generation can use."
 ---

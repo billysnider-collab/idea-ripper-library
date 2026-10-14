@@ -1,5 +1,5 @@
 ---
-book: "The Squares of the City"
+book: "The Squares of the City — John Brunner"
 genre: "Science Fiction"
 bookline: "A traffic consultant in a Latin American showplace city discovers its politics are moves in a real-life chess game — a manual for finding the hidden ruleset."
 ---

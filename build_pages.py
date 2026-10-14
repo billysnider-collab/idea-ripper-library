@@ -27,6 +27,14 @@ VERBATIM/SYNTHESIS pill: type == "passage" -> VERBATIM EXCERPT, else SYNTHESIS
 (the steal of a passage-type card is the book's own text; every other type is
 the ripper's distillation). Situation labels render only on cards whose data
 carries a `situations` list (plain chips; situation pages are Phase 2).
+
+Wave 1 (2026-10-14, ripping-method program): honest quote styling (synthesis
+steals render as plain paragraphs labeled "In our words", never blockquotes);
+source classification (book / thesis / military report, from shelf genre +
+bookline institution) driving a books-only homepage feed, an Archives shelf,
+source pills, a ledger source filter, and a `src` key in search-index.json;
+a compact Start Here block; corrected command-bar ID hint (#c1-#c<max>);
+problem-word search placeholder + shelf links on zero results.
 """
 import argparse
 import datetime as _dt
@@ -150,8 +158,18 @@ h2.sect .cnt{color:var(--text-secondary);letter-spacing:.05em}
 .vpill{margin-left:auto}
 .vpill{font-family:var(--font-mono);font-size:.68rem;font-weight:700;letter-spacing:.12em;border:1px solid var(--border-strong);padding:.18rem .5rem;text-transform:uppercase}
 .vpill.verbatim{background:var(--text-primary);color:var(--bg-canvas)}
-blockquote.theline{font-family:var(--font-serif);font-size:1.55rem;line-height:1.4;margin:.4rem 0 .8rem;quotes:"\u201c" "\u201d"}
-.dossier blockquote.theline{font-size:1.8rem}
+.theline{font-family:var(--font-serif);font-size:1.55rem;line-height:1.4;margin:.4rem 0 .8rem}
+blockquote.theline{quotes:"\u201c" "\u201d"}
+.dossier .theline{font-size:1.8rem}
+.srcpill{font-family:var(--font-mono);font-size:.66rem;font-weight:700;letter-spacing:.12em;border:1px solid var(--border-subtle);color:var(--text-secondary);background:var(--bg-subtle);padding:.16rem .45rem;text-transform:uppercase;white-space:nowrap}
+.relcard .srcpill{display:inline-block;margin-left:.45rem}
+td .srcpill{margin-left:.4rem}
+.cb-src .srcpill{margin-left:.2rem}
+.starthere{border:1.5px solid var(--border-strong);background:var(--bg-subtle);padding:.85rem 1rem;margin:0 0 1.25rem}
+.starthere .shk{font-family:var(--font-mono);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-signal);display:block;margin-bottom:.3rem}
+.starthere p{margin:0;font-size:.99rem}
+.srcfilter{display:flex;gap:.5rem;flex-wrap:wrap;margin:0 0 1.25rem}
+.sfilter.on{background:var(--text-primary);color:var(--bg-canvas)}
 .attr{font-family:var(--font-mono);font-size:.82rem;color:var(--text-secondary);margin:.4rem 0 .9rem}
 .attr a{color:var(--text-primary)}
 .meta-block{border-top:1px dashed var(--border-subtle);padding-top:.8rem;margin-top:.4rem}
@@ -201,8 +219,8 @@ table.ledger td.lshelf{font-family:var(--font-mono);font-size:.72rem;color:var(-
 footer.sitefoot{border-top:2px solid var(--border-strong);margin-top:2.5rem;padding:1.2rem 0 0;font-family:var(--font-mono);font-size:.78rem;color:var(--text-secondary)}
 footer.sitefoot a{color:var(--text-primary)}
 @media(max-width:560px){
-  blockquote.theline{font-size:1.3rem}
-  .dossier blockquote.theline{font-size:1.45rem}
+  .theline{font-size:1.3rem}
+  .dossier .theline{font-size:1.45rem}
   .prevcard,.dossier{box-shadow:3px 3px 0 var(--border-strong)}
   h1.mission{font-size:1.55rem}
   .cb-book{display:none}
@@ -308,6 +326,42 @@ def main():
     def pill_label(card):
         return "Verbatim excerpt" if card["type"] == "passage" else "Synthesis"
 
+    # Source classification (Wave 1, 2026-10-14): a card's source is a BOOK
+    # unless its shelf genre is Thesis; a thesis from a military institution
+    # (bookline carries the institution) is a MILITARY REPORT, else a THESIS.
+    MIL_INST = ("Naval Postgraduate School", "Joint Advanced Warfighting School",
+                "National Defense University", "Command and General Staff College",
+                "Air University", "School of Advanced Air and Space Studies",
+                "Air Force Institute of Technology")
+
+    def src_kind(b):
+        if b["genre"] != "Thesis":
+            return "book"
+        bl = b.get("bookline", "")
+        return "report" if any(m in bl for m in MIL_INST) else "thesis"
+
+    src_of = {b["book"]: src_kind(b) for b in books}
+    SRC_LABEL = {"thesis": "Thesis", "report": "Military report"}
+
+    def src_pill(card):
+        k = src_of[card["book"]]
+        if k == "book":
+            return ""
+        return '<span class="srcpill">%s</span>' % SRC_LABEL[k]
+
+    def line_el(c):
+        """The steal, honestly framed: blockquote only for verbatim quotes."""
+        if pill(c) == "verbatim":
+            return '<blockquote class="theline">%s</blockquote>' % esc(c["steal"])
+        return '<p class="theline inwords">%s</p>' % esc(c["steal"])
+
+    def attr_html(c, bt, ba):
+        inner = '<a href="%s">%s</a>%s' % (esca(book_url(c["book"])), esc(bt),
+                                           (" (%s)" % esc(ba)) if ba else "")
+        if pill(c) == "verbatim":
+            return '<p class="attr">\u2014 Source: %s</p>' % inner
+        return '<p class="attr">\u2014 In our words \u00b7 Source: %s</p>' % inner
+
     marker = build_marker()
     css_href = write_asset(PAPER_CSS)
     build_date = _dt.date.today().isoformat()
@@ -364,16 +418,15 @@ def main():
             '<article class="dossier">'
             '<div class="pc-top"><span class="badge">Card #c%d</span>'
             '<span class="stamp">IR // #c%d</span>'
-            '<span class="vpill %s">%s</span></div>'
-            '<blockquote class="theline">%s</blockquote>'
-            '<p class="attr">\u2014 Source: <a href="%s">%s</a>%s</p>'
+            '<span class="vpill %s">%s</span>%s</div>'
+            '%s'
+            '%s'
             '<div class="meta-block">'
             '<span class="uwk">[Use when]</span><p class="uw">%s</p>'
             '<span class="whyk">[Why it matters]</span><p class="why">%s</p>'
             '%s</div></article>'
-            % (cid, cid, pill(c), esc(pill_label(c)), esc(line),
-               esca(book_url(c["book"])), esc(bt),
-               (" (%s)" % esc(ba)) if ba else "", esc(c["uw"]), esc(c["why"]), sits))
+            % (cid, cid, pill(c), esc(pill_label(c)), src_pill(c),
+               line_el(c), attr_html(c, bt, ba), esc(c["uw"]), esc(c["why"]), sits))
         page.append(
             '<div class="sharerow">'
             '<button type="button" class="btn" id="copyx">Copy for X / Citation</button>'
@@ -386,18 +439,18 @@ def main():
             page.append('<h2 class="sect">Related principles</h2><div class="relgrid">')
             for r in rel:
                 rc = by_id[r]
-                page.append('<a class="relcard" href="%s"><span class="rid">#c%d</span>'
+                page.append('<a class="relcard" href="%s"><span class="rid">#c%d</span>%s'
                             '<span class="rline">%s</span><span class="ruw">%s</span></a>'
-                            % (canon(r), r, esc(trunc(rc["steal"], 140)), esc(trunc(rc["uw"], 110))))
+                            % (canon(r), r, src_pill(rc), esc(trunc(rc["steal"], 140)), esc(trunc(rc["uw"], 110))))
             page.append('</div>')
         sibs = [o for o in cards if o["book"] == c["book"] and o["id"] != cid]
         sibs.sort(key=lambda o: o["id"])
         if sibs:
             page.append('<h2 class="sect">More from %s</h2><div class="relgrid">' % esc(bt))
             for rc in sibs[:3]:
-                page.append('<a class="relcard" href="%s"><span class="rid">#c%d</span>'
+                page.append('<a class="relcard" href="%s"><span class="rid">#c%d</span>%s'
                             '<span class="rline">%s</span><span class="ruw">%s</span></a>'
-                            % (canon(rc["id"]), rc["id"], esc(trunc(rc["steal"], 140)),
+                            % (canon(rc["id"]), rc["id"], src_pill(rc), esc(trunc(rc["steal"], 140)),
                                esc(trunc(rc["uw"], 110))))
             page.append('</div>')
         page.append('<footer class="sitefoot"><a href="/">Idea Ripper archive</a> \u00b7 '
@@ -449,20 +502,33 @@ def main():
             fh.write(stub)
 
     # ---------------- homepage ----------------
-    latest = [by_id[i] for i in ids_sorted[-6:]][::-1]
-    prev_html = []
-    for c in latest:
+    def prev_card(c):
         bt, ba = split_book(c["book"])
-        prev_html.append(
+        return (
             '<article class="prevcard"><div class="pc-top"><span class="badge">Card #c%d</span>'
-            '<span class="vpill %s">%s</span></div>'
-            '<blockquote class="theline">%s</blockquote>'
-            '<p class="attr">\u2014 Source: <a href="%s">%s</a>%s</p>'
+            '<span class="vpill %s">%s</span>%s</div>'
+            '%s'
+            '%s'
             '<span class="uwk">[Use when]</span><p class="uw">%s</p>'
             '<a class="openfile" href="%s">[Open file #c%d -&gt;]</a></article>'
-            % (c["id"], pill(c), esc(pill_label(c)), esc(c["steal"]),
-               esca(book_url(c["book"])), esc(bt), (" (%s)" % esc(ba)) if ba else "",
+            % (c["id"], pill(c), esc(pill_label(c)), src_pill(c),
+               line_el(c), attr_html(c, bt, ba),
                esc(c["uw"]), canon(c["id"]), c["id"]))
+
+    # Wave 1 feed rule: the homepage feed carries BOOKS ONLY; the latest
+    # non-book cards (theses + military reports) get the Archives shelf.
+    latest = [by_id[i] for i in ids_sorted[::-1]
+              if src_of[by_id[i]["book"]] == "book"][:6]
+    archive_latest = [by_id[i] for i in ids_sorted[::-1]
+                      if src_of[by_id[i]["book"]] != "book"][:6]
+    prev_html = [prev_card(c) for c in latest]
+    sample = None
+    _row = ds.get("rip_of_the_week") or {}
+    if isinstance(_row.get("id"), int) and _row["id"] in by_id \
+            and src_of[by_id[_row["id"]]["book"]] == "book":
+        sample = by_id[_row["id"]]
+    if sample is None and latest:
+        sample = latest[0]
     pills = []
     for g in genre_order:
         gc = sum(1 for c in cards if genre_of[c["book"]] == g)
@@ -495,26 +561,47 @@ def main():
     home.append('<h1 class="mission">One idea from a book. The line, and when to use it.</h1>')
     home.append('<p class="sub">%d battle-tested mental models, tactical quotes, and '
                 'strategic principles extracted from books.</p>' % n)
+    if sample is not None:
+        home.append(
+            '<section class="starthere" id="start-here"><span class="shk">Start here</span>'
+            '<p>New here? Idea Ripper pulls one usable idea out of a book: the line '
+            'worth keeping, why it matters, and the moment you would use it. The '
+            'fastest way in is by situation, so pick the shelf that matches your '
+            'problem below, or open one card now: <a href="%s">Card #c%d, from '
+            '%s</a>.</p></section>'
+            % (canon(sample["id"]), sample["id"],
+               esc(split_book(sample["book"])[0])))
     home.append(
         '<form class="cmdbar" id="commandbar" action="#" method="get">'
-        '<label for="cb-input">Direct access // Enter card # or keyword</label>'
+        '<label for="cb-input">Direct access // Enter card #c1\u2013#c%d or keyword</label>'
         '<div class="cmdrow"><input id="cb-input" type="text" autocomplete="off" '
-        'placeholder="Type #402, \u201cnegotiation\u201d, \u201cGreene\u201d\u2026"/>'
+        'placeholder="Search a problem (\u201cfiring\u201d, \u201cenvy\u201d, '
+        '\u201cpricing\u201d) or a book\u2026"/>'
         '<button class="btn" type="submit">[Go -&gt;]</button></div>'
-        '<div class="cb-results" id="cb-results" hidden></div></form>')
+        '<div class="cb-results" id="cb-results" hidden></div></form>'
+        % ids_sorted[-1])
     home.append('<div class="headrow"><button type="button" class="btn ghost randomcard">'
                 '[Random card \u21bb]</button>'
                 '<a class="btn ghost" href="/ledger/">[Full ledger]</a></div>')
-    home.append('<h2 class="sect">Field-tested by situation:</h2><div class="pills">%s</div>'
+    home.append('<h2 class="sect" id="situations">Field-tested by situation:</h2><div class="pills">%s</div>'
                 % "".join(pills))
-    home.append('<h2 class="sect">Latest dispatches <span class="cnt">// last 6 additions</span></h2>')
+    home.append('<h2 class="sect">Latest dispatches <span class="cnt">// last 6 additions, from books</span></h2>')
     home.extend(prev_html)
+    if archive_latest:
+        home.append('<h2 class="sect">From the Archives: Field Reports &amp; Theses '
+                    '<span class="cnt">// last %d non-book additions</span></h2>'
+                    % len(archive_latest))
+        home.extend(prev_card(c) for c in archive_latest)
     home.append('<h2 class="sect">Browse by shelf</h2><div class="shelfgrid">%s</div>'
                 % "".join(shelf_boxes))
     home.append('<footer class="sitefoot"><a href="/ledger/">Full ledger</a> \u00b7 '
                 '<a href="https://x.com/IdeaRipper">@IdeaRipper on X</a> \u00b7 '
                 '%d cards \u00b7 Machine-assisted, hand-curated with the Idea Ripper pipeline</footer>' % n)
     home.append('</div>')
+    _shelf_js = sorted(((sum(1 for c in cards if genre_of[c["book"]] == g), g)
+                        for g in genre_order), reverse=True)[:3]
+    home.append('<script>var SHELVES=%s;</script>'
+                % json.dumps([[slugify(g), g] for _cnt, g in _shelf_js]))
     home.append(
         '<script>(function(){'
         'var idx=null,loading=false;'
@@ -532,18 +619,25 @@ def main():
         'function render(list,note){if(!list.length&&!note){res.hidden=true;res.innerHTML="";return;}'
         'res.hidden=false;var h="";list.forEach(function(e){'
         'h+=\'<a class="cb-hit" href="\'+canon(e)+\'"><span class="cb-id">#c\'+e.i+\'</span>\''
-        '+\'<span class="cb-line"></span><span class="cb-book"></span></a>\';});'
+        '+\'<span class="cb-line"></span><span class="cb-book"></span><span class="cb-src"></span></a>\';});'
         'if(note)h+=\'<p class="cb-note">\'+note+\'</p>\';res.innerHTML=h;'
         'var rows=res.querySelectorAll(".cb-hit");list.forEach(function(e,k){'
         'rows[k].querySelector(".cb-line").textContent=e.l;'
-        'rows[k].querySelector(".cb-book").textContent=e.b;});}'
+        'rows[k].querySelector(".cb-book").textContent=e.b;'
+        'var sp=rows[k].querySelector(".cb-src");'
+        'if(e.src&&e.src!=="book"){sp.innerHTML=\'<span class="srcpill">\'+'
+        '(e.src==="report"?"Military report":"Thesis")+\'</span>\';}});}'
+        'function zeroNote(q){var links=(window.SHELVES||[]).map(function(s){'
+        'return \'<a href="/ledger/#genre-\'+s[0]+\'">\'+s[1]+\'</a>\';}).join(" \u00b7 ");'
+        'return "No cards match \u201c"+q+"\u201d. Browse a shelf instead: "+links+'
+        '" \u00b7 or <a href=\'/ledger/\'>open the full ledger</a>.";}'
         'function search(q){q=q.trim().toLowerCase();if(!idx||q.length<2){render([]);return;}'
         'var ws=q.split(/\\s+/),out=[];'
         'for(var k=0;k<idx.length&&out.length<6;k++){var e=idx[k],'
         't=(e.l+" "+e.u+" "+e.b+" "+(e.title||"")).toLowerCase(),ok=true;'
         'for(var j=0;j<ws.length;j++){if(t.indexOf(ws[j])<0){ok=false;break;}}'
         'if(ok)out.push(e);}'
-        'render(out,out.length?"":"No cards match \u201c"+q+"\u201d.");}'
+        'render(out,out.length?"":zeroNote(q));}'
         'inp.addEventListener("input",function(){var v=inp.value.trim();'
         'var m=/^#?c?(\\d+)$/i.exec(v);'
         'if(m&&idx){var id=+m[1],hit=null;for(var k=0;k<idx.length;k++)if(idx[k].i===id){hit=idx[k];break;}'
@@ -575,6 +669,11 @@ def main():
     led.append('<h1 class="mission">The ledger</h1>')
     led.append('<p class="sub">Every card in the archive \u2014 %d \u2014 in shelf order. '
                'Each row opens the full file.</p>' % n)
+    led.append('<div class="srcfilter" role="group" aria-label="Filter the ledger by source">'
+               '<button type="button" class="btn ghost sfilter on" data-f="all">All</button>'
+               '<button type="button" class="btn ghost sfilter" data-f="book">Books</button>'
+               '<button type="button" class="btn ghost sfilter" data-f="archive">'
+               'Reports &amp; Theses</button></div>')
     books_by_genre = {}
     for b in books:
         books_by_genre.setdefault(b["genre"], []).append(b)
@@ -593,14 +692,33 @@ def main():
             for j, c in enumerate(bc):
                 idattr = ' id="book-%s"' % esca(anchor) if j == 0 else ""
                 bt, _ba = split_book(c["book"])
-                led.append('<tr%s><td class="lid"><a href="%s">#c%d</a></td>'
-                           '<td><a href="%s">%s</a></td><td class="lbook">%s</td>'
+                led.append('<tr%s data-src="%s"><td class="lid"><a href="%s">#c%d</a></td>'
+                           '<td><a href="%s">%s</a></td><td class="lbook">%s%s</td>'
                            '<td class="lshelf">%s</td></tr>'
-                           % (idattr, canon(c["id"]), c["id"], canon(c["id"]),
-                              esc(trunc(c["steal"], 60)), esc(bt), esc(g)))
+                           % (idattr, src_of[c["book"]], canon(c["id"]), c["id"], canon(c["id"]),
+                              esc(trunc(c["steal"], 60)), esc(bt), src_pill(c), esc(g)))
         led.append('</tbody></table></div>')
     led.append('<footer class="sitefoot"><a href="/">Idea Ripper archive</a> \u00b7 '
                '%d cards \u00b7 Machine-assisted, hand-curated</footer>' % n)
+    led.append(
+        '<script>(function(){'
+        'var btns=document.querySelectorAll(".sfilter");'
+        'function apply(f){btns.forEach(function(b){'
+        'b.classList.toggle("on",b.getAttribute("data-f")===f);});'
+        'document.querySelectorAll("table.ledger tbody tr").forEach(function(tr){'
+        'var s=tr.getAttribute("data-src");'
+        'var show=f==="all"||s===f||(f==="archive"&&(s==="thesis"||s==="report"));'
+        'tr.style.display=show?"":"none";});'
+        'document.querySelectorAll("h2.sect").forEach(function(h){'
+        'var w=h.nextElementSibling;'
+        'if(!w||!w.classList.contains("ledwrap"))return;'
+        'var any=false;'
+        'w.querySelectorAll("tbody tr").forEach(function(tr){'
+        'if(tr.style.display!=="none")any=true;});'
+        'h.style.display=any?"":"none";w.style.display=any?"":"none";});}'
+        'btns.forEach(function(b){b.addEventListener("click",function(){'
+        'apply(b.getAttribute("data-f"));});});'
+        '})();</script>')
     led.append('</div></body></html>')
     os.makedirs(os.path.join(BASE, "ledger"), exist_ok=True)
     with open(os.path.join(BASE, "ledger", "index.html"), "w", encoding="utf-8") as fh:
@@ -627,6 +745,7 @@ def main():
             "l": trunc(c["steal"], 200), "u": trunc(c["uw"], 160), "b": bt,
             "kind": "rip", "id": cid, "title": c["title"], "steal": c["steal"],
             "why": c["why"], "uw": c["uw"], "type": c["type"], "book": bt,
+            "src": src_of[c["book"]],
             "author": ba, "slug": key_of.get(c["book"]) or slugify(c["book"]),
             "situations": c.get("situations") or [],
         })

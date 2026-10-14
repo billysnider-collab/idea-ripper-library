@@ -1159,27 +1159,27 @@
    "bookline": "preprint thesis — arXiv preprint, 2015. Full text: https://archive.org/details/arxiv-1502.06256"
   },
   {
-   "book": "Cugel's Saga",
+   "book": "Cugel's Saga — Jack Vance",
    "genre": "Fantasy",
    "bookline": "Jack Vance's Dying Earth rogue: Cugel the Clever cons his way across a dying world — a field manual in turning disadvantage into leverage."
   },
   {
-   "book": "Earth Abides",
+   "book": "Earth Abides — George R. Stewart",
    "genre": "Science Fiction",
    "bookline": "Post-plague America through Ish's lifetime: what survives the end of the world isn't what you preserve, it's what the next generation can use."
   },
   {
-   "book": "The Squares of the City",
+   "book": "The Squares of the City — John Brunner",
    "genre": "Science Fiction",
    "bookline": "A traffic consultant in a Latin American showplace city discovers its politics are moves in a real-life chess game — a manual for finding the hidden ruleset."
   },
   {
-   "book": "Software",
+   "book": "Software — Rudy Rucker",
    "genre": "Science Fiction",
    "bookline": "Cyberpunk 1982: dying roboticist Cobb Anderson gets the offer of immortality from the robots he created — a study in lures, doubles, and what upload really costs."
   },
   {
-   "book": "Fearful Pleasures",
+   "book": "Fearful Pleasures — A. E. Coppard",
    "genre": "Horror & Weird",
    "bookline": "Coppard's 1946 weird tales: doubling, disembodiment, and desire turned into mechanisms — what the mind does when it watches itself from outside."
   },
@@ -18480,7 +18480,7 @@
   },
   {
    "title": "Replay the predecessor's exploit: Cugel and Weamish's carrier",
-   "book": "Cugel's Saga",
+   "book": "Cugel's Saga — Jack Vance",
    "type": "mechanism",
    "steal": "Before you design your own move, reverse-engineer the exploit your predecessor already ran.",
    "why": "Cugel invents nothing: he inspects Weamish's wheeled carrier, finds the peg that releases its pivoting false top (real cases below, mud-filled decoys on top), and reruns the same theft on the next shipment. Systems confess through their tools faster than through their people.",
@@ -18495,7 +18495,7 @@
   },
   {
    "title": "The auditor as leverage: shall I put the question to Master Soldinck",
-   "book": "Cugel's Saga",
+   "book": "Cugel's Saga — Jack Vance",
    "type": "mechanism",
    "steal": "Fix a padded bill by naming the third party who could inspect it, not by arguing the numbers.",
    "why": "When Twango pads Cugel's account with illegible invoices, Cugel only wonders aloud, \"from sheer idle curiosity, shall I put the question to Master Soldinck?\" — and the \"misplaced decimal\" turns up at once. The threat of inspection does the work; the leverage is borrowed and never spent.",
@@ -18510,7 +18510,7 @@
   },
   {
    "title": "Security theater as misdirection: the wax-seal ceremony",
-   "book": "Cugel's Saga",
+   "book": "Cugel's Saga — Jack Vance",
    "type": "mechanism",
    "steal": "Audit the gaps between checkpoints, because whoever designs the ceremony decides where everyone looks.",
    "why": "Cugel wraps the shipment in wax seals, strapped cases and a set procession, then lets the false-top carrier work in the one unwatched stretch of corridor. Visible controls attract attention; the loss happens in the handoffs between them.",
@@ -18525,7 +18525,7 @@
   },
   {
    "title": "Play both sides of the trade: Cugel as Soldinck and Fuscule",
-   "book": "Cugel's Saga",
+   "book": "Cugel's Saga — Jack Vance",
    "type": "mechanism",
    "steal": "Where buyer and seller can't see each other, broker the gap and disclose your spread, or you are running Cugel's fraud.",
    "why": "Cugel tells Fuscule \"I am Master Soldinck\" and tells Soldinck \"I am Fuscule,\" pocketing the difference on the worm deal — which works only because each side verifies its own half and nobody checks the middle. Brokerage uses the same mechanics; disclosure is the whole difference.",
@@ -18540,7 +18540,7 @@
   },
   {
    "title": "Hide value in plain sight: the Spatterlight hat-clasp",
-   "book": "Cugel's Saga",
+   "book": "Cugel's Saga — Jack Vance",
    "type": "mechanism",
    "steal": "Protect a valuable by displaying it as something ordinary instead of hiding it.",
    "why": "Cugel wires the Pectoral Sky-break Spatterlight to his hat, where it seems \"only a hat-clasp\": searchers hunt for hidden treasure, and every lockbox or false bottom tells them where to dig. An object in plain, mundane use gives them nothing to pattern-match.",
@@ -18555,7 +18555,7 @@
   },
   {
    "title": "Coins into arrowheads: value is what the next generation can use",
-   "book": "Earth Abides",
+   "book": "Earth Abides — George R. Stewart",
    "type": "mechanism",
    "steal": "Hand down what your successors can use, in the form they will use it, not the artifact you revere.",
    "why": "The tribe's young hunter pounds old coins into arrowheads, so the old world's counted money survives only as raw material. Ish preserved knowledge in its old forms; what lasted was what fit the next generation's hands.",
@@ -18570,7 +18570,7 @@
   },
   {
    "title": "The Year of the Schoolteaching: teach what the environment rewards",
-   "book": "Earth Abides",
+   "book": "Earth Abides — George R. Stewart",
    "type": "mechanism",
    "steal": "Teach what the learner's environment will actually test, or expect the lesson to lapse.",
    "why": "Ish's school (reading, writing, arithmetic, geography) fades while hunting skills thrive, because the new world rewards only what keeps people fed. Learner incentives outrank teacher effort.",
@@ -18585,7 +18585,7 @@
   },
   {
    "title": "The hammer and the bow: the founder's tools become relics",
-   "book": "Earth Abides",
+   "book": "Earth Abides — George R. Stewart",
    "type": "contradiction",
    "steal": "Separate your mission from your favorite tool, and let your successors swap the tool.",
    "why": "Ish's four-pound single-jack hammer ties him to the old world, while the young men prefer bows to rifles that sometimes just go \"click.\" The mission (survival, continuity) passes down; the founder's instrument survives only as a relic.",
@@ -18600,7 +18600,7 @@
   },
   {
    "title": "Men go and come, but earth abides: decide on the long timescale",
-   "book": "Earth Abides",
+   "book": "Earth Abides — George R. Stewart",
    "type": "concept",
    "steal": "Judge a heavy decision on the longest relevant timescale, not your ego's.",
    "why": "Dying, Ish looks at the unchanged hills and stops grading his life by what he built: \"Men go and come, but earth abides.\" Most strategic anguish comes from scoring yourself on a clock the world doesn't use.",
@@ -18615,7 +18615,7 @@
   },
   {
    "title": "Find the hidden game board",
-   "book": "The Squares of the City",
+   "book": "The Squares of the City — John Brunner",
    "type": "mechanism",
    "steal": "When the players in a system look irrational, stop analyzing personalities and reconstruct the game whose rules make their moves legal.",
    "why": "Hakluyt's confusion in Vados ends when he sees the city's factions as pieces in a chess game played with real lives; the chaos becomes a sequence of legal moves. A ruleset predicts the next move better than any theory of motives.",
@@ -18630,7 +18630,7 @@
   },
   {
    "title": "Vagueness as a tactic: the stall is the strategy",
-   "book": "The Squares of the City",
+   "book": "The Squares of the City — John Brunner",
    "type": "mechanism",
    "steal": "Treat a polite stall as the other side's move, and ask who gains from your waiting.",
    "why": "Hakluyt meets vagueness at every practical turn and slowly realizes the delay is deliberate: it keeps the expert idle while the real game plays out. Courteous inaction is still a move.",
@@ -18645,7 +18645,7 @@
   },
   {
    "title": "Hired to fail: the consultant as cover",
-   "book": "The Squares of the City",
+   "book": "The Squares of the City — John Brunner",
    "type": "mechanism",
    "steal": "Before accepting a mandate, verify that the sponsor wants the problem solved rather than seen to be solved.",
    "why": "Hakluyt, a famous foreign traffic expert, is brought in to fix a showplace city's traffic problem, but the power structure needs nothing to change, so his reputation serves as proof that something is being done. The fee is the same either way; the outcome is not.",
@@ -18660,7 +18660,7 @@
   },
   {
    "title": "The tailored lure: offer the dying man immortality",
-   "book": "Software",
+   "book": "Software — Rudy Rucker",
    "type": "mechanism",
    "steal": "Build the pitch around the one specific gap in the other person's life, not around your biggest feature.",
    "why": "The boppers don't offer the old, sick Cobb Anderson money; they offer immortality: \"We want to make you immortal, Dr. Anderson.\" A pitch lands when it names what the listener lacks, so be wary when a pitch to you is shaped around your own gap.",
@@ -18675,7 +18675,7 @@
   },
   {
    "title": "That's not immortality: read what the forever is in",
-   "book": "Software",
+   "book": "Software — Rudy Rucker",
    "type": "contradiction",
    "steal": "Before accepting a transformative offer, ask what substrate it runs on and who owns it.",
    "why": "The boppers' immortality means becoming \"a piece of software in the big boppers' memory banks\": a copy, on their hardware, under their control. The price hides in the gap between the pitch (live forever) and the mechanism (run on our servers).",
@@ -18690,7 +18690,7 @@
   },
   {
    "title": "The double: remove the person, keep the interface",
-   "book": "Software",
+   "book": "Software — Rudy Rucker",
    "type": "mechanism",
    "steal": "In any high-trust handoff, verify identity with a tell that only the original can produce.",
    "why": "Anderson2, Cobb's robot double, offers to stand in for him unnoticed, yet Cobb spots its flat, glassy eyes. Substitution works because people deal with the interface, not the person, so pre-agreed tells are the defense.",
@@ -18705,7 +18705,7 @@
   },
   {
    "title": "The scion: continuity through replication, not preservation",
-   "book": "Software",
+   "book": "Software — Rudy Rucker",
    "type": "concept",
    "steal": "Make something outlast you by copying its pattern into a new carrier before the old one fails, not by maintaining the original.",
    "why": "Boppers face disassembly after ten months unless they have built a scion, a new body carrying their pattern, and Ralph Numbers has survived by doing it thirty-six times. Archives rot; working copies (students, forks, successors) persist.",
@@ -18720,7 +18720,7 @@
   },
   {
    "title": "The stranger in the room is you",
-   "book": "Fearful Pleasures",
+   "book": "Fearful Pleasures — A. E. Coppard",
    "type": "mechanism",
    "steal": "Before you prosecute the betrayal, check whether the rival is your own detached self.",
    "why": "Codling sees his wife Mildred with a man in the rocking chair and builds the infidelity case — then the story pulls the floor out: the man is Codling himself, the part of him that drifted loose (\"of course, he was upstairs with Mildred, it was himself, the other bit of him\"). The jealousy was real and also wrong. The tale ends not with exposure but with a birth: \"We'll call him Gabriel.\" Suspicions feel like evidence until the frame widens enough to include you.",
@@ -18735,7 +18735,7 @@
   },
   {
    "title": "Nothing for nothing: Tom Toole's rule",
-   "book": "Fearful Pleasures",
+   "book": "Fearful Pleasures — A. E. Coppard",
    "type": "concept",
    "steal": "Price every free offer by finding where the cost will be collected before you accept it.",
    "why": "Tom Toole, sixty and chasing his lost youth, holds that it is \"seldom possible to get something in return for quite nothing,\" and that even when you do, the danger matches the delight. Something-for-nothing is a loan against undisclosed collateral.",

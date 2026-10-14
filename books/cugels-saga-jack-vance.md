@@ -1,5 +1,5 @@
 ---
-book: "Cugel's Saga"
+book: "Cugel's Saga — Jack Vance"
 genre: "Fantasy"
 bookline: "Jack Vance's Dying Earth rogue: Cugel the Clever cons his way across a dying world — a field manual in turning disadvantage into leverage."
 ---

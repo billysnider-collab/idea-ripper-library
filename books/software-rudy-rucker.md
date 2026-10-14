@@ -1,5 +1,5 @@
 ---
-book: "Software"
+book: "Software — Rudy Rucker"
 genre: "Science Fiction"
 bookline: "Cyberpunk 1982: dying roboticist Cobb Anderson gets the offer of immortality from the robots he created — a study in lures, doubles, and what upload really costs."
 ---
