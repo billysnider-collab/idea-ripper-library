@@ -253,6 +253,11 @@
    "bookline": "Epic fantasy opener — farm kids pulled into a war against a returning Dark One."
   },
   {
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "genre": "Fantasy",
+   "bookline": "Tolkien's 1937 quest novel — a comfort-loving hobbit is politeness-trapped into a burglar's contract on a dragon-guarded hoard, and every power around the gold starts eating its owner."
+  },
+  {
    "book": "Myths from Mesopotamia — Stephanie Dalley",
    "genre": "Myth & Epic",
    "bookline": "Akkadian myths in translation — creation, flood, descent, divine politics."
@@ -331,6 +336,11 @@
    "book": "The Master and Margarita — Mikhail Bulgakov",
    "genre": "Literary Fiction",
    "bookline": "Soviet satire + devil comedy; portable moral tech."
+  },
+  {
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "genre": "Literary Fiction",
+   "bookline": "Dickens's 1859 novel of London and Paris in the French Revolution — how cruelty trains its own executioners, and what survival costs the people inside the machine."
   },
   {
    "book": "Ethics, Eugenics, and Public Education in Georgia (1910-1965) — Aaron Gerald Guest Sr.",
@@ -1247,6 +1257,11 @@
    "book": "Trade Outside the Box — Brent Donnelly",
    "genre": "Nonfiction",
    "bookline": "Trading and decision-making — veteran FX trader Brent Donnelly borrows from poker, psychology and physics to show how professionals think about what others think, read market tells, size risk and pick games they can win."
+  },
+  {
+   "book": "Common Sense — Thomas Paine",
+   "genre": "Nonfiction",
+   "bookline": "Paine's 1776 pamphlet — the case for American independence: government as a necessary evil, the absurdity of hereditary rule, and a costed plan for a new nation."
   }
  ],
  "cards": [
@@ -18783,6 +18798,608 @@
    "why": "A 2015 Oxford thesis that prefigures the subword-tokenization era (BPE, SentencePiece) — it argued a decade early that models must learn word-internal structure to handle morphologically rich languages.",
    "uw": "Don't model the surface — learn the substructure; the regularities that fix sparsity live inside the unit everyone treats as atomic.",
    "id": 1434
+  },
+  {
+   "title": "Dead Inventory Eats Its Own Guard",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "concept",
+   "steal": "Wealth locked in a vault stops being a tool and becomes a master that claims its owner's life as guard. The keeper neither uses the asset nor sleeps, yet kills over the smallest missing piece.",
+   "why": "Smaug and Thorin both die guarding metal they cannot eat. Hoarding idle assets turns your waking hours into unpaid sentry duty.",
+   "uw": "When your team spends more hours defending legacy code or unshipped IP than building, open-source or license the dead stock immediately.",
+   "id": 1435,
+   "kind": "synthesis",
+   "src_loc": "Ch. 12",
+   "situations": [
+    "Making things"
+   ]
+  },
+  {
+   "title": "Politeness Traps You Into Signing Away Safety",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "mechanism",
+   "steal": "Predatory guests weaponize a host's manners by acting as if an unasked favor is already granted. Refusing feels ruder than complying, so the host surrenders the house before hearing the terms.",
+   "why": "Bilbo empties his pantry and signs a lethal contract just to avoid seeming rude. Saving face in the foyer costs your skin outside.",
+   "uw": "When a client or partner acts as if an unapproved scope expansion is settled, stop the meeting and state your refusal plainly.",
+   "id": 1436,
+   "kind": "synthesis",
+   "src_loc": "Ch. 1",
+   "situations": [
+    "Persuading"
+   ]
+  },
+  {
+   "title": "Status Insults Buy Cheap Risk From Amateurs",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "mechanism",
+   "steal": "He suddenly felt he would go without bed and breakfast to be thought fierce.",
+   "why": "A bruised ego makes a comfortable amateur volunteer for lethal work without checking the pay or the odds. Pride buys your labor dirt cheap.",
+   "uw": "When a senior colleague questions your grit to bait you into a failing project, demand the resource budget in writing before accepting.",
+   "id": 1437,
+   "kind": "quote",
+   "src_loc": "Ch. 1",
+   "situations": [
+    "Seeing clearly"
+   ]
+  },
+  {
+   "title": "Bosses Outsource Danger Behind Flattering Job Titles",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "mechanism",
+   "steal": "As Thorin carefully explained, Mr. Baggins was still officially their expert burglar and investigator. If he liked to risk a light, that was his affair.",
+   "why": "Principals hide behind the contractor's specialist title at the tunnel mouth, taking a cut of the upside while disavowing the fatal risk.",
+   "uw": "When management calls you the sole subject-matter expert right before a risky launch, require an executive to co-sign the deployment checklist.",
+   "id": 1438,
+   "kind": "quote",
+   "src_loc": "Ch. 13",
+   "situations": [
+    "Understanding power"
+   ]
+  },
+  {
+   "title": "The Contractor Who Saves You Owns The Table",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "mechanism",
+   "steal": "When principals outsource every hard problem to one specialist, actual authority migrates to the operator holding the secret tools. The bosses keep their titles, but the contractor decides the settlement terms.",
+   "why": "Thorin keeps the crown, yet Bilbo annexes the Arkenstone and negotiates over his head, costing Thorin his leverage and pride.",
+   "uw": "Before you hand a single vendor or engineer total control of your core infrastructure, cross-train an internal deputy on every credential.",
+   "id": 1439,
+   "kind": "synthesis",
+   "src_loc": "Ch. 16",
+   "situations": [
+    "Understanding power"
+   ]
+  },
+  {
+   "title": "Your Urgent Mission Is Your Sponsor's Decoy",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "mechanism",
+   "steal": "A powerful backer funds your desperate venture not for your gain, but to pin down a threat while striking elsewhere. Your survival was never the main objective.",
+   "why": "Bilbo and Thorin bleed at the mountain while Gandalf uses their expedition to clear Mirkwood's flank. Mistaking sponsorship for care gets you killed.",
+   "uw": "When an executive suddenly funds your long-ignored pet project during a company reorg, map which rival department your launch will disrupt.",
+   "id": 1440,
+   "kind": "synthesis",
+   "src_loc": "Ch. 19",
+   "situations": [
+    "Strategy and competition"
+   ]
+  },
+  {
+   "title": "What The Giant Drops Arms The Underdog",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "mechanism",
+   "steal": "Dominant players build defenses against peers and ignore small footprints, dropping tools and keys that an overlooked operator turns against them.",
+   "why": "Trolls, Gollum, and Smaug lose their lives or hoards because they misjudge smallness. Neglecting minor audit trails invites fatal breaches.",
+   "uw": "When competing against an incumbent ten times your size, target the manual handoffs and low-value accounts their automated alerts ignore.",
+   "id": 1441,
+   "kind": "synthesis",
+   "src_loc": "Ch. 5",
+   "situations": [
+    "Strategy and competition"
+   ]
+  },
+  {
+   "title": "Stealth Hides You From Your Own Rescue",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "passage",
+   "steal": "This invisibility has its drawbacks after all. Otherwise I suppose I might have spent a warm and comfortable night in bed!",
+   "why": "Bilbo realizes his ring saved him from spears only to leave him knocked cold and overlooked while allies searched the field.",
+   "uw": "When you work off the grid to avoid micromanagement during a crisis, send one daily status line to the person controlling headcount.",
+   "id": 1442,
+   "kind": "quote",
+   "src_loc": "Ch. 18",
+   "situations": [
+    "Hiring and leading"
+   ]
+  },
+  {
+   "title": "Empty Stomachs Break The Strictest Briefing",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "mechanism",
+   "steal": "hunger decided them, because Bombur kept on describing all the good things that were being eaten, according to his dream, in the woodland feast; so they all left the path and plunged into the forest together.",
+   "why": "Unfed, exhausted teams abandon rules the moment one member talks up a shortcut, trading the road for spider webs and prison cells.",
+   "uw": "When a crunch-week team starts talking about skipping test gates to go home, order food and enforce an eight-hour sleep break first.",
+   "id": 1443,
+   "kind": "quote",
+   "src_loc": "Ch. 8",
+   "situations": [
+    "Hiring and leading",
+    "Stuck or burned out"
+   ]
+  },
+  {
+   "title": "Paper Millionaires Forgot How Heavy Gold Is",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "passage",
+   "steal": "I don't know if it has occurred to you that, even if you could steal the gold bit by bit -- a matter of a hundred years or so -- you could not get it very far?",
+   "why": "Smaug's taunt exposes the expedition's blind spot: winning a prize without a transport plan only paints a target on your back.",
+   "uw": "Before bidding on a distressed competitor's customer list or inventory, price out the exact labor and legal cost of migrating the load.",
+   "id": 1444,
+   "kind": "quote",
+   "src_loc": "Ch. 12",
+   "situations": [
+    "Deciding under uncertainty"
+   ]
+  },
+  {
+   "title": "Sudden Windfalls Turn Old Partners Into Besiegers",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "mechanism",
+   "steal": "Once a dangerous bottleneck is cleared from a prize, allies who suffered together barricade the vault instead of splitting the take.",
+   "why": "Once Smaug falls, Thorin's company trades dragon-risk for a three-army siege that kills three heirs. Windfalls destroy partnerships faster than losses do.",
+   "uw": "Before an acquisition closes or a patent pays out, lock every contributor's exact payout percentage into an escrow contract they cannot alter.",
+   "id": 1445,
+   "kind": "synthesis",
+   "src_loc": "Ch. 15",
+   "situations": [
+    "Negotiating"
+   ]
+  },
+  {
+   "title": "Fund Your Rival's Hype To Export Him",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "mechanism",
+   "steal": "When a populist challenger stirs up a crowd with impossible promises, the smart incumbent bankrolls the challenger's departure toward a lethal target.",
+   "why": "The Master buys boats and ponies to export Thorin, trading a local political rival for a burned city later.",
+   "uw": "When a loud rival pitches a risky pet venture to the board, second the motion and transfer him the headcount.",
+   "id": 1446,
+   "kind": "synthesis",
+   "src_loc": "Ch. 10",
+   "situations": [
+    "Strategy and competition"
+   ]
+  },
+  {
+   "title": "Demagogues Blame Absent Partners For Local Disasters",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "mechanism",
+   "steal": "What sort of gold have they sent down the river to reward us? Dragon-fire and ruin! From whom should we claim the recompense of our damage, and aid for our widows and orphans?",
+   "why": "Lake-town's Master keeps his office in the ashes by turning the crowd's rage onto the dwarves, buying time before his ruin.",
+   "uw": "When a partner's executive blames your absent team for a joint outage, publish the signed deployment log to the room immediately.",
+   "id": 1447,
+   "kind": "quote",
+   "src_loc": "Ch. 14",
+   "situations": [
+    "Persuading"
+   ]
+  },
+  {
+   "title": "Surviving The Wild Ruins Your Neighborhood Standing",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "mechanism",
+   "steal": "Indeed Bilbo found he had lost more than spoons -- he had lost his reputation.",
+   "why": "Returning from real danger cures your need for neighborly approval, which makes polite society treat you as an eccentric outsider for life.",
+   "uw": "When you return to headquarters after running a turnaround in the field, secure an independent role before headquarters committees strip your authority.",
+   "id": 1448,
+   "kind": "quote",
+   "src_loc": "Ch. 19",
+   "situations": [
+    "Understanding power"
+   ]
+  },
+  {
+   "title": "Can You Eat The Margin You Hoard",
+   "book": "The Hobbit — J.R.R. Tolkien",
+   "type": "question",
+   "steal": "How shall you be fed without the friendship and goodwill of the lands about you? The treasure is likely to be your death, though the dragon is no more!",
+   "why": "Thorin ignores Roäc's warning and starves behind stone walls before dying in battle. Crushing neighbors leaves you rich on paper and besieged.",
+   "uw": "Before squeezing a struggling supplier on payment terms to pad cash reserves, ask who will ship to you during a shortage.",
+   "id": 1449,
+   "kind": "quote",
+   "src_loc": "Ch. 16",
+   "situations": [
+    "Negotiating"
+   ]
+  },
+  {
+   "title": "The Botanical Law of Cruelty",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "concept",
+   "steal": "Crush humanity out of shape once more, under similar hammers, and it will twist itself into the same tortured forms. Sow the same seed of rapacious license and oppression over again, and it will surely yield the same fruit according to its kind.",
+   "why": "Rulers think terrified silence means the crowd is broken forever. Instead, every brutal rule teaches the underclass how to act when power flips. The bosses eventually pay in blood to monsters they trained themselves.",
+   "uw": "Executives cut wages to the bone and mock worker complaints. Warn the board that the staff is learning to sabotage the firm.",
+   "id": 1450,
+   "kind": "quote",
+   "src_loc": "Book 3, Ch. 15",
+   "situations": [
+    "Understanding power"
+   ]
+  },
+  {
+   "title": "The Enforcer Mutiny",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "mechanism",
+   "steal": "A ruling group that strips people of basic survival while flaunting its own safety silently rots the loyalty of its own guards, who eventually refuse orders to attack their starving neighbors.",
+   "why": "Leaders assume a paycheck buys a guard's soul forever. When the crowd starves, the guards remember who their brothers are. The boss watches his mansion burn while his security team stands still.",
+   "uw": "Management orders middle managers to fire half their own hungry teams. Expect those managers to leak company secrets or walk out with the staff.",
+   "id": 1451,
+   "kind": "synthesis",
+   "src_loc": "Book 2, Ch. 23",
+   "situations": [
+    "Hiring and leading"
+   ]
+  },
+  {
+   "title": "The Purge of the Good Reformer",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "mechanism",
+   "steal": "Once an angry movement turns into a purge, group identity erases personal history; early allies and decent reformers who trust their clean record to save them are eaten by the machine.",
+   "why": "Decent insiders think their past favors buy them a pass. A paranoid mob only reads the badge on your shirt. Reformers lose their careers or lives because they stayed in the building.",
+   "uw": "A new leadership purge targets everyone from the old department by title. Pack your desk immediately instead of pleading your past good deeds.",
+   "id": 1452,
+   "kind": "synthesis",
+   "src_loc": "Book 3, Ch. 6",
+   "situations": [
+    "Understanding power"
+   ]
+  },
+  {
+   "title": "The Blade Eats Its Makers",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "passage",
+   "steal": "I see a beautiful city and a brilliant people rising from this abyss, and, in their struggles to be truly free, in their triumphs and defeats, through long years to come, I see the evil of this time and of the previous time of which this is the natural birth, gradually making expiation for itself and wearing out.",
+   "why": "Condemned witnesses see what angry mobs miss: violence never cleans a room fast. Instead, terror poisons the air for decades after the tyrants die. Two generations pay in grief before the fever finally burns out.",
+   "uw": "A newly promoted boss plans a public bloodbath to fix company culture. Point out that the survivors will spend years fighting each other in fear.",
+   "id": 1453,
+   "kind": "quote",
+   "src_loc": "Book 3, Ch. 15",
+   "situations": [
+    "Hiring and leading"
+   ]
+  },
+  {
+   "title": "The Quota Numbness",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "mechanism",
+   "steal": "When severe punishment becomes a high-volume daily schedule, it loses all power to scare people; staff treat human ruin as a math quota while bystanders turn it into dark jokes.",
+   "why": "Heavy penalties only shock people when they are rare. Used every day, they turn clerks into robots and victims into numbers. Innocent people get ground up just to clear the Friday backlog.",
+   "uw": "HR fires people every week and staff make memes about the walkouts. Stop using threats to motivate the team and fix the broken workflow.",
+   "id": 1454,
+   "kind": "synthesis",
+   "src_loc": "Book 3, Ch. 13",
+   "situations": [
+    "Hiring and leading"
+   ]
+  },
+  {
+   "title": "The Useless Hangman",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "passage",
+   "steal": "In the midst of them, the hangman, ever busy and ever worse than useless, was in constant requisition",
+   "why": "Weak leaders use harsh rules to avoid fixing broken systems. When you punish a sixpence theft like a murder, crime keeps rising. The public loses all respect for the judge and the law.",
+   "uw": "A manager writes a zero-tolerance firing policy for tiny clock-in errors. Kill the policy and fix the scheduling software instead.",
+   "id": 1455,
+   "kind": "quote",
+   "src_loc": "Book 1, Ch. 1",
+   "situations": [
+    "Hiring and leading"
+   ]
+  },
+  {
+   "title": "The Cheerleader Trap",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "mechanism",
+   "steal": "Smart rebels do not start early street fights; they coach locals to flatter the bosses in public to make the leaders careless while quietly recruiting around victims of leadership's cruelty.",
+   "why": "Arrogant bosses love loud applause from the shop floor. That fake cheering blinds them until the strike is already locked in. They lose their grip before they even know a fight started.",
+   "uw": "An abused team suddenly claps loudly for an unpopular executive's speech. Look past the smiles and check who is meeting after hours.",
+   "id": 1456,
+   "kind": "synthesis",
+   "src_loc": "Book 2, Ch. 16",
+   "situations": [
+    "Seeing clearly"
+   ]
+  },
+  {
+   "title": "The Captive's Busy Hands",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "mechanism",
+   "steal": "Long isolation rewires the brain until repetitive manual habits become the only shield against panic; forcing a survivor to hide their pain for polite company triggers a secret breakdown later.",
+   "why": "Families want a hurt person to smile and act cured. Swallowing that terror costs the survivor their sanity behind closed doors. Wait until the house is quiet, and they will break down completely.",
+   "uw": "A burned-out colleague returns from leave and manicures spreadsheets for twelve hours straight. Sit quietly nearby and let them talk about the stress in third person.",
+   "id": 1457,
+   "kind": "synthesis",
+   "src_loc": "Book 2, Ch. 19",
+   "situations": [
+    "Stuck or burned out"
+   ]
+  },
+  {
+   "title": "The Martyr's Shield",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "mechanism",
+   "steal": "A survivor of old abuse who breaks down under quiet domestic stress can regain steady nerves during a crisis by turning their past suffering into active authority to protect others.",
+   "why": "Hiding old scars makes a person fragile in safe rooms. Using those scars to rescue someone else gives the pain a job. Yet if the rescue fails, the borrowed strength shatters into total collapse.",
+   "uw": "A veteran worker freezes up during routine office politics. Put them in charge of shielding new hires from a crisis they once survived.",
+   "id": 1458,
+   "kind": "synthesis",
+   "src_loc": "Book 3, Ch. 4",
+   "situations": [
+    "Stuck or burned out"
+   ]
+  },
+  {
+   "title": "The Substitute's Scaffold",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "mechanism",
+   "steal": "A gifted cynic who wasted his own life in self-disgust cannot be saved by career rewards, but can find peace by taking the fatal blow meant for an honest peer he once envied.",
+   "why": "Selling your best brains to a fraud rots your self-respect. No promotion will ever make a burned-out cynic love himself again. He only buys back his soul by paying the price for someone else.",
+   "uw": "A brilliant, burned-out veteran sneers at a rising colleague during a layoff review. Let the veteran volunteer to take the fall and protect the junior's job.",
+   "id": 1459,
+   "kind": "synthesis",
+   "src_loc": "Book 3, Ch. 13",
+   "situations": [
+    "Stuck or burned out"
+   ]
+  },
+  {
+   "title": "The Sisterhood of the Ledger",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "passage",
+   "steal": "seated in chairs, as in a garden of public diversion, are a number of women, busily knitting",
+   "why": "Ordinary neighbors can watch people get ruined over lunch. Once a crowd turns vengeance into a hobby, mercy looks like treason. Bystanders trade their human decency for a front-row seat.",
+   "uw": "Colleagues gather in the breakroom to cheer a rival's public firing. Walk out of the room and refuse to join the laugh.",
+   "id": 1460,
+   "kind": "quote",
+   "src_loc": "Book 3, Ch. 15",
+   "situations": [
+    "Seeing clearly"
+   ]
+  },
+  {
+   "title": "Blaming the Honest Witness",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "mechanism",
+   "steal": "Someone running a dirty secret hustle will jump at harmless words that touch their crime, and when the scheme fails, they will blame their partner's quiet honesty for ruining their luck.",
+   "why": "A thief hates a clean mirror inside his own house. When the crooked money dries up, the honest spouse takes the beating. The cheater calls his partner's conscience a stab in the back.",
+   "uw": "A business partner explodes over an innocent audit joke and blames compliance for bad sales. Check their expense ledger for a hidden side hustle immediately.",
+   "id": 1461,
+   "kind": "synthesis",
+   "src_loc": "Book 2, Ch. 14",
+   "situations": [
+    "Seeing clearly"
+   ]
+  },
+  {
+   "title": "The Executioner's Turn",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "prediction",
+   "steal": "The enforcers who build a career on purging others by group category will eventually fall under the same broad rules and get purged by their own machine.",
+   "why": "Fanatics think they will hold the handle of the axe forever. A machine built to eat whole categories never runs out of targets. The purity police end up in the cart themselves.",
+   "uw": "A coworker invents a vague conduct rule to get rivals fired. Document their own daily habits and wait for the rule to turn on them.",
+   "id": 1462,
+   "kind": "synthesis",
+   "src_loc": "Book 3, Ch. 15",
+   "situations": [
+    "Understanding power"
+   ]
+  },
+  {
+   "title": "The Coin Under the Wheels",
+   "book": "A Tale of Two Cities — Charles Dickens",
+   "type": "question",
+   "steal": "When your operation breaks a person below you, do you try to pay them off with a small coin while wondering why they might dirty your equipment?",
+   "why": "Tossing cheap cash at a deep injury insults the victim. They will throw the coin back when your guards aren't looking. You buy yourself a lifelong enemy for the price of lunch.",
+   "uw": "Your company ruins a contractor's livelihood and offers a tiny gift card. Scrap the token gesture and pay the full cost of the damage.",
+   "id": 1463,
+   "kind": "synthesis",
+   "src_loc": "Book 2, Ch. 7",
+   "situations": [
+    "Negotiating"
+   ]
+  },
+  {
+   "title": "Habit Makes Wrong Look Right",
+   "book": "Common Sense — Thomas Paine",
+   "type": "mechanism",
+   "steal": "a long habit of not thinking a thing wrong, gives it a superficial appearance of being right",
+   "why": "People defend a bad arrangement because it is familiar, not because they weighed it. The first outcry measures habit, not merit.",
+   "uw": "A team attacks your proposal in the first meeting. Wait out the outcry, then ask each critic to name the actual harm.",
+   "id": 1464,
+   "kind": "quote",
+   "src_loc": "Introduction ¶2",
+   "src_text": "a long habit of not thinking a thing wrong, gives it a superficial appearance of being right, and raises at first a formidable outcry in defense of custom. But the tumult soon subsides. Time makes more converts than reason.",
+   "claim_type": "empirical",
+   "voice": "author",
+   "spoiler": "none"
+  },
+  {
+   "title": "Society and Government Have Different Parents",
+   "book": "Common Sense — Thomas Paine",
+   "type": "definition",
+   "steal": "Society is produced by our wants, and government by our wickedness",
+   "why": "People bond over what they need from each other; force grows out of what they do to each other. Confuse them, and every trust problem starts to look like a policing problem.",
+   "uw": "A group blames weak rules for a trust problem. Fix the shared purpose first, then reach for enforcement.",
+   "id": 1465,
+   "kind": "quote",
+   "src_loc": "Part 1 ¶2",
+   "src_text": "Society is produced by our wants, and government by our wickedness; the former promotes our happiness positively by uniting our affections, the latter negatively by restraining our vices.",
+   "claim_type": "causal",
+   "voice": "author",
+   "spoiler": "none"
+  },
+  {
+   "title": "Government at Its Best Is a Necessary Evil",
+   "book": "Common Sense — Thomas Paine",
+   "type": "definition",
+   "steal": "government even in its best state is but a necessary evil; in its worst state an intolerable one",
+   "why": "Even good government earns its keep only by the harm it prevents. Judge any rule by the evil it stops, not the virtue it performs.",
+   "uw": "A process keeps growing because it feels responsible. Ask what concrete harm each step prevents, and cut the steps with no answer.",
+   "id": 1466,
+   "kind": "quote",
+   "src_loc": "Part 1 ¶3",
+   "src_text": "Society in every state is a blessing, but government even in its best state is but a necessary evil; in its worst state an intolerable one;",
+   "claim_type": "moral",
+   "voice": "author",
+   "spoiler": "none"
+  },
+  {
+   "title": "No One Is Born Owning the Future",
+   "book": "Common Sense — Thomas Paine",
+   "type": "argument",
+   "steal": "For all men being originally equals, no one by birth could have a right to set up his own family in perpetual preference to all others for ever",
+   "why": "A founder's merit dies with the founder. Locking in his heirs taxes people who never consented, including people not yet born.",
+   "uw": "A founder wants his child guaranteed the top job. Put the succession rule to a vote of the people who must live under it.",
+   "id": 1467,
+   "kind": "quote",
+   "src_loc": "Part 2 ¶11",
+   "src_text": "To the evil of monarchy we have added that of hereditary succession; and as the first is a degradation and lessening of ourselves, so the second, claimed as a matter of right, is an insult and an imposition on posterity. For all men being originally equals, no one by birth could have a right to set up his own family in perpetual preference to all others for ever,",
+   "claim_type": "moral",
+   "voice": "author",
+   "spoiler": "none"
+  },
+  {
+   "title": "Even Brutes Do Not Devour Their Young",
+   "book": "Common Sense — Thomas Paine",
+   "type": "argument",
+   "steal": "Even brutes do not devour their young, nor savages make war upon their families",
+   "why": "Calling a power your parent does not excuse its violence. By the standards of animals, an attacker who claims kinship looks worse, not better.",
+   "uw": "A bigger partner harms you and calls it family loyalty. Judge the act itself, and let the claimed bond raise the standard.",
+   "id": 1468,
+   "kind": "quote",
+   "src_loc": "Part 3 ¶12",
+   "src_text": "But Britain is the parent country, say some. Then the more shame upon her conduct. Even brutes do not devour their young, nor savages make war upon their families; wherefore the assertion, if true, turns to her reproach;",
+   "claim_type": "moral",
+   "voice": "author",
+   "spoiler": "none"
+  },
+  {
+   "title": "A Continent Cannot Belong to an Island",
+   "book": "Common Sense — Thomas Paine",
+   "type": "argument",
+   "steal": "there is something very absurd, in supposing a continent to be perpetually governed by an island",
+   "why": "Scale is a fact, not an insult. When the branch outweighs the trunk, the reporting line itself becomes the problem.",
+   "uw": "A small headquarters micromanages a far larger operation abroad. Move real decisions to where most of the people and facts are.",
+   "id": 1469,
+   "kind": "quote",
+   "src_loc": "Part 3 ¶30",
+   "src_text": "there is something very absurd, in supposing a continent to be perpetually governed by an island. In no instance hath nature made the satellite larger than its primary planet, and as England and America, with respect to each other, reverses the common order of nature, it is evident they belong to different systems:",
+   "claim_type": "strategic",
+   "voice": "author",
+   "spoiler": "none"
+  },
+  {
+   "title": "'Tis Time to Part",
+   "book": "Common Sense — Thomas Paine",
+   "type": "passage",
+   "steal": "The blood of the slain, the weeping voice of nature cries, 'Tis time to part",
+   "why": "Some splits stop being betrayals once the harm is counted. After enough damage, staying together needs more defense than leaving.",
+   "uw": "A partnership has already cost people money, trust, or safety. Stop debating loyalty and set the separation terms.",
+   "id": 1470,
+   "kind": "quote",
+   "src_loc": "Part 3 ¶20",
+   "src_text": "Every thing that is right or natural pleads for separation. The blood of the slain, the weeping voice of nature cries, 'Tis time to part.",
+   "claim_type": "recommendation",
+   "voice": "author",
+   "spoiler": "none"
+  },
+  {
+   "title": "A Free Port Guards Itself",
+   "book": "Common Sense — Thomas Paine",
+   "type": "argument",
+   "steal": "Open trade with everyone. Each trading nation's interest becomes your guard. Nobody invades the free port that pays them.",
+   "why": "A partner who profits from your openness defends your safety for selfish reasons. Selfish reasons hold up better than promises.",
+   "uw": "You must choose between an exclusive alliance and open terms for all. Pick the arrangement that pays strangers to leave you alone.",
+   "id": 1471,
+   "kind": "synthesis",
+   "src_loc": "Part 3 ¶17",
+   "src_text": "Our plan is commerce, and that, well attended to, will secure us the peace and friendship of all Europe; because, it is the interest of all Europe to have America a free port. Her trade will always be a protection, and her barrenness of gold and silver secure her from invaders.",
+   "claim_type": "strategic",
+   "voice": "author",
+   "spoiler": "none"
+  },
+  {
+   "title": "Let the Law Be King",
+   "book": "Common Sense — Thomas Paine",
+   "type": "concept",
+   "steal": "in America the law is king. For as in absolute governments the King is law, so in free countries the law ought to be King",
+   "why": "A free state swaps the person at the top for a rule above everyone. He crowns the law in ceremony, then has the crown destroyed, so nobody mistakes the symbol for a sovereign.",
+   "uw": "A team bends its own rules for a star performer. Enforce the rule in public, or rewrite it in public for everyone.",
+   "id": 1472,
+   "kind": "quote",
+   "src_loc": "Part 3 ¶51",
+   "src_text": "let a crown be placed thereon, by which the world may know, that so far as we approve of monarchy, that in America the law is king. For as in absolute governments the King is law, so in free countries the law ought to be King; and there ought to be no other.",
+   "claim_type": "moral",
+   "voice": "author",
+   "spoiler": "none"
+  },
+  {
+   "title": "Fix the Congress Before the Crisis",
+   "book": "Common Sense — Thomas Paine",
+   "type": "mechanism",
+   "steal": "Annual assemblies and a more equal vote for representatives. A congress of at least 390 delegates, with thirty or more sent by each colony.",
+   "why": "He fixes size, quotas, and election rhythm while he still can. Rules written in calm weather survive the storm that tests them.",
+   "uw": "Your group keeps improvising who decides each hard question. Write the seats, the terms, and the quorum down where everyone can point to them.",
+   "id": 1473,
+   "kind": "paraphrase",
+   "src_loc": "Part 3 ¶44",
+   "src_text": "Let the assemblies be annual, with a President only. The representation more equal. Their business wholly domestic, and subject to the authority of a Continental Congress.\nLet each colony be divided into six, eight, or ten, convenient districts, each district to send a proper number of delegates to Congress, so that each colony send at least thirty. The whole number in Congress will be at least 390.",
+   "claim_type": "strategic",
+   "voice": "author",
+   "spoiler": "none"
+  },
+  {
+   "title": "Price the Fleet, Then Judge the Fear",
+   "book": "Common Sense — Thomas Paine",
+   "type": "evidence",
+   "steal": "He prices a whole fleet at 3,500,000. Tar, timber, iron and cordage all grow at home. Britain meanwhile carries a debt above one hundred and forty millions sterling.",
+   "why": "A costed plan beats a vague fear of expense. He lists the materials, the total, and the rival's far heavier debt in the same table.",
+   "uw": "A room calls your plan too expensive without figures. Bring the full price and the cost of the status quo, side by side.",
+   "id": 1474,
+   "kind": "paraphrase",
+   "src_loc": "Part 4 ¶7",
+   "src_text": "No nation ought to be without a debt. A national debt is a national bond; and when it bears no interest, is in no case a grievance. Britain is oppressed with a debt of upwards of one hundred and forty millions sterling, for which she pays upwards of four millions interest. And as a compensation for her debt, she has a large navy; America is without a debt, and without a navy; yet for the twentieth part of the English national debt, could have a navy as large again. The navy of England is not worth, at this time, more than three millions and an half sterling.\nThe first and second editions of this pamphlet were published without the following calculations, which are now given as a proof that the above estimation of the navy is just. See Entic's naval history, intro. page 56.\nThe charge of building a ship of each rate, and furnishing her with masts, yards, sails and rigging, together with a proportion of eight months boatswain's and carpenter's sea-stores, as calculated by Mr. Burchett, Secretary to the navy.\n£ [pounds sterling] For a ship of 100 guns = 35,553 90 = 29,886 80 = 23,638 70 = 17,785 60 = 14,197 50 = 10,606 40 = 7,558 30 = 5,846 20 = 3,710\nAnd from hence it is easy to sum up the value, or cost rather, of the whole British navy, which in the year 1757, when it was at its greatest glory consisted of the following ships and guns:\nShips. Guns. Cost of one. Cost of all. Cost in £ [pounds sterling] 6 100 35,553 213,318 12 90 29,886 358,632 12 80 23,638 283,656 43 70 17,785 764,755 35 60 14,197 496,895 40 50 10,606 424,240 45 40 7,558 340,110 58 20 3,710 215,180 85 Sloops, bombs and fireships, one with another, at } 2,000 170,000 ------------ Cost 3,266,786 Remains for Guns 233,214 ------------ 3,500,000\nNo country on the globe is so happily situated, or so internally capable of raising a fleet as America. Tar, timber, iron, and cordage are her natural produce. We need go abroad for nothing.",
+   "claim_type": "empirical",
+   "voice": "author",
+   "spoiler": "none"
+  },
+  {
+   "title": "Begin While the Nation Is Young",
+   "book": "Common Sense — Thomas Paine",
+   "type": "argument",
+   "steal": "Youth is the seed time of good habits, as well in nations as in individuals",
+   "why": "Institutions harden early and quietly. Habits set in the first season become limits the grown nation cannot cross.",
+   "uw": "A new team keeps postponing its working rules. Set the habits this month, while setting them is still cheap.",
+   "id": 1475,
+   "kind": "quote",
+   "src_loc": "Part 4 ¶22",
+   "src_text": "Youth is the seed time of good habits, as well in nations as in individuals. It might be difficult, if not impossible, to form the Continent into one government half a century hence.",
+   "claim_type": "strategic",
+   "voice": "author",
+   "spoiler": "none"
+  },
+  {
+   "title": "Begin the World Over Again",
+   "book": "Common Sense — Thomas Paine",
+   "type": "passage",
+   "steal": "We have it in our power to begin the world over again",
+   "why": "Rare moments let a people rewrite the rules instead of inheriting them. He treats the moment as a deadline, not a mood.",
+   "uw": "A rare opening appears: a market shifts, a leader resigns, a budget opens. Name the deadline and draft the new rules before normal returns.",
+   "id": 1476,
+   "kind": "quote",
+   "src_loc": "Appendix ¶22",
+   "src_text": "We have it in our power to begin the world over again. A situation, similar to the present, hath not happened since the days of Noah until now.",
+   "claim_type": "recommendation",
+   "voice": "author",
+   "spoiler": "none"
   }
  ]
 }
