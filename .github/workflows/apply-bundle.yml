@@ -1,0 +1,80 @@
+name: apply-bundle
+
+on:
+  workflow_dispatch:
+    inputs:
+      bundle:
+        description: "Bundle filename on the deploy-bundle branch"
+        required: true
+        type: string
+      message:
+        description: "Commit message for the applied bundle"
+        required: true
+        type: string
+      allow:
+        description: "Comma-separated allowed path prefixes (scope gate)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apply-bundle-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 1
+
+      - name: Checkout deploy-bundle branch
+        uses: actions/checkout@v4
+        with:
+          ref: deploy-bundle
+          path: bundle-src
+
+      - name: Apply bundle
+        env:
+          BUNDLE: ${{ inputs.bundle }}
+          MESSAGE: ${{ inputs.message }}
+          ALLOW: ${{ inputs.allow }}
+          TARGET_REF: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          mkdir -p __bundle_tmp
+          tar -xzf "bundle-src/$BUNDLE" -C __bundle_tmp
+          if [ -s __bundle_tmp/DELETIONS.txt ]; then
+            while IFS= read -r p; do
+              if [ -n "$p" ]; then git rm -q --ignore-unmatch -- "$p" || true; fi
+            done < __bundle_tmp/DELETIONS.txt
+          fi
+          rm -f __bundle_tmp/DELETIONS.txt
+          cp -a __bundle_tmp/. ./
+          rm -rf __bundle_tmp bundle-src
+          git add -A
+          git diff --cached --name-only > staged.txt
+          echo "Staged paths:"
+          cat staged.txt
+          IFS=',' read -ra PREFIXES <<< "$ALLOW"
+          fail=0
+          while IFS= read -r p; do
+            if [ -z "$p" ]; then continue; fi
+            ok=0
+            for pre in "${PREFIXES[@]}"; do
+              case "$p" in "$pre"*) ok=1 ;; esac
+            done
+            if [ "$ok" -eq 0 ]; then echo "OUT OF SCOPE: $p"; fail=1; fi
+          done < staged.txt
+          rm -f staged.txt
+          if [ "$fail" -eq 1 ]; then echo "Scope gate FAILED - not committing"; exit 1; fi
+          if git diff --cached --quiet; then echo "Nothing staged - bundle produced no changes"; exit 1; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "$MESSAGE"
+          git push origin "HEAD:$TARGET_REF"
