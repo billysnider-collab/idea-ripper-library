@@ -15,7 +15,7 @@ cd "$(git rev-parse --show-toplevel)"
 exec 9>".git/rip-deploy.lock"
 flock -n 9 || { echo "ABORT: another rip deploy is running"; exit 3; }
 
-TEMPLATE="build_site.py 404.html _config.yml tools .github"
+TEMPLATE="build_site.py build_pages.py verify_slugs.py slugs.py 404.html _config.yml tools .github"
 git fetch --quiet origin main
 # bring HEAD to origin/main first, keeping new data as uncommitted changes;
 # upstream template updates are pulled in (we build from origin/main's code)
@@ -36,11 +36,16 @@ REMOTE=$(git show origin/main:build_site.py | sha256sum | cut -c1-64)
 python3 compile.py 2>/dev/null || true   # shelf.yaml -> cards.json when the ripper uses it
 python3 build_site.py
 python3 build_index.py
+# Phase 1 redesign (2026-10-14): slug lock + per-card pages, after the legacy
+# gate and before the guard. build_pages overwrites index.html/sitemap.xml.
+python3 build_pages.py --ensure-slugs || { echo "ABORT: slug generation failed; nothing pushed"; exit 10; }
+python3 verify_slugs.py || { echo "ABORT: slug gate failed; nothing pushed"; exit 11; }
+python3 build_pages.py || { echo "ABORT: page build failed; nothing pushed"; exit 12; }
 python3 tools/site_guard.py check || { echo "ABORT: site guard failed; nothing pushed"; exit 7; }
 
 N=$(python3 -c "import json;d=json.load(open('cards.json'));b=d['books'];t=sum(1 for x in b if x['genre']=='Thesis');print(len(d['cards']),len(b)-t,t)")
 set -- $N
-for f in cards.json shelf.yaml books fullbooks.json index.html sitemap.xml robots.txt assets data; do if [ -e "$f" ]; then git add -A -- "$f"; fi; done
+for f in cards.json shelf.yaml books fullbooks.json index.html sitemap.xml robots.txt assets data c ledger slugs.lock.json search-index.json sitemap-cards.xml sitemap-books.xml 404.html 404/index.html; do if [ -e "$f" ]; then git add -A -- "$f"; fi; done
 git diff --cached --quiet && { echo "nothing to deploy"; exit 0; }
 git commit -q -m "rip deploy: $1 rips, $2 books, $3 theses ($(date +%F))"
 if [ -n "${IRLIB_API_PUSH:-}" ]; then
