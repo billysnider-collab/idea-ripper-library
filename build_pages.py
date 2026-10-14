@@ -35,6 +35,17 @@ bookline institution) driving a books-only homepage feed, an Archives shelf,
 source pills, a ledger source filter, and a `src` key in search-index.json;
 a compact Start Here block; corrected command-bar ID hint (#c1-#c<max>);
 problem-word search placeholder + shelf links on zero results.
+
+Wave 2 (2026-10-14, ripping-method program): situations become the front
+door (S1) — situation pages at /situations/ and /situations/<slug>/ built
+from the cards' `situations` data (they did not exist before Wave 2; the
+homepage strip that wore the situation label linked to genre anchors).
+Situation DISPLAY names are felt friction (SIT_DISPLAY below); the data
+labels in books/*.md and the page slugs (slugified data labels) never
+change. Card pages end with two exit ramps (S7): "Same situation, different
+book" and "Card N of M from this book" with in-book prev/next. The ledger
+gains a client-side "Sample the stack" sampler + "Surprise me" jump (S8),
+fed by data-title / data-book / data-sit row attributes.
 """
 import argparse
 import datetime as _dt
@@ -226,6 +237,14 @@ footer.sitefoot a{color:var(--text-primary)}
   .cb-book{display:none}
 }
 @media print{.statusbar,.cmdbar,.headrow,.sharerow,.navrow{display:none!important}body{background:#fff}}
+/* Wave 2: situation chip links, exit ramps, ledger sampler */
+a.sitchip{color:var(--text-primary);text-decoration:none}
+a.sitchip:hover{background:var(--bg-canvas);border-color:var(--border-strong);color:var(--text-primary)}
+.relcard .rbook{font-family:var(--font-mono);font-size:.72rem;color:var(--text-secondary);display:block;margin-top:.2rem;letter-spacing:.05em}
+.booknav{align-items:center}
+.bookpos{font-family:var(--font-mono);font-size:.78rem;color:var(--text-secondary);text-align:center;letter-spacing:.05em;padding:0 .5rem}
+.sampler{margin:0 0 1.5rem}
+.samplegrid{margin-top:.9rem}
 """
 
 HASH_SCRIPT = ("<script>/* ir-hash-redirect: legacy #cN links land on the card page */"
@@ -362,6 +381,43 @@ def main():
             return '<p class="attr">\u2014 Source: %s</p>' % inner
         return '<p class="attr">\u2014 In our words \u00b7 Source: %s</p>' % inner
 
+    # Wave 2 (S1): situation DISPLAY names are felt friction — the moment a
+    # reader recognizes from their own week — written from each situation's
+    # actual use-when lines. DISPLAY ONLY: the data labels in books/*.md /
+    # cards.json and the page slugs (slugified data labels) never change, so
+    # no URL moves and no source file is touched.
+    SIT_DISPLAY = {
+        "Persuading": "When you need a yes and they\u2019re not there yet",
+        "Hiring and leading": "When the team is looking to you to lead",
+        "Negotiating": "When the other side has more leverage",
+        "Making things": "When you\u2019re building the thing, not just planning it",
+        "Seeing clearly": "When your picture of things might be wrong",
+        "Deciding under uncertainty": "When you must decide and the facts aren\u2019t in",
+        "Starting something": "When it\u2019s day one and nothing exists yet",
+        "Strategy and competition": "When a rival\u2019s move changes your game",
+        "Technology and AI": "When new tech lands in your work",
+        "Stuck or burned out": "When you\u2019re stuck and running on empty",
+        "Understanding power": "When you need to know who really decides",
+    }
+
+    def sit_slug(label):
+        return slugify(label)
+
+    def sit_name(label):
+        return SIT_DISPLAY.get(label, label)
+
+    def sit_url(label):
+        return "/situations/%s/" % sit_slug(label)
+
+    sit_cards = {}
+    for c in cards:
+        for s in (c.get("situations") or []):
+            sit_cards.setdefault(s, []).append(c["id"])
+    sit_labels = sorted(sit_cards, key=lambda s: -len(sit_cards[s]))
+    book_cards = {}
+    for c in cards:
+        book_cards.setdefault(c["book"], []).append(c["id"])
+
     marker = build_marker()
     css_href = write_asset(PAPER_CSS)
     build_date = _dt.date.today().isoformat()
@@ -412,7 +468,8 @@ def main():
         next_btn = ('<a class="btn ghost" href="%s">Next #c%d -&gt;</a>' % (canon(next_of[cid]), next_of[cid])) if cid in next_of else '<span></span>'
         sits = ""
         if c.get("situations"):
-            chips = "".join('<span class="sitchip">%s</span>' % esc(s) for s in c["situations"])
+            chips = "".join('<a class="sitchip" href="%s">%s</a>'
+                            % (sit_url(s), esc(sit_name(s))) for s in c["situations"])
             sits = ('<div class="sits"><span class="slab">Filed under situations:</span>%s</div>' % chips)
         page.append(
             '<article class="dossier">'
@@ -453,6 +510,39 @@ def main():
                             % (canon(rc["id"]), rc["id"], src_pill(rc), esc(trunc(rc["steal"], 140)),
                                esc(trunc(rc["uw"], 110))))
             page.append('</div>')
+        # Wave 2 exit ramps (S7): the page never ends on a dead end. Ramp 1
+        # fires only when cross-book cards share a situation with this one;
+        # ramp 2 only when the book holds more than this one card. In-book
+        # order is the curated cards.json order for the book.
+        own_sits = c.get("situations") or []
+        if own_sits:
+            scored = {}
+            for s in own_sits:
+                for oid in sit_cards.get(s, []):
+                    if oid != cid and by_id[oid]["book"] != c["book"]:
+                        scored[oid] = scored.get(oid, 0) + 1
+            top = sorted(scored, key=lambda o: (-scored[o], -o))[:4]
+            if top:
+                page.append('<h2 class="sect">Same situation, different book</h2><div class="relgrid">')
+                for r in top:
+                    rc = by_id[r]
+                    rbt, _rba = split_book(rc["book"])
+                    page.append('<a class="relcard" href="%s"><span class="rid">#c%d</span>%s'
+                                '<span class="rline">%s</span><span class="ruw">%s</span>'
+                                '<span class="rbook">From %s</span></a>'
+                                % (canon(r), r, src_pill(rc), esc(rc["title"]),
+                                   esc(trunc(rc["uw"], 110)), esc(rbt)))
+                page.append('</div>')
+        sib_ids = book_cards[c["book"]]
+        if len(sib_ids) > 1:
+            pos = sib_ids.index(cid)
+            p_btn = ('<a class="btn ghost" href="%s">&lt;- Prev in this book</a>'
+                     % canon(sib_ids[pos - 1])) if pos > 0 else '<span></span>'
+            nx_btn = ('<a class="btn ghost" href="%s">Next in this book -&gt;</a>'
+                      % canon(sib_ids[pos + 1])) if pos < len(sib_ids) - 1 else '<span></span>'
+            page.append('<nav class="navrow booknav">%s'
+                        '<span class="bookpos">Card %d of %d from %s</span>%s</nav>'
+                        % (p_btn, pos + 1, len(sib_ids), esc(bt), nx_btn))
         page.append('<footer class="sitefoot"><a href="/">Idea Ripper archive</a> \u00b7 '
                     '<a href="/ledger/">Full ledger</a> \u00b7 Card #c%d of %d \u00b7 '
                     'Machine-assisted, hand-curated</footer>' % (cid, n))
@@ -529,12 +619,13 @@ def main():
         sample = by_id[_row["id"]]
     if sample is None and latest:
         sample = latest[0]
+    # Wave 2 (S1): this strip wore the situation label over genre pills
+    # until now; it carries the real situations, under felt-friction names.
+    # Genres keep their own surface in "Browse by shelf" below.
     pills = []
-    for g in genre_order:
-        gc = sum(1 for c in cards if genre_of[c["book"]] == g)
-        if gc:
-            pills.append('<a class="pill-link" href="/ledger/#genre-%s">%s <span class="n">%d</span></a>'
-                         % (slugify(g), esc(g), gc))
+    for s in sit_labels:
+        pills.append('<a class="pill-link" href="%s">%s <span class="n">%d</span></a>'
+                     % (sit_url(s), esc(sit_name(s)), len(sit_cards[s])))
     shelf_boxes = []
     for g in genre_order:
         gb = [b for b in books if b["genre"] == g]
@@ -566,8 +657,8 @@ def main():
             '<section class="starthere" id="start-here"><span class="shk">Start here</span>'
             '<p>New here? Idea Ripper pulls one usable idea out of a book: the line '
             'worth keeping, why it matters, and the moment you would use it. The '
-            'fastest way in is by situation, so pick the shelf that matches your '
-            'problem below, or open one card now: <a href="%s">Card #c%d, from '
+            'fastest way in is by situation, so pick the situation below that '
+            'matches your problem, or open one card now: <a href="%s">Card #c%d, from '
             '%s</a>.</p></section>'
             % (canon(sample["id"]), sample["id"],
                esc(split_book(sample["book"])[0])))
@@ -583,7 +674,8 @@ def main():
     home.append('<div class="headrow"><button type="button" class="btn ghost randomcard">'
                 '[Random card \u21bb]</button>'
                 '<a class="btn ghost" href="/ledger/">[Full ledger]</a></div>')
-    home.append('<h2 class="sect" id="situations">Field-tested by situation:</h2><div class="pills">%s</div>'
+    home.append('<h2 class="sect" id="situations">Field-tested by situation:</h2><div class="pills">%s'
+                '<a class="pill-link" href="/situations/">All situations -&gt;</a></div>'
                 % "".join(pills))
     home.append('<h2 class="sect">Latest dispatches <span class="cnt">// last 6 additions, from books</span></h2>')
     home.extend(prev_html)
@@ -674,6 +766,12 @@ def main():
                '<button type="button" class="btn ghost sfilter" data-f="book">Books</button>'
                '<button type="button" class="btn ghost sfilter" data-f="archive">'
                'Reports &amp; Theses</button></div>')
+    # Wave 2 (S8): sample the stack — five random cards, or one blind jump,
+    # served entirely from the rows already on this page.
+    led.append('<div class="sampler"><button type="button" class="btn" id="sample-btn">'
+               '[Sample the stack \u21bb]</button> '
+               '<button type="button" class="btn ghost" id="surprise-btn">[Surprise me]</button>'
+               '<div class="relgrid samplegrid" id="sample-out" hidden></div></div>')
     books_by_genre = {}
     for b in books:
         books_by_genre.setdefault(b["genre"], []).append(b)
@@ -692,10 +790,14 @@ def main():
             for j, c in enumerate(bc):
                 idattr = ' id="book-%s"' % esca(anchor) if j == 0 else ""
                 bt, _ba = split_book(c["book"])
-                led.append('<tr%s data-src="%s"><td class="lid"><a href="%s">#c%d</a></td>'
+                csits = c.get("situations") or []
+                led.append('<tr%s data-src="%s" data-title="%s" data-book="%s" data-sit="%s">'
+                           '<td class="lid"><a href="%s">#c%d</a></td>'
                            '<td><a href="%s">%s</a></td><td class="lbook">%s%s</td>'
                            '<td class="lshelf">%s</td></tr>'
-                           % (idattr, src_of[c["book"]], canon(c["id"]), c["id"], canon(c["id"]),
+                           % (idattr, src_of[c["book"]], esca(c["title"]), esca(bt),
+                              esca(sit_name(csits[0])) if csits else "",
+                              canon(c["id"]), c["id"], canon(c["id"]),
                               esc(trunc(c["steal"], 60)), esc(bt), src_pill(c), esc(g)))
         led.append('</tbody></table></div>')
     led.append('<footer class="sitefoot"><a href="/">Idea Ripper archive</a> \u00b7 '
@@ -719,10 +821,112 @@ def main():
         'btns.forEach(function(b){b.addEventListener("click",function(){'
         'apply(b.getAttribute("data-f"));});});'
         '})();</script>')
+    led.append(
+        '<script>(function(){'
+        'var rows=[].slice.call(document.querySelectorAll("table.ledger tbody tr"));'
+        'var out=document.getElementById("sample-out");'
+        'if(!rows.length||!out)return;'
+        'function hrefOf(tr){var a=tr.querySelector("td.lid a");'
+        'return a?a.getAttribute("href"):"/ledger/";}'
+        'function idOf(tr){var a=tr.querySelector("td.lid a");'
+        'return a?a.textContent:"";}'
+        'function pick(k){var seen={},res=[];'
+        'while(res.length<k&&res.length<rows.length){'
+        'var i=Math.floor(Math.random()*rows.length);'
+        'if(!seen[i]){seen[i]=1;res.push(rows[i]);}}return res;}'
+        'document.getElementById("sample-btn").addEventListener("click",function(){'
+        'var sel=pick(5);out.hidden=false;'
+        'out.innerHTML=sel.map(function(){return \'<a class="relcard"><span class="rid"></span>\''
+        '+\'<span class="rline"></span><span class="ruw"></span></a>\';}).join("");'
+        'var els=out.querySelectorAll(".relcard");'
+        'sel.forEach(function(tr,k){var el=els[k];'
+        'el.setAttribute("href",hrefOf(tr));'
+        'el.querySelector(".rid").textContent=idOf(tr);'
+        'el.querySelector(".rline").textContent=tr.getAttribute("data-title")||"";'
+        'var meta=tr.getAttribute("data-book")||"";'
+        'var sit=tr.getAttribute("data-sit");'
+        'if(sit)meta+=" \u00b7 "+sit;'
+        'el.querySelector(".ruw").textContent=meta;});});'
+        'document.getElementById("surprise-btn").addEventListener("click",function(){'
+        'location.assign(hrefOf(rows[Math.floor(Math.random()*rows.length)]));});'
+        '})();</script>')
     led.append('</div></body></html>')
     os.makedirs(os.path.join(BASE, "ledger"), exist_ok=True)
     with open(os.path.join(BASE, "ledger", "index.html"), "w", encoding="utf-8") as fh:
         fh.write("\n".join(led))
+
+    # ---------------- situations (Wave 2, S1) ----------------
+    # Built from the cards' `situations` data. These pages did not exist
+    # before Wave 2: the redesign deferred them ("situation pages are
+    # Phase 2") and the homepage strip that wore the label linked to genre
+    # anchors. One system, in this builder: an index plus one page per
+    # situation, rows = card title + use-when line (the "that's me" scan).
+    def sit_relcard(rc):
+        rbt, _rba = split_book(rc["book"])
+        return ('<a class="relcard" href="%s"><span class="rid">#c%d</span>%s'
+                '<span class="rline">%s</span><span class="ruw">%s</span>'
+                '<span class="rbook">From %s</span></a>'
+                % (canon(rc["id"]), rc["id"], src_pill(rc), esc(rc["title"]),
+                   esc(trunc(rc["uw"], 140)), esc(rbt)))
+
+    os.makedirs(os.path.join(BASE, "situations"), exist_ok=True)
+    sit_total = sum(len(v) for v in sit_cards.values())
+    six = [head("Browse by situation | Idea Ripper",
+                "Start from the moment you are in: %d situations, %d filed cards. "
+                "Every card states the moment you would use it." % (len(sit_labels), sit_total),
+                SITE + "/situations/", marker, css_href)]
+    six.append("<body>")
+    six.append(statusbar(n, build_date))
+    six.append('<div class="wrap">')
+    six.append('<nav class="crumb"><a href="/">Archive</a> / Situations</nav>')
+    six.append('<h1 class="mission">Start from the moment you are in</h1>')
+    six.append('<p class="sub">Cards here are filed by the situation they are '
+               'for, not by subject. Find the line that sounds like your week; '
+               'every card under it names what to do, and when.</p>')
+    six.append('<div class="shelfgrid">')
+    for s in sit_labels:
+        sbooks = len({by_id[i]["book"] for i in sit_cards[s]})
+        six.append('<a class="shelfbox" href="%s"><span class="sname">%s</span>'
+                   '<span class="scounts">%d cards \u00b7 %d books \u00b7 filed as %s</span></a>'
+                   % (sit_url(s), esc(sit_name(s)), len(sit_cards[s]), sbooks, esc(s)))
+    six.append('</div>')
+    six.append('<footer class="sitefoot"><a href="/">Idea Ripper archive</a> \u00b7 '
+               '<a href="/ledger/">Full ledger</a> \u00b7 %d situations \u00b7 '
+               'Machine-assisted, hand-curated</footer>' % len(sit_labels))
+    six.append('</div></body></html>')
+    with open(os.path.join(BASE, "situations", "index.html"), "w", encoding="utf-8") as fh:
+        fh.write("\n".join(six))
+    for s in sit_labels:
+        name = sit_name(s)
+        members = sorted(sit_cards[s], reverse=True)
+        sbooks = len({by_id[i]["book"] for i in sit_cards[s]})
+        sp = [head("%s | Idea Ripper" % name,
+                   trunc("Cards for the moment: %s. %d field-tested ideas from %d books, "
+                         "each with the line and when to use it."
+                         % (name, len(members), sbooks), 300),
+                   SITE + sit_url(s), marker, css_href)]
+        sp.append("<body>")
+        sp.append(statusbar(n, build_date))
+        sp.append('<div class="wrap">')
+        sp.append('<nav class="crumb"><a href="/">Archive</a> / '
+                  '<a href="/situations/">Situations</a> / Filed as %s</nav>' % esc(s))
+        sp.append('<h1 class="mission">%s</h1>' % esc(name))
+        sp.append('<p class="sub">%d cards from %d books, filed under \u201c%s\u201d. '
+                  'Newest first; every row is the card\u2019s title and the moment '
+                  'you would use it.</p>' % (len(members), sbooks, esc(s)))
+        sp.append('<div class="relgrid">')
+        for mid in members:
+            sp.append(sit_relcard(by_id[mid]))
+        sp.append('</div>')
+        sp.append('<footer class="sitefoot"><a href="/">Idea Ripper archive</a> \u00b7 '
+                  '<a href="/situations/">All situations</a> \u00b7 '
+                  '<a href="/ledger/">Full ledger</a> \u00b7 Machine-assisted, '
+                  'hand-curated</footer>')
+        sp.append('</div></body></html>')
+        sd2 = os.path.join(BASE, "situations", sit_slug(s))
+        os.makedirs(sd2, exist_ok=True)
+        with open(os.path.join(sd2, "index.html"), "w", encoding="utf-8") as fh:
+            fh.write("\n".join(sp))
 
     # ---------------- search-index.json (merged) ----------------
     legacy_books = []
@@ -771,7 +975,9 @@ def main():
     card_urls = [(SITE + canon(cid), "monthly", "0.7") for cid in ids_sorted]
     with open(os.path.join(BASE, "sitemap-cards.xml"), "w", encoding="utf-8") as fh:
         fh.write(urlset(card_urls))
-    book_urls = [(SITE + "/", "daily", "1.0"), (SITE + "/ledger/", "weekly", "0.8")]
+    book_urls = [(SITE + "/", "daily", "1.0"), (SITE + "/ledger/", "weekly", "0.8"),
+                 (SITE + "/situations/", "weekly", "0.8")]
+    book_urls += [(SITE + sit_url(s), "monthly", "0.6") for s in sit_labels]
     seen_books = set()
     for b in books:
         key = key_of.get(b["book"])
