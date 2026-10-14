@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="color-scheme" content="light"/>
-<meta name="build" content="pages-63329d896a45 data-64904cc764"/>
+<meta name="build" content="pages-f8b1a1f54b14 data-64904cc764"/>
 <title>&quot;Some instructions read the external pin state, but…&quot; — 8051 Microcontroller Notes (#c523) | Idea Ripper</title>
 <meta name="description" content="&quot;Some instructions read the external pin state, but read-modify-write instructions read the internal port latch, modify it, and write it back — so a bit toggled this way reflects what the port was last driven to, not what is happening on the pin. Port 0 is open-drain and needs external 10K…"/>
 <link rel="canonical" href="https://idearipper.com/c/523-read-modify-write-instructions-read/"/>
@@ -14,7 +14,7 @@
 <meta property="og:description" content="&quot;Some instructions read the external pin state, but read-modify-write instructions read the internal port latch, modify it, and write it back — so a bit toggled this way reflects what the port was last driven to, not what is happening on the pin. Port 0 is open-drain and needs external 10K…"/>
 <meta property="og:url" content="https://idearipper.com/c/523-read-modify-write-instructions-read/"/>
 <link rel="icon" type="image/svg+xml" href="/brand/r-mark.svg"/>
-<link rel="stylesheet" href="/assets/paper.b70a09ced1.css"/>
+<link rel="stylesheet" href="/assets/paper.72cb416436.css"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Quotation", "text": "Some instructions read the external pin state, but read-modify-write instructions read the internal port latch, modify it, and write it back — so a bit toggled this way reflects what the port was last driven to, not what is happening on the pin. Port 0 is open-drain and needs external 10K pull-ups; it also multiplexes address/data (AD0-AD7), while P2 carries the high address byte (A8-A15) and P3 pins double as RxD/TxD, INT0/INT1, T0/T1, WR, and RD.", "isPartOf": {"@type": "Book", "name": "8051 Microcontroller Notes", "author": "8051 Microcontroller Notes"}, "mainEntity": {"@type": "DefinedTerm", "name": "Read-modify-write instructions read the port latch, not the pin", "description": "Toggling 8051 port bits or driving external buses — know whether your instruction reads the latch or the pin, add the pull-ups on P0, and account for which pins are stolen by timers, interrupts, or memory access."}}</script>
 <meta property="og:image" content="https://idearipper.com/og/og-8051-microcontroller-notes.png"/>
 

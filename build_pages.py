@@ -11,6 +11,7 @@ Emits, into the lib root (the served root):
   c/<id>-<slug>/index.html    one canonical page per card (slug from the lock)
   c/<id>/index.html           redirect stub (meta refresh + canonical + noindex)
   ledger/index.html           dense all-cards index, per-genre anchors
+  books/index.html            Wave 4: every book by shelf + theses/reports archive
   search-index.json           merged index: new short keys {i,s,l,u,b} per rip
                               PLUS the legacy Next-app fields, so the existing
                               /books/, /search/, /collections/ pages keep working
@@ -46,6 +47,15 @@ change. Card pages end with two exit ramps (S7): "Same situation, different
 book" and "Card N of M from this book" with in-book prev/next. The ledger
 gains a client-side "Sample the stack" sampler + "Surprise me" jump (S8),
 fed by data-title / data-book / data-sit row attributes.
+
+Wave 4 (2026-10-14, Billy): findability. The redesign's front door hid the
+two lists a browser actually navigates by, so both are restored: a
+"Recently Added" list on the homepage (the newest books, ordered by each
+book's highest permanent card id — the only recency signal in the data)
+and a /books/ index page (every book grouped by shelf, with the theses
+and military reports in their own separated archive section). "Books"
+joins the top-level nav surfaces. Presentation only: no library data,
+card id, or slug changes.
 """
 import argparse
 import datetime as _dt
@@ -217,6 +227,14 @@ td .srcpill{margin-left:.4rem}
 .shelfbox:hover{background:var(--bg-subtle);color:var(--text-primary)}
 .shelfbox .sname{font-weight:700;font-size:1.02rem;display:block}
 .shelfbox .scounts{font-family:var(--font-mono);font-size:.75rem;color:var(--text-secondary);letter-spacing:.08em;text-transform:uppercase}
+/* Wave 4: Recently Added (homepage) + Books index rows */
+.recentlist,.booklist{list-style:none;margin:0 0 1.25rem;padding:0}
+.rbook{display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap;border-bottom:1px solid var(--border-subtle);padding:.5rem .1rem}
+.rbook .rtitle{font-family:var(--font-serif);font-size:1.12rem;font-weight:600;color:var(--text-primary);text-decoration:none}
+.rbook .rtitle:hover{color:var(--accent-signal)}
+.rbook .rauthor{color:var(--text-secondary);font-size:.95rem}
+.rbook .rcount{margin-left:auto;font-family:var(--font-mono);font-size:.75rem;color:var(--text-secondary);letter-spacing:.06em;white-space:nowrap}
+h3.archsub{font-family:var(--font-mono);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary);margin:1.4rem 0 .4rem}
 /* ledger */
 .ledwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1.5px solid var(--border-strong);margin:0 0 1.5rem}
 table.ledger{width:100%;min-width:620px;border-collapse:collapse;font-size:.85rem;background:var(--bg-card)}
@@ -591,6 +609,24 @@ def main():
         with open(os.path.join(sd, "index.html"), "w", encoding="utf-8") as fh:
             fh.write(stub)
 
+    # Wave 4: one book row (title, author, card count, link), shared by the
+    # homepage Recently Added list and the /books/ index. The link is the
+    # site's own pattern (book_url): the full-book page when one exists,
+    # else the book's ledger anchor.
+    _w4_book_cards = {}
+    for c in cards:
+        _w4_book_cards[c["book"]] = _w4_book_cards.get(c["book"], 0) + 1
+
+    def book_li(b, with_pill=False):
+        bt, ba = split_book(b["book"])
+        pill = (' <span class="srcpill">%s</span>'
+                % SRC_LABEL[src_of[b["book"]]]) if with_pill else ""
+        return ('<li class="rbook"><a class="rtitle" href="%s">%s</a>%s%s'
+                '<span class="rcount">%d cards</span></li>'
+                % (esca(book_url(b["book"])), esc(bt),
+                   (' <span class="rauthor">%s</span>' % esc(ba)) if ba else "",
+                   pill, _w4_book_cards.get(b["book"], 0)))
+
     # ---------------- homepage ----------------
     def prev_card(c):
         bt, ba = split_book(c["book"])
@@ -673,6 +709,7 @@ def main():
         % ids_sorted[-1])
     home.append('<div class="headrow"><button type="button" class="btn ghost randomcard">'
                 '[Random card \u21bb]</button>'
+                '<a class="btn ghost" href="/books/">[Books]</a>'
                 '<a class="btn ghost" href="/ledger/">[Full ledger]</a></div>')
     home.append('<h2 class="sect" id="situations">Field-tested by situation:</h2><div class="pills">%s'
                 '<a class="pill-link" href="/situations/">All situations -&gt;</a></div>'
@@ -684,9 +721,41 @@ def main():
                     '<span class="cnt">// last %d non-book additions</span></h2>'
                     % len(archive_latest))
         home.extend(prev_card(c) for c in archive_latest)
+    # Wave 4 (Billy): Recently Added — the newest BOOKS in the library.
+    # Recency = each book's permanent card ids: ids are permanent and
+    # issued in adoption order, so ranking by highest card id descending
+    # ranks the books by adoption. No dates are printed; the ordering
+    # carries the recency. One refinement: the books of the newest
+    # adoption event occupy mutually contiguous ranges at the head of the
+    # id space (each book starts where the previous one ends); inside
+    # that block the list follows adoption order (first card id
+    # ascending) — the order the books were ripped in — instead of
+    # last-card order, so a same-day batch reads the way it happened.
+    _w4_maxid, _w4_minid = {}, {}
+    for c in cards:
+        if c["id"] > _w4_maxid.get(c["book"], 0):
+            _w4_maxid[c["book"]] = c["id"]
+        if c["id"] < _w4_minid.get(c["book"], 1 << 30):
+            _w4_minid[c["book"]] = c["id"]
+    _ranked = sorted(
+        [b for b in books if src_of[b["book"]] == "book"],
+        key=lambda b: _w4_maxid[b["book"]], reverse=True)
+    _head = []
+    for b in _ranked:
+        if _head and _w4_maxid[b["book"]] != _w4_minid[_head[-1]["book"]] - 1:
+            break
+        _head.append(b)
+    _head.sort(key=lambda b: _w4_minid[b["book"]])
+    recent_books = (_head + _ranked[len(_head):])[:10]
+    if recent_books:
+        home.append('<h2 class="sect">Recently Added <span class="cnt">// newest '
+                    '%d books in the library</span></h2>' % len(recent_books))
+        home.append('<ol class="recentlist">%s</ol>'
+                    % "".join(book_li(b) for b in recent_books))
     home.append('<h2 class="sect">Browse by shelf</h2><div class="shelfgrid">%s</div>'
                 % "".join(shelf_boxes))
-    home.append('<footer class="sitefoot"><a href="/ledger/">Full ledger</a> \u00b7 '
+    home.append('<footer class="sitefoot"><a href="/books/">Books</a> &#183; '
+                '<a href="/ledger/">Full ledger</a> \u00b7 '
                 '<a href="https://x.com/IdeaRipper">@IdeaRipper on X</a> \u00b7 '
                 '%d cards \u00b7 Machine-assisted, hand-curated with the Idea Ripper pipeline</footer>' % n)
     home.append('</div>')
@@ -757,7 +826,8 @@ def main():
     led.append("<body>")
     led.append(statusbar(n, build_date))
     led.append('<div class="wrap">')
-    led.append('<nav class="crumb"><a href="/">Archive</a> / Ledger</nav>')
+    led.append('<nav class="crumb"><a href="/">Archive</a> / Ledger &#183; '
+               '<a href="/books/">Books</a></nav>')
     led.append('<h1 class="mission">The ledger</h1>')
     led.append('<p class="sub">Every card in the archive \u2014 %d \u2014 in shelf order. '
                'Each row opens the full file.</p>' % n)
@@ -891,6 +961,7 @@ def main():
                    % (sit_url(s), esc(sit_name(s)), len(sit_cards[s]), sbooks, esc(s)))
     six.append('</div>')
     six.append('<footer class="sitefoot"><a href="/">Idea Ripper archive</a> \u00b7 '
+               '<a href="/books/">Books</a> \u00b7 '
                '<a href="/ledger/">Full ledger</a> \u00b7 %d situations \u00b7 '
                'Machine-assisted, hand-curated</footer>' % len(sit_labels))
     six.append('</div></body></html>')
@@ -927,6 +998,57 @@ def main():
         os.makedirs(sd2, exist_ok=True)
         with open(os.path.join(sd2, "index.html"), "w", encoding="utf-8") as fh:
             fh.write("\n".join(sp))
+
+    # ---------------- books index (Wave 4) ----------------
+    # /books/: every book in the library, grouped by shelf in the site's
+    # genre order; then the theses and military reports (ideas, not books)
+    # in their own clearly separated archive section. Rows link through
+    # book_url, the site's existing pattern (full-book page when one
+    # exists, else the book's ledger anchor). Presentation only.
+    _w4_books = [b for b in books if src_of[b["book"]] == "book"]
+    _w4_arch = [b for b in books if src_of[b["book"]] != "book"]
+    bkp = [head("Books — every book in the library | Idea Ripper",
+                "Every book ripped in the Idea Ripper library: %d books by "
+                "shelf, plus %d theses and military reports in the archive."
+                % (len(_w4_books), len(_w4_arch)),
+                SITE + "/books/", marker, css_href)]
+    bkp.append("<body>")
+    bkp.append(statusbar(n, build_date))
+    bkp.append('<div class="wrap">')
+    bkp.append('<nav class="crumb"><a href="/">Archive</a> / Books</nav>')
+    bkp.append('<h1 class="mission">Books</h1>')
+    bkp.append('<p class="sub">Every book in the library, shelf by shelf. '
+               '%d books, %d cards. The theses and military reports are '
+               'filed in their own archive at the bottom.</p>'
+               % (len(_w4_books),
+                  sum(_w4_book_cards.get(b["book"], 0) for b in _w4_books)))
+    for g in genre_order:
+        gb = [b for b in _w4_books if b["genre"] == g]
+        if not gb:
+            continue
+        bkp.append('<h2 class="sect">%s <span class="cnt">// %d books</span></h2>'
+                   % (esc(g), len(gb)))
+        bkp.append('<ul class="booklist">%s</ul>'
+                   % "".join(book_li(b) for b in gb))
+    bkp.append('<h2 class="sect">Theses &amp; Reports <span class="cnt">// the '
+               'archive — ideas, not books</span></h2>')
+    for g in genre_order:
+        ga = [b for b in _w4_arch if b["genre"] == g]
+        if not ga:
+            continue
+        bkp.append('<h3 class="archsub">%s <span class="cnt">// %d</span></h3>'
+                   % (esc(g), len(ga)))
+        bkp.append('<ul class="booklist">%s</ul>'
+                   % "".join(book_li(b, with_pill=True) for b in ga))
+    bkp.append('<footer class="sitefoot"><a href="/">Idea Ripper archive</a> \u00b7 '
+               '<a href="/ledger/">Full ledger</a> \u00b7 '
+               '<a href="/situations/">Situations</a> \u00b7 %d books \u00b7 '
+               'Machine-assisted, hand-curated</footer>' % len(_w4_books))
+    bkp.append('</div></body></html>')
+    with open(os.path.join(BASE, "books", "index.html"), "w", encoding="utf-8") as fh:
+        fh.write("\n".join(bkp))
+    print("books page: %d books, %d archive entries"
+          % (len(_w4_books), len(_w4_arch)))
 
     # ---------------- search-index.json (merged) ----------------
     legacy_books = []
@@ -976,6 +1098,7 @@ def main():
     with open(os.path.join(BASE, "sitemap-cards.xml"), "w", encoding="utf-8") as fh:
         fh.write(urlset(card_urls))
     book_urls = [(SITE + "/", "daily", "1.0"), (SITE + "/ledger/", "weekly", "0.8"),
+                 (SITE + "/books/", "weekly", "0.8"),
                  (SITE + "/situations/", "weekly", "0.8")]
     book_urls += [(SITE + sit_url(s), "monthly", "0.6") for s in sit_labels]
     seen_books = set()

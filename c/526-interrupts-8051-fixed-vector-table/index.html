@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="color-scheme" content="light"/>
-<meta name="build" content="pages-63329d896a45 data-64904cc764"/>
+<meta name="build" content="pages-f8b1a1f54b14 data-64904cc764"/>
 <title>&quot;Six interrupts live at fixed ROM addresses —…&quot; — 8051 Microcontroller Notes (#c526) | Idea Ripper</title>
 <meta name="description" content="&quot;Six interrupts live at fixed ROM addresses — Reset 0000H, INT0 0003H, TF0 000BH, INT1 0013H, TF1 001BH, serial 0023H. On an interrupt the CPU finishes the current instruction, pushes the PC, and jumps; the ISR ends with RETI, which restores the PC and clears the interrupt-in-service flag so the…"/>
 <link rel="canonical" href="https://idearipper.com/c/526-interrupts-8051-fixed-vector-table/"/>
@@ -14,7 +14,7 @@
 <meta property="og:description" content="&quot;Six interrupts live at fixed ROM addresses — Reset 0000H, INT0 0003H, TF0 000BH, INT1 0013H, TF1 001BH, serial 0023H. On an interrupt the CPU finishes the current instruction, pushes the PC, and jumps; the ISR ends with RETI, which restores the PC and clears the interrupt-in-service flag so the…"/>
 <meta property="og:url" content="https://idearipper.com/c/526-interrupts-8051-fixed-vector-table/"/>
 <link rel="icon" type="image/svg+xml" href="/brand/r-mark.svg"/>
-<link rel="stylesheet" href="/assets/paper.b70a09ced1.css"/>
+<link rel="stylesheet" href="/assets/paper.72cb416436.css"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Quotation", "text": "Six interrupts live at fixed ROM addresses — Reset 0000H, INT0 0003H, TF0 000BH, INT1 0013H, TF1 001BH, serial 0023H. On an interrupt the CPU finishes the current instruction, pushes the PC, and jumps; the ISR ends with RETI, which restores the PC and clears the interrupt-in-service flag so the pin can fire again. The IE register masks each interrupt individually but nothing works unless EA (IE.7) is set, and the IP register can reorder the default priority (INT0, TF0, INT1, TF1, serial).", "isPartOf": {"@type": "Book", "name": "8051 Microcontroller Notes", "author": "8051 Microcontroller Notes"}, "mainEntity": {"@type": "DefinedTerm", "name": "Interrupts on the 8051: a fixed vector table, EA as a master switch, IP priority, and RETI clearing the in-service flag", "description": "Designing interrupt-driven 8051 firmware — set EA plus the individual IE bit, place the ISR at its vector address, and end with RETI (never RET) so the interrupt can re-arm."}}</script>
 <meta property="og:image" content="https://idearipper.com/og/og-8051-microcontroller-notes.png"/>
 

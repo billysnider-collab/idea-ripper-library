@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="color-scheme" content="light"/>
-<meta name="build" content="pages-63329d896a45 data-64904cc764"/>
+<meta name="build" content="pages-f8b1a1f54b14 data-64904cc764"/>
 <title>&quot;One machine cycle is 12 oscillator periods (1.085…&quot; — 8051 Microcontroller Notes (#c524) | Idea Ripper</title>
 <meta name="description" content="&quot;One machine cycle is 12 oscillator periods (1.085 us at 11.0592 MHz), and that heartbeat feeds Timer 0 and Timer 1. The TMOD register splits control between them — the lower nibble configures Timer 0, the upper nibble Timer 1 — each timer counts in THx/TLx, raises the TFx flag on overflow, and is…"/>
 <link rel="canonical" href="https://idearipper.com/c/524-timer-overflow-machine-tmod-splits/"/>
@@ -14,7 +14,7 @@
 <meta property="og:description" content="&quot;One machine cycle is 12 oscillator periods (1.085 us at 11.0592 MHz), and that heartbeat feeds Timer 0 and Timer 1. The TMOD register splits control between them — the lower nibble configures Timer 0, the upper nibble Timer 1 — each timer counts in THx/TLx, raises the TFx flag on overflow, and is…"/>
 <meta property="og:url" content="https://idearipper.com/c/524-timer-overflow-machine-tmod-splits/"/>
 <link rel="icon" type="image/svg+xml" href="/brand/r-mark.svg"/>
-<link rel="stylesheet" href="/assets/paper.b70a09ced1.css"/>
+<link rel="stylesheet" href="/assets/paper.72cb416436.css"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Quotation", "text": "One machine cycle is 12 oscillator periods (1.085 us at 11.0592 MHz), and that heartbeat feeds Timer 0 and Timer 1. The TMOD register splits control between them — the lower nibble configures Timer 0, the upper nibble Timer 1 — each timer counts in THx/TLx, raises the TFx flag on overflow, and is started or stopped with TRx. Mode 1 is a 16-bit counter that must be reloaded by hand after every overflow; Mode 2 is 8-bit auto-reload, where TH holds the reload value and TL counts and silently reloads on overflow.", "isPartOf": {"@type": "Book", "name": "8051 Microcontroller Notes", "author": "8051 Microcontroller Notes"}, "mainEntity": {"@type": "DefinedTerm", "name": "The timer as an overflow machine: TMOD splits control, THx/TLx count up, TFx signals the roll-over", "description": "Generating a delay, square wave, or baud clock on the 8051 — pick the mode whose reload discipline fits the job, then compute the TH/TL values from the 1.085 us heartbeat."}}</script>
 <meta property="og:image" content="https://idearipper.com/og/og-8051-microcontroller-notes.png"/>
 

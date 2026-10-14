@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="color-scheme" content="light"/>
-<meta name="build" content="pages-63329d896a45 data-64904cc764"/>
+<meta name="build" content="pages-f8b1a1f54b14 data-64904cc764"/>
 <title>&quot;The 8051 talks to peripherals like memory: the…&quot; — 8051 Microcontroller Notes (#c527) | Idea Ripper</title>
 <meta name="description" content="&quot;The 8051 talks to peripherals like memory: the 74LS138 3-to-8 decoder turns three address lines (A, B, C) into eight active-low outputs, each wired to a chip&#x27;s CS pin, so one decoder selects eight memory blocks. An I/O chip like the 8255 is wired to the bus as if it were RAM and driven with MOVX;…"/>
 <link rel="canonical" href="https://idearipper.com/c/527-memory-mapped-address-decoding-74ls138/"/>
@@ -14,7 +14,7 @@
 <meta property="og:description" content="&quot;The 8051 talks to peripherals like memory: the 74LS138 3-to-8 decoder turns three address lines (A, B, C) into eight active-low outputs, each wired to a chip&#x27;s CS pin, so one decoder selects eight memory blocks. An I/O chip like the 8255 is wired to the bus as if it were RAM and driven with MOVX;…"/>
 <meta property="og:url" content="https://idearipper.com/c/527-memory-mapped-address-decoding-74ls138/"/>
 <link rel="icon" type="image/svg+xml" href="/brand/r-mark.svg"/>
-<link rel="stylesheet" href="/assets/paper.b70a09ced1.css"/>
+<link rel="stylesheet" href="/assets/paper.72cb416436.css"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Quotation", "text": "The 8051 talks to peripherals like memory: the 74LS138 3-to-8 decoder turns three address lines (A, B, C) into eight active-low outputs, each wired to a chip's CS pin, so one decoder selects eight memory blocks. An I/O chip like the 8255 is wired to the bus as if it were RAM and driven with MOVX; its A1/A0 lines pick Port A, Port B, Port C, or the control register, and a control word configures each port as input or output (with a bit-set/reset mode that can flip single Port C bits). Decoding only part of the address creates aliases — many addresses reaching the same physical port — which must be documented.", "isPartOf": {"@type": "Book", "name": "8051 Microcontroller Notes", "author": "8051 Microcontroller Notes"}, "mainEntity": {"@type": "DefinedTerm", "name": "Memory-mapped I/O and address decoding: the 74LS138 turns address bits into chip selects, and aliases are the price of…", "description": "Expanding an 8051 system with external memory or I/O chips — decode enough address lines for clean selects, document every alias, and configure peripherals with a control word before touching their data ports."}}</script>
 <meta property="og:image" content="https://idearipper.com/og/og-8051-microcontroller-notes.png"/>
 

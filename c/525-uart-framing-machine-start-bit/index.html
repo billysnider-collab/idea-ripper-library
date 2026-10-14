@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="color-scheme" content="light"/>
-<meta name="build" content="pages-63329d896a45 data-64904cc764"/>
+<meta name="build" content="pages-f8b1a1f54b14 data-64904cc764"/>
 <title>&quot;In the 8-bit asynchronous mode, every byte is…&quot; — 8051 Microcontroller Notes (#c525) | Idea Ripper</title>
 <meta name="description" content="&quot;In the 8-bit asynchronous mode, every byte is framed with one start bit, eight data bits, and one stop bit. SBUF is the byte register; SCON controls the mode; TI fires when the stop bit has been transmitted and RI fires when a full byte lands — and the CPU must clear both flags itself, or the…"/>
 <link rel="canonical" href="https://idearipper.com/c/525-uart-framing-machine-start-bit/"/>
@@ -14,7 +14,7 @@
 <meta property="og:description" content="&quot;In the 8-bit asynchronous mode, every byte is framed with one start bit, eight data bits, and one stop bit. SBUF is the byte register; SCON controls the mode; TI fires when the stop bit has been transmitted and RI fires when a full byte lands — and the CPU must clear both flags itself, or the…"/>
 <meta property="og:url" content="https://idearipper.com/c/525-uart-framing-machine-start-bit/"/>
 <link rel="icon" type="image/svg+xml" href="/brand/r-mark.svg"/>
-<link rel="stylesheet" href="/assets/paper.b70a09ced1.css"/>
+<link rel="stylesheet" href="/assets/paper.72cb416436.css"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Quotation", "text": "In the 8-bit asynchronous mode, every byte is framed with one start bit, eight data bits, and one stop bit. SBUF is the byte register; SCON controls the mode; TI fires when the stop bit has been transmitted and RI fires when a full byte lands — and the CPU must clear both flags itself, or the handshake stalls. Baud comes from Timer 1 running in mode 2, so at 11.0592 MHz the reload values TH1 = FDH, FAH, F4H, and E8H give 9600, 4800, 2400, and 1200 baud respectively.", "isPartOf": {"@type": "Book", "name": "8051 Microcontroller Notes", "author": "8051 Microcontroller Notes"}, "mainEntity": {"@type": "DefinedTerm", "name": "The UART as a framing machine: start bit, 8 data bits, stop bit, with software-cleared TI and RI", "description": "Bringing up an 8051 UART link — verify the framing in SCON, confirm Timer 1 mode 2 with the right TH1 reload, and always clear TI/RI in the handler before doing anything else."}}</script>
 <meta property="og:image" content="https://idearipper.com/og/og-8051-microcontroller-notes.png"/>
 
