@@ -16,6 +16,8 @@ exclude:
   - brand/make_mark.py
   - cards.json
   - "cards.json.pre-*"
+  - slugs.lock.json
+  - "*.pre-redesign-*"
   - fullbooks.json
   - "fullbooks.json.pre-*"
   - shelf.yaml
