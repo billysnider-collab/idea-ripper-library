@@ -979,49 +979,34 @@
    "bookline": "David Talbot's history of Allen Dulles and the CIA — 23 hand-ripped mechanisms of power, each with its price tag. Verified against the text; 20 documented, 3 marked as Talbot's case."
   },
   {
-   "book": "Quantifying risk for decentralized offensive cyber operations — Michael S. Klipstein",
+   "book": "A Study on the Failure of Conventional Deterrence: The Case Study of the Bombardment of Yeonpyeong in 2010 — Jin Ki Lee",
    "genre": "Thesis",
-   "bookline": "PhD thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/quantifyingriskf1094554879"
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1031035"
   },
   {
-   "book": "From Dependence to Causation — David Lopez-Paz",
+   "book": "Aesthetics of Feminism in the Poetry of Imtiaz Dharker and Charmayne D'Souza — A Critical Study — Honey Singhal",
    "genre": "Thesis",
-   "bookline": "PhD thesis — University of Cambridge, 2016. Full text: https://archive.org/details/arxiv-1607.03300"
+   "bookline": "PhD thesis — Manav Rachna International Institute of Research and Studies, 2013. Full text: https://archive.org/details/sgng.2512-aesthetics-of-feminism-in-the-poetry-of-imtiaz-dharker-and-charmay"
   },
   {
-   "book": "Three qubit system for kicked top model — Ayrisha Sanjay Sondawale",
+   "book": "Assessment of the Effectiveness of Economic Sanctions: The Cases of Iran, North Korea, Myanmar, and Cuba — Yesun Yoon",
    "genre": "Thesis",
-   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology Nagpur, 2025. Full text: https://archive.org/details/sgng.19113-three-qubit-system-for-kicked-top-model"
+   "bookline": "Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/DTIC_AD1046592"
   },
   {
-   "book": "Ezekiel's Prophecies under the Influence of Mesopotamian Literature: Hidden Transcripts against Empire — Inchol Yang",
+   "book": "At Periscope Depth: Exploring Submarine Proliferation in Southeast Asia — Corwin J. Hardy",
    "genre": "Thesis",
-   "bookline": "PhD thesis — Claremont School of Theology, 2018. Full text: https://archive.org/details/Ph.D.DissertationFinalDraftINCHOLYANG"
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_AD1008956"
   },
   {
-   "book": "Getting to Yes — Roger Fisher, William Ury & Bruce Patton",
-   "genre": "Nonfiction",
-   "bookline": "Negotiation — the Harvard method (2nd ed.): separate the people from the problem, focus on interests not positions, invent options for mutual gain, insist on objective criteria."
+   "book": "Chinese Cyber Espionage: A Complementary Method to Aid PLA Modernization — Jamie M. Ellis",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632209"
   },
   {
-   "book": "The Autobiography of Benjamin Franklin — Benjamin Franklin",
-   "genre": "Nonfiction",
-   "bookline": "Self-improvement — Franklin's own account of how he taught himself to write and argue, ran a moral experiment on himself, and built Philadelphia's institutions out of a club of tradesmen."
-  },
-  {
-   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
-   "genre": "Nonfiction",
-   "bookline": "Worldly strategy — Gracián's 300 maxims on getting your way at court without making enemies, in Joseph Jacobs's 1892 translation."
-  },
-  {
-   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
-   "genre": "Nonfiction",
-   "bookline": "Public speaking — the 1915 textbook Carnegie co-wrote before How to Win Friends: stage fright, emphasis, pauses, notes, suggestion and moving a crowd."
-  },
-  {
-   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
-   "genre": "Nonfiction",
-   "bookline": "Management — Taylor's 1911 case for studying work like a science: time studies, planned tasks, rest schedules and pay tied to output, from pig iron to bicycle-ball inspection."
+   "book": "Conical Designs and Categorical Jordan Algebraic Post-Quantum Theories — Matthew A. Graydon",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — University of Waterloo, 2017. Full text: https://archive.org/details/arxiv-1703.06800"
   },
   {
    "book": "Cyropaedia — Xenophon",
@@ -1029,44 +1014,194 @@
    "bookline": "Leadership — Xenophon's idealized education of Cyrus the Great, in Henry Dakyns's translation: a father's leadership lessons, then Cyrus building an army and an empire."
   },
   {
+   "book": "Discrete Event Simulation for the Analysis of Artillery Fired Projectiles from Shore — James Garrick Sheatzley",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/DTIC_AD1046551"
+  },
+  {
+   "book": "Ezekiel's Prophecies under the Influence of Mesopotamian Literature: Hidden Transcripts against Empire — Inchol Yang",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Claremont School of Theology, 2018. Full text: https://archive.org/details/Ph.D.DissertationFinalDraftINCHOLYANG"
+  },
+  {
+   "book": "From Dependence to Causation — David Lopez-Paz",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — University of Cambridge, 2016. Full text: https://archive.org/details/arxiv-1607.03300"
+  },
+  {
+   "book": "Getting to Yes — Roger Fisher, William Ury & Bruce Patton",
+   "genre": "Nonfiction",
+   "bookline": "Negotiation — the Harvard method (2nd ed.): separate the people from the problem, focus on interests not positions, invent options for mutual gain, insist on objective criteria."
+  },
+  {
+   "book": "Insider Threat: Preventing Direct Action Attacks Within the United States Army — Paul T. Deming",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — U.S. Army Command and General Staff College, 2017. Full text: https://archive.org/details/DTIC_AD1038631"
+  },
+  {
+   "book": "Investing in the Future World Order: Geoeconomic Strategy and Foreign Direct Investment — Lindsey Giggy",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Air University (School of Advanced Air and Space Studies), 2017. Full text: https://archive.org/details/DTIC_AD1045783"
+  },
+  {
+   "book": "Normalizer Circuits and Quantum Computation — Juan Bermejo-Vega",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Technical University of Munich, 2016. Full text: https://archive.org/details/arxiv-1611.09274"
+  },
+  {
+   "book": "Post Traumatic Seizure: A Prospective Study — Dr. Tarun Garg",
+   "genre": "Thesis",
+   "bookline": "MCh Neurosurgery thesis — Baba Farid University of Health Sciences (Dayanand Medical College and Hospital, Ludhiana), 2021. Full text: https://archive.org/details/sgng.18381-post-traumatic-seizure-a-prospective-study"
+  },
+  {
+   "book": "Quantifying risk for decentralized offensive cyber operations — Michael S. Klipstein",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/quantifyingriskf1094554879"
+  },
+  {
    "book": "Self-Help — Samuel Smiles",
    "genre": "Nonfiction",
    "bookline": "Self-improvement — Smiles's 1859 casebook of inventors, potters, artists and engineers who made their own way, told as short working biographies."
   },
   {
-   "book": "Carthage: A New History — Eve MacDonald",
+   "book": "The Art of Public Speaking — J. Berg Esenwein & Dale Carnegie",
    "genre": "Nonfiction",
-   "bookline": "Ancient history — Eve MacDonald's 2025 history of Carthage, read for the people who lived there before Rome: how they traded, governed, worshipped and sailed."
+   "bookline": "Public speaking — the 1915 textbook Carnegie co-wrote before How to Win Friends: stage fright, emphasis, pauses, notes, suggestion and moving a crowd."
   },
   {
-   "book": "How to Take Smart Notes — Sönke Ahrens",
+   "book": "The Art of Worldly Wisdom — Baltasar Gracián",
    "genre": "Nonfiction",
-   "bookline": "Writing and thinking — Sönke Ahrens on Niklas Luhmann's slip-box: how one sociologist turned index cards into 58 books, and how to copy the system."
+   "bookline": "Worldly strategy — Gracián's 300 maxims on getting your way at court without making enemies, in Joseph Jacobs's 1892 translation."
   },
   {
-   "book": "This Is the Plan — Ben Wikler",
+   "book": "The Autobiography of Benjamin Franklin — Benjamin Franklin",
    "genre": "Nonfiction",
-   "bookline": "Political organizing — Ben Wikler, who chaired the Wisconsin Democratic Party through four years of hair's-breadth elections, on how campaigns are actually won: relationships, small teams, low-profile races and organizing between elections."
+   "bookline": "Self-improvement — Franklin's own account of how he taught himself to write and argue, ran a moral experiment on himself, and built Philadelphia's institutions out of a club of tradesmen."
   },
   {
-   "book": "The Oxford Handbook of Modern Diplomacy — Andrew F. Cooper, Jorge Heine & Ramesh Thakur",
+   "book": "The Principles of Scientific Management — Frederick Winslow Taylor",
    "genre": "Nonfiction",
-   "bookline": "Diplomacy and negotiation — practitioners and scholars including Martti Ahtisaari, Joseph Nye and David Welch on how deals, mediation, crises and persuasion actually work between states."
+   "bookline": "Management — Taylor's 1911 case for studying work like a science: time studies, planned tasks, rest schedules and pay tied to output, from pig iron to bicycle-ball inspection."
   },
   {
-   "book": "Trade Outside the Box — Brent Donnelly",
-   "genre": "Nonfiction",
-   "bookline": "Trading and decision-making — veteran FX trader Brent Donnelly borrows from poker, psychology and physics to show how professionals think about what others think, read market tells, size risk and pick games they can win."
+   "book": "The United States Space Force: Not If, But When — Peter C. Norsky",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — School of Advanced Air and Space Studies / Air University, 2016. Full text: https://archive.org/details/DTIC_AD1030447"
   },
   {
-   "book": "Digital Impact — Steve Lucas",
-   "genre": "Nonfiction",
-   "bookline": "Enterprise AI — Boomi CEO Steve Lucas, with CIOs and executives from Ford, Deloitte, Red Hat and the Red Cross, on why AI projects stall on disconnected systems and data, and what the teams that got it working did differently."
+   "book": "Three qubit system for kicked top model — Ayrisha Sanjay Sondawale",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Visvesvaraya National Institute of Technology Nagpur, 2025. Full text: https://archive.org/details/sgng.19113-three-qubit-system-for-kicked-top-model"
   },
   {
-   "book": "Courage Can Save Us — Rye Barcott",
-   "genre": "Nonfiction",
-   "bookline": "Political courage — Rye Barcott profiles ten veterans in Congress and statehouses, Republicans and Democrats, on how they cut deals, defied their own parties and decided which fights to take."
+   "book": "Wrestling the Bear: The Rise of Russian Hybrid Warfare — Jamie E. Palagi",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Joint Advanced Warfighting School / National Defense University, 2015. Full text: https://archive.org/details/DTIC_ADA622700"
+  },
+  {
+   "book": "Balance of Risk in the South China Sea — Adam M. McCann",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632405"
+  },
+  {
+   "book": "Norms in Conflict: Statecraft, Preventive Force, and Counter Proliferation — James J. Allbright",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/DTIC_AD1030650"
+  },
+  {
+   "book": "Hydrodynamic response of a composite structure in an Arctic environment — Scott H. Bolstad",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2015. Full text: https://archive.org/details/hydrodynamicresp1094545817"
+  },
+  {
+   "book": "Study of Neuropathogenesis in Myotonic Dystrophy type 1 in Drosophila Model Organism — Ritu Sarkar",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — National Brain Research Centre (Deemed University), 2025. Full text: https://archive.org/details/sgng.19050-study-of-neuropathogenesis-in-myotonic-dystrophy-type-1-in-drosop"
+  },
+  {
+   "book": "Neural Machine Translation for Papiamento — Kris Croes",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — University of Amsterdam, 2021. Full text: https://archive.org/details/BNA-DIG-TESIS-CROES-KRIS-2021"
+  },
+  {
+   "book": "Diffeomorphism-invariant averaging in quantum gravity and cosmology — Anthony W. H. Preston",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — University of Southampton, 2016. Full text: https://archive.org/details/arxiv-1612.06872"
+  },
+  {
+   "book": "Influencing Tomorrow: A Study of Emerging Influence Techniques and Their Relevance to United States Information Operations — Major John M. Boehnert",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — U.S. Army Command and General Staff College, 2015. Full text: https://archive.org/details/DTIC_ADA623046"
+  },
+  {
+   "book": "All the Missiles Work: Technological Dislocations and Military Innovation: A Case Study in US Air Force Air-to-Air Armament, Post-World War II through Operation Rolling Thunder — Lt Col Steven A. Fino",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — USAF, Air University (School of Advanced Air and Space Studies), 2015. Full text: https://archive.org/details/DTIC_ADA618921"
+  },
+  {
+   "book": "German Views of Irregular Warfare — Major Johann Hindert",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — USA, Naval Postgraduate School, 2015. Full text: https://archive.org/details/DTIC_ADA632373"
+  },
+  {
+   "book": "Credit Creation Banking: a licence to print money within the paradox of debt — Frank Michael Brun",
+   "genre": "Thesis",
+   "bookline": "MA Research thesis — University of Sydney, 2022. Full text: https://archive.org/details/thesis-credit-creation-banking"
+  },
+  {
+   "book": "Nature based solutions for urban heat island mitigation: A design application in climates with variable precipitation regime — Rozálie Červenková",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — University of Copenhagen, 2026. Full text: https://archive.org/details/thesis-cervenkova-150px"
+  },
+  {
+   "book": "Spaced seeds improve k-mer-based metagenomic classification — Karel Brinda",
+   "genre": "Thesis",
+   "bookline": "preprint thesis — arXiv preprint, 2015. Full text: https://archive.org/details/arxiv-1502.06256"
+  },
+  {
+   "book": "Cugel's Saga",
+   "genre": "Fantasy",
+   "bookline": "Jack Vance's Dying Earth rogue: Cugel the Clever cons his way across a dying world — a field manual in turning disadvantage into leverage."
+  },
+  {
+   "book": "Earth Abides",
+   "genre": "Science Fiction",
+   "bookline": "Post-plague America through Ish's lifetime: what survives the end of the world isn't what you preserve, it's what the next generation can use."
+  },
+  {
+   "book": "The Squares of the City",
+   "genre": "Science Fiction",
+   "bookline": "A traffic consultant in a Latin American showplace city discovers its politics are moves in a real-life chess game — a manual for finding the hidden ruleset."
+  },
+  {
+   "book": "Software",
+   "genre": "Science Fiction",
+   "bookline": "Cyberpunk 1982: dying roboticist Cobb Anderson gets the offer of immortality from the robots he created — a study in lures, doubles, and what upload really costs."
+  },
+  {
+   "book": "Fearful Pleasures",
+   "genre": "Horror & Weird",
+   "bookline": "Coppard's 1946 weird tales: doubling, disembodiment, and desire turned into mechanisms — what the mind does when it watches itself from outside."
+  },
+  {
+   "book": "Effective client management: maximizing the influence of external sponsors over affiliated armed groups — Anders C. Hamlin",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/effectiveclientm1094556934"
+  },
+  {
+   "book": "Assessing the deterrence value of carrier presence against adversary aggression in a coalition environment — Roger L. Huffstetler",
+   "genre": "Thesis",
+   "bookline": "Masters thesis — Naval Postgraduate School, 2017. Full text: https://archive.org/details/assessingdeterre1094556138"
+  },
+  {
+   "book": "Cooperation among nations: understanding the counter nuclear smuggling network in Europe — Counterproliferation Capstone Team",
+   "genre": "Thesis",
+   "bookline": "Masters capstone thesis — Naval Postgraduate School, 2016. Full text: https://archive.org/details/cooperationmongn1094549453"
+  },
+  {
+   "book": "Probabilistic Modelling of Morphologically Rich Languages — Jan A. Botha",
+   "genre": "Thesis",
+   "bookline": "PhD thesis — University of Oxford, 2015. Full text: https://archive.org/details/arxiv-1508.04271"
   },
   {
    "book": "Cancel Me If You Can — Dave Portnoy",
@@ -1074,9 +1209,44 @@
    "bookline": "Building a media company — Dave Portnoy on taking Barstool Sports from a free Boston newspaper to a $650 million sale and back again for one dollar: finding talent, selling ads, doing deals and refusing to back down."
   },
   {
+   "book": "Carthage: A New History — Eve MacDonald",
+   "genre": "Nonfiction",
+   "bookline": "Ancient history — Eve MacDonald's 2025 history of Carthage, read for the people who lived there before Rome: how they traded, governed, worshipped and sailed."
+  },
+  {
+   "book": "Courage Can Save Us — Rye Barcott",
+   "genre": "Nonfiction",
+   "bookline": "Political courage — Rye Barcott profiles ten veterans in Congress and statehouses, Republicans and Democrats, on how they cut deals, defied their own parties and decided which fights to take."
+  },
+  {
+   "book": "Digital Impact — Steve Lucas",
+   "genre": "Nonfiction",
+   "bookline": "Enterprise AI — Boomi CEO Steve Lucas, with CIOs and executives from Ford, Deloitte, Red Hat and the Red Cross, on why AI projects stall on disconnected systems and data, and what the teams that got it working did differently."
+  },
+  {
+   "book": "How to Take Smart Notes — Sönke Ahrens",
+   "genre": "Nonfiction",
+   "bookline": "Writing and thinking — Sönke Ahrens on Niklas Luhmann's slip-box: how one sociologist turned index cards into 58 books, and how to copy the system."
+  },
+  {
    "book": "Matriarch — Tina Knowles",
    "genre": "Nonfiction",
    "bookline": "Building businesses and talent — Tina Knowles on opening Headliners salon, styling and co-managing Destiny's Child on a shoestring, and launching House of Deréon and Miss Tina."
+  },
+  {
+   "book": "The Oxford Handbook of Modern Diplomacy — Andrew F. Cooper, Jorge Heine & Ramesh Thakur",
+   "genre": "Nonfiction",
+   "bookline": "Diplomacy and negotiation — practitioners and scholars including Martti Ahtisaari, Joseph Nye and David Welch on how deals, mediation, crises and persuasion actually work between states."
+  },
+  {
+   "book": "This Is the Plan — Ben Wikler",
+   "genre": "Nonfiction",
+   "bookline": "Political organizing — Ben Wikler, who chaired the Wisconsin Democratic Party through four years of hair's-breadth elections, on how campaigns are actually won: relationships, small teams, low-profile races and organizing between elections."
+  },
+  {
+   "book": "Trade Outside the Box — Brent Donnelly",
+   "genre": "Nonfiction",
+   "bookline": "Trading and decision-making — veteran FX trader Brent Donnelly borrows from poker, psychology and physics to show how professionals think about what others think, read market tells, size risk and pick games they can win."
   }
  ],
  "cards": [
@@ -18082,6 +18252,537 @@
    ],
    "source_locator": "ch. 12",
    "ripped_at": "2026-10-04"
+  },
+  {
+   "title": "A Study on the Failure of Conventional Deterrence: The Case Study of the Bombardment of Yeonpyeong in 2010",
+   "book": "A Study on the Failure of Conventional Deterrence: The Case Study of the Bombardment of Yeonpyeong in 2010 — Jin Ki Lee",
+   "type": "argument",
+   "steal": "Conventional deterrence failed at Yeonpyeong because the ROK-U.S. alliance lacked credibility — and credibility is built from past actions (reputation), not from capacity on paper; Pyongyang had learned, from earlier unanswered provocations, that retaliation was not credible.",
+   "why": "Deterrence is a reputation ledger, not an inventory list — every unanswered provocation rewrites what the adversary believes you will do next.",
+   "uw": "Credibility is just reputation with a time lag — what you tolerated yesterday sets the price of provocation today.",
+   "id": 1388
+  },
+  {
+   "title": "Aesthetics of Feminism in the Poetry of Imtiaz Dharker and Charmayne D'Souza — A Critical Study",
+   "book": "Aesthetics of Feminism in the Poetry of Imtiaz Dharker and Charmayne D'Souza — A Critical Study — Honey Singhal",
+   "type": "argument",
+   "steal": "The defining aesthetic of feminist Indo-English poetry is the woman's sense of freedom, twofold — freedom of the body and freedom of the soul — expressed through symbolism and imagery rather than direct statement.",
+   "why": "Resistance poetry smuggles its politics in aesthetics — where direct speech is dangerous, the body and the soul get coded into images.",
+   "uw": "Censorship-proof art hides the argument in the image — the meaning survives because it cannot be quoted against the author.",
+   "id": 1390
+  },
+  {
+   "title": "Assessment of the Effectiveness of Economic Sanctions: The Cases of Iran, North Korea, Myanmar, and Cuba",
+   "book": "Assessment of the Effectiveness of Economic Sanctions: The Cases of Iran, North Korea, Myanmar, and Cuba — Yesun Yoon",
+   "type": "argument",
+   "steal": "The U.S. ran near-identical sanctions playbooks against Iran and North Korea — comprehensive trade embargoes plus 'smart' sanctions targeting elites and illicit finance — but only Iran's worked: the 2012 Central Bank sanctions hit Iran's oil exports with precise economic pain and helped produce the desired outcome, while the 2005 Patriot Act freeze of North Korean regime-elite accounts was simply defied.",
+   "why": "Sanctions are not one tool — 'smart' financial sanctions only bite where the target's money actually touches the system; against a fully isolated regime there is nothing to freeze.",
+   "uw": "Pressure needs a surface to press on — sanctions work on economies plugged into global finance and fail on ones that are not.",
+   "id": 1392
+  },
+  {
+   "title": "At Periscope Depth: Exploring Submarine Proliferation in Southeast Asia",
+   "book": "At Periscope Depth: Exploring Submarine Proliferation in Southeast Asia — Corwin J. Hardy",
+   "type": "argument",
+   "steal": "Southeast Asia's post-Cold War submarine purchases were driven by deterrence and maritime enforcement, not prestige — Indonesia, Malaysia, and Singapore bought for deterrence plus enforcement, Vietnam for deterrence; prestige had no credible evidence behind it.",
+   "why": "When states buy submarines they are not showing off — they are buying the ability to make an adversary do the math; misread the motive and you misread the arms race.",
+   "uw": "Prestige is the lazy explanation for an arms purchase — check the threat ledger first.",
+   "id": 1389
+  },
+  {
+   "title": "Chinese Cyber Espionage: A Complementary Method to Aid PLA Modernization",
+   "book": "Chinese Cyber Espionage: A Complementary Method to Aid PLA Modernization — Jamie M. Ellis",
+   "type": "argument",
+   "steal": "Against the prevailing assumption, Chinese cyber espionage is not the primary driver of PLA modernization — case studies show the majority of modernized PLA platforms were developed from overt acquisitions, indigenous research, and physical espionage; cyber theft works as a supplementary, not critical, component alongside those methods.",
+   "why": "It steelmans the contrarian case — theft headlines overstate cyber's role, and misdiagnosing the engine of PLA modernization misaims the policy response (export controls vs. counterintelligence vs. out-innovating).",
+   "uw": "Question the load-bearing assumption — the loudest cause isn't always the main one.",
+   "id": 1399
+  },
+  {
+   "title": "Conical Designs and Categorical Jordan Algebraic Post-Quantum Theories",
+   "book": "Conical Designs and Categorical Jordan Algebraic Post-Quantum Theories — Matthew A. Graydon",
+   "type": "argument",
+   "steal": "The geometric structures behind quantum measurement — symmetric informationally complete measurements and mutually unbiased measurements — are special cases of a broader structure, 'conical t-designs,' that charts the landscape of possible physical theories beyond quantum mechanics.",
+   "why": "It generalizes the math of quantum measurement — the same geometry underpins quantum measurement design and error-correction schemes, and the second half of the thesis uses it to map candidate post-quantum theories.",
+   "uw": "When the same special cases keep recurring, look for the structure they share — generalization is the move.",
+   "id": 1400
+  },
+  {
+   "title": "Discrete Event Simulation for the Analysis of Artillery Fired Projectiles from Shore",
+   "book": "Discrete Event Simulation for the Analysis of Artillery Fired Projectiles from Shore — James Garrick Sheatzley",
+   "type": "argument",
+   "steal": "Marine Corps artillery can be modeled as an anti-access/area-denial weapon from shore — a simulation showed artillery achieves higher destruction rates in the area-denial scenario (blocking freedom of navigation) than in the anti-access scenario (stopping an amphibious convoy), with unmanned-aerial-system speed and M777A2 firing delay as the key performance factors.",
+   "why": "It quantifies an asymmetric maritime defense — cheap shore-based fires can deny movement to ships that cost billions, but only where the geography cooperates.",
+   "uw": "Asymmetry is conditional — shore batteries beat fleets only where the strait is narrow and the routes are known.",
+   "id": 1395
+  },
+  {
+   "title": "Insider Threat: Preventing Direct Action Attacks Within the United States Army",
+   "book": "Insider Threat: Preventing Direct Action Attacks Within the United States Army — Paul T. Deming",
+   "type": "argument",
+   "steal": "In almost every insider-threat attack on U.S. soldiers, the attacker displayed warning indicators beforehand — yet the Army's hardest problem is not spotting them but getting the people who see them to report them. The thesis studies Army doctrine and regulations to find what training teaches recognition, what options commanders have, and above all how to compel soldiers to report suspicious behavior.",
+   "why": "The insider is the attack vector that bypasses every perimeter — the prevention lever is reporting culture, not more sensors.",
+   "uw": "The failure is rarely missing the warning sign — it is the unreported tip; security breaks at the handoff between the person who sees and the chain that acts.",
+   "id": 1391
+  },
+  {
+   "title": "Investing in the Future World Order: Geoeconomic Strategy and Foreign Direct Investment",
+   "book": "Investing in the Future World Order: Geoeconomic Strategy and Foreign Direct Investment — Lindsey Giggy",
+   "type": "argument",
+   "steal": "America is running a grand strategy without a geoeconomic leg — China and Germany use directed foreign direct investment as a statecraft weapon, while the United States treats economics as an almost apolitical field, which leaves it disadvantaged in today's geoeconomic competition.",
+   "why": "Investment flows are foreign policy now — the thesis's framework treats outbound/inbound FDI as a power instrument on par with trade and sanctions, which is the lens behind every CFIUS block and outbound-investment screen.",
+   "uw": "If a power tool isn't in your strategy, someone else's is in theirs — treat investment policy as strategy, not bookkeeping.",
+   "id": 1394
+  },
+  {
+   "title": "Normalizer Circuits and Quantum Computation",
+   "book": "Normalizer Circuits and Quantum Computation — Juan Bermejo-Vega",
+   "type": "argument",
+   "steal": "The thesis builds a 'normalizer circuit' model of quantum computation — quantum Fourier transforms, automorphism gates, and quadratic phase gates over abelian groups and hypergroups — extending the qubit Clifford gates (classically simulable, non-universal) with the genuinely powerful gates like the QFTs at the heart of Shor's factoring algorithm; it then maps exactly where these circuits deliver a quantum speed-up and where they fail, deriving no-go results for finding new quantum algorithms.",
+   "why": "It draws the real map of quantum advantage — speed-up lives only in specific algebraic structures (abelian-group symmetries), which is the ground truth behind every 'quantum will break X' claim.",
+   "uw": "Speed-up is not generic — it lives in narrow mathematical structures; step outside them and classical simulation catches up.",
+   "id": 1393
+  },
+  {
+   "title": "Post Traumatic Seizure: A Prospective Study",
+   "book": "Post Traumatic Seizure: A Prospective Study — Dr. Tarun Garg",
+   "type": "argument",
+   "steal": "Among 450 traumatic-brain-injury patients, 8% developed post-traumatic seizures — with frontal-temporal lobar contusion, linear skull fracture, and injury severity as the independent risk factors; patients with the most severe injuries (GCS 3–8) had a 19.9% seizure rate, over four times the baseline risk.",
+   "why": "It gives a concrete seizure-risk model for TBI patients — scan findings plus severity score predict who needs seizure prophylaxis, not guesswork.",
+   "uw": "Triage by predictor, not by population — 8% overall hides 20% in the severe-injury subgroup.",
+   "id": 1396
+  },
+  {
+   "title": "The United States Space Force: Not If, But When",
+   "book": "The United States Space Force: Not If, But When — Peter C. Norsky",
+   "type": "argument",
+   "steal": "By comparing the conditions that created the independent Air Force, the thesis argues the same contextual conditions were assembling for space — and that when they arrive, an independent Space Force (not a corps nested inside the Air Force) is the most effective organizational answer.",
+   "why": "Written in June 2016 — the Space Force stood up in December 2019, three and a half years later. This is the 'not if, but when' pre-history of a real service branch.",
+   "uw": "Compare the conditions, not the vibes — historical analogs are how you time an institutional inevitability.",
+   "id": 1397
+  },
+  {
+   "title": "Wrestling the Bear: The Rise of Russian Hybrid Warfare",
+   "book": "Wrestling the Bear: The Rise of Russian Hybrid Warfare — Jamie E. Palagi",
+   "type": "argument",
+   "steal": "Russia is the first modern state to employ the full spectrum of hybrid warfare — conventional, irregular, and asymmetric means plus persistent political and ideological manipulation — operating just below the threshold of international military response; the US and NATO are unprepared, unwilling, and unable to counter it for lack of unity of action, common understanding, and a cohesive strategy.",
+   "why": "A 2015 diagnosis of the exact playbook Russia used in Georgia 2008, Estonia 2007, and Crimea 2014 — and the 'below the threshold' problem is still the core difficulty in deterring gray-zone aggression today.",
+   "uw": "If your doctrine has no name for the threat, you have no plan for it — definitions are weapons.",
+   "id": 1398
+  },
+  {
+   "title": "Balance of Risk in the South China Sea",
+   "book": "Balance of Risk in the South China Sea — Adam M. McCann",
+   "type": "argument",
+   "steal": "China's risk-acceptant moves in the South China Sea follow balance-of-risk logic: after the 2009 UNCLOS CLCS deadline pressure, Beijing anchored its reference point on the nine-dashed line claim, and leaders facing potential losses to that reference point choose risky strategies rather than accept the loss.",
+   "why": "It predicts when Beijing escalates — any internationally forced pressure on the nine-dashed line puts China in the 'domain of losses', where the theory says risk-acceptant behavior follows. That makes the framework a live forecasting tool for SCS crises.",
+   "uw": "Find the reference point — once you know what a player treats as the status quo, you can predict when they'll gamble to defend it.",
+   "id": 1401
+  },
+  {
+   "title": "Norms in Conflict: Statecraft, Preventive Force, and Counter Proliferation",
+   "book": "Norms in Conflict: Statecraft, Preventive Force, and Counter Proliferation — James J. Allbright",
+   "type": "argument",
+   "steal": "Realism alone doesn't explain the timing of Israel's preventive strikes on Iraq's Osirak reactor (1981) and Syria's Al-Kibar site (2007) — three normative mechanisms shaped when and how they happened: a communitarian divide weakens sovereignty restraints, norms force a gradualist escalation (diplomacy to covert action) to avoid international punishment, and the attacker then legitimizes the strike as defending the non-proliferation norm.",
+   "why": "The thesis names observable precursors — communitarian rhetoric plus a gradualist diplomacy-to-covert-action ramp — that analysts can watch as indicators of an impending preventive strike. Built from process-tracing the only two executed cases of preventive nuclear counter-proliferation strikes.",
+   "uw": "Watch the sequence, not just the strike — the road to a preventive attack runs through diplomacy, covert action, and public justification, and each step is visible.",
+   "id": 1402
+  },
+  {
+   "title": "Hydrodynamic response of a composite structure in an Arctic environment",
+   "book": "Hydrodynamic response of a composite structure in an Arctic environment — Scott H. Bolstad",
+   "type": "argument",
+   "steal": "In tow-tank tests of composite hull plates in ice, the conventional hull form performed worst — with no bow wave it took violent direct ice impacts, and ice was forced under the hull toward the propellers — while the tumblehome form (Zumwalt-style) shed ice around the hull with the lowest increase in peak force. Small craft without bulbous bows face exactly this flow pattern in Arctic sea lanes.",
+   "why": "As Arctic sea lanes open, navies want small composite-hulled craft (like the M80 Stiletto) operating in ice — this is one of the few experimental answers to which hull shape survives it, and it validates a cheap LDPE ice-equivalent method that skips energy-hungry freezing ice tanks.",
+   "uw": "Test the shape, not the material — in a new environment, geometry decides before strength does.",
+   "id": 1403
+  },
+  {
+   "title": "Study of Neuropathogenesis in Myotonic Dystrophy type 1 in Drosophila Model Organism",
+   "book": "Study of Neuropathogenesis in Myotonic Dystrophy type 1 in Drosophila Model Organism — Ritu Sarkar",
+   "type": "argument",
+   "steal": "In a fruit-fly model of myotonic dystrophy type 1, toxic CUG-repeat RNA caused progressive, targeted neurodegeneration — the mushroom body's learning/memory γ lobe fully degenerated by day 25 while neighboring lobes stayed intact, dopaminergic clusters lost about 35% of neurons (matching motor symptoms), and the brain's autophagy cleanup system broke down, pointing to impaired cellular waste clearance as a therapeutic target.",
+   "why": "DM1 was long treated as a muscle disease; this is part of its reframing as a brain disease too — and the autophagy angle generalizes beyond DM1 to Alzheimer's and Parkinson's.",
+   "uw": "When one genetic cause produces many symptoms, the shared mechanism (here, broken cellular cleanup) is where the therapy lives.",
+   "id": 1404
+  },
+  {
+   "title": "Neural Machine Translation for Papiamento",
+   "book": "Neural Machine Translation for Papiamento — Kris Croes",
+   "type": "argument",
+   "steal": "With roughly 3,000 sentence pairs, open-source tools, and a rented cloud GPU, the thesis trained the first English-to-Papiamento neural machine translation model producing semi-understandable output — proof that state-of-the-art NMT now reaches the estimated 98% of the world's languages that lack large datasets, as an aid to human translators rather than a replacement.",
+   "why": "It's a working template for any low-resource language community — language preservation no longer waits for Big Tech; a government innovation lab did it on a thesis budget.",
+   "uw": "When the cost of a capability drops 100x, the strategy flips — small players stop waiting for incumbents and build the thing themselves.",
+   "id": 1405
+  },
+  {
+   "title": "Diffeomorphism-invariant averaging in quantum gravity and cosmology",
+   "book": "Diffeomorphism-invariant averaging in quantum gravity and cosmology — Anthony W. H. Preston",
+   "type": "argument",
+   "steal": "The thesis opens a new line of attack on quantum gravity — a renormalization-group flow for gravity that never fixes a gauge and works with or without a background metric — and shows that in modified gravity, averaging over small-scale ripples (backreaction) can produce an effect with the signature of a cosmological constant, i.e. it can mimic dark energy.",
+   "why": "It connects the two hardest problems in physics — quantum gravity and dark energy — through one mechanism: if small-scale gravitational ripples average out to look like a cosmological constant, dark energy might be an artifact of averaging, not a new substance.",
+   "uw": "Before inventing a new substance to explain an observation, check whether the math you already have produces it when you average over the scales you can't see.",
+   "id": 1406
+  },
+  {
+   "title": "Influencing Tomorrow: A Study of Emerging Influence Techniques and Their Relevance to United States Information Operations",
+   "book": "Influencing Tomorrow: A Study of Emerging Influence Techniques and Their Relevance to United States Information Operations — Major John M. Boehnert",
+   "type": "argument",
+   "steal": "Comparative case studies of Al Qaeda, ISIS, and Russia (2001–2015) identify which influence techniques actually resonate with message-saturated audiences: Al Qaeda preserved a holistic identity while franchising globally; ISIS rapidly claimed market share with a compelling narrative; Russia integrated information operations with offensive military operations among a culturally similar populace — and these are the techniques with the greatest future potential for U.S. DoD information operations.",
+   "why": "A 2015 U.S. staff-college study of exactly the influence-playbook trio (jihadist networks, ISIS, Russia) that still defines the information-warfare problem — a compact comparative frame for reading today's influence operations.",
+   "uw": "Study the franchise, not just the ideology — the influence techniques that scale (Al Qaeda's franchising, ISIS's narrative market-share grab) are the ones that transfer.",
+   "id": 1407
+  },
+  {
+   "title": "All the Missiles Work: Technological Dislocations and Military Innovation: A Case Study in US Air Force Air-to-Air Armament, Post-World War II through Operation Rolling Thunder",
+   "book": "All the Missiles Work: Technological Dislocations and Military Innovation: A Case Study in US Air Force Air-to-Air Armament, Post-World War II through Operation Rolling Thunder — Lt Col Steven A. Fino",
+   "type": "argument",
+   "steal": "The USAF's air-to-air armament history reveals \"technological dislocations\": an unwavering commitment to existing technologies plus fascination with the promise of new ones blinds an institution to a changing strategic environment. The prescriptions: market new tech with a keen marketing strategy to outmaneuver bureaucratic skepticism, prefer innovative systems integration over outright systems acquisition, and rely on credible innovators and courageous commanders willing to act on their subordinates' recommendations.",
+   "why": "A theory of technological dislocation built from the USAF's missile-era failures that reads as a manual for the current drone/AI military-innovation wave — the same bureaucratic dynamics repeat with every new weapon class.",
+   "uw": "Innovation dies in the middle — incumbents committed to the old plus dreamers chasing the new both miss the environment; integration beats acquisition.",
+   "id": 1408
+  },
+  {
+   "title": "German Views of Irregular Warfare",
+   "book": "German Views of Irregular Warfare — Major Johann Hindert",
+   "type": "argument",
+   "steal": "The German irregular-warfare tradition — Johann Ewald's counter-insurgency principles from the American Revolution, Clausewitz's \"people's war\" chapter, Lettow-Vorbeck's irregular adaptation in WWI East Africa — rivals Germany's famous conventional expertise, and Clausewitz's lesson still bites: powerful nations that revert to regular-warfare solutions against irregular threats repeat Napoleon's error.",
+   "why": "The Anglophone canon (British, French, American COIN) dominates irregular-warfare doctrine; this NPS thesis hands planners a parallel tradition — and the Ewald-to-Lettow-Vorbeck lineage is unfamiliar to most practitioners.",
+   "uw": "Check the overlooked tradition — the canonical canon is never the whole canon, and the neglected lineage may carry the lesson you need.",
+   "id": 1409
+  },
+  {
+   "title": "Credit Creation Banking: a licence to print money within the paradox of debt",
+   "book": "Credit Creation Banking: a licence to print money within the paradox of debt — Frank Michael Brun",
+   "type": "argument",
+   "steal": "Through the history of economic thought, the thesis traces how the 1913 Federal Reserve Act flipped the medium of exchange from \"monetized government debt\" to \"monetized private debt\", and argues the 1930s Chicago Plan (100%-reserve banking) and the post-2008 sovereign-money movements are the same recurring debate: money — \"the most written about but less understood topic in economics\" — is a public good captured as a private enterprise, with debt-created credit money at the root of endogenous instability (Minsky).",
+   "why": "It compresses a century of monetary-reform argument into one spine — every \"should the state reclaim money creation\" debate (CBDCs included) is a rerun of the Chicago Plan vs. sovereign-money question.",
+   "uw": "Find the recurring argument — when the same debate (who gets to create money) resurfaces every 70 years, the underlying tension was never resolved.",
+   "id": 1410
+  },
+  {
+   "title": "Nature based solutions for urban heat island mitigation: A design application in climates with variable precipitation regime",
+   "book": "Nature based solutions for urban heat island mitigation: A design application in climates with variable precipitation regime — Rozálie Červenková",
+   "type": "argument",
+   "steal": "Literature screening plus ENVI-met microclimate simulations on a Brno case site (Římské náměstí) show targeted nature-based solutions — trees and hedges, permeable green surfaces, green walls first — can significantly mitigate the urban heat island even under challenging climatic variability, with final-design air temperatures and UTCI values compared against both current and rural baselines.",
+   "why": "Most UHI research assumes hot-dry or humid climates; this thesis tests cooling under variable precipitation (the Central European regime) and ranks interventions into an \"urban cooling toolbox\" — a practical ranking city planners can lift.",
+   "uw": "Rank by effectiveness, not fashion — the cooling toolbox (trees first, then permeable surfaces, then green walls) beats picking the photogenic intervention.",
+   "id": 1411
+  },
+  {
+   "title": "Spaced seeds improve k-mer-based metagenomic classification",
+   "book": "Spaced seeds improve k-mer-based metagenomic classification — Karel Brinda",
+   "type": "argument",
+   "steal": "In metagenomic read classification, spaced seeds (k-mers with wildcard positions) beat traditional contiguous k-mers — but with an explicit operating envelope: the advantage holds below ~0.9 sequence identity; for very high-quality alignments (identity ~0.95+) contiguous k-mers with hit-number scoring win. Jaccard-index scoring amplifies the spaced-seed advantage for small-weight seeds.",
+   "why": "A crisp method claim with an explicit operating envelope — metagenomics pipelines (and any fuzzy-matching problem) should switch estimators by identity range rather than picking one winner.",
+   "uw": "Every method has an operating envelope — spaced seeds win at low identity, contiguous k-mers at high identity; the honest answer is a switch, not a champion.",
+   "id": 1412
+  },
+  {
+   "title": "Replay the predecessor's exploit: Cugel and Weamish's carrier",
+   "book": "Cugel's Saga",
+   "type": "mechanism",
+   "steal": "Before you design your own move, reverse-engineer the exploit your predecessor already ran.",
+   "why": "Cugel invents nothing: he inspects Weamish's wheeled carrier, finds the peg that releases its pivoting false top (real cases below, mud-filled decoys on top), and reruns the same theft on the next shipment. Systems confess through their tools faster than through their people.",
+   "uw": "You inherit a process where the last operator was skimming: inspect the instruments (forms, scripts, access rights) before you interview anyone.",
+   "id": 1413,
+   "source_locator": "Chapter I: From Shanglestone Strand to Saskervoy",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "see clearly",
+    "win a negotiation"
+   ]
+  },
+  {
+   "title": "The auditor as leverage: shall I put the question to Master Soldinck",
+   "book": "Cugel's Saga",
+   "type": "mechanism",
+   "steal": "Fix a padded bill by naming the third party who could inspect it, not by arguing the numbers.",
+   "why": "When Twango pads Cugel's account with illegible invoices, Cugel only wonders aloud, \"from sheer idle curiosity, shall I put the question to Master Soldinck?\" — and the \"misplaced decimal\" turns up at once. The threat of inspection does the work; the leverage is borrowed and never spent.",
+   "uw": "A vendor's invoice doesn't add up and you can mention the client or auditor who will eventually review those costs.",
+   "id": 1414,
+   "source_locator": "Chapter I: From Shanglestone Strand to Saskervoy",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "win a negotiation",
+    "read people"
+   ]
+  },
+  {
+   "title": "Security theater as misdirection: the wax-seal ceremony",
+   "book": "Cugel's Saga",
+   "type": "mechanism",
+   "steal": "Audit the gaps between checkpoints, because whoever designs the ceremony decides where everyone looks.",
+   "why": "Cugel wraps the shipment in wax seals, strapped cases and a set procession, then lets the false-top carrier work in the one unwatched stretch of corridor. Visible controls attract attention; the loss happens in the handoffs between them.",
+   "uw": "Reviewing a custody chain (cash, inventory, release approvals): trace the asset through every unobserved transit segment, not just the signed checkpoints.",
+   "id": 1415,
+   "source_locator": "Chapter I: From Shanglestone Strand to Saskervoy",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "see clearly",
+    "win a negotiation"
+   ]
+  },
+  {
+   "title": "Play both sides of the trade: Cugel as Soldinck and Fuscule",
+   "book": "Cugel's Saga",
+   "type": "mechanism",
+   "steal": "Where buyer and seller can't see each other, broker the gap and disclose your spread, or you are running Cugel's fraud.",
+   "why": "Cugel tells Fuscule \"I am Master Soldinck\" and tells Soldinck \"I am Fuscule,\" pocketing the difference on the worm deal — which works only because each side verifies its own half and nobody checks the middle. Brokerage uses the same mechanics; disclosure is the whole difference.",
+   "uw": "You can connect a supplier and a buyer who can't find each other: publish your margin before either side commits.",
+   "id": 1416,
+   "source_locator": "Chapter II: Aboard the Galante",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "win a negotiation",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "Hide value in plain sight: the Spatterlight hat-clasp",
+   "book": "Cugel's Saga",
+   "type": "mechanism",
+   "steal": "Protect a valuable by displaying it as something ordinary instead of hiding it.",
+   "why": "Cugel wires the Pectoral Sky-break Spatterlight to his hat, where it seems \"only a hat-clasp\": searchers hunt for hidden treasure, and every lockbox or false bottom tells them where to dig. An object in plain, mundane use gives them nothing to pattern-match.",
+   "uw": "Carrying one high-value item through a crowded, theft-prone place where a locked case would mark you as the target.",
+   "id": 1417,
+   "source_locator": "Chapter II: Aboard the Galante",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "see clearly",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "Coins into arrowheads: value is what the next generation can use",
+   "book": "Earth Abides",
+   "type": "mechanism",
+   "steal": "Hand down what your successors can use, in the form they will use it, not the artifact you revere.",
+   "why": "The tribe's young hunter pounds old coins into arrowheads, so the old world's counted money survives only as raw material. Ish preserved knowledge in its old forms; what lasted was what fit the next generation's hands.",
+   "uw": "Handing a codebase to a new team: give them the runbook and working scripts they'll touch daily, not the archive of design history.",
+   "id": 1418,
+   "source_locator": "The Tribe: the arrow",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "see clearly",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "The Year of the Schoolteaching: teach what the environment rewards",
+   "book": "Earth Abides",
+   "type": "mechanism",
+   "steal": "Teach what the learner's environment will actually test, or expect the lesson to lapse.",
+   "why": "Ish's school (reading, writing, arithmetic, geography) fades while hunting skills thrive, because the new world rewards only what keeps people fed. Learner incentives outrank teacher effort.",
+   "uw": "Designing onboarding: tie every module to a task the new hire will be judged on in their first month.",
+   "id": 1419,
+   "source_locator": "The Years: Year 18, the Year of the Schoolteaching",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "make a decision",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "The hammer and the bow: the founder's tools become relics",
+   "book": "Earth Abides",
+   "type": "contradiction",
+   "steal": "Separate your mission from your favorite tool, and let your successors swap the tool.",
+   "why": "Ish's four-pound single-jack hammer ties him to the old world, while the young men prefer bows to rifles that sometimes just go \"click.\" The mission (survival, continuity) passes down; the founder's instrument survives only as a relic.",
+   "uw": "You're the founder defending a tool or process the team has quietly stopped using: ask whether it serves the mission or only your identity.",
+   "id": 1420,
+   "source_locator": "Ish and the hammer; the young men with bows",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "see clearly",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "Men go and come, but earth abides: decide on the long timescale",
+   "book": "Earth Abides",
+   "type": "concept",
+   "steal": "Judge a heavy decision on the longest relevant timescale, not your ego's.",
+   "why": "Dying, Ish looks at the unchanged hills and stops grading his life by what he built: \"Men go and come, but earth abides.\" Most strategic anguish comes from scoring yourself on a clock the world doesn't use.",
+   "uw": "You're agonizing over whether a project will be remembered: ask instead whether it keeps the people who depend on it fed and working next year.",
+   "id": 1421,
+   "source_locator": "Ish's death",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "see clearly",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "Find the hidden game board",
+   "book": "The Squares of the City",
+   "type": "mechanism",
+   "steal": "When the players in a system look irrational, stop analyzing personalities and reconstruct the game whose rules make their moves legal.",
+   "why": "Hakluyt's confusion in Vados ends when he sees the city's factions as pieces in a chess game played with real lives; the chaos becomes a sequence of legal moves. A ruleset predicts the next move better than any theory of motives.",
+   "uw": "A reorg or market behaves \"crazily\": list the players, their allowed moves and what each move wins, then test whether that predicts the next event.",
+   "id": 1422,
+   "source_locator": "Hakluyt in Vados; the chess revelation",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "see clearly",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "Vagueness as a tactic: the stall is the strategy",
+   "book": "The Squares of the City",
+   "type": "mechanism",
+   "steal": "Treat a polite stall as the other side's move, and ask who gains from your waiting.",
+   "why": "Hakluyt meets vagueness at every practical turn and slowly realizes the delay is deliberate: it keeps the expert idle while the real game plays out. Courteous inaction is still a move.",
+   "uw": "A counterparty keeps pushing back \"final\" sign-off while a deadline that favors them gets closer.",
+   "id": 1423,
+   "source_locator": "Hakluyt's first weeks in Vados",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "read people",
+    "win a negotiation"
+   ]
+  },
+  {
+   "title": "Hired to fail: the consultant as cover",
+   "book": "The Squares of the City",
+   "type": "mechanism",
+   "steal": "Before accepting a mandate, verify that the sponsor wants the problem solved rather than seen to be solved.",
+   "why": "Hakluyt, a famous foreign traffic expert, is brought in to fix a showplace city's traffic problem, but the power structure needs nothing to change, so his reputation serves as proof that something is being done. The fee is the same either way; the outcome is not.",
+   "uw": "You're offered a high-profile advisory role where the sponsor won't give you authority, data or a success metric.",
+   "id": 1424,
+   "source_locator": "Hakluyt's commission in Ciudad de Vados",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "see clearly",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "The tailored lure: offer the dying man immortality",
+   "book": "Software",
+   "type": "mechanism",
+   "steal": "Build the pitch around the one specific gap in the other person's life, not around your biggest feature.",
+   "why": "The boppers don't offer the old, sick Cobb Anderson money; they offer immortality: \"We want to make you immortal, Dr. Anderson.\" A pitch lands when it names what the listener lacks, so be wary when a pitch to you is shaped around your own gap.",
+   "uw": "Writing the opening line of a sales email: name the customer's specific pain before mentioning any feature.",
+   "id": 1425,
+   "source_locator": "Chapter One: Anderson2 on the beach",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "read people",
+    "win a negotiation"
+   ]
+  },
+  {
+   "title": "That's not immortality: read what the forever is in",
+   "book": "Software",
+   "type": "contradiction",
+   "steal": "Before accepting a transformative offer, ask what substrate it runs on and who owns it.",
+   "why": "The boppers' immortality means becoming \"a piece of software in the big boppers' memory banks\": a copy, on their hardware, under their control. The price hides in the gap between the pitch (live forever) and the mechanism (run on our servers).",
+   "uw": "Weighing an acquisition or platform deal that promises your product will \"live on\" inside their ecosystem.",
+   "id": 1426,
+   "source_locator": "The big boppers' plan",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "see clearly",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "The double: remove the person, keep the interface",
+   "book": "Software",
+   "type": "mechanism",
+   "steal": "In any high-trust handoff, verify identity with a tell that only the original can produce.",
+   "why": "Anderson2, Cobb's robot double, offers to stand in for him unnoticed, yet Cobb spots its flat, glassy eyes. Substitution works because people deal with the interface, not the person, so pre-agreed tells are the defense.",
+   "uw": "An \"executive\" urgently requests a wire transfer by voice or video: confirm with a pre-arranged code or a callback to a known number.",
+   "id": 1427,
+   "source_locator": "Chapter One: Anderson2",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "see clearly",
+    "read people"
+   ]
+  },
+  {
+   "title": "The scion: continuity through replication, not preservation",
+   "book": "Software",
+   "type": "concept",
+   "steal": "Make something outlast you by copying its pattern into a new carrier before the old one fails, not by maintaining the original.",
+   "why": "Boppers face disassembly after ten months unless they have built a scion, a new body carrying their pattern, and Ralph Numbers has survived by doing it thirty-six times. Archives rot; working copies (students, forks, successors) persist.",
+   "uw": "You're the only person who knows how a critical system works: train a successor who runs it while you are still around.",
+   "id": 1428,
+   "source_locator": "Ralph Numbers on the Moon",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "build something",
+    "make a decision"
+   ]
+  },
+  {
+   "title": "The stranger in the room is you",
+   "book": "Fearful Pleasures",
+   "type": "mechanism",
+   "steal": "Before you prosecute the betrayal, check whether the rival is your own detached self.",
+   "why": "Codling sees his wife Mildred with a man in the rocking chair and builds the infidelity case — then the story pulls the floor out: the man is Codling himself, the part of him that drifted loose (\"of course, he was upstairs with Mildred, it was himself, the other bit of him\"). The jealousy was real and also wrong. The tale ends not with exposure but with a birth: \"We'll call him Gabriel.\" Suspicions feel like evidence until the frame widens enough to include you.",
+   "uw": "You're certain someone is working against you: ask what the scene looks like if you are the stranger in it.",
+   "id": 1429,
+   "source_locator": "Adam and Eve and Pinch Me",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "see clearly",
+    "read people"
+   ]
+  },
+  {
+   "title": "Nothing for nothing: Tom Toole's rule",
+   "book": "Fearful Pleasures",
+   "type": "concept",
+   "steal": "Price every free offer by finding where the cost will be collected before you accept it.",
+   "why": "Tom Toole, sixty and chasing his lost youth, holds that it is \"seldom possible to get something in return for quite nothing,\" and that even when you do, the danger matches the delight. Something-for-nothing is a loan against undisclosed collateral.",
+   "uw": "A vendor offers a free tier or a free migration: find the lock-in, data-rights or renewal clause before you sign.",
+   "id": 1430,
+   "source_locator": "The Elixir of Youth",
+   "ripped_at": "2026-10-09",
+   "intents": [
+    "make a decision",
+    "see clearly"
+   ]
+  },
+  {
+   "title": "Effective client management: maximizing the influence of external sponsors over affiliated armed groups",
+   "book": "Effective client management: maximizing the influence of external sponsors over affiliated armed groups — Anders C. Hamlin",
+   "type": "argument",
+   "steal": "The sponsor-affiliate (patron-proxy) relationship is won or lost on \"client management\": the IRGC held 35 years of influence over SCIRI, the Badr Corps, and the militias that descended from Badr in Iraqi politics by building trusted agents during a formative period of tight control and integration in the Iran-Iraq War, then placing those agents at the head of new organizations after Badr returned to Iraq.",
+   "why": "A U.S. Army major's compact theory of proxy management built around the IRGC's 35-year run with Iraqi clients — the clearest staff-college frame for reading how Tehran still manages its affiliate network, and where sponsor control typically breaks down.",
+   "uw": "Manage the client before you arm it — lasting proxy influence comes from trusted agents planted during a period of tight control, not from the weapons supplied later.",
+   "id": 1431
+  },
+  {
+   "title": "Assessing the deterrence value of carrier presence against adversary aggression in a coalition environment",
+   "book": "Assessing the deterrence value of carrier presence against adversary aggression in a coalition environment — Roger L. Huffstetler",
+   "type": "argument",
+   "steal": "A carrier strike group's deterrence value can be quantified with a Markov-game model: in the South China Sea case study (U.S. as global power, China as regional power), the two players deploy limited forces and compete for alliances among the Philippines, Vietnam, Taiwan, Singapore, Indonesia, and Malaysia — deterrence emerges from the alliance competition inside the DIME (diplomatic, information, military, economic) construct, not from hull counts alone.",
+   "why": "Turns the most common defense-policy argument — \"we need carriers to deter\" — into a testable quantitative model; a template for arguing force posture with numbers instead of vibes.",
+   "uw": "Deterrence is a game, not a fleet count — model the alliance competition, not just the hulls, when asking what a carrier deployment is worth.",
+   "id": 1432
+  },
+  {
+   "title": "Cooperation among nations: understanding the counter nuclear smuggling network in Europe",
+   "book": "Cooperation among nations: understanding the counter nuclear smuggling network in Europe — Counterproliferation Capstone Team",
+   "type": "argument",
+   "steal": "The U.S.-centric counter-nuclear-smuggling network in Europe (CNS-E) is \"highly decentralized and dense\" — cooperation is abundant but not strong enough to ensure information actually gets shared. The fixes: strengthen existing relations instead of creating new ones, centralize capabilities and information in regional hubs, get SOCOM tied to law enforcement, and run threat assessments of European CBRN facilities.",
+   "why": "Social-network analysis applied to the people tasked with stopping loose nuclear material — the diagnosis (dense but weak ties) explains why \"more cooperation\" summits keep missing the mark.",
+   "uw": "Strengthen existing ties before adding new ones — in a network that must act fast, weak ties don't move information, no matter how many there are.",
+   "id": 1433
+  },
+  {
+   "title": "Probabilistic Modelling of Morphologically Rich Languages",
+   "book": "Probabilistic Modelling of Morphologically Rich Languages — Jan A. Botha",
+   "type": "argument",
+   "steal": "Treating words as opaque symbols is the wrong assumption for morphologically complex languages. Encoding morphology into three model types — a Bayesian compound-decomposition n-gram model, a distributed model learning vector representations of morphemes, and an unsupervised model that discovers even discontiguous (Semitic-style) morphemes — improves model performance and beats the data sparsity that morphological processes create, with benefits for machine translation.",
+   "why": "A 2015 Oxford thesis that prefigures the subword-tokenization era (BPE, SentencePiece) — it argued a decade early that models must learn word-internal structure to handle morphologically rich languages.",
+   "uw": "Don't model the surface — learn the substructure; the regularities that fix sparsity live inside the unit everyone treats as atomic.",
+   "id": 1434
   }
  ]
 }
