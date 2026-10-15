@@ -93,13 +93,6 @@ def trunc(s, n):
     return s[:n].rsplit(" ", 1)[0] + "\u2026"
 
 
-def uw_disp(s):
-    """DISPLAY ONLY: strip a leading 'Use when:' that some card data carries,
-    so the label never doubles ('Use when: Use when ...'). Data untouched."""
-    t = re.sub(r"^\s*use when\s*:?\s*", "", s or "", flags=re.I)
-    return (t[:1].upper() + t[1:]) if t else t
-
-
 def split_book(book):
     if " \u2014 " in book:
         t, a = book.rsplit(" \u2014 ", 1)
@@ -236,21 +229,11 @@ td .srcpill{margin-left:.4rem}
 .shelfbox .scounts{font-family:var(--font-mono);font-size:.75rem;color:var(--text-secondary);letter-spacing:.08em;text-transform:uppercase}
 /* Wave 4: Recently Added (homepage) + Books index rows */
 .recentlist,.booklist{list-style:none;margin:0 0 1.25rem;padding:0}
-.rbook{border-bottom:1px solid var(--border-subtle);margin:0;padding:0}
-.rbook a.rlink{display:flex;flex-direction:column;justify-content:center;gap:.15rem;min-height:44px;padding:.65rem .5rem;color:var(--text-primary);text-decoration:none;border-radius:2px}
-.rbook a.rlink:hover{background:var(--bg-subtle)}
-.rbook a.rlink:hover .rtitle{text-decoration:underline;text-underline-offset:3px}
-.rbook a.rlink:focus-visible{outline:3px solid #1a4fd6;outline-offset:2px;background:var(--bg-subtle)}
-.rbook .rtitle{font-family:var(--font-serif);font-size:1.15rem;font-weight:600;line-height:1.3;color:#1c1a17}
-.rbook .rmeta{display:flex;flex-wrap:wrap;align-items:baseline;font-size:1rem;line-height:1.4;color:#4a4540}
-.rbook .rmeta>span{white-space:nowrap}
-.rbook .rmeta .sep{padding:0 .35rem;color:#6b645c}
-.rbook .srcpill{font-size:.75rem}
-.seeall{display:inline-flex;align-items:center;min-height:44px;padding:0 .9rem;margin:0 0 1.5rem;border:1.5px solid var(--border-strong);font-size:1rem;font-weight:600;color:#1c1a17;text-decoration:none;background:var(--bg-card)}
-.seeall:hover{background:var(--bg-subtle)}
-.seeall:focus-visible{outline:3px solid #1a4fd6;outline-offset:2px}
-h2.recenthead{font-family:var(--font-serif);font-size:1.5rem;font-weight:700;letter-spacing:0;text-transform:none;margin:2rem 0 .25rem}
-p.recentnote{font-size:1rem;color:#4a4540;margin:0 0 .5rem}
+.rbook{display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap;border-bottom:1px solid var(--border-subtle);padding:.5rem .1rem}
+.rbook .rtitle{font-family:var(--font-serif);font-size:1.12rem;font-weight:600;color:var(--text-primary);text-decoration:none}
+.rbook .rtitle:hover{color:var(--accent-signal)}
+.rbook .rauthor{color:var(--text-secondary);font-size:.95rem}
+.rbook .rcount{margin-left:auto;font-family:var(--font-mono);font-size:.75rem;color:var(--text-secondary);letter-spacing:.06em;white-space:nowrap}
 h3.archsub{font-family:var(--font-mono);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary);margin:1.4rem 0 .4rem}
 /* ledger */
 .ledwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1.5px solid var(--border-strong);margin:0 0 1.5rem}
@@ -280,30 +263,11 @@ a.sitchip:hover{background:var(--bg-canvas);border-color:var(--border-strong);co
 .bookpos{font-family:var(--font-mono);font-size:.78rem;color:var(--text-secondary);text-align:center;letter-spacing:.05em;padding:0 .5rem}
 .sampler{margin:0 0 1.5rem}
 .samplegrid{margin-top:.9rem}
-/* Fix pass 2026-10-14: paper book pages, connections toggle, request link */
-.bookhead{border:1.5px solid var(--border-strong);background:var(--bg-card);box-shadow:5px 5px 0 var(--border-strong);padding:1.1rem 1.25rem;margin:0 0 1.5rem}
-.bookhead .bauthor{font-family:var(--font-serif);font-size:1.15rem;color:var(--text-secondary);margin:0 0 .4rem}
-.bookhead .bline{margin:.4rem 0 0}
-.bookhead .bcounts{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary)}
-.cardacts{display:flex;gap:.5rem;margin:.9rem 0 0}
-.cardacts .btn{padding:.45rem .8rem;font-size:.78rem}
-details.conn{margin-top:.9rem;border-top:1px dashed var(--border-subtle);padding-top:.6rem}
-details.conn summary{cursor:pointer;font-family:var(--font-mono);font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
-details.conn .relgrid{margin-top:.7rem}
-.topnav{display:flex;justify-content:space-between;align-items:center;gap:1rem}
-.rip-request{font-family:var(--font-mono);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-.rip-request .rr-short{display:none}
-@media(max-width:560px){.rip-request .rr-long{display:none}.rip-request .rr-short{display:inline}}
 """
 
 HASH_SCRIPT = ("<script>/* ir-hash-redirect: legacy #cN links land on the card page */"
                "(function(){var m=/^#c(\\d+)$/.exec(location.hash);"
                "if(m)location.replace('/c/'+m[1]+'/');})();</script>")
-
-
-SLUG_SCRIPT = ("<script>/* ir-slug-redirect: /c/<id>-<wrong-slug>/ lands on the card */"
-               "(function(){var m=/^\\/c\\/(\\d+)(?:-[^\\/]*)?\\/?$/.exec(location.pathname);"
-               "if(m&&location.pathname!=='/c/'+m[1]+'/')location.replace('/c/'+m[1]+'/');})();</script>")
 
 
 def build_marker():
@@ -349,13 +313,6 @@ def statusbar(n, build_date):
             % (n, build_date))
 
 
-def id_note(n, maxid):
-    """Card count vs ID range: IDs are permanent and never reused, so the
-    highest ID runs ahead of the card count when cards are retired."""
-    return ("%d cards \u00b7 IDs run #c1\u2013#c%d (highest ID; %d IDs retired, never reused)"
-            % (n, maxid, maxid - n))
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ensure-slugs", action="store_true",
@@ -395,8 +352,8 @@ def main():
 
     def book_url(book):
         key = key_of.get(book)
-        if key:
-            return "/books/%s/" % key  # fix pass: every keyed book gets a paper page
+        if key and os.path.exists(os.path.join(BASE, "books", key, "index.html")):
+            return "/books/%s/" % key
         anchor = key or slugify(book)
         return "/ledger/#book-%s" % anchor
 
@@ -498,29 +455,19 @@ def main():
         genre = genre_of[c["book"]]
         line = c["steal"]
         words = " ".join(line.split()[:8])
+        title = '"%s\u2026" \u2014 %s (#c%d) | Idea Ripper' % (words, ba or bt, cid)
+        desc = trunc('"%s" \u2014 From %s by %s. Use when: %s. Why it matters: %s.'
+                     % (line, bt, ba, c["uw"], c["why"]), 300)
         url = SITE + canon(cid)
-        book_ld = {"@type": "Book", "name": bt}
-        if ba:
-            book_ld["author"] = {"@type": "Person", "name": ba}
-        if pill(c) == "verbatim":
-            # verbatim excerpt: a real quotation, attributed to the author
-            title = '"%s\u2026" \u2014 %s (#c%d) | Idea Ripper' % (words, ba or bt, cid)
-            desc = trunc('"%s" \u2014 From %s by %s. Use when: %s. Why it matters: %s.'
-                         % (line, bt, ba, uw_disp(c["uw"]), c["why"]), 300)
-            ld = {"@context": "https://schema.org", "@type": "Quotation",
-                  "text": line, "isPartOf": book_ld,
-                  "mainEntity": {"@type": "DefinedTerm", "name": trunc(c["title"], 120),
-                                 "description": uw_disp(c["uw"])}}
-        else:
-            # synthesis ("In our words"): never attributed to the author as a quote
-            title = '%s \u2014 Idea Ripper on %s (#c%d)' % (trunc(c["title"], 80), bt, cid)
-            desc = trunc('Idea Ripper synthesis of %s: %s Use when: %s'
-                         % (bt, line.rstrip(), uw_disp(c["uw"])), 300)
-            ld = {"@context": "https://schema.org", "@type": "Article",
-                  "headline": trunc(c["title"], 110), "abstract": line,
-                  "author": {"@type": "Organization", "name": "Idea Ripper"},
-                  "about": book_ld, "url": url,
-                  "genre": "Synthesis (in our words)"}
+        ld = {
+            "@context": "https://schema.org",
+            "@type": "Quotation",
+            "text": line,
+            "isPartOf": {"@type": "Book", "name": bt,
+                         "author": {"@type": "Person", "name": ba} if ba else bt},
+            "mainEntity": {"@type": "DefinedTerm", "name": trunc(c["title"], 120),
+                           "description": c["uw"]},
+        }
         ld_json = json.dumps(ld, ensure_ascii=False).replace("</", "<\\/")
         og_img = ""
         key = key_of.get(c["book"])
@@ -554,7 +501,7 @@ def main():
             '<span class="whyk">[Why it matters]</span><p class="why">%s</p>'
             '%s</div></article>'
             % (cid, cid, pill(c), esc(pill_label(c)), src_pill(c),
-               line_el(c), attr_html(c, bt, ba), esc(uw_disp(c["uw"])), esc(c["why"]), sits))
+               line_el(c), attr_html(c, bt, ba), esc(c["uw"]), esc(c["why"]), sits))
         page.append(
             '<div class="sharerow">'
             '<button type="button" class="btn" id="copyx">Copy for X / Citation</button>'
@@ -569,7 +516,7 @@ def main():
                 rc = by_id[r]
                 page.append('<a class="relcard" href="%s"><span class="rid">#c%d</span>%s'
                             '<span class="rline">%s</span><span class="ruw">%s</span></a>'
-                            % (canon(r), r, src_pill(rc), esc(trunc(rc["steal"], 140)), esc(trunc(uw_disp(rc["uw"]), 110))))
+                            % (canon(r), r, src_pill(rc), esc(trunc(rc["steal"], 140)), esc(trunc(rc["uw"], 110))))
             page.append('</div>')
         sibs = [o for o in cards if o["book"] == c["book"] and o["id"] != cid]
         sibs.sort(key=lambda o: o["id"])
@@ -579,7 +526,7 @@ def main():
                 page.append('<a class="relcard" href="%s"><span class="rid">#c%d</span>%s'
                             '<span class="rline">%s</span><span class="ruw">%s</span></a>'
                             % (canon(rc["id"]), rc["id"], src_pill(rc), esc(trunc(rc["steal"], 140)),
-                               esc(trunc(uw_disp(rc["uw"]), 110))))
+                               esc(trunc(rc["uw"], 110))))
             page.append('</div>')
         # Wave 2 exit ramps (S7): the page never ends on a dead end. Ramp 1
         # fires only when cross-book cards share a situation with this one;
@@ -602,7 +549,7 @@ def main():
                                 '<span class="rline">%s</span><span class="ruw">%s</span>'
                                 '<span class="rbook">From %s</span></a>'
                                 % (canon(r), r, src_pill(rc), esc(rc["title"]),
-                                   esc(trunc(uw_disp(rc["uw"]), 110)), esc(rbt)))
+                                   esc(trunc(rc["uw"], 110)), esc(rbt)))
                 page.append('</div>')
         sib_ids = book_cards[c["book"]]
         if len(sib_ids) > 1:
@@ -618,12 +565,8 @@ def main():
                     '<a href="/ledger/">Full ledger</a> \u00b7 Card #c%d of %d \u00b7 '
                     'Machine-assisted, hand-curated</footer>' % (cid, n))
         page.append('</div>')
-        if pill(c) == "verbatim":
-            copy_text = '"%s"\n\u2014 %s, %s\nidearipper.com/c/%d' % (
-                " ".join(line.split()), ba, bt, cid)
-        else:
-            copy_text = '%s\n\u2014 Idea Ripper, in our words, on %s%s\nidearipper.com/c/%d' % (
-                " ".join(line.split()), bt, (" (%s)" % ba) if ba else "", cid)
+        copy_text = '"%s"\n\u2014 %s, %s\nidearipper.com/c/%d' % (
+            " ".join(line.split()), ba, bt, cid)
         page.append(
             '<script>(function(){'
             'var CT=%s,URL=%s,PREV=%s,NEXT=%s;'
@@ -674,49 +617,15 @@ def main():
     for c in cards:
         _w4_book_cards[c["book"]] = _w4_book_cards.get(c["book"], 0) + 1
 
-    # Recently Added (2026-10-14, Billy): plain-words "date added" per book,
-    # seeded from git history by tools/book_dates.py; books new to this
-    # build are stamped with today's date (America/Chicago) and saved.
-    try:
-        _bd = json.load(open(os.path.join(BASE, "book_dates.json"), encoding="utf-8"))
-    except (OSError, ValueError):
-        _bd = {}
-    import datetime as _dtm
-    try:
-        from zoneinfo import ZoneInfo as _ZI
-        _today = _dtm.datetime.now(_ZI("America/Chicago")).strftime("%Y-%m-%d")
-    except Exception:
-        _today = _dtm.date.today().isoformat()
-    _bd_new = False
-    for c in cards:
-        if c["book"] not in _bd:
-            _bd[c["book"]] = _today
-            _bd_new = True
-    if _bd_new:
-        with open(os.path.join(BASE, "book_dates.json"), "w", encoding="utf-8") as fh:
-            json.dump(dict(sorted(_bd.items())), fh, indent=1, ensure_ascii=False)
-
-    def _plain_date(iso):
-        d = _dtm.date.fromisoformat(iso)
-        return "%s %d, %d" % (d.strftime("%B"), d.day, d.year)
-
     def book_li(b, with_pill=False):
         bt, ba = split_book(b["book"])
         pill = (' <span class="srcpill">%s</span>'
                 % SRC_LABEL[src_of[b["book"]]]) if with_pill else ""
-        n_c = _w4_book_cards.get(b["book"], 0)
-        meta = []
-        if ba:
-            meta.append('<span class="rauthor">by %s</span>' % esc(ba))
-        meta.append('<span class="rcount">%d card%s</span>' % (n_c, "" if n_c == 1 else "s"))
-        iso = _bd.get(b["book"])
-        if iso:
-            meta.append('<span class="rdate">Added <time datetime="%s">%s</time></span>'
-                        % (iso, _plain_date(iso)))
-        return ('<li class="rbook"><a class="rlink" href="%s"><span class="rtitle">%s</span>'
-                '<span class="rmeta">%s%s</span></a></li>'
+        return ('<li class="rbook"><a class="rtitle" href="%s">%s</a>%s%s'
+                '<span class="rcount">%d cards</span></li>'
                 % (esca(book_url(b["book"])), esc(bt),
-                   '<span class="sep" aria-hidden="true">\u00b7</span>'.join(meta), pill))
+                   (' <span class="rauthor">%s</span>' % esc(ba)) if ba else "",
+                   pill, _w4_book_cards.get(b["book"], 0)))
 
     # ---------------- homepage ----------------
     def prev_card(c):
@@ -730,7 +639,7 @@ def main():
             '<a class="openfile" href="%s">[Open file #c%d -&gt;]</a></article>'
             % (c["id"], pill(c), esc(pill_label(c)), src_pill(c),
                line_el(c), attr_html(c, bt, ba),
-               esc(uw_disp(c["uw"])), canon(c["id"]), c["id"]))
+               esc(c["uw"]), canon(c["id"]), c["id"]))
 
     # Wave 1 feed rule: the homepage feed carries BOOKS ONLY; the latest
     # non-book cards (theses + military reports) get the Archives shelf.
@@ -779,7 +688,6 @@ def main():
     home.append('<h1 class="mission">One idea from a book. The line, and when to use it.</h1>')
     home.append('<p class="sub">%d battle-tested mental models, tactical quotes, and '
                 'strategic principles extracted from books.</p>' % n)
-    home.append('<p class="stamp">%s</p>' % id_note(n, ids_sorted[-1]))
     if sample is not None:
         home.append(
             '<section class="starthere" id="start-here"><span class="shk">Start here</span>'
@@ -792,7 +700,7 @@ def main():
                esc(split_book(sample["book"])[0])))
     home.append(
         '<form class="cmdbar" id="commandbar" action="#" method="get">'
-        '<label for="cb-input">Direct access // Enter a card ID (highest: #c%d) or keyword</label>'
+        '<label for="cb-input">Direct access // Enter card #c1\u2013#c%d or keyword</label>'
         '<div class="cmdrow"><input id="cb-input" type="text" autocomplete="off" '
         'placeholder="Search a problem (\u201cfiring\u201d, \u201cenvy\u201d, '
         '\u201cpricing\u201d) or a book\u2026"/>'
@@ -840,13 +748,10 @@ def main():
     _head.sort(key=lambda b: _w4_minid[b["book"]])
     recent_books = (_head + _ranked[len(_head):])[:10]
     if recent_books:
-        home.append('<section aria-labelledby="recent-head">'
-                    '<h2 class="recenthead" id="recent-head">Recently added books</h2>'
-                    '<p class="recentnote">The %d newest books in the library, newest first.</p>'
-                    % len(recent_books))
-        home.append('<ul class="recentlist">%s</ul>'
+        home.append('<h2 class="sect">Recently Added <span class="cnt">// newest '
+                    '%d books in the library</span></h2>' % len(recent_books))
+        home.append('<ol class="recentlist">%s</ol>'
                     % "".join(book_li(b) for b in recent_books))
-        home.append('<a class="seeall" href="/books/">See all books \u2192</a></section>')
     home.append('<h2 class="sect">Browse by shelf</h2><div class="shelfgrid">%s</div>'
                 % "".join(shelf_boxes))
     home.append('<footer class="sitefoot"><a href="/books/">Books</a> &#183; '
@@ -856,8 +761,8 @@ def main():
     home.append('</div>')
     _shelf_js = sorted(((sum(1 for c in cards if genre_of[c["book"]] == g), g)
                         for g in genre_order), reverse=True)[:3]
-    home.append('<script>var SHELVES=%s,MAXID=%d;</script>'
-                % (json.dumps([[slugify(g), g] for _cnt, g in _shelf_js]), ids_sorted[-1]))
+    home.append('<script>var SHELVES=%s;</script>'
+                % json.dumps([[slugify(g), g] for _cnt, g in _shelf_js]))
     home.append(
         '<script>(function(){'
         'var idx=null,loading=false;'
@@ -885,7 +790,7 @@ def main():
         '(e.src==="report"?"Military report":"Thesis")+\'</span>\';}});}'
         'function zeroNote(q){var links=(window.SHELVES||[]).map(function(s){'
         'return \'<a href="/ledger/#genre-\'+s[0]+\'">\'+s[1]+\'</a>\';}).join(" \u00b7 ");'
-        'return "No cards match \u201c"+q.replace(/[<>&]/g,"")+"\u201d. Try one plain word (\u201cpricing\u201d, \u201cfear\u201d), a book title, or a card ID like c402. Or browse a shelf: "+links+'
+        'return "No cards match \u201c"+q+"\u201d. Browse a shelf instead: "+links+'
         '" \u00b7 or <a href=\'/ledger/\'>open the full ledger</a>.";}'
         'function search(q){q=q.trim().toLowerCase();if(!idx||q.length<2){render([]);return;}'
         'var ws=q.split(/\\s+/),out=[];'
@@ -897,7 +802,7 @@ def main():
         'inp.addEventListener("input",function(){var v=inp.value.trim();'
         'var m=/^#?c?(\\d+)$/i.exec(v);'
         'if(m&&idx){var id=+m[1],hit=null;for(var k=0;k<idx.length;k++)if(idx[k].i===id){hit=idx[k];break;}'
-        'render(hit?[hit]:[],hit?"":(id>MAXID?"No card #c"+id+" yet \u2014 the highest ID is #c"+MAXID+".":"Card #c"+id+" was retired or merged (IDs are never reused). Try a keyword, or <a href=\'/ledger/\'>open the ledger</a>."));return;}'
+        'render(hit?[hit]:[],hit?"":"No card #c"+id+" in the archive.");return;}'
         'if(m){render([],"Loading the index\u2026");loadIdx(function(){inp.dispatchEvent(new Event("input"));});return;}'
         'if(!idx){render([],"Loading the index\u2026");loadIdx(function(){inp.dispatchEvent(new Event("input"));});return;}'
         'search(v);});'
@@ -911,6 +816,77 @@ def main():
         'if(idx)go(idx);else loadIdx(go);});});'
         '})();</script>')
     home.append("</body></html>")
+    # ---- Landing redesign (Billy, 2026-10-14): fun cards and recent books
+    # right away; the search bar, situations and shelves move down into an
+    # Archive zone; the "Start here" explainer is gone. String surgery on
+    # the rendered homepage only -- no other page is touched.
+    _html = "\n".join(home)
+    _fun_pool_ids = [1478, 1487, 1488, 1536, 1566, 1527, 252, 802, 1444,
+                     1438, 853, 848, 332, 333, 354, 459, 289, 302, 1369,
+                     196, 791, 271, 326, 1360]
+    _fun_first = [1478, 252, 1444, 1566, 332, 848, 1487, 459, 302]
+    _pool_html = [prev_card(by_id[i]) for i in _fun_pool_ids if i in by_id]
+    _first_html = [prev_card(by_id[i]) for i in _fun_first if i in by_id]
+    _fun = ('<h2 class="sect" id="fun">Fun cards <span class="cnt">// fresh '
+            'off the rip -- hit shuffle for more</span></h2>'
+            '<style>.funwall{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}'
+            '.funwall .prevcard{margin:0}.funbar{margin:10px 0 4px}</style>'
+            '<div class="funwall" id="funwall">%s</div>'
+            '<div class="funbar"><button type="button" class="btn ghost" id="funshuffle">'
+            '[Shuffle the fun cards \u21bb]</button></div>'
+            '<script>var FUNPOOL=%s;'
+            'document.getElementById("funshuffle").addEventListener("click",function(){'
+            'var w=document.getElementById("funwall");var p=FUNPOOL.slice();'
+            'for(var i=p.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=p[i];p[i]=p[j];p[j]=t;}'
+            'w.innerHTML=p.slice(0,9).join("");});</script><!--/funwall-->'
+            % ("".join(_first_html), json.dumps(_pool_html)))
+    # drop the Start here explainer
+    _s = _html.find('<section class="starthere"')
+    if _s >= 0:
+        _e = _html.find('</section>', _s)
+        if _e >= 0:
+            _html = _html[:_s] + _html[_e + len('</section>'):]
+    # cut the command bar and the situations block (re-homed below)
+    _cmd = ""
+    _s = _html.find('<form class="cmdbar"')
+    if _s >= 0:
+        _e = _html.find('</form>', _s)
+        if _e >= 0:
+            _cmd = _html[_s:_e + len('</form>')]
+            _html = _html[:_s] + _html[_e + len('</form>'):]
+    _sit = ""
+    _s = _html.find('<h2 class="sect" id="situations">')
+    if _s >= 0:
+        _e = _html.find('<h2 class="sect">Latest dispatches', _s)
+        if _e >= 0:
+            _sit = _html[_s:_e]
+            _html = _html[:_s] + _html[_e:]
+    # fun cards right after the headrow buttons
+    _s = _html.find('<div class="headrow">')
+    if _s >= 0:
+        _e = _html.find('</div>', _s)
+        if _e >= 0:
+            _at = _e + len('</div>')
+            _html = _html[:_at] + _fun + _html[_at:]
+    # recent books move up, directly under the fun wall
+    _s = _html.find('<h2 class="sect">Recently Added')
+    if _s >= 0:
+        _e = _html.find('<h2 class="sect">Browse by shelf', _s)
+        if _e >= 0:
+            _recent = _html[_s:_e]
+            _html = _html[:_s] + _html[_e:]
+            _at = _html.find('<!--/funwall-->')
+            if _at >= 0:
+                _at += len('<!--/funwall-->')
+                _html = _html[:_at] + _recent + _html[_at:]
+    # archive zone: divider + command bar + situations, above the shelves
+    _s = _html.find('<h2 class="sect">Browse by shelf')
+    if _s >= 0:
+        _zone = ('<h2 class="sect" id="archive">The Archive <span class="cnt">'
+                 '// every card in the library -- search it, or browse by '
+                 'situation and shelf</span></h2>' + _cmd + _sit)
+        _html = _html[:_s] + _zone + _html[_s:]
+    home = [_html]
     with open(os.path.join(BASE, "index.html"), "w", encoding="utf-8") as fh:
         fh.write("\n".join(home))
 
@@ -1032,7 +1008,7 @@ def main():
                 '<span class="rline">%s</span><span class="ruw">%s</span>'
                 '<span class="rbook">From %s</span></a>'
                 % (canon(rc["id"]), rc["id"], src_pill(rc), esc(rc["title"]),
-                   esc(trunc(uw_disp(rc["uw"]), 140)), esc(rbt)))
+                   esc(trunc(rc["uw"], 140)), esc(rbt)))
 
     os.makedirs(os.path.join(BASE, "situations"), exist_ok=True)
     sit_total = sum(len(v) for v in sit_cards.values())
@@ -1093,116 +1069,6 @@ def main():
         os.makedirs(sd2, exist_ok=True)
         with open(os.path.join(sd2, "index.html"), "w", encoding="utf-8") as fh:
             fh.write("\n".join(sp))
-
-    # ---------------- book pages (fix pass 2026-10-14) ----------------
-    # Every keyed book gets /books/<key>/ in the paper design. Replaces the
-    # old Next.js export at the SAME URL (no URL changes) and creates pages
-    # for books that only had a /ledger/#book-... anchor. One card anatomy
-    # (same as the card page), actions cut to Copy + Link, and related rips
-    # folded into a single "Explore connections (N)" toggle per card.
-    bl_of = {b["book"]: b.get("bookline", "") for b in books}
-    book_pages = 0
-    for b in books:
-        key = key_of.get(b["book"])
-        if not key:
-            continue
-        bt, ba = split_book(b["book"])
-        ids = book_cards.get(b["book"], [])
-        bsits = []
-        for i in ids:
-            for st in (by_id[i].get("situations") or []):
-                if st not in bsits:
-                    bsits.append(st)
-        burl = SITE + "/books/%s/" % key
-        bdesc = trunc("%s%s. %d Idea Ripper cards: the line worth keeping and when to use it. %s"
-                      % (bt, (" by %s" % ba) if ba else "", len(ids), bl_of[b["book"]]), 300)
-        ld = {"@context": "https://schema.org", "@type": "Book", "name": bt, "url": burl}
-        if ba:
-            ld["author"] = {"@type": "Person", "name": ba}
-        extra = '<script type="application/ld+json">%s</script>' % json.dumps(ld, ensure_ascii=False).replace("</", "<\\/")
-        if os.path.exists(os.path.join(BASE, "og", "og-%s.png" % key)):
-            extra += '\n<meta property="og:image" content="%s/og/og-%s.png"/>' % (SITE, key)
-        bp = [head("%s%s \u2014 Idea Ripper" % (bt, (" by %s" % ba) if ba else ""),
-                   bdesc, burl, marker, css_href, extra)]
-        bp.append("<body>")
-        bp.append(statusbar(n, build_date))
-        bp.append('<div class="wrap-narrow">')
-        bp.append('<div class="topnav"><nav class="crumb"><a href="/">Archive</a> / '
-                  '<a href="/books/">Books</a> / Shelf: <a href="/ledger/#genre-%s">%s</a></nav>'
-                  '<a class="rip-request" aria-label="Request a rip" href="mailto:billysnider@gmail.com'
-                  '?subject=Rip%%20request&amp;body=Book%%20title%%20and%%20author%%3A">'
-                  '<span class="rr-long">Request a rip</span>'
-                  '<span class="rr-short" aria-hidden="true">Request</span></a></div>'
-                  % (slugify(b["genre"]), esc(b["genre"])))
-        chips = "".join('<a class="sitchip" href="%s">%s</a>' % (sit_url(st), esc(sit_name(st)))
-                        for st in bsits)
-        bp.append('<header class="bookhead"><h1 class="mission">%s</h1>%s'
-                  '<span class="bcounts">%d cards%s</span>%s%s</header>'
-                  % (esc(bt), ('<p class="bauthor">by %s</p>' % esc(ba)) if ba else "",
-                     len(ids), (' \u00b7 ' + SRC_LABEL[src_of[b["book"]]]) if src_of[b["book"]] != "book" else "",
-                     ('<p class="bline">%s</p>' % esc(bl_of[b["book"]])) if bl_of[b["book"]] else "",
-                     ('<div class="sits"><span class="slab">Situations:</span>%s</div>' % chips) if chips else ""))
-        for cid in ids:
-            c = by_id[cid]
-            # hand-picked related_ids first, then the card page's own
-            # "same situation, different book" ranking fills to 5
-            rel = [r for r in (c.get("related_ids") or []) if r in by_id and r != cid]
-            scored = {}
-            for st in (c.get("situations") or []):
-                for oid in sit_cards.get(st, []):
-                    if oid != cid and by_id[oid]["book"] != c["book"]:
-                        scored[oid] = scored.get(oid, 0) + 1
-            for oid in sorted(scored, key=lambda o: (-scored[o], -o)):
-                if len(rel) >= 5:
-                    break
-                if oid not in rel:
-                    rel.append(oid)
-            conn = ""
-            if rel:
-                conn = ('<details class="conn"><summary>Explore connections (%d)</summary>'
-                        '<div class="relgrid">%s</div></details>'
-                        % (len(rel), "".join(
-                            '<a class="relcard" href="%s"><span class="rid">#c%d</span>%s'
-                            '<span class="rline">%s</span><span class="rbook">From %s</span></a>'
-                            % (canon(r), r, src_pill(by_id[r]), esc(by_id[r]["title"]),
-                               esc(split_book(by_id[r]["book"])[0])) for r in rel)))
-            bp.append(
-                '<article class="dossier" id="c%d">'
-                '<div class="pc-top"><span class="badge"><a href="%s">Card #c%d</a></span>'
-                '<span class="vpill %s">%s</span>%s</div>'
-                '<h2 class="whyk" style="margin:0 0 .2rem">%s</h2>'
-                '%s%s'
-                '<div class="meta-block">'
-                '<span class="uwk">[Use when]</span><p class="uw">%s</p>'
-                '<span class="whyk">[Why it matters]</span><p class="why">%s</p></div>'
-                '<div class="cardacts"><button type="button" class="btn ghost bcopy" data-id="%d">Copy</button>'
-                '<a class="btn ghost" href="%s">Link</a></div>%s</article>'
-                % (cid, canon(cid), cid, pill(c), esc(pill_label(c)), src_pill(c),
-                   esc(c["title"]), line_el(c), attr_html(c, bt, ba),
-                   esc(uw_disp(c["uw"])), esc(c["why"]), cid, canon(cid), conn))
-        copies = {}
-        for cid in ids:
-            c = by_id[cid]
-            if pill(c) == "verbatim":
-                copies[cid] = '"%s"\n\u2014 %s, %s\nidearipper.com/c/%d' % (" ".join(c["steal"].split()), ba, bt, cid)
-            else:
-                copies[cid] = '%s\n\u2014 Idea Ripper, in our words, on %s%s\nidearipper.com/c/%d' % (
-                    " ".join(c["steal"].split()), bt, (" (%s)" % ba) if ba else "", cid)
-        bp.append('<footer class="sitefoot"><a href="/">Idea Ripper archive</a> \u00b7 '
-                  '<a href="/books/">All books</a> \u00b7 <a href="/ledger/">Full ledger</a> '
-                  '\u00b7 Machine-assisted, hand-curated</footer></div>')
-        bp.append('<script>(function(){var T=%s;'
-                  'document.querySelectorAll(".bcopy").forEach(function(b){b.addEventListener("click",function(){'
-                  'var t=T[b.getAttribute("data-id")];function done(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy";},1400);}'
-                  'if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){});}'
-                  '});});})();</script>' % json.dumps({str(k): v for k, v in copies.items()}, ensure_ascii=False).replace("</", "<\\/"))
-        bp.append("</body></html>")
-        bd = os.path.join(BASE, "books", key)
-        os.makedirs(bd, exist_ok=True)
-        with open(os.path.join(bd, "index.html"), "w", encoding="utf-8") as fh:
-            fh.write("\n".join(bp))
-        book_pages += 1
-    print("book pages: %d written (paper template)" % book_pages)
 
     # ---------------- books index (Wave 4) ----------------
     # /books/: every book in the library, grouped by shelf in the site's
@@ -1273,7 +1139,7 @@ def main():
         bt, ba = split_book(c["book"])
         entries.append({
             "i": cid, "s": slug_of[cid],
-            "l": trunc(c["steal"], 200), "u": trunc(uw_disp(c["uw"]), 160), "b": bt,
+            "l": trunc(c["steal"], 200), "u": trunc(c["uw"], 160), "b": bt,
             "kind": "rip", "id": cid, "title": c["title"], "steal": c["steal"],
             "why": c["why"], "uw": c["uw"], "type": c["type"], "book": bt,
             "src": src_of[c["book"]],
@@ -1329,11 +1195,6 @@ def main():
         if not os.path.exists(p):
             continue
         t = open(p, encoding="utf-8").read()
-        if "ir-slug-redirect" not in t and "</body>" in t:
-            t = t.replace("</body>", SLUG_SCRIPT + "</body>", 1)
-            with open(p, "w", encoding="utf-8") as fh:
-                fh.write(t)
-            print("404: injected wrong-slug redirect into %s" % rel)
         if "ir-hash-redirect" in t:
             continue
         if "</body>" in t:

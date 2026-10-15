@@ -1883,6 +1883,34 @@ books:
   - book
   - genre
   - bookline
+- key: the-golden-verses-of-pythagoras
+  genre: Hermetica
+  bookline: 'Pythagorean discipline — the ancient hexameter rule of life in Fabre
+    d''Olivet''s version, English trans. Nayan Louise Redfield (1917): gods, heroes
+    and daimones, the oath, friendship under necessity, and the nightly audit of the
+    soul.'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: handbook-of-platonism-alcinous
+  genre: Hermetica
+  bookline: 'Middle Platonism — Alcinous'' 2nd-century school handbook of Plato''s
+    doctrines, trans. George Burges (1854): first principles and the Forms, fate and
+    providence, the virtues, and assimilation to God.'
+  field_order:
+  - book
+  - genre
+  - bookline
+- key: lives-of-eminent-philosophers-diogenes-laertius
+  genre: Nonfiction
+  bookline: 'Greek philosophy as anecdote and system — Diogenes Laertius'' lives of
+    the sages, Plato, Pythagoras, the Stoics and Epicurus, trans. C. D. Yonge (1853):
+    the maxims, the doctrines, and the stories that carried them down.'
+  field_order:
+  - book
+  - genre
+  - bookline
 card_order:
 - 229
 - 230
@@ -3346,6 +3374,99 @@ card_order:
 - 1474
 - 1475
 - 1476
+- 1477
+- 1478
+- 1479
+- 1480
+- 1481
+- 1482
+- 1483
+- 1484
+- 1485
+- 1486
+- 1487
+- 1488
+- 1489
+- 1490
+- 1491
+- 1492
+- 1493
+- 1494
+- 1495
+- 1496
+- 1497
+- 1498
+- 1499
+- 1500
+- 1501
+- 1502
+- 1503
+- 1504
+- 1505
+- 1506
+- 1507
+- 1508
+- 1509
+- 1510
+- 1511
+- 1512
+- 1513
+- 1514
+- 1515
+- 1516
+- 1517
+- 1518
+- 1519
+- 1520
+- 1521
+- 1522
+- 1523
+- 1524
+- 1525
+- 1526
+- 1527
+- 1528
+- 1529
+- 1530
+- 1531
+- 1532
+- 1533
+- 1534
+- 1535
+- 1536
+- 1537
+- 1538
+- 1539
+- 1540
+- 1541
+- 1542
+- 1543
+- 1544
+- 1545
+- 1546
+- 1547
+- 1548
+- 1549
+- 1550
+- 1551
+- 1552
+- 1553
+- 1554
+- 1555
+- 1556
+- 1557
+- 1558
+- 1559
+- 1560
+- 1561
+- 1562
+- 1563
+- 1564
+- 1565
+- 1566
+- 1567
+- 1568
+- 1569
 rip_of_the_week:
   id: 681
   week: Sep 27 - Oct 4, 2026
