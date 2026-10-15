@@ -236,11 +236,21 @@ td .srcpill{margin-left:.4rem}
 .shelfbox .scounts{font-family:var(--font-mono);font-size:.75rem;color:var(--text-secondary);letter-spacing:.08em;text-transform:uppercase}
 /* Wave 4: Recently Added (homepage) + Books index rows */
 .recentlist,.booklist{list-style:none;margin:0 0 1.25rem;padding:0}
-.rbook{display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap;border-bottom:1px solid var(--border-subtle);padding:.5rem .1rem}
-.rbook .rtitle{font-family:var(--font-serif);font-size:1.12rem;font-weight:600;color:var(--text-primary);text-decoration:none}
-.rbook .rtitle:hover{color:var(--accent-signal)}
-.rbook .rauthor{color:var(--text-secondary);font-size:.95rem}
-.rbook .rcount{margin-left:auto;font-family:var(--font-mono);font-size:.75rem;color:var(--text-secondary);letter-spacing:.06em;white-space:nowrap}
+.rbook{border-bottom:1px solid var(--border-subtle);margin:0;padding:0}
+.rbook a.rlink{display:flex;flex-direction:column;justify-content:center;gap:.15rem;min-height:44px;padding:.65rem .5rem;color:var(--text-primary);text-decoration:none;border-radius:2px}
+.rbook a.rlink:hover{background:var(--bg-subtle)}
+.rbook a.rlink:hover .rtitle{text-decoration:underline;text-underline-offset:3px}
+.rbook a.rlink:focus-visible{outline:3px solid #1a4fd6;outline-offset:2px;background:var(--bg-subtle)}
+.rbook .rtitle{font-family:var(--font-serif);font-size:1.15rem;font-weight:600;line-height:1.3;color:#1c1a17}
+.rbook .rmeta{font-size:1rem;line-height:1.4;color:#4a4540}
+.rbook .rmeta>span{white-space:nowrap}
+.rbook .rmeta .sep{padding:0 .35rem;color:#6b645c}
+.rbook .srcpill{font-size:.75rem}
+.seeall{display:inline-flex;align-items:center;min-height:44px;padding:0 .9rem;margin:0 0 1.5rem;border:1.5px solid var(--border-strong);font-size:1rem;font-weight:600;color:#1c1a17;text-decoration:none;background:var(--bg-card)}
+.seeall:hover{background:var(--bg-subtle)}
+.seeall:focus-visible{outline:3px solid #1a4fd6;outline-offset:2px}
+h2.recenthead{font-family:var(--font-serif);font-size:1.5rem;font-weight:700;letter-spacing:0;text-transform:none;margin:2rem 0 .25rem}
+p.recentnote{font-size:1rem;color:#4a4540;margin:0 0 .5rem}
 h3.archsub{font-family:var(--font-mono);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary);margin:1.4rem 0 .4rem}
 /* ledger */
 .ledwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1.5px solid var(--border-strong);margin:0 0 1.5rem}
@@ -664,15 +674,49 @@ def main():
     for c in cards:
         _w4_book_cards[c["book"]] = _w4_book_cards.get(c["book"], 0) + 1
 
+    # Recently Added (2026-10-14, Billy): plain-words "date added" per book,
+    # seeded from git history by tools/book_dates.py; books new to this
+    # build are stamped with today's date (America/Chicago) and saved.
+    try:
+        _bd = json.load(open(os.path.join(BASE, "book_dates.json"), encoding="utf-8"))
+    except (OSError, ValueError):
+        _bd = {}
+    import datetime as _dtm
+    try:
+        from zoneinfo import ZoneInfo as _ZI
+        _today = _dtm.datetime.now(_ZI("America/Chicago")).strftime("%Y-%m-%d")
+    except Exception:
+        _today = _dtm.date.today().isoformat()
+    _bd_new = False
+    for c in cards:
+        if c["book"] not in _bd:
+            _bd[c["book"]] = _today
+            _bd_new = True
+    if _bd_new:
+        with open(os.path.join(BASE, "book_dates.json"), "w", encoding="utf-8") as fh:
+            json.dump(dict(sorted(_bd.items())), fh, indent=1, ensure_ascii=False)
+
+    def _plain_date(iso):
+        d = _dtm.date.fromisoformat(iso)
+        return "%s %d, %d" % (d.strftime("%B"), d.day, d.year)
+
     def book_li(b, with_pill=False):
         bt, ba = split_book(b["book"])
         pill = (' <span class="srcpill">%s</span>'
                 % SRC_LABEL[src_of[b["book"]]]) if with_pill else ""
-        return ('<li class="rbook"><a class="rtitle" href="%s">%s</a>%s%s'
-                '<span class="rcount">%d cards</span></li>'
+        n_c = _w4_book_cards.get(b["book"], 0)
+        meta = []
+        if ba:
+            meta.append('<span class="rauthor">by %s</span>' % esc(ba))
+        meta.append('<span class="rcount">%d card%s</span>' % (n_c, "" if n_c == 1 else "s"))
+        iso = _bd.get(b["book"])
+        if iso:
+            meta.append('<span class="rdate">Added <time datetime="%s">%s</time></span>'
+                        % (iso, _plain_date(iso)))
+        return ('<li class="rbook"><a class="rlink" href="%s"><span class="rtitle">%s</span>'
+                '<span class="rmeta">%s%s</span></a></li>'
                 % (esca(book_url(b["book"])), esc(bt),
-                   (' <span class="rauthor">%s</span>' % esc(ba)) if ba else "",
-                   pill, _w4_book_cards.get(b["book"], 0)))
+                   '<span class="sep" aria-hidden="true">\u00b7</span>'.join(meta), pill))
 
     # ---------------- homepage ----------------
     def prev_card(c):
@@ -796,10 +840,13 @@ def main():
     _head.sort(key=lambda b: _w4_minid[b["book"]])
     recent_books = (_head + _ranked[len(_head):])[:10]
     if recent_books:
-        home.append('<h2 class="sect">Recently Added <span class="cnt">// newest '
-                    '%d books in the library</span></h2>' % len(recent_books))
-        home.append('<ol class="recentlist">%s</ol>'
+        home.append('<section aria-labelledby="recent-head">'
+                    '<h2 class="recenthead" id="recent-head">Recently added books</h2>'
+                    '<p class="recentnote">The %d newest books in the library, newest first.</p>'
+                    % len(recent_books))
+        home.append('<ul class="recentlist">%s</ul>'
                     % "".join(book_li(b) for b in recent_books))
+        home.append('<a class="seeall" href="/books/">See all books \u2192</a></section>')
     home.append('<h2 class="sect">Browse by shelf</h2><div class="shelfgrid">%s</div>'
                 % "".join(shelf_boxes))
     home.append('<footer class="sitefoot"><a href="/books/">Books</a> &#183; '

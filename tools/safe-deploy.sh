@@ -45,7 +45,7 @@ python3 tools/site_guard.py check || { echo "ABORT: site guard failed; nothing p
 
 N=$(python3 -c "import json;d=json.load(open('cards.json'));b=d['books'];t=sum(1 for x in b if x['genre']=='Thesis');print(len(d['cards']),len(b)-t,t)")
 set -- $N
-for f in cards.json shelf.yaml books fullbooks.json index.html sitemap.xml robots.txt assets data c ledger slugs.lock.json search-index.json sitemap-cards.xml sitemap-books.xml 404.html 404/index.html; do if [ -e "$f" ]; then git add -A -- "$f"; fi; done
+for f in cards.json book_dates.json shelf.yaml situations books fullbooks.json index.html sitemap.xml robots.txt assets data c ledger slugs.lock.json search-index.json sitemap-cards.xml sitemap-books.xml 404.html 404/index.html; do if [ -e "$f" ]; then git add -A -- "$f"; fi; done
 git diff --cached --quiet && { echo "nothing to deploy"; exit 0; }
 git commit -q -m "rip deploy: $1 rips, $2 books, $3 theses ($(date +%F))"
 if [ -n "${IRLIB_API_PUSH:-}" ]; then
