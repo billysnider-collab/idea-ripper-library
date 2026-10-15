@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta name="color-scheme" content="light"/>
-<meta name="build" content="pages-df57f7326026 data-64904cc764"/>
+<meta name="build" content="pages-8b619eed686d data-64904cc764"/>
 <title>The timer as an overflow machine: TMOD splits control, THx/TLx count up, TFx… — Idea Ripper on 8051 Microcontroller Notes (#c524)</title>
 <meta name="description" content="Idea Ripper synthesis of 8051 Microcontroller Notes: One machine cycle is 12 oscillator periods (1.085 us at 11.0592 MHz), and that heartbeat feeds Timer 0 and Timer 1. The TMOD register splits control between them — the lower nibble configures Timer 0, the upper nibble Timer 1 — each timer counts…"/>
 <link rel="canonical" href="https://idearipper.com/c/524-timer-overflow-machine-tmod-splits/"/>
@@ -14,7 +14,7 @@
 <meta property="og:description" content="Idea Ripper synthesis of 8051 Microcontroller Notes: One machine cycle is 12 oscillator periods (1.085 us at 11.0592 MHz), and that heartbeat feeds Timer 0 and Timer 1. The TMOD register splits control between them — the lower nibble configures Timer 0, the upper nibble Timer 1 — each timer counts…"/>
 <meta property="og:url" content="https://idearipper.com/c/524-timer-overflow-machine-tmod-splits/"/>
 <link rel="icon" type="image/svg+xml" href="/brand/r-mark.svg"/>
-<link rel="stylesheet" href="/assets/paper.3d1e91d9c9.css"/>
+<link rel="stylesheet" href="/assets/paper.aa07b07e42.css"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "The timer as an overflow machine: TMOD splits control, THx/TLx count up, TFx signals the roll-over", "abstract": "One machine cycle is 12 oscillator periods (1.085 us at 11.0592 MHz), and that heartbeat feeds Timer 0 and Timer 1. The TMOD register splits control between them — the lower nibble configures Timer 0, the upper nibble Timer 1 — each timer counts in THx/TLx, raises the TFx flag on overflow, and is started or stopped with TRx. Mode 1 is a 16-bit counter that must be reloaded by hand after every overflow; Mode 2 is 8-bit auto-reload, where TH holds the reload value and TL counts and silently reloads on overflow.", "author": {"@type": "Organization", "name": "Idea Ripper"}, "about": {"@type": "Book", "name": "8051 Microcontroller Notes"}, "url": "https://idearipper.com/c/524-timer-overflow-machine-tmod-splits/", "genre": "Synthesis (in our words)"}</script>
 <meta property="og:image" content="https://idearipper.com/og/og-8051-microcontroller-notes.png"/>
 

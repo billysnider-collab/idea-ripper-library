@@ -242,7 +242,7 @@ td .srcpill{margin-left:.4rem}
 .rbook a.rlink:hover .rtitle{text-decoration:underline;text-underline-offset:3px}
 .rbook a.rlink:focus-visible{outline:3px solid #1a4fd6;outline-offset:2px;background:var(--bg-subtle)}
 .rbook .rtitle{font-family:var(--font-serif);font-size:1.15rem;font-weight:600;line-height:1.3;color:#1c1a17}
-.rbook .rmeta{font-size:1rem;line-height:1.4;color:#4a4540}
+.rbook .rmeta{display:flex;flex-wrap:wrap;align-items:baseline;font-size:1rem;line-height:1.4;color:#4a4540}
 .rbook .rmeta>span{white-space:nowrap}
 .rbook .rmeta .sep{padding:0 .35rem;color:#6b645c}
 .rbook .srcpill{font-size:.75rem}
