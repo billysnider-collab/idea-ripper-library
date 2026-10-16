@@ -1121,6 +1121,74 @@ def main():
     print("books page: %d books, %d archive entries"
           % (len(_w4_books), len(_w4_arch)))
 
+    # ---------------- book pages (2026-10-15 fix) ----------------
+    # Per-book pages for books whose page was never generated (the three
+    # Medici Batch 1 books shipped 2026-10-14 without them; their URLs 404'd
+    # while every other book's page existed). Same paper shell as the
+    # situation pages: header, bookline, and the book's cards as relcards.
+    # Runs BEFORE the sitemap section so the new pages enter sitemap-books.
+    _bp_made = []
+    for b in books:
+        _key = key_of.get(b["book"])
+        if not _key:
+            continue
+        _dir = os.path.join(BASE, "books", _key)
+        if os.path.exists(os.path.join(_dir, "index.html")):
+            continue
+        _bcards = sorted((c for c in cards if c["book"] == b["book"]),
+                         key=lambda c: c["id"])
+        if not _bcards:
+            continue
+        _bt, _ba = split_book(b["book"])
+        _fm, _ = compiler.parse_book_file(
+            os.path.join(BASE, "books", _key + ".md"))
+        _bookline = (_fm or {}).get("bookline", "")
+        _sits = []
+        for c in _bcards:
+            for s in c.get("situations", []):
+                if s not in _sits:
+                    _sits.append(s)
+        _title = ("%s by %s — Idea Ripper" % (_bt, _ba)) if _ba else \
+            ("%s — Idea Ripper" % _bt)
+        _desc = trunc(_bookline, 300) if _bookline else trunc(
+            "%d rips from %s: the line, why it matters, and when to use it."
+            % (len(_bcards), _bt), 300)
+        bp = [head(_title, _desc, SITE + "/books/%s/" % _key, marker,
+                   css_href)]
+        bp.append("<body>")
+        bp.append(statusbar(n, build_date))
+        bp.append('<div class="wrap">')
+        bp.append('<nav class="crumb"><a href="/">Archive</a> / '
+                  '<a href="/books/">Books</a> / %s</nav>' % esc(_bt))
+        bp.append('<h1 class="mission">%s</h1>' % esc(_bt))
+        _meta = []
+        if _ba:
+            _meta.append("by %s" % esc(_ba))
+        _meta.append(esc(b["genre"]))
+        _meta.append("%d rips" % len(_bcards))
+        bp.append('<p class="sub">%s</p>' % " \\u00b7 ".join(_meta))
+        if _bookline:
+            bp.append('<p class="sub">%s</p>' % esc(_bookline))
+        if _sits:
+            bp.append('<p class="sub">Filed under: %s</p>'
+                      % esc(" \\u00b7 ".join(_sits)))
+        bp.append('<div class="relgrid">')
+        for c in _bcards:
+            bp.append(sit_relcard(c))
+        bp.append('</div>')
+        bp.append('<footer class="sitefoot"><a href="/">Idea Ripper '
+                  'archive</a> \\u00b7 <a href="/books/">All books</a> '
+                  '\\u00b7 <a href="/ledger/">Full ledger</a> \\u00b7 '
+                  'Machine-assisted, hand-curated</footer>')
+        bp.append('</div></body></html>')
+        os.makedirs(_dir, exist_ok=True)
+        with open(os.path.join(_dir, "index.html"), "w",
+                  encoding="utf-8") as fh:
+            fh.write("\n".join(bp))
+        _bp_made.append(_key)
+    print("book pages generated: %d (%s)"
+          % (len(_bp_made), ", ".join(_bp_made)))
+
     # ---------------- search-index.json (merged) ----------------
     legacy_books = []
     for src in (os.path.join(BASE, "search-index.json.pre-redesign-20261014"),
